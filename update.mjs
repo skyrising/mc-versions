@@ -84,6 +84,8 @@ const dataDir = path.resolve('data')
     const newOmniVersions = {}
     for (const v of allVersions) {
         newOmniVersions[v.hash] = v.omniId
+        delete v.downloads
+        delete v.hash
     }
     fs.writeFileSync(path.resolve(dataDir, 'version_manifest.json'), JSON.stringify(newManifest, null, 2))
     fs.writeFileSync(path.resolve(dataDir, 'hash_map.json'), JSON.stringify(hashMap, null, 2))
