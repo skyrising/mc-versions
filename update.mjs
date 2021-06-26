@@ -45,10 +45,10 @@ const dataDir = path.resolve('data')
         fs.utimesSync(file, new Date(), new Date(data.time))
         const dl = Object.values(data.downloads).map(d => d.sha1).sort()
         const v = {
+            omniId: oldOmniVersions[hash] || data.id,
             id: data.id,
             type: data.type,
             hash,
-            omniId: oldOmniVersions[hash] || data.id,
             url: path.relative(dataDir, file),
             time: data.time,
             releaseTime: data.releaseTime,
