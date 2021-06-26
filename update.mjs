@@ -6,6 +6,7 @@ import fetch from 'node-fetch'
 const dataDir = path.resolve('data')
 
 ;(async () => {
+    const timeFix = JSON.parse(fs.readFileSync(path.resolve(dataDir, 'time_fix.json')))
     const oldOmniVersions = JSON.parse(fs.readFileSync(path.resolve(dataDir, 'omni_id.json')))
     const hashMap = sortObject(JSON.parse(fs.readFileSync(path.resolve(dataDir, 'hash_map.json'))))
     const newManifest = {}
@@ -28,6 +29,7 @@ const dataDir = path.resolve('data')
         const content = fs.readFileSync(file, 'UTF-8')
         let hash = sha1(content)
         const data = sortObject(JSON.parse(content))
+        if (!data.downloads || !data.assets || !data.assetIndex) continue
         const reformatted = JSON.stringify(data, null, 2)
         const reformattedHash = sha1(reformatted)
         if (reformattedHash !== hash) {
@@ -42,16 +44,20 @@ const dataDir = path.resolve('data')
             fs.unlinkSync(file)
             file = correctPath
         }
-        fs.utimesSync(file, new Date(), new Date(data.time))
+        const aTime = new Date()
+        const mTime = new Date(data.time)
+        fs.utimesSync(file, aTime, mTime)
         const dl = Object.values(data.downloads).map(d => d.sha1).sort()
+        const omniId =  oldOmniVersions[hash] || data.id
+        const releaseTime = timeFix[omniId] || data.releaseTime
         const v = {
-            omniId: oldOmniVersions[hash] || data.id,
+            omniId,
             id: data.id,
             type: data.type,
             hash,
             url: path.relative(dataDir, file),
             time: data.time,
-            releaseTime: data.releaseTime,
+            releaseTime,
             downloads: sha1(JSON.stringify(dl)),
             assetIndex: data.assetIndex.id,
             assetHash: data.assetIndex.sha1
@@ -80,7 +86,11 @@ const dataDir = path.resolve('data')
         newManifest.versions.push(latest)
     }
     newManifest.versions.sort((a, b) => a.releaseTime >= b.releaseTime ? -1 : 1)
-    allVersions.sort((a, b) => a.time >= b.time ? -1 : 1)
+    allVersions.sort((a, b) => {
+        if (a.releaseTime > b.releaseTime) return -1
+        if (a.releaseTime < b.releaseTime) return 1
+        return a.time >= b.time ? -1 : 1
+    })
     const newOmniVersions = {}
     for (const v of allVersions) {
         newOmniVersions[v.hash] = v.omniId
