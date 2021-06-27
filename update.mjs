@@ -6,9 +6,9 @@ import fetch from 'node-fetch'
 const dataDir = path.resolve('data')
 const manifestDir = path.resolve(dataDir, 'manifest')
 const importDir = path.resolve(dataDir, 'import')
+const versionDir = path.resolve(dataDir, 'version')
 
 ;(async () => {
-    const timeFix = JSON.parse(fs.readFileSync(path.resolve(dataDir, 'time_fix.json')))
     const oldOmniVersions = JSON.parse(fs.readFileSync(path.resolve(dataDir, 'omni_id.json')))
     const hashMap = sortObject(JSON.parse(fs.readFileSync(path.resolve(dataDir, 'hash_map.json'))))
     const newManifest = {}
@@ -50,15 +50,14 @@ const importDir = path.resolve(dataDir, 'import')
         fs.utimesSync(file, aTime, mTime)
         const dl = Object.values(data.downloads).map(d => d.sha1).sort()
         const omniId =  oldOmniVersions[hash] || data.id
-        const releaseTime = timeFix[omniId] || data.releaseTime
         const v = {
             omniId,
             id: data.id,
             type: data.type,
             hash,
-            url: path.relative(dataDir, file),
+            url: file,
             time: data.time,
-            releaseTime,
+            releaseTime: data.releaseTime,
             downloads: sha1(JSON.stringify(dl)),
             assetIndex: data.assetIndex.id,
             assetHash: data.assetIndex.sha1
@@ -68,7 +67,8 @@ const importDir = path.resolve(dataDir, 'import')
     }
     readdirRecursive(manifestDir, true)
     newManifest.versions = []
-    for (const versionInfo of Object.values(byId)) {
+    for (const id in byId) {
+        const versionInfo = byId[id]
         const list = Object.values(versionInfo)
         list.sort((a, b) => a.time >= b.time ? -1 : 1)
         const downloadIds = {}
@@ -77,14 +77,7 @@ const importDir = path.resolve(dataDir, 'import')
             list[i].downloadsId = downloadIds[hash] || Object.keys(downloadIds).length + 1
             downloadIds[hash] = list[i].downloadsId
         }
-        const latest = list.shift()
-        if (list.length) {
-            latest.other = []
-            for (const v of list) {
-                latest.other.push({url: v.url, time: v.time, downloadsId: v.downloadsId, assetIndex: v.assetIndex, assetHash: v.assetHash})
-            }
-        }
-        newManifest.versions.push(latest)
+        newManifest.versions.push(updateVersionFile(id, list))
     }
     newManifest.versions.sort((a, b) => a.releaseTime >= b.releaseTime ? -1 : 1)
     allVersions.sort((a, b) => {
@@ -95,13 +88,43 @@ const importDir = path.resolve(dataDir, 'import')
     const newOmniVersions = {}
     for (const v of allVersions) {
         newOmniVersions[v.hash] = v.omniId
-        delete v.downloads
-        delete v.hash
+    }
+    const allowedVersionFiles = new Set(newManifest.versions.map(v => v.omniId + '.json'))
+    for (const f of fs.readdirSync(versionDir)) {
+        if (!allowedVersionFiles.has(f)) {
+            const file = path.resolve(versionDir, f)
+            fs.unlinkSync(file)
+            console.log(`Deleting ${file}`)
+        }
     }
     fs.writeFileSync(path.resolve(dataDir, 'version_manifest.json'), JSON.stringify(newManifest, null, 2))
     fs.writeFileSync(path.resolve(dataDir, 'hash_map.json'), JSON.stringify(hashMap, null, 2))
     fs.writeFileSync(path.resolve(dataDir, 'omni_id.json'), JSON.stringify(newOmniVersions, null, 2))
 })()
+
+function updateVersionFile(id, manifests) {
+    const file = path.resolve(versionDir, `${id}.json`)
+    const oldData = fs.existsSync(file) ? JSON.parse(fs.readFileSync(file)) : {}
+    const data = {...oldData}
+    data.id = id
+    data.releaseTime = data.releaseTime || manifests[0].releaseTime
+    data.manifests = manifests.map(m => ({
+        ...m,
+        omniId: undefined,
+        id: undefined,
+        url: path.relative(versionDir, m.url),
+        releaseTime: undefined
+    }))
+    const {omniId, type, url, time} = manifests[0]
+    fs.writeFileSync(file, JSON.stringify(sortObject(data), null, 2))
+    return {
+        omniId, id: manifests[0].id, type,
+        url: path.relative(dataDir, url),
+        time,
+        releaseTime: data.releaseTime,
+        details: path.relative(dataDir, file)
+    }
+}
 
 function sha1(data) {
     const h = crypto.createHash('sha1')
@@ -109,16 +132,17 @@ function sha1(data) {
     return h.digest('hex')
 }
 
-function sortObject(obj) {
+function sortObject(obj, recursive = true) {
+    if (recursive && Array.isArray(obj)) {
+        return obj.map(e => sortObject(e))
+    } else if (typeof obj !== 'object' || Object.prototype.toString.call(obj) !== '[object Object]') {
+        return obj
+    }
     const keys = Object.keys(obj)
     keys.sort()
     const newObj = {}
     for (const key of keys) {
-        let element = keys[key]
-        if (Object.prototype.toString.call(element) === '[object Object]') {
-            element = sortObject(element)
-        }
-        newObj[key] = obj[key]
+        newObj[key] = recursive ? sortObject(obj[key], recursive) : obj[key]
     }
     return newObj
 }

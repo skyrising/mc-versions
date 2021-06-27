@@ -1,0 +1,26 @@
+{
+  "id": "1.17",
+  "manifests": [
+    {
+      "assetHash": "fc00c90b4d2d27a4569b4f0d5487c70d13063dba",
+      "assetIndex": "1.17",
+      "downloads": "26cd218fb6c9d981bdb80e858052a6095d276b0b",
+      "downloadsId": 1,
+      "hash": "bc1b142e1a7910c21244c6b81113cdc9f943840f",
+      "time": "2021-06-08T11:00:40+00:00",
+      "type": "release",
+      "url": "../manifest/b/c/1b142e1a7910c21244c6b81113cdc9f943840f/1.17.json"
+    },
+    {
+      "assetHash": "15809afbdc4489abd52a3d6c3fda0124f8f3404b",
+      "assetIndex": "1.17",
+      "downloads": "26cd218fb6c9d981bdb80e858052a6095d276b0b",
+      "downloadsId": 1,
+      "hash": "3c51de3c3212bda0c42016590a153ed6fd85fe97",
+      "time": "2021-06-08T11:00:40+00:00",
+      "type": "release",
+      "url": "../manifest/3/c/51de3c3212bda0c42016590a153ed6fd85fe97/1.17.json"
+    }
+  ],
+  "releaseTime": "2021-06-08T11:00:40+00:00"
+}

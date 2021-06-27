@@ -1,0 +1,56 @@
+{
+  "id": "1.17-pre5",
+  "manifests": [
+    {
+      "assetHash": "fc00c90b4d2d27a4569b4f0d5487c70d13063dba",
+      "assetIndex": "1.17",
+      "downloads": "5e171c8127a5ee2b14ff76d8f02258b8eb304e4b",
+      "downloadsId": 1,
+      "hash": "b618d528ae8b36bdb9d104831d06bedbacec8175",
+      "time": "2021-06-03T17:01:28+00:00",
+      "type": "snapshot",
+      "url": "../manifest/b/6/18d528ae8b36bdb9d104831d06bedbacec8175/1.17-pre5.json"
+    },
+    {
+      "assetHash": "ff4c1b667c02b183352af8817a2699a96abc08e0",
+      "assetIndex": "1.17",
+      "downloads": "5e171c8127a5ee2b14ff76d8f02258b8eb304e4b",
+      "downloadsId": 1,
+      "hash": "6a132a05bfb42e688d519026b3e28fa62591321f",
+      "time": "2021-06-03T17:01:28+00:00",
+      "type": "snapshot",
+      "url": "../manifest/6/a/132a05bfb42e688d519026b3e28fa62591321f/1.17-pre5.json"
+    },
+    {
+      "assetHash": "15809afbdc4489abd52a3d6c3fda0124f8f3404b",
+      "assetIndex": "1.17",
+      "downloads": "5e171c8127a5ee2b14ff76d8f02258b8eb304e4b",
+      "downloadsId": 1,
+      "hash": "42222582461fd29ad33892e4c3bd638f262d34a8",
+      "time": "2021-06-03T17:01:28+00:00",
+      "type": "snapshot",
+      "url": "../manifest/4/2/222582461fd29ad33892e4c3bd638f262d34a8/1.17-pre5.json"
+    },
+    {
+      "assetHash": "5980cedf055a0ebc1059ddb9487a004c7d0f781e",
+      "assetIndex": "1.17",
+      "downloads": "5e171c8127a5ee2b14ff76d8f02258b8eb304e4b",
+      "downloadsId": 1,
+      "hash": "3a815710e54c93b0f9595bbf3bc1392a73d5bd2e",
+      "time": "2021-06-03T17:01:28+00:00",
+      "type": "snapshot",
+      "url": "../manifest/3/a/815710e54c93b0f9595bbf3bc1392a73d5bd2e/1.17-pre5.json"
+    },
+    {
+      "assetHash": "c6e8898a39b4c29ca1ce3cadcae58b532a279a6f",
+      "assetIndex": "1.17",
+      "downloads": "5e171c8127a5ee2b14ff76d8f02258b8eb304e4b",
+      "downloadsId": 1,
+      "hash": "034ad280a2b8763978b9d011cbc253a8d33f7974",
+      "time": "2021-06-03T17:01:28+00:00",
+      "type": "snapshot",
+      "url": "../manifest/0/3/4ad280a2b8763978b9d011cbc253a8d33f7974/1.17-pre5.json"
+    }
+  ],
+  "releaseTime": "2021-06-03T17:01:28+00:00"
+}

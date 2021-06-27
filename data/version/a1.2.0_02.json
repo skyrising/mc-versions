@@ -1,0 +1,26 @@
+{
+  "id": "a1.2.0_02",
+  "manifests": [
+    {
+      "assetHash": "4759bad2824e419da9db32861fcdc3a274336532",
+      "assetIndex": "pre-1.6",
+      "downloads": "0519340ba01dc80e5040145edf78244b06dd0952",
+      "downloadsId": 2,
+      "hash": "338463815b7f49f99d1bf459b7454cc68805c5aa",
+      "time": "2010-11-03T22:00:00+00:00",
+      "type": "old_alpha",
+      "url": "../manifest/3/3/8463815b7f49f99d1bf459b7454cc68805c5aa/a1.2.0_02.json"
+    },
+    {
+      "assetHash": "4759bad2824e419da9db32861fcdc3a274336532",
+      "assetIndex": "pre-1.6",
+      "downloads": "86ba0aeeffe03f745b931ef75b7ea8623f968d48",
+      "downloadsId": 1,
+      "hash": "12efaca76aacb6c3634970c8d96f679f78545d5b",
+      "time": "2010-10-29T22:00:00+00:00",
+      "type": "old_alpha",
+      "url": "../manifest/1/2/efaca76aacb6c3634970c8d96f679f78545d5b/a1.2.0.json"
+    }
+  ],
+  "releaseTime": "2010-11-03T22:00:00+00:00"
+}
