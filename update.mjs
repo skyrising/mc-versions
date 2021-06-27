@@ -4,6 +4,8 @@ import crypto from 'crypto'
 import fetch from 'node-fetch'
 
 const dataDir = path.resolve('data')
+const manifestDir = path.resolve(dataDir, 'manifest')
+const importDir = path.resolve(dataDir, 'import')
 
 ;(async () => {
     const timeFix = JSON.parse(fs.readFileSync(path.resolve(dataDir, 'time_fix.json')))
@@ -17,14 +19,13 @@ const dataDir = path.resolve('data')
         const p = url.pathname.split('/')
         let hash = p[3]
         while (hash in hashMap) hash = hashMap[hash]
-        const file = path.resolve(dataDir, hash[0], hash[1], hash.substr(2), p[4])
+        const file = path.resolve(manifestDir, hash[0], hash[1], hash.substr(2), p[4])
         await downloadFile(url, file)
     }
     const byId = {}
     const allVersions = []
-    const files = readdirRecursive(dataDir)
+    const files = [...readdirRecursive(manifestDir), ...readdirRecursive(importDir)]
     for (let file of files) {
-        if (path.dirname(file) === dataDir) continue
         if (!file.endsWith('.json')) continue
         const content = fs.readFileSync(file, 'UTF-8')
         let hash = sha1(content)
@@ -36,7 +37,7 @@ const dataDir = path.resolve('data')
             hashMap[hash] = reformattedHash
             hash = reformattedHash
         }
-        const correctPath = path.resolve(dataDir, hash[0], hash[1], hash.substr(2), path.basename(file))
+        const correctPath = path.resolve(manifestDir, hash[0], hash[1], hash.substr(2), path.basename(file))
         if (correctPath !== file) {
             console.log(file + ' -> ' + correctPath)
             mkdirp(path.dirname(correctPath))
@@ -65,7 +66,7 @@ const dataDir = path.resolve('data')
         ;(byId[v.omniId] = byId[v.omniId] || {})[hash] = v
         allVersions.push(v)
     }
-    readdirRecursive(dataDir, true)
+    readdirRecursive(manifestDir, true)
     newManifest.versions = []
     for (const versionInfo of Object.values(byId)) {
         const list = Object.values(versionInfo)
