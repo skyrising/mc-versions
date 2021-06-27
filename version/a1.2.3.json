@@ -2,6 +2,16 @@
   "id": "a1.2.3",
   "manifests": [
     {
+      "assetHash": "c0fd82e8ce9fbc93119e40d96d5a4e62cfa3f729",
+      "assetIndex": "legacy",
+      "downloads": "cfee23dbf58d2fda5fa9fdd25190c0af03ed7542",
+      "downloadsId": 1,
+      "hash": "6ef6f81e72c258cb21050734f4185378768dc8fa",
+      "time": "2016-02-02T15:37:47+00:00",
+      "type": "old_alpha",
+      "url": "https://skyrising.github.io/mc-versions/manifest/6/e/f6f81e72c258cb21050734f4185378768dc8fa/a1.2.3.json"
+    },
+    {
       "assetHash": "4759bad2824e419da9db32861fcdc3a274336532",
       "assetIndex": "pre-1.6",
       "downloads": "cfee23dbf58d2fda5fa9fdd25190c0af03ed7542",
