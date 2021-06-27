@@ -5180,13 +5180,247 @@
       "details": "version/a1.0.4-launcher.json"
     },
     {
+      "omniId": "inf-20100630-2",
+      "id": "inf-20100630-2",
+      "type": "old_alpha",
+      "url": "manifest/a/f/a60c5d5a7a6c79b0aad56513a693b9a5926e48/inf-20100630-2.json",
+      "time": "2015-04-13T07:33:30-07:00",
+      "releaseTime": "2010-06-30T00:00:00-00:00",
+      "details": "version/inf-20100630-2.json"
+    },
+    {
+      "omniId": "inf-20100630-1",
+      "id": "inf-20100630-1",
+      "type": "old_alpha",
+      "url": "manifest/9/c/d35233d1b352edbe29c674909b8e5e00078924/inf-20100630-1.json",
+      "time": "2015-04-13T07:33:30-07:00",
+      "releaseTime": "2010-06-30T00:00:00-00:00",
+      "details": "version/inf-20100630-1.json"
+    },
+    {
+      "omniId": "inf-20100629",
+      "id": "inf-20100629",
+      "type": "old_alpha",
+      "url": "manifest/3/7/6a51b888025e34dbcea1d5aca1f1d45060865c/inf-20100629.json",
+      "time": "2015-04-13T07:33:30-07:00",
+      "releaseTime": "2010-06-29T00:00:00-00:00",
+      "details": "version/inf-20100629.json"
+    },
+    {
+      "omniId": "inf-20100627",
+      "id": "inf-20100627",
+      "type": "old_alpha",
+      "url": "manifest/a/c/d8cb06763493efe64ae37738eaef164f28369d/inf-20100627.json",
+      "time": "2015-04-13T07:33:30-07:00",
+      "releaseTime": "2010-06-27T15:00:00-07:00",
+      "details": "version/inf-20100627.json"
+    },
+    {
+      "omniId": "inf-20100625-2",
+      "id": "inf-20100625-2",
+      "type": "old_alpha",
+      "url": "manifest/e/5/5fb36097602c246e15fb6aa918d8b987a40c4f/inf-20100625-2.json",
+      "time": "2015-04-13T07:33:30-07:00",
+      "releaseTime": "2010-06-25T00:00:00-00:00",
+      "details": "version/inf-20100625-2.json"
+    },
+    {
+      "omniId": "inf-20100625-1",
+      "id": "inf-20100625-1",
+      "type": "old_alpha",
+      "url": "manifest/c/8/92fc836bfb6483941574173fd9876b7f19850a/inf-20100625-1.json",
+      "time": "2015-04-13T07:33:30-07:00",
+      "releaseTime": "2010-06-25T00:00:00-00:00",
+      "details": "version/inf-20100625-1.json"
+    },
+    {
+      "omniId": "inf-20100624",
+      "id": "inf-20100624",
+      "type": "old_alpha",
+      "url": "manifest/e/f/493062be59bfd4612a4dd8d16bf465ad41a8fd/inf-20100624.json",
+      "time": "2015-04-13T07:33:30-07:00",
+      "releaseTime": "2010-06-24T00:00:00-00:00",
+      "details": "version/inf-20100624.json"
+    },
+    {
+      "omniId": "inf-20100617-3",
+      "id": "inf-20100617-3",
+      "type": "old_alpha",
+      "url": "manifest/7/3/7c6b1020f13efa99e94dbcc724ef08de94c164/inf-20100617-3.json",
+      "time": "2010-06-17T00:00:00-00:00",
+      "releaseTime": "2010-06-17T00:00:00-00:00",
+      "details": "version/inf-20100617-3.json"
+    },
+    {
+      "omniId": "inf-20100617-2",
+      "id": "inf-20100617-2",
+      "type": "old_alpha",
+      "url": "manifest/0/a/c4de6f8d3e7fb39b352523917d9b8e29f6a4c8/inf-20100617-2.json",
+      "time": "2010-06-17T00:00:00-00:00",
+      "releaseTime": "2010-06-17T00:00:00-00:00",
+      "details": "version/inf-20100617-2.json"
+    },
+    {
+      "omniId": "inf-20100616",
+      "id": "inf-20100616",
+      "type": "old_alpha",
+      "url": "manifest/1/9/f2cfb68d8bd714f7765e144bae5b03d01c68a8/inf-20100616.json",
+      "time": "2021-06-26T23:01:15+00:00",
+      "releaseTime": "2010-06-16T00:00:00+00:00",
+      "details": "version/inf-20100616.json"
+    },
+    {
       "omniId": "inf-20100618",
       "id": "inf-20100618",
       "type": "old_alpha",
-      "url": "manifest/0/e/21ccd7f97a79849e46b330d3df3a8063c06441/inf-20100618.json",
-      "time": "2010-06-15T22:00:00+00:00",
+      "url": "manifest/6/5/a8eb215b2e541b382b44f5520b0c5365328a7a/inf-20100618.json",
+      "time": "2013-08-06T10:33:30-04:00",
       "releaseTime": "2010-06-15T22:00:00+00:00",
       "details": "version/inf-20100618.json"
+    },
+    {
+      "omniId": "inf-20100615",
+      "id": "inf-20100615",
+      "type": "old_alpha",
+      "url": "manifest/d/a/4bdb56eba72e795fe424584b8b1c77745b4d4c/inf-20100615.json",
+      "time": "2015-04-13T07:33:30-07:00",
+      "releaseTime": "2010-06-15T00:00:00-00:00",
+      "details": "version/inf-20100615.json"
+    },
+    {
+      "omniId": "inf-20100611",
+      "id": "inf-20100611",
+      "type": "old_alpha",
+      "url": "manifest/c/e/a828b9d5f406743f7fe353e6378d9fcd5aec9f/inf-20100611.json",
+      "time": "2015-04-13T07:33:30-07:00",
+      "releaseTime": "2010-06-11T00:00:00-00:00",
+      "details": "version/inf-20100611.json"
+    },
+    {
+      "omniId": "inf-20100608",
+      "id": "inf-20100608",
+      "type": "old_alpha",
+      "url": "manifest/1/9/aff6cafa93787783802b680f144f408dd3cc66/inf-20100608.json",
+      "time": "2015-04-13T07:33:30-07:00",
+      "releaseTime": "2010-06-08T15:00:00-07:00",
+      "details": "version/inf-20100608.json"
+    },
+    {
+      "omniId": "inf-20100607",
+      "id": "inf-20100607",
+      "type": "old_alpha",
+      "url": "manifest/c/3/13e5e582fa568e60448b5ef7d5b96e2ee624a0/inf-20100607.json",
+      "time": "2015-04-13T07:33:30-07:00",
+      "releaseTime": "2010-06-07T00:00:00-00:00",
+      "details": "version/inf-20100607.json"
+    },
+    {
+      "omniId": "inf-20100420",
+      "id": "inf-20100420",
+      "type": "old_alpha",
+      "url": "manifest/7/4/38893e5e566562abe41433c83cccf65f0a882a/inf-20100420.json",
+      "time": "2015-04-13T07:33:30-07:00",
+      "releaseTime": "2010-04-20T15:00:00-07:00",
+      "details": "version/inf-20100420.json"
+    },
+    {
+      "omniId": "inf-20100415",
+      "id": "inf-20100415",
+      "type": "old_alpha",
+      "url": "manifest/2/f/26721e9846d4e6b37f110508d806bb7fe2ae9c/inf-20100415.json",
+      "time": "2015-04-13T07:33:30-07:00",
+      "releaseTime": "2010-04-15T15:00:00-07:00",
+      "details": "version/inf-20100415.json"
+    },
+    {
+      "omniId": "inf-20100414",
+      "id": "inf-20100414",
+      "type": "old_alpha",
+      "url": "manifest/b/0/a445001cba10f8277833c4f9c52b407bda964f/inf-20100414.json",
+      "time": "2015-04-13T07:33:30-07:00",
+      "releaseTime": "2010-04-14T00:00:00-00:00",
+      "details": "version/inf-20100414.json"
+    },
+    {
+      "omniId": "inf-20100413",
+      "id": "inf-20100413",
+      "type": "old_alpha",
+      "url": "manifest/1/7/35e01d2688d875a530ae5630bd9197e91e7f0d/inf-20100413.json",
+      "time": "2015-04-13T07:33:30-07:00",
+      "releaseTime": "2010-04-13T00:00:00-00:00",
+      "details": "version/inf-20100413.json"
+    },
+    {
+      "omniId": "inf-20100330",
+      "id": "inf-20100330",
+      "type": "old_alpha",
+      "url": "manifest/0/5/1ad67999faee776df712abc4bca5acdad782a1/inf-20100330.json",
+      "time": "2010-03-30T00:00:00-00:00",
+      "releaseTime": "2010-03-30T00:00:00-00:00",
+      "details": "version/inf-20100330.json"
+    },
+    {
+      "omniId": "inf-20100327",
+      "id": "inf-20100327",
+      "type": "old_alpha",
+      "url": "manifest/b/d/2ab3f97f30ef9a556296c817f4c2063d48b060/inf-20100327.json",
+      "time": "2010-03-27T00:00:00-00:00",
+      "releaseTime": "2010-03-27T00:00:00-00:00",
+      "details": "version/inf-20100327.json"
+    },
+    {
+      "omniId": "inf-20100325",
+      "id": "inf-20100325",
+      "type": "old_alpha",
+      "url": "manifest/5/7/af642d15cc36aeca105a79dc1591bab32d9697/inf-20100325.json",
+      "time": "2015-04-13T07:33:30-07:00",
+      "releaseTime": "2010-03-25T00:00:00-00:00",
+      "details": "version/inf-20100325.json"
+    },
+    {
+      "omniId": "inf-20100321",
+      "id": "inf-20100321",
+      "type": "old_alpha",
+      "url": "manifest/4/a/2fd5aed05cea23457cca29daed289d2e950df6/inf-20100321.json",
+      "time": "2015-04-13T07:33:30-07:00",
+      "releaseTime": "2010-03-21T00:00:00-00:00",
+      "details": "version/inf-20100321.json"
+    },
+    {
+      "omniId": "inf-20100320",
+      "id": "inf-20100320",
+      "type": "old_alpha",
+      "url": "manifest/c/5/60f8b825845aa70afc994ef959dec8808b5cc3/inf-20100320.json",
+      "time": "2015-04-13T07:33:30-07:00",
+      "releaseTime": "2010-03-20T00:00:00-00:00",
+      "details": "version/inf-20100320.json"
+    },
+    {
+      "omniId": "inf-20100316",
+      "id": "inf-20100316",
+      "type": "old_alpha",
+      "url": "manifest/4/5/9dda8e15f86e8e6f5409cd06ccce4ae9842c74/inf-20100316.json",
+      "time": "2015-04-13T07:33:30-07:00",
+      "releaseTime": "2010-03-16T00:00:00-00:00",
+      "details": "version/inf-20100316.json"
+    },
+    {
+      "omniId": "inf-20100313",
+      "id": "inf-20100313",
+      "type": "old_alpha",
+      "url": "manifest/a/1/2e7178de27892e0cba336e6b0860f43de02bb5/inf-20100313.json",
+      "time": "2015-04-13T07:33:30-07:00",
+      "releaseTime": "2010-03-13T00:00:00-00:00",
+      "details": "version/inf-20100313.json"
+    },
+    {
+      "omniId": "inf-20100227",
+      "id": "inf-20100227",
+      "type": "old_alpha",
+      "url": "manifest/d/b/6d09f1d115a599ab33e35256c0b09afb289095/inf-20100227.json",
+      "time": "2015-04-13T07:33:30-07:00",
+      "releaseTime": "2010-02-27T15:00:00-07:00",
+      "details": "version/inf-20100227.json"
     },
     {
       "omniId": "in-20100223",
@@ -5297,15 +5531,6 @@
       "details": "version/in-20100201-3.json"
     },
     {
-      "omniId": "in-20100201-2",
-      "id": "in-20100201-2",
-      "type": "old_alpha",
-      "url": "manifest/1/3/2343529977bf313ca420be2a8a5ce63cbf4396/in-20100201-2.json",
-      "time": "2017-09-20T19:21:48+02:00",
-      "releaseTime": "2010-02-01T00:00:00+00:00",
-      "details": "version/in-20100201-2.json"
-    },
-    {
       "omniId": "in-20100201-1",
       "id": "in-20100201-1",
       "type": "old_alpha",
@@ -5313,6 +5538,15 @@
       "time": "2017-09-20T19:21:48+02:00",
       "releaseTime": "2010-02-01T00:00:00+00:00",
       "details": "version/in-20100201-1.json"
+    },
+    {
+      "omniId": "in-20100201-2",
+      "id": "in-20100201-2",
+      "type": "old_alpha",
+      "url": "manifest/1/3/2343529977bf313ca420be2a8a5ce63cbf4396/in-20100201-2.json",
+      "time": "2017-09-20T19:21:48+02:00",
+      "releaseTime": "2010-02-01T00:00:00+00:00",
+      "details": "version/in-20100201-2.json"
     },
     {
       "omniId": "in-20100130",
