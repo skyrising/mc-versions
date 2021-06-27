@@ -10393,17 +10393,6 @@
     },
     {
       "omniId": "c0.30-c-renew",
-      "id": "c0.30_01c",
-      "type": "old_alpha",
-      "url": "5/6/aef8b594d03b4298128e81f77190b76ce8d7d1/c0.30_01c.json",
-      "time": "2009-12-21T22:00:00+00:00",
-      "releaseTime": "2009-12-21T22:00:00+00:00",
-      "assetIndex": "pre-1.6",
-      "assetHash": "4759bad2824e419da9db32861fcdc3a274336532",
-      "downloadsId": 1
-    },
-    {
-      "omniId": "c0.30-3",
       "id": "c0.30-3",
       "type": "old_alpha",
       "url": "d/8/478a56ebfe86f2335df3b660d1d1a06c34f1df/c0.30-3.json",
@@ -10411,10 +10400,19 @@
       "releaseTime": "2009-12-21T22:00:00+00:00",
       "assetIndex": "legacy",
       "assetHash": "c0fd82e8ce9fbc93119e40d96d5a4e62cfa3f729",
-      "downloadsId": 1
+      "downloadsId": 1,
+      "other": [
+        {
+          "url": "5/6/aef8b594d03b4298128e81f77190b76ce8d7d1/c0.30_01c.json",
+          "time": "2009-12-21T22:00:00+00:00",
+          "downloadsId": 1,
+          "assetIndex": "pre-1.6",
+          "assetHash": "4759bad2824e419da9db32861fcdc3a274336532"
+        }
+      ]
     },
     {
-      "omniId": "c0.30-2",
+      "omniId": "c0.30-c",
       "id": "c0.30-2",
       "type": "old_alpha",
       "url": "5/7/785435e8898a1fa7976b81919747e6b075f1e2/c0.30-2.json",
@@ -10425,7 +10423,7 @@
       "downloadsId": 1
     },
     {
-      "omniId": "c0.30-1",
+      "omniId": "c0.30-s",
       "id": "c0.30-1",
       "type": "old_alpha",
       "url": "7/4/c2aea1b31066c1812cc50023a759562ec105e1/c0.30-1.json",
