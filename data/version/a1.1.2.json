@@ -2,6 +2,16 @@
   "id": "a1.1.2",
   "manifests": [
     {
+      "assetHash": "c0fd82e8ce9fbc93119e40d96d5a4e62cfa3f729",
+      "assetIndex": "legacy",
+      "downloads": "35af45ea729eb365833b2bef177236a65f155a77",
+      "downloadsId": 1,
+      "hash": "65659cbf528ef609440630bcb74fd33dfecf18c9",
+      "time": "2016-02-02T15:37:47+00:00",
+      "type": "old_alpha",
+      "url": "../manifest/6/5/659cbf528ef609440630bcb74fd33dfecf18c9/a1.1.2.json"
+    },
+    {
       "assetHash": "4759bad2824e419da9db32861fcdc3a274336532",
       "assetIndex": "pre-1.6",
       "downloads": "35af45ea729eb365833b2bef177236a65f155a77",

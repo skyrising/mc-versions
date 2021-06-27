@@ -2,6 +2,16 @@
   "id": "a1.0.4-launcher",
   "manifests": [
     {
+      "assetHash": "c0fd82e8ce9fbc93119e40d96d5a4e62cfa3f729",
+      "assetIndex": "legacy",
+      "downloads": "7e69b24c222ec93773e73c07ced158f5f9d62ce5",
+      "downloadsId": 1,
+      "hash": "ef07cfc3a8420b2fe68d56eb67570476f54c1cdd",
+      "time": "2016-02-02T15:37:47+00:00",
+      "type": "old_alpha",
+      "url": "../manifest/e/f/07cfc3a8420b2fe68d56eb67570476f54c1cdd/a1.0.4-launcher.json"
+    },
+    {
       "assetHash": "4759bad2824e419da9db32861fcdc3a274336532",
       "assetIndex": "pre-1.6",
       "downloads": "7e69b24c222ec93773e73c07ced158f5f9d62ce5",
