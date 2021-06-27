@@ -2,16 +2,6 @@
   "id": "a1.2.3_02",
   "manifests": [
     {
-      "assetHash": "c0fd82e8ce9fbc93119e40d96d5a4e62cfa3f729",
-      "assetIndex": "legacy",
-      "downloads": "6d847a7aa6b2a3723a9989caec7820fb70bf9dad",
-      "downloadsId": 1,
-      "hash": "37bf17b2c6f31fd6a242de8fdc43c99a4fded127",
-      "time": "2016-02-02T15:37:47+00:00",
-      "type": "old_alpha",
-      "url": "../manifest/3/7/bf17b2c6f31fd6a242de8fdc43c99a4fded127/a1.2.3_02.json"
-    },
-    {
       "assetHash": "4759bad2824e419da9db32861fcdc3a274336532",
       "assetIndex": "pre-1.6",
       "downloads": "6d847a7aa6b2a3723a9989caec7820fb70bf9dad",
@@ -20,6 +10,16 @@
       "time": "2010-11-24T22:00:00+00:00",
       "type": "old_alpha",
       "url": "../manifest/e/d/58c9b83229292e9fd3e58d25c9d8e7b8138dd1/a1.2.3_02.json"
+    },
+    {
+      "assetHash": "c0fd82e8ce9fbc93119e40d96d5a4e62cfa3f729",
+      "assetIndex": "legacy",
+      "downloads": "6d847a7aa6b2a3723a9989caec7820fb70bf9dad",
+      "downloadsId": 1,
+      "hash": "37bf17b2c6f31fd6a242de8fdc43c99a4fded127",
+      "time": "2016-02-02T15:37:47+00:00",
+      "type": "old_alpha",
+      "url": "../manifest/3/7/bf17b2c6f31fd6a242de8fdc43c99a4fded127/a1.2.3_02.json"
     }
   ],
   "releaseTime": "2010-11-24T22:00:00+00:00"

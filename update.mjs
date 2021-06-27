@@ -61,7 +61,8 @@ const versionDir = path.resolve(dataDir, 'version')
             releaseTime: data.releaseTime,
             downloads: sha1(JSON.stringify(dl)),
             assetIndex: data.assetIndex.id,
-            assetHash: data.assetIndex.sha1
+            assetHash: data.assetIndex.sha1,
+            launcher: data.downloads.client && data.downloads.client.url.startsWith('https://launcher.mojang.com/')
         }
         ;(byId[v.omniId] = byId[v.omniId] || {})[hash] = v
         allVersions.push(v)
@@ -71,7 +72,7 @@ const versionDir = path.resolve(dataDir, 'version')
     for (const id in byId) {
         const versionInfo = byId[id]
         const list = Object.values(versionInfo)
-        list.sort((a, b) => a.time >= b.time ? -1 : 1)
+        list.sort(compareVersions)
         const downloadIds = {}
         for (let i = list.length - 1; i >= 0; i--) {
             const hash = list[i].downloads
@@ -81,11 +82,7 @@ const versionDir = path.resolve(dataDir, 'version')
         newManifest.versions.push(updateVersionFile(id, list))
     }
     newManifest.versions.sort((a, b) => a.releaseTime >= b.releaseTime ? -1 : 1)
-    allVersions.sort((a, b) => {
-        if (a.releaseTime > b.releaseTime) return -1
-        if (a.releaseTime < b.releaseTime) return 1
-        return a.time >= b.time ? -1 : 1
-    })
+    allVersions.sort(compareVersions)
     const newOmniVersions = {}
     for (const v of allVersions) {
         newOmniVersions[v.hash] = v.omniId
@@ -103,6 +100,14 @@ const versionDir = path.resolve(dataDir, 'version')
     fs.writeFileSync(path.resolve(dataDir, 'omni_id.json'), JSON.stringify(newOmniVersions, null, 2))
 })()
 
+function compareVersions(a, b) {
+    if (a.releaseTime > b.releaseTime) return -1
+    if (a.releaseTime < b.releaseTime) return 1
+    if (a.launcher && !b.launcher) return -1
+    if (!a.launcher && b.launcher) return 1
+    return a.time >= b.time ? -1 : 1
+}
+
 function updateVersionFile(id, manifests) {
     const file = path.resolve(versionDir, `${id}.json`)
     const oldData = fs.existsSync(file) ? JSON.parse(fs.readFileSync(file)) : {}
@@ -113,6 +118,7 @@ function updateVersionFile(id, manifests) {
         ...m,
         omniId: undefined,
         id: undefined,
+        launcher: undefined,
         url: path.relative(versionDir, m.url),
         releaseTime: undefined
     }))

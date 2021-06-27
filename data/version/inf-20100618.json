@@ -2,16 +2,6 @@
   "id": "inf-20100618",
   "manifests": [
     {
-      "assetHash": "c0fd82e8ce9fbc93119e40d96d5a4e62cfa3f729",
-      "assetIndex": "legacy",
-      "downloads": "3f43400b88609480cf668acdf453447e7b24ba3c",
-      "downloadsId": 1,
-      "hash": "65a8eb215b2e541b382b44f5520b0c5365328a7a",
-      "time": "2013-08-06T10:33:30-04:00",
-      "type": "old_alpha",
-      "url": "../manifest/6/5/a8eb215b2e541b382b44f5520b0c5365328a7a/inf-20100618.json"
-    },
-    {
       "assetHash": "4759bad2824e419da9db32861fcdc3a274336532",
       "assetIndex": "pre-1.6",
       "downloads": "3f43400b88609480cf668acdf453447e7b24ba3c",
@@ -20,6 +10,16 @@
       "time": "2010-06-15T22:00:00+00:00",
       "type": "old_alpha",
       "url": "../manifest/0/e/21ccd7f97a79849e46b330d3df3a8063c06441/inf-20100618.json"
+    },
+    {
+      "assetHash": "c0fd82e8ce9fbc93119e40d96d5a4e62cfa3f729",
+      "assetIndex": "legacy",
+      "downloads": "3f43400b88609480cf668acdf453447e7b24ba3c",
+      "downloadsId": 1,
+      "hash": "65a8eb215b2e541b382b44f5520b0c5365328a7a",
+      "time": "2013-08-06T10:33:30-04:00",
+      "type": "old_alpha",
+      "url": "../manifest/6/5/a8eb215b2e541b382b44f5520b0c5365328a7a/inf-20100618.json"
     }
   ],
   "releaseTime": "2010-06-15T22:00:00+00:00"
