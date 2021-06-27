@@ -1,0 +1,29 @@
+name: Build and Deploy
+on:
+  push:
+    branches:
+      main
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    env:
+      URL_BASE: https://skyrising.github.io/mc-versions/
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Set up Node
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16
+
+      - name: Build
+        run: |
+          yarn
+          yarn run build
+
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@4.1.1
+        with:
+          branch: gh-pages
+          folder: dist/data

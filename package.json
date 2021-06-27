@@ -1,4 +1,8 @@
 {
+  "scripts": {
+    "update": "node update.mjs",
+    "build": "rm -rf dist && node build.mjs"
+  },
   "dependencies": {
     "node-fetch": "^2.6.1"
   }
