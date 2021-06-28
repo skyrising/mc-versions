@@ -4730,13 +4730,13 @@
       "details": "https://skyrising.github.io/mc-versions/version/1.1.json"
     },
     {
-      "omniId": "1.0",
+      "omniId": "1.0.0",
       "id": "1.0",
       "type": "release",
       "url": "https://skyrising.github.io/mc-versions/manifest/6/4/61b224f1e2935ff78fd95be1fe473e7d1fc61c/1.0.json",
       "time": "2011-11-17T22:00:00+00:00",
       "releaseTime": "2011-11-18T21:54:50+00:00",
-      "details": "https://skyrising.github.io/mc-versions/version/1.0.json"
+      "details": "https://skyrising.github.io/mc-versions/version/1.0.0.json"
     },
     {
       "omniId": "1.0.0-rc2-3",
@@ -5259,15 +5259,6 @@
       "time": "2010-11-04T22:00:01+00:00",
       "releaseTime": "2010-11-05T00:00:01+00:00",
       "details": "https://skyrising.github.io/mc-versions/version/a1.2.1_01.json"
-    },
-    {
-      "omniId": "a1.2.1",
-      "id": "a1.2.1",
-      "type": "old_alpha",
-      "url": "https://skyrising.github.io/mc-versions/manifest/3/d/a77fca92c2f5bdb4df3724adfc1a65f84a1ff1/a1.2.1.json",
-      "time": "2010-11-04T22:00:00+00:00",
-      "releaseTime": "2010-11-05T00:00:00+00:00",
-      "details": "https://skyrising.github.io/mc-versions/version/a1.2.1.json"
     },
     {
       "omniId": "a1.2.0_02",
@@ -6197,13 +6188,13 @@
       "details": "https://skyrising.github.io/mc-versions/version/c0.0.20a_01.json"
     },
     {
-      "omniId": "c0.0.19a_06-2",
+      "omniId": "c0.0.19a_06-0137",
       "id": "c0.0.19a_06-2",
       "type": "old_alpha",
       "url": "https://skyrising.github.io/mc-versions/manifest/d/6/0185d72a4ce9db08edebeddaceb5dbea46688f/c0.0.19a_06-2.json",
       "time": "2020-10-17T19:47:58-00:00",
       "releaseTime": "2009-06-20T01:37:00+00:00",
-      "details": "https://skyrising.github.io/mc-versions/version/c0.0.19a_06-2.json"
+      "details": "https://skyrising.github.io/mc-versions/version/c0.0.19a_06-0137.json"
     },
     {
       "omniId": "c0.0.18a_02",

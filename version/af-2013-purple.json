@@ -1,4 +1,5 @@
 {
+  "client": true,
   "id": "af-2013-purple",
   "manifests": [
     {
@@ -12,5 +13,10 @@
       "url": "https://skyrising.github.io/mc-versions/manifest/6/5/347e149c94255a0034bbaf46e98787e71063e1/2point0_purple.json"
     }
   ],
-  "releaseTime": "2013-04-01T17:44:00+00:00"
+  "protocol": {
+    "type": "modern",
+    "version": 92
+  },
+  "releaseTime": "2013-04-01T17:44:00+00:00",
+  "server": true
 }

@@ -1,4 +1,5 @@
 {
+  "client": true,
   "id": "af-2016",
   "manifests": [
     {
@@ -12,5 +13,11 @@
       "url": "https://skyrising.github.io/mc-versions/manifest/2/9/3ab6e62dd4f88f866610862ebadf250fdcb123/1.RV-Pre1.json"
     }
   ],
-  "releaseTime": "2016-03-31T16:18:53+00:00"
+  "protocol": {
+    "incompatible": true,
+    "type": "netty",
+    "version": 108
+  },
+  "releaseTime": "2016-03-31T16:18:53+00:00",
+  "server": true
 }

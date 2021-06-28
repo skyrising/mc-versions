@@ -1,4 +1,5 @@
 {
+  "client": true,
   "id": "inf-20100415",
   "manifests": [
     {
@@ -12,5 +13,7 @@
       "url": "https://skyrising.github.io/mc-versions/manifest/2/f/26721e9846d4e6b37f110508d806bb7fe2ae9c/inf-20100415.json"
     }
   ],
-  "releaseTime": "2010-04-15T09:32:00+00:00"
+  "protocol": null,
+  "releaseTime": "2010-04-15T09:32:00+00:00",
+  "server": false
 }

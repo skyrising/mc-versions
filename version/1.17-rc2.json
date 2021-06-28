@@ -1,4 +1,5 @@
 {
+  "client": true,
   "id": "1.17-rc2",
   "manifests": [
     {
@@ -32,5 +33,10 @@
       "url": "https://skyrising.github.io/mc-versions/manifest/3/f/3c40ef043afd1f3c1b57b65812e503caff5c18/1.17-rc2.json"
     }
   ],
-  "releaseTime": "2021-06-07T11:46:28+00:00"
+  "protocol": {
+    "type": "netty-snapshot",
+    "version": 35
+  },
+  "releaseTime": "2021-06-07T11:46:28+00:00",
+  "server": true
 }

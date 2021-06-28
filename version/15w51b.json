@@ -1,4 +1,5 @@
 {
+  "client": true,
   "id": "15w51b",
   "manifests": [
     {
@@ -12,5 +13,10 @@
       "url": "https://skyrising.github.io/mc-versions/manifest/4/0/92fadc5f0bfb71c9579041e2f05bc00fb51f1e/15w51b.json"
     }
   ],
-  "releaseTime": "2015-12-17T15:30:41+00:00"
+  "protocol": {
+    "type": "netty",
+    "version": 94
+  },
+  "releaseTime": "2015-12-17T15:30:41+00:00",
+  "server": true
 }

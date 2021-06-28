@@ -1,4 +1,5 @@
 {
+  "client": true,
   "id": "1.8.2-pre1",
   "manifests": [
     {
@@ -12,5 +13,10 @@
       "url": "https://skyrising.github.io/mc-versions/manifest/7/b/a54a1ef7d0b9209c67fa8d4a6701f45b56bd0f/1.8.2-pre1.json"
     }
   ],
-  "releaseTime": "2014-12-18T11:29:41+00:00"
+  "protocol": {
+    "type": "netty",
+    "version": 47
+  },
+  "releaseTime": "2014-12-18T11:29:41+00:00",
+  "server": true
 }

@@ -1,4 +1,5 @@
 {
+  "client": true,
   "id": "1.5",
   "manifests": [
     {
@@ -12,5 +13,10 @@
       "url": "https://skyrising.github.io/mc-versions/manifest/0/2/f461146ce02227a8b6fa2062706580b660d2b3/1.5.json"
     }
   ],
-  "releaseTime": "2013-03-13T00:00:00+00:00"
+  "protocol": {
+    "type": "modern",
+    "version": 60
+  },
+  "releaseTime": "2013-03-13T00:00:00+00:00",
+  "server": true
 }

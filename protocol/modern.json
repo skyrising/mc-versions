@@ -1,0 +1,536 @@
+{
+  "type": "modern",
+  "versions": [
+    {
+      "version": 1,
+      "clients": [
+        "a1.0.17_02",
+        "a1.0.17_04",
+        "a1.0.17_03"
+      ],
+      "servers": []
+    },
+    {
+      "version": 2,
+      "clients": [
+        "a1.1.0-101847",
+        "a1.1.0-101847-launcher",
+        "a1.1.0-131933",
+        "a1.1.1",
+        "a1.1.2",
+        "a1.1.2_01"
+      ],
+      "servers": []
+    },
+    {
+      "version": 3,
+      "clients": [
+        "a1.2.0",
+        "a1.2.0_02-launcher",
+        "a1.2.0_01",
+        "a1.2.0_02",
+        "a1.2.1_01"
+      ],
+      "servers": []
+    },
+    {
+      "version": 4,
+      "clients": [
+        "a1.2.2-1624",
+        "a1.2.2-1938"
+      ],
+      "servers": []
+    },
+    {
+      "version": 5,
+      "clients": [
+        "a1.2.3",
+        "a1.2.3_01-0958",
+        "a1.2.3_02",
+        "a1.2.3_04"
+      ],
+      "servers": []
+    },
+    {
+      "version": 6,
+      "clients": [
+        "a1.2.4_01",
+        "a1.2.3_05",
+        "a1.2.5",
+        "a1.2.6"
+      ],
+      "servers": []
+    },
+    {
+      "version": 7,
+      "clients": [
+        "b1.0",
+        "b1.0_01",
+        "b1.0.2",
+        "b1.1-1244",
+        "b1.1_01",
+        "b1.1-1245"
+      ],
+      "servers": []
+    },
+    {
+      "version": 8,
+      "clients": [
+        "b1.1_02",
+        "b1.2",
+        "b1.2_01",
+        "b1.2_02-launcher",
+        "b1.2_02"
+      ],
+      "servers": []
+    },
+    {
+      "version": 9,
+      "clients": [
+        "b1.3-1723",
+        "b1.3-1750",
+        "b1.3_01"
+      ],
+      "servers": []
+    },
+    {
+      "version": 10,
+      "clients": [
+        "b1.4-1507",
+        "b1.4-1634",
+        "b1.4_01"
+      ],
+      "servers": []
+    },
+    {
+      "version": 11,
+      "clients": [
+        "b1.5",
+        "b1.5_01"
+      ],
+      "servers": []
+    },
+    {
+      "version": 12,
+      "clients": [
+        "b1.6-tb3"
+      ],
+      "servers": []
+    },
+    {
+      "version": 13,
+      "clients": [
+        "b1.6",
+        "b1.6.1",
+        "b1.6.2",
+        "b1.6.3",
+        "b1.6.4",
+        "b1.6.5",
+        "b1.6.6"
+      ],
+      "servers": []
+    },
+    {
+      "version": 14,
+      "clients": [
+        "b1.7",
+        "b1.7_01",
+        "b1.7.2",
+        "b1.7.3"
+      ],
+      "servers": []
+    },
+    {
+      "version": 15,
+      "clients": [
+        "b1.8-pre1-201109091557",
+        "b1.8-pre1-201109081659"
+      ],
+      "servers": []
+    },
+    {
+      "version": 16,
+      "clients": [
+        "b1.8-pre2"
+      ],
+      "servers": []
+    },
+    {
+      "version": 17,
+      "clients": [
+        "b1.8",
+        "b1.8.1"
+      ],
+      "servers": []
+    },
+    {
+      "version": 18,
+      "clients": [
+        "b1.9-pre1"
+      ],
+      "servers": []
+    },
+    {
+      "version": 19,
+      "clients": [
+        "b1.9-pre2",
+        "b1.9-pre3-201110061550",
+        "b1.9-pre3-201110061602"
+      ],
+      "servers": []
+    },
+    {
+      "version": 20,
+      "clients": [
+        "b1.9-pre4-201110131634"
+      ],
+      "servers": []
+    },
+    {
+      "version": 21,
+      "clients": [
+        "b1.9-pre5"
+      ],
+      "servers": []
+    },
+    {
+      "version": 22,
+      "clients": [
+        "b1.9-pre6",
+        "1.0.0-rc2-1",
+        "1.0.0-rc2-2",
+        "1.0.0-rc1",
+        "1.0.0-rc2-3",
+        "1.0.0"
+      ],
+      "servers": []
+    },
+    {
+      "version": 23,
+      "clients": [
+        "1.1"
+      ],
+      "servers": []
+    },
+    {
+      "version": 28,
+      "clients": [
+        "1.2.1",
+        "1.2.2",
+        "1.2.3"
+      ],
+      "servers": []
+    },
+    {
+      "version": 29,
+      "clients": [
+        "1.2.4",
+        "1.2.5"
+      ],
+      "servers": [
+        "1.2.5"
+      ]
+    },
+    {
+      "version": 39,
+      "clients": [
+        "1.3-pre-07261249",
+        "1.3.1",
+        "1.3.2"
+      ],
+      "servers": [
+        "1.3-pre-07261249",
+        "1.3.1",
+        "1.3.2"
+      ]
+    },
+    {
+      "version": 47,
+      "clients": [
+        "1.4-pre",
+        "1.4.1-pre-10231538",
+        "1.4.2"
+      ],
+      "servers": [
+        "1.4-pre",
+        "1.4.1-pre-10231538",
+        "1.4.2"
+      ]
+    },
+    {
+      "version": 48,
+      "clients": [
+        "1.4.3-pre"
+      ],
+      "servers": [
+        "1.4.3-pre"
+      ]
+    },
+    {
+      "version": 49,
+      "clients": [
+        "1.4.5",
+        "1.4.4"
+      ],
+      "servers": [
+        "1.4.5",
+        "1.4.4"
+      ]
+    },
+    {
+      "version": 51,
+      "clients": [
+        "1.4.6",
+        "1.4.7"
+      ],
+      "servers": [
+        "1.4.6",
+        "1.4.7"
+      ]
+    },
+    {
+      "version": 60,
+      "clients": [
+        "1.5",
+        "1.5.1"
+      ],
+      "servers": [
+        "1.5",
+        "1.5.1"
+      ]
+    },
+    {
+      "version": 61,
+      "clients": [
+        "1.5.2"
+      ],
+      "servers": [
+        "1.5.2"
+      ]
+    },
+    {
+      "version": 62,
+      "clients": [
+        "13w16a-04192037"
+      ],
+      "servers": [
+        "13w16a-04192037"
+      ]
+    },
+    {
+      "version": 63,
+      "clients": [
+        "13w16b-04232151"
+      ],
+      "servers": [
+        "13w16b-04232151"
+      ]
+    },
+    {
+      "version": 64,
+      "clients": [
+        "13w17a"
+      ],
+      "servers": [
+        "13w17a"
+      ]
+    },
+    {
+      "version": 65,
+      "clients": [
+        "13w18a",
+        "13w18b",
+        "13w18c"
+      ],
+      "servers": [
+        "13w18a",
+        "13w18b",
+        "13w18c"
+      ]
+    },
+    {
+      "version": 66,
+      "clients": [
+        "13w19a"
+      ],
+      "servers": [
+        "13w19a"
+      ]
+    },
+    {
+      "version": 67,
+      "clients": [
+        "13w21a",
+        "13w21b",
+        "13w22a",
+        "13w23a"
+      ],
+      "servers": [
+        "13w21a",
+        "13w21b",
+        "13w22a",
+        "13w23a"
+      ]
+    },
+    {
+      "version": 68,
+      "clients": [
+        "13w23b-06080101"
+      ],
+      "servers": [
+        "13w23b-06080101"
+      ]
+    },
+    {
+      "version": 69,
+      "clients": [
+        "13w24a"
+      ],
+      "servers": [
+        "13w24a"
+      ]
+    },
+    {
+      "version": 70,
+      "clients": [
+        "13w24b"
+      ],
+      "servers": [
+        "13w24b"
+      ]
+    },
+    {
+      "version": 71,
+      "clients": [
+        "13w25a",
+        "13w25b",
+        "13w25c"
+      ],
+      "servers": [
+        "13w25a",
+        "13w25b",
+        "13w25c"
+      ]
+    },
+    {
+      "version": 72,
+      "clients": [
+        "13w26a"
+      ],
+      "servers": [
+        "13w26a"
+      ]
+    },
+    {
+      "version": 73,
+      "clients": [
+        "1.6-pre-06251516",
+        "1.6.1"
+      ],
+      "servers": [
+        "1.6-pre-06251516",
+        "1.6.1"
+      ]
+    },
+    {
+      "version": 74,
+      "clients": [
+        "1.6.2-091847"
+      ],
+      "servers": [
+        "1.6.2-091847"
+      ]
+    },
+    {
+      "version": 75,
+      "clients": [
+        "13w36a-09051446",
+        "13w36b-09061310"
+      ],
+      "servers": [
+        "13w36a-09051446",
+        "13w36b-09061310"
+      ]
+    },
+    {
+      "version": 76,
+      "clients": [
+        "13w37a",
+        "13w37b"
+      ],
+      "servers": [
+        "13w37a",
+        "13w37b"
+      ]
+    },
+    {
+      "version": 77,
+      "clients": [
+        "1.6.3-pre-2"
+      ],
+      "servers": [
+        "1.6.3-pre-2"
+      ]
+    },
+    {
+      "version": 78,
+      "clients": [
+        "1.6.4"
+      ],
+      "servers": [
+        "1.6.4"
+      ]
+    },
+    {
+      "version": 79,
+      "clients": [
+        "13w38a",
+        "13w38b",
+        "13w38c"
+      ],
+      "servers": [
+        "13w38a",
+        "13w38b",
+        "13w38c"
+      ]
+    },
+    {
+      "version": 80,
+      "clients": [
+        "13w39a",
+        "13w39b"
+      ],
+      "servers": [
+        "13w39a",
+        "13w39b"
+      ]
+    },
+    {
+      "version": 90,
+      "clients": [
+        "af-2013-blue"
+      ],
+      "servers": [
+        "af-2013-blue"
+      ]
+    },
+    {
+      "version": 91,
+      "clients": [
+        "af-2013-red"
+      ],
+      "servers": [
+        "af-2013-red"
+      ]
+    },
+    {
+      "version": 92,
+      "clients": [
+        "af-2013-purple"
+      ],
+      "servers": [
+        "af-2013-purple"
+      ]
+    }
+  ]
+}

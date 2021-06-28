@@ -1,4 +1,5 @@
 {
+  "client": true,
   "id": "21w10a",
   "manifests": [
     {
@@ -192,5 +193,10 @@
       "url": "https://skyrising.github.io/mc-versions/manifest/2/8/3f84f321bf11bce0af78e5ea39871b16d0af7d/21w10a.json"
     }
   ],
-  "releaseTime": "2021-03-10T15:24:38+00:00"
+  "protocol": {
+    "type": "netty-snapshot",
+    "version": 18
+  },
+  "releaseTime": "2021-03-10T15:24:38+00:00",
+  "server": true
 }

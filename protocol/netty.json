@@ -1,0 +1,3312 @@
+{
+  "type": "netty",
+  "versions": [
+    {
+      "version": 0,
+      "clients": [
+        "13w41a",
+        "13w41b-2"
+      ],
+      "servers": [
+        "13w41a",
+        "13w41b-2"
+      ]
+    },
+    {
+      "version": 1,
+      "clients": [
+        "13w42a",
+        "13w42b"
+      ],
+      "servers": [
+        "13w42a",
+        "13w42b"
+      ]
+    },
+    {
+      "version": 2,
+      "clients": [
+        "13w43a"
+      ],
+      "servers": [
+        "13w43a"
+      ]
+    },
+    {
+      "version": 3,
+      "clients": [
+        "1.7-pre",
+        "1.7.1-pre"
+      ],
+      "servers": [
+        "1.7-pre",
+        "1.7.1-pre"
+      ]
+    },
+    {
+      "version": 4,
+      "clients": [
+        "1.7.2",
+        "13w47a",
+        "13w47b",
+        "13w47c",
+        "13w47d",
+        "13w47e",
+        "13w48a",
+        "13w48b",
+        "13w49a",
+        "1.7.3-pre",
+        "1.7.4",
+        "1.7.5"
+      ],
+      "servers": [
+        "1.7.2",
+        "13w47a",
+        "13w47b",
+        "13w47c",
+        "13w47d",
+        "13w47e",
+        "13w48a",
+        "13w48b",
+        "13w49a",
+        "1.7.3-pre",
+        "1.7.4",
+        "1.7.5"
+      ]
+    },
+    {
+      "version": 5,
+      "clients": [
+        "14w02a",
+        "14w02b",
+        "14w02c",
+        "1.7.6-pre1",
+        "1.7.6-pre2",
+        "1.7.6",
+        "1.7.7-101331",
+        "1.7.8",
+        "1.7.9",
+        "1.7.10-pre1",
+        "1.7.10-pre2",
+        "1.7.10-pre3",
+        "1.7.10-pre4",
+        "1.7.10"
+      ],
+      "servers": [
+        "14w02a",
+        "14w02b",
+        "14w02c",
+        "1.7.6-pre1",
+        "1.7.6-pre2",
+        "1.7.6",
+        "1.7.7-101331",
+        "1.7.8",
+        "1.7.9",
+        "1.7.10-pre1",
+        "1.7.10-pre2",
+        "1.7.10-pre3",
+        "1.7.10-pre4",
+        "1.7.10"
+      ]
+    },
+    {
+      "version": 6,
+      "clients": [
+        "14w03a",
+        "14w03b"
+      ],
+      "servers": [
+        "14w03a",
+        "14w03b"
+      ]
+    },
+    {
+      "version": 7,
+      "clients": [
+        "14w04a"
+      ],
+      "servers": [
+        "14w04a"
+      ]
+    },
+    {
+      "version": 8,
+      "clients": [
+        "14w04b-2"
+      ],
+      "servers": [
+        "14w04b-2"
+      ]
+    },
+    {
+      "version": 9,
+      "clients": [
+        "14w05a",
+        "14w05b"
+      ],
+      "servers": [
+        "14w05a",
+        "14w05b"
+      ]
+    },
+    {
+      "version": 10,
+      "clients": [
+        "14w06a",
+        "14w06b"
+      ],
+      "servers": [
+        "14w06a",
+        "14w06b"
+      ]
+    },
+    {
+      "version": 11,
+      "clients": [
+        "14w07a"
+      ],
+      "servers": [
+        "14w07a"
+      ]
+    },
+    {
+      "version": 12,
+      "clients": [
+        "14w08a"
+      ],
+      "servers": [
+        "14w08a"
+      ]
+    },
+    {
+      "version": 13,
+      "clients": [
+        "14w10a",
+        "14w10b",
+        "14w10c"
+      ],
+      "servers": [
+        "14w10a",
+        "14w10b",
+        "14w10c"
+      ]
+    },
+    {
+      "version": 14,
+      "clients": [
+        "14w11a",
+        "14w11b"
+      ],
+      "servers": [
+        "14w11a",
+        "14w11b"
+      ]
+    },
+    {
+      "version": 15,
+      "clients": [
+        "14w17a"
+      ],
+      "servers": [
+        "14w17a"
+      ]
+    },
+    {
+      "version": 16,
+      "clients": [
+        "14w18a",
+        "14w18b"
+      ],
+      "servers": [
+        "14w18a",
+        "14w18b"
+      ]
+    },
+    {
+      "version": 17,
+      "clients": [
+        "14w19a"
+      ],
+      "servers": [
+        "14w19a"
+      ]
+    },
+    {
+      "version": 18,
+      "clients": [
+        "14w20a",
+        "14w20b"
+      ],
+      "servers": [
+        "14w20a",
+        "14w20b"
+      ]
+    },
+    {
+      "version": 19,
+      "clients": [
+        "14w21a"
+      ],
+      "servers": [
+        "14w21a"
+      ]
+    },
+    {
+      "version": 20,
+      "clients": [
+        "14w21b"
+      ],
+      "servers": [
+        "14w21b"
+      ]
+    },
+    {
+      "version": 21,
+      "clients": [
+        "14w25a"
+      ],
+      "servers": [
+        "14w25a"
+      ]
+    },
+    {
+      "version": 22,
+      "clients": [
+        "14w25b"
+      ],
+      "servers": [
+        "14w25b"
+      ]
+    },
+    {
+      "version": 23,
+      "clients": [
+        "14w26a"
+      ],
+      "servers": [
+        "14w26a"
+      ]
+    },
+    {
+      "version": 24,
+      "clients": [
+        "14w26b"
+      ],
+      "servers": [
+        "14w26b"
+      ]
+    },
+    {
+      "version": 25,
+      "clients": [
+        "14w26c"
+      ],
+      "servers": [
+        "14w26c"
+      ]
+    },
+    {
+      "version": 26,
+      "clients": [
+        "14w27a",
+        "14w27b-07021646"
+      ],
+      "servers": [
+        "14w27a",
+        "14w27b-07021646"
+      ]
+    },
+    {
+      "version": 27,
+      "clients": [
+        "14w28a"
+      ],
+      "servers": [
+        "14w28a"
+      ]
+    },
+    {
+      "version": 28,
+      "clients": [
+        "14w28b"
+      ],
+      "servers": [
+        "14w28b"
+      ]
+    },
+    {
+      "version": 29,
+      "clients": [
+        "14w29a",
+        "14w29b"
+      ],
+      "servers": [
+        "14w29a",
+        "14w29b"
+      ]
+    },
+    {
+      "version": 30,
+      "clients": [
+        "14w30a",
+        "14w30b"
+      ],
+      "servers": [
+        "14w30a",
+        "14w30b"
+      ]
+    },
+    {
+      "version": 31,
+      "clients": [
+        "14w30c"
+      ],
+      "servers": [
+        "14w30c"
+      ]
+    },
+    {
+      "version": 32,
+      "clients": [
+        "14w31a"
+      ],
+      "servers": [
+        "14w31a"
+      ]
+    },
+    {
+      "version": 33,
+      "clients": [
+        "14w32a"
+      ],
+      "servers": [
+        "14w32a"
+      ]
+    },
+    {
+      "version": 34,
+      "clients": [
+        "14w32b"
+      ],
+      "servers": [
+        "14w32b"
+      ]
+    },
+    {
+      "version": 35,
+      "clients": [
+        "14w32c"
+      ],
+      "servers": [
+        "14w32c"
+      ]
+    },
+    {
+      "version": 36,
+      "clients": [
+        "14w32d"
+      ],
+      "servers": [
+        "14w32d"
+      ]
+    },
+    {
+      "version": 37,
+      "clients": [
+        "14w33a"
+      ],
+      "servers": [
+        "14w33a"
+      ]
+    },
+    {
+      "version": 38,
+      "clients": [
+        "14w33b"
+      ],
+      "servers": [
+        "14w33b"
+      ]
+    },
+    {
+      "version": 39,
+      "clients": [
+        "14w33c"
+      ],
+      "servers": [
+        "14w33c"
+      ]
+    },
+    {
+      "version": 40,
+      "clients": [
+        "14w34a"
+      ],
+      "servers": [
+        "14w34a"
+      ]
+    },
+    {
+      "version": 41,
+      "clients": [
+        "14w34b"
+      ],
+      "servers": [
+        "14w34b"
+      ]
+    },
+    {
+      "version": 42,
+      "clients": [
+        "14w34c-08191549"
+      ],
+      "servers": [
+        "14w34c-08191549"
+      ]
+    },
+    {
+      "version": 43,
+      "clients": [
+        "14w34d"
+      ],
+      "servers": [
+        "14w34d"
+      ]
+    },
+    {
+      "version": 44,
+      "clients": [
+        "1.8-pre1"
+      ],
+      "servers": [
+        "1.8-pre1"
+      ]
+    },
+    {
+      "version": 45,
+      "clients": [
+        "1.8-pre2"
+      ],
+      "servers": [
+        "1.8-pre2"
+      ]
+    },
+    {
+      "version": 46,
+      "clients": [
+        "1.8-pre3"
+      ],
+      "servers": [
+        "1.8-pre3"
+      ]
+    },
+    {
+      "version": 47,
+      "clients": [
+        "1.8",
+        "1.8.1-pre1",
+        "1.8.1-pre2",
+        "1.8.1-pre3",
+        "1.8.1-pre4",
+        "1.8.1-pre5",
+        "1.8.1",
+        "1.8.2-pre1",
+        "1.8.2-pre2",
+        "1.8.2-pre3",
+        "1.8.2-pre4",
+        "1.8.2-pre5",
+        "1.8.2-pre6",
+        "1.8.2-pre7",
+        "1.8.2",
+        "1.8.3",
+        "1.8.4",
+        "1.8.5",
+        "1.8.6",
+        "1.8.7",
+        "1.8.8",
+        "1.8.9"
+      ],
+      "servers": [
+        "1.8",
+        "1.8.1-pre1",
+        "1.8.1-pre2",
+        "1.8.1-pre3",
+        "1.8.1-pre4",
+        "1.8.1-pre5",
+        "1.8.1",
+        "1.8.2-pre1",
+        "1.8.2-pre2",
+        "1.8.2-pre3",
+        "1.8.2-pre4",
+        "1.8.2-pre5",
+        "1.8.2-pre6",
+        "1.8.2-pre7",
+        "1.8.2",
+        "1.8.3",
+        "1.8.4",
+        "1.8.5",
+        "1.8.6",
+        "1.8.7",
+        "1.8.8",
+        "1.8.9"
+      ]
+    },
+    {
+      "version": 48,
+      "clients": [
+        "af-2015"
+      ],
+      "servers": [
+        "af-2015"
+      ]
+    },
+    {
+      "version": 49,
+      "clients": [
+        "15w31a"
+      ],
+      "servers": [
+        "15w31a"
+      ]
+    },
+    {
+      "version": 50,
+      "clients": [
+        "15w31b"
+      ],
+      "servers": [
+        "15w31b"
+      ]
+    },
+    {
+      "version": 51,
+      "clients": [
+        "15w31c"
+      ],
+      "servers": [
+        "15w31c"
+      ]
+    },
+    {
+      "version": 52,
+      "clients": [
+        "15w32a"
+      ],
+      "servers": [
+        "15w32a"
+      ]
+    },
+    {
+      "version": 53,
+      "clients": [
+        "15w32b"
+      ],
+      "servers": [
+        "15w32b"
+      ]
+    },
+    {
+      "version": 54,
+      "clients": [
+        "15w32c"
+      ],
+      "servers": [
+        "15w32c"
+      ]
+    },
+    {
+      "version": 55,
+      "clients": [
+        "15w33a"
+      ],
+      "servers": [
+        "15w33a"
+      ]
+    },
+    {
+      "version": 56,
+      "clients": [
+        "15w33b"
+      ],
+      "servers": [
+        "15w33b"
+      ]
+    },
+    {
+      "version": 57,
+      "clients": [
+        "15w33c"
+      ],
+      "servers": [
+        "15w33c"
+      ]
+    },
+    {
+      "version": 58,
+      "clients": [
+        "15w34a"
+      ],
+      "servers": [
+        "15w34a"
+      ]
+    },
+    {
+      "version": 59,
+      "clients": [
+        "15w34b"
+      ],
+      "servers": [
+        "15w34b"
+      ]
+    },
+    {
+      "version": 60,
+      "clients": [
+        "15w34c"
+      ],
+      "servers": [
+        "15w34c"
+      ]
+    },
+    {
+      "version": 61,
+      "clients": [
+        "15w34d"
+      ],
+      "servers": [
+        "15w34d"
+      ]
+    },
+    {
+      "version": 62,
+      "clients": [
+        "15w35a"
+      ],
+      "servers": [
+        "15w35a"
+      ]
+    },
+    {
+      "version": 63,
+      "clients": [
+        "15w35b"
+      ],
+      "servers": [
+        "15w35b"
+      ]
+    },
+    {
+      "version": 64,
+      "clients": [
+        "15w35c"
+      ],
+      "servers": [
+        "15w35c"
+      ]
+    },
+    {
+      "version": 65,
+      "clients": [
+        "15w35d"
+      ],
+      "servers": [
+        "15w35d"
+      ]
+    },
+    {
+      "version": 66,
+      "clients": [
+        "15w35e"
+      ],
+      "servers": [
+        "15w35e"
+      ]
+    },
+    {
+      "version": 67,
+      "clients": [
+        "15w36a"
+      ],
+      "servers": [
+        "15w36a"
+      ]
+    },
+    {
+      "version": 68,
+      "clients": [
+        "15w36b"
+      ],
+      "servers": [
+        "15w36b"
+      ]
+    },
+    {
+      "version": 69,
+      "clients": [
+        "15w36c"
+      ],
+      "servers": [
+        "15w36c"
+      ]
+    },
+    {
+      "version": 70,
+      "clients": [
+        "15w36d"
+      ],
+      "servers": [
+        "15w36d"
+      ]
+    },
+    {
+      "version": 71,
+      "clients": [
+        "15w37a"
+      ],
+      "servers": [
+        "15w37a"
+      ]
+    },
+    {
+      "version": 72,
+      "clients": [
+        "15w38a"
+      ],
+      "servers": [
+        "15w38a"
+      ]
+    },
+    {
+      "version": 73,
+      "clients": [
+        "15w38b"
+      ],
+      "servers": [
+        "15w38b"
+      ]
+    },
+    {
+      "version": 74,
+      "clients": [
+        "15w39a",
+        "15w39b",
+        "15w39c"
+      ],
+      "servers": [
+        "15w39a",
+        "15w39b",
+        "15w39c"
+      ]
+    },
+    {
+      "version": 75,
+      "clients": [
+        "15w40a"
+      ],
+      "servers": [
+        "15w40a"
+      ]
+    },
+    {
+      "version": 76,
+      "clients": [
+        "15w40b"
+      ],
+      "servers": [
+        "15w40b"
+      ]
+    },
+    {
+      "version": 77,
+      "clients": [
+        "15w41a"
+      ],
+      "servers": [
+        "15w41a"
+      ]
+    },
+    {
+      "version": 78,
+      "clients": [
+        "15w41b"
+      ],
+      "servers": [
+        "15w41b"
+      ]
+    },
+    {
+      "version": 79,
+      "clients": [
+        "15w42a"
+      ],
+      "servers": [
+        "15w42a"
+      ]
+    },
+    {
+      "version": 80,
+      "clients": [
+        "15w43a"
+      ],
+      "servers": [
+        "15w43a"
+      ]
+    },
+    {
+      "version": 81,
+      "clients": [
+        "15w43b"
+      ],
+      "servers": [
+        "15w43b"
+      ]
+    },
+    {
+      "version": 82,
+      "clients": [
+        "15w43c"
+      ],
+      "servers": [
+        "15w43c"
+      ]
+    },
+    {
+      "version": 83,
+      "clients": [
+        "15w44a"
+      ],
+      "servers": [
+        "15w44a"
+      ]
+    },
+    {
+      "version": 84,
+      "clients": [
+        "15w44b"
+      ],
+      "servers": [
+        "15w44b"
+      ]
+    },
+    {
+      "version": 85,
+      "clients": [
+        "15w45a"
+      ],
+      "servers": [
+        "15w45a"
+      ]
+    },
+    {
+      "version": 86,
+      "clients": [
+        "15w46a"
+      ],
+      "servers": [
+        "15w46a"
+      ]
+    },
+    {
+      "version": 87,
+      "clients": [
+        "15w47a"
+      ],
+      "servers": [
+        "15w47a"
+      ]
+    },
+    {
+      "version": 88,
+      "clients": [
+        "15w47b"
+      ],
+      "servers": [
+        "15w47b"
+      ]
+    },
+    {
+      "version": 89,
+      "clients": [
+        "15w47c"
+      ],
+      "servers": [
+        "15w47c"
+      ]
+    },
+    {
+      "version": 90,
+      "clients": [
+        "15w49a"
+      ],
+      "servers": [
+        "15w49a"
+      ]
+    },
+    {
+      "version": 91,
+      "clients": [
+        "15w49b"
+      ],
+      "servers": [
+        "15w49b"
+      ]
+    },
+    {
+      "version": 92,
+      "clients": [
+        "15w50a"
+      ],
+      "servers": [
+        "15w50a"
+      ]
+    },
+    {
+      "version": 93,
+      "clients": [
+        "15w51a"
+      ],
+      "servers": [
+        "15w51a"
+      ]
+    },
+    {
+      "version": 94,
+      "clients": [
+        "15w51b"
+      ],
+      "servers": [
+        "15w51b"
+      ]
+    },
+    {
+      "version": 95,
+      "clients": [
+        "16w02a"
+      ],
+      "servers": [
+        "16w02a"
+      ]
+    },
+    {
+      "version": 96,
+      "clients": [
+        "16w03a"
+      ],
+      "servers": [
+        "16w03a"
+      ]
+    },
+    {
+      "version": 97,
+      "clients": [
+        "16w04a"
+      ],
+      "servers": [
+        "16w04a"
+      ]
+    },
+    {
+      "version": 98,
+      "clients": [
+        "16w05a"
+      ],
+      "servers": [
+        "16w05a"
+      ]
+    },
+    {
+      "version": 99,
+      "clients": [
+        "16w05b"
+      ],
+      "servers": [
+        "16w05b"
+      ]
+    },
+    {
+      "version": 100,
+      "clients": [
+        "16w06a"
+      ],
+      "servers": [
+        "16w06a"
+      ]
+    },
+    {
+      "version": 101,
+      "clients": [
+        "16w07a"
+      ],
+      "servers": [
+        "16w07a"
+      ]
+    },
+    {
+      "version": 102,
+      "clients": [
+        "16w07b"
+      ],
+      "servers": [
+        "16w07b"
+      ]
+    },
+    {
+      "version": 103,
+      "clients": [
+        "1.9-pre1"
+      ],
+      "servers": [
+        "1.9-pre1"
+      ]
+    },
+    {
+      "version": 104,
+      "clients": [
+        "1.9-pre2"
+      ],
+      "servers": [
+        "1.9-pre2"
+      ]
+    },
+    {
+      "version": 105,
+      "clients": [
+        "1.9-pre3"
+      ],
+      "servers": [
+        "1.9-pre3"
+      ]
+    },
+    {
+      "version": 106,
+      "clients": [
+        "1.9-pre4"
+      ],
+      "servers": [
+        "1.9-pre4"
+      ]
+    },
+    {
+      "version": 107,
+      "clients": [
+        "1.9",
+        "1.9.1-pre1"
+      ],
+      "servers": [
+        "1.9",
+        "1.9.1-pre1"
+      ]
+    },
+    {
+      "version": 108,
+      "clients": [
+        "1.9.1-pre2",
+        "1.9.1-pre3",
+        "1.9.1"
+      ],
+      "servers": [
+        "1.9.1-pre2",
+        "1.9.1-pre3",
+        "1.9.1"
+      ]
+    },
+    {
+      "version": 109,
+      "clients": [
+        "1.9.2",
+        "16w14a",
+        "16w15a",
+        "16w15b",
+        "1.9.3-pre1"
+      ],
+      "servers": [
+        "1.9.2",
+        "16w14a",
+        "16w15a",
+        "16w15b",
+        "1.9.3-pre1"
+      ]
+    },
+    {
+      "version": 110,
+      "clients": [
+        "1.9.3-pre2",
+        "1.9.3-pre3",
+        "1.9.3",
+        "1.9.4"
+      ],
+      "servers": [
+        "1.9.3-pre2",
+        "1.9.3-pre3",
+        "1.9.3",
+        "1.9.4"
+      ]
+    },
+    {
+      "version": 201,
+      "clients": [
+        "16w20a"
+      ],
+      "servers": [
+        "16w20a"
+      ]
+    },
+    {
+      "version": 202,
+      "clients": [
+        "16w21a"
+      ],
+      "servers": [
+        "16w21a"
+      ]
+    },
+    {
+      "version": 203,
+      "clients": [
+        "16w21b"
+      ],
+      "servers": [
+        "16w21b"
+      ]
+    },
+    {
+      "version": 204,
+      "clients": [
+        "1.10-pre1"
+      ],
+      "servers": [
+        "1.10-pre1"
+      ]
+    },
+    {
+      "version": 205,
+      "clients": [
+        "1.10-pre2"
+      ],
+      "servers": [
+        "1.10-pre2"
+      ]
+    },
+    {
+      "version": 210,
+      "clients": [
+        "1.10",
+        "1.10.1",
+        "1.10.2"
+      ],
+      "servers": [
+        "1.10",
+        "1.10.1",
+        "1.10.2"
+      ]
+    },
+    {
+      "version": 301,
+      "clients": [
+        "16w32a"
+      ],
+      "servers": [
+        "16w32a"
+      ]
+    },
+    {
+      "version": 302,
+      "clients": [
+        "16w32b"
+      ],
+      "servers": [
+        "16w32b"
+      ]
+    },
+    {
+      "version": 303,
+      "clients": [
+        "16w33a"
+      ],
+      "servers": [
+        "16w33a"
+      ]
+    },
+    {
+      "version": 304,
+      "clients": [
+        "16w35a"
+      ],
+      "servers": [
+        "16w35a"
+      ]
+    },
+    {
+      "version": 305,
+      "clients": [
+        "16w36a"
+      ],
+      "servers": [
+        "16w36a"
+      ]
+    },
+    {
+      "version": 306,
+      "clients": [
+        "16w38a"
+      ],
+      "servers": [
+        "16w38a"
+      ]
+    },
+    {
+      "version": 307,
+      "clients": [
+        "16w39a",
+        "16w39b"
+      ],
+      "servers": [
+        "16w39a",
+        "16w39b"
+      ]
+    },
+    {
+      "version": 309,
+      "clients": [
+        "16w39c"
+      ],
+      "servers": [
+        "16w39c"
+      ]
+    },
+    {
+      "version": 310,
+      "clients": [
+        "16w40a"
+      ],
+      "servers": [
+        "16w40a"
+      ]
+    },
+    {
+      "version": 311,
+      "clients": [
+        "16w41a"
+      ],
+      "servers": [
+        "16w41a"
+      ]
+    },
+    {
+      "version": 312,
+      "clients": [
+        "16w42a"
+      ],
+      "servers": [
+        "16w42a"
+      ]
+    },
+    {
+      "version": 313,
+      "clients": [
+        "16w43a",
+        "16w44a"
+      ],
+      "servers": [
+        "16w43a",
+        "16w44a"
+      ]
+    },
+    {
+      "version": 314,
+      "clients": [
+        "1.11-pre1"
+      ],
+      "servers": [
+        "1.11-pre1"
+      ]
+    },
+    {
+      "version": 315,
+      "clients": [
+        "1.11"
+      ],
+      "servers": [
+        "1.11"
+      ]
+    },
+    {
+      "version": 316,
+      "clients": [
+        "16w50a-2",
+        "1.11.1",
+        "1.11.2"
+      ],
+      "servers": [
+        "16w50a-2",
+        "1.11.1",
+        "1.11.2"
+      ]
+    },
+    {
+      "version": 317,
+      "clients": [
+        "17w06a"
+      ],
+      "servers": [
+        "17w06a"
+      ]
+    },
+    {
+      "version": 318,
+      "clients": [
+        "17w13a"
+      ],
+      "servers": [
+        "17w13a"
+      ]
+    },
+    {
+      "version": 319,
+      "clients": [
+        "17w13b"
+      ],
+      "servers": [
+        "17w13b"
+      ]
+    },
+    {
+      "version": 320,
+      "clients": [
+        "17w14a"
+      ],
+      "servers": [
+        "17w14a"
+      ]
+    },
+    {
+      "version": 321,
+      "clients": [
+        "17w15a"
+      ],
+      "servers": [
+        "17w15a"
+      ]
+    },
+    {
+      "version": 322,
+      "clients": [
+        "17w16a"
+      ],
+      "servers": [
+        "17w16a"
+      ]
+    },
+    {
+      "version": 323,
+      "clients": [
+        "17w16b"
+      ],
+      "servers": [
+        "17w16b"
+      ]
+    },
+    {
+      "version": 324,
+      "clients": [
+        "17w17a"
+      ],
+      "servers": [
+        "17w17a"
+      ]
+    },
+    {
+      "version": 325,
+      "clients": [
+        "17w17b"
+      ],
+      "servers": [
+        "17w17b"
+      ]
+    },
+    {
+      "version": 326,
+      "clients": [
+        "17w18a"
+      ],
+      "servers": [
+        "17w18a"
+      ]
+    },
+    {
+      "version": 327,
+      "clients": [
+        "17w18b"
+      ],
+      "servers": [
+        "17w18b"
+      ]
+    },
+    {
+      "version": 328,
+      "clients": [
+        "1.12-pre1"
+      ],
+      "servers": [
+        "1.12-pre1"
+      ]
+    },
+    {
+      "version": 329,
+      "clients": [
+        "1.12-pre2"
+      ],
+      "servers": [
+        "1.12-pre2"
+      ]
+    },
+    {
+      "version": 330,
+      "clients": [
+        "1.12-pre3"
+      ],
+      "servers": [
+        "1.12-pre3"
+      ]
+    },
+    {
+      "version": 331,
+      "clients": [
+        "1.12-pre4"
+      ],
+      "servers": [
+        "1.12-pre4"
+      ]
+    },
+    {
+      "version": 332,
+      "clients": [
+        "1.12-pre5"
+      ],
+      "servers": [
+        "1.12-pre5"
+      ]
+    },
+    {
+      "version": 333,
+      "clients": [
+        "1.12-pre6"
+      ],
+      "servers": [
+        "1.12-pre6"
+      ]
+    },
+    {
+      "version": 334,
+      "clients": [
+        "1.12-pre7"
+      ],
+      "servers": [
+        "1.12-pre7"
+      ]
+    },
+    {
+      "version": 335,
+      "clients": [
+        "1.12"
+      ],
+      "servers": [
+        "1.12"
+      ]
+    },
+    {
+      "version": 336,
+      "clients": [
+        "17w31a"
+      ],
+      "servers": [
+        "17w31a"
+      ]
+    },
+    {
+      "version": 337,
+      "clients": [
+        "1.12.1-pre1"
+      ],
+      "servers": [
+        "1.12.1-pre1"
+      ]
+    },
+    {
+      "version": 338,
+      "clients": [
+        "1.12.1"
+      ],
+      "servers": [
+        "1.12.1"
+      ]
+    },
+    {
+      "version": 339,
+      "clients": [
+        "1.12.2-pre1",
+        "1.12.2-pre2"
+      ],
+      "servers": [
+        "1.12.2-pre1",
+        "1.12.2-pre2"
+      ]
+    },
+    {
+      "version": 340,
+      "clients": [
+        "1.12.2"
+      ],
+      "servers": [
+        "1.12.2"
+      ]
+    },
+    {
+      "version": 341,
+      "clients": [
+        "17w43a"
+      ],
+      "servers": [
+        "17w43a"
+      ]
+    },
+    {
+      "version": 342,
+      "clients": [
+        "17w43b"
+      ],
+      "servers": [
+        "17w43b"
+      ]
+    },
+    {
+      "version": 343,
+      "clients": [
+        "17w45a"
+      ],
+      "servers": [
+        "17w45a"
+      ]
+    },
+    {
+      "version": 344,
+      "clients": [
+        "17w45b"
+      ],
+      "servers": [
+        "17w45b"
+      ]
+    },
+    {
+      "version": 345,
+      "clients": [
+        "17w46a"
+      ],
+      "servers": [
+        "17w46a"
+      ]
+    },
+    {
+      "version": 346,
+      "clients": [
+        "17w47a"
+      ],
+      "servers": [
+        "17w47a"
+      ]
+    },
+    {
+      "version": 347,
+      "clients": [
+        "17w47b"
+      ],
+      "servers": [
+        "17w47b"
+      ]
+    },
+    {
+      "version": 348,
+      "clients": [
+        "17w48a"
+      ],
+      "servers": [
+        "17w48a"
+      ]
+    },
+    {
+      "version": 349,
+      "clients": [
+        "17w49a"
+      ],
+      "servers": [
+        "17w49a"
+      ]
+    },
+    {
+      "version": 350,
+      "clients": [
+        "17w49b"
+      ],
+      "servers": [
+        "17w49b"
+      ]
+    },
+    {
+      "version": 351,
+      "clients": [
+        "17w50a"
+      ],
+      "servers": [
+        "17w50a"
+      ]
+    },
+    {
+      "version": 352,
+      "clients": [
+        "18w01a"
+      ],
+      "servers": [
+        "18w01a"
+      ]
+    },
+    {
+      "version": 353,
+      "clients": [
+        "18w02a"
+      ],
+      "servers": [
+        "18w02a"
+      ]
+    },
+    {
+      "version": 354,
+      "clients": [
+        "18w03a"
+      ],
+      "servers": [
+        "18w03a"
+      ]
+    },
+    {
+      "version": 355,
+      "clients": [
+        "18w03b"
+      ],
+      "servers": [
+        "18w03b"
+      ]
+    },
+    {
+      "version": 356,
+      "clients": [
+        "18w05a"
+      ],
+      "servers": [
+        "18w05a"
+      ]
+    },
+    {
+      "version": 357,
+      "clients": [
+        "18w06a"
+      ],
+      "servers": [
+        "18w06a"
+      ]
+    },
+    {
+      "version": 358,
+      "clients": [
+        "18w07a"
+      ],
+      "servers": [
+        "18w07a"
+      ]
+    },
+    {
+      "version": 359,
+      "clients": [
+        "18w07b"
+      ],
+      "servers": [
+        "18w07b"
+      ]
+    },
+    {
+      "version": 360,
+      "clients": [
+        "18w07c"
+      ],
+      "servers": [
+        "18w07c"
+      ]
+    },
+    {
+      "version": 361,
+      "clients": [
+        "18w08a"
+      ],
+      "servers": [
+        "18w08a"
+      ]
+    },
+    {
+      "version": 362,
+      "clients": [
+        "18w08b"
+      ],
+      "servers": [
+        "18w08b"
+      ]
+    },
+    {
+      "version": 363,
+      "clients": [
+        "18w09a"
+      ],
+      "servers": [
+        "18w09a"
+      ]
+    },
+    {
+      "version": 364,
+      "clients": [
+        "18w10a"
+      ],
+      "servers": [
+        "18w10a"
+      ]
+    },
+    {
+      "version": 365,
+      "clients": [
+        "18w10b"
+      ],
+      "servers": [
+        "18w10b"
+      ]
+    },
+    {
+      "version": 366,
+      "clients": [
+        "18w10c"
+      ],
+      "servers": [
+        "18w10c"
+      ]
+    },
+    {
+      "version": 367,
+      "clients": [
+        "18w10d"
+      ],
+      "servers": [
+        "18w10d"
+      ]
+    },
+    {
+      "version": 368,
+      "clients": [
+        "18w11a"
+      ],
+      "servers": [
+        "18w11a"
+      ]
+    },
+    {
+      "version": 369,
+      "clients": [
+        "18w14a"
+      ],
+      "servers": [
+        "18w14a"
+      ]
+    },
+    {
+      "version": 370,
+      "clients": [
+        "18w14b"
+      ],
+      "servers": [
+        "18w14b"
+      ]
+    },
+    {
+      "version": 371,
+      "clients": [
+        "18w15a"
+      ],
+      "servers": [
+        "18w15a"
+      ]
+    },
+    {
+      "version": 372,
+      "clients": [
+        "18w16a"
+      ],
+      "servers": [
+        "18w16a"
+      ]
+    },
+    {
+      "version": 373,
+      "clients": [
+        "18w19a"
+      ],
+      "servers": [
+        "18w19a"
+      ]
+    },
+    {
+      "version": 374,
+      "clients": [
+        "18w19b"
+      ],
+      "servers": [
+        "18w19b"
+      ]
+    },
+    {
+      "version": 375,
+      "clients": [
+        "18w20a"
+      ],
+      "servers": [
+        "18w20a"
+      ]
+    },
+    {
+      "version": 376,
+      "clients": [
+        "18w20b"
+      ],
+      "servers": [
+        "18w20b"
+      ]
+    },
+    {
+      "version": 377,
+      "clients": [
+        "18w20c"
+      ],
+      "servers": [
+        "18w20c"
+      ]
+    },
+    {
+      "version": 378,
+      "clients": [
+        "18w21a"
+      ],
+      "servers": [
+        "18w21a"
+      ]
+    },
+    {
+      "version": 379,
+      "clients": [
+        "18w21b"
+      ],
+      "servers": [
+        "18w21b"
+      ]
+    },
+    {
+      "version": 380,
+      "clients": [
+        "18w22a"
+      ],
+      "servers": [
+        "18w22a"
+      ]
+    },
+    {
+      "version": 381,
+      "clients": [
+        "18w22b"
+      ],
+      "servers": [
+        "18w22b"
+      ]
+    },
+    {
+      "version": 382,
+      "clients": [
+        "18w22c"
+      ],
+      "servers": [
+        "18w22c"
+      ]
+    },
+    {
+      "version": 383,
+      "clients": [
+        "1.13-pre1"
+      ],
+      "servers": [
+        "1.13-pre1"
+      ]
+    },
+    {
+      "version": 384,
+      "clients": [
+        "1.13-pre2"
+      ],
+      "servers": [
+        "1.13-pre2"
+      ]
+    },
+    {
+      "version": 385,
+      "clients": [
+        "1.13-pre3"
+      ],
+      "servers": [
+        "1.13-pre3"
+      ]
+    },
+    {
+      "version": 386,
+      "clients": [
+        "1.13-pre4"
+      ],
+      "servers": [
+        "1.13-pre4"
+      ]
+    },
+    {
+      "version": 387,
+      "clients": [
+        "1.13-pre5"
+      ],
+      "servers": [
+        "1.13-pre5"
+      ]
+    },
+    {
+      "version": 388,
+      "clients": [
+        "1.13-pre6"
+      ],
+      "servers": [
+        "1.13-pre6"
+      ]
+    },
+    {
+      "version": 389,
+      "clients": [
+        "1.13-pre7"
+      ],
+      "servers": [
+        "1.13-pre7"
+      ]
+    },
+    {
+      "version": 390,
+      "clients": [
+        "1.13-pre8"
+      ],
+      "servers": [
+        "1.13-pre8"
+      ]
+    },
+    {
+      "version": 391,
+      "clients": [
+        "1.13-pre9"
+      ],
+      "servers": [
+        "1.13-pre9"
+      ]
+    },
+    {
+      "version": 392,
+      "clients": [
+        "1.13-pre10"
+      ],
+      "servers": [
+        "1.13-pre10"
+      ]
+    },
+    {
+      "version": 393,
+      "clients": [
+        "1.13"
+      ],
+      "servers": [
+        "1.13"
+      ]
+    },
+    {
+      "version": 394,
+      "clients": [
+        "18w30a"
+      ],
+      "servers": [
+        "18w30a"
+      ]
+    },
+    {
+      "version": 395,
+      "clients": [
+        "18w30b"
+      ],
+      "servers": [
+        "18w30b"
+      ]
+    },
+    {
+      "version": 396,
+      "clients": [
+        "18w31a"
+      ],
+      "servers": [
+        "18w31a"
+      ]
+    },
+    {
+      "version": 397,
+      "clients": [
+        "18w32a"
+      ],
+      "servers": [
+        "18w32a"
+      ]
+    },
+    {
+      "version": 398,
+      "clients": [
+        "18w33a"
+      ],
+      "servers": [
+        "18w33a"
+      ]
+    },
+    {
+      "version": 399,
+      "clients": [
+        "1.13.1-pre1"
+      ],
+      "servers": [
+        "1.13.1-pre1"
+      ]
+    },
+    {
+      "version": 400,
+      "clients": [
+        "1.13.1-pre2"
+      ],
+      "servers": [
+        "1.13.1-pre2"
+      ]
+    },
+    {
+      "version": 401,
+      "clients": [
+        "1.13.1"
+      ],
+      "servers": [
+        "1.13.1"
+      ]
+    },
+    {
+      "version": 402,
+      "clients": [
+        "1.13.2-pre1"
+      ],
+      "servers": [
+        "1.13.2-pre1"
+      ]
+    },
+    {
+      "version": 403,
+      "clients": [
+        "1.13.2-pre2"
+      ],
+      "servers": [
+        "1.13.2-pre2"
+      ]
+    },
+    {
+      "version": 404,
+      "clients": [
+        "1.13.2"
+      ],
+      "servers": [
+        "1.13.2"
+      ]
+    },
+    {
+      "version": 441,
+      "clients": [
+        "18w43a",
+        "18w43b"
+      ],
+      "servers": [
+        "18w43a",
+        "18w43b"
+      ]
+    },
+    {
+      "version": 442,
+      "clients": [
+        "18w43c"
+      ],
+      "servers": [
+        "18w43c"
+      ]
+    },
+    {
+      "version": 443,
+      "clients": [
+        "18w44a"
+      ],
+      "servers": [
+        "18w44a"
+      ]
+    },
+    {
+      "version": 444,
+      "clients": [
+        "18w45a"
+      ],
+      "servers": [
+        "18w45a"
+      ]
+    },
+    {
+      "version": 445,
+      "clients": [
+        "18w46a"
+      ],
+      "servers": [
+        "18w46a"
+      ]
+    },
+    {
+      "version": 446,
+      "clients": [
+        "18w47a"
+      ],
+      "servers": [
+        "18w47a"
+      ]
+    },
+    {
+      "version": 447,
+      "clients": [
+        "18w47b"
+      ],
+      "servers": [
+        "18w47b"
+      ]
+    },
+    {
+      "version": 448,
+      "clients": [
+        "18w48a"
+      ],
+      "servers": [
+        "18w48a"
+      ]
+    },
+    {
+      "version": 449,
+      "clients": [
+        "18w48b"
+      ],
+      "servers": [
+        "18w48b"
+      ]
+    },
+    {
+      "version": 450,
+      "clients": [
+        "18w49a"
+      ],
+      "servers": [
+        "18w49a"
+      ]
+    },
+    {
+      "version": 451,
+      "clients": [
+        "18w50a"
+      ],
+      "servers": [
+        "18w50a"
+      ]
+    },
+    {
+      "version": 452,
+      "clients": [
+        "19w02a"
+      ],
+      "servers": [
+        "19w02a"
+      ]
+    },
+    {
+      "version": 453,
+      "clients": [
+        "19w03a"
+      ],
+      "servers": [
+        "19w03a"
+      ]
+    },
+    {
+      "version": 454,
+      "clients": [
+        "19w03b"
+      ],
+      "servers": [
+        "19w03b"
+      ]
+    },
+    {
+      "version": 455,
+      "clients": [
+        "19w03c"
+      ],
+      "servers": [
+        "19w03c"
+      ]
+    },
+    {
+      "version": 456,
+      "clients": [
+        "19w04a"
+      ],
+      "servers": [
+        "19w04a"
+      ]
+    },
+    {
+      "version": 457,
+      "clients": [
+        "19w04b"
+      ],
+      "servers": [
+        "19w04b"
+      ]
+    },
+    {
+      "version": 458,
+      "clients": [
+        "19w05a"
+      ],
+      "servers": [
+        "19w05a"
+      ]
+    },
+    {
+      "version": 459,
+      "clients": [
+        "19w06a"
+      ],
+      "servers": [
+        "19w06a"
+      ]
+    },
+    {
+      "version": 460,
+      "clients": [
+        "19w07a"
+      ],
+      "servers": [
+        "19w07a"
+      ]
+    },
+    {
+      "version": 461,
+      "clients": [
+        "19w08a"
+      ],
+      "servers": [
+        "19w08a"
+      ]
+    },
+    {
+      "version": 462,
+      "clients": [
+        "19w08b"
+      ],
+      "servers": [
+        "19w08b"
+      ]
+    },
+    {
+      "version": 463,
+      "clients": [
+        "19w09a"
+      ],
+      "servers": [
+        "19w09a"
+      ]
+    },
+    {
+      "version": 464,
+      "clients": [
+        "19w11a"
+      ],
+      "servers": [
+        "19w11a"
+      ]
+    },
+    {
+      "version": 465,
+      "clients": [
+        "19w11b"
+      ],
+      "servers": [
+        "19w11b"
+      ]
+    },
+    {
+      "version": 466,
+      "clients": [
+        "19w12a"
+      ],
+      "servers": [
+        "19w12a"
+      ]
+    },
+    {
+      "version": 467,
+      "clients": [
+        "19w12b"
+      ],
+      "servers": [
+        "19w12b"
+      ]
+    },
+    {
+      "version": 468,
+      "clients": [
+        "19w13a"
+      ],
+      "servers": [
+        "19w13a"
+      ]
+    },
+    {
+      "version": 469,
+      "clients": [
+        "19w13b-2"
+      ],
+      "servers": [
+        "19w13b-2"
+      ]
+    },
+    {
+      "version": 470,
+      "clients": [
+        "19w14a"
+      ],
+      "servers": [
+        "19w14a"
+      ]
+    },
+    {
+      "version": 471,
+      "clients": [
+        "19w14b"
+      ],
+      "servers": [
+        "19w14b"
+      ]
+    },
+    {
+      "version": 472,
+      "clients": [
+        "1.14-pre1"
+      ],
+      "servers": [
+        "1.14-pre1"
+      ]
+    },
+    {
+      "version": 473,
+      "clients": [
+        "1.14-pre2"
+      ],
+      "servers": [
+        "1.14-pre2"
+      ]
+    },
+    {
+      "version": 474,
+      "clients": [
+        "1.14-pre3"
+      ],
+      "servers": [
+        "1.14-pre3"
+      ]
+    },
+    {
+      "version": 475,
+      "clients": [
+        "1.14-pre4"
+      ],
+      "servers": [
+        "1.14-pre4"
+      ]
+    },
+    {
+      "version": 476,
+      "clients": [
+        "1.14-pre5"
+      ],
+      "servers": [
+        "1.14-pre5"
+      ]
+    },
+    {
+      "version": 477,
+      "clients": [
+        "1.14"
+      ],
+      "servers": [
+        "1.14"
+      ]
+    },
+    {
+      "version": 478,
+      "clients": [
+        "1.14.1-pre1"
+      ],
+      "servers": [
+        "1.14.1-pre1"
+      ]
+    },
+    {
+      "version": 479,
+      "clients": [
+        "1.14.1-pre2"
+      ],
+      "servers": [
+        "1.14.1-pre2"
+      ]
+    },
+    {
+      "version": 480,
+      "clients": [
+        "1.14.1"
+      ],
+      "servers": [
+        "1.14.1"
+      ]
+    },
+    {
+      "version": 481,
+      "clients": [
+        "1.14.2-pre1"
+      ],
+      "servers": [
+        "1.14.2-pre1"
+      ]
+    },
+    {
+      "version": 482,
+      "clients": [
+        "1.14.2-pre2"
+      ],
+      "servers": [
+        "1.14.2-pre2"
+      ]
+    },
+    {
+      "version": 483,
+      "clients": [
+        "1.14.2-pre3"
+      ],
+      "servers": [
+        "1.14.2-pre3"
+      ]
+    },
+    {
+      "version": 484,
+      "clients": [
+        "1.14.2-pre4-1",
+        "1.14.2-pre4-2"
+      ],
+      "servers": [
+        "1.14.2-pre4-1",
+        "1.14.2-pre4-2"
+      ]
+    },
+    {
+      "version": 485,
+      "clients": [
+        "1.14.2"
+      ],
+      "servers": [
+        "1.14.2"
+      ]
+    },
+    {
+      "version": 486,
+      "clients": [
+        "1.14.3-pre1"
+      ],
+      "servers": [
+        "1.14.3-pre1"
+      ]
+    },
+    {
+      "version": 487,
+      "clients": [
+        "1.14.3-pre2"
+      ],
+      "servers": [
+        "1.14.3-pre2"
+      ]
+    },
+    {
+      "version": 488,
+      "clients": [
+        "1.14.3-pre3"
+      ],
+      "servers": [
+        "1.14.3-pre3"
+      ]
+    },
+    {
+      "version": 489,
+      "clients": [
+        "1.14.3-pre4"
+      ],
+      "servers": [
+        "1.14.3-pre4"
+      ]
+    },
+    {
+      "version": 490,
+      "clients": [
+        "1.14.3"
+      ],
+      "servers": [
+        "1.14.3"
+      ]
+    },
+    {
+      "version": 491,
+      "clients": [
+        "1.14.4-pre1"
+      ],
+      "servers": [
+        "1.14.4-pre1"
+      ]
+    },
+    {
+      "version": 492,
+      "clients": [
+        "1.14.4-pre2"
+      ],
+      "servers": [
+        "1.14.4-pre2"
+      ]
+    },
+    {
+      "version": 493,
+      "clients": [
+        "1.14.4-pre3"
+      ],
+      "servers": [
+        "1.14.4-pre3"
+      ]
+    },
+    {
+      "version": 494,
+      "clients": [
+        "1.14.4-pre4"
+      ],
+      "servers": [
+        "1.14.4-pre4"
+      ]
+    },
+    {
+      "version": 495,
+      "clients": [
+        "1.14.4-pre5"
+      ],
+      "servers": [
+        "1.14.4-pre5"
+      ]
+    },
+    {
+      "version": 496,
+      "clients": [
+        "1.14.4-pre6"
+      ],
+      "servers": [
+        "1.14.4-pre6"
+      ]
+    },
+    {
+      "version": 497,
+      "clients": [
+        "1.14.4-pre7"
+      ],
+      "servers": [
+        "1.14.4-pre7"
+      ]
+    },
+    {
+      "version": 498,
+      "clients": [
+        "1.14.4"
+      ],
+      "servers": [
+        "1.14.4"
+      ]
+    },
+    {
+      "version": 550,
+      "clients": [
+        "19w34a"
+      ],
+      "servers": [
+        "19w34a"
+      ]
+    },
+    {
+      "version": 551,
+      "clients": [
+        "19w35a"
+      ],
+      "servers": [
+        "19w35a"
+      ]
+    },
+    {
+      "version": 553,
+      "clients": [
+        "19w36a",
+        "19w37a"
+      ],
+      "servers": [
+        "19w36a",
+        "19w37a"
+      ]
+    },
+    {
+      "version": 554,
+      "clients": [
+        "19w38a"
+      ],
+      "servers": [
+        "19w38a"
+      ]
+    },
+    {
+      "version": 555,
+      "clients": [
+        "19w38b"
+      ],
+      "servers": [
+        "19w38b"
+      ]
+    },
+    {
+      "version": 556,
+      "clients": [
+        "19w39a"
+      ],
+      "servers": [
+        "19w39a"
+      ]
+    },
+    {
+      "version": 557,
+      "clients": [
+        "19w40a"
+      ],
+      "servers": [
+        "19w40a"
+      ]
+    },
+    {
+      "version": 558,
+      "clients": [
+        "19w41a"
+      ],
+      "servers": [
+        "19w41a"
+      ]
+    },
+    {
+      "version": 559,
+      "clients": [
+        "19w42a"
+      ],
+      "servers": [
+        "19w42a"
+      ]
+    },
+    {
+      "version": 560,
+      "clients": [
+        "19w44a"
+      ],
+      "servers": [
+        "19w44a"
+      ]
+    },
+    {
+      "version": 561,
+      "clients": [
+        "19w45a"
+      ],
+      "servers": [
+        "19w45a"
+      ]
+    },
+    {
+      "version": 562,
+      "clients": [
+        "19w45b"
+      ],
+      "servers": [
+        "19w45b"
+      ]
+    },
+    {
+      "version": 563,
+      "clients": [
+        "19w46a"
+      ],
+      "servers": [
+        "19w46a"
+      ]
+    },
+    {
+      "version": 564,
+      "clients": [
+        "19w46b"
+      ],
+      "servers": [
+        "19w46b"
+      ]
+    },
+    {
+      "version": 565,
+      "clients": [
+        "1.15-pre1"
+      ],
+      "servers": [
+        "1.15-pre1"
+      ]
+    },
+    {
+      "version": 566,
+      "clients": [
+        "1.15-pre2"
+      ],
+      "servers": [
+        "1.15-pre2"
+      ]
+    },
+    {
+      "version": 567,
+      "clients": [
+        "1.15-pre3"
+      ],
+      "servers": [
+        "1.15-pre3"
+      ]
+    },
+    {
+      "version": 569,
+      "clients": [
+        "1.15-pre4"
+      ],
+      "servers": [
+        "1.15-pre4"
+      ]
+    },
+    {
+      "version": 570,
+      "clients": [
+        "1.15-pre5"
+      ],
+      "servers": [
+        "1.15-pre5"
+      ]
+    },
+    {
+      "version": 571,
+      "clients": [
+        "1.15-pre6"
+      ],
+      "servers": [
+        "1.15-pre6"
+      ]
+    },
+    {
+      "version": 572,
+      "clients": [
+        "1.15-pre7"
+      ],
+      "servers": [
+        "1.15-pre7"
+      ]
+    },
+    {
+      "version": 573,
+      "clients": [
+        "1.15"
+      ],
+      "servers": [
+        "1.15"
+      ]
+    },
+    {
+      "version": 574,
+      "clients": [
+        "1.15.1-pre1"
+      ],
+      "servers": [
+        "1.15.1-pre1"
+      ]
+    },
+    {
+      "version": 575,
+      "clients": [
+        "1.15.1"
+      ],
+      "servers": [
+        "1.15.1"
+      ]
+    },
+    {
+      "version": 576,
+      "clients": [
+        "1.15.2-pre1"
+      ],
+      "servers": [
+        "1.15.2-pre1"
+      ]
+    },
+    {
+      "version": 577,
+      "clients": [
+        "1.15.2-pre2"
+      ],
+      "servers": [
+        "1.15.2-pre2"
+      ]
+    },
+    {
+      "version": 578,
+      "clients": [
+        "1.15.2"
+      ],
+      "servers": [
+        "1.15.2"
+      ]
+    },
+    {
+      "version": 701,
+      "clients": [
+        "20w06a"
+      ],
+      "servers": [
+        "20w06a"
+      ]
+    },
+    {
+      "version": 702,
+      "clients": [
+        "20w07a"
+      ],
+      "servers": [
+        "20w07a"
+      ]
+    },
+    {
+      "version": 703,
+      "clients": [
+        "20w08a"
+      ],
+      "servers": [
+        "20w08a"
+      ]
+    },
+    {
+      "version": 704,
+      "clients": [
+        "20w09a"
+      ],
+      "servers": [
+        "20w09a"
+      ]
+    },
+    {
+      "version": 705,
+      "clients": [
+        "20w10a"
+      ],
+      "servers": [
+        "20w10a"
+      ]
+    },
+    {
+      "version": 706,
+      "clients": [
+        "20w11a"
+      ],
+      "servers": [
+        "20w11a"
+      ]
+    },
+    {
+      "version": 707,
+      "clients": [
+        "20w12a"
+      ],
+      "servers": [
+        "20w12a"
+      ]
+    },
+    {
+      "version": 708,
+      "clients": [
+        "20w13a"
+      ],
+      "servers": [
+        "20w13a"
+      ]
+    },
+    {
+      "version": 709,
+      "clients": [
+        "20w13b"
+      ],
+      "servers": [
+        "20w13b"
+      ]
+    },
+    {
+      "version": 710,
+      "clients": [
+        "20w14a"
+      ],
+      "servers": [
+        "20w14a"
+      ]
+    },
+    {
+      "version": 711,
+      "clients": [
+        "20w15a"
+      ],
+      "servers": [
+        "20w15a"
+      ]
+    },
+    {
+      "version": 712,
+      "clients": [
+        "20w16a"
+      ],
+      "servers": [
+        "20w16a"
+      ]
+    },
+    {
+      "version": 713,
+      "clients": [
+        "20w17a"
+      ],
+      "servers": [
+        "20w17a"
+      ]
+    },
+    {
+      "version": 714,
+      "clients": [
+        "20w18a"
+      ],
+      "servers": [
+        "20w18a"
+      ]
+    },
+    {
+      "version": 715,
+      "clients": [
+        "20w19a"
+      ],
+      "servers": [
+        "20w19a"
+      ]
+    },
+    {
+      "version": 716,
+      "clients": [
+        "20w20a"
+      ],
+      "servers": [
+        "20w20a"
+      ]
+    },
+    {
+      "version": 717,
+      "clients": [
+        "20w20b"
+      ],
+      "servers": [
+        "20w20b"
+      ]
+    },
+    {
+      "version": 718,
+      "clients": [
+        "20w21a"
+      ],
+      "servers": [
+        "20w21a"
+      ]
+    },
+    {
+      "version": 719,
+      "clients": [
+        "20w22a"
+      ],
+      "servers": [
+        "20w22a"
+      ]
+    },
+    {
+      "version": 721,
+      "clients": [
+        "1.16-pre1"
+      ],
+      "servers": [
+        "1.16-pre1"
+      ]
+    },
+    {
+      "version": 722,
+      "clients": [
+        "1.16-pre2"
+      ],
+      "servers": [
+        "1.16-pre2"
+      ]
+    },
+    {
+      "version": 725,
+      "clients": [
+        "1.16-pre3"
+      ],
+      "servers": [
+        "1.16-pre3"
+      ]
+    },
+    {
+      "version": 727,
+      "clients": [
+        "1.16-pre4"
+      ],
+      "servers": [
+        "1.16-pre4"
+      ]
+    },
+    {
+      "version": 729,
+      "clients": [
+        "1.16-pre5"
+      ],
+      "servers": [
+        "1.16-pre5"
+      ]
+    },
+    {
+      "version": 730,
+      "clients": [
+        "1.16-pre6"
+      ],
+      "servers": [
+        "1.16-pre6"
+      ]
+    },
+    {
+      "version": 732,
+      "clients": [
+        "1.16-pre7"
+      ],
+      "servers": [
+        "1.16-pre7"
+      ]
+    },
+    {
+      "version": 733,
+      "clients": [
+        "1.16-pre8"
+      ],
+      "servers": [
+        "1.16-pre8"
+      ]
+    },
+    {
+      "version": 734,
+      "clients": [
+        "1.16-rc1"
+      ],
+      "servers": [
+        "1.16-rc1"
+      ]
+    },
+    {
+      "version": 735,
+      "clients": [
+        "1.16-1149",
+        "1.16-1420"
+      ],
+      "servers": [
+        "1.16-1149",
+        "1.16-1420"
+      ]
+    },
+    {
+      "version": 736,
+      "clients": [
+        "1.16.1"
+      ],
+      "servers": [
+        "1.16.1"
+      ]
+    },
+    {
+      "version": 738,
+      "clients": [
+        "20w27a"
+      ],
+      "servers": [
+        "20w27a"
+      ]
+    },
+    {
+      "version": 740,
+      "clients": [
+        "20w28a"
+      ],
+      "servers": [
+        "20w28a"
+      ]
+    },
+    {
+      "version": 741,
+      "clients": [
+        "20w29a"
+      ],
+      "servers": [
+        "20w29a"
+      ]
+    },
+    {
+      "version": 743,
+      "clients": [
+        "20w30a"
+      ],
+      "servers": [
+        "20w30a"
+      ]
+    },
+    {
+      "version": 744,
+      "clients": [
+        "1.16.2-pre1"
+      ],
+      "servers": [
+        "1.16.2-pre1"
+      ]
+    },
+    {
+      "version": 746,
+      "clients": [
+        "1.16.2-pre2"
+      ],
+      "servers": [
+        "1.16.2-pre2"
+      ]
+    },
+    {
+      "version": 748,
+      "clients": [
+        "1.16.2-pre3"
+      ],
+      "servers": [
+        "1.16.2-pre3"
+      ]
+    },
+    {
+      "version": 749,
+      "clients": [
+        "1.16.2-rc1"
+      ],
+      "servers": [
+        "1.16.2-rc1"
+      ]
+    },
+    {
+      "version": 750,
+      "clients": [
+        "1.16.2-rc2"
+      ],
+      "servers": [
+        "1.16.2-rc2"
+      ]
+    },
+    {
+      "version": 751,
+      "clients": [
+        "1.16.2"
+      ],
+      "servers": [
+        "1.16.2"
+      ]
+    },
+    {
+      "version": 752,
+      "clients": [
+        "1.16.3-rc1"
+      ],
+      "servers": [
+        "1.16.3-rc1"
+      ]
+    },
+    {
+      "version": 753,
+      "clients": [
+        "1.16.3"
+      ],
+      "servers": [
+        "1.16.3"
+      ]
+    },
+    {
+      "version": 754,
+      "clients": [
+        "1.16.4",
+        "1.16.5"
+      ],
+      "servers": [
+        "1.16.4",
+        "1.16.5"
+      ]
+    },
+    {
+      "version": 755,
+      "clients": [
+        "1.17"
+      ],
+      "servers": [
+        "1.17"
+      ]
+    }
+  ]
+}
