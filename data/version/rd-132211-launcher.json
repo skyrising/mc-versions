@@ -1,4 +1,5 @@
 {
+  "client": true,
   "id": "rd-132211-launcher",
   "manifests": [
     {
@@ -12,5 +13,7 @@
       "url": "../manifest/e/5/1e438c0a0c4bfe8b63db0c88d547167a46d9ff/rd-132211.json"
     }
   ],
-  "releaseTime": "2009-05-13T20:11:00+00:00"
+  "protocol": null,
+  "releaseTime": "2009-05-13T20:11:00+00:00",
+  "server": false
 }

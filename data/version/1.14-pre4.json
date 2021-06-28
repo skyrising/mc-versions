@@ -1,4 +1,5 @@
 {
+  "client": true,
   "id": "1.14-pre4",
   "manifests": [
     {
@@ -12,5 +13,10 @@
       "url": "../manifest/5/4/667b66925119baf1ceb241e63e71b3c6d7787d/1.14_Pre-Release_4.json"
     }
   ],
-  "releaseTime": "2019-04-17T15:31:12+00:00"
+  "protocol": {
+    "type": "netty",
+    "version": 475
+  },
+  "releaseTime": "2019-04-17T15:31:12+00:00",
+  "server": true
 }

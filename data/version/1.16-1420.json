@@ -1,4 +1,5 @@
 {
+  "client": true,
   "id": "1.16-1420",
   "manifests": [
     {
@@ -32,5 +33,10 @@
       "url": "../manifest/0/1/b5231aea5bae5559f1ec1a8764d02b66f898ae/1.16.json"
     }
   ],
-  "releaseTime": "2020-06-23T16:20:52+00:00"
+  "protocol": {
+    "type": "netty",
+    "version": 735
+  },
+  "releaseTime": "2020-06-23T16:20:52+00:00",
+  "server": true
 }

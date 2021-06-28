@@ -1,4 +1,5 @@
 {
+  "client": true,
   "id": "a1.0.4",
   "manifests": [
     {
@@ -12,5 +13,7 @@
       "url": "../manifest/4/a/782d2af0fe21c2894144ced9e865d83a9c57ee/a1.0.4.json"
     }
   ],
-  "releaseTime": "2010-07-09T00:00:00+00:00"
+  "protocol": null,
+  "releaseTime": "2010-07-09T00:00:00+00:00",
+  "server": false
 }

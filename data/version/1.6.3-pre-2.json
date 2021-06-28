@@ -1,4 +1,5 @@
 {
+  "client": true,
   "id": "1.6.3-pre-2",
   "manifests": [
     {
@@ -12,5 +13,10 @@
       "url": "../manifest/1/d/42d74e9516e6b5d4bd18c3222ca939cc4d24c8/1.6.3.json"
     }
   ],
-  "releaseTime": "2013-09-17T00:00:00+00:00"
+  "protocol": {
+    "type": "modern",
+    "version": 77
+  },
+  "releaseTime": "2013-09-17T00:00:00+00:00",
+  "server": true
 }

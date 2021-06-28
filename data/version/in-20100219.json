@@ -1,4 +1,5 @@
 {
+  "client": true,
   "id": "in-20100219",
   "manifests": [
     {
@@ -12,5 +13,7 @@
       "url": "../manifest/c/0/64a7ed5373773ba918a13a3506867ba21d351a/in-20100219.json"
     }
   ],
-  "releaseTime": "2010-02-19T15:11:00+00:00"
+  "protocol": null,
+  "releaseTime": "2010-02-19T15:11:00+00:00",
+  "server": false
 }

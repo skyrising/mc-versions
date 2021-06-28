@@ -1,4 +1,5 @@
 {
+  "client": true,
   "id": "b1.9-pre3-201110061602",
   "manifests": [
     {
@@ -12,5 +13,10 @@
       "url": "../manifest/d/7/da200019e55e87925e7e5360d38f01889601c0/b1.9-pre3-2.json"
     }
   ],
-  "releaseTime": "2011-10-06T00:00:00+00:00"
+  "protocol": {
+    "type": "modern",
+    "version": 19
+  },
+  "releaseTime": "2011-10-06T00:00:00+00:00",
+  "server": false
 }

@@ -1,4 +1,5 @@
 {
+  "client": true,
   "id": "20w49a",
   "manifests": [
     {
@@ -282,5 +283,10 @@
       "url": "../manifest/1/5/b23a360e96b8ca2df4a94b2544d0740cbca258/20w49a.json"
     }
   ],
-  "releaseTime": "2020-12-02T16:47:20+00:00"
+  "protocol": {
+    "type": "netty-snapshot",
+    "version": 8
+  },
+  "releaseTime": "2020-12-02T16:47:20+00:00",
+  "server": true
 }

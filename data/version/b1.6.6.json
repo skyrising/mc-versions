@@ -1,4 +1,5 @@
 {
+  "client": true,
   "id": "b1.6.6",
   "manifests": [
     {
@@ -22,5 +23,10 @@
       "url": "../manifest/3/8/2c9b625fd22edee173751771626ff32098ca9c/b1.6.6.json"
     }
   ],
-  "releaseTime": "2011-05-31T00:00:00+00:00"
+  "protocol": {
+    "type": "modern",
+    "version": 13
+  },
+  "releaseTime": "2011-05-31T00:00:00+00:00",
+  "server": false
 }

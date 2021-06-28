@@ -1,4 +1,5 @@
 {
+  "client": true,
   "id": "19w12b",
   "manifests": [
     {
@@ -12,5 +13,10 @@
       "url": "../manifest/0/4/d4335ae17ca01d891a6451dfb059d3fe6ed2e4/19w12b.json"
     }
   ],
-  "releaseTime": "2019-03-21T15:20:01+00:00"
+  "protocol": {
+    "type": "netty",
+    "version": 467
+  },
+  "releaseTime": "2019-03-21T15:20:01+00:00",
+  "server": true
 }

@@ -1,4 +1,5 @@
 {
+  "client": true,
   "id": "13w38c",
   "manifests": [
     {
@@ -12,5 +13,10 @@
       "url": "../manifest/7/4/d1fcc1a78fee5545231656ae45c41f0b9a38f6/13w38c.json"
     }
   ],
-  "releaseTime": "2013-09-20T15:11:34+00:00"
+  "protocol": {
+    "type": "modern",
+    "version": 79
+  },
+  "releaseTime": "2013-09-20T15:11:34+00:00",
+  "server": true
 }

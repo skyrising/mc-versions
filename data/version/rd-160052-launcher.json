@@ -1,4 +1,5 @@
 {
+  "client": true,
   "id": "rd-160052-launcher",
   "manifests": [
     {
@@ -12,5 +13,7 @@
       "url": "../manifest/a/2/fad09a304ed2355fa65b90bec00e1ae983ee3f/rd-160052.json"
     }
   ],
-  "releaseTime": "2009-05-15T22:52:00+00:00"
+  "protocol": null,
+  "releaseTime": "2009-05-15T22:52:00+00:00",
+  "server": false
 }

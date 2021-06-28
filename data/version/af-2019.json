@@ -1,4 +1,5 @@
 {
+  "client": true,
   "id": "af-2019",
   "manifests": [
     {
@@ -12,5 +13,11 @@
       "url": "../manifest/4/8/ea60323fdf8ceed0b73e46cc984feb9ef9ad84/3D_Shareware_v1.34.json"
     }
   ],
-  "releaseTime": "2019-04-01T11:18:08+00:00"
+  "protocol": {
+    "incompatible": true,
+    "type": "netty",
+    "version": 1
+  },
+  "releaseTime": "2019-04-01T11:18:08+00:00",
+  "server": true
 }

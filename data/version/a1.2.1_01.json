@@ -1,4 +1,5 @@
 {
+  "client": true,
   "id": "a1.2.1_01",
   "manifests": [
     {
@@ -20,7 +21,22 @@
       "time": "2016-02-02T15:37:47+00:00",
       "type": "old_alpha",
       "url": "../manifest/e/2/02301d7ebcb3023c3222bb2b192287acb86ea6/a1.2.1_01.json"
+    },
+    {
+      "assetHash": "4759bad2824e419da9db32861fcdc3a274336532",
+      "assetIndex": "pre-1.6",
+      "downloads": "c4d6905d84a82f88898cea2856b9b0a1cec12c78",
+      "downloadsId": 1,
+      "hash": "3da77fca92c2f5bdb4df3724adfc1a65f84a1ff1",
+      "time": "2010-11-04T22:00:00+00:00",
+      "type": "old_alpha",
+      "url": "../manifest/3/d/a77fca92c2f5bdb4df3724adfc1a65f84a1ff1/a1.2.1.json"
     }
   ],
-  "releaseTime": "2010-11-05T00:00:01+00:00"
+  "protocol": {
+    "type": "modern",
+    "version": 3
+  },
+  "releaseTime": "2010-11-05T00:00:01+00:00",
+  "server": false
 }

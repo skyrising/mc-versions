@@ -1,11 +1,12 @@
 {
+  "client": true,
   "id": "a1.2.0_02",
   "manifests": [
     {
       "assetHash": "4759bad2824e419da9db32861fcdc3a274336532",
       "assetIndex": "pre-1.6",
       "downloads": "0519340ba01dc80e5040145edf78244b06dd0952",
-      "downloadsId": 2,
+      "downloadsId": 1,
       "hash": "338463815b7f49f99d1bf459b7454cc68805c5aa",
       "time": "2010-11-03T22:00:00+00:00",
       "type": "old_alpha",
@@ -15,7 +16,7 @@
       "assetHash": "c0fd82e8ce9fbc93119e40d96d5a4e62cfa3f729",
       "assetIndex": "legacy",
       "downloads": "0519340ba01dc80e5040145edf78244b06dd0952",
-      "downloadsId": 2,
+      "downloadsId": 1,
       "hash": "2496de1011980d0e442d6cc6d083a35cb453f352",
       "time": "2016-02-02T15:37:47+00:00",
       "type": "old_alpha",
@@ -32,5 +33,10 @@
       "url": "../manifest/1/2/efaca76aacb6c3634970c8d96f679f78545d5b/a1.2.0.json"
     }
   ],
-  "releaseTime": "2010-11-04T00:00:00+00:00"
+  "protocol": {
+    "type": "modern",
+    "version": 3
+  },
+  "releaseTime": "2010-11-04T00:00:00+00:00",
+  "server": false
 }

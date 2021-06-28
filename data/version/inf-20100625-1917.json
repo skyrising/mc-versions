@@ -1,4 +1,5 @@
 {
+  "client": true,
   "id": "inf-20100625-1917",
   "manifests": [
     {
@@ -12,5 +13,7 @@
       "url": "../manifest/e/5/5fb36097602c246e15fb6aa918d8b987a40c4f/inf-20100625-2.json"
     }
   ],
-  "releaseTime": "2010-06-25T19:17:00+00:00"
+  "protocol": null,
+  "releaseTime": "2010-06-25T19:17:00+00:00",
+  "server": false
 }

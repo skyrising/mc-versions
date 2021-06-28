@@ -1,4 +1,5 @@
 {
+  "client": true,
   "id": "1.8.2-pre2",
   "manifests": [
     {
@@ -12,5 +13,10 @@
       "url": "../manifest/6/a/59570518dd208cbbe94a357b8f9880693bb3af/1.8.2-pre2.json"
     }
   ],
-  "releaseTime": "2015-01-15T15:07:31+00:00"
+  "protocol": {
+    "type": "netty",
+    "version": 47
+  },
+  "releaseTime": "2015-01-15T15:07:31+00:00",
+  "server": true
 }

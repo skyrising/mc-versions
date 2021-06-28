@@ -1,4 +1,5 @@
 {
+  "client": true,
   "id": "a1.0.17_03",
   "manifests": [
     {
@@ -12,5 +13,10 @@
       "url": "../manifest/2/9/5b6414a969f9ca7e662c795eff2f35b2dd12fe/a1.0.17_03.json"
     }
   ],
-  "releaseTime": "2010-08-23T00:00:00+00:00"
+  "protocol": {
+    "type": "modern",
+    "version": 1
+  },
+  "releaseTime": "2010-08-23T00:00:00+00:00",
+  "server": false
 }

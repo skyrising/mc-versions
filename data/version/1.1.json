@@ -1,4 +1,5 @@
 {
+  "client": true,
   "id": "1.1",
   "manifests": [
     {
@@ -12,5 +13,10 @@
       "url": "../manifest/f/e/ce09d86f3a907a40135844e81908c4b964c89f/1.1.json"
     }
   ],
-  "releaseTime": "2012-01-12T14:20:00+00:00"
+  "protocol": {
+    "type": "modern",
+    "version": 23
+  },
+  "releaseTime": "2012-01-12T14:20:00+00:00",
+  "server": false
 }

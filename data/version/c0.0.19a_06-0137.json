@@ -1,5 +1,6 @@
 {
-  "id": "c0.0.19a_06-2",
+  "client": true,
+  "id": "c0.0.19a_06-0137",
   "manifests": [
     {
       "assetHash": "c0fd82e8ce9fbc93119e40d96d5a4e62cfa3f729",
@@ -12,5 +13,10 @@
       "url": "../manifest/d/6/0185d72a4ce9db08edebeddaceb5dbea46688f/c0.0.19a_06-2.json"
     }
   ],
-  "releaseTime": "2009-06-20T01:37:00+00:00"
+  "protocol": {
+    "type": "classic",
+    "version": 5
+  },
+  "releaseTime": "2009-06-20T01:37:00+00:00",
+  "server": false
 }

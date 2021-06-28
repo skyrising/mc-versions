@@ -1,4 +1,5 @@
 {
+  "client": true,
   "id": "1.13.1-pre1",
   "manifests": [
     {
@@ -12,5 +13,10 @@
       "url": "../manifest/3/8/0447c7cab4e82b279cc21434e141ac187e594b/1.13.1-pre1.json"
     }
   ],
-  "releaseTime": "2018-08-16T13:08:44+00:00"
+  "protocol": {
+    "type": "netty",
+    "version": 399
+  },
+  "releaseTime": "2018-08-16T13:08:44+00:00",
+  "server": true
 }

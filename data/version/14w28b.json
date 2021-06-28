@@ -1,4 +1,5 @@
 {
+  "client": true,
   "id": "14w28b",
   "manifests": [
     {
@@ -12,5 +13,10 @@
       "url": "../manifest/0/6/ba734b2f842d96e3e539c793ffd315b05ccdf7/14w28b.json"
     }
   ],
-  "releaseTime": "2014-07-10T14:28:48+00:00"
+  "protocol": {
+    "type": "netty",
+    "version": 28
+  },
+  "releaseTime": "2014-07-10T14:28:48+00:00",
+  "server": true
 }

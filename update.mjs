@@ -8,6 +8,7 @@ const dataDir = path.resolve('data')
 const manifestDir = path.resolve(dataDir, 'manifest')
 const importDir = path.resolve(dataDir, 'import')
 const versionDir = path.resolve(dataDir, 'version')
+const protocolDir = path.resolve(dataDir, 'protocol')
 
 ;(async () => {
     const oldOmniVersions = JSON.parse(fs.readFileSync(path.resolve(dataDir, 'omni_id.json')))
@@ -62,7 +63,8 @@ const versionDir = path.resolve(dataDir, 'version')
             url: file,
             time: data.time,
             releaseTime: data.releaseTime,
-            downloads: sha1(JSON.stringify(dl)),
+            downloadsHash: sha1(JSON.stringify(dl)),
+            downloads: data.downloads,
             assetIndex: data.assetIndex.id,
             assetHash: data.assetIndex.sha1,
             launcher: data.downloads.client && data.downloads.client.url.startsWith('https://launcher.mojang.com/')
@@ -71,6 +73,7 @@ const versionDir = path.resolve(dataDir, 'version')
         allVersions.push(v)
     }
     readdirRecursive(manifestDir, true)
+    const versions = []
     newManifest.versions = []
     for (const id in byId) {
         const versionInfo = byId[id]
@@ -82,14 +85,58 @@ const versionDir = path.resolve(dataDir, 'version')
             list[i].downloadsId = downloadIds[hash] || Object.keys(downloadIds).length + 1
             downloadIds[hash] = list[i].downloadsId
         }
-        newManifest.versions.push(updateVersionFile(id, list))
+        versions.push(updateVersion(id, list))
     }
-    newManifest.versions.sort((a, b) => a.releaseTime >= b.releaseTime ? -1 : 1)
+    versions.sort((a, b) => a.info.releaseTime >= b.info.releaseTime ? 1 : -1)
+    const protocols = {}
+    const lastProtocol = {}
+    let previousProtocol
+    for (const v of versions) {
+        const {id, protocol} = v.data
+        if (protocol) {
+            const last = lastProtocol[protocol.type]
+            if (!id.startsWith('af-')) {
+                if (last > protocol.version) {
+                    console.warn(`${id} decreases ${protocol.type} protocol version number from ${last} to ${protocol.version}`)
+                }
+                lastProtocol[protocol.type] = protocol.version
+            }
+            if (!protocol.incompatible) {
+                const pInfo = (protocols[protocol.type] = protocols[protocol.type] || {})
+                const pvInfo = (pInfo[protocol.version] = pInfo[protocol.version] || {version: protocol.version, clients: [], servers: []})
+                if (v.data.client) pvInfo.clients.push(id)
+                if (v.data.server) pvInfo.servers.push(id)
+            }
+        } else if (protocol === undefined && previousProtocol) {
+            console.warn(`${id} is missing protocol info, previous was ${previousProtocol.type} ${previousProtocol.version}`)
+        }
+        previousProtocol = protocol
+        newManifest.versions.unshift(v.info)
+        fs.writeFileSync(v.file, JSON.stringify(sortObject(v.data), null, 2))
+    }
+    mkdirp(protocolDir)
+    const allowedProtocolFile = new Set(Object.keys(protocols).map(p => p + '.json'))
+    for (const f of fs.readdirSync(protocolDir)) {
+        if (!allowedProtocolFile.has(f)) {
+            const file = path.resolve(protocolsDir, f)
+            fs.unlinkSync(file)
+            console.log(`Deleting ${file}`)
+        }
+    }
+    for (const p in protocols) {
+        const file = path.resolve(protocolDir, `${p}.json`)
+        const oldData = fs.existsSync(file) ? JSON.parse(fs.readFileSync(file)) : {}
+        const data = {...oldData}
+        data.type = p
+        data.versions = Object.values(protocols[p])
+        fs.writeFileSync(file, JSON.stringify(data, null, 2))
+    }
     allVersions.sort(compareVersions)
     const newOmniVersions = {}
     for (const v of allVersions) {
         newOmniVersions[v.hash] = v.omniId
     }
+    mkdirp(versionDir)
     const allowedVersionFiles = new Set(newManifest.versions.map(v => v.omniId + '.json'))
     for (const f of fs.readdirSync(versionDir)) {
         if (!allowedVersionFiles.has(f)) {
@@ -111,7 +158,7 @@ function compareVersions(a, b) {
     return a.time >= b.time ? -1 : 1
 }
 
-function updateVersionFile(id, manifests) {
+function updateVersion(id, manifests) {
     const file = path.resolve(versionDir, `${id}.json`)
     const oldData = fs.existsSync(file) ? JSON.parse(fs.readFileSync(file)) : {}
     const data = {...oldData}
@@ -123,21 +170,32 @@ function updateVersionFile(id, manifests) {
         releaseTime.setUTCHours(0)
     }
     data.releaseTime = releaseTime.toISOString().replace('.000Z', '+00:00')
+    data.client = data.server = false
+    for (const m of manifests) {
+        if (!m.downloads) continue
+        if (m.downloads.client) data.client = true
+        if (m.downloads.server) data.server = true
+    }
     data.manifests = manifests.map(m => ({
         ...m,
         omniId: undefined,
         id: undefined,
         launcher: undefined,
         url: path.relative(versionDir, m.url),
-        releaseTime: undefined
+        releaseTime: undefined,
+        downloads: m.downloadsHash,
+        downloadsHash: undefined
     }))
     const {omniId, type, url, time} = manifests[0]
-    fs.writeFileSync(file, JSON.stringify(sortObject(data), null, 2))
     return {
-        omniId, id: manifests[0].id, type,
-        url: path.relative(dataDir, url),
-        time,
-        releaseTime: data.releaseTime,
-        details: path.relative(dataDir, file)
+        info: {
+            omniId, id: manifests[0].id, type,
+            url: path.relative(dataDir, url),
+            time,
+            releaseTime: data.releaseTime,
+            details: path.relative(dataDir, file)
+        },
+        data,
+        file
     }
 }

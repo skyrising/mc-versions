@@ -1,4 +1,5 @@
 {
+  "client": true,
   "id": "1.16.4-rc1",
   "manifests": [
     {
@@ -32,5 +33,10 @@
       "url": "../manifest/7/4/e01afba2cc3a8f0b685b4a568429f9fe9dfbe3/1.16.4-rc1.json"
     }
   ],
-  "releaseTime": "2020-10-27T16:31:08+00:00"
+  "protocol": {
+    "type": "netty-snapshot",
+    "version": 3
+  },
+  "releaseTime": "2020-10-27T16:31:08+00:00",
+  "server": true
 }

@@ -1,0 +1,313 @@
+{
+  "type": "netty-snapshot",
+  "versions": [
+    {
+      "version": 1,
+      "clients": [
+        "1.16.4-pre1"
+      ],
+      "servers": [
+        "1.16.4-pre1"
+      ]
+    },
+    {
+      "version": 2,
+      "clients": [
+        "1.16.4-pre2"
+      ],
+      "servers": [
+        "1.16.4-pre2"
+      ]
+    },
+    {
+      "version": 3,
+      "clients": [
+        "1.16.4-rc1"
+      ],
+      "servers": [
+        "1.16.4-rc1"
+      ]
+    },
+    {
+      "version": 5,
+      "clients": [
+        "20w45a"
+      ],
+      "servers": [
+        "20w45a"
+      ]
+    },
+    {
+      "version": 6,
+      "clients": [
+        "20w46a"
+      ],
+      "servers": [
+        "20w46a"
+      ]
+    },
+    {
+      "version": 7,
+      "clients": [
+        "20w48a"
+      ],
+      "servers": [
+        "20w48a"
+      ]
+    },
+    {
+      "version": 8,
+      "clients": [
+        "20w49a"
+      ],
+      "servers": [
+        "20w49a"
+      ]
+    },
+    {
+      "version": 9,
+      "clients": [
+        "20w51a"
+      ],
+      "servers": [
+        "20w51a"
+      ]
+    },
+    {
+      "version": 10,
+      "clients": [
+        "1.16.5-rc1-1",
+        "1.16.5-rc1-2"
+      ],
+      "servers": [
+        "1.16.5-rc1-1",
+        "1.16.5-rc1-2"
+      ]
+    },
+    {
+      "version": 11,
+      "clients": [
+        "21w03a"
+      ],
+      "servers": [
+        "21w03a"
+      ]
+    },
+    {
+      "version": 12,
+      "clients": [
+        "21w05a"
+      ],
+      "servers": [
+        "21w05a"
+      ]
+    },
+    {
+      "version": 13,
+      "clients": [
+        "21w05b"
+      ],
+      "servers": [
+        "21w05b"
+      ]
+    },
+    {
+      "version": 14,
+      "clients": [
+        "21w06a"
+      ],
+      "servers": [
+        "21w06a"
+      ]
+    },
+    {
+      "version": 15,
+      "clients": [
+        "21w07a"
+      ],
+      "servers": [
+        "21w07a"
+      ]
+    },
+    {
+      "version": 16,
+      "clients": [
+        "21w08a"
+      ],
+      "servers": [
+        "21w08a"
+      ]
+    },
+    {
+      "version": 17,
+      "clients": [
+        "21w08b"
+      ],
+      "servers": [
+        "21w08b"
+      ]
+    },
+    {
+      "version": 18,
+      "clients": [
+        "21w10a"
+      ],
+      "servers": [
+        "21w10a"
+      ]
+    },
+    {
+      "version": 19,
+      "clients": [
+        "21w11a"
+      ],
+      "servers": [
+        "21w11a"
+      ]
+    },
+    {
+      "version": 20,
+      "clients": [
+        "21w13a"
+      ],
+      "servers": [
+        "21w13a"
+      ]
+    },
+    {
+      "version": 21,
+      "clients": [
+        "21w14a"
+      ],
+      "servers": [
+        "21w14a"
+      ]
+    },
+    {
+      "version": 22,
+      "clients": [
+        "21w15a"
+      ],
+      "servers": [
+        "21w15a"
+      ]
+    },
+    {
+      "version": 23,
+      "clients": [
+        "21w16a"
+      ],
+      "servers": [
+        "21w16a"
+      ]
+    },
+    {
+      "version": 25,
+      "clients": [
+        "21w17a"
+      ],
+      "servers": [
+        "21w17a"
+      ]
+    },
+    {
+      "version": 26,
+      "clients": [
+        "21w18a"
+      ],
+      "servers": [
+        "21w18a"
+      ]
+    },
+    {
+      "version": 27,
+      "clients": [
+        "21w19a"
+      ],
+      "servers": [
+        "21w19a"
+      ]
+    },
+    {
+      "version": 28,
+      "clients": [
+        "21w20a"
+      ],
+      "servers": [
+        "21w20a"
+      ]
+    },
+    {
+      "version": 29,
+      "clients": [
+        "1.17-pre1"
+      ],
+      "servers": [
+        "1.17-pre1"
+      ]
+    },
+    {
+      "version": 30,
+      "clients": [
+        "1.17-pre2"
+      ],
+      "servers": [
+        "1.17-pre2"
+      ]
+    },
+    {
+      "version": 31,
+      "clients": [
+        "1.17-pre3"
+      ],
+      "servers": [
+        "1.17-pre3"
+      ]
+    },
+    {
+      "version": 32,
+      "clients": [
+        "1.17-pre4"
+      ],
+      "servers": [
+        "1.17-pre4"
+      ]
+    },
+    {
+      "version": 33,
+      "clients": [
+        "1.17-pre5"
+      ],
+      "servers": [
+        "1.17-pre5"
+      ]
+    },
+    {
+      "version": 34,
+      "clients": [
+        "1.17-rc1"
+      ],
+      "servers": [
+        "1.17-rc1"
+      ]
+    },
+    {
+      "version": 35,
+      "clients": [
+        "1.17-rc2"
+      ],
+      "servers": [
+        "1.17-rc2"
+      ]
+    },
+    {
+      "version": 36,
+      "clients": [
+        "1.17.1-pre1"
+      ],
+      "servers": [
+        "1.17.1-pre1"
+      ]
+    }
+  ]
+}
