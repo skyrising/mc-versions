@@ -15,7 +15,10 @@ const versionDir = path.resolve(dataDir, 'version')
     const newManifest = {}
     const mojangManifest = await (await fetch('https://launchermeta.mojang.com/mc/game/version_manifest.json')).json()
     newManifest.latest = mojangManifest.latest
-    const urls = mojangManifest.versions.map(v => new URL(v.url))
+    const urls = [
+        ...mojangManifest.versions.map(v => v.url),
+        ...process.argv.slice(2)
+    ].map(u => new URL(u))
     for (const url of urls) {
         const p = url.pathname.split('/')
         let hash = p[3]
@@ -96,7 +99,7 @@ const versionDir = path.resolve(dataDir, 'version')
         }
     }
     fs.writeFileSync(path.resolve(dataDir, 'version_manifest.json'), JSON.stringify(newManifest, null, 2))
-    fs.writeFileSync(path.resolve(dataDir, 'hash_map.json'), JSON.stringify(hashMap, null, 2))
+    fs.writeFileSync(path.resolve(dataDir, 'hash_map.json'), JSON.stringify(sortObject(hashMap), null, 2))
     fs.writeFileSync(path.resolve(dataDir, 'omni_id.json'), JSON.stringify(newOmniVersions, null, 2))
 })()
 
