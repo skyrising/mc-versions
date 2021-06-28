@@ -117,6 +117,12 @@ function updateVersionFile(id, manifests) {
     const data = {...oldData}
     data.id = id
     data.releaseTime = data.releaseTime || manifests[0].releaseTime
+    const releaseTime = new Date(data.releaseTime)
+    if (releaseTime.getUTCHours() === 22 && releaseTime.getUTCMinutes() === 0) {
+        releaseTime.setUTCDate(releaseTime.getUTCDate() + 1)
+        releaseTime.setUTCHours(0)
+    }
+    data.releaseTime = releaseTime.toISOString().replace('.000Z', '+00:00')
     data.manifests = manifests.map(m => ({
         ...m,
         omniId: undefined,

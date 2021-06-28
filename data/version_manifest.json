@@ -2858,6 +2858,15 @@
       "details": "version/15w50a.json"
     },
     {
+      "omniId": "1.8.9",
+      "id": "1.8.9",
+      "type": "release",
+      "url": "manifest/8/5/1e840bf74f42b402fab8d079e9d0ffa218ad39/1.8.9.json",
+      "time": "2015-12-03T09:24:39+00:00",
+      "releaseTime": "2015-12-09T00:00:00+00:00",
+      "details": "version/1.8.9.json"
+    },
+    {
       "omniId": "15w49b",
       "id": "15w49b",
       "type": "snapshot",
@@ -2865,15 +2874,6 @@
       "time": "2015-12-03T15:23:22+00:00",
       "releaseTime": "2015-12-03T15:23:22+00:00",
       "details": "version/15w49b.json"
-    },
-    {
-      "omniId": "1.8.9",
-      "id": "1.8.9",
-      "type": "release",
-      "url": "manifest/8/5/1e840bf74f42b402fab8d079e9d0ffa218ad39/1.8.9.json",
-      "time": "2015-12-03T09:24:39+00:00",
-      "releaseTime": "2015-12-03T09:24:39+00:00",
-      "details": "version/1.8.9.json"
     },
     {
       "omniId": "15w49a",
@@ -3493,7 +3493,7 @@
       "type": "snapshot",
       "url": "manifest/e/7/d8473a0c061558fbeea05bd59605c8127b5477/1.8-pre1.json",
       "time": "2014-08-21T13:56:26+00:00",
-      "releaseTime": "2014-08-21T13:56:26+00:00",
+      "releaseTime": "2014-08-22T00:00:00+00:00",
       "details": "version/1.8-pre1.json"
     },
     {
@@ -3695,6 +3695,15 @@
       "details": "version/14w26c.json"
     },
     {
+      "omniId": "1.7.10",
+      "id": "1.7.10",
+      "type": "release",
+      "url": "manifest/0/d/b5679c9caaa7845173c45724651d0f5b2f24a9/1.7.10.json",
+      "time": "2014-05-14T17:29:23+00:00",
+      "releaseTime": "2014-06-26T00:00:00+00:00",
+      "details": "version/1.7.10.json"
+    },
+    {
       "omniId": "14w26b",
       "id": "14w26b",
       "type": "snapshot",
@@ -3731,6 +3740,42 @@
       "details": "version/14w25a.json"
     },
     {
+      "omniId": "1.7.10-pre4",
+      "id": "1.7.10-pre4",
+      "type": "snapshot",
+      "url": "manifest/5/6/45b357679c6c0b6f2cf1237382162ccf6b9964/1.7.10-pre4.json",
+      "time": "2014-05-14T16:29:23+00:00",
+      "releaseTime": "2014-06-18T00:00:00+00:00",
+      "details": "version/1.7.10-pre4.json"
+    },
+    {
+      "omniId": "1.7.10-pre3",
+      "id": "1.7.10-pre3",
+      "type": "snapshot",
+      "url": "manifest/3/7/da9a5fdf915ebeb294439f31051791a39102fd/1.7.10-pre3.json",
+      "time": "2014-05-14T15:29:23+00:00",
+      "releaseTime": "2014-06-10T00:00:00+00:00",
+      "details": "version/1.7.10-pre3.json"
+    },
+    {
+      "omniId": "1.7.10-pre2",
+      "id": "1.7.10-pre2",
+      "type": "snapshot",
+      "url": "manifest/1/0/85be99a5e550c805be12d73a086f4bbfc1f774/1.7.10-pre2.json",
+      "time": "2014-05-14T14:29:23+00:00",
+      "releaseTime": "2014-06-04T00:00:00+00:00",
+      "details": "version/1.7.10-pre2.json"
+    },
+    {
+      "omniId": "1.7.10-pre1",
+      "id": "1.7.10-pre1",
+      "type": "snapshot",
+      "url": "manifest/3/6/3f309b737dacddc4ea191bf29e1522946990cf/1.7.10-pre1.json",
+      "time": "2014-05-14T13:29:23+00:00",
+      "releaseTime": "2014-06-03T00:00:00+00:00",
+      "details": "version/1.7.10-pre1.json"
+    },
+    {
       "omniId": "14w21b",
       "id": "14w21b",
       "type": "snapshot",
@@ -3765,51 +3810,6 @@
       "time": "2014-05-15T14:01:20+00:00",
       "releaseTime": "2014-05-15T14:01:20+00:00",
       "details": "version/14w20a.json"
-    },
-    {
-      "omniId": "1.7.10",
-      "id": "1.7.10",
-      "type": "release",
-      "url": "manifest/0/d/b5679c9caaa7845173c45724651d0f5b2f24a9/1.7.10.json",
-      "time": "2014-05-14T17:29:23+00:00",
-      "releaseTime": "2014-05-14T17:29:23+00:00",
-      "details": "version/1.7.10.json"
-    },
-    {
-      "omniId": "1.7.10-pre4",
-      "id": "1.7.10-pre4",
-      "type": "snapshot",
-      "url": "manifest/5/6/45b357679c6c0b6f2cf1237382162ccf6b9964/1.7.10-pre4.json",
-      "time": "2014-05-14T16:29:23+00:00",
-      "releaseTime": "2014-05-14T16:29:23+00:00",
-      "details": "version/1.7.10-pre4.json"
-    },
-    {
-      "omniId": "1.7.10-pre3",
-      "id": "1.7.10-pre3",
-      "type": "snapshot",
-      "url": "manifest/3/7/da9a5fdf915ebeb294439f31051791a39102fd/1.7.10-pre3.json",
-      "time": "2014-05-14T15:29:23+00:00",
-      "releaseTime": "2014-05-14T15:29:23+00:00",
-      "details": "version/1.7.10-pre3.json"
-    },
-    {
-      "omniId": "1.7.10-pre2",
-      "id": "1.7.10-pre2",
-      "type": "snapshot",
-      "url": "manifest/1/0/85be99a5e550c805be12d73a086f4bbfc1f774/1.7.10-pre2.json",
-      "time": "2014-05-14T14:29:23+00:00",
-      "releaseTime": "2014-05-14T14:29:23+00:00",
-      "details": "version/1.7.10-pre2.json"
-    },
-    {
-      "omniId": "1.7.10-pre1",
-      "id": "1.7.10-pre1",
-      "type": "snapshot",
-      "url": "manifest/3/6/3f309b737dacddc4ea191bf29e1522946990cf/1.7.10-pre1.json",
-      "time": "2014-05-14T13:29:23+00:00",
-      "releaseTime": "2014-05-14T13:29:23+00:00",
-      "details": "version/1.7.10-pre1.json"
     },
     {
       "omniId": "14w19a",
@@ -3871,7 +3871,7 @@
       "type": "release",
       "url": "manifest/0/5/154b8bd979824672df71de60abb6092aa976c6/1.7.8.json",
       "time": "2014-04-09T07:58:16+00:00",
-      "releaseTime": "2014-04-09T07:58:16+00:00",
+      "releaseTime": "2014-04-11T00:00:00+00:00",
       "details": "version/1.7.8.json"
     },
     {
@@ -3880,7 +3880,7 @@
       "type": "release",
       "url": "manifest/c/4/090cf302956ec14cbb9659267c797758b229af/1.7.7.json",
       "time": "2014-04-09T07:52:16+00:00",
-      "releaseTime": "2014-04-09T07:52:16+00:00",
+      "releaseTime": "2014-04-10T13:31:00+00:00",
       "details": "version/1.7.7-101331.json"
     },
     {
@@ -3893,21 +3893,12 @@
       "details": "version/1.7.6.json"
     },
     {
-      "omniId": "14w11a",
-      "id": "14w11a",
-      "type": "snapshot",
-      "url": "manifest/6/d/5b7e360833e86ff265a37fcbc32b7ec4b48ed5/14w11a.json",
-      "time": "2014-03-13T14:02:50+00:00",
-      "releaseTime": "2014-03-13T14:02:50+00:00",
-      "details": "version/14w11a.json"
-    },
-    {
       "omniId": "1.7.6-pre2",
       "id": "1.7.6-pre2",
       "type": "snapshot",
       "url": "manifest/3/d/e9556107748d7acca8b52874f65a9286787f45/1.7.6-pre2.json",
       "time": "2014-03-08T11:00:01+00:00",
-      "releaseTime": "2014-03-08T11:00:01+00:00",
+      "releaseTime": "2014-04-04T00:00:00+00:00",
       "details": "version/1.7.6-pre2.json"
     },
     {
@@ -3916,8 +3907,17 @@
       "type": "snapshot",
       "url": "manifest/b/3/599d584c4cbaf091a3536322054a04e91aac82/1.7.6-pre1.json",
       "time": "2014-03-08T11:00:00+00:00",
-      "releaseTime": "2014-03-08T11:00:00+00:00",
+      "releaseTime": "2014-04-03T00:00:00+00:00",
       "details": "version/1.7.6-pre1.json"
+    },
+    {
+      "omniId": "14w11a",
+      "id": "14w11a",
+      "type": "snapshot",
+      "url": "manifest/6/d/5b7e360833e86ff265a37fcbc32b7ec4b48ed5/14w11a.json",
+      "time": "2014-03-13T14:02:50+00:00",
+      "releaseTime": "2014-03-13T14:02:50+00:00",
+      "details": "version/14w11a.json"
     },
     {
       "omniId": "14w10c",
@@ -4078,17 +4078,17 @@
       "type": "release",
       "url": "manifest/e/7/c6504f9e40327c017fc1306b758eeafef81906/1.7.4.json",
       "time": "2013-12-09T12:28:10+00:00",
-      "releaseTime": "2013-12-09T12:28:10+00:00",
+      "releaseTime": "2013-12-10T00:00:00+00:00",
       "details": "version/1.7.4.json"
     },
     {
-      "omniId": "1.7.3",
+      "omniId": "1.7.3-pre",
       "id": "1.7.3",
       "type": "release",
       "url": "manifest/d/6/8ce38f20a409f165032a183994fd60b7d584a2/1.7.3.json",
       "time": "2013-12-06T13:55:34+00:00",
       "releaseTime": "2013-12-06T13:55:34+00:00",
-      "details": "version/1.7.3.json"
+      "details": "version/1.7.3-pre.json"
     },
     {
       "omniId": "13w49a",
@@ -4172,22 +4172,22 @@
       "details": "version/1.7.2.json"
     },
     {
-      "omniId": "1.7.1",
+      "omniId": "1.7.1-pre",
       "id": "1.7.1",
       "type": "snapshot",
       "url": "manifest/4/f/529028bf064a1e994970dcec6940a7284f7c57/1.7.1.json",
       "time": "2013-10-23T12:01:07+00:00",
       "releaseTime": "2013-10-23T12:01:07+00:00",
-      "details": "version/1.7.1.json"
+      "details": "version/1.7.1-pre.json"
     },
     {
-      "omniId": "1.7",
+      "omniId": "1.7-pre",
       "id": "1.7",
       "type": "snapshot",
       "url": "manifest/e/e/2a5d8c4aefa60420a2490f689576ab369c0437/1.7.json",
       "time": "2013-10-22T15:04:05+00:00",
       "releaseTime": "2013-10-22T15:04:05+00:00",
-      "details": "version/1.7.json"
+      "details": "version/1.7-pre.json"
     },
     {
       "omniId": "13w43a",
@@ -4289,6 +4289,15 @@
       "details": "version/1.6.4.json"
     },
     {
+      "omniId": "1.6.3-pre-2",
+      "id": "1.6.3",
+      "type": "snapshot",
+      "url": "manifest/1/d/42d74e9516e6b5d4bd18c3222ca939cc4d24c8/1.6.3.json",
+      "time": "2013-09-13T10:54:41+00:00",
+      "releaseTime": "2013-09-17T00:00:00+00:00",
+      "details": "version/1.6.3-pre-2.json"
+    },
+    {
       "omniId": "13w37b",
       "id": "13w37b",
       "type": "snapshot",
@@ -4296,15 +4305,6 @@
       "time": "2013-09-13T10:54:41+00:00",
       "releaseTime": "2013-09-13T10:54:41+00:00",
       "details": "version/13w37b.json"
-    },
-    {
-      "omniId": "1.6.3",
-      "id": "1.6.3",
-      "type": "snapshot",
-      "url": "manifest/1/d/42d74e9516e6b5d4bd18c3222ca939cc4d24c8/1.6.3.json",
-      "time": "2013-09-13T10:54:41+00:00",
-      "releaseTime": "2013-09-13T10:54:41+00:00",
-      "details": "version/1.6.3.json"
     },
     {
       "omniId": "13w37a",
@@ -4339,7 +4339,7 @@
       "type": "release",
       "url": "manifest/0/0/d67dde72475d4271a19b0316cd518841169cf9/1.6.2.json",
       "time": "2013-07-05T13:09:02+00:00",
-      "releaseTime": "2013-07-05T13:09:02+00:00",
+      "releaseTime": "2013-07-09T09:18:00+00:00",
       "details": "version/1.6.2-091847.json"
     },
     {
@@ -4352,13 +4352,13 @@
       "details": "version/1.6.1.json"
     },
     {
-      "omniId": "1.6",
+      "omniId": "1.6-pre-06251516",
       "id": "1.6",
       "type": "snapshot",
       "url": "manifest/2/1/215dad08a8482fbeedbd72432bc70f3c020e60/1.6.json",
       "time": "2013-06-25T13:08:56+00:00",
-      "releaseTime": "2013-06-25T13:08:56+00:00",
-      "details": "version/1.6.json"
+      "releaseTime": "2013-06-25T15:16:00+00:00",
+      "details": "version/1.6-pre-06251516.json"
     },
     {
       "omniId": "13w26a",
@@ -4496,6 +4496,15 @@
       "details": "version/13w18a.json"
     },
     {
+      "omniId": "1.5.2",
+      "id": "1.5.2",
+      "type": "release",
+      "url": "manifest/3/4/af212ac1badac3f3037017be9e3a87f0625f41/1.5.2.json",
+      "time": "2013-04-25T15:45:00+00:00",
+      "releaseTime": "2013-05-02T15:45:00+00:00",
+      "details": "version/1.5.2.json"
+    },
+    {
       "omniId": "13w17a",
       "id": "13w17a",
       "type": "snapshot",
@@ -4503,15 +4512,6 @@
       "time": "2013-04-25T15:50:00+00:00",
       "releaseTime": "2013-04-25T15:50:00+00:00",
       "details": "version/13w17a.json"
-    },
-    {
-      "omniId": "1.5.2",
-      "id": "1.5.2",
-      "type": "release",
-      "url": "manifest/3/4/af212ac1badac3f3037017be9e3a87f0625f41/1.5.2.json",
-      "time": "2013-04-25T15:45:00+00:00",
-      "releaseTime": "2013-04-25T15:45:00+00:00",
-      "details": "version/1.5.2.json"
     },
     {
       "omniId": "13w16b-04232151",
@@ -4564,7 +4564,7 @@
       "type": "release",
       "url": "manifest/e/d/520ab68c5b76e69d477f50e77ca485b264b0e2/1.5.1.json",
       "time": "2013-03-20T10:00:00+00:00",
-      "releaseTime": "2013-03-20T10:00:00+00:00",
+      "releaseTime": "2013-03-21T00:00:00+00:00",
       "details": "version/1.5.1.json"
     },
     {
@@ -4573,7 +4573,7 @@
       "type": "snapshot",
       "url": "manifest/0/2/f461146ce02227a8b6fa2062706580b660d2b3/1.5.json",
       "time": "2013-03-06T22:00:00+00:00",
-      "releaseTime": "2013-03-06T22:00:00+00:00",
+      "releaseTime": "2013-03-13T00:00:00+00:00",
       "details": "version/1.5.json"
     },
     {
@@ -4582,7 +4582,7 @@
       "type": "release",
       "url": "manifest/2/3/927801be70c4bec376a6625cb9fdf8dbd3acb7/1.4.7.json",
       "time": "2012-12-27T22:00:00+00:00",
-      "releaseTime": "2012-12-27T22:00:00+00:00",
+      "releaseTime": "2013-01-09T00:00:00+00:00",
       "details": "version/1.4.7.json"
     },
     {
@@ -4591,17 +4591,8 @@
       "type": "release",
       "url": "manifest/d/5/2d2a6313e87de4b690f53a9bab39cee742144e/1.4.6.json",
       "time": "2012-12-19T22:00:00+00:00",
-      "releaseTime": "2012-12-19T22:00:00+00:00",
+      "releaseTime": "2012-12-20T00:00:00+00:00",
       "details": "version/1.4.6.json"
-    },
-    {
-      "omniId": "1.4.5",
-      "id": "1.4.5",
-      "type": "release",
-      "url": "manifest/5/5/d804d7497d406ee006cb708325e5d929366c70/1.4.5.json",
-      "time": "2012-12-19T22:00:00+00:00",
-      "releaseTime": "2012-12-19T22:00:00+00:00",
-      "details": "version/1.4.5.json"
     },
     {
       "omniId": "1.4.4",
@@ -4609,17 +4600,26 @@
       "type": "release",
       "url": "manifest/4/c/1ad486c5bd14967f4f44576a0b023f53132886/1.4.4.json",
       "time": "2012-12-13T22:00:00+00:00",
-      "releaseTime": "2012-12-13T22:00:00+00:00",
+      "releaseTime": "2012-12-14T00:00:00+00:00",
       "details": "version/1.4.4.json"
     },
     {
-      "omniId": "1.4.3",
+      "omniId": "1.4.5",
+      "id": "1.4.5",
+      "type": "release",
+      "url": "manifest/5/5/d804d7497d406ee006cb708325e5d929366c70/1.4.5.json",
+      "time": "2012-12-19T22:00:00+00:00",
+      "releaseTime": "2012-11-20T00:00:00+00:00",
+      "details": "version/1.4.5.json"
+    },
+    {
+      "omniId": "1.4.3-pre",
       "id": "1.4.3",
       "type": "snapshot",
       "url": "manifest/5/f/c22920c6f977e7177f68c69cbefa06c7c3ab42/1.4.3.json",
       "time": "2012-11-30T22:00:00+00:00",
-      "releaseTime": "2012-11-30T22:00:00+00:00",
-      "details": "version/1.4.3.json"
+      "releaseTime": "2012-11-01T00:00:00+00:00",
+      "details": "version/1.4.3-pre.json"
     },
     {
       "omniId": "1.4.2",
@@ -4627,26 +4627,26 @@
       "type": "release",
       "url": "manifest/4/8/ed29fb6df752a926f71851280354a7d5e4f051/1.4.2.json",
       "time": "2012-11-24T22:00:00+00:00",
-      "releaseTime": "2012-11-24T22:00:00+00:00",
+      "releaseTime": "2012-10-25T00:00:00+00:00",
       "details": "version/1.4.2.json"
     },
     {
-      "omniId": "1.4.1",
+      "omniId": "1.4.1-pre-10231538",
       "id": "1.4.1",
       "type": "snapshot",
       "url": "manifest/f/4/a852fa469ab5b5c518c49b8c2b8e75475dbf65/1.4.1.json",
       "time": "2012-11-22T22:00:00+00:00",
-      "releaseTime": "2012-11-22T22:00:00+00:00",
-      "details": "version/1.4.1.json"
+      "releaseTime": "2012-10-23T15:38:00+00:00",
+      "details": "version/1.4.1-pre-10231538.json"
     },
     {
-      "omniId": "1.4",
+      "omniId": "1.4-pre",
       "id": "1.4",
       "type": "snapshot",
       "url": "manifest/5/0/dbae3772e698b0cd303bf9cbdda8181c61ef8d/1.4.json",
       "time": "2012-11-18T22:00:00+00:00",
-      "releaseTime": "2012-11-18T22:00:00+00:00",
-      "details": "version/1.4.json"
+      "releaseTime": "2012-10-19T00:00:00+00:00",
+      "details": "version/1.4-pre.json"
     },
     {
       "omniId": "1.3.2",
@@ -4654,7 +4654,7 @@
       "type": "release",
       "url": "manifest/c/e/ad1c61211005a8c8523626e181ff8051eeca44/1.3.2.json",
       "time": "2012-08-15T22:00:00+00:00",
-      "releaseTime": "2012-08-15T22:00:00+00:00",
+      "releaseTime": "2012-08-16T00:00:00+00:00",
       "details": "version/1.3.2.json"
     },
     {
@@ -4663,17 +4663,17 @@
       "type": "release",
       "url": "manifest/f/e/656c45979dc147ecc00ae803218a10d6384682/1.3.1.json",
       "time": "2012-07-31T22:00:00+00:00",
-      "releaseTime": "2012-07-31T22:00:00+00:00",
+      "releaseTime": "2012-08-01T00:00:00+00:00",
       "details": "version/1.3.1.json"
     },
     {
-      "omniId": "1.3",
+      "omniId": "1.3-pre-07261249",
       "id": "1.3",
       "type": "snapshot",
       "url": "manifest/8/3/917e10f15ce5683d5b50b8caab41021ede6aa9/1.3.json",
       "time": "2012-07-25T22:00:00+00:00",
-      "releaseTime": "2012-07-25T22:00:00+00:00",
-      "details": "version/1.3.json"
+      "releaseTime": "2012-07-26T12:49:00+00:00",
+      "details": "version/1.3-pre-07261249.json"
     },
     {
       "omniId": "1.2.5",
@@ -4681,7 +4681,7 @@
       "type": "release",
       "url": "manifest/9/f/35732e51da90d79e4d13a7eca637d41f83daa6/1.2.5.json",
       "time": "2012-03-29T22:00:00+00:00",
-      "releaseTime": "2012-03-29T22:00:00+00:00",
+      "releaseTime": "2012-04-04T00:00:00+00:00",
       "details": "version/1.2.5.json"
     },
     {
@@ -4690,7 +4690,7 @@
       "type": "release",
       "url": "manifest/0/3/8f448ee08ad21940b1a4ed7950a5b1471cc14b/1.2.4.json",
       "time": "2012-03-21T22:00:00+00:00",
-      "releaseTime": "2012-03-21T22:00:00+00:00",
+      "releaseTime": "2012-03-22T15:55:00+00:00",
       "details": "version/1.2.4.json"
     },
     {
@@ -4699,7 +4699,7 @@
       "type": "release",
       "url": "manifest/6/c/06fcbac55906c96a850f28876788797e0146be/1.2.3.json",
       "time": "2012-03-01T22:00:00+00:00",
-      "releaseTime": "2012-03-01T22:00:00+00:00",
+      "releaseTime": "2012-03-02T08:36:00+00:00",
       "details": "version/1.2.3.json"
     },
     {
@@ -4708,7 +4708,7 @@
       "type": "release",
       "url": "manifest/2/b/edf35196ec033a85fa90ef7624b56549d7579a/1.2.2.json",
       "time": "2012-02-29T22:00:01+00:00",
-      "releaseTime": "2012-02-29T22:00:01+00:00",
+      "releaseTime": "2012-03-01T14:19:00+00:00",
       "details": "version/1.2.2.json"
     },
     {
@@ -4717,7 +4717,7 @@
       "type": "release",
       "url": "manifest/6/5/ad7e42b9adabe0c34099faf14bedb527b0fa29/1.2.1.json",
       "time": "2012-02-29T22:00:00+00:00",
-      "releaseTime": "2012-02-29T22:00:00+00:00",
+      "releaseTime": "2012-03-01T12:52:00+00:00",
       "details": "version/1.2.1.json"
     },
     {
@@ -4726,7 +4726,7 @@
       "type": "release",
       "url": "manifest/f/e/ce09d86f3a907a40135844e81908c4b964c89f/1.1.json",
       "time": "2012-01-11T22:00:00+00:00",
-      "releaseTime": "2012-01-11T22:00:00+00:00",
+      "releaseTime": "2012-01-12T14:20:00+00:00",
       "details": "version/1.1.json"
     },
     {
@@ -4735,7 +4735,7 @@
       "type": "release",
       "url": "manifest/6/4/61b224f1e2935ff78fd95be1fe473e7d1fc61c/1.0.json",
       "time": "2011-11-17T22:00:00+00:00",
-      "releaseTime": "2011-11-17T22:00:00+00:00",
+      "releaseTime": "2011-11-18T21:54:50+00:00",
       "details": "version/1.0.json"
     },
     {
@@ -4744,8 +4744,17 @@
       "type": "snapshot",
       "url": "manifest/7/7/7f2fa081b9688e07e1c6c0dfc95ccbc27d2f8b/1.0.0-rc2-3.json",
       "time": "2013-08-06T07:33:30-07:00",
-      "releaseTime": "2011-11-14T15:00:00-07:00",
+      "releaseTime": "2011-11-15T00:00:00+00:00",
       "details": "version/1.0.0-rc2-3.json"
+    },
+    {
+      "omniId": "1.0.0-rc1",
+      "id": "1.0.0-rc1",
+      "type": "snapshot",
+      "url": "manifest/8/0/5b5d207a2c4b6c6b8c2dd92cfa2189780563b9/1.0.0-rc1.json",
+      "time": "2013-08-06T07:33:30-07:00",
+      "releaseTime": "2011-11-14T00:00:00+00:00",
+      "details": "version/1.0.0-rc1.json"
     },
     {
       "omniId": "1.0.0-rc2-2",
@@ -4766,21 +4775,12 @@
       "details": "version/1.0.0-rc2-1.json"
     },
     {
-      "omniId": "1.0.0-rc1",
-      "id": "1.0.0-rc1",
-      "type": "snapshot",
-      "url": "manifest/8/0/5b5d207a2c4b6c6b8c2dd92cfa2189780563b9/1.0.0-rc1.json",
-      "time": "2013-08-06T07:33:30-07:00",
-      "releaseTime": "2011-11-13T15:00:00-07:00",
-      "details": "version/1.0.0-rc1.json"
-    },
-    {
       "omniId": "b1.9-pre6",
       "id": "b1.9-pre6",
       "type": "old_beta",
       "url": "manifest/3/6/7b21227f88fa70164de48fd2b9a1ee1cb74b08/b1.9-pre6.json",
       "time": "2013-08-06T14:00:00+03:00",
-      "releaseTime": "2011-11-11T00:00:00+02:00",
+      "releaseTime": "2011-11-11T00:00:00+00:00",
       "details": "version/b1.9-pre6.json"
     },
     {
@@ -4789,7 +4789,7 @@
       "type": "old_beta",
       "url": "manifest/0/d/ac378679a96f2904ccf16e4f7d1f9272839cfe/b1.9-pre5.json",
       "time": "2013-08-06T14:00:00+03:00",
-      "releaseTime": "2011-10-27T00:00:00+02:00",
+      "releaseTime": "2011-10-27T00:00:00+00:00",
       "details": "version/b1.9-pre5.json"
     },
     {
@@ -4798,7 +4798,7 @@
       "type": "old_beta",
       "url": "manifest/b/5/e2ec6fa5a3443071d26bb621ef0ce7f5eef69f/b1.9-pre4-2.json",
       "time": "2013-08-06T14:00:00+03:00",
-      "releaseTime": "2011-10-13T00:00:00+02:00",
+      "releaseTime": "2011-10-13T00:00:00+00:00",
       "details": "version/b1.9-pre4-201110131634.json"
     },
     {
@@ -4807,7 +4807,7 @@
       "type": "old_beta",
       "url": "manifest/d/7/da200019e55e87925e7e5360d38f01889601c0/b1.9-pre3-2.json",
       "time": "2013-08-06T14:00:00+03:00",
-      "releaseTime": "2011-10-06T00:00:00+02:00",
+      "releaseTime": "2011-10-06T00:00:00+00:00",
       "details": "version/b1.9-pre3-201110061602.json"
     },
     {
@@ -4816,7 +4816,7 @@
       "type": "old_beta",
       "url": "manifest/9/3/c6c6ef79c6b14be79a4e065e302e30a9fc63ed/b1.9-pre3-1.json",
       "time": "2013-08-06T14:00:00+03:00",
-      "releaseTime": "2011-10-06T00:00:00+02:00",
+      "releaseTime": "2011-10-06T00:00:00+00:00",
       "details": "version/b1.9-pre3-201110061550.json"
     },
     {
@@ -4825,7 +4825,7 @@
       "type": "old_beta",
       "url": "manifest/0/b/26f196183569822f2e61865ade64b35533e14a/b1.9-pre2.json",
       "time": "2013-08-06T14:00:00+03:00",
-      "releaseTime": "2011-09-29T00:00:00+02:00",
+      "releaseTime": "2011-09-29T00:00:00+00:00",
       "details": "version/b1.9-pre2.json"
     },
     {
@@ -4834,7 +4834,7 @@
       "type": "old_beta",
       "url": "manifest/7/6/61e2d712a3b2b61ea5e7ee172e32f4dd53afe0/b1.9-pre1.json",
       "time": "2013-08-06T14:00:00+03:00",
-      "releaseTime": "2011-09-23T00:00:00+02:00",
+      "releaseTime": "2011-09-23T00:00:00+00:00",
       "details": "version/b1.9-pre1.json"
     },
     {
@@ -4843,7 +4843,7 @@
       "type": "old_beta",
       "url": "manifest/c/e/4f24f4dfafcf65ed123e9285583cfcc2749a73/b1.8.1.json",
       "time": "2011-09-18T22:00:00+00:00",
-      "releaseTime": "2011-09-18T22:00:00+00:00",
+      "releaseTime": "2011-09-19T00:00:00+00:00",
       "details": "version/b1.8.1.json"
     },
     {
@@ -4852,7 +4852,7 @@
       "type": "old_beta",
       "url": "manifest/3/6/67c9664fb4b85b8fafb3da5e91a0c8a48d074e/b1.8.json",
       "time": "2011-09-14T22:00:00+00:00",
-      "releaseTime": "2011-09-14T22:00:00+00:00",
+      "releaseTime": "2011-09-15T00:00:00+00:00",
       "details": "version/b1.8.json"
     },
     {
@@ -4861,7 +4861,7 @@
       "type": "old_beta",
       "url": "manifest/4/d/90e000108e1c33f3b8e711000a10e33e8d83b5/b1.8-pre2.json",
       "time": "2013-08-06T04:00:00-07:00",
-      "releaseTime": "2011-09-13T14:00:00-08:00",
+      "releaseTime": "2011-09-14T00:00:00+00:00",
       "details": "version/b1.8-pre2.json"
     },
     {
@@ -4870,7 +4870,7 @@
       "type": "old_beta",
       "url": "manifest/5/7/6dc4966da82cf1946143a2316786a010567d5f/b1.8-pre1-1.json",
       "time": "2011-09-09T04:00:00-07:00",
-      "releaseTime": "2011-09-09T14:00:00-08:00",
+      "releaseTime": "2011-09-10T00:00:00+00:00",
       "details": "version/b1.8-pre1-201109081659.json"
     },
     {
@@ -4879,7 +4879,7 @@
       "type": "old_beta",
       "url": "manifest/1/f/265e67ff9c31de76496e6c03a4f077cc0b632f/b1.8-pre1-2.json",
       "time": "2011-09-09T04:00:00-07:00",
-      "releaseTime": "2011-09-09T14:00:00-08:00",
+      "releaseTime": "2011-09-10T00:00:00+00:00",
       "details": "version/b1.8-pre1-201109091557.json"
     },
     {
@@ -4888,7 +4888,7 @@
       "type": "old_beta",
       "url": "manifest/3/7/a66805b4e581e18d297032cb1019b07ce1eceb/b1.7.3.json",
       "time": "2011-07-07T22:00:00+00:00",
-      "releaseTime": "2011-07-07T22:00:00+00:00",
+      "releaseTime": "2011-07-08T00:00:00+00:00",
       "details": "version/b1.7.3.json"
     },
     {
@@ -4897,7 +4897,7 @@
       "type": "old_beta",
       "url": "manifest/f/f/58c578cba679fb4dd1f91b69ccfe60d1c43496/b1.7.2.json",
       "time": "2011-06-30T22:00:00+00:00",
-      "releaseTime": "2011-06-30T22:00:00+00:00",
+      "releaseTime": "2011-07-01T00:00:00+00:00",
       "details": "version/b1.7.2.json"
     },
     {
@@ -4906,7 +4906,7 @@
       "type": "old_beta",
       "url": "manifest/b/8/1ffbab413c6d739805f8a505ea61e5d65b3251/b1.7_01.json",
       "time": "2013-08-06T04:00:00-07:00",
-      "releaseTime": "2011-06-30T14:00:00-05:00",
+      "releaseTime": "2011-06-30T19:00:00+00:00",
       "details": "version/b1.7_01.json"
     },
     {
@@ -4915,7 +4915,7 @@
       "type": "old_beta",
       "url": "manifest/d/a/09055270db4ca407b276650ea3f9f04b837301/b1.7.json",
       "time": "2011-06-29T22:00:00+00:00",
-      "releaseTime": "2011-06-29T22:00:00+00:00",
+      "releaseTime": "2011-06-30T00:00:00+00:00",
       "details": "version/b1.7.json"
     },
     {
@@ -4924,7 +4924,7 @@
       "type": "old_beta",
       "url": "manifest/7/f/4821b6e48b56d8f372683bb474a7df3e864f64/b1.6.6.json",
       "time": "2011-05-30T22:00:00+00:00",
-      "releaseTime": "2011-05-30T22:00:00+00:00",
+      "releaseTime": "2011-05-31T00:00:00+00:00",
       "details": "version/b1.6.6.json"
     },
     {
@@ -4933,7 +4933,7 @@
       "type": "old_beta",
       "url": "manifest/7/d/424231c7eda9f75f2cd76eb79bc0e17237a132/b1.6.5.json",
       "time": "2011-05-27T22:00:00+00:00",
-      "releaseTime": "2011-05-27T22:00:00+00:00",
+      "releaseTime": "2011-05-28T00:00:00+00:00",
       "details": "version/b1.6.5.json"
     },
     {
@@ -4942,7 +4942,7 @@
       "type": "old_beta",
       "url": "manifest/2/e/e1a4cc7aa390ab50b51e62499e52611b7590eb/b1.6.4.json",
       "time": "2011-05-25T22:00:04+00:00",
-      "releaseTime": "2011-05-25T22:00:04+00:00",
+      "releaseTime": "2011-05-26T00:00:04+00:00",
       "details": "version/b1.6.4.json"
     },
     {
@@ -4951,7 +4951,7 @@
       "type": "old_beta",
       "url": "manifest/7/2/b36a489bc12b9bec167750333d684c1a63ae61/b1.6.3.json",
       "time": "2011-05-25T22:00:03+00:00",
-      "releaseTime": "2011-05-25T22:00:03+00:00",
+      "releaseTime": "2011-05-26T00:00:03+00:00",
       "details": "version/b1.6.3.json"
     },
     {
@@ -4960,7 +4960,7 @@
       "type": "old_beta",
       "url": "manifest/a/e/c7ba2dd2af7754d3edfea6aadc99f1dbc61fbc/b1.6.2.json",
       "time": "2011-05-25T22:00:02+00:00",
-      "releaseTime": "2011-05-25T22:00:02+00:00",
+      "releaseTime": "2011-05-26T00:00:02+00:00",
       "details": "version/b1.6.2.json"
     },
     {
@@ -4969,7 +4969,7 @@
       "type": "old_beta",
       "url": "manifest/3/2/2e618c47a4401f857cf2ef35febb93480d47b2/b1.6.1.json",
       "time": "2011-05-25T22:00:01+00:00",
-      "releaseTime": "2011-05-25T22:00:01+00:00",
+      "releaseTime": "2011-05-26T00:00:01+00:00",
       "details": "version/b1.6.1.json"
     },
     {
@@ -4978,7 +4978,7 @@
       "type": "old_beta",
       "url": "manifest/4/2/f8cc60bcfcef375a42e6891d2505943153174c/b1.6.json",
       "time": "2011-05-25T22:00:00+00:00",
-      "releaseTime": "2011-05-25T22:00:00+00:00",
+      "releaseTime": "2011-05-26T00:00:00+00:00",
       "details": "version/b1.6.json"
     },
     {
@@ -4987,7 +4987,7 @@
       "type": "old_beta",
       "url": "manifest/5/a/1cac0d0635f99f54f4c852781c318e8feb7a89/b1.6-tb3.json",
       "time": "2013-08-06T07:33:30-07:00",
-      "releaseTime": "2011-05-24T15:00:00-07:00",
+      "releaseTime": "2011-05-25T00:00:00+00:00",
       "details": "version/b1.6-tb3.json"
     },
     {
@@ -4996,7 +4996,7 @@
       "type": "old_beta",
       "url": "manifest/b/0/e774bf691aa4ce779fbdc04ca21d792a511618/b1.5_01.json",
       "time": "2011-04-19T22:00:00+00:00",
-      "releaseTime": "2011-04-19T22:00:00+00:00",
+      "releaseTime": "2011-04-20T00:00:00+00:00",
       "details": "version/b1.5_01.json"
     },
     {
@@ -5005,7 +5005,7 @@
       "type": "old_beta",
       "url": "manifest/8/e/38964accfc594dd5791e39a082bfe3190b5df1/b1.5.json",
       "time": "2011-04-18T22:00:00+00:00",
-      "releaseTime": "2011-04-18T22:00:00+00:00",
+      "releaseTime": "2011-04-19T00:00:00+00:00",
       "details": "version/b1.5.json"
     },
     {
@@ -5014,7 +5014,7 @@
       "type": "old_beta",
       "url": "manifest/0/8/1d1d87abd5a206562fea6a33a4a46a83836263/b1.4_01.json",
       "time": "2011-04-04T22:00:00+00:00",
-      "releaseTime": "2011-04-04T22:00:00+00:00",
+      "releaseTime": "2011-04-05T00:00:00+00:00",
       "details": "version/b1.4_01.json"
     },
     {
@@ -5023,7 +5023,7 @@
       "type": "old_beta",
       "url": "manifest/9/6/8476deb477e9b26475f21f087a3953e4c8a7bc/b1.4.json",
       "time": "2011-03-30T22:00:00+00:00",
-      "releaseTime": "2011-03-30T22:00:00+00:00",
+      "releaseTime": "2011-03-31T00:00:00+00:00",
       "details": "version/b1.4-1634.json"
     },
     {
@@ -5032,7 +5032,7 @@
       "type": "old_beta",
       "url": "manifest/5/5/12e4df2b76b207a27c156367cdd44e0141a1c6/b1.4-1.json",
       "time": "2018-07-11T01:30:00+00:00",
-      "releaseTime": "2011-03-30T22:00:00+00:00",
+      "releaseTime": "2011-03-31T00:00:00+00:00",
       "details": "version/b1.4-1507.json"
     },
     {
@@ -5041,7 +5041,7 @@
       "type": "old_beta",
       "url": "manifest/7/e/cd820d5160104dd741024a5cde84c81da6acbd/b1.3_01.json",
       "time": "2011-02-22T22:00:00+00:00",
-      "releaseTime": "2011-02-22T22:00:00+00:00",
+      "releaseTime": "2011-02-23T00:00:00+00:00",
       "details": "version/b1.3_01.json"
     },
     {
@@ -5050,7 +5050,7 @@
       "type": "old_beta",
       "url": "manifest/d/2/154f72b0ef4f697b30879bad02507b303eee5d/b1.3b.json",
       "time": "2011-02-21T22:00:00+00:00",
-      "releaseTime": "2011-02-21T22:00:00+00:00",
+      "releaseTime": "2011-02-22T00:00:00+00:00",
       "details": "version/b1.3-1750.json"
     },
     {
@@ -5059,7 +5059,7 @@
       "type": "old_beta",
       "url": "manifest/3/e/25da51d8c7d7ac3180d0f70eaf6fe22437b4e5/b1.3-1.json",
       "time": "2016-02-02T15:37:47+00:00",
-      "releaseTime": "2011-02-21T22:00:00+00:00",
+      "releaseTime": "2011-02-22T00:00:00+00:00",
       "details": "version/b1.3-1723.json"
     },
     {
@@ -5068,7 +5068,7 @@
       "type": "old_beta",
       "url": "manifest/f/e/312aee11af01de0e6686691e54011dedc509a4/b1.2_02.json",
       "time": "2016-02-02T15:37:47+00:00",
-      "releaseTime": "2011-01-20T22:00:00+00:00",
+      "releaseTime": "2011-01-21T00:00:00+00:00",
       "details": "version/b1.2_02.json"
     },
     {
@@ -5077,7 +5077,7 @@
       "type": "old_beta",
       "url": "manifest/e/b/449fd7c6b68c0b1f46fc6f4833b054af696dc4/b1.2_02.json",
       "time": "2011-01-20T22:00:00+00:00",
-      "releaseTime": "2011-01-20T22:00:00+00:00",
+      "releaseTime": "2011-01-21T00:00:00+00:00",
       "details": "version/b1.2_02-launcher.json"
     },
     {
@@ -5086,7 +5086,7 @@
       "type": "old_beta",
       "url": "manifest/a/f/d566f88118fbb6988026b276c99c6a93286bc6/b1.2_01.json",
       "time": "2011-01-13T22:00:00+00:00",
-      "releaseTime": "2011-01-13T22:00:00+00:00",
+      "releaseTime": "2011-01-14T00:00:00+00:00",
       "details": "version/b1.2_01.json"
     },
     {
@@ -5095,7 +5095,7 @@
       "type": "old_beta",
       "url": "manifest/f/c/7befb2708abc5e9e2db18e8271c231aa4f8262/b1.2.json",
       "time": "2011-01-12T22:00:00+00:00",
-      "releaseTime": "2011-01-12T22:00:00+00:00",
+      "releaseTime": "2011-01-13T00:00:00+00:00",
       "details": "version/b1.2.json"
     },
     {
@@ -5104,7 +5104,7 @@
       "type": "old_beta",
       "url": "manifest/e/6/d55a62b31a316fdd0b4dd9237cc1b6b386f802/b1.1_02.json",
       "time": "2010-12-21T22:00:01+00:00",
-      "releaseTime": "2010-12-21T22:00:01+00:00",
+      "releaseTime": "2010-12-22T00:00:01+00:00",
       "details": "version/b1.1_02.json"
     },
     {
@@ -5113,7 +5113,7 @@
       "type": "old_beta",
       "url": "manifest/d/d/4365352b89d1f71504734c4ffb1f1a947c8348/b1.1-1.json",
       "time": "2016-02-02T15:37:47+00:00",
-      "releaseTime": "2010-12-21T22:00:00+00:00",
+      "releaseTime": "2010-12-22T00:00:00+00:00",
       "details": "version/b1.1-1245.json"
     },
     {
@@ -5122,7 +5122,7 @@
       "type": "old_beta",
       "url": "manifest/8/b/cd43c82b6c352a8f3a30e04835d32df92d39d0/b1.1_01.json",
       "time": "2010-12-21T22:00:00+00:00",
-      "releaseTime": "2010-12-21T22:00:00+00:00",
+      "releaseTime": "2010-12-22T00:00:00+00:00",
       "details": "version/b1.1_01.json"
     },
     {
@@ -5131,7 +5131,7 @@
       "type": "old_beta",
       "url": "manifest/4/6/6696ab7987a65eda62e3448e7710e82527dc59/b1.1-2.json",
       "time": "2016-02-02T15:37:47+00:00",
-      "releaseTime": "2010-12-21T22:00:00+00:00",
+      "releaseTime": "2010-12-22T00:00:00+00:00",
       "details": "version/b1.1-1244.json"
     },
     {
@@ -5140,7 +5140,7 @@
       "type": "old_beta",
       "url": "manifest/e/c/d62c39d964bf2d96c36a150cec321f7fc6e0bc/b1.0.2.json",
       "time": "2010-12-20T22:00:00+00:00",
-      "releaseTime": "2010-12-20T22:00:00+00:00",
+      "releaseTime": "2010-12-21T00:00:00+00:00",
       "details": "version/b1.0.2.json"
     },
     {
@@ -5149,7 +5149,7 @@
       "type": "old_beta",
       "url": "manifest/a/6/393eefb91d6ddd89a071d33f55cebe1b52947c/b1.0_01.json",
       "time": "2010-12-19T22:00:01+00:00",
-      "releaseTime": "2010-12-19T22:00:01+00:00",
+      "releaseTime": "2010-12-20T00:00:01+00:00",
       "details": "version/b1.0_01.json"
     },
     {
@@ -5158,7 +5158,7 @@
       "type": "old_beta",
       "url": "manifest/d/b/f19907d20fbdd66f334a5ed64ac0da732d2d4a/b1.0.json",
       "time": "2010-12-19T22:00:00+00:00",
-      "releaseTime": "2010-12-19T22:00:00+00:00",
+      "releaseTime": "2010-12-20T00:00:00+00:00",
       "details": "version/b1.0.json"
     },
     {
@@ -5167,7 +5167,7 @@
       "type": "old_alpha",
       "url": "manifest/f/4/a889f07dae46ae3c8444422e96d4b4e769e9ad/a1.2.6.json",
       "time": "2010-12-02T22:00:00+00:00",
-      "releaseTime": "2010-12-02T22:00:00+00:00",
+      "releaseTime": "2010-12-03T00:00:00+00:00",
       "details": "version/a1.2.6.json"
     },
     {
@@ -5176,7 +5176,7 @@
       "type": "old_alpha",
       "url": "manifest/8/7/1c9eba677160d41f5a9849bf06e0c5db5028cf/a1.2.5.json",
       "time": "2010-11-30T22:00:00+00:00",
-      "releaseTime": "2010-11-30T22:00:00+00:00",
+      "releaseTime": "2010-12-01T00:00:00+00:00",
       "details": "version/a1.2.5.json"
     },
     {
@@ -5194,7 +5194,7 @@
       "type": "old_alpha",
       "url": "manifest/6/8/049f68330d5270ba0e716a64df981b9f26e1bc/a1.2.4_01.json",
       "time": "2010-11-29T22:00:00+00:00",
-      "releaseTime": "2010-11-29T22:00:00+00:00",
+      "releaseTime": "2010-11-30T00:00:00+00:00",
       "details": "version/a1.2.4_01.json"
     },
     {
@@ -5203,7 +5203,7 @@
       "type": "old_alpha",
       "url": "manifest/b/6/726e319952bacdb487f56751b515e698551b2c/a1.2.3_04.json",
       "time": "2010-11-25T22:00:00+00:00",
-      "releaseTime": "2010-11-25T22:00:00+00:00",
+      "releaseTime": "2010-11-26T00:00:00+00:00",
       "details": "version/a1.2.3_04.json"
     },
     {
@@ -5212,7 +5212,7 @@
       "type": "old_alpha",
       "url": "manifest/e/d/58c9b83229292e9fd3e58d25c9d8e7b8138dd1/a1.2.3_02.json",
       "time": "2010-11-24T22:00:00+00:00",
-      "releaseTime": "2010-11-24T22:00:00+00:00",
+      "releaseTime": "2010-11-25T00:00:00+00:00",
       "details": "version/a1.2.3_02.json"
     },
     {
@@ -5221,7 +5221,7 @@
       "type": "old_alpha",
       "url": "manifest/c/a/c3a439e55a132a8fac22ee8ef3e01588ccc680/a1.2.3_01.json",
       "time": "2010-11-23T22:00:01+00:00",
-      "releaseTime": "2010-11-23T22:00:01+00:00",
+      "releaseTime": "2010-11-24T00:00:01+00:00",
       "details": "version/a1.2.3_01-0958.json"
     },
     {
@@ -5230,7 +5230,7 @@
       "type": "old_alpha",
       "url": "manifest/c/9/d4415c204723a804e65de996765c6469890676/a1.2.3.json",
       "time": "2010-11-23T22:00:00+00:00",
-      "releaseTime": "2010-11-23T22:00:00+00:00",
+      "releaseTime": "2010-11-24T00:00:00+00:00",
       "details": "version/a1.2.3.json"
     },
     {
@@ -5239,7 +5239,7 @@
       "type": "old_alpha",
       "url": "manifest/8/5/bb947fede5c970b472a131b93fc6ea3649ae21/a1.2.2b.json",
       "time": "2010-11-09T22:00:01+00:00",
-      "releaseTime": "2010-11-09T22:00:01+00:00",
+      "releaseTime": "2010-11-10T00:00:01+00:00",
       "details": "version/a1.2.2-1938.json"
     },
     {
@@ -5248,7 +5248,7 @@
       "type": "old_alpha",
       "url": "manifest/c/3/188d3d0adbf8d64a5220f8718d5bb701b920cf/a1.2.2a.json",
       "time": "2010-11-09T22:00:00+00:00",
-      "releaseTime": "2010-11-09T22:00:00+00:00",
+      "releaseTime": "2010-11-10T00:00:00+00:00",
       "details": "version/a1.2.2-1624.json"
     },
     {
@@ -5257,7 +5257,7 @@
       "type": "old_alpha",
       "url": "manifest/1/9/7601429c29ab21252186cd541a7b442cd0b87c/a1.2.1_01.json",
       "time": "2010-11-04T22:00:01+00:00",
-      "releaseTime": "2010-11-04T22:00:01+00:00",
+      "releaseTime": "2010-11-05T00:00:01+00:00",
       "details": "version/a1.2.1_01.json"
     },
     {
@@ -5266,7 +5266,7 @@
       "type": "old_alpha",
       "url": "manifest/3/d/a77fca92c2f5bdb4df3724adfc1a65f84a1ff1/a1.2.1.json",
       "time": "2010-11-04T22:00:00+00:00",
-      "releaseTime": "2010-11-04T22:00:00+00:00",
+      "releaseTime": "2010-11-05T00:00:00+00:00",
       "details": "version/a1.2.1.json"
     },
     {
@@ -5275,7 +5275,7 @@
       "type": "old_alpha",
       "url": "manifest/3/3/8463815b7f49f99d1bf459b7454cc68805c5aa/a1.2.0_02.json",
       "time": "2010-11-03T22:00:00+00:00",
-      "releaseTime": "2010-11-03T22:00:00+00:00",
+      "releaseTime": "2010-11-04T00:00:00+00:00",
       "details": "version/a1.2.0_02.json"
     },
     {
@@ -5284,8 +5284,17 @@
       "type": "old_alpha",
       "url": "manifest/d/1/b975ca808307ea67136029e26112f52624844a/a1.2.0_01.json",
       "time": "2010-10-30T22:00:00+00:00",
-      "releaseTime": "2010-10-30T22:00:00+00:00",
+      "releaseTime": "2010-10-31T00:00:00+00:00",
       "details": "version/a1.2.0_01.json"
+    },
+    {
+      "omniId": "a1.2.0_02-launcher",
+      "id": "a1.2.0_02-launcher",
+      "type": "old_alpha",
+      "url": "manifest/b/8/03211b3c5898c2a3b1e7143ddf516d69367b50/a1.2.0_02-launcher.json",
+      "time": "2010-10-29T22:00:00+00:00",
+      "releaseTime": "2010-10-30T00:00:00+00:00",
+      "details": "version/a1.2.0_02-launcher.json"
     },
     {
       "omniId": "a1.2.0",
@@ -5297,21 +5306,12 @@
       "details": "version/a1.2.0.json"
     },
     {
-      "omniId": "a1.2.0_02-launcher",
-      "id": "a1.2.0_02-launcher",
-      "type": "old_alpha",
-      "url": "manifest/b/8/03211b3c5898c2a3b1e7143ddf516d69367b50/a1.2.0_02-launcher.json",
-      "time": "2010-10-29T22:00:00+00:00",
-      "releaseTime": "2010-10-29T22:00:00+00:00",
-      "details": "version/a1.2.0_02-launcher.json"
-    },
-    {
       "omniId": "a1.1.2_01",
       "id": "a1.1.2_01",
       "type": "old_alpha",
       "url": "manifest/c/c/4982f3de606432987fdad60ffe06da674dfadf/a1.1.2_01.json",
       "time": "2010-09-22T22:00:00+00:00",
-      "releaseTime": "2010-09-22T22:00:00+00:00",
+      "releaseTime": "2010-09-23T00:00:00+00:00",
       "details": "version/a1.1.2_01.json"
     },
     {
@@ -5320,7 +5320,7 @@
       "type": "old_alpha",
       "url": "manifest/8/f/08a4e097b2bdf5710185f0d8eb3e08152ebce2/a1.1.2.json",
       "time": "2010-09-19T22:00:00+00:00",
-      "releaseTime": "2010-09-19T22:00:00+00:00",
+      "releaseTime": "2010-09-20T00:00:00+00:00",
       "details": "version/a1.1.2.json"
     },
     {
@@ -5338,7 +5338,7 @@
       "type": "old_alpha",
       "url": "manifest/3/6/811460e4e198cd9c3ba9ee16a8fdca8ed33227/a1.1.0-2.json",
       "time": "2016-02-02T15:37:47+00:00",
-      "releaseTime": "2010-09-12T22:00:00+00:00",
+      "releaseTime": "2010-09-13T00:00:00+00:00",
       "details": "version/a1.1.0-131933.json"
     },
     {
@@ -5347,7 +5347,7 @@
       "type": "old_alpha",
       "url": "manifest/1/d/618bbd3003844eabae0c8922aaa9b0c688bad5/a1.1.0.json",
       "time": "2010-09-12T22:00:00+00:00",
-      "releaseTime": "2010-09-12T22:00:00+00:00",
+      "releaseTime": "2010-09-13T00:00:00+00:00",
       "details": "version/a1.1.0-101847-launcher.json"
     },
     {
@@ -5374,7 +5374,7 @@
       "type": "old_alpha",
       "url": "manifest/9/3/83314961ab25aa86706832258d1b8034d01c91/a1.0.17_04.json",
       "time": "2010-08-22T22:00:00+00:00",
-      "releaseTime": "2010-08-22T22:00:00+00:00",
+      "releaseTime": "2010-08-23T00:00:00+00:00",
       "details": "version/a1.0.17_04.json"
     },
     {
@@ -5383,7 +5383,7 @@
       "type": "old_alpha",
       "url": "manifest/8/e/78ea7dfd346cc02ff91b761967f06a9f75b3ae/a1.0.17_02.json",
       "time": "2010-08-19T22:00:00+00:00",
-      "releaseTime": "2010-08-19T22:00:00+00:00",
+      "releaseTime": "2010-08-20T00:00:00+00:00",
       "details": "version/a1.0.17_02.json"
     },
     {
@@ -5401,7 +5401,7 @@
       "type": "old_alpha",
       "url": "manifest/3/9/241b27a1bde34c1551664d15f1e6ed6f4deee4/a1.0.16_01.json",
       "time": "2013-08-06T04:00:00-07:00",
-      "releaseTime": "2010-08-12T15:00:00-07:00",
+      "releaseTime": "2010-08-13T00:00:00+00:00",
       "details": "version/a1.0.16_01.json"
     },
     {
@@ -5410,7 +5410,7 @@
       "type": "old_alpha",
       "url": "manifest/9/9/bd76e2e8a288d3542ba3bbe5355ff974b7153f/a1.0.16.json",
       "time": "2010-08-11T22:00:00+00:00",
-      "releaseTime": "2010-08-11T22:00:00+00:00",
+      "releaseTime": "2010-08-12T00:00:00+00:00",
       "details": "version/a1.0.16.json"
     },
     {
@@ -5419,7 +5419,7 @@
       "type": "old_alpha",
       "url": "manifest/f/7/e274eababf6a5aaa1086abda902dff3f344094/a1.0.15.json",
       "time": "2010-08-03T22:00:00+00:00",
-      "releaseTime": "2010-08-03T22:00:00+00:00",
+      "releaseTime": "2010-08-04T00:00:00+00:00",
       "details": "version/a1.0.15.json"
     },
     {
@@ -5432,6 +5432,15 @@
       "details": "version/a1.0.14-1659.json"
     },
     {
+      "omniId": "a1.0.14-1659-launcher",
+      "id": "a1.0.14",
+      "type": "old_alpha",
+      "url": "manifest/6/5/25d20fca9ceb40d7623ee6d7bdd2c0df4a0e58/a1.0.14.json",
+      "time": "2010-07-29T22:00:00+00:00",
+      "releaseTime": "2010-07-30T00:00:00+00:00",
+      "details": "version/a1.0.14-1659-launcher.json"
+    },
+    {
       "omniId": "a1.0.14-1603",
       "id": "a1.0.14-1",
       "type": "old_alpha",
@@ -5439,15 +5448,6 @@
       "time": "2017-10-22T05:26:50+00:00",
       "releaseTime": "2010-07-30T00:00:00+00:00",
       "details": "version/a1.0.14-1603.json"
-    },
-    {
-      "omniId": "a1.0.14-1659-launcher",
-      "id": "a1.0.14",
-      "type": "old_alpha",
-      "url": "manifest/6/5/25d20fca9ceb40d7623ee6d7bdd2c0df4a0e58/a1.0.14.json",
-      "time": "2010-07-29T22:00:00+00:00",
-      "releaseTime": "2010-07-29T22:00:00+00:00",
-      "details": "version/a1.0.14-1659-launcher.json"
     },
     {
       "omniId": "a1.0.13_01-1038",
@@ -5491,7 +5491,7 @@
       "type": "old_alpha",
       "url": "manifest/3/9/66aed7299be459f0235d0c5f3e498c21eb0efa/a1.0.11.json",
       "time": "2010-07-22T22:00:00+00:00",
-      "releaseTime": "2010-07-22T22:00:00+00:00",
+      "releaseTime": "2010-07-23T00:00:00+00:00",
       "details": "version/a1.0.11.json"
     },
     {
@@ -5518,7 +5518,7 @@
       "type": "old_alpha",
       "url": "manifest/4/d/7a620d0cd4875779ab9406f724f6235dad757c/a1.0.8_01.json",
       "time": "2013-08-06T04:00:00-07:00",
-      "releaseTime": "2010-07-19T15:00:00-07:00",
+      "releaseTime": "2010-07-20T00:00:00+00:00",
       "details": "version/a1.0.8_01.json"
     },
     {
@@ -5527,7 +5527,7 @@
       "type": "old_alpha",
       "url": "manifest/0/d/8ac0671ec2526d3e61ea9454a6f642b3ad9164/a1.0.7.json",
       "time": "2013-08-06T04:00:00-07:00",
-      "releaseTime": "2010-07-19T15:00:00-07:00",
+      "releaseTime": "2010-07-20T00:00:00+00:00",
       "details": "version/a1.0.7.json"
     },
     {
@@ -5558,6 +5558,15 @@
       "details": "version/a1.0.6.json"
     },
     {
+      "omniId": "a1.0.5_01",
+      "id": "a1.0.5_01",
+      "type": "old_alpha",
+      "url": "manifest/a/a/daa938a7a2b9e30d049e7eb6d7d6600f56cbbc/a1.0.5_01.json",
+      "time": "2010-07-12T22:00:00+00:00",
+      "releaseTime": "2010-07-13T00:00:00+00:00",
+      "details": "version/a1.0.5_01.json"
+    },
+    {
       "omniId": "a1.0.5-2149",
       "id": "a1.0.5",
       "type": "old_alpha",
@@ -5567,13 +5576,13 @@
       "details": "version/a1.0.5-2149.json"
     },
     {
-      "omniId": "a1.0.5_01",
-      "id": "a1.0.5_01",
+      "omniId": "a1.0.4-launcher",
+      "id": "a1.0.4",
       "type": "old_alpha",
-      "url": "manifest/a/a/daa938a7a2b9e30d049e7eb6d7d6600f56cbbc/a1.0.5_01.json",
-      "time": "2010-07-12T22:00:00+00:00",
-      "releaseTime": "2010-07-12T22:00:00+00:00",
-      "details": "version/a1.0.5_01.json"
+      "url": "manifest/f/1/e043b57c32132f96bc6ec6b38de88ee843df5e/a1.0.4.json",
+      "time": "2010-07-08T22:00:00+00:00",
+      "releaseTime": "2010-07-09T00:00:00+00:00",
+      "details": "version/a1.0.4-launcher.json"
     },
     {
       "omniId": "a1.0.4",
@@ -5583,15 +5592,6 @@
       "time": "2017-10-22T05:26:50+00:00",
       "releaseTime": "2010-07-09T00:00:00+00:00",
       "details": "version/a1.0.4.json"
-    },
-    {
-      "omniId": "a1.0.4-launcher",
-      "id": "a1.0.4",
-      "type": "old_alpha",
-      "url": "manifest/f/1/e043b57c32132f96bc6ec6b38de88ee843df5e/a1.0.4.json",
-      "time": "2010-07-08T22:00:00+00:00",
-      "releaseTime": "2010-07-08T22:00:00+00:00",
-      "details": "version/a1.0.4-launcher.json"
     },
     {
       "omniId": "a1.0.3",
@@ -5626,7 +5626,7 @@
       "type": "old_alpha",
       "url": "manifest/1/c/7059fb95b9970c55b958f6591baa942ce6187e/a1.0.1_01.json",
       "time": "2017-10-22T05:26:50+00:00",
-      "releaseTime": "2010-07-03T22:00:00+00:00",
+      "releaseTime": "2010-07-04T00:00:00+00:00",
       "details": "version/a1.0.1_01.json"
     },
     {
@@ -6085,7 +6085,7 @@
       "type": "old_alpha",
       "url": "manifest/5/6/aef8b594d03b4298128e81f77190b76ce8d7d1/c0.30_01c.json",
       "time": "2009-12-21T22:00:00+00:00",
-      "releaseTime": "2009-12-21T22:00:00+00:00",
+      "releaseTime": "2009-12-22T00:00:00+00:00",
       "details": "version/c0.30-c-renew.json"
     },
     {
@@ -6094,7 +6094,7 @@
       "type": "old_alpha",
       "url": "manifest/f/a/ac52d5eaf8c70a69b4c688540fb58145984d4d/c0.30-2.json",
       "time": "2013-08-06T17:33:30+03:00",
-      "releaseTime": "2009-11-10T00:00:01+02:00",
+      "releaseTime": "2009-11-10T00:00:01+00:00",
       "details": "version/c0.30-c.json"
     },
     {
@@ -6103,7 +6103,7 @@
       "type": "old_alpha",
       "url": "manifest/1/9/b78d6b9fe7fe79b8819eadce68590dec16379d/c0.30-1.json",
       "time": "2013-08-06T17:33:30+03:00",
-      "releaseTime": "2009-11-10T00:00:00+02:00",
+      "releaseTime": "2009-11-10T00:00:00+00:00",
       "details": "version/c0.30-s.json"
     },
     {
@@ -6139,7 +6139,7 @@
       "type": "old_alpha",
       "url": "manifest/6/9/73cf21553d39e5324301f5d77e971e751cf508/c0.27_st.json",
       "time": "2017-09-17T16:33:30+02:00",
-      "releaseTime": "2009-10-24T24:00:00+00:00",
+      "releaseTime": "2009-10-25T00:00:00+00:00",
       "details": "version/c0.27_st.json"
     },
     {
@@ -6166,7 +6166,7 @@
       "type": "old_alpha",
       "url": "manifest/c/3/27d0ad90a0cc36d821b2f0826ebedb7e6e0c9b/c0.0.23a_01.json",
       "time": "2013-08-06T15:33:30+01:00",
-      "releaseTime": "2009-07-11T16:35:04+02:00",
+      "releaseTime": "2009-07-11T14:35:04+00:00",
       "details": "version/c0.0.23a_01.json"
     },
     {
@@ -6184,7 +6184,7 @@
       "type": "old_alpha",
       "url": "manifest/8/3/d0f1487158e525cceb31be6033312b5af3ac99/c0.0.21a.json",
       "time": "2017-09-20T03:12:34+01:00",
-      "releaseTime": "2009-06-22T23:11:11+01:00",
+      "releaseTime": "2009-06-22T22:11:11+00:00",
       "details": "version/c0.0.21a.json"
     },
     {
@@ -6202,7 +6202,7 @@
       "type": "old_alpha",
       "url": "manifest/d/6/0185d72a4ce9db08edebeddaceb5dbea46688f/c0.0.19a_06-2.json",
       "time": "2020-10-17T19:47:58-00:00",
-      "releaseTime": "2009-06-20T01:37:00-00:00",
+      "releaseTime": "2009-06-20T01:37:00+00:00",
       "details": "version/c0.0.19a_06-2.json"
     },
     {
@@ -6211,7 +6211,7 @@
       "type": "old_alpha",
       "url": "manifest/3/c/205ccaaeed79cb7057d24e5f156056462bd034/c0.0.18a_02.json",
       "time": "2020-10-15T18:45:15-00:00",
-      "releaseTime": "2009-06-14T10:53:00-00:00",
+      "releaseTime": "2009-06-14T10:53:00+00:00",
       "details": "version/c0.0.18a_02.json"
     },
     {
@@ -6220,7 +6220,7 @@
       "type": "old_alpha",
       "url": "manifest/9/f/5dd936798ad3e32e563fedb79256221bed4ff7/c0.0.17a.json",
       "time": "2021-04-17T21:49:29-00:00",
-      "releaseTime": "2009-06-10T20:14:00-00:00",
+      "releaseTime": "2009-06-10T20:14:00+00:00",
       "details": "version/c0.0.17a.json"
     },
     {
@@ -6247,7 +6247,7 @@
       "type": "old_alpha",
       "url": "manifest/2/e/d44e74a40256a893db6825a53d612318f9f108/c0.0.13a_03.json",
       "time": "2009-05-21T22:00:00+00:00",
-      "releaseTime": "2009-05-21T22:00:00+00:00",
+      "releaseTime": "2009-05-22T00:00:00+00:00",
       "details": "version/c0.0.13a_03-launcher.json"
     },
     {
@@ -6256,7 +6256,7 @@
       "type": "old_alpha",
       "url": "manifest/a/9/9b7a89dc7048649bce6314231cb4b3cbf250bb/c0.0.13a.json",
       "time": "2009-05-30T22:00:00+00:00",
-      "releaseTime": "2009-05-21T11:25:34+02:00",
+      "releaseTime": "2009-05-21T09:25:34+00:00",
       "details": "version/c0.0.13a-launcher.json"
     },
     {
@@ -6265,7 +6265,7 @@
       "type": "old_alpha",
       "url": "manifest/e/4/745de520ec4042acea0399fde01f922a7c8ace/c0.0.12a_03.json",
       "time": "2021-04-26T19:18:00-00:00",
-      "releaseTime": "2009-05-20T00:00:00-00:00",
+      "releaseTime": "2009-05-20T00:00:00+00:00",
       "details": "version/c0.0.12a_03.json"
     },
     {
@@ -6274,7 +6274,7 @@
       "type": "old_alpha",
       "url": "manifest/e/1/0af31bf57d3638bab3d2a97a3eb2fdf87b31dc/c0.0.11a.json",
       "time": "2009-05-16T22:00:00+00:00",
-      "releaseTime": "2009-05-16T22:00:00+00:00",
+      "releaseTime": "2009-05-17T00:00:00+00:00",
       "details": "version/c0.0.11a-launcher.json"
     },
     {
