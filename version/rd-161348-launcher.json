@@ -23,6 +23,12 @@
       "url": "https://skyrising.github.io/mc-versions/manifest/1/a/8b25e1e9ecebfe2765e44c121f25879c1ebd57/rd-20090515.json"
     }
   ],
+  "next": [
+    "c0.0.11a-launcher"
+  ],
+  "previous": [
+    "rd-160052-launcher"
+  ],
   "protocol": null,
   "releaseTime": "2009-05-16T11:48:00+00:00",
   "server": false

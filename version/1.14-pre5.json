@@ -13,6 +13,12 @@
       "url": "https://skyrising.github.io/mc-versions/manifest/d/7/3ce9dbdf249f03a06e793e1e2de87d3521ce35/1.14_Pre-Release_5.json"
     }
   ],
+  "next": [
+    "1.14"
+  ],
+  "previous": [
+    "1.14-pre4"
+  ],
   "protocol": {
     "type": "netty",
     "version": 476

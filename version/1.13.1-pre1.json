@@ -13,6 +13,12 @@
       "url": "https://skyrising.github.io/mc-versions/manifest/3/8/0447c7cab4e82b279cc21434e141ac187e594b/1.13.1-pre1.json"
     }
   ],
+  "next": [
+    "1.13.1-pre2"
+  ],
+  "previous": [
+    "18w33a"
+  ],
   "protocol": {
     "type": "netty",
     "version": 399

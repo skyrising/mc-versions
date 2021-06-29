@@ -13,6 +13,12 @@
       "url": "https://skyrising.github.io/mc-versions/manifest/e/4/745de520ec4042acea0399fde01f922a7c8ace/c0.0.12a_03.json"
     }
   ],
+  "next": [
+    "c0.0.13a-launcher"
+  ],
+  "previous": [
+    "c0.0.11a-launcher"
+  ],
   "protocol": null,
   "releaseTime": "2009-05-20T00:00:00+00:00",
   "server": false

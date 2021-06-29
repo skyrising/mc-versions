@@ -11,7 +11,23 @@
       "time": "2019-11-14T13:29:24+00:00",
       "type": "snapshot",
       "url": "https://skyrising.github.io/mc-versions/manifest/3/f/e0e6b9379d496d5e73403c3e6166abcdd4ffe2/19w46b.json"
+    },
+    {
+      "assetHash": "3b41ad81220d2f21ff5b343629de725047dac13d",
+      "assetIndex": "1.15",
+      "downloads": "e4ba75e70dc6425400e1d51f812fafcc60090e02",
+      "downloadsId": 1,
+      "hash": "1c0cad6683c93048ac5ba412026303140c29495b",
+      "time": "2019-11-14T13:29:24+00:00",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/manifest/1/c/0cad6683c93048ac5ba412026303140c29495b/19w46b.json"
     }
+  ],
+  "next": [
+    "1.15-pre1"
+  ],
+  "previous": [
+    "19w46a"
   ],
   "protocol": {
     "type": "netty",

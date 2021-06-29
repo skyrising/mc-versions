@@ -13,6 +13,12 @@
       "url": "https://skyrising.github.io/mc-versions/manifest/3/8/5f4d81c572ddb7a94c49a44038a9983b9088c9/a1.1.0-1.json"
     }
   ],
+  "next": [
+    "a1.1.0-101847-launcher"
+  ],
+  "previous": [
+    "a1.0.17_03"
+  ],
   "protocol": {
     "type": "modern",
     "version": 2

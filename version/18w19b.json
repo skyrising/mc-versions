@@ -13,6 +13,12 @@
       "url": "https://skyrising.github.io/mc-versions/manifest/6/4/c740472081d06a2eebc9aa6d9720dd16c95311/18w19b.json"
     }
   ],
+  "next": [
+    "18w20a"
+  ],
+  "previous": [
+    "18w19a"
+  ],
   "protocol": {
     "type": "netty",
     "version": 374
