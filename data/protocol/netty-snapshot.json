@@ -308,6 +308,15 @@
       "servers": [
         "1.17.1-pre1"
       ]
+    },
+    {
+      "version": 37,
+      "clients": [
+        "1.17.1-pre2"
+      ],
+      "servers": [
+        "1.17.1-pre2"
+      ]
     }
   ]
 }

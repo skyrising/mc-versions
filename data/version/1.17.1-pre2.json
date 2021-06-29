@@ -1,0 +1,26 @@
+{
+  "client": true,
+  "id": "1.17.1-pre2",
+  "manifests": [
+    {
+      "assetHash": "229b5b523cf8b920db0a9d4ee2b1cf3f49d7dbce",
+      "assetIndex": "1.17",
+      "downloads": "6ea6028ad124ecb2a5b7f6e66e55bc06f92ffcb3",
+      "downloadsId": 1,
+      "hash": "f03cee3d98eed5173257e17fd4cafbe6fdc8c30e",
+      "time": "2021-06-29T15:14:12+00:00",
+      "type": "snapshot",
+      "url": "../manifest/f/0/3cee3d98eed5173257e17fd4cafbe6fdc8c30e/1.17.1-pre2.json"
+    }
+  ],
+  "next": [],
+  "previous": [
+    "1.17.1-pre1"
+  ],
+  "protocol": {
+    "type": "netty-snapshot",
+    "version": 37
+  },
+  "releaseTime": "2021-06-29T15:14:12+00:00",
+  "server": true
+}
