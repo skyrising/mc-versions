@@ -89,17 +89,21 @@ const protocolDir = path.resolve(dataDir, 'protocol')
     }
     versions.sort((a, b) => a.info.releaseTime >= b.info.releaseTime ? 1 : -1)
     const protocols = {}
-    const lastProtocol = {}
-    let previousProtocol
-    for (const v of versions) {
+    const versionsById = {}
+    for (let i = 0; i < versions.length; i++) {
+        const v = versions[i]
         const {id, protocol} = v.data
+        versionsById[id] = v.data
+        const defaultPrevious = i === 0 ? undefined : [versions[i - 1].data.id]
+        v.data.previous = v.data.previous || defaultPrevious
+        v.data.next = []
+        for (const pv of v.data.previous || []) {
+            versionsById[pv].next.push(id)
+        }
         if (protocol) {
-            const last = lastProtocol[protocol.type]
-            if (!id.startsWith('af-')) {
-                if (last > protocol.version) {
-                    console.warn(`${id} decreases ${protocol.type} protocol version number from ${last} to ${protocol.version}`)
-                }
-                lastProtocol[protocol.type] = protocol.version
+            const previousProtocol = Math.max(0, ...v.data.previous.map(pv => versionsById[pv].protocol).filter(p => p && p.type === protocol.type).map(p => p.version))
+            if (!protocol.incompatible && previousProtocol > protocol.version) {
+                console.warn(`${id} decreases ${protocol.type} protocol version number from ${previousProtocol} to ${protocol.version}`)
             }
             if (!protocol.incompatible) {
                 const pInfo = (protocols[protocol.type] = protocols[protocol.type] || {})
@@ -107,11 +111,13 @@ const protocolDir = path.resolve(dataDir, 'protocol')
                 if (v.data.client) pvInfo.clients.push(id)
                 if (v.data.server) pvInfo.servers.push(id)
             }
-        } else if (protocol === undefined && previousProtocol) {
-            console.warn(`${id} is missing protocol info, previous was ${previousProtocol.type} ${previousProtocol.version}`)
+        } else if (protocol === undefined) {
+            console.warn(`${id} is missing protocol info, previous was`)
         }
-        previousProtocol = protocol
         newManifest.versions.unshift(v.info)
+    }
+    for (const v of versions) {
+        if (!v.data.next.length) console.log(v.data.id)
         fs.writeFileSync(v.file, JSON.stringify(sortObject(v.data), null, 2))
     }
     mkdirp(protocolDir)

@@ -303,6 +303,12 @@
       "url": "../manifest/0/9/b007f6155e6f80264a7175e5cb155ccd3d8ad5/20w46a.json"
     }
   ],
+  "next": [
+    "20w48a"
+  ],
+  "previous": [
+    "20w45a"
+  ],
   "protocol": {
     "type": "netty-snapshot",
     "version": 6

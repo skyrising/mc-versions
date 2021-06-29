@@ -13,6 +13,12 @@
       "url": "../manifest/9/5/bc8e865b8cbd7c71947b2d09b41e1a3568c6dc/a1.0.14-2.json"
     }
   ],
+  "next": [
+    "a1.0.15"
+  ],
+  "previous": [
+    "a1.0.14-1659-launcher"
+  ],
   "protocol": {
     "type": "classic",
     "version": 12

@@ -13,6 +13,10 @@
       "url": "../manifest/2/9/3ab6e62dd4f88f866610862ebadf250fdcb123/1.RV-Pre1.json"
     }
   ],
+  "next": [],
+  "previous": [
+    "1.9.2"
+  ],
   "protocol": {
     "incompatible": true,
     "type": "netty",

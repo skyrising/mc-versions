@@ -13,6 +13,10 @@
       "url": "../manifest/9/d/030637006c9c92a5d18f4c78e066b32c8d13b3/20w14infinite.json"
     }
   ],
+  "next": [],
+  "previous": [
+    "20w13b"
+  ],
   "protocol": {
     "incompatible": true,
     "type": "netty",

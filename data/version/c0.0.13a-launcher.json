@@ -13,6 +13,12 @@
       "url": "../manifest/a/9/9b7a89dc7048649bce6314231cb4b3cbf250bb/c0.0.13a.json"
     }
   ],
+  "next": [
+    "c0.0.13a_03-launcher"
+  ],
+  "previous": [
+    "c0.0.12a_03"
+  ],
   "protocol": null,
   "releaseTime": "2009-05-21T09:25:34+00:00",
   "server": false

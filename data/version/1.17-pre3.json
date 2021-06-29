@@ -73,6 +73,12 @@
       "url": "../manifest/0/3/40036d1906df69bf2406fe1eb137707a212ba3/1.17-pre3.json"
     }
   ],
+  "next": [
+    "1.17-pre4"
+  ],
+  "previous": [
+    "1.17-pre2"
+  ],
   "protocol": {
     "type": "netty-snapshot",
     "version": 31

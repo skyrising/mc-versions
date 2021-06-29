@@ -283,6 +283,12 @@
       "url": "../manifest/1/5/b23a360e96b8ca2df4a94b2544d0740cbca258/20w49a.json"
     }
   ],
+  "next": [
+    "20w51a"
+  ],
+  "previous": [
+    "20w48a"
+  ],
   "protocol": {
     "type": "netty-snapshot",
     "version": 8

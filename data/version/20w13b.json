@@ -33,6 +33,13 @@
       "url": "../manifest/2/4/b4ebe25c7b7a5c02bf8c92041db76d08a2e607/20w13b.json"
     }
   ],
+  "next": [
+    "af-2020",
+    "20w14a"
+  ],
+  "previous": [
+    "20w13a"
+  ],
   "protocol": {
     "type": "netty",
     "version": 709

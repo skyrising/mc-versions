@@ -13,6 +13,12 @@
       "url": "../manifest/c/8/98b15764996fea0c39c985e5c60837fb291b94/1.16.json"
     }
   ],
+  "next": [
+    "1.16-1420"
+  ],
+  "previous": [
+    "1.16-rc1"
+  ],
   "protocol": {
     "type": "netty",
     "version": 735

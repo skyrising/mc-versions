@@ -13,6 +13,12 @@
       "url": "../manifest/9/f/35732e51da90d79e4d13a7eca637d41f83daa6/1.2.5.json"
     }
   ],
+  "next": [
+    "1.3-pre-07261249"
+  ],
+  "previous": [
+    "1.2.4"
+  ],
   "protocol": {
     "type": "modern",
     "version": 29

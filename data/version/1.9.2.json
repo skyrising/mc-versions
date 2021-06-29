@@ -13,6 +13,13 @@
       "url": "../manifest/8/0/6792b8a56c63e7238a19c94c0655b52d9453bf/1.9.2.json"
     }
   ],
+  "next": [
+    "af-2016",
+    "16w14a"
+  ],
+  "previous": [
+    "1.9.1"
+  ],
   "protocol": {
     "type": "netty",
     "version": 109

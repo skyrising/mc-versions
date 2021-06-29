@@ -13,6 +13,12 @@
       "url": "../manifest/4/8/ea60323fdf8ceed0b73e46cc984feb9ef9ad84/3D_Shareware_v1.34.json"
     }
   ],
+  "next": [
+    "19w14a"
+  ],
+  "previous": [
+    "19w13b-2"
+  ],
   "protocol": {
     "incompatible": true,
     "type": "netty",

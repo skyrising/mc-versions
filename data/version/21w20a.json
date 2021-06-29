@@ -103,6 +103,12 @@
       "url": "../manifest/1/a/51cb995c84ba20f954c63783e113f7ec468b6e/21w20a.json"
     }
   ],
+  "next": [
+    "1.17-pre1"
+  ],
+  "previous": [
+    "21w19a"
+  ],
   "protocol": {
     "type": "netty-snapshot",
     "version": 28

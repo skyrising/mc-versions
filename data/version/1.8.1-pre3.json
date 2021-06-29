@@ -13,6 +13,12 @@
       "url": "../manifest/f/3/b4c30c4b118d7e0a0aa7fafefb5b13760cb698/1.8.1-pre3.json"
     }
   ],
+  "next": [
+    "1.8.1-pre4"
+  ],
+  "previous": [
+    "1.8.1-pre2"
+  ],
   "protocol": {
     "type": "netty",
     "version": 47

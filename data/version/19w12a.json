@@ -13,6 +13,12 @@
       "url": "../manifest/d/d/7f1285e11f39def292f7a36d8b5639802ec6f7/19w12a.json"
     }
   ],
+  "next": [
+    "19w12b"
+  ],
+  "previous": [
+    "19w11b"
+  ],
   "protocol": {
     "type": "netty",
     "version": 466

@@ -23,6 +23,12 @@
       "url": "../manifest/3/8/2c9b625fd22edee173751771626ff32098ca9c/b1.6.6.json"
     }
   ],
+  "next": [
+    "b1.7"
+  ],
+  "previous": [
+    "b1.6.5"
+  ],
   "protocol": {
     "type": "modern",
     "version": 13

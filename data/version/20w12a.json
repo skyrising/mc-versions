@@ -33,6 +33,12 @@
       "url": "../manifest/0/1/293675d5b48888c02231f1a954a54227686db0/20w12a.json"
     }
   ],
+  "next": [
+    "20w13a"
+  ],
+  "previous": [
+    "20w11a"
+  ],
   "protocol": {
     "type": "netty",
     "version": 707

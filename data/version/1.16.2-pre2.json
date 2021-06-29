@@ -33,6 +33,12 @@
       "url": "../manifest/9/d/9a89bb6b49897ac145da6787ea2894f250584d/1.16.2-pre2.json"
     }
   ],
+  "next": [
+    "1.16.2-pre3"
+  ],
+  "previous": [
+    "1.16.2-pre1"
+  ],
   "protocol": {
     "type": "netty",
     "version": 746

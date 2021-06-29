@@ -13,6 +13,10 @@
       "url": "../manifest/0/d/b5679c9caaa7845173c45724651d0f5b2f24a9/1.7.10.json"
     }
   ],
+  "next": [],
+  "previous": [
+    "1.7.10-pre4"
+  ],
   "protocol": {
     "type": "netty",
     "version": 5

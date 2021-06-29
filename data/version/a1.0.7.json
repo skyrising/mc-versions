@@ -13,6 +13,12 @@
       "url": "../manifest/0/d/8ac0671ec2526d3e61ea9454a6f642b3ad9164/a1.0.7.json"
     }
   ],
+  "next": [
+    "a1.0.8_01"
+  ],
+  "previous": [
+    "a1.0.6_03"
+  ],
   "protocol": {
     "type": "classic",
     "version": 10

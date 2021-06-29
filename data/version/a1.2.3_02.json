@@ -23,6 +23,12 @@
       "url": "../manifest/3/7/bf17b2c6f31fd6a242de8fdc43c99a4fded127/a1.2.3_02.json"
     }
   ],
+  "next": [
+    "a1.2.3_04"
+  ],
+  "previous": [
+    "a1.2.3_01-0958"
+  ],
   "protocol": {
     "type": "modern",
     "version": 5

@@ -23,6 +23,12 @@
       "url": "../manifest/5/7/4191cb0e00c5f94a425aef9f8810d1f7355aa8/a1.1.0-1-launcher.json"
     }
   ],
+  "next": [
+    "a1.1.0-131933"
+  ],
+  "previous": [
+    "a1.1.0-101847"
+  ],
   "protocol": {
     "type": "modern",
     "version": 2

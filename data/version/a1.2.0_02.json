@@ -33,6 +33,12 @@
       "url": "../manifest/1/2/efaca76aacb6c3634970c8d96f679f78545d5b/a1.2.0.json"
     }
   ],
+  "next": [
+    "a1.2.1_01"
+  ],
+  "previous": [
+    "a1.2.0_01"
+  ],
   "protocol": {
     "type": "modern",
     "version": 3

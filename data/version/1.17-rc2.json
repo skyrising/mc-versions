@@ -33,6 +33,12 @@
       "url": "../manifest/3/f/3c40ef043afd1f3c1b57b65812e503caff5c18/1.17-rc2.json"
     }
   ],
+  "next": [
+    "1.17"
+  ],
+  "previous": [
+    "1.17-rc1"
+  ],
   "protocol": {
     "type": "netty-snapshot",
     "version": 35

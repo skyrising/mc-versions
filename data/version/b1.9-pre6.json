@@ -13,6 +13,12 @@
       "url": "../manifest/3/6/7b21227f88fa70164de48fd2b9a1ee1cb74b08/b1.9-pre6.json"
     }
   ],
+  "next": [
+    "1.0.0-rc2-1"
+  ],
+  "previous": [
+    "b1.9-pre5"
+  ],
   "protocol": {
     "type": "modern",
     "version": 22

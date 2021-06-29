@@ -123,6 +123,12 @@
       "url": "../manifest/1/a/f21598f80bf3051d1d0d0e8c89832474200162/21w18a.json"
     }
   ],
+  "next": [
+    "21w19a"
+  ],
+  "previous": [
+    "21w17a"
+  ],
   "protocol": {
     "type": "netty-snapshot",
     "version": 26

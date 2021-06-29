@@ -13,6 +13,12 @@
       "url": "../manifest/f/e/312aee11af01de0e6686691e54011dedc509a4/b1.2_02.json"
     }
   ],
+  "next": [
+    "b1.3-1723"
+  ],
+  "previous": [
+    "b1.2_02-launcher"
+  ],
   "protocol": {
     "type": "modern",
     "version": 8

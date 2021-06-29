@@ -13,6 +13,12 @@
       "url": "../manifest/f/a/ac52d5eaf8c70a69b4c688540fb58145984d4d/c0.30-2.json"
     }
   ],
+  "next": [
+    "c0.30-c-renew"
+  ],
+  "previous": [
+    "c0.30-s"
+  ],
   "protocol": {
     "type": "classic",
     "version": 7
