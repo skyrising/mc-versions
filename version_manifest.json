@@ -1,9 +1,18 @@
 {
   "latest": {
     "release": "1.17",
-    "snapshot": "1.17.1-pre2"
+    "snapshot": "1.17.1-pre3"
   },
   "versions": [
+    {
+      "omniId": "1.17.1-pre3",
+      "id": "1.17.1-pre3",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/manifest/d/b/78ecf4be19e3589466c7f3527015ca822b20eb/1.17.1-pre3.json",
+      "time": "2021-06-30T15:43:16+00:00",
+      "releaseTime": "2021-06-30T15:43:16+00:00",
+      "details": "https://skyrising.github.io/mc-versions/version/1.17.1-pre3.json"
+    },
     {
       "omniId": "1.17.1-pre2",
       "id": "1.17.1-pre2",
@@ -44,7 +53,7 @@
       "omniId": "1.17-rc1",
       "id": "1.17-rc1",
       "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/9/d/c1dc0e9a5e0bef51f181fed3799eaec73da042/1.17-rc1.json",
+      "url": "https://skyrising.github.io/mc-versions/manifest/6/7/f2797d8c88d5e2b9aa12c45a7b9581fad02461/1.17-rc1.json",
       "time": "2021-06-04T13:24:48+00:00",
       "releaseTime": "2021-06-04T13:24:48+00:00",
       "details": "https://skyrising.github.io/mc-versions/version/1.17-rc1.json"
