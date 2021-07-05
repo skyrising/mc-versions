@@ -3,6 +3,16 @@
   "id": "1.17-rc1",
   "manifests": [
     {
+      "assetHash": "4fefa75bc44abb319a51939cda70094b6c183c5d",
+      "assetIndex": "1.17",
+      "downloads": "bd179931e37d74be2cb3ebf564806a61c55135d9",
+      "downloadsId": 1,
+      "hash": "d97c6bfaa8b9b3fc803541bd645d7ba5c1a14671",
+      "time": "2021-06-04T13:24:48+00:00",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/manifest/d/9/7c6bfaa8b9b3fc803541bd645d7ba5c1a14671/1.17-rc1.json"
+    },
+    {
       "assetHash": "5980cedf055a0ebc1059ddb9487a004c7d0f781e",
       "assetIndex": "1.17",
       "downloads": "bd179931e37d74be2cb3ebf564806a61c55135d9",
@@ -11,6 +21,16 @@
       "time": "2021-06-04T13:24:48+00:00",
       "type": "snapshot",
       "url": "https://skyrising.github.io/mc-versions/manifest/9/d/c1dc0e9a5e0bef51f181fed3799eaec73da042/1.17-rc1.json"
+    },
+    {
+      "assetHash": "107afdca7d531c23e2e0326e2ee5d71f8fa450bb",
+      "assetIndex": "1.17",
+      "downloads": "bd179931e37d74be2cb3ebf564806a61c55135d9",
+      "downloadsId": 1,
+      "hash": "8ee4deafd1f4abdc57738606c45c47ecc46329c4",
+      "time": "2021-06-04T13:24:48+00:00",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/manifest/8/e/e4deafd1f4abdc57738606c45c47ecc46329c4/1.17-rc1.json"
     },
     {
       "assetHash": "15809afbdc4489abd52a3d6c3fda0124f8f3404b",
@@ -31,16 +51,6 @@
       "time": "2021-06-04T13:24:48+00:00",
       "type": "snapshot",
       "url": "https://skyrising.github.io/mc-versions/manifest/6/7/f2797d8c88d5e2b9aa12c45a7b9581fad02461/1.17-rc1.json"
-    },
-    {
-      "assetHash": "4fefa75bc44abb319a51939cda70094b6c183c5d",
-      "assetIndex": "1.17",
-      "downloads": "bd179931e37d74be2cb3ebf564806a61c55135d9",
-      "downloadsId": 1,
-      "hash": "d97c6bfaa8b9b3fc803541bd645d7ba5c1a14671",
-      "time": "2021-06-04T13:24:48+00:00",
-      "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/d/9/7c6bfaa8b9b3fc803541bd645d7ba5c1a14671/1.17-rc1.json"
     },
     {
       "assetHash": "c6e8898a39b4c29ca1ce3cadcae58b532a279a6f",

@@ -326,6 +326,24 @@
       "servers": [
         "1.17.1-pre3"
       ]
+    },
+    {
+      "version": 39,
+      "clients": [
+        "1.17.1-rc1"
+      ],
+      "servers": [
+        "1.17.1-rc1"
+      ]
+    },
+    {
+      "version": 40,
+      "clients": [
+        "1.17.1-rc2"
+      ],
+      "servers": [
+        "1.17.1-rc2"
+      ]
     }
   ]
 }
