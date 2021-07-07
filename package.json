@@ -4,6 +4,7 @@
     "build": "rm -rf dist && node build.mjs"
   },
   "dependencies": {
-    "node-fetch": "^2.6.1"
+    "node-fetch": "^2.6.1",
+    "yauzl": "^2.10.0"
   }
 }

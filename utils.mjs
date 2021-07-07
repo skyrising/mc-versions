@@ -42,11 +42,21 @@ export function readdirRecursive(dir, deleteEmpty = false) {
     return files
 }
 
-export async function downloadFile(url, file) {
+export async function downloadFile(url, file, part = false) {
     if (fs.existsSync(file)) return
     console.log(`Downloading ${url}`)
     mkdirp(path.dirname(file))
-    await fetch(url).then(res => promisifiedPipe(res.body, fs.createWriteStream(file)))
+    const destFile = part ? file + '.part' : file
+    try {
+        await fetch(url).then(res => promisifiedPipe(res.body, fs.createWriteStream(destFile)))
+        if (part) {
+            fs.renameSync(destFile, file)
+        }
+    } catch(e) {
+        console.error(`Download of ${url} failed`)
+        console.error(e)
+        if (fs.existsSync(destFile)) fs.unlinkSync(destFile)
+    }
 }
 
 export function mkdirp(dir) {

@@ -1,8 +1,14 @@
 import fs from 'fs'
-import path from 'path'
+import path, { relative } from 'path'
+import util from 'util'
 import fetch from 'node-fetch'
+import yauzl from 'yauzl'
 
 import {sha1, sortObject, readdirRecursive, mkdirp, downloadFile} from './utils.mjs'
+
+const SNAPSHOT_PROTOCOL = 0x40000000
+
+const downloadsDir = process.env.MC_VERSIONS_DOWNLOADS
 
 const dataDir = path.resolve('data')
 const manifestDir = path.resolve(dataDir, 'manifest')
@@ -85,7 +91,7 @@ const protocolDir = path.resolve(dataDir, 'protocol')
             list[i].downloadsId = downloadIds[hash] || Object.keys(downloadIds).length + 1
             downloadIds[hash] = list[i].downloadsId
         }
-        versions.push(updateVersion(id, list))
+        versions.push(await updateVersion(id, list))
     }
     versions.sort((a, b) => a.info.releaseTime >= b.info.releaseTime ? 1 : -1)
     const protocols = {}
@@ -97,6 +103,10 @@ const protocolDir = path.resolve(dataDir, 'protocol')
         const defaultPrevious = i === 0 ? undefined : [versions[i - 1].data.id]
         v.data.previous = v.data.previous || defaultPrevious
         v.data.next = []
+        newManifest.versions.unshift(v.info)
+    }
+    for (const v of versions) {
+        const {id, protocol} = v.data
         for (const pv of v.data.previous || []) {
             versionsById[pv].next.push(id)
         }
@@ -112,9 +122,15 @@ const protocolDir = path.resolve(dataDir, 'protocol')
                 if (v.data.server) pvInfo.servers.push(id)
             }
         } else if (protocol === undefined) {
-            console.warn(`${id} is missing protocol info, previous was`)
+            const previousProtocols = v.data.previous.map(pv => versionsById[pv].protocol).map(p => p.type + ' ' + p.version)
+            if (previousProtocols.length === 1) {
+                console.warn(`${id} is missing protocol info, previous was ${previousProtocols[0]}`)
+            } else if (previousProtocols.length) {
+                console.warn(`${id} is missing protocol info, previous were ${previousProtocols}`)
+            } else {
+                console.warn(`${id} is missing protocol info`)
+            }
         }
-        newManifest.versions.unshift(v.info)
     }
     for (const v of versions) {
         if (!v.data.next.length) console.log(v.data.id)
@@ -164,7 +180,7 @@ function compareVersions(a, b) {
     return a.time >= b.time ? -1 : 1
 }
 
-function updateVersion(id, manifests) {
+async function updateVersion(id, manifests) {
     const file = path.resolve(versionDir, `${id}.json`)
     const oldData = fs.existsSync(file) ? JSON.parse(fs.readFileSync(file)) : {}
     const data = {...oldData}
@@ -181,6 +197,12 @@ function updateVersion(id, manifests) {
         if (!m.downloads) continue
         if (m.downloads.client) data.client = true
         if (m.downloads.server) data.server = true
+        m.localMirror = await getDownloads(m)
+    }
+    const {localMirror} = manifests[0]
+    if (localMirror.client && data.protocol === undefined) {
+        const parsedInfo = await parseJarInfo(localMirror.client)
+        if (data.protocol === undefined) data.protocol = parsedInfo.protocol
     }
     data.manifests = manifests.map(m => ({
         ...m,
@@ -190,7 +212,8 @@ function updateVersion(id, manifests) {
         url: path.relative(versionDir, m.url),
         releaseTime: undefined,
         downloads: m.downloadsHash,
-        downloadsHash: undefined
+        downloadsHash: undefined,
+        localMirror: undefined
     }))
     const {omniId, type, url, time} = manifests[0]
     return {
@@ -204,4 +227,76 @@ function updateVersion(id, manifests) {
         data,
         file
     }
+}
+
+async function getDownloads(manifest) {
+    if (!manifest.downloads || !downloadsDir) return {}
+    const files = {}
+    for (const key in manifest.downloads) {
+        const download = manifest.downloads[key]
+        const file = getDownloadDestination(download)
+        await downloadFile(download.url, file, true)
+        files[key] = file
+    }
+    return files
+}
+
+function getDownloadDestination(download) {
+    const hash = download.sha1
+    const url = new URL(download.url)
+    return path.resolve(downloadsDir, hash[0], hash[1], hash.substr(2), path.basename(url.pathname))
+}
+
+async function parseJarInfo(file) {
+    const info = {}
+    console.log(`Reading ${file}`)
+    await readZip(file, async (zip, entry) => {
+        if (entry.fileName.endsWith('version.json')) {
+            const versionInfo = JSON.parse(await readZipEntry(zip, entry))
+            const {protocol_version: pv, release_target: releaseTarget} = versionInfo
+            info.protocol = {
+                type: 'netty' + (pv & SNAPSHOT_PROTOCOL ? '-snapshot' : ''),
+                version: pv & ~SNAPSHOT_PROTOCOL
+            }
+            info.releaseTarget = releaseTarget
+        }
+    })
+    return info
+}
+
+function readZip(file, cb) {
+    return new Promise((resolve, reject) => {
+        yauzl.open(file, {lazyEntries: true}, (err, zip) => {
+            if (err) {
+                reject(err)
+                return
+            }
+            zip.readEntry()
+            zip.on('entry', async entry => {
+                await cb(zip, entry)
+                zip.readEntry()
+            })
+            zip.on('close', () => resolve())
+            zip.on('error', reject)
+        })
+    })
+}
+
+function readZipEntry(zip, entry) {
+    return new Promise((resolve, reject) => {
+        zip.openReadStream(entry, (err, stream) => {
+            if (err) {
+                reject(err)
+                return
+            }
+            const bufs = []
+            stream.on('error', reject)
+            stream.on('data', buf => {
+                bufs.push(buf)
+            })
+            stream.on('end', () => {
+                resolve(Buffer.concat(bufs))
+            })
+        })
+    })
 }
