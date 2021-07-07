@@ -1,0 +1,26 @@
+{
+  "client": true,
+  "id": "1.17.1",
+  "manifests": [
+    {
+      "assetHash": "e5af543d9b3ce1c063a97842c38e50e29f961f00",
+      "assetIndex": "1.17",
+      "downloads": "2610a6989dac5342ba79e9d0eb2dc54ac799acb4",
+      "downloadsId": 1,
+      "hash": "a0b720050976cdbbb4e43e0c676629a1651dc041",
+      "time": "2021-07-06T12:01:34+00:00",
+      "type": "release",
+      "url": "../manifest/a/0/b720050976cdbbb4e43e0c676629a1651dc041/1.17.1.json"
+    }
+  ],
+  "next": [],
+  "previous": [
+    "1.17.1-rc2"
+  ],
+  "protocol": {
+    "type": "netty",
+    "version": 756
+  },
+  "releaseTime": "2021-07-06T12:01:34+00:00",
+  "server": true
+}
