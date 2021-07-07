@@ -9,15 +9,23 @@
   "assets": "legacy",
   "downloads": {
     "client": {
-      "sha1": "e109b297d2c4ee7a0bd6aed72f38f7e3185654cf",
-      "size": 2211261,
-      "url": "https://archive.org/download/Minecraft-JE-Beta/b1.9-pre5/b1.9-pre5.jar"
+      "sha1": "6e54fbe19b7797f3e3a2cb9feb5da41a40926db8",
+      "size": 2242211,
+      "url": "https://archive.org/download/Minecraft-JE-Beta/Prereleases/1.0.0-rc2-3/1.0.0-rc2-3.jar"
     }
   },
-  "id": "b1.9-pre5",
+  "id": "1.0.0-rc2-3",
   "libraries": [
     {
-      "name": "net.minecraft:launchwrapper:1.5"
+      "downloads": {
+        "artifact": {
+          "path": "net/minecraft/launchwrapper/1.6/launchwrapper-1.6.jar",
+          "sha1": "4ea0aca9c022a234ebaf14b51fb119055955fc9d",
+          "size": 27583,
+          "url": "https://libraries.minecraft.net/net/minecraft/launchwrapper/1.6/launchwrapper-1.6.jar"
+        }
+      },
+      "name": "net.minecraft:launchwrapper:1.6"
     },
     {
       "downloads": {
@@ -300,10 +308,9 @@
     }
   ],
   "mainClass": "net.minecraft.launchwrapper.Launch",
-  "minecraftArguments": "${auth_player_name} ${auth_session} --gameDir ${game_directory} --assetsDir ${game_assets}",
-  "minimumLauncherVersion": 4,
-  "releaseTime": "2011-10-27T00:00:00+02:00",
-  "synced": false,
-  "time": "2013-08-06T14:00:00+03:00",
-  "type": "old_beta"
+  "minecraftArguments": "${auth_player_name} ${auth_session} --gameDir ${game_directory} --assetsDir ${game_assets} --tweakClass net.minecraft.launchwrapper.AlphaVanillaTweaker",
+  "minimumLauncherVersion": 7,
+  "releaseTime": "2011-11-14T15:00:00-07:00",
+  "time": "2013-08-06T07:33:30-07:00",
+  "type": "snapshot"
 }

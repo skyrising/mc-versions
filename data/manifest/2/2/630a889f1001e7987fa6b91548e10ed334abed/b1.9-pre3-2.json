@@ -9,12 +9,12 @@
   "assets": "legacy",
   "downloads": {
     "client": {
-      "sha1": "5c4831d9705f2e00e3cd993e89b822636492932a",
-      "size": 2147107,
-      "url": "https://archive.org/download/Minecraft-JE-Beta/b1.9-pre4-2/b1.9-pre4-2.jar"
+      "sha1": "5b7fe76a602b7511c97740e36dc25040ccb6e76b",
+      "size": 2087104,
+      "url": "https://archive.org/download/Minecraft-JE-Beta/Prereleases/b1.9-pre3-2/b1.9-pre3-2.jar"
     }
   },
-  "id": "b1.9-pre4-2",
+  "id": "b1.9-pre3-2",
   "libraries": [
     {
       "name": "net.minecraft:launchwrapper:1.5"
@@ -302,7 +302,7 @@
   "mainClass": "net.minecraft.launchwrapper.Launch",
   "minecraftArguments": "${auth_player_name} ${auth_session} --gameDir ${game_directory} --assetsDir ${game_assets}",
   "minimumLauncherVersion": 4,
-  "releaseTime": "2011-10-13T00:00:00+02:00",
+  "releaseTime": "2011-10-06T00:00:00+02:00",
   "synced": false,
   "time": "2013-08-06T14:00:00+03:00",
   "type": "old_beta"
