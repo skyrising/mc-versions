@@ -108,10 +108,17 @@ const protocolDir = path.resolve(dataDir, 'protocol')
     for (const v of versions) {
         const {id, protocol} = v.data
         for (const pv of v.data.previous || []) {
-            versionsById[pv].next.push(id)
+            if (pv in versionsById) {
+                versionsById[pv].next.push(id)
+            } else {
+                console.warn(`Previous version '${pv}' of ${id} is unknown`)
+            }
         }
         if (protocol) {
-            const previousProtocol = Math.max(0, ...v.data.previous.map(pv => versionsById[pv].protocol).filter(p => p && p.type === protocol.type).map(p => p.version))
+            const previousProtocol = Math.max(0, ...v.data.previous
+                .map(pv => versionsById[pv]).filter(Boolean)
+                .map(v => v.protocol).filter(p => p && p.type === protocol.type)
+                .map(p => p.version))
             if (!protocol.incompatible && previousProtocol > protocol.version) {
                 console.warn(`${id} decreases ${protocol.type} protocol version number from ${previousProtocol} to ${protocol.version}`)
             }
@@ -122,7 +129,7 @@ const protocolDir = path.resolve(dataDir, 'protocol')
                 if (v.data.server) pvInfo.servers.push(id)
             }
         } else if (protocol === undefined) {
-            const previousProtocols = v.data.previous.map(pv => versionsById[pv].protocol).map(p => p.type + ' ' + p.version)
+            const previousProtocols = v.data.previous.map(pv => versionsById[pv].protocol).filter(Boolean).map(p => p.type + ' ' + p.version)
             if (previousProtocols.length === 1) {
                 console.warn(`${id} is missing protocol info, previous was ${previousProtocols[0]}`)
             } else if (previousProtocols.length) {
@@ -200,9 +207,10 @@ async function updateVersion(id, manifests) {
         m.localMirror = await getDownloads(m)
     }
     const {localMirror} = manifests[0]
-    if (localMirror.client && data.protocol === undefined) {
+    if (localMirror.client && shouldCheckJar(data)) {
         const parsedInfo = await parseJarInfo(localMirror.client)
         if (data.protocol === undefined) data.protocol = parsedInfo.protocol
+        data.world = data.world || parsedInfo.world
     }
     data.manifests = manifests.map(m => ({
         ...m,
@@ -229,6 +237,13 @@ async function updateVersion(id, manifests) {
     }
 }
 
+function shouldCheckJar(data) {
+    if (data.protocol === null) return false
+    if (data.protocol === undefined) return true
+    if (!data.world) return true
+    return false
+}
+
 async function getDownloads(manifest) {
     if (!manifest.downloads || !downloadsDir) return {}
     const files = {}
@@ -253,12 +268,16 @@ async function parseJarInfo(file) {
     await readZip(file, async (zip, entry) => {
         if (entry.fileName.endsWith('version.json')) {
             const versionInfo = JSON.parse(await readZipEntry(zip, entry))
-            const {protocol_version: pv, release_target: releaseTarget} = versionInfo
+            const {protocol_version: pv} = versionInfo
             info.protocol = {
                 type: 'netty' + (pv & SNAPSHOT_PROTOCOL ? '-snapshot' : ''),
                 version: pv & ~SNAPSHOT_PROTOCOL
             }
-            info.releaseTarget = releaseTarget
+            info.releaseTarget = versionInfo.release_target
+            info.world = {
+                format: 'anvil',
+                version: versionInfo.world_version
+            }
         }
     })
     return info
