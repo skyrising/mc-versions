@@ -5,6 +5,15 @@
   },
   "versions": [
     {
+      "omniId": "1.18_experimental-snapshot-2",
+      "id": "1.18_experimental-snapshot-2",
+      "type": "pending",
+      "url": "manifest/5/0/2b9d85c32b91dc09f29047bc2b864d884de175/1_18_experimental-snapshot-2.json",
+      "time": "2021-07-20T13:35:08+00:00",
+      "releaseTime": "2021-07-20T13:35:08+00:00",
+      "details": "version/1.18_experimental-snapshot-2.json"
+    },
+    {
       "omniId": "1.18_experimental-snapshot-1",
       "id": "1.18_experimental-snapshot-1",
       "type": "pending",

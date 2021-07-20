@@ -353,6 +353,15 @@
       "servers": [
         "1.18_experimental-snapshot-1"
       ]
+    },
+    {
+      "version": 42,
+      "clients": [
+        "1.18_experimental-snapshot-2"
+      ],
+      "servers": [
+        "1.18_experimental-snapshot-2"
+      ]
     }
   ]
 }

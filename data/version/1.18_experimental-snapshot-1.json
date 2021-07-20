@@ -13,7 +13,9 @@
       "url": "../manifest/4/e/15294e32d2b94c30deaa6c6311936da35b2339/1_18_experimental-snapshot-1.json"
     }
   ],
-  "next": [],
+  "next": [
+    "1.18_experimental-snapshot-2"
+  ],
   "previous": [
     "1.17.1-pre1"
   ],
