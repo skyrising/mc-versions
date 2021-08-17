@@ -64,5 +64,9 @@
     "version": 1
   },
   "releaseTime": "2020-10-13T14:36:07+00:00",
-  "server": true
+  "server": true,
+  "world": {
+    "format": "anvil",
+    "version": 2581
+  }
 }

@@ -13,7 +13,9 @@
       "url": "../manifest/5/0/2b9d85c32b91dc09f29047bc2b864d884de175/1_18_experimental-snapshot-2.json"
     }
   ],
-  "next": [],
+  "next": [
+    "1.18_experimental-snapshot-3"
+  ],
   "previous": [
     "1.18_experimental-snapshot-1"
   ],
@@ -22,5 +24,9 @@
     "version": 42
   },
   "releaseTime": "2021-07-20T13:35:08+00:00",
-  "server": true
+  "server": true,
+  "world": {
+    "format": "anvil",
+    "version": 2826
+  }
 }

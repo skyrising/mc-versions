@@ -362,6 +362,24 @@
       "servers": [
         "1.18_experimental-snapshot-2"
       ]
+    },
+    {
+      "version": 43,
+      "clients": [
+        "1.18_experimental-snapshot-3"
+      ],
+      "servers": [
+        "1.18_experimental-snapshot-3"
+      ]
+    },
+    {
+      "version": 44,
+      "clients": [
+        "1.18_experimental-snapshot-4"
+      ],
+      "servers": [
+        "1.18_experimental-snapshot-4"
+      ]
     }
   ]
 }

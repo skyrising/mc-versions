@@ -208,9 +208,13 @@ async function updateVersion(id, manifests) {
     }
     const {localMirror} = manifests[0]
     if (localMirror.client && shouldCheckJar(data)) {
-        const parsedInfo = await parseJarInfo(localMirror.client)
-        if (data.protocol === undefined) data.protocol = parsedInfo.protocol
-        data.world = data.world || parsedInfo.world
+        try {
+            const parsedInfo = await parseJarInfo(localMirror.client)
+            if (data.protocol === undefined) data.protocol = parsedInfo.protocol
+            data.world = data.world || parsedInfo.world
+        } catch (e) {
+            console.error(e)
+        }
     }
     data.manifests = manifests.map(m => ({
         ...m,
