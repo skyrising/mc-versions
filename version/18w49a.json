@@ -34,5 +34,9 @@
     "version": 450
   },
   "releaseTime": "2018-12-05T12:24:30+00:00",
-  "server": true
+  "server": true,
+  "world": {
+    "format": "anvil",
+    "version": 1916
+  }
 }

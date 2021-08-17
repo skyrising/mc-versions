@@ -44,5 +44,9 @@
     "version": 574
   },
   "releaseTime": "2019-12-12T14:02:30+00:00",
-  "server": true
+  "server": true,
+  "world": {
+    "format": "anvil",
+    "version": 2226
+  }
 }

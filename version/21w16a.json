@@ -204,5 +204,9 @@
     "version": 23
   },
   "releaseTime": "2021-04-21T16:41:14+00:00",
-  "server": true
+  "server": true,
+  "world": {
+    "format": "anvil",
+    "version": 2711
+  }
 }

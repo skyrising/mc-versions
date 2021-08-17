@@ -64,5 +64,9 @@
     "version": 738
   },
   "releaseTime": "2020-07-01T15:07:35+00:00",
-  "server": true
+  "server": true,
+  "world": {
+    "format": "anvil",
+    "version": 2569
+  }
 }
