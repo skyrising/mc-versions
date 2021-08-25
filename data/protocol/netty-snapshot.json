@@ -380,6 +380,15 @@
       "servers": [
         "1.18_experimental-snapshot-4"
       ]
+    },
+    {
+      "version": 45,
+      "clients": [
+        "1.18_experimental-snapshot-5"
+      ],
+      "servers": [
+        "1.18_experimental-snapshot-5"
+      ]
     }
   ]
 }

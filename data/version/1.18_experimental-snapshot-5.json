@@ -1,0 +1,30 @@
+{
+  "client": true,
+  "id": "1.18_experimental-snapshot-5",
+  "manifests": [
+    {
+      "assetHash": "e5af543d9b3ce1c063a97842c38e50e29f961f00",
+      "assetIndex": "1.17",
+      "downloads": "5ef86f69efe6cfb808e255beb320e68dc20f779a",
+      "downloadsId": 1,
+      "hash": "62ec4abff5dfd9ccaf78a3d0b7c3220f6735b9bd",
+      "time": "2021-08-25T14:41:57+00:00",
+      "type": "pending",
+      "url": "../manifest/6/2/ec4abff5dfd9ccaf78a3d0b7c3220f6735b9bd/1_18_experimental-snapshot-5.json"
+    }
+  ],
+  "next": [],
+  "previous": [
+    "1.18_experimental-snapshot-4"
+  ],
+  "protocol": {
+    "type": "netty-snapshot",
+    "version": 45
+  },
+  "releaseTime": "2021-08-25T14:41:57+00:00",
+  "server": true,
+  "world": {
+    "format": "anvil",
+    "version": 2829
+  }
+}
