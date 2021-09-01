@@ -13,7 +13,9 @@
       "url": "https://skyrising.github.io/mc-versions/manifest/6/2/ec4abff5dfd9ccaf78a3d0b7c3220f6735b9bd/1_18_experimental-snapshot-5.json"
     }
   ],
-  "next": [],
+  "next": [
+    "1.18_experimental-snapshot-6"
+  ],
   "previous": [
     "1.18_experimental-snapshot-4"
   ],
