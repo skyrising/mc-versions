@@ -389,6 +389,15 @@
       "servers": [
         "1.18_experimental-snapshot-5"
       ]
+    },
+    {
+      "version": 46,
+      "clients": [
+        "1.18_experimental-snapshot-6"
+      ],
+      "servers": [
+        "1.18_experimental-snapshot-6"
+      ]
     }
   ]
 }
