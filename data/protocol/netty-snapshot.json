@@ -398,6 +398,15 @@
       "servers": [
         "1.18_experimental-snapshot-6"
       ]
+    },
+    {
+      "version": 47,
+      "clients": [
+        "1.18_experimental-snapshot-7"
+      ],
+      "servers": [
+        "1.18_experimental-snapshot-7"
+      ]
     }
   ]
 }
