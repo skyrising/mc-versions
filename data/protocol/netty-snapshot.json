@@ -348,10 +348,12 @@
     {
       "version": 41,
       "clients": [
-        "1.18_experimental-snapshot-1"
+        "1.18_experimental-snapshot-1",
+        "21w37a"
       ],
       "servers": [
-        "1.18_experimental-snapshot-1"
+        "1.18_experimental-snapshot-1",
+        "21w37a"
       ]
     },
     {
