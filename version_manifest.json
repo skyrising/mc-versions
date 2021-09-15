@@ -1,9 +1,18 @@
 {
   "latest": {
     "release": "1.17.1",
-    "snapshot": "1.17.1"
+    "snapshot": "21w37a"
   },
   "versions": [
+    {
+      "omniId": "21w37a",
+      "id": "21w37a",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/manifest/1/a/ff0b0eb9a9d4373eecad8c4b87b5f5daa9a906/21w37a.json",
+      "time": "2021-09-15T16:04:30+00:00",
+      "releaseTime": "2021-09-15T16:04:30+00:00",
+      "details": "https://skyrising.github.io/mc-versions/version/21w37a.json"
+    },
     {
       "omniId": "1.18_experimental-snapshot-7",
       "id": "1.18_experimental-snapshot-7",
@@ -107,7 +116,7 @@
       "omniId": "1.17.1-pre2",
       "id": "1.17.1-pre2",
       "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/f/0/3cee3d98eed5173257e17fd4cafbe6fdc8c30e/1.17.1-pre2.json",
+      "url": "https://skyrising.github.io/mc-versions/manifest/f/1/2689afb954274bd19911951759f2ac7b58e99a/1.17.1-pre2.json",
       "time": "2021-06-29T15:14:12+00:00",
       "releaseTime": "2021-06-29T15:14:12+00:00",
       "details": "https://skyrising.github.io/mc-versions/version/1.17.1-pre2.json"
@@ -116,7 +125,7 @@
       "omniId": "1.17.1-pre1",
       "id": "1.17.1-pre1",
       "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/c/f/ea8177c19a6686accb45f420caf9b2cb52c4d8/1.17.1-pre1.json",
+      "url": "https://skyrising.github.io/mc-versions/manifest/e/8/487a9ef08e5f1b213dfe508950be6bbc01f756/1.17.1-pre1.json",
       "time": "2021-06-18T12:24:40+00:00",
       "releaseTime": "2021-06-18T12:24:40+00:00",
       "details": "https://skyrising.github.io/mc-versions/version/1.17.1-pre1.json"
@@ -179,7 +188,7 @@
       "omniId": "1.17-pre2",
       "id": "1.17-pre2",
       "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/f/1/38490c971d3f88ea245d07a7a627dd7b555961/1.17-pre2.json",
+      "url": "https://skyrising.github.io/mc-versions/manifest/f/1/875c063366721031488f2097c9c1cbae59242a/1.17-pre2.json",
       "time": "2021-05-31T15:54:05+00:00",
       "releaseTime": "2021-05-31T15:54:05+00:00",
       "details": "https://skyrising.github.io/mc-versions/version/1.17-pre2.json"
@@ -305,7 +314,7 @@
       "omniId": "21w07a",
       "id": "21w07a",
       "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/f/d/d5425983a7f82db4e548d7f5e9c39599405225/21w07a.json",
+      "url": "https://skyrising.github.io/mc-versions/manifest/f/e/ed74db235e2e87775af40e48d792190a8c7257/21w07a.json",
       "time": "2021-02-17T16:35:40+00:00",
       "releaseTime": "2021-02-17T16:35:40+00:00",
       "details": "https://skyrising.github.io/mc-versions/version/21w07a.json"
