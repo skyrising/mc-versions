@@ -1,8 +1,9 @@
 {
   "type": "module",
   "scripts": {
-    "update": "tsc -b && node bin/update.js",
-    "build": "tsc -b &&rm -rf dist && node bin/build.js"
+    "build": "tsc -b",
+    "update": "yarn build && node bin/update.js",
+    "publish": "yarn build && rm -rf dist && node bin/publish.js"
   },
   "dependencies": {
     "node-fetch": "^3.0.0",
