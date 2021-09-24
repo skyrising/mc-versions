@@ -359,10 +359,12 @@
     {
       "version": 42,
       "clients": [
-        "1.18_experimental-snapshot-2"
+        "1.18_experimental-snapshot-2",
+        "21w38a"
       ],
       "servers": [
-        "1.18_experimental-snapshot-2"
+        "1.18_experimental-snapshot-2",
+        "21w38a"
       ]
     },
     {
