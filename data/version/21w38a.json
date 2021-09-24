@@ -1,0 +1,30 @@
+{
+  "client": true,
+  "id": "21w38a",
+  "manifests": [
+    {
+      "assetHash": "207ea70b030a7074bbd2b55b26fe018eb977da91",
+      "assetIndex": "1.18",
+      "downloads": "a01a5c2a42c9d03a068a3382c0f2bccdd34a693d",
+      "downloadsId": 1,
+      "hash": "ce069d4fef701c20b035273adc2353d8f6673438",
+      "time": "2021-09-23T14:36:06+00:00",
+      "type": "snapshot",
+      "url": "../manifest/c/e/069d4fef701c20b035273adc2353d8f6673438/21w38a.json"
+    }
+  ],
+  "next": [],
+  "previous": [
+    "21w37a"
+  ],
+  "protocol": {
+    "type": "netty-snapshot",
+    "version": 42
+  },
+  "releaseTime": "2021-09-23T14:36:06+00:00",
+  "server": true,
+  "world": {
+    "format": "anvil",
+    "version": 2835
+  }
+}

@@ -11,9 +11,21 @@
       "time": "2021-09-15T16:04:30+00:00",
       "type": "snapshot",
       "url": "../manifest/1/a/ff0b0eb9a9d4373eecad8c4b87b5f5daa9a906/21w37a.json"
+    },
+    {
+      "assetHash": "207ea70b030a7074bbd2b55b26fe018eb977da91",
+      "assetIndex": "1.18",
+      "downloads": "930fe53b1169836297270fe26199df49b90577fa",
+      "downloadsId": 1,
+      "hash": "09803feeeb2788de11d80f0be11220768634aa3f",
+      "time": "2021-09-15T16:04:30+00:00",
+      "type": "snapshot",
+      "url": "../manifest/0/9/803feeeb2788de11d80f0be11220768634aa3f/21w37a.json"
     }
   ],
-  "next": [],
+  "next": [
+    "21w38a"
+  ],
   "previous": [
     "1.18_experimental-snapshot-7",
     "1.17.1"
