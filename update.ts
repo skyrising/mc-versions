@@ -1,10 +1,9 @@
 import fs from 'fs'
 import path, { relative } from 'path'
-import util from 'util'
 import fetch from 'node-fetch'
 import yauzl from 'yauzl'
 
-import {sha1, sortObject, readdirRecursive, mkdirp, downloadFile} from './utils.mjs'
+import {sha1, sortObject, readdirRecursive, mkdirp, downloadFile} from './utils.js'
 
 const SNAPSHOT_PROTOCOL = 0x40000000
 
@@ -16,31 +15,116 @@ const importDir = path.resolve(dataDir, 'import')
 const versionDir = path.resolve(dataDir, 'version')
 const protocolDir = path.resolve(dataDir, 'protocol')
 
-;(async () => {
-    const oldOmniVersions = JSON.parse(fs.readFileSync(path.resolve(dataDir, 'omni_id.json')))
-    const hashMap = sortObject(JSON.parse(fs.readFileSync(path.resolve(dataDir, 'hash_map.json'))))
-    const newManifest = {}
-    const mojangManifest = await (await fetch('https://launchermeta.mojang.com/mc/game/version_manifest.json')).json()
-    newManifest.latest = mojangManifest.latest
-    const urls = [
-        ...mojangManifest.versions.map(v => v.url),
-        ...process.argv.slice(2)
-    ].map(u => new URL(u))
-    for (const url of urls) {
-        const p = url.pathname.split('/')
-        let hash = p[3]
-        while (hash in hashMap) hash = hashMap[hash]
-        const file = path.resolve(manifestDir, hash[0], hash[1], hash.substr(2), p[4])
-        await downloadFile(url, file)
-    }
-    const byId = {}
+type VersionId = string
+
+interface MainManifest {
+    latest: {[branch: string]: string}
+    versions: Array<ShortVersion>
+}
+
+interface ShortVersion {
+    omniId?: VersionId
+    id: VersionId
+    type: string
+    url: string
+    time: string
+    releaseTime: string
+    details?: string
+}
+
+type ProtocolType = 'classic' | 'alpha' | 'netty' | 'netty-snapshot'
+
+interface ProtocolVersion {
+    type: ProtocolType
+    version: number
+    incompatible?: boolean
+}
+
+interface ProtocolVersionInfo {
+    version: number
+    clients: Array<VersionId>
+    servers: Array<VersionId>
+}
+
+interface ProtocolData {
+    type: ProtocolType
+    versions: Array<ProtocolVersionInfo>
+}
+
+type WorldFormat = 'anvil'
+
+interface WorldVersion {
+    format: WorldFormat
+    version: number
+}
+
+interface BaseVersionManifest {
+    id: VersionId
+    type: string
+    time: string
+    releaseTime: string
+    releaseTarget?: VersionId
+}
+
+interface DownloadInfo {
+    sha1: string
+    url: string
+}
+
+type VersionManifest = BaseVersionManifest & {
+    assets?: string
+    assetIndex?: {id: string, sha1: string, size: number, totalSize: number, url: string}
+    downloads?: {[id: string]: DownloadInfo}
+}
+
+type ShortManifest = Omit<BaseVersionManifest, 'id' | 'releaseTime'> & {
+    downloadsId?: number
+    assetIndex: string
+    assetHash: string
+}
+
+type TempVersionManifest = {
+    omniId: VersionId
+    id: VersionId
+    type: string
+    hash: string
+    url: string
+    time: string
+    releaseTime: string
+    downloadsHash: string
+    downloads: {[id: string]: DownloadInfo}
+    downloadsId?: number
+    assetIndex: string
+    assetHash: string
+    launcher: boolean
+    localMirror: {[id: string]: string}
+}
+
+type VersionData = BaseVersionManifest & {
+    omniId: VersionId
+    client: boolean
+    server: boolean
+    launcher: boolean
+    manifests: Array<ShortManifest>
+    protocol?: ProtocolVersion
+    world?: WorldVersion
+    previous: Array<VersionId>
+    next: Array<VersionId>
+}
+
+interface HashMap<T> {
+    [hash: string]: T
+}
+
+async function collectVersions(hashMap: HashMap<string>, oldOmniVersions: HashMap<VersionId>) {
+    const byId: {[id: string]: {[hash: string]: TempVersionManifest}} = {}
     const allVersions = []
     const files = [...readdirRecursive(manifestDir), ...readdirRecursive(importDir)]
     for (let file of files) {
         if (!file.endsWith('.json')) continue
-        const content = fs.readFileSync(file, 'UTF-8')
+        const content = fs.readFileSync(file, 'utf8')
         let hash = sha1(content)
-        const data = sortObject(JSON.parse(content))
+        const data: VersionManifest = sortObject(JSON.parse(content))
         if (!data.downloads || !data.assets || !data.assetIndex) continue
         const reformatted = JSON.stringify(data, null, 2)
         const reformattedHash = sha1(reformatted)
@@ -61,7 +145,7 @@ const protocolDir = path.resolve(dataDir, 'protocol')
         fs.utimesSync(file, aTime, mTime)
         const dl = Object.values(data.downloads).map(d => d.sha1).sort()
         const omniId =  oldOmniVersions[hash] || data.id
-        const v = {
+        const v: TempVersionManifest = {
             omniId,
             id: data.id,
             type: data.type,
@@ -73,29 +157,40 @@ const protocolDir = path.resolve(dataDir, 'protocol')
             downloads: data.downloads,
             assetIndex: data.assetIndex.id,
             assetHash: data.assetIndex.sha1,
-            launcher: data.downloads.client && data.downloads.client.url.startsWith('https://launcher.mojang.com/')
+            launcher: data.downloads.client && data.downloads.client.url.startsWith('https://launcher.mojang.com/'),
+            localMirror: {}
         }
         ;(byId[v.omniId] = byId[v.omniId] || {})[hash] = v
         allVersions.push(v)
     }
     readdirRecursive(manifestDir, true)
     const versions = []
-    newManifest.versions = []
     for (const id in byId) {
         const versionInfo = byId[id]
         const list = Object.values(versionInfo)
         list.sort(compareVersions)
-        const downloadIds = {}
+        const downloadIds: {[hash: string]: number} = {}
         for (let i = list.length - 1; i >= 0; i--) {
-            const hash = list[i].downloads
-            list[i].downloadsId = downloadIds[hash] || Object.keys(downloadIds).length + 1
-            downloadIds[hash] = list[i].downloadsId
+            const hash = list[i].downloadsHash
+            const id = downloadIds[hash] || Object.keys(downloadIds).length + 1
+            list[i].downloadsId = id
+            downloadIds[hash] = id
         }
         versions.push(await updateVersion(id, list))
     }
     versions.sort((a, b) => a.info.releaseTime >= b.info.releaseTime ? 1 : -1)
-    const protocols = {}
-    const versionsById = {}
+    return {versions, allVersions}
+}
+
+;(async () => {
+    const oldOmniVersions: HashMap<VersionId> = JSON.parse(fs.readFileSync(path.resolve(dataDir, 'omni_id.json'), 'utf8'))
+    const hashMap: HashMap<string> = sortObject(JSON.parse(fs.readFileSync(path.resolve(dataDir, 'hash_map.json'), 'utf8')))
+    const newManifest: MainManifest = {latest: {}, versions: []}
+    const urls = await getURLs()
+    await downloadManifests(urls, hashMap)
+    const {versions, allVersions} = await collectVersions(hashMap, oldOmniVersions)
+    const protocols: {[K in ProtocolType]?: {[version: number]: ProtocolVersionInfo}} = {}
+    const versionsById: {[id: string]: VersionData} = {}
     for (let i = 0; i < versions.length; i++) {
         const v = versions[i]
         const {id, protocol} = v.data
@@ -104,6 +199,7 @@ const protocolDir = path.resolve(dataDir, 'protocol')
         v.data.previous = v.data.previous || defaultPrevious
         v.data.next = []
         newManifest.versions.unshift(v.info)
+        newManifest.latest[v.info.type] = v.info.id
     }
     for (const v of versions) {
         const {id, protocol} = v.data
@@ -115,9 +211,13 @@ const protocolDir = path.resolve(dataDir, 'protocol')
             }
         }
         if (protocol) {
+            const sameType = function (p?: ProtocolVersion): p is ProtocolVersion {
+                return !!p && p.type === protocol!!.type
+            }
             const previousProtocol = Math.max(0, ...v.data.previous
                 .map(pv => versionsById[pv]).filter(Boolean)
-                .map(v => v.protocol).filter(p => p && p.type === protocol.type)
+                .map(v => v.protocol)
+                .filter(sameType)
                 .map(p => p.version))
             if (!protocol.incompatible && previousProtocol > protocol.version) {
                 console.warn(`${id} decreases ${protocol.type} protocol version number from ${previousProtocol} to ${protocol.version}`)
@@ -129,7 +229,7 @@ const protocolDir = path.resolve(dataDir, 'protocol')
                 if (v.data.server) pvInfo.servers.push(id)
             }
         } else if (protocol === undefined) {
-            const previousProtocols = v.data.previous.map(pv => versionsById[pv].protocol).filter(Boolean).map(p => p.type + ' ' + p.version)
+            const previousProtocols = v.data.previous.map(pv => versionsById[pv].protocol).filter(Boolean).map(p => p!!.type + ' ' + p!!.version)
             if (previousProtocols.length === 1) {
                 console.warn(`${id} is missing protocol info, previous was ${previousProtocols[0]}`)
             } else if (previousProtocols.length) {
@@ -147,21 +247,20 @@ const protocolDir = path.resolve(dataDir, 'protocol')
     const allowedProtocolFile = new Set(Object.keys(protocols).map(p => p + '.json'))
     for (const f of fs.readdirSync(protocolDir)) {
         if (!allowedProtocolFile.has(f)) {
-            const file = path.resolve(protocolsDir, f)
+            const file = path.resolve(protocolDir, f)
             fs.unlinkSync(file)
             console.log(`Deleting ${file}`)
         }
     }
     for (const p in protocols) {
         const file = path.resolve(protocolDir, `${p}.json`)
-        const oldData = fs.existsSync(file) ? JSON.parse(fs.readFileSync(file)) : {}
-        const data = {...oldData}
-        data.type = p
-        data.versions = Object.values(protocols[p])
+        const oldData: ProtocolData = fs.existsSync(file) ? JSON.parse(fs.readFileSync(file, 'utf8')) : {type: p, versions: []}
+        const data: ProtocolData = {...oldData}
+        data.versions = Object.values(protocols[p as ProtocolType]!!)
         fs.writeFileSync(file, JSON.stringify(data, null, 2))
     }
     allVersions.sort(compareVersions)
-    const newOmniVersions = {}
+    const newOmniVersions: HashMap<VersionId> = {}
     for (const v of allVersions) {
         newOmniVersions[v.hash] = v.omniId
     }
@@ -179,7 +278,25 @@ const protocolDir = path.resolve(dataDir, 'protocol')
     fs.writeFileSync(path.resolve(dataDir, 'omni_id.json'), JSON.stringify(newOmniVersions, null, 2))
 })()
 
-function compareVersions(a, b) {
+async function getURLs(): Promise<Array<URL>> {
+    const mojangManifest = await (await fetch('https://launchermeta.mojang.com/mc/game/version_manifest.json')).json() as MainManifest
+    return [
+        ...mojangManifest.versions.map(v => v.url),
+        ...process.argv.slice(2)
+    ].map(u => new URL(u))
+}
+
+async function downloadManifests(urls: Array<URL>, hashMap: HashMap<string>): Promise<void> {
+    for (const url of urls) {
+        const p = url.pathname.split('/')
+        let hash = p[3]
+        while (hash in hashMap) hash = hashMap[hash]
+        const file = path.resolve(manifestDir, hash[0], hash[1], hash.substr(2), p[4])
+        await downloadFile(url.toString(), file)
+    }
+}
+
+function compareVersions(a: TempVersionManifest, b: TempVersionManifest) {
     if (a.releaseTime > b.releaseTime) return -1
     if (a.releaseTime < b.releaseTime) return 1
     if (a.launcher && !b.launcher) return -1
@@ -187,10 +304,10 @@ function compareVersions(a, b) {
     return a.time >= b.time ? -1 : 1
 }
 
-async function updateVersion(id, manifests) {
+async function updateVersion(id: VersionId, manifests: Array<TempVersionManifest>) {
     const file = path.resolve(versionDir, `${id}.json`)
-    const oldData = fs.existsSync(file) ? JSON.parse(fs.readFileSync(file)) : {}
-    const data = {...oldData}
+    const oldData = fs.existsSync(file) ? JSON.parse(fs.readFileSync(file, 'utf8')) : {}
+    const data: VersionData = {...oldData}
     data.id = id
     data.releaseTime = data.releaseTime || manifests[0].releaseTime
     const releaseTime = new Date(data.releaseTime)
@@ -226,7 +343,7 @@ async function updateVersion(id, manifests) {
         downloads: m.downloadsHash,
         downloadsHash: undefined,
         localMirror: undefined
-    }))
+    }) as ShortManifest)
     const {omniId, type, url, time} = manifests[0]
     return {
         info: {
@@ -241,16 +358,16 @@ async function updateVersion(id, manifests) {
     }
 }
 
-function shouldCheckJar(data) {
+function shouldCheckJar(data: VersionData) {
     if (data.protocol === null) return false
     if (data.protocol === undefined) return true
     if (!data.world) return true
     return false
 }
 
-async function getDownloads(manifest) {
+async function getDownloads(manifest: TempVersionManifest) {
     if (!manifest.downloads || !downloadsDir) return {}
-    const files = {}
+    const files: {[id: string]: string} = {}
     for (const key in manifest.downloads) {
         const download = manifest.downloads[key]
         const file = getDownloadDestination(download)
@@ -260,21 +377,22 @@ async function getDownloads(manifest) {
     return files
 }
 
-function getDownloadDestination(download) {
+function getDownloadDestination(download: DownloadInfo): string {
+    if (!downloadsDir) throw Error('downloadsDir not defined')
     const hash = download.sha1
     const url = new URL(download.url)
     return path.resolve(downloadsDir, hash[0], hash[1], hash.substr(2), path.basename(url.pathname))
 }
 
-async function parseJarInfo(file) {
-    const info = {}
+async function parseJarInfo(file: string): Promise<Partial<VersionData>> {
+    const info: Partial<VersionData> = {}
     console.log(`Reading ${file}`)
     await readZip(file, async (zip, entry) => {
         if (entry.fileName.endsWith('version.json')) {
-            const versionInfo = JSON.parse(await readZipEntry(zip, entry))
+            const versionInfo = JSON.parse((await readZipEntry(zip, entry)).toString())
             const {protocol_version: pv} = versionInfo
             info.protocol = {
-                type: 'netty' + (pv & SNAPSHOT_PROTOCOL ? '-snapshot' : ''),
+                type: ('netty' + (pv & SNAPSHOT_PROTOCOL ? '-snapshot' : '') as ProtocolType),
                 version: pv & ~SNAPSHOT_PROTOCOL
             }
             info.releaseTarget = versionInfo.release_target
@@ -287,10 +405,10 @@ async function parseJarInfo(file) {
     return info
 }
 
-function readZip(file, cb) {
+function readZip(file: string, cb: (zip: yauzl.ZipFile, entry: yauzl.Entry) => Promise<any> | any): Promise<void> {
     return new Promise((resolve, reject) => {
         yauzl.open(file, {lazyEntries: true}, (err, zip) => {
-            if (err) {
+            if (err || !zip) {
                 reject(err)
                 return
             }
@@ -305,14 +423,14 @@ function readZip(file, cb) {
     })
 }
 
-function readZipEntry(zip, entry) {
+function readZipEntry(zip: yauzl.ZipFile, entry: yauzl.Entry): Promise<Buffer> {
     return new Promise((resolve, reject) => {
         zip.openReadStream(entry, (err, stream) => {
-            if (err) {
+            if (err || !stream) {
                 reject(err)
                 return
             }
-            const bufs = []
+            const bufs: Array<Buffer> = []
             stream.on('error', reject)
             stream.on('data', buf => {
                 bufs.push(buf)

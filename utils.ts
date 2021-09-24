@@ -3,28 +3,29 @@ import path from 'path'
 import crypto from 'crypto'
 import fetch from 'node-fetch'
 
-export function sha1(data) {
+export function sha1(data: crypto.BinaryLike): string {
     const h = crypto.createHash('sha1')
     h.update(data)
     return h.digest('hex')
 }
 
-export function sortObject(obj, recursive = true) {
+export function sortObject<T>(obj: T, recursive = true): T {
     if (recursive && Array.isArray(obj)) {
-        return obj.map(e => sortObject(e))
+        return obj.map(e => sortObject(e)) as unknown as T
     } else if (typeof obj !== 'object' || Object.prototype.toString.call(obj) !== '[object Object]') {
         return obj
     }
     const keys = Object.keys(obj)
     keys.sort()
-    const newObj = {}
+    const newObj: any = {}
     for (const key of keys) {
-        newObj[key] = recursive ? sortObject(obj[key], recursive) : obj[key]
+        const value = (obj as any)[key]
+        newObj[key] = recursive ? sortObject(value, recursive) : value
     }
-    return newObj
+    return newObj as unknown as T
 }
 
-export function readdirRecursive(dir, deleteEmpty = false) {
+export function readdirRecursive(dir: string, deleteEmpty = false): Array<string> {
     const files = []
     for (const f of fs.readdirSync(dir)) {
         const file = path.resolve(dir, f)
@@ -42,13 +43,13 @@ export function readdirRecursive(dir, deleteEmpty = false) {
     return files
 }
 
-export async function downloadFile(url, file, part = false) {
+export async function downloadFile(url: string, file: string, part = false) {
     if (fs.existsSync(file)) return
     console.log(`Downloading ${url}`)
     mkdirp(path.dirname(file))
     const destFile = part ? file + '.part' : file
     try {
-        await fetch(url).then(res => promisifiedPipe(res.body, fs.createWriteStream(destFile)))
+        await fetch(url).then(res => promisifiedPipe(res.body!!, fs.createWriteStream(destFile)))
         if (part) {
             fs.renameSync(destFile, file)
         }
@@ -59,19 +60,27 @@ export async function downloadFile(url, file, part = false) {
     }
 }
 
-export function mkdirp(dir) {
+export function mkdirp(dir: string) {
     if (fs.existsSync(dir)) return
     mkdirp(path.dirname(dir))
     fs.mkdirSync(dir)
 }
 
-export function promisifiedPipe(input, output) {
+interface Closable {
+    close(): void
+}
+
+function isCloseable<T>(obj: T): obj is T & Closable {
+    return typeof (obj as any as Closable).close === 'function'
+}
+
+export function promisifiedPipe<R extends NodeJS.ReadableStream, W extends NodeJS.WritableStream>(input: R, output: W): Promise<void> {
     let ended = false
     function end() {
         if (!ended) {
             ended = true
-            output.close && output.close()
-            input.close && input.close()
+            isCloseable(output) && output.close()
+            isCloseable(input) && input.close()
             return true
         }
     }

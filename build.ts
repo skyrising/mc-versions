@@ -1,6 +1,6 @@
 import fs from 'fs'
 import path from 'path'
-import {readdirRecursive, mkdirp} from './utils.mjs'
+import {readdirRecursive, mkdirp} from './utils.js'
 
 const {URL_BASE} = process.env
 if (!URL_BASE) {
@@ -16,7 +16,7 @@ for (const file of readdirRecursive(dataDir)) {
     const outFile = path.resolve(distDir, relative)
     mkdirp(path.dirname(outFile))
     if (relative.startsWith('version/') || !relative.includes('/')) {
-        const data = JSON.parse(fs.readFileSync(file))
+        const data = JSON.parse(fs.readFileSync(file, 'utf8'))
         const base = new URL(relative, URL_BASE)
         resolveUrls(base, data)
         fs.writeFileSync(outFile, JSON.stringify(data, null, 2))
@@ -25,7 +25,7 @@ for (const file of readdirRecursive(dataDir)) {
     }
 }
 
-function resolveUrls(base, obj) {
+function resolveUrls(base: URL, obj: any) {
     if (Array.isArray(obj)) {
         for (const element of obj) resolveUrls(base, element)
     } else if (typeof obj === 'object' && obj) {
