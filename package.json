@@ -1,5 +1,6 @@
 {
   "type": "module",
+  "license": "MIT",
   "scripts": {
     "build": "yarn build-ts && yarn build-analyzer",
     "build-ts": "tsc -b",
