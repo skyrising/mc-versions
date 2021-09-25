@@ -1,16 +1,17 @@
 {
   "type": "module",
   "scripts": {
-    "build": "tsc -b",
+    "build": "yarn build-ts && yarn build-analyzer",
+    "build-ts": "tsc -b",
+    "build-analyzer": "cd jar-analyzer && ./gradlew build && cd ..",
     "update": "yarn build && node bin/update.js",
     "publish": "yarn build && rm -rf dist && node bin/publish.js"
   },
   "dependencies": {
-    "node-fetch": "^3.0.0",
-    "yauzl": "^2.10.0"
+    "@types/node": "^16.9.6",
+    "node-fetch": "^3.0.0"
   },
   "devDependencies": {
-    "@types/yauzl": "^2.9.2",
     "typescript": "^4.4.3"
   }
 }

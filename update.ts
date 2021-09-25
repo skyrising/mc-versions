@@ -1,11 +1,9 @@
 import fs from 'fs'
 import path, { relative } from 'path'
+import cp from 'child_process'
 import fetch from 'node-fetch'
-import yauzl from 'yauzl'
 
-import {sha1, sortObject, readdirRecursive, mkdirp, downloadFile} from './utils.js'
-
-const SNAPSHOT_PROTOCOL = 0x40000000
+import {sha1, sortObject, readdirRecursive, mkdirp, downloadFile, promisifiedPipe} from './utils.js'
 
 const downloadsDir = process.env.MC_VERSIONS_DOWNLOADS
 
@@ -326,6 +324,7 @@ async function updateVersion(id: VersionId, manifests: Array<TempVersionManifest
     const {localMirror} = manifests[0]
     if (localMirror.client && shouldCheckJar(data)) {
         try {
+            console.log(`Analyzing ${data.id} (${localMirror.client})`)
             const parsedInfo = await parseJarInfo(localMirror.client)
             if (data.protocol === undefined) data.protocol = parsedInfo.protocol
             data.world = data.world || parsedInfo.world
@@ -361,7 +360,7 @@ async function updateVersion(id: VersionId, manifests: Array<TempVersionManifest
 function shouldCheckJar(data: VersionData) {
     if (data.protocol === null) return false
     if (data.protocol === undefined) return true
-    if (!data.world) return true
+    if (!data.world && data.releaseTime > '2015-08-05') return true
     return false
 }
 
@@ -385,59 +384,17 @@ function getDownloadDestination(download: DownloadInfo): string {
 }
 
 async function parseJarInfo(file: string): Promise<Partial<VersionData>> {
-    const info: Partial<VersionData> = {}
-    console.log(`Reading ${file}`)
-    await readZip(file, async (zip, entry) => {
-        if (entry.fileName.endsWith('version.json')) {
-            const versionInfo = JSON.parse((await readZipEntry(zip, entry)).toString())
-            const {protocol_version: pv} = versionInfo
-            info.protocol = {
-                type: ('netty' + (pv & SNAPSHOT_PROTOCOL ? '-snapshot' : '') as ProtocolType),
-                version: pv & ~SNAPSHOT_PROTOCOL
-            }
-            info.releaseTarget = versionInfo.release_target
-            info.world = {
-                format: 'anvil',
-                version: versionInfo.world_version
-            }
-        }
-    })
-    return info
-}
-
-function readZip(file: string, cb: (zip: yauzl.ZipFile, entry: yauzl.Entry) => Promise<any> | any): Promise<void> {
+    const javaHome = process.env['JAVA_HOME']
+    const javaPath = javaHome ? path.resolve(javaHome, 'bin', 'java') : 'java'
     return new Promise((resolve, reject) => {
-        yauzl.open(file, {lazyEntries: true}, (err, zip) => {
-            if (err || !zip) {
-                reject(err)
-                return
-            }
-            zip.readEntry()
-            zip.on('entry', async entry => {
-                await cb(zip, entry)
-                zip.readEntry()
-            })
-            zip.on('close', () => resolve())
-            zip.on('error', reject)
-        })
-    })
-}
-
-function readZipEntry(zip: yauzl.ZipFile, entry: yauzl.Entry): Promise<Buffer> {
-    return new Promise((resolve, reject) => {
-        zip.openReadStream(entry, (err, stream) => {
-            if (err || !stream) {
-                reject(err)
-                return
-            }
-            const bufs: Array<Buffer> = []
-            stream.on('error', reject)
-            stream.on('data', buf => {
-                bufs.push(buf)
-            })
-            stream.on('end', () => {
-                resolve(Buffer.concat(bufs))
-            })
+        const c = cp.spawn(javaPath, ['-jar', 'jar-analyzer/build/libs/jar-analyzer-all.jar', file], {stdio: 'pipe'})
+        let stdout = ''
+        let stderr = ''
+        c.stdout.on('data', d => stdout += d)
+        c.stderr.on('data', d => stderr += d)
+        c.on('exit', code => {
+            if (code) reject(stderr)
+            else resolve(JSON.parse(stdout))
         })
     })
 }
