@@ -66,6 +66,10 @@ data class VersionInfo(
                 put("format", worldFormat ?: "anvil")
                 put("version", worldVersion)
             }
+        } else if (worldFormat != null) {
+            putJsonObject("world") {
+                put("format", worldFormat)
+            }
         }
         if (protocolVersion != null) {
             if (protocolType == null) {
@@ -90,7 +94,6 @@ fun analyze(version: String?, fs: FileSystem): JsonObject {
     }
     val versionJsonPath = fs.getPath("version.json")
     if (Files.exists(versionJsonPath)) {
-        println("version.json")
         val versionJson = Json.decodeFromString<JsonObject>(Files.readString(versionJsonPath))
         info.protocolVersion = versionJson["protocol_version"]?.jsonPrimitive?.int
         info.worldVersion = versionJson["world_version"]?.jsonPrimitive?.int
@@ -158,6 +161,12 @@ fun analyze(version: String?, fs: FileSystem): JsonObject {
                         }
                     }
                 }
+            },
+            ".mca" to {
+                info.worldFormat = "anvil"
+            },
+            ".mcr" to {
+                if (info.worldFormat != "anvil") info.worldFormat = "region"
             }
         )
         val s = String(bytes)

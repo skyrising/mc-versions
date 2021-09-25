@@ -360,7 +360,7 @@ async function updateVersion(id: VersionId, manifests: Array<TempVersionManifest
 function shouldCheckJar(data: VersionData) {
     if (data.protocol === null) return false
     if (data.protocol === undefined) return true
-    if (!data.world && data.releaseTime > '2015-08-05') return true
+    if (!data.world && data.releaseTime > '2011-02-22') return true
     return false
 }
 

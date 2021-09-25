@@ -34,5 +34,8 @@
     "version": 13
   },
   "releaseTime": "2011-05-26T00:00:03+00:00",
-  "server": false
+  "server": false,
+  "world": {
+    "format": "region"
+  }
 }
