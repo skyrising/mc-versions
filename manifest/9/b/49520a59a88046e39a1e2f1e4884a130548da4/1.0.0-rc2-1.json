@@ -9,12 +9,12 @@
   "assets": "legacy",
   "downloads": {
     "client": {
-      "sha1": "6e54fbe19b7797f3e3a2cb9feb5da41a40926db8",
-      "size": 2242211,
-      "url": "https://archive.org/download/Minecraft-JE-Beta/Prereleases/1.0.0-rc2-3/1.0.0-rc2-3.jar"
+      "sha1": "9e04e60eef3fb4657b406dcb3ad5e3a675ecf6af",
+      "size": 2242191,
+      "url": "https://archive.org/download/Minecraft-JE-Beta/1.0.0-rc2-1/1.0.0-rc2-1.jar"
     }
   },
-  "id": "1.0.0-rc2-3",
+  "id": "1.0.0-rc2-1",
   "libraries": [
     {
       "downloads": {
@@ -310,7 +310,7 @@
   "mainClass": "net.minecraft.launchwrapper.Launch",
   "minecraftArguments": "${auth_player_name} ${auth_session} --gameDir ${game_directory} --assetsDir ${game_assets} --tweakClass net.minecraft.launchwrapper.AlphaVanillaTweaker",
   "minimumLauncherVersion": 7,
-  "releaseTime": "2011-11-14T15:00:00-07:00",
-  "time": "2013-08-06T07:33:30-07:00",
+  "releaseTime": "2011-11-13T17:33:00+00:00",
+  "time": "2019-11-21T22:37:45+00:00",
   "type": "snapshot"
 }

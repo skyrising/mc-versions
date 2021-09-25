@@ -24,7 +24,7 @@
     }
   ],
   "next": [
-    "b1.8-pre1-201109091557"
+    "b1.8-pre1-201109081659"
   ],
   "previous": [
     "b1.7.2"
@@ -34,5 +34,8 @@
     "version": 14
   },
   "releaseTime": "2011-07-08T00:00:00+00:00",
-  "server": false
+  "server": false,
+  "world": {
+    "format": "region"
+  }
 }

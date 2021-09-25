@@ -24,5 +24,8 @@
     "version": 23
   },
   "releaseTime": "2012-01-12T14:20:00+00:00",
-  "server": false
+  "server": false,
+  "world": {
+    "format": "region"
+  }
 }

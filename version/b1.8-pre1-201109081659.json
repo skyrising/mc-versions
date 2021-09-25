@@ -5,24 +5,27 @@
     {
       "assetHash": "c0fd82e8ce9fbc93119e40d96d5a4e62cfa3f729",
       "assetIndex": "legacy",
-      "downloads": "84b5f9bbcc0b97cdb6a9b2add8d8d3b616bf5611",
+      "downloads": "cb9ecb8aebbf6cec9051c7c7d5f5db74bbb912d4",
       "downloadsId": 1,
-      "hash": "576dc4966da82cf1946143a2316786a010567d5f",
+      "hash": "fa1b2db225230c7fd74e2d0cde5b953d898a82f9",
       "time": "2011-09-09T04:00:00-07:00",
       "type": "old_beta",
-      "url": "https://skyrising.github.io/mc-versions/manifest/5/7/6dc4966da82cf1946143a2316786a010567d5f/b1.8-pre1-1.json"
+      "url": "https://skyrising.github.io/mc-versions/manifest/f/a/1b2db225230c7fd74e2d0cde5b953d898a82f9/b1.8-pre1-2.json"
     }
   ],
   "next": [
-    "b1.8-pre2"
+    "b1.8-pre1-201109091557"
   ],
   "previous": [
-    "b1.8-pre1-201109091557"
+    "b1.7.3"
   ],
   "protocol": {
     "type": "modern",
     "version": 15
   },
   "releaseTime": "2011-09-10T00:00:00+00:00",
-  "server": false
+  "server": false,
+  "world": {
+    "format": "region"
+  }
 }
