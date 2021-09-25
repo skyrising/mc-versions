@@ -6,7 +6,7 @@
     "build-ts": "tsc -b",
     "build-analyzer": "cd jar-analyzer && ./gradlew build && cd ..",
     "update": "yarn build && node bin/update.js",
-    "publish": "yarn build && rm -rf dist && node bin/publish.js"
+    "publish": "yarn build-ts && rm -rf dist && node bin/publish.js"
   },
   "dependencies": {
     "@types/node": "^16.9.6",
