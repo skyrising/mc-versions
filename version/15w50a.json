@@ -34,5 +34,9 @@
     "version": 92
   },
   "releaseTime": "2015-12-09T15:35:57+00:00",
-  "server": true
+  "server": true,
+  "world": {
+    "format": "anvil",
+    "version": 153
+  }
 }
