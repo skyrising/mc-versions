@@ -5,24 +5,27 @@
     {
       "assetHash": "c0fd82e8ce9fbc93119e40d96d5a4e62cfa3f729",
       "assetIndex": "legacy",
-      "downloads": "cb9ecb8aebbf6cec9051c7c7d5f5db74bbb912d4",
+      "downloads": "84b5f9bbcc0b97cdb6a9b2add8d8d3b616bf5611",
       "downloadsId": 1,
-      "hash": "1f265e67ff9c31de76496e6c03a4f077cc0b632f",
+      "hash": "2785959e5d56da67c77a30dd7ba37e3ede36cc1f",
       "time": "2011-09-09T04:00:00-07:00",
       "type": "old_beta",
-      "url": "../manifest/1/f/265e67ff9c31de76496e6c03a4f077cc0b632f/b1.8-pre1-2.json"
+      "url": "../manifest/2/7/85959e5d56da67c77a30dd7ba37e3ede36cc1f/b1.8-pre1-1.json"
     }
   ],
   "next": [
-    "b1.8-pre1-201109081659"
+    "b1.8-pre2"
   ],
   "previous": [
-    "b1.7.3"
+    "b1.8-pre1-201109081659"
   ],
   "protocol": {
     "type": "modern",
     "version": 15
   },
   "releaseTime": "2011-09-10T00:00:00+00:00",
-  "server": false
+  "server": false,
+  "world": {
+    "format": "region"
+  }
 }

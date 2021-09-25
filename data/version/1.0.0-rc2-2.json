@@ -7,10 +7,10 @@
       "assetIndex": "legacy",
       "downloads": "0503a8f66f8666762057aefabe1efb4a93ac26f0",
       "downloadsId": 1,
-      "hash": "7d0c3a51b0f54fcbcecdef968fd01d9bb7a5dd46",
+      "hash": "9b3b551bb251a3f053f8a1424658ac1a2bc1f7f9",
       "time": "2019-04-21T21:04:24+00:00",
       "type": "snapshot",
-      "url": "../manifest/7/d/0c3a51b0f54fcbcecdef968fd01d9bb7a5dd46/1.0.0-rc2-2.json"
+      "url": "../manifest/9/b/3b551bb251a3f053f8a1424658ac1a2bc1f7f9/1.0.0-rc2-2.json"
     }
   ],
   "next": [
@@ -24,5 +24,8 @@
     "version": 22
   },
   "releaseTime": "2011-11-13T16:49:00+00:00",
-  "server": false
+  "server": false,
+  "world": {
+    "format": "region"
+  }
 }

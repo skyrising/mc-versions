@@ -49,7 +49,10 @@ export async function downloadFile(url: string, file: string, part = false) {
     mkdirp(path.dirname(file))
     const destFile = part ? file + '.part' : file
     try {
-        await fetch(url).then(res => promisifiedPipe(res.body!!, fs.createWriteStream(destFile)))
+        await fetch(url).then(res => {
+            if (!res.ok) throw Error(`Invalid response for download: ${res.status} ${res.statusText}`)
+            return promisifiedPipe(res.body!!, fs.createWriteStream(destFile))
+        })
         if (part) {
             fs.renameSync(destFile, file)
         }

@@ -7,22 +7,25 @@
       "assetIndex": "legacy",
       "downloads": "4b18b79c30696aa18b35240fbeb7623b22d6bf8a",
       "downloadsId": 1,
-      "hash": "4d90e000108e1c33f3b8e711000a10e33e8d83b5",
+      "hash": "d200318be25fe1990a4a7692b93af46e4e49bab8",
       "time": "2013-08-06T04:00:00-07:00",
       "type": "old_beta",
-      "url": "../manifest/4/d/90e000108e1c33f3b8e711000a10e33e8d83b5/b1.8-pre2.json"
+      "url": "../manifest/d/2/00318be25fe1990a4a7692b93af46e4e49bab8/b1.8-pre2.json"
     }
   ],
   "next": [
     "b1.8"
   ],
   "previous": [
-    "b1.8-pre1-201109081659"
+    "b1.8-pre1-201109091557"
   ],
   "protocol": {
     "type": "modern",
     "version": 16
   },
   "releaseTime": "2011-09-14T00:00:00+00:00",
-  "server": false
+  "server": false,
+  "world": {
+    "format": "region"
+  }
 }

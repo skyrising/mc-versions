@@ -9,23 +9,15 @@
   "assets": "legacy",
   "downloads": {
     "client": {
-      "sha1": "9e04e60eef3fb4657b406dcb3ad5e3a675ecf6af",
-      "size": 2242191,
-      "url": "https://archive.org/download/Minecraft-JE-Beta/Prereleases/1.0.0-rc2-1/1.0.0-rc2-1.jar"
+      "sha1": "81fe0f9ec4b1d9f861482e4bad2a076dd4ed3e44",
+      "size": 1890166,
+      "url": "https://archive.org/download/Minecraft-JE-Beta/Prereleases/b1.8-pre1-1/b1.8-pre1-1.jar"
     }
   },
-  "id": "1.0.0-rc2-1",
+  "id": "b1.8-pre1-1",
   "libraries": [
     {
-      "downloads": {
-        "artifact": {
-          "path": "net/minecraft/launchwrapper/1.6/launchwrapper-1.6.jar",
-          "sha1": "4ea0aca9c022a234ebaf14b51fb119055955fc9d",
-          "size": 27583,
-          "url": "https://libraries.minecraft.net/net/minecraft/launchwrapper/1.6/launchwrapper-1.6.jar"
-        }
-      },
-      "name": "net.minecraft:launchwrapper:1.6"
+      "name": "net.minecraft:launchwrapper:1.5"
     },
     {
       "downloads": {
@@ -308,9 +300,9 @@
     }
   ],
   "mainClass": "net.minecraft.launchwrapper.Launch",
-  "minecraftArguments": "${auth_player_name} ${auth_session} --gameDir ${game_directory} --assetsDir ${game_assets} --tweakClass net.minecraft.launchwrapper.AlphaVanillaTweaker",
-  "minimumLauncherVersion": 7,
-  "releaseTime": "2011-11-13T17:33:00+00:00",
-  "time": "2019-11-21T22:37:45+00:00",
-  "type": "snapshot"
+  "minecraftArguments": "${auth_player_name} ${auth_session} --gameDir ${game_directory} --assetsDir ${game_assets}",
+  "minimumLauncherVersion": 4,
+  "releaseTime": "2011-09-09T14:00:00-08:00",
+  "time": "2011-09-09T04:00:00-07:00",
+  "type": "old_beta"
 }
