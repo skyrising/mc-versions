@@ -2,11 +2,20 @@
   "latest": {
     "old_alpha": "a1.2.6",
     "old_beta": "b1.9-pre6",
-    "snapshot": "21w38a",
+    "snapshot": "21w39a",
     "release": "1.17.1",
     "pending": "1.18_experimental-snapshot-7"
   },
   "versions": [
+    {
+      "omniId": "21w39a",
+      "id": "21w39a",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/manifest/6/1/084146d56066174545215f1fb53b27503e2d28/21w39a.json",
+      "time": "2021-09-29T16:27:05+00:00",
+      "releaseTime": "2021-09-29T16:27:05+00:00",
+      "details": "https://skyrising.github.io/mc-versions/version/21w39a.json"
+    },
     {
       "omniId": "21w38a",
       "id": "21w38a",
@@ -20,7 +29,7 @@
       "omniId": "21w37a",
       "id": "21w37a",
       "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/1/a/ff0b0eb9a9d4373eecad8c4b87b5f5daa9a906/21w37a.json",
+      "url": "https://skyrising.github.io/mc-versions/manifest/2/2/d9bc5bfd820f2238be4da773d03e7443bded85/21w37a.json",
       "time": "2021-09-15T16:04:30+00:00",
       "releaseTime": "2021-09-15T16:04:30+00:00",
       "details": "https://skyrising.github.io/mc-versions/version/21w37a.json"
@@ -4994,22 +5003,22 @@
       "details": "https://skyrising.github.io/mc-versions/version/b1.8-pre2.json"
     },
     {
-      "omniId": "b1.8-pre1-201109081659",
+      "omniId": "b1.8-pre1-201109091557",
       "id": "b1.8-pre1-2",
       "type": "old_beta",
       "url": "https://skyrising.github.io/mc-versions/manifest/f/a/1b2db225230c7fd74e2d0cde5b953d898a82f9/b1.8-pre1-2.json",
       "time": "2011-09-09T04:00:00-07:00",
       "releaseTime": "2011-09-10T00:00:00+00:00",
-      "details": "https://skyrising.github.io/mc-versions/version/b1.8-pre1-201109081659.json"
+      "details": "https://skyrising.github.io/mc-versions/version/b1.8-pre1-201109091557.json"
     },
     {
-      "omniId": "b1.8-pre1-201109091557",
+      "omniId": "b1.8-pre1-201109081659",
       "id": "b1.8-pre1-1",
       "type": "old_beta",
       "url": "https://skyrising.github.io/mc-versions/manifest/2/7/85959e5d56da67c77a30dd7ba37e3ede36cc1f/b1.8-pre1-1.json",
       "time": "2011-09-09T04:00:00-07:00",
       "releaseTime": "2011-09-10T00:00:00+00:00",
-      "details": "https://skyrising.github.io/mc-versions/version/b1.8-pre1-201109091557.json"
+      "details": "https://skyrising.github.io/mc-versions/version/b1.8-pre1-201109081659.json"
     },
     {
       "omniId": "b1.7.3",
