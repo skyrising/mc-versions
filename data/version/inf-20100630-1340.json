@@ -21,5 +21,8 @@
   ],
   "protocol": null,
   "releaseTime": "2010-06-30T13:40:00+00:00",
-  "server": false
+  "server": false,
+  "world": {
+    "format": "alpha"
+  }
 }

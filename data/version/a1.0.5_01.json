@@ -34,5 +34,8 @@
     "version": 10
   },
   "releaseTime": "2010-07-13T00:00:00+00:00",
-  "server": false
+  "server": false,
+  "world": {
+    "format": "alpha"
+  }
 }

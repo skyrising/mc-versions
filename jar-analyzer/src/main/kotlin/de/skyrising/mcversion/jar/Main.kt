@@ -86,6 +86,69 @@ data class VersionInfo(
     fun isComplete() = protocolVersion != null && worldVersion != null && metaInfDate != null
 }
 
+private val PARSERS = mutableMapOf<String, (ClassNode, VersionInfo) -> Unit>().apply {
+    put("version:") { node, info ->
+        outer@ for (m in node.methods) {
+            for (insn in m.instructions) {
+                if (insn is LdcInsnNode) {
+                    val value = insn.cst
+                    if (value is String && value.startsWith("version:") && value.length > 8) {
+                        info.worldVersion = value.substring(8).toInt()
+                        break@outer
+                    }
+                }
+            }
+        }
+    }
+    put("Outdated server!") { node, info ->
+        outer@ for (m in node.methods) {
+            for (insn in m.instructions) {
+                if (insn is LdcInsnNode && insn.cst == "Outdated server!") {
+                    var i: AbstractInsnNode? = insn
+                    while (i != null && getIntConstant(i) == null) {
+                        i = i.previous
+                    }
+                    if (i != null) {
+                        info.protocolVersion = getIntConstant(i)
+                        info.protocolType = "modern"
+                        break@outer
+                    }
+                }
+            }
+        }
+    }
+    put("DataVersion") { node, info ->
+        outer@for (m in node.methods) {
+            for (insn in m.instructions) {
+                if (insn is LdcInsnNode && insn.cst == "DataVersion") {
+                    val v = getIntConstant(insn.next)
+                    if (v != null && v > 99) {
+                        info.worldVersion = v
+                        break@outer
+                    }
+                }
+            }
+        }
+    }
+    put(".mca") { _, info ->
+        info.worldFormat = "anvil"
+    }
+    put(".mcr") { _, info ->
+        if (info.worldFormat != "anvil") info.worldFormat = "region"
+    }
+    put("c.") { node, info ->
+        if (info.worldFormat != null) return@put
+        outer@for (m in node.methods) {
+            if (m.desc != "(II)Ljava/io/File;") continue
+            for (insn in m.instructions) {
+                if (insn is LdcInsnNode && insn.cst == "c.") {
+                    info.worldFormat = "alpha"
+                }
+            }
+        }
+    }
+}
+
 fun analyze(version: String?, fs: FileSystem): JsonObject {
     val info = VersionInfo()
     val metaInfPath = fs.getPath("META-INF", "MANIFEST.MF")
@@ -118,64 +181,13 @@ fun analyze(version: String?, fs: FileSystem): JsonObject {
     for (f in Files.list(fs.getPath("."))) {
         if (!f.name.endsWith(".class")) continue
         val bytes = Files.readAllBytes(f)
-        val parsers = mapOf<String, (ClassNode) -> Unit>(
-            "version:" to {
-                outer@for (m in it.methods) {
-                    for (insn in m.instructions) {
-                        if (insn is LdcInsnNode) {
-                            val value = insn.cst
-                            if (value is String && value.startsWith("version:") && value.length > 8) {
-                                info.worldVersion = value.substring(8).toInt()
-                                break@outer
-                            }
-                        }
-                    }
-                }
-            },
-            "Outdated server!" to {
-                outer@for (m in it.methods) {
-                    for (insn in m.instructions) {
-                        if (insn is LdcInsnNode && insn.cst == "Outdated server!") {
-                            var i: AbstractInsnNode? = insn
-                            while (i != null && getIntConstant(i) == null) {
-                                i = i.previous
-                            }
-                            if (i != null) {
-                                info.protocolVersion = getIntConstant(i)
-                                info.protocolType = "modern"
-                                break@outer
-                            }
-                        }
-                    }
-                }
-            },
-            "DataVersion" to {
-                outer@for (m in it.methods) {
-                    for (insn in m.instructions) {
-                        if (insn is LdcInsnNode && insn.cst == "DataVersion") {
-                            val v = getIntConstant(insn.next)
-                            if (v != null && v > 99) {
-                                info.worldVersion = v
-                                break@outer
-                            }
-                        }
-                    }
-                }
-            },
-            ".mca" to {
-                info.worldFormat = "anvil"
-            },
-            ".mcr" to {
-                if (info.worldFormat != "anvil") info.worldFormat = "region"
-            }
-        )
         val s = String(bytes)
-        for ((k, v) in parsers) {
+        for ((k, v) in PARSERS) {
             if (s.contains(k)) {
                 val reader = ClassReader(bytes)
                 val node = ClassNode()
                 reader.accept(node, Opcodes.ASM9)
-                v(node)
+                v(node, info)
             }
         }
         if (info.isComplete()) break
