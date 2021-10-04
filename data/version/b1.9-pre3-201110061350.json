@@ -1,6 +1,6 @@
 {
   "client": true,
-  "id": "b1.9-pre3-201110061550",
+  "id": "b1.9-pre3-201110061350",
   "manifests": [
     {
       "assetHash": "c0fd82e8ce9fbc93119e40d96d5a4e62cfa3f729",
@@ -14,16 +14,16 @@
     }
   ],
   "next": [
-    "b1.9-pre3-201110061602"
+    "b1.9-pre4-201110131434"
   ],
   "previous": [
-    "b1.9-pre2"
+    "b1.9-pre3-201110061402"
   ],
   "protocol": {
     "type": "modern",
     "version": 19
   },
-  "releaseTime": "2011-10-06T00:00:00+00:00",
+  "releaseTime": "2011-10-06T13:50:00+00:00",
   "server": false,
   "world": {
     "format": "region"
