@@ -5489,22 +5489,22 @@
       "details": "https://skyrising.github.io/mc-versions/version/a1.1.0-101847.json"
     },
     {
-      "omniId": "a1.0.17_03",
-      "id": "a1.0.17_03",
-      "type": "old_alpha",
-      "url": "https://skyrising.github.io/mc-versions/manifest/2/9/5b6414a969f9ca7e662c795eff2f35b2dd12fe/a1.0.17_03.json",
-      "time": "2017-10-22T05:26:50+00:00",
-      "releaseTime": "2010-08-23T00:00:00+00:00",
-      "details": "https://skyrising.github.io/mc-versions/version/a1.0.17_03.json"
-    },
-    {
       "omniId": "a1.0.17_04",
       "id": "a1.0.17_04",
       "type": "old_alpha",
       "url": "https://skyrising.github.io/mc-versions/manifest/9/3/83314961ab25aa86706832258d1b8034d01c91/a1.0.17_04.json",
       "time": "2010-08-22T22:00:00+00:00",
-      "releaseTime": "2010-08-23T00:00:00+00:00",
+      "releaseTime": "2010-08-23T21:24:00+00:00",
       "details": "https://skyrising.github.io/mc-versions/version/a1.0.17_04.json"
+    },
+    {
+      "omniId": "a1.0.17_03",
+      "id": "a1.0.17_03",
+      "type": "old_alpha",
+      "url": "https://skyrising.github.io/mc-versions/manifest/2/9/5b6414a969f9ca7e662c795eff2f35b2dd12fe/a1.0.17_03.json",
+      "time": "2017-10-22T05:26:50+00:00",
+      "releaseTime": "2010-08-23T16:22:00+00:00",
+      "details": "https://skyrising.github.io/mc-versions/version/a1.0.17_03.json"
     },
     {
       "omniId": "a1.0.17_02",
@@ -5512,7 +5512,7 @@
       "type": "old_alpha",
       "url": "https://skyrising.github.io/mc-versions/manifest/8/e/78ea7dfd346cc02ff91b761967f06a9f75b3ae/a1.0.17_02.json",
       "time": "2010-08-19T22:00:00+00:00",
-      "releaseTime": "2010-08-20T00:00:00+00:00",
+      "releaseTime": "2010-08-20T13:23:00+00:00",
       "details": "https://skyrising.github.io/mc-versions/version/a1.0.17_02.json"
     },
     {
