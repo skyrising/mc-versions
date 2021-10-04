@@ -1,6 +1,6 @@
 {
   "client": true,
-  "id": "b1.1-1244",
+  "id": "b1.1-1255",
   "manifests": [
     {
       "assetHash": "c0fd82e8ce9fbc93119e40d96d5a4e62cfa3f729",
@@ -17,13 +17,13 @@
     "b1.1_01"
   ],
   "previous": [
-    "b1.0.2"
+    "b1.1-1245"
   ],
   "protocol": {
     "type": "modern",
     "version": 7
   },
-  "releaseTime": "2010-12-22T00:00:00+00:00",
+  "releaseTime": "2010-12-22T12:55:00+00:00",
   "server": false,
   "world": {
     "format": "alpha"
