@@ -293,6 +293,7 @@
     "type": "netty-snapshot",
     "version": 16
   },
+  "releaseTarget": "1.17",
   "releaseTime": "2021-02-24T14:38:51+00:00",
   "server": true,
   "world": {

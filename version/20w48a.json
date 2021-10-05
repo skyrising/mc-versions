@@ -373,6 +373,7 @@
     "type": "netty-snapshot",
     "version": 7
   },
+  "releaseTarget": "1.17",
   "releaseTime": "2020-11-25T15:42:24+00:00",
   "server": true,
   "world": {
