@@ -33,6 +33,7 @@
     "type": "netty",
     "version": 12
   },
+  "releaseTarget": "1.8",
   "releaseTime": "2014-02-26T17:00:00+00:00",
   "server": true,
   "world": {

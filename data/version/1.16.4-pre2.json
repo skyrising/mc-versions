@@ -73,6 +73,7 @@
     "type": "netty-snapshot",
     "version": 2
   },
+  "releaseTarget": "1.16.4",
   "releaseTime": "2020-10-22T15:32:17+00:00",
   "server": true,
   "world": {

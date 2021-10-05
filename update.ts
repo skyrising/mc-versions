@@ -199,14 +199,18 @@ async function collectVersions(hashMap: HashMap<string>, oldOmniVersions: HashMa
         newManifest.versions.unshift(v.info)
         newManifest.latest[v.info.type] = v.info.id
     }
+    const byReleaseTarget: {[target: string]: Array<string>} = {}
     for (const v of versions) {
-        const {id, protocol} = v.data
+        const {id, protocol, releaseTarget} = v.data
         for (const pv of v.data.previous || []) {
             if (pv in versionsById) {
                 versionsById[pv].next.push(id)
             } else {
                 console.warn(`Previous version '${pv}' of ${id} is unknown`)
             }
+        }
+        if (releaseTarget) {
+            (byReleaseTarget[releaseTarget] = byReleaseTarget[releaseTarget] || []).push(id)
         }
         if (protocol) {
             const sameType = function (p?: ProtocolVersion): p is ProtocolVersion {
@@ -237,6 +241,7 @@ async function collectVersions(hashMap: HashMap<string>, oldOmniVersions: HashMa
             }
         }
     }
+    fs.writeFileSync(path.resolve(dataDir, 'release_targets.json'), JSON.stringify(byReleaseTarget, null, 2))
     for (const v of versions) {
         if (!v.data.next.length) console.log(v.data.id)
         fs.writeFileSync(v.file, JSON.stringify(sortObject(v.data), null, 2))
@@ -321,13 +326,29 @@ async function updateVersion(id: VersionId, manifests: Array<TempVersionManifest
         if (m.downloads.server) data.server = true
         m.localMirror = await getDownloads(m)
     }
-    const {localMirror} = manifests[0]
+    if (data.releaseTarget === undefined) {
+        if (/^\d+(\.\d+)/.test(data.id)) {
+            if (data.id.includes('_')) {
+                data.releaseTarget = data.id.substr(0, data.id.indexOf('_'))
+            } else if (data.id.includes('-')) {
+                data.releaseTarget = data.id.substr(0, data.id.indexOf('-'))
+            } else {
+                data.releaseTarget = data.id
+            }
+        } else if (/^\d{2}w\d{2}/.test(data.id)) {
+            const [, yearStr, weekStr] = data.id.match(/^(\d{2})w(\d{2})/)!
+            data.releaseTarget = getSnapshotTarget(+yearStr, +weekStr)
+        }
+    }
+    if (data.id.startsWith('af-')) data.releaseTarget = undefined
+    const {omniId, type, url, time, localMirror} = manifests[0]
     if (localMirror.client && shouldCheckJar(data)) {
         try {
             console.log(`Analyzing ${data.id} (${localMirror.client})`)
             const parsedInfo = await parseJarInfo(localMirror.client)
             if (data.protocol === undefined) data.protocol = parsedInfo.protocol
             data.world = data.world || parsedInfo.world
+            if (data.releaseTarget === undefined) data.releaseTarget = parsedInfo.releaseTarget
         } catch (e) {
             console.error(e)
         }
@@ -343,7 +364,6 @@ async function updateVersion(id: VersionId, manifests: Array<TempVersionManifest
         downloadsHash: undefined,
         localMirror: undefined
     }) as ShortManifest)
-    const {omniId, type, url, time} = manifests[0]
     return {
         info: {
             omniId, id: manifests[0].id, type,
@@ -360,7 +380,38 @@ async function updateVersion(id: VersionId, manifests: Array<TempVersionManifest
 function shouldCheckJar(data: VersionData) {
     if (data.protocol === undefined) return true
     if (!data.world && data.releaseTime > '2010-06-27') return true
+    if (!data.releaseTarget && !data.id.startsWith('af-') && data.releaseTime > '2011-11-13') return true
     return false
+}
+
+const SNAPSHOT_TARGETS: {[version: string]: [number, number]} = {
+    '1.1': [12, 1],
+    '1.2': [12, 8],
+    '1.3': [12, 30],
+    '1.4': [12, 42], '1.4.6': [12, 50],
+    '1.5': [13, 10], '1.5.1': [13, 12],
+    '1.6': [13, 26],
+    '1.7': [13, 43], '1.7.4': [13, 49],
+    '1.8': [14, 34],
+    '1.9': [16, 7], '1.9.3': [16, 15],
+    '1.10': [16, 21],
+    '1.11': [16, 44], '1.11.1': [16, 50],
+    '1.12': [17, 18], '1.12.1': [17, 31],
+    '1.13': [18, 22], '1.13.1': [18, 33],
+    '1.14': [19, 14],
+    '1.15': [19, 46],
+    '1.16': [20, 22], '1.16.2': [20, 30],
+    '1.17': [21, 20],
+}
+
+function getSnapshotTarget(year: number, week: number): string | undefined {
+    for (const version in SNAPSHOT_TARGETS) {
+        const end = SNAPSHOT_TARGETS[version]
+        if (year < end[0] || (year === end[0] && week <= end[1])) {
+            return version
+        }
+    }
+    return undefined
 }
 
 async function getDownloads(manifest: TempVersionManifest) {

@@ -55,7 +55,8 @@ data class VersionInfo(
     var protocolVersion: Int? = null,
     var worldFormat: String? = null,
     var worldVersion: Int? = null,
-    var metaInfDate: ZonedDateTime? = null
+    var metaInfDate: ZonedDateTime? = null,
+    var releaseTarget: String? = null
 ) {
     fun toJson() = buildJsonObject {
         if (metaInfDate != null) {
@@ -80,6 +81,9 @@ data class VersionInfo(
                 put("type", protocolType)
                 put("version", protocolVersion)
             }
+        }
+        if (releaseTarget != null) {
+            put("releaseTarget", releaseTarget!!)
         }
     }
 
@@ -160,6 +164,7 @@ fun analyze(version: String?, fs: FileSystem): JsonObject {
         val versionJson = Json.decodeFromString<JsonObject>(Files.readString(versionJsonPath))
         info.protocolVersion = versionJson["protocol_version"]?.jsonPrimitive?.int
         info.worldVersion = versionJson["world_version"]?.jsonPrimitive?.int
+        info.releaseTarget = versionJson["release_target"]?.jsonPrimitive?.content
     }
     val minecraftServerPath = fs.getPath("net", "minecraft", "server", "MinecraftServer.class")
     if (Files.exists(minecraftServerPath)) {
