@@ -1,0 +1,32 @@
+{
+  "client": true,
+  "id": "12w30e",
+  "manifests": [
+    {
+      "assetHash": "4759bad2824e419da9db32861fcdc3a274336532",
+      "assetIndex": "pre-1.6",
+      "downloads": "481fc6d7f3ede2823e77c1d51c4751a6bef6e867",
+      "downloadsId": 1,
+      "hash": "cf629ca281bfe47e14a181a3b40ef06eb5e5872b",
+      "time": "2012-07-25T10:29:10+00:00",
+      "type": "snapshot",
+      "url": "../manifest/c/f/629ca281bfe47e14a181a3b40ef06eb5e5872b/12w30e.json"
+    }
+  ],
+  "next": [
+    "1.3-pre-07261249"
+  ],
+  "previous": [
+    "12w30d"
+  ],
+  "protocol": {
+    "type": "modern",
+    "version": 39
+  },
+  "releaseTarget": "1.3",
+  "releaseTime": "2012-07-25T10:29:10+00:00",
+  "server": true,
+  "world": {
+    "format": "anvil"
+  }
+}
