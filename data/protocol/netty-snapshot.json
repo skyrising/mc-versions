@@ -381,10 +381,12 @@
     {
       "version": 44,
       "clients": [
-        "1.18_experimental-snapshot-4"
+        "1.18_experimental-snapshot-4",
+        "21w40a"
       ],
       "servers": [
-        "1.18_experimental-snapshot-4"
+        "1.18_experimental-snapshot-4",
+        "21w40a"
       ]
     },
     {
