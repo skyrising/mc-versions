@@ -1,0 +1,32 @@
+{
+  "client": true,
+  "id": "13w09c",
+  "manifests": [
+    {
+      "assetHash": "4759bad2824e419da9db32861fcdc3a274336532",
+      "assetIndex": "pre-1.6",
+      "downloads": "28232e5db248f418355b0f4531f912ee59c03624",
+      "downloadsId": 1,
+      "hash": "e685068275acd8566eb48dec7b5b8b37d7a8e099",
+      "time": "2013-03-01T14:58:38+00:00",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/manifest/e/6/85068275acd8566eb48dec7b5b8b37d7a8e099/13w09c.json"
+    }
+  ],
+  "next": [
+    "13w10a"
+  ],
+  "previous": [
+    "13w09b"
+  ],
+  "protocol": {
+    "type": "modern",
+    "version": 60
+  },
+  "releaseTarget": "1.5",
+  "releaseTime": "2013-03-01T14:58:38+00:00",
+  "server": true,
+  "world": {
+    "format": "anvil"
+  }
+}
