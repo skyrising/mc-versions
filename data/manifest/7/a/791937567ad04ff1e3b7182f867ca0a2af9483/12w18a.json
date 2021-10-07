@@ -315,7 +315,7 @@
   "mainClass": "net.minecraft.launchwrapper.Launch",
   "minecraftArguments": "${auth_player_name} ${auth_session} --gameDir ${game_directory} --assetsDir ${game_assets}",
   "minimumLauncherVersion": 4,
-  "releaseTime": "2012-05-03",
-  "time": "2012-05-03",
+  "releaseTime": "2012-05-03T13:26:23+00:00",
+  "time": "2012-05-03T13:26:23+00:00",
   "type": "snapshot"
 }
