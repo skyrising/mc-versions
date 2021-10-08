@@ -8,6 +8,11 @@
   },
   "assets": "pre-1.6",
   "downloads": {
+    "client": {
+      "sha1": "820ece2b7a126eaf2797bc0691dc4ab4d7df8574",
+      "size": 4343792,
+      "url": "https://files.betacraft.pl/launcher/assets/versions/12w19a.jar"
+    },
     "server": {
       "sha1": "b134d6e290c3d6fcdb1b42b459cee728b3f1f2e8",
       "size": 1605546,

@@ -304,7 +304,10 @@
     },
     {
       "version": 32,
-      "clients": [],
+      "clients": [
+        "12w18a",
+        "12w19a"
+      ],
       "servers": [
         "12w18a",
         "12w19a"
