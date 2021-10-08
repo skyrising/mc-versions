@@ -1,16 +1,16 @@
 {
-  "client": false,
+  "client": true,
   "id": "12w19a",
   "manifests": [
     {
       "assetHash": "4759bad2824e419da9db32861fcdc3a274336532",
       "assetIndex": "pre-1.6",
-      "downloads": "2e704f47b3fa306803bff9598e88e85a260c7383",
+      "downloads": "0e698ba6ddb55324e5e2c36f58fdb684e7e4c968",
       "downloadsId": 1,
-      "hash": "261178cb5e4ae5426b3cf6d31d589b9c6c1e2909",
+      "hash": "2c55a7d9d90883f302325bef1274c0cfa3f20128",
       "time": "2012-05-10T00:00:00+00:00",
       "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/2/6/1178cb5e4ae5426b3cf6d31d589b9c6c1e2909/12w19a.json"
+      "url": "https://skyrising.github.io/mc-versions/manifest/2/c/55a7d9d90883f302325bef1274c0cfa3f20128/12w19a.json"
     }
   ],
   "next": [
@@ -25,5 +25,8 @@
   },
   "releaseTarget": "1.3",
   "releaseTime": "2012-05-10T00:00:00+00:00",
-  "server": true
+  "server": true,
+  "world": {
+    "format": "anvil"
+  }
 }
