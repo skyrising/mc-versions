@@ -1,0 +1,32 @@
+{
+  "client": true,
+  "id": "1.5.2-pre-250903",
+  "manifests": [
+    {
+      "assetHash": "770572e819335b6c0a053f8378ad88eda189fc14",
+      "assetIndex": "legacy",
+      "downloads": "ce4e752bf45d5fdeb9c645a74ade3ed5ed1882bb",
+      "downloadsId": 1,
+      "hash": "aee2438bbd015a8039e550f4b4284d5a14cc3ba1",
+      "time": "2013-04-25T15:45:00+00:00",
+      "type": "release",
+      "url": "../manifest/a/e/e2438bbd015a8039e550f4b4284d5a14cc3ba1/1.5.2-pre-04260937.json"
+    }
+  ],
+  "next": [
+    "1.5.2"
+  ],
+  "previous": [
+    "1.5.1"
+  ],
+  "protocol": {
+    "type": "modern",
+    "version": 61
+  },
+  "releaseTarget": "1.5.2",
+  "releaseTime": "2013-04-25T15:45:00+00:00",
+  "server": true,
+  "world": {
+    "format": "anvil"
+  }
+}
