@@ -1,6 +1,6 @@
 {
   "client": true,
-  "id": "1.14.2-pre4-2",
+  "id": "1.14.2-pre4-270720",
   "manifests": [
     {
       "assetHash": "d6c94fad4f7a03a8e46083c023926515fc0e551e",
@@ -27,7 +27,7 @@
     "1.14.2"
   ],
   "previous": [
-    "1.14.2-pre4-1"
+    "1.14.2-pre4-241548"
   ],
   "protocol": {
     "type": "netty",
@@ -38,6 +38,6 @@
   "server": true,
   "world": {
     "format": "anvil",
-    "version": 1962
+    "version": 1343
   }
 }

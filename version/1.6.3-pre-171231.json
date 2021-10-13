@@ -1,6 +1,6 @@
 {
   "client": true,
-  "id": "1.6.3-pre-2",
+  "id": "1.6.3-pre-171231",
   "manifests": [
     {
       "assetHash": "770572e819335b6c0a053f8378ad88eda189fc14",
@@ -17,7 +17,7 @@
     "1.6.4"
   ],
   "previous": [
-    "13w37b"
+    "1.6.2-091847"
   ],
   "protocol": {
     "type": "modern",
