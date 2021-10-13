@@ -392,10 +392,12 @@
     {
       "version": 45,
       "clients": [
-        "1.18_experimental-snapshot-5"
+        "1.18_experimental-snapshot-5",
+        "21w41a"
       ],
       "servers": [
-        "1.18_experimental-snapshot-5"
+        "1.18_experimental-snapshot-5",
+        "21w41a"
       ]
     },
     {
