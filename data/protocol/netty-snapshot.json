@@ -403,10 +403,12 @@
     {
       "version": 46,
       "clients": [
-        "1.18_experimental-snapshot-6"
+        "1.18_experimental-snapshot-6",
+        "21w42a"
       ],
       "servers": [
-        "1.18_experimental-snapshot-6"
+        "1.18_experimental-snapshot-6",
+        "21w42a"
       ]
     },
     {
