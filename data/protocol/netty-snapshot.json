@@ -414,10 +414,12 @@
     {
       "version": 47,
       "clients": [
-        "1.18_experimental-snapshot-7"
+        "1.18_experimental-snapshot-7",
+        "21w43a"
       ],
       "servers": [
-        "1.18_experimental-snapshot-7"
+        "1.18_experimental-snapshot-7",
+        "21w43a"
       ]
     }
   ]
