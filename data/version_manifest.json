@@ -2,11 +2,20 @@
   "latest": {
     "old_alpha": "a1.2.6",
     "old_beta": "b1.9-pre6",
-    "snapshot": "21w43a",
+    "snapshot": "21w44a",
     "release": "1.17.1",
     "pending": "1.18_experimental-snapshot-7"
   },
   "versions": [
+    {
+      "omniId": "21w44a",
+      "id": "21w44a",
+      "type": "snapshot",
+      "url": "manifest/e/9/897862a0f16bdd5a9c2e05cf25efe30c34b0ba/21w44a.json",
+      "time": "2021-11-03T16:14:34+00:00",
+      "releaseTime": "2021-11-03T16:14:34+00:00",
+      "details": "version/21w44a.json"
+    },
     {
       "omniId": "21w43a",
       "id": "21w43a",
@@ -20,7 +29,7 @@
       "omniId": "21w42a",
       "id": "21w42a",
       "type": "snapshot",
-      "url": "manifest/2/4/b20301fe1a72521556d0dd6e7773be63399585/21w42a.json",
+      "url": "manifest/9/4/af143f67a3f785a98bb2de9d114de521b8184d/21w42a.json",
       "time": "2021-10-20T12:41:25+00:00",
       "releaseTime": "2021-10-20T12:41:25+00:00",
       "details": "version/21w42a.json"
