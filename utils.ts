@@ -1,12 +1,9 @@
-import fs from 'fs'
-import path from 'path'
-import crypto from 'crypto'
-import fetch from 'node-fetch'
+import * as path from 'https://deno.land/std@0.113.0/path/mod.ts'
+import { writableStreamFromWriter } from 'https://deno.land/std@0.113.0/io/mod.ts'
+import { Sha1, Message } from 'https://deno.land/std@0.113.0/hash/sha1.ts'
 
-export function sha1(data: crypto.BinaryLike): string {
-    const h = crypto.createHash('sha1')
-    h.update(data)
-    return h.digest('hex')
+export function sha1(data: Message): string {
+    return new Sha1().update(data).toString()
 }
 
 export function sortObject<T>(obj: T, recursive = true): T {
@@ -27,80 +24,53 @@ export function sortObject<T>(obj: T, recursive = true): T {
 
 export function readdirRecursive(dir: string, deleteEmpty = false): Array<string> {
     const files = []
-    for (const f of fs.readdirSync(dir)) {
+    for (const {name: f} of Deno.readDirSync(dir)) {
         const file = path.resolve(dir, f)
-        if (fs.statSync(file).isDirectory()) {
+        if (Deno.statSync(file).isDirectory) {
             const dirFiles = readdirRecursive(file, deleteEmpty)
             if (deleteEmpty && dirFiles.length === 0) {
                 console.log(`Deleting ${file}`)
-                fs.rmdirSync(file)
+                Deno.removeSync(file)
             }
             files.push(...dirFiles)
         } else {
             files.push(file)
         }
     }
-    return files
+    return files.sort()
 }
 
 export async function downloadFile(url: string, file: string, part = false) {
-    if (fs.existsSync(file)) return
+    if (existsSync(file)) return
     console.log(`Downloading ${url}`)
     mkdirp(path.dirname(file))
     const destFile = part ? file + '.part' : file
     try {
-        await fetch(url).then(res => {
-            if (!res.ok) throw Error(`Invalid response for download: ${res.status} ${res.statusText}`)
-            return promisifiedPipe(res.body!!, fs.createWriteStream(destFile))
-        })
+        const res = await fetch(url)
+        if (!res.ok) throw Error(`Invalid response for download: ${res.status} ${res.statusText}`)
+        await res.body!.pipeTo(writableStreamFromWriter(await Deno.open(destFile)))
         if (part) {
-            fs.renameSync(destFile, file)
+            await Deno.rename(destFile, file)
         }
     } catch(e) {
         console.error(`Download of ${url} failed`)
         console.error(e)
-        if (fs.existsSync(destFile)) fs.unlinkSync(destFile)
+        if (existsSync(file)) await Deno.remove(destFile)
+    }
+}
+
+export function existsSync(file: string): boolean {
+    try {
+        Deno.lstatSync(file)
+        return true
+    } catch (e) {
+        if (e instanceof Deno.errors.NotFound) return false
+        throw e
     }
 }
 
 export function mkdirp(dir: string) {
-    if (fs.existsSync(dir)) return
+    if (existsSync(dir)) return
     mkdirp(path.dirname(dir))
-    fs.mkdirSync(dir)
-}
-
-interface Closable {
-    close(): void
-}
-
-function isCloseable<T>(obj: T): obj is T & Closable {
-    return typeof (obj as any as Closable).close === 'function'
-}
-
-export function promisifiedPipe<R extends NodeJS.ReadableStream, W extends NodeJS.WritableStream>(input: R, output: W): Promise<void> {
-    let ended = false
-    function end() {
-        if (!ended) {
-            ended = true
-            isCloseable(output) && output.close()
-            isCloseable(input) && input.close()
-            return true
-        }
-    }
-
-    return new Promise((resolve, reject) => {
-        input.pipe(output)
-        output.on('finish', () => {
-            if (end()) resolve()
-        })
-        output.on('end', () => {
-            if (end()) resolve()
-        })
-        input.on('error', err => {
-            if (end()) reject(err)
-        })
-        output.on('error', err => {
-            if (end()) reject(err)
-        })
-    })
+    Deno.mkdirSync(dir)
 }

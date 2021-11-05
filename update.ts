@@ -1,11 +1,9 @@
-import fs from 'fs'
-import path, { relative } from 'path'
-import cp from 'child_process'
-import fetch from 'node-fetch'
+#!/usr/bin/env -S deno run --unstable --allow-env --allow-read --allow-write --allow-net
+import * as path from 'https://deno.land/std@0.113.0/path/mod.ts'
 
-import {sha1, sortObject, readdirRecursive, mkdirp, downloadFile, promisifiedPipe} from './utils.js'
+import {sha1, sortObject, readdirRecursive, mkdirp, downloadFile, existsSync} from './utils.ts'
 
-const downloadsDir = process.env.MC_VERSIONS_DOWNLOADS
+const downloadsDir = Deno.env.get('MC_VERSIONS_DOWNLOADS')
 
 const dataDir = path.resolve('data')
 const manifestDir = path.resolve(dataDir, 'manifest')
@@ -120,7 +118,7 @@ async function collectVersions(hashMap: HashMap<string>, oldOmniVersions: HashMa
     const files = [...readdirRecursive(manifestDir), ...readdirRecursive(importDir)]
     for (let file of files) {
         if (!file.endsWith('.json')) continue
-        const content = fs.readFileSync(file, 'utf8')
+        const content = await Deno.readTextFile(file)
         let hash = sha1(content)
         const data: VersionManifest = sortObject(JSON.parse(content))
         if (!data.downloads || !data.assets || !data.assetIndex) continue
@@ -134,13 +132,13 @@ async function collectVersions(hashMap: HashMap<string>, oldOmniVersions: HashMa
         if (correctPath !== file) {
             console.log(file + ' -> ' + correctPath)
             mkdirp(path.dirname(correctPath))
-            fs.writeFileSync(correctPath, reformatted)
-            fs.unlinkSync(file)
+            await Deno.writeTextFile(correctPath, reformatted)
+            await Deno.remove(file)
             file = correctPath
         }
         const aTime = new Date()
         const mTime = new Date(data.time)
-        fs.utimesSync(file, aTime, mTime)
+        await Deno.utime(file, aTime, mTime)
         const dl = Object.values(data.downloads).map(d => d.sha1).sort()
         const omniId =  oldOmniVersions[hash] || data.id
         const v: TempVersionManifest = {
@@ -180,9 +178,8 @@ async function collectVersions(hashMap: HashMap<string>, oldOmniVersions: HashMa
     return {versions, allVersions}
 }
 
-;(async () => {
-    const oldOmniVersions: HashMap<VersionId> = JSON.parse(fs.readFileSync(path.resolve(dataDir, 'omni_id.json'), 'utf8'))
-    const hashMap: HashMap<string> = sortObject(JSON.parse(fs.readFileSync(path.resolve(dataDir, 'hash_map.json'), 'utf8')))
+    const oldOmniVersions: HashMap<VersionId> = JSON.parse(await Deno.readTextFile(path.resolve(dataDir, 'omni_id.json')))
+    const hashMap: HashMap<string> = sortObject(JSON.parse(await Deno.readTextFile(path.resolve(dataDir, 'hash_map.json'))))
     const newManifest: MainManifest = {latest: {}, versions: []}
     const urls = await getURLs()
     await downloadManifests(urls, hashMap)
@@ -191,7 +188,7 @@ async function collectVersions(hashMap: HashMap<string>, oldOmniVersions: HashMa
     const versionsById: {[id: string]: VersionData} = {}
     for (let i = 0; i < versions.length; i++) {
         const v = versions[i]
-        const {id, protocol} = v.data
+        const {id} = v.data
         versionsById[id] = v.data
         const defaultPrevious = i === 0 ? undefined : [versions[i - 1].data.id]
         v.data.previous = v.data.previous || defaultPrevious
@@ -214,7 +211,7 @@ async function collectVersions(hashMap: HashMap<string>, oldOmniVersions: HashMa
         }
         if (protocol) {
             const sameType = function (p?: ProtocolVersion): p is ProtocolVersion {
-                return !!p && p.type === protocol!!.type
+                return !!p && p.type === protocol!.type
             }
             const previousProtocol = Math.max(0, ...v.data.previous
                 .map(pv => versionsById[pv]).filter(Boolean)
@@ -231,7 +228,7 @@ async function collectVersions(hashMap: HashMap<string>, oldOmniVersions: HashMa
                 if (v.data.server) pvInfo.servers.push(id)
             }
         } else if (protocol === undefined) {
-            const previousProtocols = v.data.previous.map(pv => versionsById[pv].protocol).filter(Boolean).map(p => p!!.type + ' ' + p!!.version)
+            const previousProtocols = v.data.previous.map(pv => versionsById[pv].protocol).filter(Boolean).map(p => p!.type + ' ' + p!.version)
             if (previousProtocols.length === 1) {
                 console.warn(`${id} is missing protocol info, previous was ${previousProtocols[0]}`)
             } else if (previousProtocols.length) {
@@ -241,26 +238,26 @@ async function collectVersions(hashMap: HashMap<string>, oldOmniVersions: HashMa
             }
         }
     }
-    fs.writeFileSync(path.resolve(dataDir, 'release_targets.json'), JSON.stringify(byReleaseTarget, null, 2))
+    await Deno.writeTextFile(path.resolve(dataDir, 'release_targets.json'), JSON.stringify(byReleaseTarget, null, 2))
     for (const v of versions) {
         if (!v.data.next.length) console.log(v.data.id)
-        fs.writeFileSync(v.file, JSON.stringify(sortObject(v.data), null, 2))
+        await Deno.writeTextFile(v.file, JSON.stringify(sortObject(v.data), null, 2))
     }
     mkdirp(protocolDir)
     const allowedProtocolFile = new Set(Object.keys(protocols).map(p => p + '.json'))
-    for (const f of fs.readdirSync(protocolDir)) {
+    for await (const {name: f} of Deno.readDir(protocolDir)) {
         if (!allowedProtocolFile.has(f)) {
             const file = path.resolve(protocolDir, f)
-            fs.unlinkSync(file)
+            await Deno.remove(file)
             console.log(`Deleting ${file}`)
         }
     }
     for (const p in protocols) {
         const file = path.resolve(protocolDir, `${p}.json`)
-        const oldData: ProtocolData = fs.existsSync(file) ? JSON.parse(fs.readFileSync(file, 'utf8')) : {type: p, versions: []}
+        const oldData: ProtocolData = existsSync(file) ? JSON.parse(await Deno.readTextFile(file)) : {type: p, versions: []}
         const data: ProtocolData = {...oldData}
-        data.versions = Object.values(protocols[p as ProtocolType]!!)
-        fs.writeFileSync(file, JSON.stringify(data, null, 2))
+        data.versions = Object.values(protocols[p as ProtocolType]!)
+        await Deno.writeTextFile(file, JSON.stringify(data, null, 2))
     }
     allVersions.sort(compareVersions)
     const newOmniVersions: HashMap<VersionId> = {}
@@ -269,23 +266,23 @@ async function collectVersions(hashMap: HashMap<string>, oldOmniVersions: HashMa
     }
     mkdirp(versionDir)
     const allowedVersionFiles = new Set(newManifest.versions.map(v => v.omniId + '.json'))
-    for (const f of fs.readdirSync(versionDir)) {
+    for await (const {name: f} of Deno.readDir(versionDir)) {
         if (!allowedVersionFiles.has(f)) {
             const file = path.resolve(versionDir, f)
-            fs.unlinkSync(file)
+            await Deno.remove(file)
             console.log(`Deleting ${file}`)
         }
     }
-    fs.writeFileSync(path.resolve(dataDir, 'version_manifest.json'), JSON.stringify(newManifest, null, 2))
-    fs.writeFileSync(path.resolve(dataDir, 'hash_map.json'), JSON.stringify(sortObject(hashMap), null, 2))
-    fs.writeFileSync(path.resolve(dataDir, 'omni_id.json'), JSON.stringify(newOmniVersions, null, 2))
-})()
+    await Deno.writeTextFile(path.resolve(dataDir, 'version_manifest.json'), JSON.stringify(newManifest, null, 2))
+    await Deno.writeTextFile(path.resolve(dataDir, 'hash_map.json'), JSON.stringify(sortObject(hashMap), null, 2))
+    await Deno.writeTextFile(path.resolve(dataDir, 'omni_id.json'), JSON.stringify(newOmniVersions, null, 2))
+
 
 async function getURLs(): Promise<Array<URL>> {
     const mojangManifest = await (await fetch('https://launchermeta.mojang.com/mc/game/version_manifest.json')).json() as MainManifest
     return [
         ...mojangManifest.versions.map(v => v.url),
-        ...process.argv.slice(2)
+        ...Deno.args
     ].map(u => new URL(u))
 }
 
@@ -300,16 +297,20 @@ async function downloadManifests(urls: Array<URL>, hashMap: HashMap<string>): Pr
 }
 
 function compareVersions(a: TempVersionManifest, b: TempVersionManifest) {
-    if (a.releaseTime > b.releaseTime) return -1
-    if (a.releaseTime < b.releaseTime) return 1
+    const compDate = compareDates(a.releaseTime, b.releaseTime)
+    if (compDate !== 0) return -compDate
     if (a.launcher && !b.launcher) return -1
     if (!a.launcher && b.launcher) return 1
-    return a.time >= b.time ? -1 : 1
+    return compareDates(a.time, b.time) >= 0 ? -1 : 1
+}
+
+function compareDates(a: string, b: string) {
+    return new Date(a).getTime() - new Date(b).getTime()
 }
 
 async function updateVersion(id: VersionId, manifests: Array<TempVersionManifest>) {
     const file = path.resolve(versionDir, `${id}.json`)
-    const oldData = fs.existsSync(file) ? JSON.parse(fs.readFileSync(file, 'utf8')) : {}
+    const oldData = existsSync(file) ? JSON.parse(await Deno.readTextFile(file)) : {}
     const data: VersionData = {...oldData}
     data.id = id
     data.releaseTime = data.releaseTime || manifests[0].releaseTime
@@ -434,17 +435,18 @@ function getDownloadDestination(download: DownloadInfo): string {
 }
 
 async function parseJarInfo(file: string): Promise<Partial<VersionData>> {
-    const javaHome = process.env['JAVA_HOME']
+    const javaHome = Deno.env.get('JAVA_HOME')
     const javaPath = javaHome ? path.resolve(javaHome, 'bin', 'java') : 'java'
-    return new Promise((resolve, reject) => {
-        const c = cp.spawn(javaPath, ['-jar', 'jar-analyzer/build/libs/jar-analyzer-all.jar', file], {stdio: 'pipe'})
-        let stdout = ''
-        let stderr = ''
-        c.stdout.on('data', d => stdout += d)
-        c.stderr.on('data', d => stderr += d)
-        c.on('exit', code => {
-            if (code) reject(stderr)
-            else resolve(JSON.parse(stdout))
-        })
+    const c = Deno.run({
+        cmd: [javaPath, '-jar', 'jar-analyzer/build/libs/jar-analyzer-all.jar', file],
+        stdout: 'piped',
+        stderr: 'piped'
     })
+    const {code} = await c.status()
+    const stdout = await c.output()
+    const stderr = await c.stderrOutput()
+    if (code) {
+        throw Error(stderr.toString())
+    }
+    return JSON.parse(stdout.toString())
 }

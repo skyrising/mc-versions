@@ -8,4 +8,3 @@
  */
 
 rootProject.name = "jar-analyzer"
-include("app")

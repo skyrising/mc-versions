@@ -1,11 +1,12 @@
-import fs from 'fs'
-import path from 'path'
-import {readdirRecursive, mkdirp} from './utils.js'
+#!/usr/bin/env -S deno run --allow-env --allow-read --allow-write
 
-const {URL_BASE} = process.env
+import * as path from 'https://deno.land/std@0.113.0/path/mod.ts'
+import {readdirRecursive, mkdirp} from './utils.ts'
+
+const URL_BASE = Deno.env.get('URL_BASE')
 if (!URL_BASE) {
     console.error('$URL_BASE not provided')
-    process.exit(1)
+    Deno.exit(1)
 }
 const distDir = path.resolve('dist')
 const dataDir = path.resolve('data')
@@ -16,12 +17,12 @@ for (const file of readdirRecursive(dataDir)) {
     const outFile = path.resolve(distDir, relative)
     mkdirp(path.dirname(outFile))
     if (relative.startsWith('version/') || !relative.includes('/')) {
-        const data = JSON.parse(fs.readFileSync(file, 'utf8'))
+        const data = JSON.parse(await Deno.readTextFile(file))
         const base = new URL(relative, URL_BASE)
         resolveUrls(base, data)
-        fs.writeFileSync(outFile, JSON.stringify(data, null, 2))
+        await Deno.writeTextFile(outFile, JSON.stringify(data, null, 2))
     } else {
-        fs.copyFileSync(file, outFile)
+        await Deno.copyFile(file, outFile)
     }
 }
 
