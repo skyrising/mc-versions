@@ -115,7 +115,11 @@ interface HashMap<T> {
 async function collectVersions(hashMap: HashMap<string>, oldOmniVersions: HashMap<VersionId>) {
     const byId: {[id: string]: {[hash: string]: TempVersionManifest}} = {}
     const allVersions = []
-    const files = [...readdirRecursive(manifestDir), ...readdirRecursive(importDir)]
+    const files = readdirRecursive(manifestDir)
+    try {
+        await Deno.stat(importDir)
+        files.push(...readdirRecursive(importDir))
+    } catch (_) {/**/}
     for (let file of files) {
         if (!file.endsWith('.json')) continue
         const content = await Deno.readTextFile(file)
