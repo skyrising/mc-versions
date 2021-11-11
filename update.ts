@@ -1,4 +1,4 @@
-#!/usr/bin/env -S deno run --unstable --allow-env --allow-read --allow-write --allow-net
+#!/usr/bin/env -S deno run --unstable --allow-env --allow-read --allow-write --allow-net --allow-run
 import * as path from 'https://deno.land/std@0.113.0/path/mod.ts'
 
 import {sha1, sortObject, readdirRecursive, mkdirp, downloadFile, existsSync} from './utils.ts'
@@ -452,5 +452,5 @@ async function parseJarInfo(file: string): Promise<Partial<VersionData>> {
     if (code) {
         throw Error(stderr.toString())
     }
-    return JSON.parse(stdout.toString())
+    return JSON.parse(new TextDecoder().decode(stdout))
 }
