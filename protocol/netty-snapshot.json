@@ -448,6 +448,15 @@
       "servers": [
         "1.18-pre2"
       ]
+    },
+    {
+      "version": 51,
+      "clients": [
+        "1.18-pre3"
+      ],
+      "servers": [
+        "1.18-pre3"
+      ]
     }
   ]
 }
