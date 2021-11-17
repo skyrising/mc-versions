@@ -457,6 +457,15 @@
       "servers": [
         "1.18-pre3"
       ]
+    },
+    {
+      "version": 52,
+      "clients": [
+        "1.18-pre4"
+      ],
+      "servers": [
+        "1.18-pre4"
+      ]
     }
   ]
 }
