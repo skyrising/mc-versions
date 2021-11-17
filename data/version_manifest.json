@@ -2,11 +2,20 @@
   "latest": {
     "old_alpha": "a1.2.6",
     "old_beta": "b1.9-pre6",
-    "snapshot": "1.18-pre2",
+    "snapshot": "1.18-pre3",
     "release": "1.17.1",
     "pending": "1.18_experimental-snapshot-7"
   },
   "versions": [
+    {
+      "omniId": "1.18-pre3",
+      "id": "1.18-pre3",
+      "type": "snapshot",
+      "url": "manifest/8/f/494b38b083fd5fb5ea0e8add750d73d09ad708/1.18-pre3.json",
+      "time": "2021-11-17T16:04:25+00:00",
+      "releaseTime": "2021-11-17T16:04:25+00:00",
+      "details": "version/1.18-pre3.json"
+    },
     {
       "omniId": "1.18-pre2",
       "id": "1.18-pre2",
@@ -20,7 +29,7 @@
       "omniId": "1.18-pre1",
       "id": "1.18-pre1",
       "type": "snapshot",
-      "url": "manifest/2/3/e10a6dcea9d84ea17ceaa700e6d052dcb1293e/1.18-pre1.json",
+      "url": "manifest/8/8/8cb6a67819665e0a4c65f24a04837bee3e7ad9/1.18-pre1.json",
       "time": "2021-11-11T16:14:06+00:00",
       "releaseTime": "2021-11-11T16:14:06+00:00",
       "details": "version/1.18-pre1.json"
@@ -47,7 +56,7 @@
       "omniId": "21w42a",
       "id": "21w42a",
       "type": "snapshot",
-      "url": "manifest/9/4/af143f67a3f785a98bb2de9d114de521b8184d/21w42a.json",
+      "url": "manifest/e/3/b227e087d03b643f2c60b6821a00ca69730c9f/21w42a.json",
       "time": "2021-10-20T12:41:25+00:00",
       "releaseTime": "2021-10-20T12:41:25+00:00",
       "details": "version/21w42a.json"
@@ -65,7 +74,7 @@
       "omniId": "21w40a",
       "id": "21w40a",
       "type": "snapshot",
-      "url": "manifest/d/2/dec632108493512c92a8158f588b3ea23cb225/21w40a.json",
+      "url": "manifest/4/c/2517f97a9df5707d75ca0a59cfde8ae1baeafb/21w40a.json",
       "time": "2021-10-07T11:17:50+00:00",
       "releaseTime": "2021-10-07T11:17:50+00:00",
       "details": "version/21w40a.json"
@@ -74,7 +83,7 @@
       "omniId": "21w39a",
       "id": "21w39a",
       "type": "snapshot",
-      "url": "manifest/d/f/5eb3e5b1898e84ae4f1d70563b1f1b55ec7c67/21w39a.json",
+      "url": "manifest/c/a/a1e16cb4e46fbb79189471c7717f6fbec782a3/21w39a.json",
       "time": "2021-09-29T16:27:05+00:00",
       "releaseTime": "2021-09-29T16:27:05+00:00",
       "details": "version/21w39a.json"
