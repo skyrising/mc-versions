@@ -2,11 +2,20 @@
   "latest": {
     "old_alpha": "a1.2.6",
     "old_beta": "b1.9-pre6",
-    "snapshot": "1.18-pre5",
+    "snapshot": "1.18-pre6",
     "release": "1.17.1",
     "pending": "1.18_experimental-snapshot-7"
   },
   "versions": [
+    {
+      "omniId": "1.18-pre6",
+      "id": "1.18-pre6",
+      "type": "snapshot",
+      "url": "manifest/e/c/f32daad7b0c62b661d31b5f89fb1403e380f79/1.18-pre6.json",
+      "time": "2021-11-22T17:09:05+00:00",
+      "releaseTime": "2021-11-22T17:09:05+00:00",
+      "details": "version/1.18-pre6.json"
+    },
     {
       "omniId": "1.18-pre5",
       "id": "1.18-pre5",
@@ -20,7 +29,7 @@
       "omniId": "1.18-pre4",
       "id": "1.18-pre4",
       "type": "snapshot",
-      "url": "manifest/1/b/42f4eabaedf26dff2499b7e8337795be9f9cec/1.18-pre4.json",
+      "url": "manifest/d/b/8374aabd2f698b5a6562f016a924a2633332c7/1.18-pre4.json",
       "time": "2021-11-17T18:07:56+00:00",
       "releaseTime": "2021-11-17T18:07:56+00:00",
       "details": "version/1.18-pre4.json"
@@ -47,7 +56,7 @@
       "omniId": "1.18-pre1",
       "id": "1.18-pre1",
       "type": "snapshot",
-      "url": "manifest/8/b/b7875a82163d8d67d910df8bdb451367973ebc/1.18-pre1.json",
+      "url": "manifest/2/4/68f1cd4590e5abca4a37065d749458a343329a/1.18-pre1.json",
       "time": "2021-11-11T16:14:06+00:00",
       "releaseTime": "2021-11-11T16:14:06+00:00",
       "details": "version/1.18-pre1.json"
