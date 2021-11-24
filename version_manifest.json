@@ -2,11 +2,20 @@
   "latest": {
     "old_alpha": "a1.2.6",
     "old_beta": "b1.9-pre6",
-    "snapshot": "1.18-pre7",
+    "snapshot": "1.18-pre8",
     "release": "1.17.1",
     "pending": "1.18_experimental-snapshot-7"
   },
   "versions": [
+    {
+      "omniId": "1.18-pre8",
+      "id": "1.18-pre8",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/manifest/c/a/c5579d02e11b43837ba5b1bc27d1516eb957a9/1.18-pre8.json",
+      "time": "2021-11-24T14:57:32+00:00",
+      "releaseTime": "2021-11-24T14:57:32+00:00",
+      "details": "https://skyrising.github.io/mc-versions/version/1.18-pre8.json"
+    },
     {
       "omniId": "1.18-pre7",
       "id": "1.18-pre7",
