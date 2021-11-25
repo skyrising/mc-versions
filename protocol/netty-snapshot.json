@@ -502,6 +502,15 @@
       "servers": [
         "1.18-pre8"
       ]
+    },
+    {
+      "version": 57,
+      "clients": [
+        "1.18-rc1"
+      ],
+      "servers": [
+        "1.18-rc1"
+      ]
     }
   ]
 }
