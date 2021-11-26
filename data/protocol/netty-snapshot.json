@@ -520,6 +520,15 @@
       "servers": [
         "1.18-rc2"
       ]
+    },
+    {
+      "version": 59,
+      "clients": [
+        "1.18-rc3"
+      ],
+      "servers": [
+        "1.18-rc3"
+      ]
     }
   ]
 }
