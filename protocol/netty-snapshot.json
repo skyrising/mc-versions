@@ -511,6 +511,15 @@
       "servers": [
         "1.18-rc1"
       ]
+    },
+    {
+      "version": 58,
+      "clients": [
+        "1.18-rc2"
+      ],
+      "servers": [
+        "1.18-rc2"
+      ]
     }
   ]
 }
