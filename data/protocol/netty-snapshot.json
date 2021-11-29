@@ -529,6 +529,15 @@
       "servers": [
         "1.18-rc3"
       ]
+    },
+    {
+      "version": 60,
+      "clients": [
+        "1.18-rc4"
+      ],
+      "servers": [
+        "1.18-rc4"
+      ]
     }
   ]
 }
