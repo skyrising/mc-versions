@@ -3,10 +3,19 @@
     "old_alpha": "a1.2.6",
     "old_beta": "b1.9-pre6",
     "snapshot": "1.18-rc4",
-    "release": "1.17.1",
+    "release": "1.18",
     "pending": "1.18_experimental-snapshot-7"
   },
   "versions": [
+    {
+      "omniId": "1.18",
+      "id": "1.18",
+      "type": "release",
+      "url": "https://skyrising.github.io/mc-versions/manifest/2/8/5b351c7d1710358fd51862ae2e88c8c7a60bf0/1.18.json",
+      "time": "2021-11-30T09:16:29+00:00",
+      "releaseTime": "2021-11-30T09:16:29+00:00",
+      "details": "https://skyrising.github.io/mc-versions/version/1.18.json"
+    },
     {
       "omniId": "1.18-rc4",
       "id": "1.18-rc4",
@@ -29,7 +38,7 @@
       "omniId": "1.18-rc2",
       "id": "1.18-rc2",
       "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/c/e/de5ce3f08f2f2f39977f5ca9301cd9cc9418bb/1.18-rc2.json",
+      "url": "https://skyrising.github.io/mc-versions/manifest/d/3/3be368f98ac619eb38a8d4277ba80377fef1bb/1.18-rc2.json",
       "time": "2021-11-26T10:02:04+00:00",
       "releaseTime": "2021-11-26T10:02:04+00:00",
       "details": "https://skyrising.github.io/mc-versions/version/1.18-rc2.json"
@@ -47,7 +56,7 @@
       "omniId": "1.18-pre8",
       "id": "1.18-pre8",
       "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/8/a/2b449c01f7edaf91c6c09488c7b15138aa5a71/1.18-pre8.json",
+      "url": "https://skyrising.github.io/mc-versions/manifest/c/a/c5579d02e11b43837ba5b1bc27d1516eb957a9/1.18-pre8.json",
       "time": "2021-11-24T14:57:32+00:00",
       "releaseTime": "2021-11-24T14:57:32+00:00",
       "details": "https://skyrising.github.io/mc-versions/version/1.18-pre8.json"
@@ -65,7 +74,7 @@
       "omniId": "1.18-pre6",
       "id": "1.18-pre6",
       "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/0/3/5e8b56353ffbfb099c049887701e2a609b5255/1.18-pre6.json",
+      "url": "https://skyrising.github.io/mc-versions/manifest/e/c/f32daad7b0c62b661d31b5f89fb1403e380f79/1.18-pre6.json",
       "time": "2021-11-22T17:09:05+00:00",
       "releaseTime": "2021-11-22T17:09:05+00:00",
       "details": "https://skyrising.github.io/mc-versions/version/1.18-pre6.json"
