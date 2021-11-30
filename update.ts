@@ -3,6 +3,27 @@ import * as path from 'https://deno.land/std@0.113.0/path/mod.ts'
 
 import {sha1, sortObject, readdirRecursive, mkdirp, downloadFile, existsSync} from './utils.ts'
 
+const SNAPSHOT_TARGETS: {[version: string]: [number, number]} = {
+    '1.1': [12, 1],
+    '1.2': [12, 8],
+    '1.3': [12, 30],
+    '1.4': [12, 42], '1.4.6': [12, 50],
+    '1.5': [13, 10], '1.5.1': [13, 12],
+    '1.6': [13, 26],
+    '1.7': [13, 43], '1.7.4': [13, 49],
+    '1.8': [14, 34],
+    '1.9': [16, 7], '1.9.3': [16, 15],
+    '1.10': [16, 21],
+    '1.11': [16, 44], '1.11.1': [16, 50],
+    '1.12': [17, 18], '1.12.1': [17, 31],
+    '1.13': [18, 22], '1.13.1': [18, 33],
+    '1.14': [19, 14],
+    '1.15': [19, 46],
+    '1.16': [20, 22], '1.16.2': [20, 30],
+    '1.17': [21, 20],
+    '1.18': [21, 48]
+}
+
 const downloadsDir = Deno.env.get('MC_VERSIONS_DOWNLOADS')
 
 const dataDir = path.resolve('data')
@@ -387,26 +408,6 @@ function shouldCheckJar(data: VersionData) {
     if (!data.world && data.releaseTime > '2010-06-27') return true
     if (!data.releaseTarget && !data.id.startsWith('af-') && data.releaseTime > '2011-11-13') return true
     return false
-}
-
-const SNAPSHOT_TARGETS: {[version: string]: [number, number]} = {
-    '1.1': [12, 1],
-    '1.2': [12, 8],
-    '1.3': [12, 30],
-    '1.4': [12, 42], '1.4.6': [12, 50],
-    '1.5': [13, 10], '1.5.1': [13, 12],
-    '1.6': [13, 26],
-    '1.7': [13, 43], '1.7.4': [13, 49],
-    '1.8': [14, 34],
-    '1.9': [16, 7], '1.9.3': [16, 15],
-    '1.10': [16, 21],
-    '1.11': [16, 44], '1.11.1': [16, 50],
-    '1.12': [17, 18], '1.12.1': [17, 31],
-    '1.13': [18, 22], '1.13.1': [18, 33],
-    '1.14': [19, 14],
-    '1.15': [19, 46],
-    '1.16': [20, 22], '1.16.2': [20, 30],
-    '1.17': [21, 20],
 }
 
 function getSnapshotTarget(year: number, week: number): string | undefined {
