@@ -13,7 +13,9 @@
       "url": "../manifest/2/8/5b351c7d1710358fd51862ae2e88c8c7a60bf0/1.18.json"
     }
   ],
-  "next": [],
+  "next": [
+    "1.18.1-pre1"
+  ],
   "previous": [
     "1.18-rc4"
   ],
