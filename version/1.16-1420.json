@@ -13,6 +13,16 @@
       "url": "https://skyrising.github.io/mc-versions/manifest/a/e/db63a2279b64154db99f89a4d3837841119285/1.16.json"
     },
     {
+      "assetHash": "738b17ea266089b5e384791eb5a2cf1fafe109b6",
+      "assetIndex": "1.16",
+      "downloads": "fce6fa191e183f5ac8cdc46886c730f302ce62ff",
+      "downloadsId": 1,
+      "hash": "88e1fa2fb8d05335eb4d1b2feaf934fdbb4367fb",
+      "time": "2020-06-23T16:20:52+00:00",
+      "type": "release",
+      "url": "https://skyrising.github.io/mc-versions/manifest/8/8/e1fa2fb8d05335eb4d1b2feaf934fdbb4367fb/1.16.json"
+    },
+    {
       "assetHash": "ad75fb46ff5c89aa5f9c90e12481e963854f9a6e",
       "assetIndex": "1.16",
       "downloads": "fce6fa191e183f5ac8cdc46886c730f302ce62ff",
@@ -54,7 +64,6 @@
     }
   ],
   "next": [
-    "1.16",
     "1.16.1"
   ],
   "previous": [
