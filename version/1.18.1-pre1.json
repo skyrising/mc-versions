@@ -1,0 +1,31 @@
+{
+  "client": true,
+  "id": "1.18.1-pre1",
+  "manifests": [
+    {
+      "assetHash": "487d57e69da2d48006d36683f13ad7815b30b90d",
+      "assetIndex": "1.18",
+      "downloads": "b91cf2d5cd7bfda030e4f5e555674fa7e963382c",
+      "downloadsId": 1,
+      "hash": "177660845257b8a3be323762b92d0cb68919d8b9",
+      "time": "2021-12-03T13:45:38+00:00",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/manifest/1/7/7660845257b8a3be323762b92d0cb68919d8b9/1.18.1-pre1.json"
+    }
+  ],
+  "next": [],
+  "previous": [
+    "1.18"
+  ],
+  "protocol": {
+    "type": "netty-snapshot",
+    "version": 61
+  },
+  "releaseTarget": "1.18.1",
+  "releaseTime": "2021-12-03T13:45:38+00:00",
+  "server": true,
+  "world": {
+    "format": "anvil",
+    "version": 2861
+  }
+}
