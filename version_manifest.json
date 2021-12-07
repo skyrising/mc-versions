@@ -2,16 +2,25 @@
   "latest": {
     "old_alpha": "a1.2.6",
     "old_beta": "b1.9-pre6",
-    "snapshot": "1.18.1-pre1",
+    "snapshot": "1.18.1-rc1",
     "release": "1.18",
     "pending": "1.18_experimental-snapshot-7"
   },
   "versions": [
     {
+      "omniId": "1.18.1-rc1",
+      "id": "1.18.1-rc1",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/manifest/d/2/0c04350c64e24468936bdc90e35dbcc6c2988a/1.18.1-rc1.json",
+      "time": "2021-12-07T15:52:47+00:00",
+      "releaseTime": "2021-12-07T15:52:47+00:00",
+      "details": "https://skyrising.github.io/mc-versions/version/1.18.1-rc1.json"
+    },
+    {
       "omniId": "1.18.1-pre1",
       "id": "1.18.1-pre1",
       "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/1/7/7660845257b8a3be323762b92d0cb68919d8b9/1.18.1-pre1.json",
+      "url": "https://skyrising.github.io/mc-versions/manifest/9/b/ddf07842f5d8e9cae36947542a031971514e8f/1.18.1-pre1.json",
       "time": "2021-12-03T13:45:38+00:00",
       "releaseTime": "2021-12-03T13:45:38+00:00",
       "details": "https://skyrising.github.io/mc-versions/version/1.18.1-pre1.json"
@@ -20,7 +29,7 @@
       "omniId": "1.18",
       "id": "1.18",
       "type": "release",
-      "url": "https://skyrising.github.io/mc-versions/manifest/3/b/667c130bcdd4a5d4e70d0011447ee5b7a34fcd/1.18.json",
+      "url": "https://skyrising.github.io/mc-versions/manifest/7/0/ba62eaa8c41b7c18519458489104dc470c8565/1.18.json",
       "time": "2021-11-30T09:16:29+00:00",
       "releaseTime": "2021-11-30T09:16:29+00:00",
       "details": "https://skyrising.github.io/mc-versions/version/1.18.json"
@@ -29,7 +38,7 @@
       "omniId": "1.18-rc4",
       "id": "1.18-rc4",
       "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/b/2/431c27ad0f5fdd456c1bf66939c80df7cecfa5/1.18-rc4.json",
+      "url": "https://skyrising.github.io/mc-versions/manifest/d/1/70c940aa9bffa2a350a8e7c0eb64b21366b2de/1.18-rc4.json",
       "time": "2021-11-29T13:43:42+00:00",
       "releaseTime": "2021-11-29T13:43:42+00:00",
       "details": "https://skyrising.github.io/mc-versions/version/1.18-rc4.json"
@@ -38,7 +47,7 @@
       "omniId": "1.18-rc3",
       "id": "1.18-rc3",
       "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/0/5/4be685d125ffd55d3d183513e261c770292dab/1.18-rc3.json",
+      "url": "https://skyrising.github.io/mc-versions/manifest/f/4/5bd963cde0bd7bdec600ed6ef722f1acc36386/1.18-rc3.json",
       "time": "2021-11-26T15:51:56+00:00",
       "releaseTime": "2021-11-26T15:51:56+00:00",
       "details": "https://skyrising.github.io/mc-versions/version/1.18-rc3.json"
@@ -47,7 +56,7 @@
       "omniId": "1.18-rc2",
       "id": "1.18-rc2",
       "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/f/3/a89f6f5a2b09243d2fa1f0887eeb10ceae0638/1.18-rc2.json",
+      "url": "https://skyrising.github.io/mc-versions/manifest/f/4/d109ce231ebcf1d5c4f0f71bb07f9ad2b446c6/1.18-rc2.json",
       "time": "2021-11-26T10:02:04+00:00",
       "releaseTime": "2021-11-26T10:02:04+00:00",
       "details": "https://skyrising.github.io/mc-versions/version/1.18-rc2.json"
@@ -92,7 +101,7 @@
       "omniId": "1.18-pre5",
       "id": "1.18-pre5",
       "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/7/5/ea08cbc554c11ad14a6e6ea9a457b999b4687a/1.18-pre5.json",
+      "url": "https://skyrising.github.io/mc-versions/manifest/e/2/ec56ff0701eb1cb63c847b22ea75faddc016e4/1.18-pre5.json",
       "time": "2021-11-19T15:47:09+00:00",
       "releaseTime": "2021-11-19T15:47:09+00:00",
       "details": "https://skyrising.github.io/mc-versions/version/1.18-pre5.json"
