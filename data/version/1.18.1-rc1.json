@@ -1,0 +1,31 @@
+{
+  "client": true,
+  "id": "1.18.1-rc1",
+  "manifests": [
+    {
+      "assetHash": "c491bcfa7a4a3b37acbdd883668101bbce23caaa",
+      "assetIndex": "1.18",
+      "downloads": "015a5710a482356a9c726ff5298556d93d026493",
+      "downloadsId": 1,
+      "hash": "d20c04350c64e24468936bdc90e35dbcc6c2988a",
+      "time": "2021-12-07T15:52:47+00:00",
+      "type": "snapshot",
+      "url": "../manifest/d/2/0c04350c64e24468936bdc90e35dbcc6c2988a/1.18.1-rc1.json"
+    }
+  ],
+  "next": [],
+  "previous": [
+    "1.18.1-pre1"
+  ],
+  "protocol": {
+    "type": "netty-snapshot",
+    "version": 62
+  },
+  "releaseTarget": "1.18.1",
+  "releaseTime": "2021-12-07T15:52:47+00:00",
+  "server": true,
+  "world": {
+    "format": "anvil",
+    "version": 2862
+  }
+}
