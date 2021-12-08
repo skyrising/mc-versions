@@ -3,6 +3,16 @@
   "id": "21w40a",
   "manifests": [
     {
+      "assetHash": "62d12ddd08d410ff2f7f20693bb3ef38628b6846",
+      "assetIndex": "1.18",
+      "downloads": "8c77736a150111111854cb7d3d11fc3a482b4fc2",
+      "downloadsId": 1,
+      "hash": "7bf35f5a78b8d0a27b51e68f727c0ae24bc7b34b",
+      "time": "2021-10-07T11:17:50+00:00",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/manifest/7/b/f35f5a78b8d0a27b51e68f727c0ae24bc7b34b/21w40a.json"
+    },
+    {
       "assetHash": "93627da4c545c82fcd9812d5db04c2b3a30c75ae",
       "assetIndex": "1.18",
       "downloads": "8c77736a150111111854cb7d3d11fc3a482b4fc2",
@@ -73,6 +83,16 @@
       "url": "https://skyrising.github.io/mc-versions/manifest/7/3/bbb16c9cc1f6b343b613dc442f602c79cae7c6/21w40a.json"
     },
     {
+      "assetHash": "c491bcfa7a4a3b37acbdd883668101bbce23caaa",
+      "assetIndex": "1.18",
+      "downloads": "8c77736a150111111854cb7d3d11fc3a482b4fc2",
+      "downloadsId": 1,
+      "hash": "73005dab2f7734271f0c0c549bd91c08bde78645",
+      "time": "2021-10-07T11:17:50+00:00",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/manifest/7/3/005dab2f7734271f0c0c549bd91c08bde78645/21w40a.json"
+    },
+    {
       "assetHash": "4a6132b7a24aea2d28ead2679650cc3392dc85b2",
       "assetIndex": "1.18",
       "downloads": "8c77736a150111111854cb7d3d11fc3a482b4fc2",
@@ -91,16 +111,6 @@
       "time": "2021-10-07T11:17:50+00:00",
       "type": "snapshot",
       "url": "https://skyrising.github.io/mc-versions/manifest/5/c/8ce5e88a3685d6433b7ddc9065d5ad7c9a324a/21w40a.json"
-    },
-    {
-      "assetHash": "c491bcfa7a4a3b37acbdd883668101bbce23caaa",
-      "assetIndex": "1.18",
-      "downloads": "8c77736a150111111854cb7d3d11fc3a482b4fc2",
-      "downloadsId": 1,
-      "hash": "73005dab2f7734271f0c0c549bd91c08bde78645",
-      "time": "2021-10-07T11:17:50+00:00",
-      "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/7/3/005dab2f7734271f0c0c549bd91c08bde78645/21w40a.json"
     },
     {
       "assetHash": "ce48875941e15ce9a4fbd692f72e48c0aa43c278",
