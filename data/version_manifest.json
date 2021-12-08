@@ -2,16 +2,25 @@
   "latest": {
     "old_alpha": "a1.2.6",
     "old_beta": "b1.9-pre6",
-    "snapshot": "1.18.1-rc1",
+    "snapshot": "1.18.1-rc2",
     "release": "1.18",
     "pending": "1.18_experimental-snapshot-7"
   },
   "versions": [
     {
+      "omniId": "1.18.1-rc2",
+      "id": "1.18.1-rc2",
+      "type": "snapshot",
+      "url": "manifest/0/e/eebdecb61ef6ba2712b497e2526d67b43b3804/1.18.1-rc2.json",
+      "time": "2021-12-08T12:29:36+00:00",
+      "releaseTime": "2021-12-08T12:29:36+00:00",
+      "details": "version/1.18.1-rc2.json"
+    },
+    {
       "omniId": "1.18.1-rc1",
       "id": "1.18.1-rc1",
       "type": "snapshot",
-      "url": "manifest/d/2/0c04350c64e24468936bdc90e35dbcc6c2988a/1.18.1-rc1.json",
+      "url": "manifest/7/a/e205af1f4ce0c6eb983fe76f6a3632eee321dc/1.18.1-rc1.json",
       "time": "2021-12-07T15:52:47+00:00",
       "releaseTime": "2021-12-07T15:52:47+00:00",
       "details": "version/1.18.1-rc1.json"
@@ -29,7 +38,7 @@
       "omniId": "1.18",
       "id": "1.18",
       "type": "release",
-      "url": "manifest/7/0/ba62eaa8c41b7c18519458489104dc470c8565/1.18.json",
+      "url": "manifest/2/6/93b518a503c92f6fc3acbb84e29c47cdfd42d3/1.18.json",
       "time": "2021-11-30T09:16:29+00:00",
       "releaseTime": "2021-11-30T09:16:29+00:00",
       "details": "version/1.18.json"
@@ -137,7 +146,7 @@
       "omniId": "1.18-pre1",
       "id": "1.18-pre1",
       "type": "snapshot",
-      "url": "manifest/f/5/bf5535defdd4e41b8872ac1752ad1aaddadaf9/1.18-pre1.json",
+      "url": "manifest/f/6/4f5c0bb4af74bff7158237011a7c041205ccfb/1.18-pre1.json",
       "time": "2021-11-11T16:14:06+00:00",
       "releaseTime": "2021-11-11T16:14:06+00:00",
       "details": "version/1.18-pre1.json"
@@ -182,7 +191,7 @@
       "omniId": "21w40a",
       "id": "21w40a",
       "type": "snapshot",
-      "url": "manifest/d/3/baed534fd8b12f91e73c3600219293e0e4f37e/21w40a.json",
+      "url": "manifest/7/b/f35f5a78b8d0a27b51e68f727c0ae24bc7b34b/21w40a.json",
       "time": "2021-10-07T11:17:50+00:00",
       "releaseTime": "2021-10-07T11:17:50+00:00",
       "details": "version/21w40a.json"
