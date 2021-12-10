@@ -43,6 +43,16 @@
       "url": "../manifest/b/1/be7c933b9429a2cb124cb28955649947dfba4a/1.18-pre1.json"
     },
     {
+      "assetHash": "971d8e87140e753fbf8f7b3e1ff954db26027006",
+      "assetIndex": "1.18",
+      "downloads": "270ad94773f7a01a8a7cf133f675e66f9a251cdb",
+      "downloadsId": 1,
+      "hash": "9fe7b126965e929199237d3872af21c864f35ba1",
+      "time": "2021-11-11T16:14:06+00:00",
+      "type": "snapshot",
+      "url": "../manifest/9/f/e7b126965e929199237d3872af21c864f35ba1/1.18-pre1.json"
+    },
+    {
       "assetHash": "b1c3e63f32c489f977ac4d325e6a7ba5b7aa757e",
       "assetIndex": "1.18",
       "downloads": "270ad94773f7a01a8a7cf133f675e66f9a251cdb",
@@ -83,16 +93,6 @@
       "url": "../manifest/5/8/fc0b901e7ddc3f9fe55499de2d607a9a99cc90/1.18-pre1.json"
     },
     {
-      "assetHash": "62d12ddd08d410ff2f7f20693bb3ef38628b6846",
-      "assetIndex": "1.18",
-      "downloads": "270ad94773f7a01a8a7cf133f675e66f9a251cdb",
-      "downloadsId": 1,
-      "hash": "326839750dfa865b7542b7c79d27be6d95fb08d1",
-      "time": "2021-11-11T16:14:06+00:00",
-      "type": "snapshot",
-      "url": "../manifest/3/2/6839750dfa865b7542b7c79d27be6d95fb08d1/1.18-pre1.json"
-    },
-    {
       "assetHash": "93627da4c545c82fcd9812d5db04c2b3a30c75ae",
       "assetIndex": "1.18",
       "downloads": "270ad94773f7a01a8a7cf133f675e66f9a251cdb",
@@ -101,6 +101,16 @@
       "time": "2021-11-11T16:14:06+00:00",
       "type": "snapshot",
       "url": "../manifest/4/3/452a7a421b2e32ed7db6ac7e6f37dcd6e04077/1.18-pre1.json"
+    },
+    {
+      "assetHash": "62d12ddd08d410ff2f7f20693bb3ef38628b6846",
+      "assetIndex": "1.18",
+      "downloads": "270ad94773f7a01a8a7cf133f675e66f9a251cdb",
+      "downloadsId": 1,
+      "hash": "326839750dfa865b7542b7c79d27be6d95fb08d1",
+      "time": "2021-11-11T16:14:06+00:00",
+      "type": "snapshot",
+      "url": "../manifest/3/2/6839750dfa865b7542b7c79d27be6d95fb08d1/1.18-pre1.json"
     },
     {
       "assetHash": "816e3e9c187679b4622ebd1272e7c7c302d4c743",

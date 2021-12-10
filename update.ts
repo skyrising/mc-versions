@@ -451,7 +451,7 @@ async function parseJarInfo(file: string): Promise<Partial<VersionData>> {
     const stdout = await c.output()
     const stderr = await c.stderrOutput()
     if (code) {
-        throw Error(stderr.toString())
+        throw Error(new TextDecoder().decode(stderr))
     }
     return JSON.parse(new TextDecoder().decode(stdout))
 }
