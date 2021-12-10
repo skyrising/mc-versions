@@ -3,10 +3,19 @@
     "old_alpha": "a1.2.6",
     "old_beta": "b1.9-pre6",
     "snapshot": "1.18.1-rc3",
-    "release": "1.18",
+    "release": "1.18.1",
     "pending": "1.18_experimental-snapshot-7"
   },
   "versions": [
+    {
+      "omniId": "1.18.1",
+      "id": "1.18.1",
+      "type": "release",
+      "url": "https://skyrising.github.io/mc-versions/manifest/6/a/4d10c3db14229cf7028222072c50405079848c/1.18.1.json",
+      "time": "2021-12-10T08:23:00+00:00",
+      "releaseTime": "2021-12-10T08:23:00+00:00",
+      "details": "https://skyrising.github.io/mc-versions/version/1.18.1.json"
+    },
     {
       "omniId": "1.18.1-rc3",
       "id": "1.18.1-rc3",
