@@ -96,6 +96,7 @@
   "releaseTarget": "1.16",
   "releaseTime": "2020-04-29T15:16:34+00:00",
   "server": true,
+  "sharedMappings": true,
   "world": {
     "format": "anvil",
     "version": 2532

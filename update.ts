@@ -122,6 +122,7 @@ type VersionData = BaseVersionManifest & {
     client: boolean
     server: boolean
     launcher: boolean
+    sharedMappings: boolean
     manifests: Array<ShortManifest>
     protocol?: ProtocolVersion
     world?: WorldVersion
@@ -367,6 +368,9 @@ async function updateVersion(id: VersionId, manifests: Array<TempVersionManifest
         }
     }
     if (data.id.startsWith('af-')) data.releaseTarget = undefined
+    if (data.sharedMappings === undefined) {
+        data.sharedMappings = data.client && data.server && data.releaseTime > '2012-07-23'
+    }
     const {omniId, type, url, time, localMirror} = manifests[0]
     if (localMirror.client && shouldCheckJar(data)) {
         try {

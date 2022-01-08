@@ -46,6 +46,7 @@
   "releaseTarget": "1.8",
   "releaseTime": "2014-02-26T17:00:00+00:00",
   "server": true,
+  "sharedMappings": true,
   "world": {
     "format": "anvil"
   }

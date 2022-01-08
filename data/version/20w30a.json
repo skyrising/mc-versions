@@ -96,6 +96,7 @@
   "releaseTarget": "1.16.2",
   "releaseTime": "2020-07-22T15:05:15+00:00",
   "server": true,
+  "sharedMappings": true,
   "world": {
     "format": "anvil",
     "version": 2572

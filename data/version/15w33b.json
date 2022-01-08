@@ -46,6 +46,7 @@
   "releaseTarget": "1.9",
   "releaseTime": "2015-08-12T15:29:11+00:00",
   "server": true,
+  "sharedMappings": true,
   "world": {
     "format": "anvil",
     "version": 111

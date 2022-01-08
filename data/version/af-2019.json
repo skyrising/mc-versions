@@ -54,6 +54,7 @@
   },
   "releaseTime": "2019-04-01T11:18:08+00:00",
   "server": true,
+  "sharedMappings": true,
   "world": {
     "format": "anvil",
     "version": 1943

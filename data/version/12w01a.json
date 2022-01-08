@@ -26,6 +26,7 @@
   "releaseTarget": "1.1",
   "releaseTime": "2012-01-05T12:03:23+00:00",
   "server": true,
+  "sharedMappings": false,
   "world": {
     "format": "region"
   }
