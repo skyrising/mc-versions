@@ -56,6 +56,7 @@
   "releaseTarget": "1.14.1",
   "releaseTime": "2019-05-07T14:44:42+00:00",
   "server": true,
+  "sharedMappings": true,
   "world": {
     "format": "anvil",
     "version": 1955

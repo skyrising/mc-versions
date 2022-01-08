@@ -326,6 +326,7 @@
   "releaseTarget": "1.17",
   "releaseTime": "2021-02-24T14:38:51+00:00",
   "server": true,
+  "sharedMappings": true,
   "world": {
     "format": "anvil",
     "version": 2697

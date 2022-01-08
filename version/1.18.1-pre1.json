@@ -66,6 +66,7 @@
   "releaseTarget": "1.18.1",
   "releaseTime": "2021-12-03T13:45:38+00:00",
   "server": true,
+  "sharedMappings": true,
   "world": {
     "format": "anvil",
     "version": 2861
