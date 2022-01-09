@@ -1,9 +1,10 @@
 #!/usr/bin/env -S deno run --unstable --allow-env --allow-read --allow-write --allow-net --allow-run
 import * as path from 'https://deno.land/std@0.113.0/path/mod.ts'
+import * as semver from 'https://deno.land/x/semver@v1.4.0/mod.ts'
 
 import {sha1, sortObject, readdirRecursive, mkdirp, downloadFile, existsSync} from './utils.ts'
 
-const SNAPSHOT_TARGETS: {[version: string]: [number, number]} = {
+const SNAPSHOT_TARGETS: Record<VersionId, [number, number]> = {
     '1.1': [12, 1],
     '1.2': [12, 8],
     '1.3': [12, 30],
@@ -123,6 +124,7 @@ type VersionData = BaseVersionManifest & {
     server: boolean
     launcher: boolean
     sharedMappings: boolean
+    normalizedVersion?: VersionId
     manifests: Array<ShortManifest>
     protocol?: ProtocolVersion
     world?: WorldVersion
@@ -223,8 +225,9 @@ async function collectVersions(hashMap: HashMap<string>, oldOmniVersions: HashMa
         newManifest.latest[v.info.type] = v.info.id
     }
     const byReleaseTarget: {[target: string]: Array<string>} = {}
+    const normalizedVersions: Record<VersionId, VersionId> = {}
     for (const v of versions) {
-        const {id, protocol, releaseTarget} = v.data
+        const {id, protocol, releaseTarget, normalizedVersion} = v.data
         for (const pv of v.data.previous || []) {
             if (pv in versionsById) {
                 versionsById[pv].next.push(id)
@@ -234,6 +237,26 @@ async function collectVersions(hashMap: HashMap<string>, oldOmniVersions: HashMa
         }
         if (releaseTarget) {
             (byReleaseTarget[releaseTarget] = byReleaseTarget[releaseTarget] || []).push(id)
+        }
+        if (normalizedVersion) {
+            const currentSemVer = semver.parse(normalizedVersion)
+            if (currentSemVer) {
+                normalizedVersions[id] = normalizedVersion
+                for (const pv of v.data.previous || []) {
+                    const prevNorm = versionsById[pv].normalizedVersion
+                    if (!prevNorm) continue
+                    const prevSemVer = semver.parse(prevNorm)
+                    if (prevSemVer) {
+                        if (semver.compare(currentSemVer, prevSemVer) < 0) {
+                            console.error(`Normalized version decreases from ${prevSemVer} (${pv}) to ${currentSemVer} (${id})`)
+                        } else if (semver.compareBuild(currentSemVer, prevSemVer) <= 0) {
+                            console.warn(`Normalized version does not increase from ${prevNorm} (${pv}) to ${normalizedVersion} (${id})`)
+                        }
+                    }
+                }
+            } else {
+                console.warn(`Invalid SemVer ${normalizedVersion} for ${id}`)
+            }
         }
         if (protocol) {
             const sameType = function (p?: ProtocolVersion): p is ProtocolVersion {
@@ -265,6 +288,7 @@ async function collectVersions(hashMap: HashMap<string>, oldOmniVersions: HashMa
         }
     }
     await Deno.writeTextFile(path.resolve(dataDir, 'release_targets.json'), JSON.stringify(byReleaseTarget, null, 2))
+    await Deno.writeTextFile(path.resolve(dataDir, 'normalized.json'), JSON.stringify(normalizedVersions, null, 2))
     for (const v of versions) {
         if (!v.data.next.length) console.log(v.data.id)
         await Deno.writeTextFile(v.file, JSON.stringify(sortObject(v.data), null, 2))
@@ -365,7 +389,12 @@ async function updateVersion(id: VersionId, manifests: Array<TempVersionManifest
         } else if (/^\d{2}w\d{2}/.test(data.id)) {
             const [, yearStr, weekStr] = data.id.match(/^(\d{2})w(\d{2})/)!
             data.releaseTarget = getSnapshotTarget(+yearStr, +weekStr)
+        } else if (data.id.startsWith('b1.9')) {
+            data.releaseTarget = '1.0.0'
         }
+    }
+    if (data.normalizedVersion === undefined) {
+        data.normalizedVersion = normalizeVersion(data.id, data.releaseTarget)
     }
     if (data.id.startsWith('af-')) data.releaseTarget = undefined
     if (data.sharedMappings === undefined) {
@@ -407,6 +436,66 @@ async function updateVersion(id: VersionId, manifests: Array<TempVersionManifest
     }
 }
 
+function normalizeVersion(omniId: VersionId, releaseTarget: VersionId | undefined) {
+    // Extract all the numeric parts
+    const numbers = (omniId.match(/\d+/g) || []).map(n => Number(n))
+    // Extract all the non-numeric parts (Used for classic where this can contain 'a', 'st' etc.)
+    const letters = omniId.split(/[\d._\-]/).filter(Boolean)
+    const parts = omniId.split('-')
+    const properTarget = releaseTarget && (releaseTarget.split('.').length < 3 ? releaseTarget + '.0' : releaseTarget)
+    if (parts[0] === 'b1.9') {
+        parts[0] = '1.0.0'
+    }
+    function buildPart(index: number) {
+        if (parts.length <= index) return ''
+        return '+' + parts.slice(index).join('.')
+    }
+    if (parts[0].startsWith('b')) {
+        const betaVersion = semver.coerce(parts[0].substring(1).replaceAll('_0', '.'))?.toString()
+        if (parts[1] && parts[1].startsWith('pre')) {
+            return `1.0.0-beta.${betaVersion}.pre.${parts[1].substring(3)}${buildPart(2)}`
+        }
+        if (parts[1] && parts[1].startsWith('tb')) {
+            return `1.0.0-beta.${betaVersion}.test.${parts[1].substring(2)}${buildPart(2)}`
+        }
+        if (betaVersion === '1.8.0' || betaVersion === '1.6.0') {
+            // Since we're already in the prerelease part we need to fix lexicographic ordering for these
+            return `1.0.0-beta.${betaVersion}.z${buildPart(1)}`
+        }
+        return `1.0.0-beta.${betaVersion}${buildPart(1)}`
+    }
+    if (parts[0].startsWith('a') && parts[0] !== 'af') return '1.0.0-alpha.' + parts[0].substring(1).replaceAll('_0', '.') + buildPart(1)
+    if (parts[0].startsWith('in')) return '0.31.' + omniId.substring(omniId.indexOf('-') + 1).replace('-', '+')
+    if (parts[0].startsWith('c')) {
+        // replace 0.0.x.y with 0.x.y
+        if (numbers[1] === 0) numbers.shift()
+        letters.shift()
+        const plusComponents = [...new Set([...letters, ...parts.slice(1)])]
+        return `${numbers[0]}.${numbers[1]}.${numbers[2] || 0}${plusComponents.length ? '+' + plusComponents.join('.') : ''}`
+    }
+    if (parts[0] === 'rd') {
+        return `0.0.0-rd.${parts[1]}${buildPart(2)}`
+    }
+    if (/^\d{2}w\d{2}.$/.test(parts[0])) {
+        return properTarget + `-alpha.${numbers[0]}.${numbers[1]}.${letters[1] >= 'a' && letters[1] <= 'z' ? letters[1] : 'a'}${buildPart(1)}`
+    }
+    if (letters[0] === 'experimental') return properTarget + '-Experimental.' + numbers[2]
+    if (parts[0] === releaseTarget) {
+        if (parts.length === 1) return properTarget
+        if (parts[1] && parts[1].startsWith('pre')) {
+            const pre = parts[1].substring(3)
+            return `${properTarget}-pre${pre ? '.' + pre : ''}${buildPart(2)}`
+        }
+        if (parts[1] && parts[1].startsWith('rc')) {
+            const rc = parts[1].substring(2)
+            return `${properTarget}-rc${rc ? '.' + rc : ''}${buildPart(2)}`
+        }
+        return `${properTarget}+${parts.slice(1).join('.')}`
+    }
+    console.log(omniId, numbers, letters, parts, releaseTarget, properTarget)
+    return undefined
+}
+
 function shouldCheckJar(data: VersionData) {
     if (data.protocol === undefined) return true
     if (!data.world && data.releaseTime > '2010-06-27') return true
@@ -421,7 +510,9 @@ function getSnapshotTarget(year: number, week: number): string | undefined {
             return version
         }
     }
-    return undefined
+    const versions = Object.keys(SNAPSHOT_TARGETS)
+    const last = versions[versions.length - 1].split('.')
+    return `${last[0]}.${+last[1] + 1}`
 }
 
 async function getDownloads(manifest: TempVersionManifest) {

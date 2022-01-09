@@ -16,6 +16,7 @@
   "next": [
     "b1.9-pre2"
   ],
+  "normalizedVersion": "1.0.0-pre.1",
   "previous": [
     "b1.8.1"
   ],
@@ -23,6 +24,7 @@
     "type": "modern",
     "version": 18
   },
+  "releaseTarget": "1.0.0",
   "releaseTime": "2011-09-22T14:20:00+00:00",
   "server": false,
   "sharedMappings": false,
