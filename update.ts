@@ -206,126 +206,126 @@ async function collectVersions(hashMap: HashMap<string>, oldOmniVersions: HashMa
     return {versions, allVersions}
 }
 
-    const oldOmniVersions: HashMap<VersionId> = JSON.parse(await Deno.readTextFile(path.resolve(dataDir, 'omni_id.json')))
-    const hashMap: HashMap<string> = sortObject(JSON.parse(await Deno.readTextFile(path.resolve(dataDir, 'hash_map.json'))))
-    const newManifest: MainManifest = {latest: {}, versions: []}
-    const urls = await getURLs()
-    await downloadManifests(urls, hashMap)
-    const {versions, allVersions} = await collectVersions(hashMap, oldOmniVersions)
-    const protocols: {[K in ProtocolType]?: {[version: number]: ProtocolVersionInfo}} = {}
-    const versionsById: {[id: string]: VersionData} = {}
-    for (let i = 0; i < versions.length; i++) {
-        const v = versions[i]
-        const {id} = v.data
-        versionsById[id] = v.data
-        const defaultPrevious = i === 0 ? undefined : [versions[i - 1].data.id]
-        v.data.previous = v.data.previous || defaultPrevious
-        v.data.next = []
-        newManifest.versions.unshift(v.info)
-        newManifest.latest[v.info.type] = v.info.id
+const oldOmniVersions: HashMap<VersionId> = JSON.parse(await Deno.readTextFile(path.resolve(dataDir, 'omni_id.json')))
+const hashMap: HashMap<string> = sortObject(JSON.parse(await Deno.readTextFile(path.resolve(dataDir, 'hash_map.json'))))
+const newManifest: MainManifest = {latest: {}, versions: []}
+const urls = await getURLs()
+await downloadManifests(urls, hashMap)
+const {versions, allVersions} = await collectVersions(hashMap, oldOmniVersions)
+const protocols: {[K in ProtocolType]?: {[version: number]: ProtocolVersionInfo}} = {}
+const versionsById: {[id: string]: VersionData} = {}
+for (let i = 0; i < versions.length; i++) {
+    const v = versions[i]
+    const {id} = v.data
+    versionsById[id] = v.data
+    const defaultPrevious = i === 0 ? undefined : [versions[i - 1].data.id]
+    v.data.previous = v.data.previous || defaultPrevious
+    v.data.next = []
+    newManifest.versions.unshift(v.info)
+    newManifest.latest[v.info.type] = v.info.id
+}
+const byReleaseTarget: {[target: string]: Array<string>} = {}
+const normalizedVersions: Record<VersionId, VersionId> = {}
+for (const v of versions) {
+    const {id, protocol, releaseTarget, normalizedVersion} = v.data
+    for (const pv of v.data.previous || []) {
+        if (pv in versionsById) {
+            versionsById[pv].next.push(id)
+        } else {
+            console.warn(`Previous version '${pv}' of ${id} is unknown`)
+        }
     }
-    const byReleaseTarget: {[target: string]: Array<string>} = {}
-    const normalizedVersions: Record<VersionId, VersionId> = {}
-    for (const v of versions) {
-        const {id, protocol, releaseTarget, normalizedVersion} = v.data
-        for (const pv of v.data.previous || []) {
-            if (pv in versionsById) {
-                versionsById[pv].next.push(id)
-            } else {
-                console.warn(`Previous version '${pv}' of ${id} is unknown`)
-            }
-        }
-        if (releaseTarget) {
-            (byReleaseTarget[releaseTarget] = byReleaseTarget[releaseTarget] || []).push(id)
-        }
-        if (normalizedVersion) {
-            const currentSemVer = semver.parse(normalizedVersion)
-            if (currentSemVer) {
-                normalizedVersions[id] = normalizedVersion
-                for (const pv of v.data.previous || []) {
-                    const prevNorm = versionsById[pv].normalizedVersion
-                    if (!prevNorm) continue
-                    const prevSemVer = semver.parse(prevNorm)
-                    if (prevSemVer) {
-                        if (semver.compare(currentSemVer, prevSemVer) < 0) {
-                            console.error(`Normalized version decreases from ${prevSemVer} (${pv}) to ${currentSemVer} (${id})`)
-                        } else if (semver.compareBuild(currentSemVer, prevSemVer) <= 0) {
-                            console.warn(`Normalized version does not increase from ${prevNorm} (${pv}) to ${normalizedVersion} (${id})`)
-                        }
+    if (releaseTarget) {
+        (byReleaseTarget[releaseTarget] = byReleaseTarget[releaseTarget] || []).push(id)
+    }
+    if (normalizedVersion) {
+        const currentSemVer = semver.parse(normalizedVersion)
+        if (currentSemVer) {
+            normalizedVersions[id] = normalizedVersion
+            for (const pv of v.data.previous || []) {
+                const prevNorm = versionsById[pv].normalizedVersion
+                if (!prevNorm) continue
+                const prevSemVer = semver.parse(prevNorm)
+                if (prevSemVer) {
+                    if (semver.compare(currentSemVer, prevSemVer) < 0) {
+                        console.error(`Normalized version decreases from ${prevSemVer} (${pv}) to ${currentSemVer} (${id})`)
+                    } else if (semver.compareBuild(currentSemVer, prevSemVer) <= 0) {
+                        console.warn(`Normalized version does not increase from ${prevNorm} (${pv}) to ${normalizedVersion} (${id})`)
                     }
                 }
-            } else {
-                console.warn(`Invalid SemVer ${normalizedVersion} for ${id}`)
             }
-        }
-        if (protocol) {
-            const sameType = function (p?: ProtocolVersion): p is ProtocolVersion {
-                return !!p && p.type === protocol!.type
-            }
-            const previousProtocol = Math.max(0, ...v.data.previous
-                .map(pv => versionsById[pv]).filter(Boolean)
-                .map(v => v.protocol)
-                .filter(sameType)
-                .map(p => p.version))
-            if (!protocol.incompatible && previousProtocol > protocol.version) {
-                console.warn(`${id} decreases ${protocol.type} protocol version number from ${previousProtocol} to ${protocol.version}`)
-            }
-            if (!protocol.incompatible) {
-                const pInfo = (protocols[protocol.type] = protocols[protocol.type] || {})
-                const pvInfo = (pInfo[protocol.version] = pInfo[protocol.version] || {version: protocol.version, clients: [], servers: []})
-                if (v.data.client) pvInfo.clients.push(id)
-                if (v.data.server) pvInfo.servers.push(id)
-            }
-        } else if (protocol === undefined) {
-            const previousProtocols = v.data.previous.map(pv => versionsById[pv].protocol).filter(Boolean).map(p => p!.type + ' ' + p!.version)
-            if (previousProtocols.length === 1) {
-                console.warn(`${id} is missing protocol info, previous was ${previousProtocols[0]}`)
-            } else if (previousProtocols.length) {
-                console.warn(`${id} is missing protocol info, previous were ${previousProtocols}`)
-            } else {
-                console.warn(`${id} is missing protocol info`)
-            }
+        } else {
+            console.warn(`Invalid SemVer ${normalizedVersion} for ${id}`)
         }
     }
-    await Deno.writeTextFile(path.resolve(dataDir, 'release_targets.json'), JSON.stringify(byReleaseTarget, null, 2))
-    await Deno.writeTextFile(path.resolve(dataDir, 'normalized.json'), JSON.stringify(normalizedVersions, null, 2))
-    for (const v of versions) {
-        if (!v.data.next.length) console.log(v.data.id)
-        await Deno.writeTextFile(v.file, JSON.stringify(sortObject(v.data), null, 2))
-    }
-    mkdirp(protocolDir)
-    const allowedProtocolFile = new Set(Object.keys(protocols).map(p => p + '.json'))
-    for await (const {name: f} of Deno.readDir(protocolDir)) {
-        if (!allowedProtocolFile.has(f)) {
-            const file = path.resolve(protocolDir, f)
-            await Deno.remove(file)
-            console.log(`Deleting ${file}`)
+    if (protocol) {
+        const sameType = function (p?: ProtocolVersion): p is ProtocolVersion {
+            return !!p && p.type === protocol!.type
+        }
+        const previousProtocol = Math.max(0, ...v.data.previous
+            .map(pv => versionsById[pv]).filter(Boolean)
+            .map(v => v.protocol)
+            .filter(sameType)
+            .map(p => p.version))
+        if (!protocol.incompatible && previousProtocol > protocol.version) {
+            console.warn(`${id} decreases ${protocol.type} protocol version number from ${previousProtocol} to ${protocol.version}`)
+        }
+        if (!protocol.incompatible) {
+            const pInfo = (protocols[protocol.type] = protocols[protocol.type] || {})
+            const pvInfo = (pInfo[protocol.version] = pInfo[protocol.version] || {version: protocol.version, clients: [], servers: []})
+            if (v.data.client) pvInfo.clients.push(id)
+            if (v.data.server) pvInfo.servers.push(id)
+        }
+    } else if (protocol === undefined) {
+        const previousProtocols = v.data.previous.map(pv => versionsById[pv].protocol).filter(Boolean).map(p => p!.type + ' ' + p!.version)
+        if (previousProtocols.length === 1) {
+            console.warn(`${id} is missing protocol info, previous was ${previousProtocols[0]}`)
+        } else if (previousProtocols.length) {
+            console.warn(`${id} is missing protocol info, previous were ${previousProtocols}`)
+        } else {
+            console.warn(`${id} is missing protocol info`)
         }
     }
-    for (const p in protocols) {
-        const file = path.resolve(protocolDir, `${p}.json`)
-        const oldData: ProtocolData = existsSync(file) ? JSON.parse(await Deno.readTextFile(file)) : {type: p, versions: []}
-        const data: ProtocolData = {...oldData}
-        data.versions = Object.values(protocols[p as ProtocolType]!)
-        await Deno.writeTextFile(file, JSON.stringify(data, null, 2))
+}
+await Deno.writeTextFile(path.resolve(dataDir, 'release_targets.json'), JSON.stringify(byReleaseTarget, null, 2))
+await Deno.writeTextFile(path.resolve(dataDir, 'normalized.json'), JSON.stringify(normalizedVersions, null, 2))
+for (const v of versions) {
+    if (!v.data.next.length) console.log(v.data.id)
+    await Deno.writeTextFile(v.file, JSON.stringify(sortObject(v.data), null, 2))
+}
+mkdirp(protocolDir)
+const allowedProtocolFile = new Set(Object.keys(protocols).map(p => p + '.json'))
+for await (const {name: f} of Deno.readDir(protocolDir)) {
+    if (!allowedProtocolFile.has(f)) {
+        const file = path.resolve(protocolDir, f)
+        await Deno.remove(file)
+        console.log(`Deleting ${file}`)
     }
-    allVersions.sort(compareVersions)
-    const newOmniVersions: HashMap<VersionId> = {}
-    for (const v of allVersions) {
-        newOmniVersions[v.hash] = v.omniId
+}
+for (const p in protocols) {
+    const file = path.resolve(protocolDir, `${p}.json`)
+    const oldData: ProtocolData = existsSync(file) ? JSON.parse(await Deno.readTextFile(file)) : {type: p, versions: []}
+    const data: ProtocolData = {...oldData}
+    data.versions = Object.values(protocols[p as ProtocolType]!)
+    await Deno.writeTextFile(file, JSON.stringify(data, null, 2))
+}
+allVersions.sort(compareVersions)
+const newOmniVersions: HashMap<VersionId> = {}
+for (const v of allVersions) {
+    newOmniVersions[v.hash] = v.omniId
+}
+mkdirp(versionDir)
+const allowedVersionFiles = new Set(newManifest.versions.map(v => v.omniId + '.json'))
+for await (const {name: f} of Deno.readDir(versionDir)) {
+    if (!allowedVersionFiles.has(f)) {
+        const file = path.resolve(versionDir, f)
+        await Deno.remove(file)
+        console.log(`Deleting ${file}`)
     }
-    mkdirp(versionDir)
-    const allowedVersionFiles = new Set(newManifest.versions.map(v => v.omniId + '.json'))
-    for await (const {name: f} of Deno.readDir(versionDir)) {
-        if (!allowedVersionFiles.has(f)) {
-            const file = path.resolve(versionDir, f)
-            await Deno.remove(file)
-            console.log(`Deleting ${file}`)
-        }
-    }
-    await Deno.writeTextFile(path.resolve(dataDir, 'version_manifest.json'), JSON.stringify(newManifest, null, 2))
-    await Deno.writeTextFile(path.resolve(dataDir, 'hash_map.json'), JSON.stringify(sortObject(hashMap), null, 2))
-    await Deno.writeTextFile(path.resolve(dataDir, 'omni_id.json'), JSON.stringify(newOmniVersions, null, 2))
+}
+await Deno.writeTextFile(path.resolve(dataDir, 'version_manifest.json'), JSON.stringify(newManifest, null, 2))
+await Deno.writeTextFile(path.resolve(dataDir, 'hash_map.json'), JSON.stringify(sortObject(hashMap), null, 2))
+await Deno.writeTextFile(path.resolve(dataDir, 'omni_id.json'), JSON.stringify(newOmniVersions, null, 2))
 
 
 async function getURLs(): Promise<Array<URL>> {
