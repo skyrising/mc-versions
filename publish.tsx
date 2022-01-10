@@ -1,6 +1,8 @@
 #!/usr/bin/env -S deno run --allow-env --allow-read --allow-write
 
 import * as path from 'https://deno.land/std@0.113.0/path/mod.ts'
+import React from 'https://esm.sh/react'
+import ReactDOMServer from 'https://esm.sh/react-dom/server'
 import {readdirRecursive, mkdirp} from './utils.ts'
 
 const URL_BASE = Deno.env.get('URL_BASE')
@@ -39,4 +41,26 @@ function resolveUrls(base: URL, obj: any) {
             }
         }
     }
+}
+
+const INDEX_HTML_TEMPLATE = await Deno.readTextFile(path.resolve(dataDir, 'index.html'))
+
+const MAIN_MANIFEST = JSON.parse(await Deno.readTextFile(path.resolve(dataDir, 'version_manifest.json')))
+const versionElements: Element[] = []
+for (const version of MAIN_MANIFEST.versions) {
+    versionElements.push(await createVersionElement(version))
+}
+const rendered = ReactDOMServer.renderToStaticMarkup(<>{...versionElements}</>)
+await Deno.writeTextFile(path.resolve(distDir, 'index.html'), INDEX_HTML_TEMPLATE.replace('$$VERSIONS$$', rendered))
+
+async function createVersionElement(version: any) {
+    const details = JSON.parse(await Deno.readTextFile(path.resolve(dataDir, `version/${version.omniId}.json`)))
+    return <details className='version' id={version.omniId} open={Object.values(MAIN_MANIFEST.latest).includes(version.id)}>
+        <summary>
+            <a className='version-title' href={`version/${version.omniId}.json`}>{version.id}{version.id === version.omniId ? '' : ` (${version.omniId})`}</a>
+            <time dateTime={version.releaseTime}>{version.releaseTime.slice(0, 10)}</time>
+        </summary>
+        <ul>
+        </ul>
+    </details>
 }

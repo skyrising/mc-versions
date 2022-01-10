@@ -13,4 +13,4 @@ clean:
 	rm -rf dist
 
 dist:
-	URL_BASE=$(URL_BASE) ./publish.ts
+	URL_BASE=$(URL_BASE) ./publish.tsx
