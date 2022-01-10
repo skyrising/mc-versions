@@ -61,6 +61,37 @@ async function createVersionElement(version: any) {
             <time dateTime={version.releaseTime}>{version.releaseTime.slice(0, 10)}</time>
         </summary>
         <ul>
+            <PropertyListElement property='Normalized Version' value={details.normalizedVersion} />
+            <ProtocolVersion {...details.protocol} />
+            <WorldFormat {...details.world} />
+            <VersionListProperty property='Previous' versions={details.previous} />
+            <VersionListProperty property='Next' versions={details.next} />
         </ul>
     </details>
+}
+
+function PropertyListElement({property, value}: {property: string, value: Element|Text|string}) {
+    if (!value) return <></>
+    return <li><span className='property'>{property}</span>: <span className='value'>{value}</span></li>
+}
+
+function WorldFormat({format, version}: {format?: string, version?: number}) {
+    if (!format) return <></>
+    let info = format[0].toUpperCase() + format.slice(1)
+    if (version) info += ` version ${version}`
+    return <PropertyListElement property='World Format' value={info} />
+}
+
+function ProtocolVersion({type, version}: {type?: string, version?: number}) {
+    if (!type || version === undefined) return <></>
+    let info = type.split('-').map(t => t[0].toUpperCase() + t.slice(1)).join(' ') + ' ' + version
+    if (type === 'netty-snapshot') info += ` (0x${(0x40000000 | version).toString(16)})`
+    return <PropertyListElement property='Network Protocol' value={info} />
+}
+
+function VersionListProperty({property, versions}: {property: string, versions?: string[]}) {
+    if (!versions || !versions.length) return <></>
+    return <PropertyListElement property={property} value={versions.map((v, i) => 
+        <>{i ? ', ' : ''}<a href={'#' + v}>{v}</a></>
+    )}/>
 }
