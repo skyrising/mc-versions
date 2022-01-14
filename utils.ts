@@ -22,6 +22,16 @@ export function sortObject<T>(obj: T, recursive = true): T {
     return newObj as unknown as T
 }
 
+export function sortObjectByValues<T>(obj: Record<string, T>, fn: (a: T, b: T) => number = (a, b) => a > b ? 1 : a < b ? -1 : 0): Record<string, T> {
+    const keys = Object.keys(obj)
+    keys.sort((k1, k2) => fn(obj[k1], obj[k2]))
+    const newObj: Record<string, T> = {}
+    for (const key of keys) {
+        newObj[key] = obj[key]
+    }
+    return newObj
+}
+
 export function readdirRecursive(dir: string, deleteEmpty = false): Array<string> {
     const files = []
     for (const {name: f} of Deno.readDirSync(dir)) {

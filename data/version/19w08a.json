@@ -7,17 +7,8 @@
       "assetIndex": "1.14",
       "downloads": "1fb1643fe6d002d4e8ab5d19d71a02997f141348",
       "downloadsId": 1,
-      "hash": "cbb11305c143ec74278e7a7a42f8750e5d9af3a0",
-      "time": "2019-02-20T14:56:58+00:00",
-      "type": "snapshot",
-      "url": "../manifest/c/b/b11305c143ec74278e7a7a42f8750e5d9af3a0/19w08a.json"
-    },
-    {
-      "assetHash": "d6c94fad4f7a03a8e46083c023926515fc0e551e",
-      "assetIndex": "1.14",
-      "downloads": "1fb1643fe6d002d4e8ab5d19d71a02997f141348",
-      "downloadsId": 1,
       "hash": "5fb863f63ea51d2090ae54818c8e69217a79a8c5",
+      "lastModified": "2021-12-15T15:54:41+00:00",
       "time": "2019-02-20T14:56:58+00:00",
       "type": "snapshot",
       "url": "../manifest/5/f/b863f63ea51d2090ae54818c8e69217a79a8c5/19w08a.json"
@@ -27,10 +18,11 @@
       "assetIndex": "1.14",
       "downloads": "1fb1643fe6d002d4e8ab5d19d71a02997f141348",
       "downloadsId": 1,
-      "hash": "1c76768d6fb5f8596dad39a581def784830ea4de",
+      "hash": "cbb11305c143ec74278e7a7a42f8750e5d9af3a0",
+      "lastModified": "2021-12-10T03:00:49+00:00",
       "time": "2019-02-20T14:56:58+00:00",
       "type": "snapshot",
-      "url": "../manifest/1/c/76768d6fb5f8596dad39a581def784830ea4de/19w08a.json"
+      "url": "../manifest/c/b/b11305c143ec74278e7a7a42f8750e5d9af3a0/19w08a.json"
     },
     {
       "assetHash": "d6c94fad4f7a03a8e46083c023926515fc0e551e",
@@ -38,9 +30,21 @@
       "downloads": "1fb1643fe6d002d4e8ab5d19d71a02997f141348",
       "downloadsId": 1,
       "hash": "18523872716355737e8384231bde4d2f601e8ffa",
+      "lastModified": "2021-07-07T13:58:25+00:00",
       "time": "2019-02-20T14:56:58+00:00",
       "type": "snapshot",
       "url": "../manifest/1/8/523872716355737e8384231bde4d2f601e8ffa/19w08a.json"
+    },
+    {
+      "assetHash": "d6c94fad4f7a03a8e46083c023926515fc0e551e",
+      "assetIndex": "1.14",
+      "downloads": "1fb1643fe6d002d4e8ab5d19d71a02997f141348",
+      "downloadsId": 1,
+      "hash": "1c76768d6fb5f8596dad39a581def784830ea4de",
+      "lastModified": "2019-08-22T12:49:02+00:00",
+      "time": "2019-02-20T14:56:58+00:00",
+      "type": "snapshot",
+      "url": "../manifest/1/c/76768d6fb5f8596dad39a581def784830ea4de/19w08a.json"
     }
   ],
   "next": [

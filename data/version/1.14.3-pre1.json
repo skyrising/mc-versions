@@ -8,6 +8,7 @@
       "downloads": "843e8dbc15ec6828f6dc91174ec07f953e409306",
       "downloadsId": 1,
       "hash": "b1bee599f57f99edb00320b4449cc8d98edd846f",
+      "lastModified": "2021-12-15T15:54:04+00:00",
       "time": "2019-06-03T14:34:20+00:00",
       "type": "snapshot",
       "url": "../manifest/b/1/bee599f57f99edb00320b4449cc8d98edd846f/1.14.3-pre1.json"
@@ -17,17 +18,8 @@
       "assetIndex": "1.14",
       "downloads": "843e8dbc15ec6828f6dc91174ec07f953e409306",
       "downloadsId": 1,
-      "hash": "63c333f38cf507d4bc2081a3393692c59119f63d",
-      "time": "2019-06-03T14:34:20+00:00",
-      "type": "snapshot",
-      "url": "../manifest/6/3/c333f38cf507d4bc2081a3393692c59119f63d/1.14.3-pre1.json"
-    },
-    {
-      "assetHash": "d6c94fad4f7a03a8e46083c023926515fc0e551e",
-      "assetIndex": "1.14",
-      "downloads": "843e8dbc15ec6828f6dc91174ec07f953e409306",
-      "downloadsId": 1,
       "hash": "56fa9a2b284042b85f1c4a78a5cd6cd1bb8090ab",
+      "lastModified": "2021-12-10T03:00:15+00:00",
       "time": "2019-06-03T14:34:20+00:00",
       "type": "snapshot",
       "url": "../manifest/5/6/fa9a2b284042b85f1c4a78a5cd6cd1bb8090ab/1.14.3-pre1.json"
@@ -38,9 +30,21 @@
       "downloads": "843e8dbc15ec6828f6dc91174ec07f953e409306",
       "downloadsId": 1,
       "hash": "0e40e17642917d44a36c21a8ab81a89af810822b",
+      "lastModified": "2021-07-07T13:57:51+00:00",
       "time": "2019-06-03T14:34:20+00:00",
       "type": "snapshot",
       "url": "../manifest/0/e/40e17642917d44a36c21a8ab81a89af810822b/1.14.3-pre1.json"
+    },
+    {
+      "assetHash": "d6c94fad4f7a03a8e46083c023926515fc0e551e",
+      "assetIndex": "1.14",
+      "downloads": "843e8dbc15ec6828f6dc91174ec07f953e409306",
+      "downloadsId": 1,
+      "hash": "63c333f38cf507d4bc2081a3393692c59119f63d",
+      "lastModified": "2019-08-22T12:48:38+00:00",
+      "time": "2019-06-03T14:34:20+00:00",
+      "type": "snapshot",
+      "url": "../manifest/6/3/c333f38cf507d4bc2081a3393692c59119f63d/1.14.3-pre1.json"
     }
   ],
   "next": [

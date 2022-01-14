@@ -8,6 +8,7 @@
       "downloads": "387fe39563865f5b740aee48649ef2a6f5242acc",
       "downloadsId": 1,
       "hash": "ae1886b9471222d78320c69e506a7d82db5c4916",
+      "lastModified": "2021-12-15T15:53:55+00:00",
       "time": "2019-07-04T14:41:05+00:00",
       "type": "snapshot",
       "url": "../manifest/a/e/1886b9471222d78320c69e506a7d82db5c4916/1.14.4-pre2.json"
@@ -17,17 +18,8 @@
       "assetIndex": "1.14",
       "downloads": "387fe39563865f5b740aee48649ef2a6f5242acc",
       "downloadsId": 1,
-      "hash": "65927408dc01a99870c82479767dc9007650aee8",
-      "time": "2019-07-04T14:41:05+00:00",
-      "type": "snapshot",
-      "url": "../manifest/6/5/927408dc01a99870c82479767dc9007650aee8/1.14.4-pre2.json"
-    },
-    {
-      "assetHash": "d6c94fad4f7a03a8e46083c023926515fc0e551e",
-      "assetIndex": "1.14",
-      "downloads": "387fe39563865f5b740aee48649ef2a6f5242acc",
-      "downloadsId": 1,
       "hash": "465363cdf06d05e15aed2eb272cd7345ce374d3b",
+      "lastModified": "2021-12-10T03:00:07+00:00",
       "time": "2019-07-04T14:41:05+00:00",
       "type": "snapshot",
       "url": "../manifest/4/6/5363cdf06d05e15aed2eb272cd7345ce374d3b/1.14.4-pre2.json"
@@ -37,7 +29,19 @@
       "assetIndex": "1.14",
       "downloads": "387fe39563865f5b740aee48649ef2a6f5242acc",
       "downloadsId": 1,
+      "hash": "65927408dc01a99870c82479767dc9007650aee8",
+      "lastModified": "2021-07-07T13:57:43+00:00",
+      "time": "2019-07-04T14:41:05+00:00",
+      "type": "snapshot",
+      "url": "../manifest/6/5/927408dc01a99870c82479767dc9007650aee8/1.14.4-pre2.json"
+    },
+    {
+      "assetHash": "d6c94fad4f7a03a8e46083c023926515fc0e551e",
+      "assetIndex": "1.14",
+      "downloads": "387fe39563865f5b740aee48649ef2a6f5242acc",
+      "downloadsId": 1,
       "hash": "09404e6785270eff9a9d6446479e74eb1aa0f5f8",
+      "lastModified": "2019-08-22T12:48:32+00:00",
       "time": "2019-07-04T14:41:05+00:00",
       "type": "snapshot",
       "url": "../manifest/0/9/404e6785270eff9a9d6446479e74eb1aa0f5f8/1.14.4-pre2.json"

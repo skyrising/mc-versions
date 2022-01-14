@@ -2,7 +2,7 @@
 import * as path from 'https://deno.land/std@0.113.0/path/mod.ts'
 import * as semver from 'https://deno.land/x/semver@v1.4.0/mod.ts'
 
-import {sha1, sortObject, readdirRecursive, mkdirp, downloadFile, existsSync} from './utils.ts'
+import {sha1, sortObject, sortObjectByValues, readdirRecursive, mkdirp, downloadFile, existsSync} from './utils.ts'
 
 const SNAPSHOT_TARGETS: Record<VersionId, [number, number]> = {
     '1.1': [12, 1],
@@ -109,6 +109,7 @@ type TempVersionManifest = {
     url: string
     time: string
     releaseTime: string
+    lastModified?: string
     downloadsHash: string
     downloads: {[id: string]: DownloadInfo}
     downloadsId?: number
@@ -132,9 +133,7 @@ type VersionData = BaseVersionManifest & {
     next: Array<VersionId>
 }
 
-interface HashMap<T> {
-    [hash: string]: T
-}
+type HashMap<T> = Record<string, T>
 
 async function collectVersions(hashMap: HashMap<string>, oldOmniVersions: HashMap<VersionId>) {
     const byId: {[id: string]: {[hash: string]: TempVersionManifest}} = {}
@@ -177,6 +176,7 @@ async function collectVersions(hashMap: HashMap<string>, oldOmniVersions: HashMa
             url: file,
             time: data.time,
             releaseTime: data.releaseTime,
+            lastModified: lastModified[hash]?.toISOString()?.replace('.000Z', '+00:00'),
             downloadsHash: sha1(JSON.stringify(dl)),
             downloads: data.downloads,
             assetIndex: data.assetIndex.id,
@@ -208,9 +208,10 @@ async function collectVersions(hashMap: HashMap<string>, oldOmniVersions: HashMa
 
 const oldOmniVersions: HashMap<VersionId> = JSON.parse(await Deno.readTextFile(path.resolve(dataDir, 'omni_id.json')))
 const hashMap: HashMap<string> = sortObject(JSON.parse(await Deno.readTextFile(path.resolve(dataDir, 'hash_map.json'))))
+const lastModified: HashMap<Date|null> = JSON.parse(await Deno.readTextFile(path.resolve(dataDir, 'last_modified.json')), (_, v) => typeof v === 'string' ? new Date(v) : v)
 const newManifest: MainManifest = {latest: {}, versions: []}
 const urls = await getURLs()
-await downloadManifests(urls, hashMap)
+await downloadManifests(urls)
 const {versions, allVersions} = await collectVersions(hashMap, oldOmniVersions)
 const protocols: {[K in ProtocolType]?: {[version: number]: ProtocolVersionInfo}} = {}
 const versionsById: {[id: string]: VersionData} = {}
@@ -327,6 +328,9 @@ await Deno.writeTextFile(path.resolve(dataDir, 'version_manifest.json'), JSON.st
 await Deno.writeTextFile(path.resolve(dataDir, 'hash_map.json'), JSON.stringify(sortObject(hashMap), null, 2))
 await Deno.writeTextFile(path.resolve(dataDir, 'omni_id.json'), JSON.stringify(newOmniVersions, null, 2))
 
+await updateLastModified()
+await Deno.writeTextFile(path.resolve(dataDir, 'last_modified.json'), JSON.stringify(sortObjectByValues(lastModified), null, 2))
+
 
 async function getURLs(): Promise<Array<URL>> {
     const mojangManifest = await (await fetch('https://launchermeta.mojang.com/mc/game/version_manifest.json')).json() as MainManifest
@@ -336,11 +340,15 @@ async function getURLs(): Promise<Array<URL>> {
     ].map(u => new URL(u))
 }
 
-async function downloadManifests(urls: Array<URL>, hashMap: HashMap<string>): Promise<void> {
+function walkHashMap(hash: string) {
+    while (hash in hashMap) hash = hashMap[hash]
+    return hash
+}
+
+async function downloadManifests(urls: Array<URL>): Promise<void> {
     for (const url of urls) {
         const p = url.pathname.split('/')
-        let hash = p[3]
-        while (hash in hashMap) hash = hashMap[hash]
+        const hash = walkHashMap(p[3])
         const file = path.resolve(manifestDir, hash[0], hash[1], hash.substr(2), p[4])
         await downloadFile(url.toString(), file)
     }
@@ -351,6 +359,10 @@ function compareVersions(a: TempVersionManifest, b: TempVersionManifest) {
     if (compDate !== 0) return -compDate
     if (a.launcher && !b.launcher) return -1
     if (!a.launcher && b.launcher) return 1
+    if (a.lastModified && b.lastModified) {
+        const compLastModified = compareDates(a.lastModified, b.lastModified)
+        if (compLastModified !== 0) return -compLastModified
+    }
     return compareDates(a.time, b.time) >= 0 ? -1 : 1
 }
 
@@ -549,4 +561,29 @@ async function parseJarInfo(file: string): Promise<Partial<VersionData>> {
         throw Error(new TextDecoder().decode(stderr))
     }
     return JSON.parse(new TextDecoder().decode(stdout))
+}
+
+async function updateLastModified() {
+    for (const key in lastModified) {
+        const hash = walkHashMap(key)
+        if (hash !== key) {
+            lastModified[hash] = lastModified[key]
+            delete lastModified[key]
+        }
+    }
+    for (const key in hashMap) {
+        const hash = walkHashMap(key)
+        if (hash in lastModified) continue
+        const dir = path.resolve('data/manifest', hash[0], hash[1], hash.slice(2))
+        if (!existsSync(dir)) continue
+        for await (const {name} of Deno.readDir(dir)) {
+            const url = new URL(`${key}/${name}`, 'https://launchermeta.mojang.com/v1/packages/')
+            const result = await fetch(url)
+            if (result.ok && result.headers.has('last-modified')) {
+                lastModified[hash] = new Date(result.headers.get('last-modified')!)
+            } else {
+                lastModified[hash] = null
+            }
+        }
+    }
 }
