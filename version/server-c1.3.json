@@ -1,0 +1,27 @@
+{
+  "client": false,
+  "id": "server-c1.3",
+  "manifests": [
+    {
+      "downloads": "5182b6b481c0fa08d0bb04bc5caf7f421d390693",
+      "downloadsId": 1,
+      "hash": "fc06daa552c8f8d3276cdcf424ee23da4a034517",
+      "type": "classic_server",
+      "url": "https://skyrising.github.io/mc-versions/manifest/f/c/06daa552c8f8d3276cdcf424ee23da4a034517/c1.3.json"
+    }
+  ],
+  "next": [
+    "server-c1.4-1327"
+  ],
+  "normalizedVersion": "0.30.0-classic.server.1.3.0",
+  "previous": [
+    "server-c1.2"
+  ],
+  "protocol": {
+    "type": "classic",
+    "version": 4
+  },
+  "releaseTime": "2009-06-10T19:47:00+00:00",
+  "server": true,
+  "sharedMappings": false
+}

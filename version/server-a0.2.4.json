@@ -1,0 +1,27 @@
+{
+  "client": false,
+  "id": "server-a0.2.4",
+  "manifests": [
+    {
+      "downloads": "c03891fb71dee473f3b369a7bb1f5b9a0766c667",
+      "downloadsId": 1,
+      "hash": "abab34a7327a7bb4a40961b38951aa192e439fcd",
+      "type": "alpha_server",
+      "url": "https://skyrising.github.io/mc-versions/manifest/a/b/ab34a7327a7bb4a40961b38951aa192e439fcd/a0.2.4.json"
+    }
+  ],
+  "next": [
+    "server-a0.2.5-0923"
+  ],
+  "normalizedVersion": "1.0.0-alpha.server.0.2.4",
+  "previous": [
+    "server-a0.2.3"
+  ],
+  "protocol": {
+    "type": "modern",
+    "version": 4
+  },
+  "releaseTime": "2010-11-10T16:13:00+00:00",
+  "server": true,
+  "sharedMappings": false
+}

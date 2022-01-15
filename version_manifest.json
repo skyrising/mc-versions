@@ -1,6 +1,8 @@
 {
   "latest": {
     "old_alpha": "a1.2.6",
+    "classic_server": "server-c1.10.1",
+    "alpha_server": "server-a0.2.8",
     "old_beta": "b1.9-pre6",
     "snapshot": "1.18.1-rc3",
     "release": "1.18.1",
@@ -6128,6 +6130,14 @@
       "details": "https://skyrising.github.io/mc-versions/version/b1.0.json"
     },
     {
+      "omniId": "server-a0.2.8",
+      "id": "server-a0.2.8",
+      "type": "alpha_server",
+      "url": "https://skyrising.github.io/mc-versions/manifest/c/0/ff28dfe3987ff03752fccd17573be1b3bd889d/a0.2.8.json",
+      "releaseTime": "2010-12-03T14:18:00+00:00",
+      "details": "https://skyrising.github.io/mc-versions/version/server-a0.2.8.json"
+    },
+    {
       "omniId": "a1.2.6",
       "id": "a1.2.6",
       "type": "old_alpha",
@@ -6135,6 +6145,14 @@
       "time": "2010-12-02T22:00:00+00:00",
       "releaseTime": "2010-12-03T14:18:00+00:00",
       "details": "https://skyrising.github.io/mc-versions/version/a1.2.6.json"
+    },
+    {
+      "omniId": "server-a0.2.7",
+      "id": "server-a0.2.7",
+      "type": "alpha_server",
+      "url": "https://skyrising.github.io/mc-versions/manifest/d/1/8dae29fd2b5dac9fbe6cb8650ee84926704538/a0.2.7.json",
+      "releaseTime": "2010-12-01T15:08:00+00:00",
+      "details": "https://skyrising.github.io/mc-versions/version/server-a0.2.7.json"
     },
     {
       "omniId": "a1.2.5",
@@ -6146,6 +6164,14 @@
       "details": "https://skyrising.github.io/mc-versions/version/a1.2.5.json"
     },
     {
+      "omniId": "server-a0.2.6_02",
+      "id": "server-a0.2.6_02",
+      "type": "alpha_server",
+      "url": "https://skyrising.github.io/mc-versions/manifest/e/8/a9094bcd2dc1ad376c3dfd6743dea89041716b/a0.2.6_02.json",
+      "releaseTime": "2010-11-30T18:42:00+00:00",
+      "details": "https://skyrising.github.io/mc-versions/version/server-a0.2.6_02.json"
+    },
+    {
       "omniId": "a1.2.4_01",
       "id": "a1.2.4_01",
       "type": "old_alpha",
@@ -6153,6 +6179,22 @@
       "time": "2010-11-29T22:00:00+00:00",
       "releaseTime": "2010-11-30T18:42:00+00:00",
       "details": "https://skyrising.github.io/mc-versions/version/a1.2.4_01.json"
+    },
+    {
+      "omniId": "server-a0.2.6_01",
+      "id": "server-a0.2.6_01",
+      "type": "alpha_server",
+      "url": "https://skyrising.github.io/mc-versions/manifest/e/0/f8980be1e5a9dd6cdcb41e869d6345f8d98db8/a0.2.6_01.json",
+      "releaseTime": "2010-11-30T18:23:00+00:00",
+      "details": "https://skyrising.github.io/mc-versions/version/server-a0.2.6_01.json"
+    },
+    {
+      "omniId": "server-a0.2.6",
+      "id": "server-a0.2.6",
+      "type": "alpha_server",
+      "url": "https://skyrising.github.io/mc-versions/manifest/6/6/be63f0575dffb8ab459f909c870f49fdf74dcd/a0.2.6.json",
+      "releaseTime": "2010-11-30T18:07:00+00:00",
+      "details": "https://skyrising.github.io/mc-versions/version/server-a0.2.6.json"
     },
     {
       "omniId": "a1.2.3_05",
@@ -6164,6 +6206,14 @@
       "details": "https://skyrising.github.io/mc-versions/version/a1.2.3_05.json"
     },
     {
+      "omniId": "server-a0.2.5_02",
+      "id": "server-a0.2.5_02",
+      "type": "alpha_server",
+      "url": "https://skyrising.github.io/mc-versions/manifest/7/9/719c61e14a516bc1b16ac5d05eebb9b9309583/a0.2.5_02.json",
+      "releaseTime": "2010-11-26T13:02:00+00:00",
+      "details": "https://skyrising.github.io/mc-versions/version/server-a0.2.5_02.json"
+    },
+    {
       "omniId": "a1.2.3_04",
       "id": "a1.2.3_04",
       "type": "old_alpha",
@@ -6173,6 +6223,14 @@
       "details": "https://skyrising.github.io/mc-versions/version/a1.2.3_04.json"
     },
     {
+      "omniId": "server-a0.2.5_01",
+      "id": "server-a0.2.5_01",
+      "type": "alpha_server",
+      "url": "https://skyrising.github.io/mc-versions/manifest/9/b/d676a16176cdc0c5b63d73e2661d149f118573/a0.2.5_01.json",
+      "releaseTime": "2010-11-25T16:12:00+00:00",
+      "details": "https://skyrising.github.io/mc-versions/version/server-a0.2.5_01.json"
+    },
+    {
       "omniId": "a1.2.3_02",
       "id": "a1.2.3_02",
       "type": "old_alpha",
@@ -6180,6 +6238,14 @@
       "time": "2010-11-24T22:00:00+00:00",
       "releaseTime": "2010-11-25T16:12:00+00:00",
       "details": "https://skyrising.github.io/mc-versions/version/a1.2.3_02.json"
+    },
+    {
+      "omniId": "server-a0.2.5-1004",
+      "id": "server-a0.2.5-1004",
+      "type": "alpha_server",
+      "url": "https://skyrising.github.io/mc-versions/manifest/f/3/6931c80d44046b2f79fb4e33ca3712fe3664ac/a0.2.5-1004.json",
+      "releaseTime": "2010-11-24T10:04:00+00:00",
+      "details": "https://skyrising.github.io/mc-versions/version/server-a0.2.5-1004.json"
     },
     {
       "omniId": "a1.2.3_01-0958",
@@ -6200,6 +6266,14 @@
       "details": "https://skyrising.github.io/mc-versions/version/a1.2.3.json"
     },
     {
+      "omniId": "server-a0.2.5-0923",
+      "id": "server-a0.2.5-0923",
+      "type": "alpha_server",
+      "url": "https://skyrising.github.io/mc-versions/manifest/5/6/0338c249a21701d46704f27855802a792b12fd/a0.2.5-0923.json",
+      "releaseTime": "2010-11-24T09:23:00+00:00",
+      "details": "https://skyrising.github.io/mc-versions/version/server-a0.2.5-0923.json"
+    },
+    {
       "omniId": "a1.2.2-1938",
       "id": "a1.2.2b",
       "type": "old_alpha",
@@ -6216,6 +6290,22 @@
       "time": "2010-11-09T22:00:00+00:00",
       "releaseTime": "2010-11-10T16:24:00+00:00",
       "details": "https://skyrising.github.io/mc-versions/version/a1.2.2-1624.json"
+    },
+    {
+      "omniId": "server-a0.2.4",
+      "id": "server-a0.2.4",
+      "type": "alpha_server",
+      "url": "https://skyrising.github.io/mc-versions/manifest/a/b/ab34a7327a7bb4a40961b38951aa192e439fcd/a0.2.4.json",
+      "releaseTime": "2010-11-10T16:13:00+00:00",
+      "details": "https://skyrising.github.io/mc-versions/version/server-a0.2.4.json"
+    },
+    {
+      "omniId": "server-a0.2.3",
+      "id": "server-a0.2.3",
+      "type": "alpha_server",
+      "url": "https://skyrising.github.io/mc-versions/manifest/f/3/133457fffa6484e144bf6438f7f8a69a717f4f/a0.2.3.json",
+      "releaseTime": "2010-11-05T09:41:00+00:00",
+      "details": "https://skyrising.github.io/mc-versions/version/server-a0.2.3.json"
     },
     {
       "omniId": "a1.2.1_01",
@@ -6254,6 +6344,14 @@
       "details": "https://skyrising.github.io/mc-versions/version/a1.2.0_01.json"
     },
     {
+      "omniId": "server-a0.2.2_01",
+      "id": "server-a0.2.2_01",
+      "type": "alpha_server",
+      "url": "https://skyrising.github.io/mc-versions/manifest/0/2/05f454e7daf9edd7e2691359015dee98ff9eb4/a0.2.2_01.json",
+      "releaseTime": "2010-10-30T21:13:00+00:00",
+      "details": "https://skyrising.github.io/mc-versions/version/server-a0.2.2_01.json"
+    },
+    {
       "omniId": "a1.2.0",
       "id": "a1.2.0",
       "type": "old_alpha",
@@ -6261,6 +6359,14 @@
       "time": "2016-02-02T15:37:47+00:00",
       "releaseTime": "2010-10-30T20:57:00+00:00",
       "details": "https://skyrising.github.io/mc-versions/version/a1.2.0.json"
+    },
+    {
+      "omniId": "server-a0.2.2",
+      "id": "server-a0.2.2",
+      "type": "alpha_server",
+      "url": "https://skyrising.github.io/mc-versions/manifest/4/2/3f6daa27ec3ec7722e0ead92efd3ce34d8cfca/a0.2.2.json",
+      "releaseTime": "2010-10-30T20:51:00+00:00",
+      "details": "https://skyrising.github.io/mc-versions/version/server-a0.2.2.json"
     },
     {
       "omniId": "a1.1.2_01",
@@ -6279,6 +6385,14 @@
       "time": "2010-09-19T22:00:00+00:00",
       "releaseTime": "2010-09-20T00:00:00+00:00",
       "details": "https://skyrising.github.io/mc-versions/version/a1.1.2.json"
+    },
+    {
+      "omniId": "server-a0.2.1",
+      "id": "server-a0.2.1",
+      "type": "alpha_server",
+      "url": "https://skyrising.github.io/mc-versions/manifest/e/c/9be1861673a895136935a51409099a5472afa0/a0.2.1.json",
+      "releaseTime": "2010-09-18T23:15:00+00:00",
+      "details": "https://skyrising.github.io/mc-versions/version/server-a0.2.1.json"
     },
     {
       "omniId": "a1.1.1",
@@ -6306,6 +6420,22 @@
       "time": "2010-09-12T22:00:00+00:00",
       "releaseTime": "2010-09-13T00:00:00+00:00",
       "details": "https://skyrising.github.io/mc-versions/version/a1.1.0-101847-launcher.json"
+    },
+    {
+      "omniId": "server-a0.2.0_01",
+      "id": "server-a0.2.0_01",
+      "type": "alpha_server",
+      "url": "https://skyrising.github.io/mc-versions/manifest/1/0/60014923a63e0fe91a04836b2e5752e66664b0/a0.2.0_01.json",
+      "releaseTime": "2010-09-10T19:43:00+00:00",
+      "details": "https://skyrising.github.io/mc-versions/version/server-a0.2.0_01.json"
+    },
+    {
+      "omniId": "server-a0.2.0",
+      "id": "server-a0.2.0",
+      "type": "alpha_server",
+      "url": "https://skyrising.github.io/mc-versions/manifest/2/4/cd3cc3c1985fd0e523ed73ffac2fa3b197269f/a0.2.0.json",
+      "releaseTime": "2010-09-10T18:40:00+00:00",
+      "details": "https://skyrising.github.io/mc-versions/version/server-a0.2.0.json"
     },
     {
       "omniId": "a1.1.0-101847",
@@ -6344,6 +6474,22 @@
       "details": "https://skyrising.github.io/mc-versions/version/a1.0.17_02.json"
     },
     {
+      "omniId": "server-a0.1.4",
+      "id": "server-a0.1.4",
+      "type": "alpha_server",
+      "url": "https://skyrising.github.io/mc-versions/manifest/9/7/6f4f2ae77a989a4d75d6dd358f61bf6f659ab6/a0.1.4.json",
+      "releaseTime": "2010-08-20T13:02:00+00:00",
+      "details": "https://skyrising.github.io/mc-versions/version/server-a0.1.4.json"
+    },
+    {
+      "omniId": "server-a0.1.3",
+      "id": "server-a0.1.3",
+      "type": "alpha_server",
+      "url": "https://skyrising.github.io/mc-versions/manifest/f/1/435d73034fc9c017d4a993006ad4317cc86e5f/a0.1.3.json",
+      "releaseTime": "2010-08-17T11:17:00+00:00",
+      "details": "https://skyrising.github.io/mc-versions/version/server-a0.1.3.json"
+    },
+    {
       "omniId": "a1.0.16_02",
       "id": "a1.0.16_02",
       "type": "old_alpha",
@@ -6362,6 +6508,14 @@
       "details": "https://skyrising.github.io/mc-versions/version/a1.0.16_01.json"
     },
     {
+      "omniId": "server-a0.1.2_01",
+      "id": "server-a0.1.2_01",
+      "type": "alpha_server",
+      "url": "https://skyrising.github.io/mc-versions/manifest/1/2/304be9ef31317537ab68bb90619b7e506f4899/a0.1.2_01.json",
+      "releaseTime": "2010-08-12T18:54:00+00:00",
+      "details": "https://skyrising.github.io/mc-versions/version/server-a0.1.2_01.json"
+    },
+    {
       "omniId": "a1.0.16",
       "id": "a1.0.16",
       "type": "old_alpha",
@@ -6369,6 +6523,14 @@
       "time": "2010-08-11T22:00:00+00:00",
       "releaseTime": "2010-08-12T00:00:00+00:00",
       "details": "https://skyrising.github.io/mc-versions/version/a1.0.16.json"
+    },
+    {
+      "omniId": "server-a0.1.0",
+      "id": "server-a0.1.0",
+      "type": "alpha_server",
+      "url": "https://skyrising.github.io/mc-versions/manifest/d/b/217122771b7589b6101c7787904d904133c231/a0.1.0.json",
+      "releaseTime": "2010-08-04T08:31:00+00:00",
+      "details": "https://skyrising.github.io/mc-versions/version/server-a0.1.0.json"
     },
     {
       "omniId": "a1.0.15",
@@ -7046,6 +7208,22 @@
       "details": "https://skyrising.github.io/mc-versions/version/c0.30-c-renew.json"
     },
     {
+      "omniId": "server-c1.10.1",
+      "id": "server-c1.10.1",
+      "type": "classic_server",
+      "url": "https://skyrising.github.io/mc-versions/manifest/c/8/be933622655cf000489f2a358deda2562fe154/c1.10.1.json",
+      "releaseTime": "2009-12-11T14:19:00+00:00",
+      "details": "https://skyrising.github.io/mc-versions/version/server-c1.10.1.json"
+    },
+    {
+      "omniId": "server-c1.10",
+      "id": "server-c1.10",
+      "type": "classic_server",
+      "url": "https://skyrising.github.io/mc-versions/manifest/d/5/a79f09e0e5a41d2d56305bf30bd3b610a667ef/c1.10.json",
+      "releaseTime": "2009-12-11T11:15:00+00:00",
+      "details": "https://skyrising.github.io/mc-versions/version/server-c1.10.json"
+    },
+    {
       "omniId": "c0.30-c",
       "id": "c0.30-2",
       "type": "old_alpha",
@@ -7073,6 +7251,14 @@
       "details": "https://skyrising.github.io/mc-versions/version/c0.29_02.json"
     },
     {
+      "omniId": "server-c1.9.1",
+      "id": "server-c1.9.1",
+      "type": "classic_server",
+      "url": "https://skyrising.github.io/mc-versions/manifest/d/9/225fc27f3eb476b9934719776eb8b223921489/c1.9.1.json",
+      "releaseTime": "2009-10-29T11:01:00+00:00",
+      "details": "https://skyrising.github.io/mc-versions/version/server-c1.9.1.json"
+    },
+    {
       "omniId": "c0.29_01",
       "id": "c0.29_01",
       "type": "old_alpha",
@@ -7080,6 +7266,14 @@
       "time": "2021-06-26T12:16:50+00:00",
       "releaseTime": "2009-10-29T00:00:00+00:00",
       "details": "https://skyrising.github.io/mc-versions/version/c0.29_01.json"
+    },
+    {
+      "omniId": "server-c1.8.3",
+      "id": "server-c1.8.3",
+      "type": "classic_server",
+      "url": "https://skyrising.github.io/mc-versions/manifest/8/f/b0d0a1f983fb803aa31437bde9a21566c7e99f/c1.8.3.json",
+      "releaseTime": "2009-10-27T13:57:00+00:00",
+      "details": "https://skyrising.github.io/mc-versions/version/server-c1.8.3.json"
     },
     {
       "omniId": "c0.28_01",
@@ -7154,6 +7348,14 @@
       "details": "https://skyrising.github.io/mc-versions/version/c0.0.20a_01.json"
     },
     {
+      "omniId": "server-c1.8.2",
+      "id": "server-c1.8.2",
+      "type": "classic_server",
+      "url": "https://skyrising.github.io/mc-versions/manifest/8/e/85ccd2193687aa01281610c62514c1f35f2c34/c1.8.2.json",
+      "releaseTime": "2009-06-20T21:09:00+00:00",
+      "details": "https://skyrising.github.io/mc-versions/version/server-c1.8.2.json"
+    },
+    {
       "omniId": "c0.0.19a_06-0137",
       "id": "c0.0.19a_06-2",
       "type": "old_alpha",
@@ -7161,6 +7363,22 @@
       "time": "2020-10-17T19:47:58-00:00",
       "releaseTime": "2009-06-20T01:37:00+00:00",
       "details": "https://skyrising.github.io/mc-versions/version/c0.0.19a_06-0137.json"
+    },
+    {
+      "omniId": "server-c1.6",
+      "id": "server-c1.6",
+      "type": "classic_server",
+      "url": "https://skyrising.github.io/mc-versions/manifest/e/2/bffe66cd92cca461d8317414f8324c63f21941/c1.6.json",
+      "releaseTime": "2009-06-19T23:46:00+00:00",
+      "details": "https://skyrising.github.io/mc-versions/version/server-c1.6.json"
+    },
+    {
+      "omniId": "server-c1.4.1",
+      "id": "server-c1.4.1",
+      "type": "classic_server",
+      "url": "https://skyrising.github.io/mc-versions/manifest/2/8/a731a336be4c5e6ec73121b0747bab8770aec4/c1.4.1.json",
+      "releaseTime": "2009-06-14T12:15:00+00:00",
+      "details": "https://skyrising.github.io/mc-versions/version/server-c1.4.1.json"
     },
     {
       "omniId": "c0.0.18a_02",
@@ -7172,6 +7390,14 @@
       "details": "https://skyrising.github.io/mc-versions/version/c0.0.18a_02.json"
     },
     {
+      "omniId": "server-c1.4-1327",
+      "id": "server-c1.4-1327",
+      "type": "classic_server",
+      "url": "https://skyrising.github.io/mc-versions/manifest/e/0/19eb9254cfaeb1038a780dee8156df16c011d3/c1.4-1327.json",
+      "releaseTime": "2009-06-13T13:28:00+00:00",
+      "details": "https://skyrising.github.io/mc-versions/version/server-c1.4-1327.json"
+    },
+    {
       "omniId": "c0.0.17a",
       "id": "c0.0.17a",
       "type": "old_alpha",
@@ -7179,6 +7405,22 @@
       "time": "2021-04-17T21:49:29-00:00",
       "releaseTime": "2009-06-10T20:14:00+00:00",
       "details": "https://skyrising.github.io/mc-versions/version/c0.0.17a.json"
+    },
+    {
+      "omniId": "server-c1.3",
+      "id": "server-c1.3",
+      "type": "classic_server",
+      "url": "https://skyrising.github.io/mc-versions/manifest/f/c/06daa552c8f8d3276cdcf424ee23da4a034517/c1.3.json",
+      "releaseTime": "2009-06-10T19:47:00+00:00",
+      "details": "https://skyrising.github.io/mc-versions/version/server-c1.3.json"
+    },
+    {
+      "omniId": "server-c1.2",
+      "id": "server-c1.2",
+      "type": "classic_server",
+      "url": "https://skyrising.github.io/mc-versions/manifest/d/a/10e9f1b8cebf663663e04ccf8e4b7921e7e945/c1.2.json",
+      "releaseTime": "2009-06-08T20:48:00+00:00",
+      "details": "https://skyrising.github.io/mc-versions/version/server-c1.2.json"
     },
     {
       "omniId": "c0.0.16a_02",
