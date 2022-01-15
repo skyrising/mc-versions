@@ -1,0 +1,18 @@
+{
+  "downloads": {
+    "server": {
+      "sha1": "5af0acc21962ca0710d2f82923f3f988d728c504",
+      "size": 256134,
+      "url": "https://files.betacraft.uk/server-archive/alpha/a0.1.0.jar"
+    },
+    "windows_server": {
+      "sha1": "cdb3e735d854efc517974f77e63eee51823aa42f",
+      "size": 436870,
+      "url": "https://files.betacraft.uk/server-archive/alpha/a0.1.0.exe"
+    }
+  },
+  "id": "server-a0.1.0",
+  "libraries": [],
+  "releaseTime": "2010-08-04T08:31:00+00:00",
+  "type": "alpha_server"
+}

@@ -29,7 +29,7 @@ const downloadsDir = Deno.env.get('MC_VERSIONS_DOWNLOADS')
 
 const dataDir = path.resolve('data')
 const manifestDir = path.resolve(dataDir, 'manifest')
-const importDir = path.resolve(dataDir, 'import')
+const importDir = path.resolve('import')
 const versionDir = path.resolve(dataDir, 'version')
 const protocolDir = path.resolve(dataDir, 'protocol')
 
@@ -113,8 +113,8 @@ type TempVersionManifest = {
     downloadsHash: string
     downloads: {[id: string]: DownloadInfo}
     downloadsId?: number
-    assetIndex: string
-    assetHash: string
+    assetIndex?: string
+    assetHash?: string
     launcher: boolean
     localMirror: {[id: string]: string}
 }
@@ -148,7 +148,7 @@ async function collectVersions(hashMap: HashMap<string>, oldOmniVersions: HashMa
         const content = await Deno.readTextFile(file)
         let hash = sha1(content)
         const data: VersionManifest = sortObject(JSON.parse(content))
-        if (!data.downloads || !data.assets || !data.assetIndex) continue
+        if (!data.downloads || !data.id.startsWith('server-') && (!data.assets || !data.assetIndex)) continue
         const reformatted = JSON.stringify(data, null, 2)
         const reformattedHash = sha1(reformatted)
         if (reformattedHash !== hash) {
@@ -179,8 +179,8 @@ async function collectVersions(hashMap: HashMap<string>, oldOmniVersions: HashMa
             lastModified: lastModified[hash]?.toISOString()?.replace('.000Z', '+00:00'),
             downloadsHash: sha1(JSON.stringify(dl)),
             downloads: data.downloads,
-            assetIndex: data.assetIndex.id,
-            assetHash: data.assetIndex.sha1,
+            assetIndex: data.assetIndex?.id,
+            assetHash: data.assetIndex?.sha1,
             launcher: data.downloads.client && data.downloads.client.url.startsWith('https://launcher.mojang.com/'),
             localMirror: {}
         }
@@ -386,7 +386,7 @@ async function updateVersion(id: VersionId, manifests: Array<TempVersionManifest
     for (const m of manifests) {
         if (!m.downloads) continue
         if (m.downloads.client) data.client = true
-        if (m.downloads.server) data.server = true
+        if (m.downloads.server || m.downloads.server_zip) data.server = true
         m.localMirror = await getDownloads(m)
     }
     if (data.releaseTarget === undefined) {
@@ -455,6 +455,8 @@ function normalizeVersion(omniId: VersionId, releaseTarget: VersionId | undefine
     const letters = omniId.split(/[\d._\-]/).filter(Boolean)
     const parts = omniId.split('-')
     const properTarget = releaseTarget && (releaseTarget.split('.').length < 3 ? releaseTarget + '.0' : releaseTarget)
+    const server = parts[0] === 'server'
+    if (server) parts.shift()
     if (parts[0] === 'b1.9') {
         parts[0] = '1.0.0'
     }
@@ -476,13 +478,18 @@ function normalizeVersion(omniId: VersionId, releaseTarget: VersionId | undefine
         }
         return `1.0.0-beta.${betaVersion}${buildPart(1)}`
     }
-    if (parts[0].startsWith('a') && parts[0] !== 'af') return '1.0.0-alpha.' + parts[0].substring(1).replaceAll('_0', '.') + buildPart(1)
+    if (parts[0].startsWith('a') && parts[0] !== 'af') {
+        if (server) return '1.0.0-alpha.server.' + parts[0].substring(1).replaceAll('_0', '.') + buildPart(1)
+        return '1.0.0-alpha.' + parts[0].substring(1).replaceAll('_0', '.') + buildPart(1)
+    }
     if (parts[0].startsWith('in')) return '0.31.' + omniId.substring(omniId.indexOf('-') + 1).replace('-', '+')
     if (parts[0].startsWith('c')) {
         // replace 0.0.x.y with 0.x.y
         if (numbers[1] === 0) numbers.shift()
         letters.shift()
+        if (server) letters.shift()
         const plusComponents = [...new Set([...letters, ...parts.slice(1)])]
+        if (server) return `0.30.0-classic.server.${numbers[0]}.${numbers[1]}.${numbers[2] || 0}${plusComponents.length ? '+' + plusComponents.join('.') : ''}`
         return `${numbers[0]}.${numbers[1]}.${numbers[2] || 0}${plusComponents.length ? '+' + plusComponents.join('.') : ''}`
     }
     if (parts[0] === 'rd') {

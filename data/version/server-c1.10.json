@@ -1,0 +1,27 @@
+{
+  "client": false,
+  "id": "server-c1.10",
+  "manifests": [
+    {
+      "downloads": "87e6187cf9eafb8430ab9000383b6287fcee0e9c",
+      "downloadsId": 1,
+      "hash": "d5a79f09e0e5a41d2d56305bf30bd3b610a667ef",
+      "type": "classic_server",
+      "url": "../manifest/d/5/a79f09e0e5a41d2d56305bf30bd3b610a667ef/c1.10.json"
+    }
+  ],
+  "next": [
+    "server-c1.10.1"
+  ],
+  "normalizedVersion": "0.30.0-classic.server.1.10.0",
+  "previous": [
+    "server-c1.9.1"
+  ],
+  "protocol": {
+    "type": "classic",
+    "version": 7
+  },
+  "releaseTime": "2009-12-11T11:15:00+00:00",
+  "server": true,
+  "sharedMappings": false
+}

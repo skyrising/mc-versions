@@ -1,0 +1,27 @@
+{
+  "client": false,
+  "id": "server-a0.1.3",
+  "manifests": [
+    {
+      "downloads": "08b53af2c957144c520d3a775285060ca83f58e7",
+      "downloadsId": 1,
+      "hash": "f1435d73034fc9c017d4a993006ad4317cc86e5f",
+      "type": "alpha_server",
+      "url": "../manifest/f/1/435d73034fc9c017d4a993006ad4317cc86e5f/a0.1.3.json"
+    }
+  ],
+  "next": [
+    "server-a0.1.4"
+  ],
+  "normalizedVersion": "1.0.0-alpha.server.0.1.3",
+  "previous": [
+    "server-a0.1.2_01"
+  ],
+  "protocol": {
+    "type": "classic",
+    "version": 14
+  },
+  "releaseTime": "2010-08-17T11:17:00+00:00",
+  "server": true,
+  "sharedMappings": false
+}

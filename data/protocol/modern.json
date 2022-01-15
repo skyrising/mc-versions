@@ -8,7 +8,9 @@
         "a1.0.17_03",
         "a1.0.17_04"
       ],
-      "servers": []
+      "servers": [
+        "server-a0.1.4"
+      ]
     },
     {
       "version": 2,
@@ -20,7 +22,11 @@
         "a1.1.2",
         "a1.1.2_01"
       ],
-      "servers": []
+      "servers": [
+        "server-a0.2.0",
+        "server-a0.2.0_01",
+        "server-a0.2.1"
+      ]
     },
     {
       "version": 3,
@@ -31,7 +37,11 @@
         "a1.2.0_02-launcher",
         "a1.2.1_01"
       ],
-      "servers": []
+      "servers": [
+        "server-a0.2.2",
+        "server-a0.2.2_01",
+        "server-a0.2.3"
+      ]
     },
     {
       "version": 4,
@@ -39,7 +49,9 @@
         "a1.2.2-1624",
         "a1.2.2-1938"
       ],
-      "servers": []
+      "servers": [
+        "server-a0.2.4"
+      ]
     },
     {
       "version": 5,
@@ -49,7 +61,12 @@
         "a1.2.3_02",
         "a1.2.3_04"
       ],
-      "servers": []
+      "servers": [
+        "server-a0.2.5-0923",
+        "server-a0.2.5-1004",
+        "server-a0.2.5_01",
+        "server-a0.2.5_02"
+      ]
     },
     {
       "version": 6,
@@ -59,7 +76,13 @@
         "a1.2.5",
         "a1.2.6"
       ],
-      "servers": []
+      "servers": [
+        "server-a0.2.6",
+        "server-a0.2.6_01",
+        "server-a0.2.6_02",
+        "server-a0.2.7",
+        "server-a0.2.8"
+      ]
     },
     {
       "version": 7,
