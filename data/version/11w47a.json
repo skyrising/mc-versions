@@ -3,6 +3,13 @@
   "id": "11w47a",
   "manifests": [
     {
+      "downloads": "fbc401c491cae2565b0c4ff48677e54d35318e20",
+      "downloadsId": 2,
+      "hash": "358741f3b4a4cabaeea674a8bbd9ea31d11b2def",
+      "type": "snapshot",
+      "url": "../manifest/3/5/8741f3b4a4cabaeea674a8bbd9ea31d11b2def/11w47a.json"
+    },
+    {
       "assetHash": "4759bad2824e419da9db32861fcdc3a274336532",
       "assetIndex": "pre-1.6",
       "downloads": "01da93b640a28da510365c7e605e371b9506f56a",
@@ -27,7 +34,7 @@
   },
   "releaseTarget": "1.1",
   "releaseTime": "2011-11-24T13:18:00+00:00",
-  "server": false,
+  "server": true,
   "sharedMappings": false,
   "world": {
     "format": "region"
