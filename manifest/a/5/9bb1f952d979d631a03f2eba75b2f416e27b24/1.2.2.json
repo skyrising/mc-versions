@@ -1,0 +1,18 @@
+{
+  "downloads": {
+    "server": {
+      "sha1": "673f50223b363c4c474d520c99104bd8481f0ce6",
+      "size": 1345638,
+      "url": "https://files.betacraft.uk/server-archive/release/1.2/1.2.2.jar"
+    },
+    "windows_server": {
+      "sha1": "287fa47125477594086691be53550276dd57645c",
+      "size": 1526374,
+      "url": "https://files.betacraft.uk/server-archive/release/1.2/1.2.2.exe"
+    }
+  },
+  "id": "1.2.2",
+  "libraries": [],
+  "releaseTime": "2012-03-01T14:20:00+00:00",
+  "type": "release"
+}

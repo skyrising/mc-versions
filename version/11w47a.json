@@ -1,7 +1,26 @@
 {
   "client": true,
+  "downloads": {
+    "client": {
+      "sha1": "4e327918708d22e7443fbadefb9831ca04af4b90",
+      "size": 2242242,
+      "url": "https://assets.minecraft.net/11w47a/minecraft.jar"
+    },
+    "server": {
+      "sha1": "62e447c26123d890fa0bd8fad58b1c3a50c5c4ba",
+      "size": 747345,
+      "url": "https://files.betacraft.uk/server-archive/release/1.1/prerelease/11w47a.jar"
+    }
+  },
   "id": "11w47a",
   "manifests": [
+    {
+      "downloads": "fbc401c491cae2565b0c4ff48677e54d35318e20",
+      "downloadsId": 2,
+      "hash": "358741f3b4a4cabaeea674a8bbd9ea31d11b2def",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/manifest/3/5/8741f3b4a4cabaeea674a8bbd9ea31d11b2def/11w47a.json"
+    },
     {
       "assetHash": "4759bad2824e419da9db32861fcdc3a274336532",
       "assetIndex": "pre-1.6",
@@ -18,7 +37,8 @@
   ],
   "normalizedVersion": "1.1.0-alpha.11.47.a",
   "previous": [
-    "1.0.0"
+    "1.0.0",
+    "1.0.1"
   ],
   "protocol": {
     "type": "modern",
@@ -26,7 +46,7 @@
   },
   "releaseTarget": "1.1",
   "releaseTime": "2011-11-24T13:18:00+00:00",
-  "server": false,
+  "server": true,
   "sharedMappings": false,
   "world": {
     "format": "region"

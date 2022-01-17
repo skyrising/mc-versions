@@ -1,5 +1,12 @@
 {
   "client": true,
+  "downloads": {
+    "client": {
+      "sha1": "83b6483feb88136b6b4662b553d8f80f5f88efa5",
+      "size": 133657,
+      "url": "https://archive.org/download/Minecraft-JE-Classic/c0.0.21a/c0.0.21a.jar"
+    }
+  },
   "id": "c0.0.21a",
   "manifests": [
     {

@@ -1,0 +1,18 @@
+{
+  "downloads": {
+    "server": {
+      "sha1": "781e69c6881626f77c9f168ae4f307ae1422552e",
+      "size": 490798,
+      "url": "https://files.betacraft.uk/server-archive/beta/b1.6.5.jar"
+    },
+    "windows_server": {
+      "sha1": "8d2a0bc5f102f8c0f0d2b6baa080d75123375411",
+      "size": 671534,
+      "url": "https://files.betacraft.uk/server-archive/beta/b1.6.5.exe"
+    }
+  },
+  "id": "b1.6.5",
+  "libraries": [],
+  "releaseTime": "2011-05-28T15:13:08+00:00",
+  "type": "old_beta"
+}

@@ -1,5 +1,17 @@
 {
   "client": false,
+  "downloads": {
+    "server": {
+      "sha1": "63b25633859a8fee7938b69d7a0df9e942a221fc",
+      "size": 262714,
+      "url": "https://files.betacraft.uk/server-archive/alpha/a0.1.3.jar"
+    },
+    "windows_server": {
+      "sha1": "8350d846f2950009d018833c5ae9f8f5bff5508e",
+      "size": 443450,
+      "url": "https://files.betacraft.uk/server-archive/alpha/a0.1.3.exe"
+    }
+  },
   "id": "server-a0.1.3",
   "manifests": [
     {

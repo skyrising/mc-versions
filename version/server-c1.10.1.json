@@ -1,5 +1,12 @@
 {
   "client": false,
+  "downloads": {
+    "server_zip": {
+      "sha1": "fd7b5535fd05c4c6cfe1a0e54110ffd63c76ad9e",
+      "size": 59639,
+      "url": "https://files.betacraft.uk/server-archive/classic/c1.10.1.zip"
+    }
+  },
   "id": "server-c1.10.1",
   "manifests": [
     {

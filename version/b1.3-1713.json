@@ -1,5 +1,12 @@
 {
   "client": true,
+  "downloads": {
+    "client": {
+      "sha1": "a0f70bcb29666cd4d43a7782bd03ee187772093c",
+      "size": 1250510,
+      "url": "https://archive.org/download/Minecraft-JE-Beta/b1.3-1/b1.3-1.jar"
+    }
+  },
   "id": "b1.3-1713",
   "manifests": [
     {

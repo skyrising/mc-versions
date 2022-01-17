@@ -1,5 +1,12 @@
 {
   "client": true,
+  "downloads": {
+    "client": {
+      "sha1": "5b7fe76a602b7511c97740e36dc25040ccb6e76b",
+      "size": 2087104,
+      "url": "https://archive.org/download/Minecraft-JE-Beta/Prereleases/b1.9-pre3-2/b1.9-pre3-2.jar"
+    }
+  },
   "id": "b1.9-pre3-201110061402",
   "manifests": [
     {
@@ -14,6 +21,7 @@
     }
   ],
   "next": [
+    "b1.9-pre4-201110131425",
     "b1.9-pre4-201110131434"
   ],
   "normalizedVersion": "1.0.0-pre.3+201110061402",

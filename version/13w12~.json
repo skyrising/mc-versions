@@ -1,5 +1,12 @@
 {
   "client": true,
+  "downloads": {
+    "client": {
+      "sha1": "66d6c6b5205ae1e8f0ad3eb78ccf66500f39c0c7",
+      "size": 5561634,
+      "url": "https://assets.minecraft.net/13w12_/minecraft.jar"
+    }
+  },
   "id": "13w12~",
   "manifests": [
     {

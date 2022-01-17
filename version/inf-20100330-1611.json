@@ -1,5 +1,12 @@
 {
   "client": true,
+  "downloads": {
+    "client": {
+      "sha1": "a74c8ee1ecd57999e242952697bbde6cc0904f99",
+      "size": 536744,
+      "url": "https://archive.org/download/Minecraft-JE-Infdev/inf-20100330/inf-20100330.jar"
+    }
+  },
   "id": "inf-20100330-1611",
   "manifests": [
     {

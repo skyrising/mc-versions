@@ -1,5 +1,27 @@
 {
   "client": true,
+  "downloads": {
+    "client": {
+      "sha1": "507be109a1902b7c3b30c1e900299344c7c0bee6",
+      "size": 19241449,
+      "url": "https://launcher.mojang.com/v1/objects/507be109a1902b7c3b30c1e900299344c7c0bee6/client.jar"
+    },
+    "client_mappings": {
+      "sha1": "be3ba1ca24543ecd73f240c36a3aa61916fa4d0c",
+      "size": 6472685,
+      "url": "https://launcher.mojang.com/v1/objects/be3ba1ca24543ecd73f240c36a3aa61916fa4d0c/client.txt"
+    },
+    "server": {
+      "sha1": "36d49b1a6d05f1deac293d477bfa2b4a1babb71c",
+      "size": 39083407,
+      "url": "https://launcher.mojang.com/v1/objects/36d49b1a6d05f1deac293d477bfa2b4a1babb71c/server.jar"
+    },
+    "server_mappings": {
+      "sha1": "13ef5a693f7437b18c322654749db3ec895ba97e",
+      "size": 4957999,
+      "url": "https://launcher.mojang.com/v1/objects/13ef5a693f7437b18c322654749db3ec895ba97e/server.txt"
+    }
+  },
   "id": "21w13a",
   "manifests": [
     {

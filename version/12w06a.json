@@ -1,5 +1,17 @@
 {
   "client": true,
+  "downloads": {
+    "client": {
+      "sha1": "a8403c0d4c0cdb65722d864d9cf42663b8aab08b",
+      "size": 3934973,
+      "url": "https://assets.minecraft.net/12w06a/minecraft.jar"
+    },
+    "server": {
+      "sha1": "7518ca0aa64156c1a55f4a8363e9578862adcd3a",
+      "size": 1313060,
+      "url": "https://assets.minecraft.net/12w06a/minecraft_server.jar"
+    }
+  },
   "id": "12w06a",
   "manifests": [
     {

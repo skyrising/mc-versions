@@ -1,12 +1,29 @@
 {
   "client": true,
+  "downloads": {
+    "client": {
+      "sha1": "6b562463ccc2c7ff12ff350a2b04a67b3adcd37b",
+      "size": 1995166,
+      "url": "https://launcher.mojang.com/v1/objects/6b562463ccc2c7ff12ff350a2b04a67b3adcd37b/client.jar"
+    },
+    "server": {
+      "sha1": "79c4f3dc88d06db359dbf5cfedbbbd120d73bf4f",
+      "size": 621639,
+      "url": "https://files.betacraft.uk/server-archive/beta/b1.8.1.jar"
+    },
+    "windows_server": {
+      "sha1": "7bd39daf24ed7fcf0dc9c5652a3dd218b1eb4e17",
+      "size": 802375,
+      "url": "https://files.betacraft.uk/server-archive/beta/b1.8.1.exe"
+    }
+  },
   "id": "b1.8.1",
   "manifests": [
     {
       "assetHash": "4759bad2824e419da9db32861fcdc3a274336532",
       "assetIndex": "pre-1.6",
       "downloads": "092559e9d532214f56e676de94e0e7d7050b6a87",
-      "downloadsId": 1,
+      "downloadsId": 2,
       "hash": "ce4f24f4dfafcf65ed123e9285583cfcc2749a73",
       "lastModified": "2019-02-14T15:33:36+00:00",
       "time": "2011-09-18T22:00:00+00:00",
@@ -17,11 +34,18 @@
       "assetHash": "c0fd82e8ce9fbc93119e40d96d5a4e62cfa3f729",
       "assetIndex": "legacy",
       "downloads": "092559e9d532214f56e676de94e0e7d7050b6a87",
-      "downloadsId": 1,
+      "downloadsId": 2,
       "hash": "56a2abf49905bb16dd618d9881086d71577134ef",
       "time": "2016-02-02T15:37:47+00:00",
       "type": "old_beta",
       "url": "https://skyrising.github.io/mc-versions/manifest/5/6/a2abf49905bb16dd618d9881086d71577134ef/b1.8.1.json"
+    },
+    {
+      "downloads": "c1e5fe7c48333ad05fd6089e406a1bd7272a559a",
+      "downloadsId": 1,
+      "hash": "d647b77a0e20aa8b06f5eb0a1d22eb8aff017b95",
+      "type": "old_beta",
+      "url": "https://skyrising.github.io/mc-versions/manifest/d/6/47b77a0e20aa8b06f5eb0a1d22eb8aff017b95/b1.8.1.json"
     }
   ],
   "next": [
@@ -36,7 +60,7 @@
     "version": 17
   },
   "releaseTime": "2011-09-15T08:18:00+00:00",
-  "server": false,
+  "server": true,
   "sharedMappings": false,
   "world": {
     "format": "region"

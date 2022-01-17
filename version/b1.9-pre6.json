@@ -1,7 +1,26 @@
 {
   "client": true,
+  "downloads": {
+    "client": {
+      "sha1": "f0983e65cd1c0768b0d1fec471ce4f69173b8126",
+      "size": 2239270,
+      "url": "https://archive.org/download/Minecraft-JE-Beta/Prereleases/b1.9-pre6/b1.9-pre6.jar"
+    },
+    "server": {
+      "sha1": "3482a58d8ea938206f43db7a9d4b678b7876281a",
+      "size": 746074,
+      "url": "https://files.betacraft.uk/server-archive/beta/prerelease/b1.9-pre6.jar"
+    }
+  },
   "id": "b1.9-pre6",
   "manifests": [
+    {
+      "downloads": "ad2ee5b20c48900f5d46cf841a982af5a5ce7358",
+      "downloadsId": 2,
+      "hash": "3417005dc9adfb2f51771f8d8ed41fe9a76795bc",
+      "type": "old_beta",
+      "url": "https://skyrising.github.io/mc-versions/manifest/3/4/17005dc9adfb2f51771f8d8ed41fe9a76795bc/b1.9-pre6.json"
+    },
     {
       "assetHash": "c0fd82e8ce9fbc93119e40d96d5a4e62cfa3f729",
       "assetIndex": "legacy",
@@ -26,7 +45,7 @@
   },
   "releaseTarget": "1.0.0",
   "releaseTime": "2011-11-11T15:33:00+00:00",
-  "server": false,
+  "server": true,
   "sharedMappings": false,
   "world": {
     "format": "region"

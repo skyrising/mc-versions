@@ -1,16 +1,40 @@
 {
   "client": true,
+  "downloads": {
+    "client": {
+      "sha1": "b0f67f3105e32b1a905d934f1e56117ef45d7148",
+      "size": 1464960,
+      "url": "https://archive.org/download/Minecraft-JE-Beta/b1.7_01/b1.7_01.jar"
+    },
+    "server": {
+      "sha1": "2838451ebb627d71e5d245952a61e9d71e284f6c",
+      "size": 502611,
+      "url": "https://files.betacraft.uk/server-archive/beta/b1.7_01.jar"
+    },
+    "windows_server": {
+      "sha1": "042d333746c587d20db4e5d3ac7735cc0e24c503",
+      "size": 683347,
+      "url": "https://files.betacraft.uk/server-archive/beta/b1.7_01.exe"
+    }
+  },
   "id": "b1.7_01",
   "manifests": [
     {
       "assetHash": "c0fd82e8ce9fbc93119e40d96d5a4e62cfa3f729",
       "assetIndex": "legacy",
       "downloads": "d6ffee69e0535769edf97dd4df95cd134059fcb0",
-      "downloadsId": 1,
+      "downloadsId": 2,
       "hash": "b81ffbab413c6d739805f8a505ea61e5d65b3251",
       "time": "2013-08-06T04:00:00-07:00",
       "type": "old_beta",
       "url": "https://skyrising.github.io/mc-versions/manifest/b/8/1ffbab413c6d739805f8a505ea61e5d65b3251/b1.7_01.json"
+    },
+    {
+      "downloads": "f8d4d1ae514c83d72d8b878697b2fd0004d113ce",
+      "downloadsId": 1,
+      "hash": "c86011fd28ec822aadc36f9c092eb19c69dbc399",
+      "type": "old_beta",
+      "url": "https://skyrising.github.io/mc-versions/manifest/c/8/6011fd28ec822aadc36f9c092eb19c69dbc399/b1.7_01.json"
     }
   ],
   "next": [
@@ -25,7 +49,7 @@
     "version": 14
   },
   "releaseTime": "2011-06-30T14:34:00+00:00",
-  "server": false,
+  "server": true,
   "sharedMappings": false,
   "world": {
     "format": "region"

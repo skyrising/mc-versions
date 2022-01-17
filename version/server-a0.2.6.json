@@ -1,5 +1,12 @@
 {
   "client": false,
+  "downloads": {
+    "server": {
+      "sha1": "7f69b0f797ad8ced39f0b84af0ed3412dad9233d",
+      "size": 319774,
+      "url": "https://files.betacraft.uk/server-archive/alpha/a0.2.6.jar"
+    }
+  },
   "id": "server-a0.2.6",
   "manifests": [
     {

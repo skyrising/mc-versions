@@ -1,5 +1,12 @@
 {
   "client": true,
+  "downloads": {
+    "client": {
+      "sha1": "06641eca013fe5032a5f1a9d1289599f0970a735",
+      "size": 587387,
+      "url": "https://archive.org/download/Minecraft-JE-Infdev/inf-20100617-2/inf-20100617-2.jar"
+    }
+  },
   "id": "inf-20100617-1205",
   "manifests": [
     {

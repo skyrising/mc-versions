@@ -1,7 +1,26 @@
 {
   "client": true,
+  "downloads": {
+    "client": {
+      "sha1": "e109b297d2c4ee7a0bd6aed72f38f7e3185654cf",
+      "size": 2211261,
+      "url": "https://archive.org/download/Minecraft-JE-Beta/Prereleases/b1.9-pre5/b1.9-pre5.jar"
+    },
+    "server": {
+      "sha1": "7ec65beaaf1d3b619ca7effa91ff7d3d0fd168bd",
+      "size": 737796,
+      "url": "https://files.betacraft.uk/server-archive/beta/prerelease/b1.9-pre5.jar"
+    }
+  },
   "id": "b1.9-pre5",
   "manifests": [
+    {
+      "downloads": "b6dab3fbdb03c95144d1356d42889adcc438426c",
+      "downloadsId": 2,
+      "hash": "744ed687b483fed5d2709c0ed80d520fcaad5932",
+      "type": "old_beta",
+      "url": "https://skyrising.github.io/mc-versions/manifest/7/4/4ed687b483fed5d2709c0ed80d520fcaad5932/b1.9-pre5.json"
+    },
     {
       "assetHash": "c0fd82e8ce9fbc93119e40d96d5a4e62cfa3f729",
       "assetIndex": "legacy",
@@ -18,7 +37,8 @@
   ],
   "normalizedVersion": "1.0.0-pre.5",
   "previous": [
-    "b1.9-pre4-201110131434"
+    "b1.9-pre4-201110131434",
+    "b1.9-pre4-201110131440"
   ],
   "protocol": {
     "type": "modern",
@@ -26,7 +46,7 @@
   },
   "releaseTarget": "1.0.0",
   "releaseTime": "2011-10-27T14:36:00+00:00",
-  "server": false,
+  "server": true,
   "sharedMappings": false,
   "world": {
     "format": "region"

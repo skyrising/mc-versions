@@ -1,0 +1,35 @@
+{
+  "client": false,
+  "downloads": {
+    "server": {
+      "sha1": "ecf944fcef1a630f95ded840de0059d4922f81c2",
+      "size": 747345,
+      "url": "https://files.betacraft.uk/server-archive/release/1.0/1.0.1.jar"
+    }
+  },
+  "id": "1.0.1",
+  "manifests": [
+    {
+      "downloads": "9fcfb0314ec60b2f74c55430d149be6bb2f788ee",
+      "downloadsId": 1,
+      "hash": "6a3fe08d8b2b3b7b505751cefe0abbb861e5e474",
+      "type": "release",
+      "url": "https://skyrising.github.io/mc-versions/manifest/6/a/3fe08d8b2b3b7b505751cefe0abbb861e5e474/1.0.1.json"
+    }
+  ],
+  "next": [
+    "11w47a"
+  ],
+  "normalizedVersion": "1.0.1",
+  "previous": [
+    "1.0.0"
+  ],
+  "protocol": {
+    "type": "modern",
+    "version": 22
+  },
+  "releaseTarget": "1.0.1",
+  "releaseTime": "2011-11-24T12:48:46+00:00",
+  "server": true,
+  "sharedMappings": false
+}

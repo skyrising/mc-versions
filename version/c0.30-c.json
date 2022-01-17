@@ -1,5 +1,12 @@
 {
   "client": true,
+  "downloads": {
+    "client": {
+      "sha1": "51bc951530207b538596941a6f353f87dfc24233",
+      "size": 291588,
+      "url": "https://archive.org/download/Minecraft-JE-Classic/c0.30-2/c0.30-2.jar"
+    }
+  },
   "id": "c0.30-c",
   "manifests": [
     {

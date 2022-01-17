@@ -1,5 +1,12 @@
 {
   "client": true,
+  "downloads": {
+    "client": {
+      "sha1": "66e8319d9b34662cdaf985ec3c1e0e926fcad46e",
+      "size": 873031,
+      "url": "https://archive.org/download/Minecraft-JE-Alpha/a1.1.0-2/a1.1.0-2.jar"
+    }
+  },
   "id": "a1.1.0-131933",
   "manifests": [
     {

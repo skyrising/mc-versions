@@ -1,16 +1,35 @@
 {
   "client": true,
+  "downloads": {
+    "client": {
+      "sha1": "44191f2895bf1e064269c9279778f2e3e9c3c9c7",
+      "size": 1897780,
+      "url": "https://archive.org/download/Minecraft-JE-Beta/Prereleases/b1.8-pre2/b1.8-pre2.jar"
+    },
+    "server": {
+      "sha1": "4cdbe68bef279d4624e78541965f09d42362f377",
+      "size": 620660,
+      "url": "https://files.betacraft.uk/server-archive/beta/prerelease/b1.8-pre2.jar"
+    }
+  },
   "id": "b1.8-pre2",
   "manifests": [
     {
       "assetHash": "c0fd82e8ce9fbc93119e40d96d5a4e62cfa3f729",
       "assetIndex": "legacy",
       "downloads": "4b18b79c30696aa18b35240fbeb7623b22d6bf8a",
-      "downloadsId": 1,
+      "downloadsId": 2,
       "hash": "d200318be25fe1990a4a7692b93af46e4e49bab8",
       "time": "2013-08-06T04:00:00-07:00",
       "type": "old_beta",
       "url": "https://skyrising.github.io/mc-versions/manifest/d/2/00318be25fe1990a4a7692b93af46e4e49bab8/b1.8-pre2.json"
+    },
+    {
+      "downloads": "1eaa90d09771b4eeccdf70e8067f335e72950921",
+      "downloadsId": 1,
+      "hash": "9cedfd9aed3c77f9598e8feb0d29370500a171a7",
+      "type": "old_beta",
+      "url": "https://skyrising.github.io/mc-versions/manifest/9/c/edfd9aed3c77f9598e8feb0d29370500a171a7/b1.8-pre2.json"
     }
   ],
   "next": [
@@ -25,7 +44,7 @@
     "version": 16
   },
   "releaseTime": "2011-09-13T12:25:00+00:00",
-  "server": false,
+  "server": true,
   "sharedMappings": false,
   "world": {
     "format": "region"

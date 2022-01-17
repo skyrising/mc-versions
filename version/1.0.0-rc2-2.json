@@ -1,5 +1,12 @@
 {
   "client": true,
+  "downloads": {
+    "client": {
+      "sha1": "6a6b67d34149afc47cf9608b3967582639097df9",
+      "size": 2242209,
+      "url": "https://archive.org/download/Minecraft-JE-Beta/1.0.0-rc2-2/1.0.0-rc2-2.jar"
+    }
+  },
   "id": "1.0.0-rc2-2",
   "manifests": [
     {

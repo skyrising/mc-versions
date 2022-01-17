@@ -1,7 +1,31 @@
 {
   "client": true,
+  "downloads": {
+    "client": {
+      "sha1": "43db9b498cb67058d2e12d394e6507722e71bb45",
+      "size": 1465375,
+      "url": "https://launcher.mojang.com/v1/objects/43db9b498cb67058d2e12d394e6507722e71bb45/client.jar"
+    },
+    "server": {
+      "sha1": "2f90dc1cb5ca7e9d71786801b307390a67fcf954",
+      "size": 503100,
+      "url": "https://files.betacraft.uk/server-archive/beta/b1.7.3.jar"
+    },
+    "windows_server": {
+      "sha1": "920a180dfe9f4ef29d4a250de7ae5a5af5b25012",
+      "size": 683836,
+      "url": "https://files.betacraft.uk/server-archive/beta/b1.7.3.exe"
+    }
+  },
   "id": "b1.7.3",
   "manifests": [
+    {
+      "downloads": "2a5722414c7c0a11a57ddd3df70b92c4d6528a97",
+      "downloadsId": 2,
+      "hash": "a9541cbeb8aa6e21cbc0ed6e587622f78997ed8a",
+      "type": "old_beta",
+      "url": "https://skyrising.github.io/mc-versions/manifest/a/9/541cbeb8aa6e21cbc0ed6e587622f78997ed8a/b1.7.3.json"
+    },
     {
       "assetHash": "4759bad2824e419da9db32861fcdc3a274336532",
       "assetIndex": "pre-1.6",
@@ -36,7 +60,7 @@
     "version": 14
   },
   "releaseTime": "2011-07-08T07:32:00+00:00",
-  "server": false,
+  "server": true,
   "sharedMappings": false,
   "world": {
     "format": "region"

@@ -1,7 +1,26 @@
 {
   "client": true,
+  "downloads": {
+    "client": {
+      "sha1": "3eddb7fd2e960b19e70a53358d513d4d1dfc43bf",
+      "size": 1421293,
+      "url": "https://archive.org/download/Minecraft-JE-Beta/Prereleases/b1.6-tb3/b1.6-tb3.jar"
+    },
+    "server": {
+      "sha1": "2aae89e3f069cdd30f6e7d7727ba8e8ad8132143",
+      "size": 489816,
+      "url": "https://files.betacraft.uk/server-archive/beta/prerelease/b1.6-tb3.jar"
+    }
+  },
   "id": "b1.6-tb3",
   "manifests": [
+    {
+      "downloads": "ee963b85c41d5c55d81ac9acd10886b5fc2bb92e",
+      "downloadsId": 2,
+      "hash": "321f4e1a0bd5365a32cad3896c9ad3240af31f70",
+      "type": "old_beta",
+      "url": "https://skyrising.github.io/mc-versions/manifest/3/2/1f4e1a0bd5365a32cad3896c9ad3240af31f70/b1.6-tb3.json"
+    },
     {
       "assetHash": "c0fd82e8ce9fbc93119e40d96d5a4e62cfa3f729",
       "assetIndex": "legacy",
@@ -18,14 +37,14 @@
   ],
   "normalizedVersion": "1.0.0-beta.1.6.0.test.3",
   "previous": [
-    "b1.5_01"
+    "b1.6-pre-trailer"
   ],
   "protocol": {
     "type": "modern",
     "version": 12
   },
   "releaseTime": "2011-05-25T08:35:00+00:00",
-  "server": false,
+  "server": true,
   "sharedMappings": false,
   "world": {
     "format": "region"

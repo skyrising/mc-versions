@@ -1,7 +1,26 @@
 {
   "client": true,
+  "downloads": {
+    "client": {
+      "sha1": "366af727742cff91e37af5cb3155927dfe44fc66",
+      "size": 1129358,
+      "url": "https://archive.org/download/Minecraft-JE-Beta/b1.1-1/b1.1-1.jar"
+    },
+    "server": {
+      "sha1": "1d8d308e9a668f9f37e1b887e263fc1ed4953499",
+      "size": 351526,
+      "url": "https://files.betacraft.uk/server-archive/beta/b1.1.jar"
+    }
+  },
   "id": "b1.1-1245",
   "manifests": [
+    {
+      "downloads": "981e9f3d0ece5dd8f8bfd93ff1f26dfe5028c72a",
+      "downloadsId": 2,
+      "hash": "4685e791840457bcbd407678861b0115bddb8a98",
+      "type": "old_beta",
+      "url": "https://skyrising.github.io/mc-versions/manifest/4/6/85e791840457bcbd407678861b0115bddb8a98/b1.1.json"
+    },
     {
       "assetHash": "c0fd82e8ce9fbc93119e40d96d5a4e62cfa3f729",
       "assetIndex": "legacy",
@@ -25,7 +44,7 @@
     "version": 7
   },
   "releaseTime": "2010-12-22T12:45:00+00:00",
-  "server": false,
+  "server": true,
   "sharedMappings": false,
   "world": {
     "format": "alpha"
