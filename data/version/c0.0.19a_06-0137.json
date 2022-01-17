@@ -1,5 +1,12 @@
 {
   "client": true,
+  "downloads": {
+    "client": {
+      "sha1": "e2b248f1013933af9f801729418409fb7198de1b",
+      "size": 123546,
+      "url": "https://archive.org/download/Minecraft-JE-Classic/c0.0.19a_06-2/c0.0.19a_06-2.jar"
+    }
+  },
   "id": "c0.0.19a_06-0137",
   "manifests": [
     {

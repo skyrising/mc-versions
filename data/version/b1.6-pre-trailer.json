@@ -1,5 +1,12 @@
 {
   "client": false,
+  "downloads": {
+    "server": {
+      "sha1": "e440442f13475c5dffcfca941dc91874258886bf",
+      "size": 485882,
+      "url": "https://files.betacraft.uk/server-archive/beta/prerelease/b1.6-pre-trailer.jar"
+    }
+  },
   "id": "b1.6-pre-trailer",
   "manifests": [
     {

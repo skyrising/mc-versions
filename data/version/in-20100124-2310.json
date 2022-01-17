@@ -1,5 +1,12 @@
 {
   "client": true,
+  "downloads": {
+    "client": {
+      "sha1": "2cd03bcfc26c95bcf31b5d5e1d4dda7dc071ca6a",
+      "size": 446210,
+      "url": "https://archive.org/download/Minecraft-JE-Indev/in-20100125-1/in-20100125-1.jar"
+    }
+  },
   "id": "in-20100124-2310",
   "manifests": [
     {

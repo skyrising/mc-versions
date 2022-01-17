@@ -1,5 +1,17 @@
 {
   "client": true,
+  "downloads": {
+    "client": {
+      "sha1": "6789c69ede3aedf83b800c76bea56855d38a0afc",
+      "size": 1893151,
+      "url": "https://archive.org/download/Minecraft-JE-Beta/Prereleases/b1.8-pre1-2/b1.8-pre1-2.jar"
+    },
+    "server": {
+      "sha1": "f77a3b3f48defde499d16d0aa7aaf65986c83f40",
+      "size": 617692,
+      "url": "https://files.betacraft.uk/server-archive/beta/prerelease/b1.8-pre1-091358.jar"
+    }
+  },
   "id": "b1.8-pre1-201109091357",
   "manifests": [
     {

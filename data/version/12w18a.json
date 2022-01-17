@@ -1,5 +1,22 @@
 {
   "client": true,
+  "downloads": {
+    "client": {
+      "sha1": "9e9ab992317048bee9158ad9d1e2bc758db2b4af",
+      "size": 4317820,
+      "url": "https://files.betacraft.pl/launcher/assets/versions/12w18a.jar"
+    },
+    "server": {
+      "sha1": "3fdb52ed2c179f53558e477f27e563f9ca3a6edf",
+      "size": 1583105,
+      "url": "https://assets.minecraft.net/12w18a/minecraft_server.jar"
+    },
+    "windows_server": {
+      "sha1": "b4ec9dc9fc1f0d157147f02c67b0669e5220b470",
+      "size": 1764353,
+      "url": "https://assets.minecraft.net/12w18a/Minecraft_Server.exe"
+    }
+  },
   "id": "12w18a",
   "manifests": [
     {

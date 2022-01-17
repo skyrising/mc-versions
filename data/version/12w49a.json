@@ -1,5 +1,22 @@
 {
   "client": true,
+  "downloads": {
+    "client": {
+      "sha1": "a5a4cf65cf89207eb6ad7371c9237973865eba81",
+      "size": 4990865,
+      "url": "https://assets.minecraft.net/12w49a/minecraft.jar"
+    },
+    "server": {
+      "sha1": "dcb4c0c0011c9b944e6548b6559af7afab22408c",
+      "size": 2057571,
+      "url": "https://assets.minecraft.net/12w49a/minecraft_server.jar"
+    },
+    "windows_server": {
+      "sha1": "885fa9f1c74caeb2e269b0f9f30aa68ee296ba1c",
+      "size": 2238819,
+      "url": "https://assets.minecraft.net/12w49a/Minecraft_Server.exe"
+    }
+  },
   "id": "12w49a",
   "manifests": [
     {

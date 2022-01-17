@@ -123,6 +123,7 @@ type VersionData = BaseVersionManifest & {
     omniId: VersionId
     client: boolean
     server: boolean
+    downloads: Record<string, DownloadInfo>
     launcher: boolean
     sharedMappings: boolean
     normalizedVersion?: VersionId
@@ -383,10 +384,15 @@ async function updateVersion(id: VersionId, manifests: Array<TempVersionManifest
     }
     data.releaseTime = releaseTime.toISOString().replace('.000Z', '+00:00')
     data.client = data.server = false
+    data.downloads = {}
     for (const m of manifests) {
         if (!m.downloads) continue
         if (m.downloads.client) data.client = true
         if (m.downloads.server || m.downloads.server_zip) data.server = true
+        for (const type in m.downloads) {
+            if (data.downloads[type]) continue
+            data.downloads[type] = m.downloads[type]
+        }
         m.localMirror = await getDownloads(m)
     }
     if (data.releaseTarget === undefined) {

@@ -1,5 +1,22 @@
 {
   "client": true,
+  "downloads": {
+    "client": {
+      "sha1": "b0f67f3105e32b1a905d934f1e56117ef45d7148",
+      "size": 1464960,
+      "url": "https://archive.org/download/Minecraft-JE-Beta/b1.7_01/b1.7_01.jar"
+    },
+    "server": {
+      "sha1": "2838451ebb627d71e5d245952a61e9d71e284f6c",
+      "size": 502611,
+      "url": "https://files.betacraft.uk/server-archive/beta/b1.7_01.jar"
+    },
+    "windows_server": {
+      "sha1": "042d333746c587d20db4e5d3ac7735cc0e24c503",
+      "size": 683347,
+      "url": "https://files.betacraft.uk/server-archive/beta/b1.7_01.exe"
+    }
+  },
   "id": "b1.7_01",
   "manifests": [
     {

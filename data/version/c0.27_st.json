@@ -1,5 +1,12 @@
 {
   "client": true,
+  "downloads": {
+    "client": {
+      "sha1": "aff4060249dd6152012218e120d7aad5e758de83",
+      "size": 280722,
+      "url": "https://archive.org/download/Minecraft-JE-Classic/c0.27_st/c0.27_st.jar"
+    }
+  },
   "id": "c0.27_st",
   "manifests": [
     {

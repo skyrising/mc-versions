@@ -1,5 +1,22 @@
 {
   "client": true,
+  "downloads": {
+    "client": {
+      "sha1": "5134e433afeba375c00bbdcd8aead1d3222813ee",
+      "size": 3988921,
+      "url": "https://launcher.mojang.com/v1/objects/5134e433afeba375c00bbdcd8aead1d3222813ee/client.jar"
+    },
+    "server": {
+      "sha1": "d0e0dab53361e16e154f5b6cba2a7d8e4323fb8e",
+      "size": 1345637,
+      "url": "https://files.betacraft.uk/server-archive/release/1.2/1.2.3.jar"
+    },
+    "windows_server": {
+      "sha1": "878d79a4ac4a9767bf7808c1203297c6c074d533",
+      "size": 1526373,
+      "url": "https://files.betacraft.uk/server-archive/release/1.2/1.2.3.exe"
+    }
+  },
   "id": "1.2.3",
   "manifests": [
     {

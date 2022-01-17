@@ -1,5 +1,27 @@
 {
   "client": true,
+  "downloads": {
+    "client": {
+      "sha1": "ba87774ed853139ce670ba836d038c4ae39316cc",
+      "size": 19625253,
+      "url": "https://launcher.mojang.com/v1/objects/ba87774ed853139ce670ba836d038c4ae39316cc/client.jar"
+    },
+    "client_mappings": {
+      "sha1": "13a8a8b0385c24336d5e01fd8debb569281222bb",
+      "size": 6472178,
+      "url": "https://launcher.mojang.com/v1/objects/13a8a8b0385c24336d5e01fd8debb569281222bb/client.txt"
+    },
+    "server": {
+      "sha1": "a730789b6b7afa5217bf2ec66057985e62b5c2b0",
+      "size": 43701324,
+      "url": "https://launcher.mojang.com/v1/objects/a730789b6b7afa5217bf2ec66057985e62b5c2b0/server.jar"
+    },
+    "server_mappings": {
+      "sha1": "299e2896d7f27360823fd089eda151cb7bc48a63",
+      "size": 4989977,
+      "url": "https://launcher.mojang.com/v1/objects/299e2896d7f27360823fd089eda151cb7bc48a63/server.txt"
+    }
+  },
   "id": "1.18_experimental-snapshot-6",
   "manifests": [
     {

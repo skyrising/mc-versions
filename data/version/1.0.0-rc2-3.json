@@ -1,5 +1,17 @@
 {
   "client": true,
+  "downloads": {
+    "client": {
+      "sha1": "6e54fbe19b7797f3e3a2cb9feb5da41a40926db8",
+      "size": 2242211,
+      "url": "https://archive.org/download/Minecraft-JE-Beta/1.0.0-rc2-3/1.0.0-rc2-3.jar"
+    },
+    "server": {
+      "sha1": "8ede92b8efc8ed53dbf3faa2c3a094df8e708509",
+      "size": 747334,
+      "url": "https://files.betacraft.uk/server-archive/release/1.0/prerelease/1.0.0-rc2-1656.jar"
+    }
+  },
   "id": "1.0.0-rc2-3",
   "manifests": [
     {

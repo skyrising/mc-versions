@@ -1,5 +1,17 @@
 {
   "client": true,
+  "downloads": {
+    "client": {
+      "sha1": "ee6386897fd6d7f777d4159fd45b26deaff14cff",
+      "size": 25186321,
+      "url": "https://launcher.mojang.com/v1/objects/ee6386897fd6d7f777d4159fd45b26deaff14cff/client.jar"
+    },
+    "server": {
+      "sha1": "853bf851bda5862b7f68baf93ae86fb90571ceca",
+      "size": 35954629,
+      "url": "https://launcher.mojang.com/v1/objects/853bf851bda5862b7f68baf93ae86fb90571ceca/server.jar"
+    }
+  },
   "id": "1.14.4-pre4",
   "manifests": [
     {

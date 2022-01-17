@@ -1,5 +1,22 @@
 {
   "client": true,
+  "downloads": {
+    "client": {
+      "sha1": "b6cb68afde1d9cf4a20cbf27fa90d0828bf440a4",
+      "size": 4731988,
+      "url": "https://launcher.mojang.com/v1/objects/b6cb68afde1d9cf4a20cbf27fa90d0828bf440a4/client.jar"
+    },
+    "server": {
+      "sha1": "01b6ea555c6978e6713e2a2dfd7fe19b1449ca54",
+      "size": 6134331,
+      "url": "https://launcher.mojang.com/v1/objects/01b6ea555c6978e6713e2a2dfd7fe19b1449ca54/server.jar"
+    },
+    "windows_server": {
+      "sha1": "a08ad9bdd208d0861cd62cef7251a2611b8217f5",
+      "size": 6530107,
+      "url": "https://launcher.mojang.com/v1/objects/a08ad9bdd208d0861cd62cef7251a2611b8217f5/windows_server.exe"
+    }
+  },
   "id": "1.6.2-091847",
   "manifests": [
     {

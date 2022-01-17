@@ -1,5 +1,12 @@
 {
   "client": true,
+  "downloads": {
+    "client": {
+      "sha1": "0b387d2087edda894fae4af00de5ac202dbffa7c",
+      "size": 248203,
+      "url": "https://archive.org/download/Minecraft-JE-Classic/c0.24_st_03/c0.24_st_03.jar"
+    }
+  },
   "id": "c0.24_st_03",
   "manifests": [
     {

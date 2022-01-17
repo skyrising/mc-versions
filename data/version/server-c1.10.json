@@ -1,5 +1,12 @@
 {
   "client": false,
+  "downloads": {
+    "server": {
+      "sha1": "cff6ed21f7fcfcef44dc6d29c8de9d99a4a3f788",
+      "size": 63738,
+      "url": "https://files.betacraft.uk/server-archive/classic/c1.10.jar"
+    }
+  },
   "id": "server-c1.10",
   "manifests": [
     {

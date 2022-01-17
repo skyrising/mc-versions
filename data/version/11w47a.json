@@ -1,5 +1,17 @@
 {
   "client": true,
+  "downloads": {
+    "client": {
+      "sha1": "4e327918708d22e7443fbadefb9831ca04af4b90",
+      "size": 2242242,
+      "url": "https://assets.minecraft.net/11w47a/minecraft.jar"
+    },
+    "server": {
+      "sha1": "62e447c26123d890fa0bd8fad58b1c3a50c5c4ba",
+      "size": 747345,
+      "url": "https://files.betacraft.uk/server-archive/release/1.1/prerelease/11w47a.jar"
+    }
+  },
   "id": "11w47a",
   "manifests": [
     {

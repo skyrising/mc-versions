@@ -1,5 +1,12 @@
 {
   "client": true,
+  "downloads": {
+    "client": {
+      "sha1": "7ccde270abacd028d3618be99537ccf7071a605b",
+      "size": 284844,
+      "url": "https://archive.org/download/Minecraft-JE-Classic/c0.28_01/c0.28_01.jar"
+    }
+  },
   "id": "c0.28_01",
   "manifests": [
     {

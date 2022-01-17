@@ -1,5 +1,17 @@
 {
   "client": true,
+  "downloads": {
+    "client": {
+      "sha1": "e109b297d2c4ee7a0bd6aed72f38f7e3185654cf",
+      "size": 2211261,
+      "url": "https://archive.org/download/Minecraft-JE-Beta/Prereleases/b1.9-pre5/b1.9-pre5.jar"
+    },
+    "server": {
+      "sha1": "7ec65beaaf1d3b619ca7effa91ff7d3d0fd168bd",
+      "size": 737796,
+      "url": "https://files.betacraft.uk/server-archive/beta/prerelease/b1.9-pre5.jar"
+    }
+  },
   "id": "b1.9-pre5",
   "manifests": [
     {

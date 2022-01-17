@@ -1,5 +1,17 @@
 {
   "client": true,
+  "downloads": {
+    "client": {
+      "sha1": "ad7960853437bcab86bd72c4a1b95f6fe19f4258",
+      "size": 1464858,
+      "url": "https://launcher.mojang.com/v1/objects/ad7960853437bcab86bd72c4a1b95f6fe19f4258/client.jar"
+    },
+    "server": {
+      "sha1": "0d841f7f651822120650a2e700832626f8206d89",
+      "size": 502549,
+      "url": "https://files.betacraft.uk/server-archive/beta/b1.7.jar"
+    }
+  },
   "id": "b1.7",
   "manifests": [
     {
