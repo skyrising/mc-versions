@@ -3,6 +3,13 @@
   "id": "1.2.1",
   "manifests": [
     {
+      "downloads": "525faad8d4b34b7853cbe9da28fcb9b5efd20578",
+      "downloadsId": 2,
+      "hash": "9ffb44afd8fc1e15fe38a45bd9681e64ed55b84e",
+      "type": "release",
+      "url": "../manifest/9/f/fb44afd8fc1e15fe38a45bd9681e64ed55b84e/1.2.1.json"
+    },
+    {
       "assetHash": "4759bad2824e419da9db32861fcdc3a274336532",
       "assetIndex": "pre-1.6",
       "downloads": "14eed9d73031d1a5a3bb473b555608757b65dbcb",
@@ -27,7 +34,7 @@
   },
   "releaseTarget": "1.2.1",
   "releaseTime": "2012-03-01T12:52:00+00:00",
-  "server": false,
+  "server": true,
   "sharedMappings": false,
   "world": {
     "format": "anvil"
