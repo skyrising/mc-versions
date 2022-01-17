@@ -6,15 +6,23 @@
       "assetHash": "4759bad2824e419da9db32861fcdc3a274336532",
       "assetIndex": "pre-1.6",
       "downloads": "c3db91cf11de9392d97a4f1024a9180ca22056fa",
-      "downloadsId": 1,
+      "downloadsId": 2,
       "hash": "6461b224f1e2935ff78fd95be1fe473e7d1fc61c",
       "lastModified": "2019-02-14T15:33:36+00:00",
       "time": "2011-11-17T22:00:00+00:00",
       "type": "release",
       "url": "../manifest/6/4/61b224f1e2935ff78fd95be1fe473e7d1fc61c/1.0.json"
+    },
+    {
+      "downloads": "e40b212209114a5082a9f851ec1cb7a2ade54799",
+      "downloadsId": 1,
+      "hash": "66e98bfad4ac9b845915a432c41cee67fc0ca2c7",
+      "type": "release",
+      "url": "../manifest/6/6/e98bfad4ac9b845915a432c41cee67fc0ca2c7/1.0.0.json"
     }
   ],
   "next": [
+    "1.0.1",
     "11w47a"
   ],
   "normalizedVersion": "1.0.0",
@@ -27,7 +35,7 @@
   },
   "releaseTarget": "1.0.0",
   "releaseTime": "2011-11-18T21:54:50+00:00",
-  "server": false,
+  "server": true,
   "sharedMappings": false,
   "world": {
     "format": "region"
