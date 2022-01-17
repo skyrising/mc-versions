@@ -5746,8 +5746,7 @@
       "omniId": "b1.9-pre6",
       "id": "b1.9-pre6",
       "type": "old_beta",
-      "url": "manifest/4/a/807dcabc4151327cae585f800a33cbf5271148/b1.9-pre6.json",
-      "time": "2013-08-06T14:00:00+03:00",
+      "url": "manifest/3/4/17005dc9adfb2f51771f8d8ed41fe9a76795bc/b1.9-pre6.json",
       "releaseTime": "2011-11-11T15:33:00+00:00",
       "details": "version/b1.9-pre6.json"
     },
@@ -5755,19 +5754,33 @@
       "omniId": "b1.9-pre5",
       "id": "b1.9-pre5",
       "type": "old_beta",
-      "url": "manifest/9/9/08814ef5d09e2b1940c5713d3c878566a768f3/b1.9-pre5.json",
-      "time": "2013-08-06T14:00:00+03:00",
+      "url": "manifest/7/4/4ed687b483fed5d2709c0ed80d520fcaad5932/b1.9-pre5.json",
       "releaseTime": "2011-10-27T14:36:00+00:00",
       "details": "version/b1.9-pre5.json"
     },
     {
-      "omniId": "b1.9-pre4-201110131434",
-      "id": "b1.9-pre4-2",
+      "omniId": "b1.9-pre4-201110131440",
+      "id": "b1.9-pre4-1440",
       "type": "old_beta",
-      "url": "manifest/e/9/b82f471a1c38cfad628d41a436f6aa63c6dd0e/b1.9-pre4-2.json",
-      "time": "2013-08-06T14:00:00+03:00",
+      "url": "manifest/e/8/4ab19484489434ba6e28c8e8f3acca4551f58c/b1.9-pre4-1440.json",
+      "releaseTime": "2011-10-13T14:40:58+00:00",
+      "details": "version/b1.9-pre4-201110131440.json"
+    },
+    {
+      "omniId": "b1.9-pre4-201110131434",
+      "id": "b1.9-pre4-1435",
+      "type": "old_beta",
+      "url": "manifest/3/0/48d44da1e4646f43dada41f17cc880d05b0dfa/b1.9-pre4-1435.json",
       "releaseTime": "2011-10-13T14:34:00+00:00",
       "details": "version/b1.9-pre4-201110131434.json"
+    },
+    {
+      "omniId": "b1.9-pre4-201110131425",
+      "id": "b1.9-pre4-1425",
+      "type": "old_beta",
+      "url": "manifest/8/4/7207fc4040060d73775e7778087eee25623927/b1.9-pre4-1425.json",
+      "releaseTime": "2011-10-13T14:25:26+00:00",
+      "details": "version/b1.9-pre4-201110131425.json"
     },
     {
       "omniId": "b1.9-pre3-201110061402",
@@ -5780,10 +5793,9 @@
     },
     {
       "omniId": "b1.9-pre3-201110061350",
-      "id": "b1.9-pre3-1",
+      "id": "b1.9-pre3",
       "type": "old_beta",
-      "url": "manifest/e/2/8d53ee1a5bf36a861ccb23fe75b8278c3c164d/b1.9-pre3-1.json",
-      "time": "2013-08-06T14:00:00+03:00",
+      "url": "manifest/3/3/51b1cf754a56abe76c67c88d555756fa151156/b1.9-pre3.json",
       "releaseTime": "2011-10-06T13:50:00+00:00",
       "details": "version/b1.9-pre3-201110061350.json"
     },
@@ -5791,8 +5803,7 @@
       "omniId": "b1.9-pre2",
       "id": "b1.9-pre2",
       "type": "old_beta",
-      "url": "manifest/5/d/b73cd7283c8ff6511d08e99b93b20b74c45854/b1.9-pre2.json",
-      "time": "2013-08-06T14:00:00+03:00",
+      "url": "manifest/a/1/eafae363f9217248493df6f079981090282c57/b1.9-pre2.json",
       "releaseTime": "2011-09-29T12:49:00+00:00",
       "details": "version/b1.9-pre2.json"
     },
@@ -5943,10 +5954,17 @@
       "omniId": "b1.6-tb3",
       "id": "b1.6-tb3",
       "type": "old_beta",
-      "url": "manifest/b/7/4d0454d967b8298648cb3042ff9b329eef2629/b1.6-tb3.json",
-      "time": "2013-08-06T07:33:30-07:00",
+      "url": "manifest/3/2/1f4e1a0bd5365a32cad3896c9ad3240af31f70/b1.6-tb3.json",
       "releaseTime": "2011-05-25T08:35:00+00:00",
       "details": "version/b1.6-tb3.json"
+    },
+    {
+      "omniId": "b1.6-pre-trailer",
+      "id": "b1.6-pre-trailer",
+      "type": "old_beta",
+      "url": "manifest/2/1/4e5e672c03b3f80b0b37263d3e4953cb4b1083/b1.6-pre-trailer.json",
+      "releaseTime": "2011-05-23T14:00:38+00:00",
+      "details": "version/b1.6-pre-trailer.json"
     },
     {
       "omniId": "b1.5_02",

@@ -1,0 +1,28 @@
+{
+  "client": false,
+  "id": "b1.6-pre-trailer",
+  "manifests": [
+    {
+      "downloads": "28b7aef062eb9b14b088b275ac70dbf8b7538d09",
+      "downloadsId": 1,
+      "hash": "214e5e672c03b3f80b0b37263d3e4953cb4b1083",
+      "type": "old_beta",
+      "url": "../manifest/2/1/4e5e672c03b3f80b0b37263d3e4953cb4b1083/b1.6-pre-trailer.json"
+    }
+  ],
+  "next": [
+    "b1.6-tb3"
+  ],
+  "normalizedVersion": "1.0.0-beta.1.6.0.pre+trailer",
+  "previous": [
+    "b1.5_01",
+    "b1.5_02"
+  ],
+  "protocol": {
+    "type": "modern",
+    "version": 11
+  },
+  "releaseTime": "2011-05-23T14:00:38+00:00",
+  "server": true,
+  "sharedMappings": false
+}

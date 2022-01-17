@@ -1,0 +1,28 @@
+{
+  "client": false,
+  "id": "b1.9-pre4-201110131440",
+  "manifests": [
+    {
+      "downloads": "1a8217f474042446b47e613a72e2f03f4c4c81a7",
+      "downloadsId": 1,
+      "hash": "e84ab19484489434ba6e28c8e8f3acca4551f58c",
+      "type": "old_beta",
+      "url": "../manifest/e/8/4ab19484489434ba6e28c8e8f3acca4551f58c/b1.9-pre4-1440.json"
+    }
+  ],
+  "next": [
+    "b1.9-pre5"
+  ],
+  "normalizedVersion": "1.0.0-pre.4+201110131440",
+  "previous": [
+    "b1.9-pre4-201110131434"
+  ],
+  "protocol": {
+    "type": "modern",
+    "version": 20
+  },
+  "releaseTarget": "1.0.0",
+  "releaseTime": "2011-10-13T14:40:58+00:00",
+  "server": true,
+  "sharedMappings": false
+}

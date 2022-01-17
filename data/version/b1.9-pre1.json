@@ -6,11 +6,18 @@
       "assetHash": "c0fd82e8ce9fbc93119e40d96d5a4e62cfa3f729",
       "assetIndex": "legacy",
       "downloads": "cefaa256d6951fe6edeab0b86b0ea0a853c4d927",
-      "downloadsId": 1,
+      "downloadsId": 2,
       "hash": "0d038ea46677b0f5e231ee9b3545450d24269842",
       "time": "2013-08-06T14:00:00+03:00",
       "type": "old_beta",
       "url": "../manifest/0/d/038ea46677b0f5e231ee9b3545450d24269842/b1.9-pre1.json"
+    },
+    {
+      "downloads": "3a1f3a5593a12fec2aa27e24f12cde298ebe5702",
+      "downloadsId": 1,
+      "hash": "609db408c86497fac22ab579f3084a050a3df46b",
+      "type": "old_beta",
+      "url": "../manifest/6/0/9db408c86497fac22ab579f3084a050a3df46b/b1.9-pre1.json"
     }
   ],
   "next": [
@@ -26,7 +33,7 @@
   },
   "releaseTarget": "1.0.0",
   "releaseTime": "2011-09-22T14:20:00+00:00",
-  "server": false,
+  "server": true,
   "sharedMappings": false,
   "world": {
     "format": "region"

@@ -3,6 +3,13 @@
   "id": "b1.9-pre4-201110131434",
   "manifests": [
     {
+      "downloads": "ee4611fc833e46fb6e22a47de5b132becb7f6128",
+      "downloadsId": 2,
+      "hash": "3048d44da1e4646f43dada41f17cc880d05b0dfa",
+      "type": "old_beta",
+      "url": "../manifest/3/0/48d44da1e4646f43dada41f17cc880d05b0dfa/b1.9-pre4-1435.json"
+    },
+    {
       "assetHash": "c0fd82e8ce9fbc93119e40d96d5a4e62cfa3f729",
       "assetIndex": "legacy",
       "downloads": "52994bb563a5376adb08dc6e0cde5efdc513b44e",
@@ -14,11 +21,13 @@
     }
   ],
   "next": [
+    "b1.9-pre4-201110131440",
     "b1.9-pre5"
   ],
   "normalizedVersion": "1.0.0-pre.4+201110131434",
   "previous": [
-    "b1.9-pre3-201110061402"
+    "b1.9-pre3-201110061402",
+    "b1.9-pre4-201110131425"
   ],
   "protocol": {
     "type": "modern",
@@ -26,7 +35,7 @@
   },
   "releaseTarget": "1.0.0",
   "releaseTime": "2011-10-13T14:34:00+00:00",
-  "server": false,
+  "server": true,
   "sharedMappings": false,
   "world": {
     "format": "region"

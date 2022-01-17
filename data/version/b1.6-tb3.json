@@ -3,6 +3,13 @@
   "id": "b1.6-tb3",
   "manifests": [
     {
+      "downloads": "ee963b85c41d5c55d81ac9acd10886b5fc2bb92e",
+      "downloadsId": 2,
+      "hash": "321f4e1a0bd5365a32cad3896c9ad3240af31f70",
+      "type": "old_beta",
+      "url": "../manifest/3/2/1f4e1a0bd5365a32cad3896c9ad3240af31f70/b1.6-tb3.json"
+    },
+    {
       "assetHash": "c0fd82e8ce9fbc93119e40d96d5a4e62cfa3f729",
       "assetIndex": "legacy",
       "downloads": "c840277919d2813c0139d8c7a9bffb28a614faab",
@@ -18,15 +25,14 @@
   ],
   "normalizedVersion": "1.0.0-beta.1.6.0.test.3",
   "previous": [
-    "b1.5_01",
-    "b1.5_02"
+    "b1.6-pre-trailer"
   ],
   "protocol": {
     "type": "modern",
     "version": 12
   },
   "releaseTime": "2011-05-25T08:35:00+00:00",
-  "server": false,
+  "server": true,
   "sharedMappings": false,
   "world": {
     "format": "region"

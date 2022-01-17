@@ -149,7 +149,8 @@
       "servers": [
         "b1.5",
         "b1.5_01",
-        "b1.5_02"
+        "b1.5_02",
+        "b1.6-pre-trailer"
       ]
     },
     {
@@ -157,7 +158,9 @@
       "clients": [
         "b1.6-tb3"
       ],
-      "servers": []
+      "servers": [
+        "b1.6-tb3"
+      ]
     },
     {
       "version": 13,
@@ -201,14 +204,18 @@
         "b1.8-pre1-201109081459",
         "b1.8-pre1-201109091357"
       ],
-      "servers": []
+      "servers": [
+        "b1.8-pre1-201109091357"
+      ]
     },
     {
       "version": 16,
       "clients": [
         "b1.8-pre2"
       ],
-      "servers": []
+      "servers": [
+        "b1.8-pre2"
+      ]
     },
     {
       "version": 17,
@@ -226,7 +233,9 @@
       "clients": [
         "b1.9-pre1"
       ],
-      "servers": []
+      "servers": [
+        "b1.9-pre1"
+      ]
     },
     {
       "version": 19,
@@ -235,21 +244,30 @@
         "b1.9-pre3-201110061350",
         "b1.9-pre3-201110061402"
       ],
-      "servers": []
+      "servers": [
+        "b1.9-pre2",
+        "b1.9-pre3-201110061350"
+      ]
     },
     {
       "version": 20,
       "clients": [
         "b1.9-pre4-201110131434"
       ],
-      "servers": []
+      "servers": [
+        "b1.9-pre4-201110131425",
+        "b1.9-pre4-201110131434",
+        "b1.9-pre4-201110131440"
+      ]
     },
     {
       "version": 21,
       "clients": [
         "b1.9-pre5"
       ],
-      "servers": []
+      "servers": [
+        "b1.9-pre5"
+      ]
     },
     {
       "version": 22,
@@ -266,6 +284,7 @@
         "11w50a"
       ],
       "servers": [
+        "b1.9-pre6",
         "11w48a",
         "11w49a",
         "11w50a"

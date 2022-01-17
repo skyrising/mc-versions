@@ -467,7 +467,7 @@ function normalizeVersion(omniId: VersionId, releaseTarget: VersionId | undefine
     if (parts[0].startsWith('b')) {
         const betaVersion = semver.coerce(parts[0].substring(1).replaceAll('_0', '.'))?.toString()
         if (parts[1] && parts[1].startsWith('pre')) {
-            return `1.0.0-beta.${betaVersion}.pre.${parts[1].substring(3)}${buildPart(2)}`
+            return `1.0.0-beta.${betaVersion}.pre${parts[1].length > 3 ? '.' + parts[1].substring(3) : ''}${buildPart(2)}`
         }
         if (parts[1] && parts[1].startsWith('tb')) {
             return `1.0.0-beta.${betaVersion}.test.${parts[1].substring(2)}${buildPart(2)}`
