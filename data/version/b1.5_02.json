@@ -1,0 +1,27 @@
+{
+  "client": false,
+  "id": "b1.5_02",
+  "manifests": [
+    {
+      "downloads": "0c87ed78bbb2b842a174dafcad8683bc3e9c2076",
+      "downloadsId": 1,
+      "hash": "947b4850ece2be5211143eecf59f2cbdfa832603",
+      "type": "old_beta",
+      "url": "../manifest/9/4/7b4850ece2be5211143eecf59f2cbdfa832603/b1.5_02.json"
+    }
+  ],
+  "next": [
+    "b1.6-tb3"
+  ],
+  "normalizedVersion": "1.0.0-beta.1.5.2",
+  "previous": [
+    "b1.5_01"
+  ],
+  "protocol": {
+    "type": "modern",
+    "version": 11
+  },
+  "releaseTime": "2011-04-20T13:16:30+00:00",
+  "server": true,
+  "sharedMappings": false
+}

@@ -6,7 +6,7 @@
       "assetHash": "4759bad2824e419da9db32861fcdc3a274336532",
       "assetIndex": "pre-1.6",
       "downloads": "18ed4e7da19ac5865ca452437b60d9f18e99eb4c",
-      "downloadsId": 1,
+      "downloadsId": 2,
       "hash": "3667c9664fb4b85b8fafb3da5e91a0c8a48d074e",
       "lastModified": "2019-02-14T15:33:37+00:00",
       "time": "2011-09-14T22:00:00+00:00",
@@ -17,11 +17,18 @@
       "assetHash": "c0fd82e8ce9fbc93119e40d96d5a4e62cfa3f729",
       "assetIndex": "legacy",
       "downloads": "18ed4e7da19ac5865ca452437b60d9f18e99eb4c",
-      "downloadsId": 1,
+      "downloadsId": 2,
       "hash": "f53e2801e1b69264b394cf1661565c5f3c3b9a0c",
       "time": "2016-02-02T15:37:47+00:00",
       "type": "old_beta",
       "url": "../manifest/f/5/3e2801e1b69264b394cf1661565c5f3c3b9a0c/b1.8.json"
+    },
+    {
+      "downloads": "c0ecbe134c3ceb9c17c225b1cdd749fb017edfca",
+      "downloadsId": 1,
+      "hash": "f3246e1d433f859560559c1ea4f2e0d271762af7",
+      "type": "old_beta",
+      "url": "../manifest/f/3/246e1d433f859560559c1ea4f2e0d271762af7/b1.8.json"
     }
   ],
   "next": [
@@ -36,7 +43,7 @@
     "version": 17
   },
   "releaseTime": "2011-09-14T09:42:00+00:00",
-  "server": false,
+  "server": true,
   "sharedMappings": false,
   "world": {
     "format": "region"

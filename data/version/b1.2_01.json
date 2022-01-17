@@ -3,6 +3,13 @@
   "id": "b1.2_01",
   "manifests": [
     {
+      "downloads": "75d8fb98fe5d3830d468f7bf13f51270cebb9e79",
+      "downloadsId": 2,
+      "hash": "c444a0d755faed20e334ad88d949541d01dd9649",
+      "type": "old_beta",
+      "url": "../manifest/c/4/44a0d755faed20e334ad88d949541d01dd9649/b1.2_01.json"
+    },
+    {
       "assetHash": "4759bad2824e419da9db32861fcdc3a274336532",
       "assetIndex": "pre-1.6",
       "downloads": "fb859642b43c4daa2d4c9c439e5a6b07ba9ed651",
@@ -36,7 +43,7 @@
     "version": 8
   },
   "releaseTime": "2011-01-14T13:26:00+00:00",
-  "server": false,
+  "server": true,
   "sharedMappings": false,
   "world": {
     "format": "alpha"

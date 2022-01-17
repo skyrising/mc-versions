@@ -148,7 +148,7 @@ async function collectVersions(hashMap: HashMap<string>, oldOmniVersions: HashMa
         const content = await Deno.readTextFile(file)
         let hash = sha1(content)
         const data: VersionManifest = sortObject(JSON.parse(content))
-        if (!data.downloads || !data.id.startsWith('server-') && (!data.assets || !data.assetIndex)) continue
+        if (!data.downloads || data.downloads.client && (!data.assets || !data.assetIndex)) continue
         const reformatted = JSON.stringify(data, null, 2)
         const reformattedHash = sha1(reformatted)
         if (reformattedHash !== hash) {
