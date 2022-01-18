@@ -4,6 +4,7 @@ import * as semver from 'https://deno.land/x/semver@v1.4.0/mod.ts'
 
 import {sha1, sortObject, sortObjectByValues, readdirRecursive, mkdirp, downloadFile, existsSync} from './utils.ts'
 
+const SCHEMA_BASE = 'https://skyrising.github.io/mc-versions/schemas/'
 const SNAPSHOT_TARGETS: Record<VersionId, [number, number]> = {
     '1.1': [12, 1],
     '1.2': [12, 8],
@@ -293,7 +294,10 @@ await Deno.writeTextFile(path.resolve(dataDir, 'release_targets.json'), JSON.str
 await Deno.writeTextFile(path.resolve(dataDir, 'normalized.json'), JSON.stringify(normalizedVersions, null, 2))
 for (const v of versions) {
     if (!v.data.next.length) console.log(v.data.id)
-    await Deno.writeTextFile(v.file, JSON.stringify(sortObject(v.data), null, 2))
+    await Deno.writeTextFile(v.file, JSON.stringify({
+        '$schema': new URL('version.json', SCHEMA_BASE).toString(),
+        ...sortObject(v.data)
+    }, null, 2))
 }
 mkdirp(protocolDir)
 const allowedProtocolFile = new Set(Object.keys(protocols).map(p => p + '.json'))
@@ -325,7 +329,10 @@ for await (const {name: f} of Deno.readDir(versionDir)) {
         console.log(`Deleting ${file}`)
     }
 }
-await Deno.writeTextFile(path.resolve(dataDir, 'version_manifest.json'), JSON.stringify(newManifest, null, 2))
+await Deno.writeTextFile(path.resolve(dataDir, 'version_manifest.json'), JSON.stringify({
+    '$schema': new URL('version_manifest.json', SCHEMA_BASE).toString(),
+    ...newManifest
+}, null, 2))
 await Deno.writeTextFile(path.resolve(dataDir, 'hash_map.json'), JSON.stringify(sortObject(hashMap), null, 2))
 await Deno.writeTextFile(path.resolve(dataDir, 'omni_id.json'), JSON.stringify(newOmniVersions, null, 2))
 
