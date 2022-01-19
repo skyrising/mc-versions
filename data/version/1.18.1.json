@@ -37,7 +37,9 @@
       "url": "../manifest/6/a/4d10c3db14229cf7028222072c50405079848c/1.18.1.json"
     }
   ],
-  "next": [],
+  "next": [
+    "22w03a"
+  ],
   "normalizedVersion": "1.18.1",
   "previous": [
     "1.18.1-rc3"

@@ -574,6 +574,15 @@
       "servers": [
         "1.18.1-rc3"
       ]
+    },
+    {
+      "version": 65,
+      "clients": [
+        "22w03a"
+      ],
+      "servers": [
+        "22w03a"
+      ]
     }
   ]
 }
