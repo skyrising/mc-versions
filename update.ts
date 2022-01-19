@@ -23,7 +23,7 @@ const SNAPSHOT_TARGETS: Record<VersionId, [number, number]> = {
     '1.15': [19, 46],
     '1.16': [20, 22], '1.16.2': [20, 30],
     '1.17': [21, 20],
-    '1.18': [21, 48]
+    '1.18': [21, 48], '1.18.2': [22, 10] // TODO: replace with actual week
 }
 
 const downloadsDir = Deno.env.get('MC_VERSIONS_DOWNLOADS')
