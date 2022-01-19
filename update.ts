@@ -290,7 +290,10 @@ for (const v of versions) {
         }
     }
 }
-await Deno.writeTextFile(path.resolve(dataDir, 'release_targets.json'), JSON.stringify(byReleaseTarget, null, 2))
+await Deno.writeTextFile(path.resolve(dataDir, 'release_targets.json'), JSON.stringify({
+    '$schema': new URL('release_targets.json', SCHEMA_BASE).toString(),
+    ...byReleaseTarget
+}, null, 2))
 await Deno.writeTextFile(path.resolve(dataDir, 'normalized.json'), JSON.stringify(normalizedVersions, null, 2))
 for (const v of versions) {
     if (!v.data.next.length) console.log(v.data.id)
@@ -313,7 +316,10 @@ for (const p in protocols) {
     const oldData: ProtocolData = existsSync(file) ? JSON.parse(await Deno.readTextFile(file)) : {type: p, versions: []}
     const data: ProtocolData = {...oldData}
     data.versions = Object.values(protocols[p as ProtocolType]!)
-    await Deno.writeTextFile(file, JSON.stringify(data, null, 2))
+    await Deno.writeTextFile(file, JSON.stringify({
+        '$schema': new URL('protocol.json', SCHEMA_BASE).toString(),
+        ...data
+    }, null, 2))
 }
 allVersions.sort(compareVersions)
 const newOmniVersions: HashMap<VersionId> = {}

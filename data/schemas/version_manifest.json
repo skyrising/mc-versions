@@ -21,6 +21,7 @@
     },
     "type": "object",
     "properties": {
+        "$schema": {"type": "string", "format": "uri"},
         "latest": {
             "type": "object",
             "patternProperties": {
@@ -57,8 +58,8 @@
                     }
                 },
                 "required": ["id", "omniId", "type", "releaseTime", "details"]
-            },
-            "additionalProperties": false
-        }
+            }
+        },
+        "additionalProperties": false
     }
 }
