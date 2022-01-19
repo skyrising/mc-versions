@@ -1,4 +1,5 @@
 {
+  "$schema": "https://skyrising.github.io/mc-versions/schemas/protocol.json",
   "type": "netty",
   "versions": [
     {
