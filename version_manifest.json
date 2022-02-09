@@ -5,11 +5,20 @@
     "classic_server": "server-c1.10.1",
     "alpha_server": "server-a0.2.8",
     "old_beta": "b1.9-pre6",
-    "snapshot": "22w05a",
+    "snapshot": "22w06a",
     "release": "1.18.1",
     "pending": "1.18_experimental-snapshot-7"
   },
   "versions": [
+    {
+      "omniId": "22w06a",
+      "id": "22w06a",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/manifest/9/9/f029f4bd35e3c7f89d2c213049b550e9249310/22w06a.json",
+      "time": "2022-02-09T16:47:48+00:00",
+      "releaseTime": "2022-02-09T16:47:48+00:00",
+      "details": "https://skyrising.github.io/mc-versions/version/22w06a.json"
+    },
     {
       "omniId": "22w05a",
       "id": "22w05a",
