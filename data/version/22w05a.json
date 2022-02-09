@@ -37,7 +37,9 @@
       "url": "../manifest/8/f/a6b18ba23279b11e49ea3c062790c82cf2c5dd/22w05a.json"
     }
   ],
-  "next": [],
+  "next": [
+    "22w06a"
+  ],
   "normalizedVersion": "1.18.2-alpha.22.5.a",
   "previous": [
     "22w03a"
