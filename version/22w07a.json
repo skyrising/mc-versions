@@ -31,12 +31,15 @@
       "downloads": "32357d4c23dcafe59c140c48077aa9b88426f982",
       "downloadsId": 1,
       "hash": "74b65350d01bbfcfc0b6a57dee9631d888b9900f",
+      "lastModified": "2022-02-16T17:00:36+00:00",
       "time": "2022-02-16T16:13:58+00:00",
       "type": "snapshot",
       "url": "https://skyrising.github.io/mc-versions/manifest/7/4/b65350d01bbfcfc0b6a57dee9631d888b9900f/22w07a.json"
     }
   ],
-  "next": [],
+  "next": [
+    "1.19_deep_dark_experimental_snapshot-1"
+  ],
   "normalizedVersion": "1.18.2-alpha.22.7.a",
   "previous": [
     "22w06a"
