@@ -611,6 +611,15 @@
       "servers": [
         "22w07a"
       ]
+    },
+    {
+      "version": 69,
+      "clients": [
+        "1.19_deep_dark_experimental_snapshot-1"
+      ],
+      "servers": [
+        "1.19_deep_dark_experimental_snapshot-1"
+      ]
     }
   ]
 }
