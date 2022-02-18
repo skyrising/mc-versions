@@ -483,6 +483,8 @@ function normalizeVersion(omniId: VersionId, releaseTarget: VersionId | undefine
         if (parts.length <= index) return ''
         return '+' + parts.slice(index).join('.')
     }
+
+    // Beta
     if (parts[0].startsWith('b')) {
         const betaVersion = semver.coerce(parts[0].substring(1).replaceAll('_0', '.'))?.toString()
         if (parts[1] && parts[1].startsWith('pre')) {
@@ -492,16 +494,22 @@ function normalizeVersion(omniId: VersionId, releaseTarget: VersionId | undefine
             return `1.0.0-beta.${betaVersion}.test.${parts[1].substring(2)}${buildPart(2)}`
         }
         if (betaVersion === '1.8.0' || betaVersion === '1.6.0') {
-            // Since we're already in the prerelease part we need to fix lexicographic ordering for these
+            // Since we're already in the pre-release part we need to fix lexicographic ordering for these
             return `1.0.0-beta.${betaVersion}.z${buildPart(1)}`
         }
         return `1.0.0-beta.${betaVersion}${buildPart(1)}`
     }
+
+    // Alpha
     if (parts[0].startsWith('a') && parts[0] !== 'af') {
         if (server) return '1.0.0-alpha.server.' + parts[0].substring(1).replaceAll('_0', '.') + buildPart(1)
         return '1.0.0-alpha.' + parts[0].substring(1).replaceAll('_0', '.') + buildPart(1)
     }
+
+    // Indev / Infdev
     if (parts[0].startsWith('in')) return '0.31.' + omniId.substring(omniId.indexOf('-') + 1).replace('-', '+')
+
+    // Classic
     if (parts[0].startsWith('c')) {
         // replace 0.0.x.y with 0.x.y
         if (numbers[1] === 0) numbers.shift()
@@ -511,13 +519,24 @@ function normalizeVersion(omniId: VersionId, releaseTarget: VersionId | undefine
         if (server) return `0.30.0-classic.server.${numbers[0]}.${numbers[1]}.${numbers[2] || 0}${plusComponents.length ? '+' + plusComponents.join('.') : ''}`
         return `${numbers[0]}.${numbers[1]}.${numbers[2] || 0}${plusComponents.length ? '+' + plusComponents.join('.') : ''}`
     }
+
+    // Pre-classic / RubyDung
     if (parts[0] === 'rd') {
         return `0.0.0-rd.${parts[1]}${buildPart(2)}`
     }
+
+    // Regular snapshot: {yy}w{ww}[a-z~]
     if (/^\d{2}w\d{2}.$/.test(parts[0])) {
         return properTarget + `-alpha.${numbers[0]}.${numbers[1]}.${letters[1] >= 'a' && letters[1] <= 'z' ? letters[1] : 'a'}${buildPart(1)}`
     }
+
+    // Experimental snapshots: Upper-case to sort before lower-case 'alpha'
+    // 1.18_experimental-snapshot-<n>
     if (letters[0] === 'experimental') return properTarget + '-Experimental.' + numbers[2]
+    // 1.19_deep_dark_experimental_snapshot-<n>
+    if (letters[2] === 'experimental') return properTarget + '-' + letters.slice(0, 3).map(part => part[0].toUpperCase() + part.slice(1)).join('.') + '.' + numbers[2]
+
+    // Pre-releases and release candidates
     if (parts[0] === releaseTarget) {
         if (parts.length === 1) return properTarget
         if (parts[1] && parts[1].startsWith('pre')) {
