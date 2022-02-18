@@ -31,6 +31,7 @@
       "downloads": "c24f7f3ab5374790f7e2f6477661c0c016452fb7",
       "downloadsId": 1,
       "hash": "f6a862c85ad13d9fa9f5cbaefc554429345e77ba",
+      "lastModified": "2022-02-18T16:06:57+00:00",
       "time": "2022-02-18T16:00:32+00:00",
       "type": "snapshot",
       "url": "https://skyrising.github.io/mc-versions/manifest/f/6/a862c85ad13d9fa9f5cbaefc554429345e77ba/1.18.2-pre1.json"
@@ -39,7 +40,7 @@
   "next": [],
   "normalizedVersion": "1.18.2-pre.1",
   "previous": [
-    "1.19_deep_dark_experimental_snapshot-1"
+    "22w07a"
   ],
   "protocol": {
     "type": "netty-snapshot",
