@@ -36,7 +36,9 @@
       "url": "../manifest/7/3/c267fd4ea4e7593c9b51b9f4d7e7babc9f5498/1_19_deep_dark_experimental_snapshot-1.json"
     }
   ],
-  "next": [],
+  "next": [
+    "1.18.2-pre1"
+  ],
   "normalizedVersion": "1.19.0-Deep.Dark.Experimental.1",
   "previous": [
     "1.18.1"
