@@ -620,6 +620,15 @@
       "servers": [
         "1.19_deep_dark_experimental_snapshot-1"
       ]
+    },
+    {
+      "version": 70,
+      "clients": [
+        "1.18.2-pre1"
+      ],
+      "servers": [
+        "1.18.2-pre1"
+      ]
     }
   ]
 }
