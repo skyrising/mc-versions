@@ -26,6 +26,16 @@
   "id": "1.18-rc1",
   "manifests": [
     {
+      "assetHash": "a464bc25b996269ec385c485eb090f633a5fbd4d",
+      "assetIndex": "1.18",
+      "downloads": "d6d046621e37ed2829eee12f46c16f183cdc90e3",
+      "downloadsId": 1,
+      "hash": "00d2764ca1fa8481b4a95d2a597b99d24b89b05d",
+      "time": "2021-11-25T14:28:49+00:00",
+      "type": "snapshot",
+      "url": "../manifest/0/0/d2764ca1fa8481b4a95d2a597b99d24b89b05d/1.18-rc1.json"
+    },
+    {
       "assetHash": "cb628cc0e2e76461209692e4d74b5c6fdd0fab9e",
       "assetIndex": "1.18",
       "downloads": "d6d046621e37ed2829eee12f46c16f183cdc90e3",
