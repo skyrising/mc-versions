@@ -23,7 +23,14 @@ const SNAPSHOT_TARGETS: Record<VersionId, [number, number]> = {
     '1.15': [19, 46],
     '1.16': [20, 22], '1.16.2': [20, 30],
     '1.17': [21, 20],
-    '1.18': [21, 48], '1.18.2': [22, 10] // TODO: replace with actual week
+    '1.18': [21, 48], '1.18.2': [22, 7]
+}
+
+const VALID_PREVIOUS: Record<string, string[]> = {
+    'release': ['snapshot'],
+    'snapshot': ['release'],
+    'pending': ['release', 'snapshot', 'old_beta'],
+    'old_beta': ['old_alpha']
 }
 
 const downloadsDir = Deno.env.get('MC_VERSIONS_DOWNLOADS')
@@ -221,8 +228,19 @@ for (let i = 0; i < versions.length; i++) {
     const v = versions[i]
     const {id} = v.data
     versionsById[id] = v.data
-    const defaultPrevious = i === 0 ? undefined : [versions[i - 1].data.id]
-    v.data.previous = v.data.previous || defaultPrevious
+    if (!v.data.previous) {
+        let defaultPrevious = undefined
+        for (let j = i - 1; j >= 0; j--) {
+            const prev = versions[j]
+            if (prev.info.type === v.info.type || (VALID_PREVIOUS[v.info.type] || []).includes(prev.info.type)) {
+                defaultPrevious = prev.data.id
+                break
+            }
+        }
+        if (defaultPrevious) {
+            v.data.previous = [defaultPrevious]
+        }
+    }
     v.data.next = []
     newManifest.versions.unshift(v.info)
     newManifest.latest[v.info.type] = v.info.id
