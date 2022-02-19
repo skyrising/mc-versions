@@ -1,0 +1,59 @@
+{
+  "$schema": "https://skyrising.github.io/mc-versions/schemas/version.json",
+  "client": true,
+  "downloads": {
+    "client": {
+      "sha1": "0ad80b317873e1f64a9a79af09a02ddef62ce67c",
+      "size": 15543966,
+      "url": "https://launcher.mojang.com/v1/objects/0ad80b317873e1f64a9a79af09a02ddef62ce67c/client.jar"
+    },
+    "client_mappings": {
+      "sha1": "5c9745ba8db67bcc95e6de65a3a6dd1d4c655726",
+      "size": 4977849,
+      "url": "https://launcher.mojang.com/v1/objects/5c9745ba8db67bcc95e6de65a3a6dd1d4c655726/client.txt"
+    },
+    "server": {
+      "sha1": "0cc9a1582949297c8f1ca83b937c8d84ad295ffe",
+      "size": 36179338,
+      "url": "https://launcher.mojang.com/v1/objects/0cc9a1582949297c8f1ca83b937c8d84ad295ffe/server.jar"
+    },
+    "server_mappings": {
+      "sha1": "44b2ca1d4677f3fffaa0333c87a42a9449e0bc52",
+      "size": 3741110,
+      "url": "https://launcher.mojang.com/v1/objects/44b2ca1d4677f3fffaa0333c87a42a9449e0bc52/server.txt"
+    }
+  },
+  "id": "combat-5",
+  "manifests": [
+    {
+      "assetHash": "dfe02c9c22e0809ec987a54b5d2a499f26df5238",
+      "assetIndex": "1.15",
+      "downloads": "e50d273b763e27655c0e2796ca35acbd0bd54509",
+      "downloadsId": 1,
+      "hash": "fbc31a1afaaee33a4c25d307c137b5cba01314a5",
+      "time": "2020-01-15T09:46:35+00:00",
+      "type": "pending",
+      "url": "../manifest/f/b/c31a1afaaee33a4c25d307c137b5cba01314a5/1_15_combat-6.json"
+    }
+  ],
+  "next": [
+    "combat-6"
+  ],
+  "normalizedVersion": "1.15.2-pre.1.combat.5",
+  "previous": [
+    "combat-4",
+    "1.15.2-pre1"
+  ],
+  "protocol": {
+    "type": "netty",
+    "version": 600
+  },
+  "releaseTarget": "combat",
+  "releaseTime": "2020-01-15T09:46:35+00:00",
+  "server": true,
+  "sharedMappings": true,
+  "world": {
+    "format": "anvil",
+    "version": 1343
+  }
+}

@@ -2665,6 +2665,33 @@
       ]
     },
     {
+      "version": 500,
+      "clients": [
+        "combat-1"
+      ],
+      "servers": [
+        "combat-1"
+      ]
+    },
+    {
+      "version": 501,
+      "clients": [
+        "combat-2"
+      ],
+      "servers": [
+        "combat-2"
+      ]
+    },
+    {
+      "version": 502,
+      "clients": [
+        "combat-3"
+      ],
+      "servers": [
+        "combat-3"
+      ]
+    },
+    {
       "version": 550,
       "clients": [
         "19w34a"
@@ -2907,6 +2934,17 @@
       ],
       "servers": [
         "1.15.2"
+      ]
+    },
+    {
+      "version": 600,
+      "clients": [
+        "combat-4",
+        "combat-5"
+      ],
+      "servers": [
+        "combat-4",
+        "combat-5"
       ]
     },
     {
@@ -3327,6 +3365,39 @@
       "servers": [
         "1.18",
         "1.18.1"
+      ]
+    },
+    {
+      "version": 801,
+      "clients": [
+        "combat-6"
+      ],
+      "servers": [
+        "combat-6"
+      ]
+    },
+    {
+      "version": 802,
+      "clients": [
+        "combat-7a",
+        "combat-7b",
+        "combat-7c"
+      ],
+      "servers": [
+        "combat-7a",
+        "combat-7b",
+        "combat-7c"
+      ]
+    },
+    {
+      "version": 803,
+      "clients": [
+        "combat-8b",
+        "combat-8c"
+      ],
+      "servers": [
+        "combat-8b",
+        "combat-8c"
       ]
     }
   ]

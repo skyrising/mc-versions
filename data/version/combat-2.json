@@ -1,0 +1,49 @@
+{
+  "$schema": "https://skyrising.github.io/mc-versions/schemas/version.json",
+  "client": true,
+  "downloads": {
+    "client": {
+      "sha1": "307045ecb6de9a9436d333d32440f5dbfc367c20",
+      "size": 25194539,
+      "url": "https://launcher.mojang.com/v1/objects/307045ecb6de9a9436d333d32440f5dbfc367c20/client.jar"
+    },
+    "server": {
+      "sha1": "dbed2de0763a834bfaa851c0478c56aeee654010",
+      "size": 35960461,
+      "url": "https://launcher.mojang.com/v1/objects/dbed2de0763a834bfaa851c0478c56aeee654010/server.jar"
+    }
+  },
+  "id": "combat-2",
+  "manifests": [
+    {
+      "assetHash": "695d8e3d95465bece605c92e9b0385278018eff9",
+      "assetIndex": "1.14",
+      "downloads": "6dbcda0c01d8bf6c922eeca6c18e627f97025212",
+      "downloadsId": 1,
+      "hash": "5ea9095f96f4ba95f4b28d3ce214ac9b1363e6dc",
+      "time": "2019-08-13T07:33:42+00:00",
+      "type": "pending",
+      "url": "../manifest/5/e/a9095f96f4ba95f4b28d3ce214ac9b1363e6dc/1_14_combat-0.json"
+    }
+  ],
+  "next": [
+    "combat-3"
+  ],
+  "normalizedVersion": "1.14.5-combat.2",
+  "previous": [
+    "combat-1",
+    "1.14.4"
+  ],
+  "protocol": {
+    "type": "netty",
+    "version": 501
+  },
+  "releaseTarget": "combat",
+  "releaseTime": "2019-08-13T07:33:42+00:00",
+  "server": true,
+  "sharedMappings": true,
+  "world": {
+    "format": "anvil",
+    "version": 1343
+  }
+}

@@ -767,6 +767,51 @@
       "details": "version/1.16.3-rc1.json"
     },
     {
+      "omniId": "combat-8c",
+      "id": "1.16_combat-6",
+      "type": "pending",
+      "url": "manifest/e/8/bf4932e7d2d8d55292d52d70587da5c8586953/1_16_combat-6.json",
+      "time": "2020-08-26T06:24:28+00:00",
+      "releaseTime": "2020-08-26T06:24:28+00:00",
+      "details": "version/combat-8c.json"
+    },
+    {
+      "omniId": "combat-8b",
+      "id": "1.16_combat-5",
+      "type": "pending",
+      "url": "manifest/6/9/16185cb0a0ba7f2c2ca29f17ac2cbb80283dbb/1_16_combat-5.json",
+      "time": "2020-08-21T09:23:13+00:00",
+      "releaseTime": "2020-08-21T09:23:13+00:00",
+      "details": "version/combat-8b.json"
+    },
+    {
+      "omniId": "combat-7c",
+      "id": "1.16_combat-3",
+      "type": "pending",
+      "url": "manifest/c/e/5ae635b05b5684fcda542f6325027b3b34b2dc/1_16_combat-3.json",
+      "time": "2020-08-14T09:02:15+00:00",
+      "releaseTime": "2020-08-14T09:02:15+00:00",
+      "details": "version/combat-7c.json"
+    },
+    {
+      "omniId": "combat-7b",
+      "id": "1.16_combat-2",
+      "type": "pending",
+      "url": "manifest/5/1/88053b642f376b1b1a9bafd9c9ff9333d13252/1_16_combat-2.json",
+      "time": "2020-08-13T11:56:30+00:00",
+      "releaseTime": "2020-08-13T11:56:30+00:00",
+      "details": "version/combat-7b.json"
+    },
+    {
+      "omniId": "combat-7a",
+      "id": "1.16_combat-1",
+      "type": "pending",
+      "url": "manifest/f/6/bf943c4e294c179927e339450ac27ccaf6cd65/1_16_combat-1.json",
+      "time": "2020-08-12T14:07:25+00:00",
+      "releaseTime": "2020-08-12T14:07:25+00:00",
+      "details": "version/combat-7a.json"
+    },
+    {
       "omniId": "1.16.2",
       "id": "1.16.2",
       "type": "release",
@@ -792,6 +837,15 @@
       "time": "2020-08-07T14:35:39+00:00",
       "releaseTime": "2020-08-07T14:35:39+00:00",
       "details": "version/1.16.2-rc1.json"
+    },
+    {
+      "omniId": "combat-6",
+      "id": "1.16_combat-0",
+      "type": "pending",
+      "url": "manifest/9/f/094e9a21879e0dfc891404a58245e18774776a/1_16_combat-0.json",
+      "time": "2020-08-07T10:44:47+00:00",
+      "releaseTime": "2020-08-07T10:44:47+00:00",
+      "details": "version/combat-6.json"
     },
     {
       "omniId": "1.16.2-pre3",
@@ -1163,6 +1217,15 @@
       "details": "version/1.15.2-pre2.json"
     },
     {
+      "omniId": "combat-5",
+      "id": "1.15_combat-6",
+      "type": "pending",
+      "url": "manifest/f/b/c31a1afaaee33a4c25d307c137b5cba01314a5/1_15_combat-6.json",
+      "time": "2020-01-15T09:46:35+00:00",
+      "releaseTime": "2020-01-15T09:46:35+00:00",
+      "details": "version/combat-5.json"
+    },
+    {
       "omniId": "1.15.2-pre1",
       "id": "1.15.2-pre1",
       "type": "snapshot",
@@ -1235,6 +1298,15 @@
       "details": "version/1.15-pre4.json"
     },
     {
+      "omniId": "combat-4",
+      "id": "1.15_combat-1",
+      "type": "pending",
+      "url": "manifest/9/a/539372b7b123fb647b200aa7a9ed1335c1dc74/1_15_combat-1.json",
+      "time": "2019-11-29T15:41:39+00:00",
+      "releaseTime": "2019-11-29T15:41:39+00:00",
+      "details": "version/combat-4.json"
+    },
+    {
       "omniId": "1.15-pre3",
       "id": "1.15-pre3",
       "type": "snapshot",
@@ -1296,6 +1368,15 @@
       "time": "2019-11-07T16:19:20+00:00",
       "releaseTime": "2019-11-07T16:19:20+00:00",
       "details": "version/19w45a.json"
+    },
+    {
+      "omniId": "combat-3",
+      "id": "1.14_combat-3",
+      "type": "pending",
+      "url": "manifest/6/e/0e17ea55223ad12e27eb323e6bc33d54df7f37/1_14_combat-3.json",
+      "time": "2019-10-31T14:31:38+00:00",
+      "releaseTime": "2019-10-31T14:31:38+00:00",
+      "details": "version/combat-3.json"
     },
     {
       "omniId": "19w44a",
@@ -1397,6 +1478,15 @@
       "details": "version/19w34a.json"
     },
     {
+      "omniId": "combat-2",
+      "id": "1.14_combat-0",
+      "type": "pending",
+      "url": "manifest/5/e/a9095f96f4ba95f4b28d3ce214ac9b1363e6dc/1_14_combat-0.json",
+      "time": "2019-08-13T07:33:42+00:00",
+      "releaseTime": "2019-08-13T07:33:42+00:00",
+      "details": "version/combat-2.json"
+    },
+    {
       "omniId": "1.14.4",
       "id": "1.14.4",
       "type": "release",
@@ -1476,6 +1566,15 @@
       "time": "2019-06-24T12:52:52+00:00",
       "releaseTime": "2019-06-24T12:52:52+00:00",
       "details": "version/1.14.3.json"
+    },
+    {
+      "omniId": "combat-1",
+      "id": "1.14_combat-212796",
+      "type": "pending",
+      "url": "manifest/f/4/cd670ed8f371f305e11310fffedf059cbc98db/1_14_combat-212796.json",
+      "time": "2019-06-20T13:23:44+00:00",
+      "releaseTime": "2019-06-20T13:23:44+00:00",
+      "details": "version/combat-1.json"
     },
     {
       "omniId": "1.14.3-pre4",
