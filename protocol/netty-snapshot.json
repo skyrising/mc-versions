@@ -629,6 +629,15 @@
       "servers": [
         "1.18.2-pre1"
       ]
+    },
+    {
+      "version": 71,
+      "clients": [
+        "1.18.2-pre2"
+      ],
+      "servers": [
+        "1.18.2-pre2"
+      ]
     }
   ]
 }

@@ -37,7 +37,9 @@
       "url": "https://skyrising.github.io/mc-versions/manifest/f/6/a862c85ad13d9fa9f5cbaefc554429345e77ba/1.18.2-pre1.json"
     }
   ],
-  "next": [],
+  "next": [
+    "1.18.2-pre2"
+  ],
   "normalizedVersion": "1.18.2-pre.1",
   "previous": [
     "22w07a"
