@@ -5,11 +5,20 @@
     "classic_server": "server-c1.10.1",
     "alpha_server": "server-a0.2.8",
     "old_beta": "b1.9-pre6",
-    "snapshot": "1.18.2-pre1",
+    "snapshot": "1.18.2-pre2",
     "release": "1.18.1",
     "pending": "1.19_deep_dark_experimental_snapshot-1"
   },
   "versions": [
+    {
+      "omniId": "1.18.2-pre2",
+      "id": "1.18.2-pre2",
+      "type": "snapshot",
+      "url": "manifest/2/2/344cb3874c895654b0ee10ddec30e311cf348e/1.18.2-pre2.json",
+      "time": "2022-02-21T15:26:19+00:00",
+      "releaseTime": "2022-02-21T15:26:19+00:00",
+      "details": "version/1.18.2-pre2.json"
+    },
     {
       "omniId": "1.18.2-pre1",
       "id": "1.18.2-pre1",
