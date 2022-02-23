@@ -638,6 +638,15 @@
       "servers": [
         "1.18.2-pre2"
       ]
+    },
+    {
+      "version": 72,
+      "clients": [
+        "1.18.2-pre3"
+      ],
+      "servers": [
+        "1.18.2-pre3"
+      ]
     }
   ]
 }
