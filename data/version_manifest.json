@@ -5,11 +5,20 @@
     "classic_server": "server-c1.10.1",
     "alpha_server": "server-a0.2.8",
     "old_beta": "b1.9-pre6",
-    "snapshot": "1.18.2-pre2",
+    "snapshot": "1.18.2-pre3",
     "release": "1.18.1",
     "pending": "1.19_deep_dark_experimental_snapshot-1"
   },
   "versions": [
+    {
+      "omniId": "1.18.2-pre3",
+      "id": "1.18.2-pre3",
+      "type": "snapshot",
+      "url": "manifest/3/f/e4f886bc85f0a960b81f6cedd8d4ee5964328a/1.18.2-pre3.json",
+      "time": "2022-02-23T15:23:12+00:00",
+      "releaseTime": "2022-02-23T15:23:12+00:00",
+      "details": "version/1.18.2-pre3.json"
+    },
     {
       "omniId": "1.18.2-pre2",
       "id": "1.18.2-pre2",
@@ -23,7 +32,7 @@
       "omniId": "1.18.2-pre1",
       "id": "1.18.2-pre1",
       "type": "snapshot",
-      "url": "manifest/f/6/a862c85ad13d9fa9f5cbaefc554429345e77ba/1.18.2-pre1.json",
+      "url": "manifest/a/d/acb61a765a02d5109c24aba4992f9124046b6d/1.18.2-pre1.json",
       "time": "2022-02-18T16:00:32+00:00",
       "releaseTime": "2022-02-18T16:00:32+00:00",
       "details": "version/1.18.2-pre1.json"
@@ -41,7 +50,7 @@
       "omniId": "22w07a",
       "id": "22w07a",
       "type": "snapshot",
-      "url": "manifest/2/d/e28a77bef665f6079ceada0b3c35bffd176315/22w07a.json",
+      "url": "manifest/7/9/924e4a0c4474cd071ead2b4f656a16788b6f41/22w07a.json",
       "time": "2022-02-16T16:13:58+00:00",
       "releaseTime": "2022-02-16T16:13:58+00:00",
       "details": "version/22w07a.json"
@@ -68,7 +77,7 @@
       "omniId": "22w03a",
       "id": "22w03a",
       "type": "snapshot",
-      "url": "manifest/6/e/6fc93e3dc0eaf691a9f1dc3f128123f42be4e3/22w03a.json",
+      "url": "manifest/0/9/4b0216a08956af7511eda031d79289c5957e33/22w03a.json",
       "time": "2022-01-19T16:04:59+00:00",
       "releaseTime": "2022-01-19T16:04:59+00:00",
       "details": "version/22w03a.json"
@@ -86,7 +95,7 @@
       "omniId": "1.18.1-rc3",
       "id": "1.18.1-rc3",
       "type": "snapshot",
-      "url": "manifest/d/a/f7bd28c675dddff05829d159ce42330d2ab14d/1.18.1-rc3.json",
+      "url": "manifest/d/c/6ebe7002d09e7207eebce758cd02a95972bde6/1.18.1-rc3.json",
       "time": "2021-12-10T03:36:38+00:00",
       "releaseTime": "2021-12-10T03:36:38+00:00",
       "details": "version/1.18.1-rc3.json"
@@ -95,7 +104,7 @@
       "omniId": "1.18.1-rc2",
       "id": "1.18.1-rc2",
       "type": "snapshot",
-      "url": "manifest/a/1/8fe897506a3ab818ae251b0b12f0abfd611b75/1.18.1-rc2.json",
+      "url": "manifest/7/e/2a747abbdbfba746530b3265441cd750a18868/1.18.1-rc2.json",
       "time": "2021-12-08T12:29:36+00:00",
       "releaseTime": "2021-12-08T12:29:36+00:00",
       "details": "version/1.18.1-rc2.json"
@@ -104,7 +113,7 @@
       "omniId": "1.18.1-rc1",
       "id": "1.18.1-rc1",
       "type": "snapshot",
-      "url": "manifest/8/0/e77e1936b70f1ed9c45e84ee422dc9d4474ee4/1.18.1-rc1.json",
+      "url": "manifest/6/a/694099f55864e0775f69e5ce17e2c9b8c2834d/1.18.1-rc1.json",
       "time": "2021-12-07T15:52:47+00:00",
       "releaseTime": "2021-12-07T15:52:47+00:00",
       "details": "version/1.18.1-rc1.json"
@@ -113,7 +122,7 @@
       "omniId": "1.18.1-pre1",
       "id": "1.18.1-pre1",
       "type": "snapshot",
-      "url": "manifest/d/1/c1adfc0568e899d9aa7a5d1f511f2db59b5141/1.18.1-pre1.json",
+      "url": "manifest/9/d/a10d205c37b35d5512f8f6818f2b0eb6307679/1.18.1-pre1.json",
       "time": "2021-12-03T13:45:38+00:00",
       "releaseTime": "2021-12-03T13:45:38+00:00",
       "details": "version/1.18.1-pre1.json"
@@ -122,7 +131,7 @@
       "omniId": "1.18",
       "id": "1.18",
       "type": "release",
-      "url": "manifest/b/b/4c10b0c4b3e7f64bb0eeaebe674cf915aa602e/1.18.json",
+      "url": "manifest/e/f/47b90dd51d411ec6a2ad1bb8ff0305c6baed2f/1.18.json",
       "time": "2021-11-30T09:16:29+00:00",
       "releaseTime": "2021-11-30T09:16:29+00:00",
       "details": "version/1.18.json"
@@ -194,7 +203,7 @@
       "omniId": "1.18-pre5",
       "id": "1.18-pre5",
       "type": "snapshot",
-      "url": "manifest/d/d/14810f38c608e5ac68031818a57a3b1561aade/1.18-pre5.json",
+      "url": "manifest/0/0/72e338a86de1b3a2eac7f1d7240cf12b2db1c7/1.18-pre5.json",
       "time": "2021-11-19T15:47:09+00:00",
       "releaseTime": "2021-11-19T15:47:09+00:00",
       "details": "version/1.18-pre5.json"
@@ -212,7 +221,7 @@
       "omniId": "1.18-pre3",
       "id": "1.18-pre3",
       "type": "snapshot",
-      "url": "manifest/3/1/23ec3ee2d1ea85e19a89dfb200775f341835f3/1.18-pre3.json",
+      "url": "manifest/5/3/7198e45ce0a7de6a8413e5febc27e8f3087da4/1.18-pre3.json",
       "time": "2021-11-17T16:04:25+00:00",
       "releaseTime": "2021-11-17T16:04:25+00:00",
       "details": "version/1.18-pre3.json"
@@ -221,7 +230,7 @@
       "omniId": "1.18-pre2",
       "id": "1.18-pre2",
       "type": "snapshot",
-      "url": "manifest/f/0/88aeb0c8a3b4dc6661be8b82d7c3dff33a2e80/1.18-pre2.json",
+      "url": "manifest/e/0/08e5e3457ef3c94197593f7b218d7d8fc46376/1.18-pre2.json",
       "time": "2021-11-16T17:04:48+00:00",
       "releaseTime": "2021-11-16T17:04:48+00:00",
       "details": "version/1.18-pre2.json"
@@ -239,7 +248,7 @@
       "omniId": "21w44a",
       "id": "21w44a",
       "type": "snapshot",
-      "url": "manifest/d/2/479cf30a2fb287695a0edd969437d695797086/21w44a.json",
+      "url": "manifest/1/5/c74477d9c8e34fcd7084f6463f941aed68da4e/21w44a.json",
       "time": "2021-11-03T16:14:34+00:00",
       "releaseTime": "2021-11-03T16:14:34+00:00",
       "details": "version/21w44a.json"
@@ -257,7 +266,7 @@
       "omniId": "21w42a",
       "id": "21w42a",
       "type": "snapshot",
-      "url": "manifest/9/0/3b9b197558385ceb565f239c6af9f59b22e3b2/21w42a.json",
+      "url": "manifest/3/1/3f2e7d9ed041ef917d38ded58fc1d9f670ddbf/21w42a.json",
       "time": "2021-10-20T12:41:25+00:00",
       "releaseTime": "2021-10-20T12:41:25+00:00",
       "details": "version/21w42a.json"
@@ -275,7 +284,7 @@
       "omniId": "21w40a",
       "id": "21w40a",
       "type": "snapshot",
-      "url": "manifest/c/0/ff9b7f28699f50273511a99fbfdc8461173b16/21w40a.json",
+      "url": "manifest/9/7/dac42539bdbadc7e2432cc68c3327475dddc37/21w40a.json",
       "time": "2021-10-07T11:17:50+00:00",
       "releaseTime": "2021-10-07T11:17:50+00:00",
       "details": "version/21w40a.json"
@@ -284,7 +293,7 @@
       "omniId": "21w39a",
       "id": "21w39a",
       "type": "snapshot",
-      "url": "manifest/6/0/669b3d2b6f0f9090ce7069927fa4cee94a7509/21w39a.json",
+      "url": "manifest/8/e/383dd8b2ce65212eeb8a4090e81484dc919a22/21w39a.json",
       "time": "2021-09-29T16:27:05+00:00",
       "releaseTime": "2021-09-29T16:27:05+00:00",
       "details": "version/21w39a.json"
@@ -293,7 +302,7 @@
       "omniId": "21w38a",
       "id": "21w38a",
       "type": "snapshot",
-      "url": "manifest/a/a/f91d431ea2570778c664275b5e3ecb10221607/21w38a.json",
+      "url": "manifest/3/b/6329581872e87aada76c12d507f3b5d1c63153/21w38a.json",
       "time": "2021-09-23T14:36:06+00:00",
       "releaseTime": "2021-09-23T14:36:06+00:00",
       "details": "version/21w38a.json"
