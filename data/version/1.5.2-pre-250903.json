@@ -8,14 +8,14 @@
       "url": "https://files.betacraft.uk/launcher/assets/versions/1.5.2-pre-1.jar"
     },
     "server": {
-      "sha1": "f9ae3f651319151ce99a0bfad6b34fa16eb6775f",
-      "size": 2360903,
-      "url": "https://launcher.mojang.com/v1/objects/f9ae3f651319151ce99a0bfad6b34fa16eb6775f/server.jar"
+      "sha1": "6ab4925e411b94db0dbc5dc7e11cb941254c8104",
+      "size": 2360917,
+      "url": "https://files.betacraft.uk/server-archive/release/1.5/prerelease/1.5.2-pre-250903.jar"
     },
     "windows_server": {
-      "sha1": "49fded489aae76e012048c3c81dcc323384ef781",
-      "size": 2542151,
-      "url": "https://launcher.mojang.com/v1/objects/49fded489aae76e012048c3c81dcc323384ef781/windows_server.exe"
+      "sha1": "68b1a48ec2dd5fc780005135d46321c7b4d593ba",
+      "size": 2542165,
+      "url": "https://files.betacraft.uk/server-archive/release/1.5/prerelease/1.5.2-pre-250903.exe"
     }
   },
   "id": "1.5.2-pre-250903",
@@ -23,12 +23,12 @@
     {
       "assetHash": "770572e819335b6c0a053f8378ad88eda189fc14",
       "assetIndex": "legacy",
-      "downloads": "ce4e752bf45d5fdeb9c645a74ade3ed5ed1882bb",
+      "downloads": "b53b6bc21b5fadc10985bc560526221198a17b65",
       "downloadsId": 1,
-      "hash": "c53f31031246d411ee04b7ad90327bb4ead70d88",
+      "hash": "2dc243b73a4b6f19f612bc41671cfcd836bb822e",
       "time": "2013-04-25T15:45:00+00:00",
       "type": "release",
-      "url": "../manifest/c/5/3f31031246d411ee04b7ad90327bb4ead70d88/1.5.2-pre-04260937.json"
+      "url": "../manifest/2/d/c243b73a4b6f19f612bc41671cfcd836bb822e/1.5.2-pre-250903.json"
     }
   ],
   "next": [
