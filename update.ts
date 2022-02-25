@@ -4,6 +4,11 @@ import * as semver from 'https://deno.land/x/semver@v1.4.0/mod.ts'
 
 import {sha1, sortObject, sortObjectByValues, readdirRecursive, mkdirp, downloadFile, existsSync} from './utils.ts'
 
+const META_URLS = [
+    'https://launchermeta.mojang.com/mc/game/version_manifest.json',
+    'https://meta.skyrising.xyz/mc/game/version_manifest.json'
+]
+
 const SCHEMA_BASE = 'https://skyrising.github.io/mc-versions/schemas/'
 const SNAPSHOT_TARGETS: Record<VersionId, [number, number]> = {
     '1.1': [12, 1],
@@ -366,11 +371,14 @@ await Deno.writeTextFile(path.resolve(dataDir, 'last_modified.json'), JSON.strin
 
 
 async function getURLs(): Promise<Array<URL>> {
-    const mojangManifest = await (await fetch('https://launchermeta.mojang.com/mc/game/version_manifest.json')).json() as MainManifest
-    return [
-        ...mojangManifest.versions.map(v => v.url),
-        ...Deno.args
-    ].map(u => new URL(u))
+    const urls = new Set(Deno.args)
+    await Promise.all(META_URLS.map(async metaUrl => {
+        const manifest = await (await fetch(metaUrl)).json() as MainManifest
+        for (const version of manifest.versions) {
+            urls.add(version.url)
+        }
+    }))
+    return [...urls].map(u => new URL(u))
 }
 
 function walkHashMap(hash: string) {
