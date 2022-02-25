@@ -26,6 +26,17 @@
   "id": "1.18.1",
   "manifests": [
     {
+      "assetHash": "9f03880afa475714d0a141be7252aec5755283d0",
+      "assetIndex": "1.18",
+      "downloads": "a69a263b2001aa9d51ceb65e733ab247e02a09c1",
+      "downloadsId": 1,
+      "hash": "bcf1bead8b25852dcb7e1f98a8dc214ea5d6e1d6",
+      "lastModified": "2022-02-25T13:36:34+00:00",
+      "time": "2021-12-10T08:23:00+00:00",
+      "type": "release",
+      "url": "../manifest/b/c/f1bead8b25852dcb7e1f98a8dc214ea5d6e1d6/1.18.1.json"
+    },
+    {
       "assetHash": "d7a17fbe48d326b395c0021219ed9ace06c83618",
       "assetIndex": "1.18",
       "downloads": "a69a263b2001aa9d51ceb65e733ab247e02a09c1",
@@ -35,16 +46,6 @@
       "time": "2021-12-10T08:23:00+00:00",
       "type": "release",
       "url": "../manifest/8/3/0235e55afd76a09c56acfdf50f30893ae0271f/1.18.1.json"
-    },
-    {
-      "assetHash": "9f03880afa475714d0a141be7252aec5755283d0",
-      "assetIndex": "1.18",
-      "downloads": "a69a263b2001aa9d51ceb65e733ab247e02a09c1",
-      "downloadsId": 1,
-      "hash": "bcf1bead8b25852dcb7e1f98a8dc214ea5d6e1d6",
-      "time": "2021-12-10T08:23:00+00:00",
-      "type": "release",
-      "url": "../manifest/b/c/f1bead8b25852dcb7e1f98a8dc214ea5d6e1d6/1.18.1.json"
     },
     {
       "assetHash": "81014fee17b72a439579732059c894600b92729b",

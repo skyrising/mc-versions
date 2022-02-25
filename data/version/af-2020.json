@@ -26,6 +26,17 @@
   "id": "af-2020",
   "manifests": [
     {
+      "assetHash": "28680197f74e5e1d55054f6a63509c8298d428f9",
+      "assetIndex": "1.16",
+      "downloads": "6ac8f71fe5342e990b0effa4798b2945ac29c427",
+      "downloadsId": 1,
+      "hash": "35dfed67138c30228f8a976df36facfe3be5a4a4",
+      "lastModified": "2022-02-25T13:39:34+00:00",
+      "time": "2020-04-01T12:47:08+00:00",
+      "type": "snapshot",
+      "url": "../manifest/3/5/dfed67138c30228f8a976df36facfe3be5a4a4/20w14infinite.json"
+    },
+    {
       "assetHash": "738b17ea266089b5e384791eb5a2cf1fafe109b6",
       "assetIndex": "1.16",
       "downloads": "6ac8f71fe5342e990b0effa4798b2945ac29c427",
@@ -92,9 +103,7 @@
       "url": "../manifest/9/d/030637006c9c92a5d18f4c78e066b32c8d13b3/20w14infinite.json"
     }
   ],
-  "next": [
-    "20w14infinite"
-  ],
+  "next": [],
   "normalizedVersion": "1.16.0-alpha.20.14.april.fools",
   "previous": [
     "20w13b"

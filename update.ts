@@ -144,7 +144,7 @@ type VersionData = BaseVersionManifest & {
 
 type HashMap<T> = Record<string, T>
 
-async function collectVersions(hashMap: HashMap<string>, oldOmniVersions: HashMap<VersionId>) {
+async function collectVersions(hashMap: HashMap<string>, oldOmniVersions: HashMap<VersionId>, renameMap: Record<string, string>) {
     const byId: {[id: string]: {[hash: string]: TempVersionManifest}} = {}
     const allVersions = []
     const files = readdirRecursive(manifestDir)
@@ -176,7 +176,7 @@ async function collectVersions(hashMap: HashMap<string>, oldOmniVersions: HashMa
         const mTime = new Date(data.time)
         await Deno.utime(file, aTime, mTime)
         const dl = Object.values(data.downloads).map(d => d.sha1).sort()
-        const omniId =  oldOmniVersions[hash] || data.id
+        const omniId = (oldOmniVersions[hash] === data.id ? renameMap[data.id] : oldOmniVersions[hash]) || data.id
         const v: TempVersionManifest = {
             omniId,
             id: data.id,
@@ -216,12 +216,13 @@ async function collectVersions(hashMap: HashMap<string>, oldOmniVersions: HashMa
 }
 
 const oldOmniVersions: HashMap<VersionId> = JSON.parse(await Deno.readTextFile(path.resolve(dataDir, 'omni_id.json')))
+const renameMap: Record<string, string> = JSON.parse(await Deno.readTextFile(path.resolve(dataDir, 'rename.json')))
 const hashMap: HashMap<string> = sortObject(JSON.parse(await Deno.readTextFile(path.resolve(dataDir, 'hash_map.json'))))
 const lastModified: HashMap<Date|null> = JSON.parse(await Deno.readTextFile(path.resolve(dataDir, 'last_modified.json')), (_, v) => typeof v === 'string' ? new Date(v) : v)
 const newManifest: MainManifest = {latest: {}, versions: []}
 const urls = await getURLs()
 await downloadManifests(urls)
-const {versions, allVersions} = await collectVersions(hashMap, oldOmniVersions)
+const {versions, allVersions} = await collectVersions(hashMap, oldOmniVersions, renameMap)
 const protocols: {[K in ProtocolType]?: {[version: number]: ProtocolVersionInfo}} = {}
 const versionsById: {[id: string]: VersionData} = {}
 for (let i = 0; i < versions.length; i++) {
