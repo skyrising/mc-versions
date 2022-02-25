@@ -81,17 +81,6 @@
       "url": "https://skyrising.github.io/mc-versions/manifest/b/d/65654bcc563b002487bb7503030f50f0732ae4/1.17-pre2.json"
     },
     {
-      "assetHash": "4fefa75bc44abb319a51939cda70094b6c183c5d",
-      "assetIndex": "1.17",
-      "downloads": "61fd03b0c571028bdde8db8186db29b8d238a240",
-      "downloadsId": 1,
-      "hash": "33980d77e1c164f5a21ad1f6298b8bd75b491682",
-      "lastModified": "2021-07-01T15:31:11+00:00",
-      "time": "2021-05-31T15:54:05+00:00",
-      "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/3/3/980d77e1c164f5a21ad1f6298b8bd75b491682/1.17-pre2.json"
-    },
-    {
       "assetHash": "8b1f82c5334d105f736034d02cf90f8c0c84b23c",
       "assetIndex": "1.17",
       "downloads": "61fd03b0c571028bdde8db8186db29b8d238a240",
@@ -112,6 +101,27 @@
       "time": "2021-05-31T15:54:05+00:00",
       "type": "snapshot",
       "url": "https://skyrising.github.io/mc-versions/manifest/f/1/38490c971d3f88ea245d07a7a627dd7b555961/1.17-pre2.json"
+    },
+    {
+      "assetHash": "778121f761dc8276a01d91120d54f33137b4c61b",
+      "assetIndex": "1.17",
+      "downloads": "61fd03b0c571028bdde8db8186db29b8d238a240",
+      "downloadsId": 1,
+      "hash": "e20c07fff6c59693dd6ae5feca663ff38ecbeea5",
+      "time": "2021-05-31T15:54:05+00:00",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/manifest/e/2/0c07fff6c59693dd6ae5feca663ff38ecbeea5/1.17-pre2.json"
+    },
+    {
+      "assetHash": "4fefa75bc44abb319a51939cda70094b6c183c5d",
+      "assetIndex": "1.17",
+      "downloads": "61fd03b0c571028bdde8db8186db29b8d238a240",
+      "downloadsId": 1,
+      "hash": "33980d77e1c164f5a21ad1f6298b8bd75b491682",
+      "lastModified": "2021-07-01T15:31:11+00:00",
+      "time": "2021-05-31T15:54:05+00:00",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/manifest/3/3/980d77e1c164f5a21ad1f6298b8bd75b491682/1.17-pre2.json"
     },
     {
       "assetHash": "fc00c90b4d2d27a4569b4f0d5487c70d13063dba",

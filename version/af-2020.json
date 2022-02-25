@@ -92,7 +92,9 @@
       "url": "https://skyrising.github.io/mc-versions/manifest/9/d/030637006c9c92a5d18f4c78e066b32c8d13b3/20w14infinite.json"
     }
   ],
-  "next": [],
+  "next": [
+    "20w14infinite"
+  ],
   "normalizedVersion": "1.16.0-alpha.20.14.april.fools",
   "previous": [
     "20w13b"
