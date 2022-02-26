@@ -1,5 +1,4 @@
 import * as path from 'https://deno.land/std@0.113.0/path/mod.ts'
-import { writableStreamFromWriter } from 'https://deno.land/std@0.113.0/io/mod.ts'
 import { Sha1, Message } from 'https://deno.land/std@0.113.0/hash/sha1.ts'
 
 export function sha1(data: Message): string {
@@ -48,25 +47,6 @@ export function readdirRecursive(dir: string, deleteEmpty = false): Array<string
         }
     }
     return files.sort()
-}
-
-export async function downloadFile(url: string, file: string, part = false) {
-    if (existsSync(file)) return
-    console.log(`Downloading ${url}`)
-    mkdirp(path.dirname(file))
-    const destFile = part ? file + '.part' : file
-    try {
-        const res = await fetch(url)
-        if (!res.ok) throw Error(`Invalid response for download: ${res.status} ${res.statusText}`)
-        await res.body!.pipeTo(writableStreamFromWriter(await Deno.open(destFile, {write: true, createNew: true})))
-        if (part) {
-            await Deno.rename(destFile, file)
-        }
-    } catch(e) {
-        console.error(`Download of ${url} failed`)
-        console.error(e)
-        if (existsSync(file)) await Deno.remove(destFile)
-    }
 }
 
 export function existsSync(file: string): boolean {
