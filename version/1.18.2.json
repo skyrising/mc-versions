@@ -31,12 +31,15 @@
       "downloads": "a2b96bcae01d5ecc1036df9b800d1a619a67db39",
       "downloadsId": 1,
       "hash": "5bfeefc541a3125af909828bda3ef44dcff7973f",
+      "lastModified": "2022-02-28T10:50:47+00:00",
       "time": "2022-02-28T10:42:45+00:00",
       "type": "release",
       "url": "https://skyrising.github.io/mc-versions/manifest/5/b/feefc541a3125af909828bda3ef44dcff7973f/1.18.2.json"
     }
   ],
-  "next": [],
+  "next": [
+    "22w11a"
+  ],
   "normalizedVersion": "1.18.2",
   "previous": [
     "1.18.2-rc1"
