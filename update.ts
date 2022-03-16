@@ -97,7 +97,7 @@ async function collectVersions(hashMap: HashMap<string>, oldOmniVersions: HashMa
         const mTime = new Date(data.time)
         await Deno.utime(file, aTime, mTime)
         const dl = Object.values(data.downloads).map(d => d.sha1).sort()
-        const omniId = (oldOmniVersions[hash] === data.id ? renameMap[data.id] : oldOmniVersions[hash]) || data.id
+        const omniId = ((oldOmniVersions[hash] || data.id) === data.id ? renameMap[data.id] : oldOmniVersions[hash]) || data.id
         const v: TempVersionManifest = {
             omniId,
             id: data.id,
@@ -182,7 +182,7 @@ function updateVersionDetails(versions: VersionInfo[], versionsById: Record<stri
             if (currentSemVer) {
                 normalizedVersions[id] = normalizedVersion
                 for (const pv of v.data.previous || []) {
-                    const prevNorm = versionsById[pv].normalizedVersion
+                    const prevNorm = versionsById[pv]?.normalizedVersion
                     if (!prevNorm) continue
                     const prevSemVer = semver.parse(prevNorm)
                     if (prevSemVer) {
@@ -215,7 +215,7 @@ function updateVersionDetails(versions: VersionInfo[], versionsById: Record<stri
                 if (v.data.server) pvInfo.servers.push(id)
             }
         } else if (protocol === undefined) {
-            const previousProtocols = v.data.previous.map(pv => versionsById[pv].protocol).filter(Boolean).map(p => p!.type + ' ' + p!.version)
+            const previousProtocols = (v.data.previous || []).map(pv => versionsById[pv]?.protocol).filter(Boolean).map(p => p!.type + ' ' + p!.version)
             if (previousProtocols.length === 1) {
                 console.warn(`${id} is missing protocol info, previous was ${previousProtocols[0]}`)
             } else if (previousProtocols.length) {
