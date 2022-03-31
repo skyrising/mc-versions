@@ -5,11 +5,20 @@
     "classic_server": "server-c1.10.1",
     "alpha_server": "server-a0.2.8",
     "old_beta": "b1.9-pre6",
-    "snapshot": "22w12a",
+    "snapshot": "22w13a",
     "release": "1.18.2",
     "pending": "1.19_deep_dark_experimental_snapshot-1"
   },
   "versions": [
+    {
+      "omniId": "22w13a",
+      "id": "22w13a",
+      "type": "snapshot",
+      "url": "manifest/3/f/a8c6857b20819f34984c092fe00e65c2b87697/22w13a.json",
+      "time": "2022-03-31T14:53:25+00:00",
+      "releaseTime": "2022-03-31T14:53:25+00:00",
+      "details": "version/22w13a.json"
+    },
     {
       "omniId": "22w12a",
       "id": "22w12a",
