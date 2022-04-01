@@ -31,12 +31,15 @@
       "downloads": "0783f553493f7d6874a984b31c23827dd7bae610",
       "downloadsId": 1,
       "hash": "3fa8c6857b20819f34984c092fe00e65c2b87697",
+      "lastModified": "2022-03-31T14:59:30+00:00",
       "time": "2022-03-31T14:53:25+00:00",
       "type": "snapshot",
       "url": "../manifest/3/f/a8c6857b20819f34984c092fe00e65c2b87697/22w13a.json"
     }
   ],
-  "next": [],
+  "next": [
+    "22w13oneblockatatime"
+  ],
   "normalizedVersion": "1.19.0-alpha.22.13.a",
   "previous": [
     "22w12a"
