@@ -23,7 +23,7 @@
       "url": "https://launcher.mojang.com/v1/objects/2c55055b906935ffe1e7e7cb80d1a8b031eb9f95/server.txt"
     }
   },
-  "id": "22w13oneblockatatime",
+  "id": "af-2022",
   "manifests": [
     {
       "assetHash": "5d31bba8d1508e4ceb7173086672251db5f56dc8",
@@ -39,10 +39,17 @@
   ],
   "next": [],
   "previous": [
-    "22w13a"
+    "1.18.2"
   ],
-  "releaseTarget": "1.19",
+  "protocol": {
+    "type": "netty-snapshot",
+    "version": 77
+  },
   "releaseTime": "2022-04-01T11:56:58+00:00",
   "server": true,
-  "sharedMappings": true
+  "sharedMappings": true,
+  "world": {
+    "format": "anvil",
+    "version": 3076
+  }
 }

@@ -37,15 +37,21 @@
       "url": "../manifest/3/f/a8c6857b20819f34984c092fe00e65c2b87697/22w13a.json"
     }
   ],
-  "next": [
-    "22w13oneblockatatime"
-  ],
+  "next": [],
   "normalizedVersion": "1.19.0-alpha.22.13.a",
   "previous": [
     "22w12a"
   ],
+  "protocol": {
+    "type": "netty-snapshot",
+    "version": 76
+  },
   "releaseTarget": "1.19",
   "releaseTime": "2022-03-31T14:53:25+00:00",
   "server": true,
-  "sharedMappings": true
+  "sharedMappings": true,
+  "world": {
+    "format": "anvil",
+    "version": 3085
+  }
 }

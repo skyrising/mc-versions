@@ -55,8 +55,16 @@
   "previous": [
     "22w11a"
   ],
+  "protocol": {
+    "type": "netty-snapshot",
+    "version": 75
+  },
   "releaseTarget": "1.19",
   "releaseTime": "2022-03-24T16:15:02+00:00",
   "server": true,
-  "sharedMappings": true
+  "sharedMappings": true,
+  "world": {
+    "format": "anvil",
+    "version": 3082
+  }
 }
