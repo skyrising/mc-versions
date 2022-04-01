@@ -665,6 +665,33 @@
       "servers": [
         "22w11a"
       ]
+    },
+    {
+      "version": 75,
+      "clients": [
+        "22w12a"
+      ],
+      "servers": [
+        "22w12a"
+      ]
+    },
+    {
+      "version": 76,
+      "clients": [
+        "22w13a"
+      ],
+      "servers": [
+        "22w13a"
+      ]
+    },
+    {
+      "version": 77,
+      "clients": [
+        "af-2022"
+      ],
+      "servers": [
+        "af-2022"
+      ]
     }
   ]
 }
