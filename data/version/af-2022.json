@@ -37,17 +37,30 @@
       "url": "../manifest/c/7/50ff525bed26180e3919a53dac13f97ffd3aca/22w13oneblockatatime.json"
     },
     {
+      "assetHash": "0da7ce978885affb24247e58a25768ac5bdf6acc",
+      "assetIndex": "1.19",
+      "downloads": "47d107fb95a0f453527f973cc1a1c2b197c3b1a9",
+      "downloadsId": 1,
+      "hash": "3e20eed99c8a96f9f8faf83fae7d34a1b1bd68f7",
+      "time": "2022-04-01T11:56:58+00:00",
+      "type": "snapshot",
+      "url": "../manifest/3/e/20eed99c8a96f9f8faf83fae7d34a1b1bd68f7/22w13oneblockatatime.json"
+    },
+    {
       "assetHash": "5d31bba8d1508e4ceb7173086672251db5f56dc8",
       "assetIndex": "1.19",
       "downloads": "47d107fb95a0f453527f973cc1a1c2b197c3b1a9",
       "downloadsId": 1,
       "hash": "9ee54fd183be16142477fa1471c8f1d795087510",
+      "lastModified": "2022-04-01T12:38:25+00:00",
       "time": "2022-03-30T11:56:58+00:00",
       "type": "snapshot",
       "url": "../manifest/9/e/e54fd183be16142477fa1471c8f1d795087510/22w13oneblockatatime.json"
     }
   ],
-  "next": [],
+  "next": [
+    "22w14a"
+  ],
   "previous": [
     "1.18.2"
   ],
