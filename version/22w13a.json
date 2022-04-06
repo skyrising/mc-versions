@@ -31,6 +31,7 @@
       "downloads": "0783f553493f7d6874a984b31c23827dd7bae610",
       "downloadsId": 1,
       "hash": "7f4c6824f1236b0d5aeb29735442bf7ef80aafeb",
+      "lastModified": "2022-04-06T13:44:08+00:00",
       "time": "2022-03-31T14:53:25+00:00",
       "type": "snapshot",
       "url": "https://skyrising.github.io/mc-versions/manifest/7/f/4c6824f1236b0d5aeb29735442bf7ef80aafeb/22w13a.json"
@@ -47,7 +48,9 @@
       "url": "https://skyrising.github.io/mc-versions/manifest/3/f/a8c6857b20819f34984c092fe00e65c2b87697/22w13a.json"
     }
   ],
-  "next": [],
+  "next": [
+    "22w14a"
+  ],
   "normalizedVersion": "1.19.0-alpha.22.13.a",
   "previous": [
     "22w12a"
