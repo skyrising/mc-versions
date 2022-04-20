@@ -31,12 +31,15 @@
       "downloads": "c26780c87f4f22fd3d634c80ff3a9748c1b09296",
       "downloadsId": 1,
       "hash": "6ac98a88f25ce13dd63dda625f4967f7b568277b",
+      "lastModified": "2022-04-20T14:51:38+00:00",
       "time": "2022-04-20T14:37:07+00:00",
       "type": "snapshot",
       "url": "../manifest/6/a/c98a88f25ce13dd63dda625f4967f7b568277b/22w16a.json"
     }
   ],
-  "next": [],
+  "next": [
+    "22w16b"
+  ],
   "normalizedVersion": "1.19.0-alpha.22.16.a",
   "previous": [
     "22w15a"
