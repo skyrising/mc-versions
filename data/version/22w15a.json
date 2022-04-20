@@ -31,12 +31,25 @@
       "downloads": "613fa0dfc5347c05ce050eb6b99a52625c48bb6c",
       "downloadsId": 1,
       "hash": "f04c5e0af067523a6a6ce6aa49f775dd0c88244d",
+      "lastModified": "2022-04-13T15:46:52+00:00",
       "time": "2022-04-13T15:41:17+00:00",
       "type": "snapshot",
       "url": "../manifest/f/0/4c5e0af067523a6a6ce6aa49f775dd0c88244d/22w15a.json"
+    },
+    {
+      "assetHash": "13dd8d9c2b9e49437718d9151754cf764febac62",
+      "assetIndex": "1.19",
+      "downloads": "613fa0dfc5347c05ce050eb6b99a52625c48bb6c",
+      "downloadsId": 1,
+      "hash": "6cbdc97230fc31d0f729fb6ee65547b225f975b1",
+      "time": "2022-04-13T15:41:17+00:00",
+      "type": "snapshot",
+      "url": "../manifest/6/c/bdc97230fc31d0f729fb6ee65547b225f975b1/22w15a.json"
     }
   ],
-  "next": [],
+  "next": [
+    "22w16a"
+  ],
   "normalizedVersion": "1.19.0-alpha.22.15.a",
   "previous": [
     "22w14a"
