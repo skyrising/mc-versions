@@ -5,8 +5,14 @@ URL_BASE = https://skyrising.github.io/mc-versions/
 
 .PHONY: update
 update:
+ifeq ($(GITHUB_ACTIONS),true)
+	@echo '::group::Build jar-analyzer'
+endif
 	cd jar-analyzer && JAVA_HOME=$(JAVA_HOME) ./gradlew build
-	JAVA_HOME=$(JAVA_HOME) MC_VERSIONS_DOWNLOADS=$(MC_VERSIONS_DOWNLOADS) ./update.ts
+ifeq ($(GITHUB_ACTIONS),true)
+	@echo '::endgroup::'
+endif
+	JAVA_HOME=$(JAVA_HOME) MC_VERSIONS_DOWNLOADS=$(MC_VERSIONS_DOWNLOADS) deno run --unstable --allow-env --allow-read --allow-write --allow-net --allow-run -q update.ts
 
 .PHONY: clean
 clean:
