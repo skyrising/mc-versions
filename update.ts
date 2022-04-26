@@ -9,6 +9,8 @@ import {getReleaseTarget, normalizeVersion} from './versioning.ts'
 import {parseJarInfo, shouldCheckJar} from './jar-analyzer.ts'
 import {getDownloads, downloadFile} from './download.ts'
 
+const GITHUB_ACTIONS = Deno.env.get('GITHUB_ACTIONS')
+
 const META_URLS = [
     'https://launchermeta.mojang.com/mc/game/version_manifest.json',
     'https://meta.skyrising.xyz/mc/game/version_manifest.json'
@@ -161,6 +163,10 @@ function findPrevious(versions: VersionInfo[], index: number) {
     }
 }
 
+function warnPrefix(id: string) {
+    return GITHUB_ACTIONS ? `::warning file=data/version/${id}.json::` : ''
+}
+
 function updateVersionDetails(versions: VersionInfo[], versionsById: Record<string, VersionData>) {
     const protocols: Protocols = {}
     const normalizedVersions: Record<VersionId, VersionId> = {}
@@ -171,7 +177,7 @@ function updateVersionDetails(versions: VersionInfo[], versionsById: Record<stri
             if (pv in versionsById) {
                 versionsById[pv].next.push(id)
             } else {
-                console.warn(`Previous version '${pv}' of ${id} is unknown`)
+                console.warn(`${warnPrefix(id)}Previous version '${pv}' of ${id} is unknown`)
             }
         }
         if (releaseTarget) {
@@ -194,7 +200,7 @@ function updateVersionDetails(versions: VersionInfo[], versionsById: Record<stri
                     }
                 }
             } else {
-                console.warn(`Invalid SemVer ${normalizedVersion} for ${id}`)
+                console.warn(`${warnPrefix(id)}Invalid SemVer ${normalizedVersion} for ${id}`)
             }
         }
         if (protocol) {
@@ -207,7 +213,7 @@ function updateVersionDetails(versions: VersionInfo[], versionsById: Record<stri
                 .filter(sameType)
                 .map(p => p.version))
             if (!protocol.incompatible && previousProtocol > protocol.version) {
-                console.warn(`${id} decreases ${protocol.type} protocol version number from ${previousProtocol} to ${protocol.version}`)
+                console.warn(`${warnPrefix(id)}${id} decreases ${protocol.type} protocol version number from ${previousProtocol} to ${protocol.version}`)
             }
             if (!protocol.incompatible) {
                 const pvInfo = (protocols[protocol.type] ??= {})[protocol.version] ??= {version: protocol.version, clients: [], servers: []}
@@ -250,6 +256,7 @@ async function writeProtocolFiles(protocolDir: string, protocols: Protocols) {
 }
 
 async function sortAndWriteVersionFiles(versionDir: string, allVersions: TempVersionManifest[], newManifest: MainManifest) {
+    if (GITHUB_ACTIONS) console.log('::group::Head versions')
     for (const v of versions) {
         if (!v.data.next.length) console.log(v.data.id)
         await writeJsonFile(v.file, {
@@ -257,6 +264,7 @@ async function sortAndWriteVersionFiles(versionDir: string, allVersions: TempVer
             ...sortObject(v.data)
         })
     }
+    if (GITHUB_ACTIONS) console.log('::endgroup::')
     allVersions.sort(compareVersions)
     const newOmniVersions: HashMap<VersionId> = {}
     for (const v of allVersions) {
