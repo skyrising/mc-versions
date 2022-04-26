@@ -31,6 +31,7 @@
       "downloads": "13c4585417fde0b165c35b41c1091a0a2ddb3be5",
       "downloadsId": 1,
       "hash": "86cbd8931f331345d2f003bb4987fa1abc1ddab8",
+      "lastModified": "2022-04-20T17:31:21+00:00",
       "time": "2022-04-20T17:25:32+00:00",
       "type": "snapshot",
       "url": "../manifest/8/6/cbd8931f331345d2f003bb4987fa1abc1ddab8/22w16b.json"
@@ -41,8 +42,16 @@
   "previous": [
     "22w16a"
   ],
+  "protocol": {
+    "type": "netty-snapshot",
+    "version": 81
+  },
   "releaseTarget": "1.19",
   "releaseTime": "2022-04-20T17:25:32+00:00",
   "server": true,
-  "sharedMappings": true
+  "sharedMappings": true,
+  "world": {
+    "format": "anvil",
+    "version": 3092
+  }
 }

@@ -1,6 +1,6 @@
 MC_VERSIONS_DOWNLOADS = /mnt/data/minecraft/mc-versions/downloads/
 JAVAC = $(shell realpath $(shell which javac))
-JAVA_HOME = $(JAVAC:%/bin/javac=%)
+JAVA_HOME ?= $(JAVAC:%/bin/javac=%)
 URL_BASE = https://skyrising.github.io/mc-versions/
 
 .PHONY: update
