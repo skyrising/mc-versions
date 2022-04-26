@@ -1,0 +1,70 @@
+{
+  "$schema": "https://skyrising.github.io/mc-versions/schemas/version.json",
+  "client": true,
+  "downloads": {
+    "client": {
+      "sha1": "b5b14c791de1b44ce2d6de13dfd18b9ced843618",
+      "size": 21254897,
+      "url": "https://launcher.mojang.com/v1/objects/b5b14c791de1b44ce2d6de13dfd18b9ced843618/client.jar"
+    },
+    "client_mappings": {
+      "sha1": "5ca2f62eacc890b09b9b9b45cd1edfe36cdee34a",
+      "size": 7003536,
+      "url": "https://launcher.mojang.com/v1/objects/5ca2f62eacc890b09b9b9b45cd1edfe36cdee34a/client.txt"
+    },
+    "server": {
+      "sha1": "2760f745a00711bcc19bf78d6056019f69318d03",
+      "size": 47136065,
+      "url": "https://launcher.mojang.com/v1/objects/2760f745a00711bcc19bf78d6056019f69318d03/server.jar"
+    },
+    "server_mappings": {
+      "sha1": "496416e9ac476347b47655089b7819877977f737",
+      "size": 5453124,
+      "url": "https://launcher.mojang.com/v1/objects/496416e9ac476347b47655089b7819877977f737/server.txt"
+    }
+  },
+  "id": "22w15a",
+  "manifests": [
+    {
+      "assetHash": "13dd8d9c2b9e49437718d9151754cf764febac62",
+      "assetIndex": "1.19",
+      "downloads": "613fa0dfc5347c05ce050eb6b99a52625c48bb6c",
+      "downloadsId": 1,
+      "hash": "6cbdc97230fc31d0f729fb6ee65547b225f975b1",
+      "lastModified": "2022-04-20T14:51:40+00:00",
+      "time": "2022-04-13T15:41:17+00:00",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/manifest/6/c/bdc97230fc31d0f729fb6ee65547b225f975b1/22w15a.json"
+    },
+    {
+      "assetHash": "16f0198c0fa4654b892600eab76249fa11d1c6bd",
+      "assetIndex": "1.19",
+      "downloads": "613fa0dfc5347c05ce050eb6b99a52625c48bb6c",
+      "downloadsId": 1,
+      "hash": "f04c5e0af067523a6a6ce6aa49f775dd0c88244d",
+      "lastModified": "2022-04-13T15:46:52+00:00",
+      "time": "2022-04-13T15:41:17+00:00",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/manifest/f/0/4c5e0af067523a6a6ce6aa49f775dd0c88244d/22w15a.json"
+    }
+  ],
+  "next": [
+    "22w16a"
+  ],
+  "normalizedVersion": "1.19.0-alpha.22.15.a",
+  "previous": [
+    "22w14a"
+  ],
+  "protocol": {
+    "type": "netty-snapshot",
+    "version": 79
+  },
+  "releaseTarget": "1.19",
+  "releaseTime": "2022-04-13T15:41:17+00:00",
+  "server": true,
+  "sharedMappings": true,
+  "world": {
+    "format": "anvil",
+    "version": 3089
+  }
+}

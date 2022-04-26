@@ -701,6 +701,33 @@
       "servers": [
         "22w14a"
       ]
+    },
+    {
+      "version": 79,
+      "clients": [
+        "22w15a"
+      ],
+      "servers": [
+        "22w15a"
+      ]
+    },
+    {
+      "version": 80,
+      "clients": [
+        "22w16a"
+      ],
+      "servers": [
+        "22w16a"
+      ]
+    },
+    {
+      "version": 81,
+      "clients": [
+        "22w16b"
+      ],
+      "servers": [
+        "22w16b"
+      ]
     }
   ]
 }
