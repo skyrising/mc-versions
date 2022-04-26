@@ -1,8 +1,8 @@
 #!/usr/bin/env -S deno run --allow-env --allow-read --allow-write
 
 import * as path from 'https://deno.land/std@0.113.0/path/mod.ts'
-import React from 'https://esm.sh/react'
-import ReactDOMServer from 'https://esm.sh/react-dom/server'
+import React from 'https://esm.sh/react@17'
+import ReactDOMServer from 'https://esm.sh/react-dom@17/server'
 import {readdirRecursive, mkdirp} from './utils.ts'
 
 const URL_BASE = Deno.env.get('URL_BASE')
@@ -70,7 +70,7 @@ async function createVersionElement(version: any) {
     </details>
 }
 
-function PropertyListElement({property, value}: {property: string, value: Element|Text|string}) {
+function PropertyListElement({property, value}: {property: string, value: React.ReactNode}) {
     if (!value) return <></>
     return <li><span className='property'>{property}</span>: <span className='value'>{value}</span></li>
 }
