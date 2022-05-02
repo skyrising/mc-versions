@@ -6703,17 +6703,8 @@
       "type": "old_alpha",
       "url": "manifest/3/6/811460e4e198cd9c3ba9ee16a8fdca8ed33227/a1.1.0-2.json",
       "time": "2016-02-02T15:37:47+00:00",
-      "releaseTime": "2010-09-13T00:00:00+00:00",
+      "releaseTime": "2010-09-13T19:33:00+00:00",
       "details": "version/a1.1.0-131933.json"
-    },
-    {
-      "omniId": "a1.1.0-101847-launcher",
-      "id": "a1.1.0",
-      "type": "old_alpha",
-      "url": "manifest/c/e/536f761a4dcca51bd8a4caaf6e703017e383e1/a1.1.0.json",
-      "time": "2010-09-12T22:00:00+00:00",
-      "releaseTime": "2010-09-13T00:00:00+00:00",
-      "details": "version/a1.1.0-101847-launcher.json"
     },
     {
       "omniId": "server-a0.2.0_01",
@@ -6724,21 +6715,30 @@
       "details": "version/server-a0.2.0_01.json"
     },
     {
+      "omniId": "a1.1.0-101847",
+      "id": "a1.1.0-1",
+      "type": "old_alpha",
+      "url": "manifest/3/8/5f4d81c572ddb7a94c49a44038a9983b9088c9/a1.1.0-1.json",
+      "time": "2017-10-22T05:26:50+00:00",
+      "releaseTime": "2010-09-10T18:47:00+00:00",
+      "details": "version/a1.1.0-101847.json"
+    },
+    {
+      "omniId": "a1.1.0-101847-launcher",
+      "id": "a1.1.0",
+      "type": "old_alpha",
+      "url": "manifest/c/e/536f761a4dcca51bd8a4caaf6e703017e383e1/a1.1.0.json",
+      "time": "2010-09-12T22:00:00+00:00",
+      "releaseTime": "2010-09-10T18:47:00+00:00",
+      "details": "version/a1.1.0-101847-launcher.json"
+    },
+    {
       "omniId": "server-a0.2.0",
       "id": "server-a0.2.0",
       "type": "alpha_server",
       "url": "manifest/2/4/cd3cc3c1985fd0e523ed73ffac2fa3b197269f/a0.2.0.json",
       "releaseTime": "2010-09-10T18:40:00+00:00",
       "details": "version/server-a0.2.0.json"
-    },
-    {
-      "omniId": "a1.1.0-101847",
-      "id": "a1.1.0-1",
-      "type": "old_alpha",
-      "url": "manifest/3/8/5f4d81c572ddb7a94c49a44038a9983b9088c9/a1.1.0-1.json",
-      "time": "2017-10-22T05:26:50+00:00",
-      "releaseTime": "2010-09-10T00:00:00+00:00",
-      "details": "version/a1.1.0-101847.json"
     },
     {
       "omniId": "a1.0.17_04",
