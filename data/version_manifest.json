@@ -5,16 +5,25 @@
     "classic_server": "server-c1.10.1",
     "alpha_server": "server-a0.2.8",
     "old_beta": "b1.9-pre6",
-    "snapshot": "22w17a",
+    "snapshot": "22w18a",
     "release": "1.18.2",
     "pending": "1.19_deep_dark_experimental_snapshot-1"
   },
   "versions": [
     {
+      "omniId": "22w18a",
+      "id": "22w18a",
+      "type": "snapshot",
+      "url": "manifest/a/1/cc2dec88474fdd90e4f9f1aea02b9565cb9289/22w18a.json",
+      "time": "2022-05-04T14:41:35+00:00",
+      "releaseTime": "2022-05-04T14:41:35+00:00",
+      "details": "version/22w18a.json"
+    },
+    {
       "omniId": "22w17a",
       "id": "22w17a",
       "type": "snapshot",
-      "url": "manifest/7/c/7b3fa4a2e09d6e6f75768481cfe3f864d12629/22w17a.json",
+      "url": "manifest/d/6/d8c2607330442d706be3fc3e375c3de713b861/22w17a.json",
       "time": "2022-04-27T15:54:15+00:00",
       "releaseTime": "2022-04-27T15:54:15+00:00",
       "details": "version/22w17a.json"
@@ -41,7 +50,7 @@
       "omniId": "22w15a",
       "id": "22w15a",
       "type": "snapshot",
-      "url": "manifest/4/e/96df266f1b4c0d0739758a021798afb39cf19a/22w15a.json",
+      "url": "manifest/f/e/c9384d5345567a2a32d327606acea0756b30f9/22w15a.json",
       "time": "2022-04-13T15:41:17+00:00",
       "releaseTime": "2022-04-13T15:41:17+00:00",
       "details": "version/22w15a.json"
@@ -50,7 +59,7 @@
       "omniId": "22w14a",
       "id": "22w14a",
       "type": "snapshot",
-      "url": "manifest/6/3/c965e8b47b9b9dcf52b1afcc09144ab001a812/22w14a.json",
+      "url": "manifest/5/e/fd31a8e48bd8ebe7b4a232b8864d840cf2a848/22w14a.json",
       "time": "2022-04-06T13:37:12+00:00",
       "releaseTime": "2022-04-06T13:37:12+00:00",
       "details": "version/22w14a.json"
@@ -59,7 +68,7 @@
       "omniId": "af-2022",
       "id": "22w13oneblockatatime",
       "type": "snapshot",
-      "url": "manifest/0/e/23c59a9d0bc22f09d94c5b837d495e7e2dd585/22w13oneblockatatime.json",
+      "url": "manifest/f/1/b2a9b984715c4fb495412617bedce01da2c4aa/22w13oneblockatatime.json",
       "time": "2022-04-01T11:56:58+00:00",
       "releaseTime": "2022-04-01T11:56:58+00:00",
       "details": "version/af-2022.json"
