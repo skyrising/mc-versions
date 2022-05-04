@@ -1,0 +1,56 @@
+{
+  "$schema": "https://skyrising.github.io/mc-versions/schemas/version.json",
+  "client": true,
+  "downloads": {
+    "client": {
+      "sha1": "85ab5e9725b6fa8078c6bd9df2697221fbe34b40",
+      "size": 21377069,
+      "url": "https://launcher.mojang.com/v1/objects/85ab5e9725b6fa8078c6bd9df2697221fbe34b40/client.jar"
+    },
+    "client_mappings": {
+      "sha1": "798b951eeff3b86e5a0cd4a81f415b5f465808f2",
+      "size": 7072644,
+      "url": "https://launcher.mojang.com/v1/objects/798b951eeff3b86e5a0cd4a81f415b5f465808f2/client.txt"
+    },
+    "server": {
+      "sha1": "d3259a8939a724c78ebbb995dfc31c1c364464e3",
+      "size": 45434588,
+      "url": "https://launcher.mojang.com/v1/objects/d3259a8939a724c78ebbb995dfc31c1c364464e3/server.jar"
+    },
+    "server_mappings": {
+      "sha1": "001ab71a16b49623990eaecbb02ac43140cf7827",
+      "size": 5511844,
+      "url": "https://launcher.mojang.com/v1/objects/001ab71a16b49623990eaecbb02ac43140cf7827/server.txt"
+    }
+  },
+  "id": "22w18a",
+  "manifests": [
+    {
+      "assetHash": "c76d769e6bf9c90a7ffff1481a05563777356749",
+      "assetIndex": "1.19",
+      "downloads": "bab745431d03a0e46b5e75637b03bf7e0356a851",
+      "downloadsId": 1,
+      "hash": "a1cc2dec88474fdd90e4f9f1aea02b9565cb9289",
+      "time": "2022-05-04T14:41:35+00:00",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/manifest/a/1/cc2dec88474fdd90e4f9f1aea02b9565cb9289/22w18a.json"
+    }
+  ],
+  "next": [],
+  "normalizedVersion": "1.19.0-alpha.22.18.a",
+  "previous": [
+    "22w17a"
+  ],
+  "protocol": {
+    "type": "netty-snapshot",
+    "version": 83
+  },
+  "releaseTarget": "1.19",
+  "releaseTime": "2022-05-04T14:41:35+00:00",
+  "server": true,
+  "sharedMappings": true,
+  "world": {
+    "format": "anvil",
+    "version": 3095
+  }
+}
