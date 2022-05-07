@@ -353,7 +353,7 @@ async function updateVersion(id: VersionId, manifests: Array<TempVersionManifest
     }
     if (data.id.startsWith('af-')) data.releaseTarget = undefined
     if (data.sharedMappings === undefined) {
-        data.sharedMappings = data.client && data.server && data.releaseTime > '2012-07-23'
+        data.sharedMappings = data.client && data.server && data.releaseTime > '2012-07-26'
     }
     const {omniId, type, url, time, localMirror} = manifests[0]
     if (localMirror.client && shouldCheckJar(data)) {
