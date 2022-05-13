@@ -116,3 +116,5 @@ type VersionInfo = {
     data: VersionData;
     file: string;
 }
+
+type VersionType = 'release' | 'snapshot' | 'pre-release' | 'release-candidate' | 'beta' | 'alpha' | 'infdev' | 'indev' | 'classic' | 'pre-classic' | 'other'

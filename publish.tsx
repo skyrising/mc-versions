@@ -4,6 +4,7 @@ import * as path from 'https://deno.land/std@0.113.0/path/mod.ts'
 import React from 'https://esm.sh/react@17'
 import ReactDOMServer from 'https://esm.sh/react-dom@17/server'
 import {readdirRecursive, mkdirp} from './utils.ts'
+import {getType} from './versioning.ts'
 
 const URL_BASE = Deno.env.get('URL_BASE')
 if (!URL_BASE) {
@@ -13,6 +14,7 @@ if (!URL_BASE) {
 const distDir = path.resolve('dist')
 const dataDir = path.resolve('data')
 
+const timeline = []
 for (const file of readdirRecursive(dataDir)) {
     if (!file.endsWith('.json')) continue
     const relative = path.relative(dataDir, file)
@@ -22,11 +24,22 @@ for (const file of readdirRecursive(dataDir)) {
         const data = JSON.parse(await Deno.readTextFile(file))
         const base = new URL(relative, URL_BASE)
         resolveUrls(base, data)
+        if (relative.startsWith('version/')) {
+            timeline.push({
+                id: data.id,
+                type: getType(data.normalizedVersion),
+                normalizedVersion: data.normalizedVersion,
+                publicTime: data.publicTime,
+                releaseTime: data.releaseTime
+            })
+        }
         await Deno.writeTextFile(outFile, JSON.stringify(data, null, 2))
     } else {
         await Deno.copyFile(file, outFile)
     }
 }
+timeline.sort((a, b) => new Date(a.publicTime || a.releaseTime).getTime() - new Date(b.publicTime || b.releaseTime).getTime())
+await Deno.writeTextFile(path.resolve(distDir, 'timeline.json'), JSON.stringify(timeline, null, 2))
 
 function resolveUrls(base: URL, obj: any) {
     if (Array.isArray(obj)) {

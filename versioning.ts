@@ -1,4 +1,5 @@
 import * as semver from 'https://deno.land/x/semver@v1.4.0/mod.ts'
+import type {VersionType} from './types.d.ts'
 
 const SNAPSHOT_TARGETS: Record<VersionId, [number, number]> = {
     '1.1': [12, 1],
@@ -135,4 +136,27 @@ export function normalizeVersion(omniId: VersionId, releaseTarget: VersionId | u
     }
     console.log(omniId, numbers, letters, parts, releaseTarget, properTarget)
     return undefined
+}
+
+export function getType(normalizedVersion: string): VersionType {
+    const version = semver.parse(normalizedVersion)
+    if (!version) throw Error(`Invalid SemVer: ${normalizedVersion}`)
+    if (version.major === 0) {
+        if (version.minor === 0) return 'pre-classic'
+        if (version.minor <= 30) return 'classic'
+        if (version.minor == 31) return version.patch < 20100227 ? 'indev' : 'infdev'
+    }
+    if (!version.prerelease.length) return 'release'
+    if (version.major === 1) {
+        switch (version.prerelease[0]) {
+            case 'alpha':
+                if (version.minor === 0 && version.patch === 0) return 'alpha'
+                if (version.prerelease.length === 4) return 'snapshot'
+                break
+            case 'beta': return 'beta'
+            case 'pre': return 'pre-release'
+            case 'rc': return 'release-candidate'
+        }
+    }
+    return 'other'
 }
