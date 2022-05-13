@@ -38,6 +38,7 @@ const lastModified: HashMap<Date|null> = await readJsonFile('last_modified.json'
 const urls = await getURLs()
 await downloadManifests(urls)
 const {versions, allVersions} = await collectVersions(hashMap, oldOmniVersions, renameMap)
+await updateLastModified()
 const {newManifest, versionsById} = updateMainManifest(versions)
 const {normalizedVersions, protocols, byReleaseTarget} = updateVersionDetails(versions, versionsById)
 const newOmniVersions = await sortAndWriteVersionFiles(VERSION_DIR, allVersions, newManifest)
@@ -53,8 +54,6 @@ await writeJsonFile('release_targets.json', {
 })
 await writeJsonFile('normalized.json', normalizedVersions)
 await writeJsonFile('hash_map.json', sortObject(hashMap))
-
-await updateLastModified()
 await writeJsonFile('last_modified.json', sortObjectByValues(lastModified))
 
 // deno-lint-ignore no-explicit-any
