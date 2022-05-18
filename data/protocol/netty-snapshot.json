@@ -755,6 +755,15 @@
       "servers": [
         "22w19a"
       ]
+    },
+    {
+      "version": 85,
+      "clients": [
+        "1.19-pre1"
+      ],
+      "servers": [
+        "1.19-pre1"
+      ]
     }
   ]
 }
