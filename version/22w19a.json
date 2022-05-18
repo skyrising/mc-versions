@@ -26,6 +26,16 @@
   "id": "22w19a",
   "manifests": [
     {
+      "assetHash": "8e87e75fcf2cf7d3ab90dfe0738355c3ca20982f",
+      "assetIndex": "1.19",
+      "downloads": "c52e48eba12ae060d53d953c74036bd81ca348f8",
+      "downloadsId": 1,
+      "hash": "c7d096c7df286be712dae19b6f03fb06304a94bb",
+      "time": "2022-05-12T15:36:11+00:00",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/manifest/c/7/d096c7df286be712dae19b6f03fb06304a94bb/22w19a.json"
+    },
+    {
       "assetHash": "139d9ff5e8f8350146a81d41f7dcbd14797ed91e",
       "assetIndex": "1.19",
       "downloads": "c52e48eba12ae060d53d953c74036bd81ca348f8",
@@ -37,7 +47,9 @@
       "url": "https://skyrising.github.io/mc-versions/manifest/8/f/7ba381bbe366458e91dbf912e595b800824f6b/22w19a.json"
     }
   ],
-  "next": [],
+  "next": [
+    "1.19-pre1"
+  ],
   "normalizedVersion": "1.19.0-alpha.22.19.a",
   "previous": [
     "22w18a"

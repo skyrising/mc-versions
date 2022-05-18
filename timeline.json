@@ -5326,5 +5326,11 @@
     "type": "snapshot",
     "normalizedVersion": "1.19.0-alpha.22.19.a",
     "releaseTime": "2022-05-12T15:36:11+00:00"
+  },
+  {
+    "id": "1.19-pre1",
+    "type": "pre-release",
+    "normalizedVersion": "1.19.0-pre.1",
+    "releaseTime": "2022-05-18T13:51:54+00:00"
   }
 ]
