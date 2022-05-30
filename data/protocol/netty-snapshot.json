@@ -782,6 +782,15 @@
       "servers": [
         "1.19-pre3"
       ]
+    },
+    {
+      "version": 88,
+      "clients": [
+        "1.19-pre4"
+      ],
+      "servers": [
+        "1.19-pre4"
+      ]
     }
   ]
 }
