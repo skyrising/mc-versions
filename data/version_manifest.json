@@ -5,11 +5,20 @@
     "classic_server": "server-c1.10.1",
     "alpha_server": "server-a0.2.8",
     "old_beta": "b1.9-pre6",
-    "snapshot": "1.19-pre5",
+    "snapshot": "1.19-rc1",
     "release": "1.18.2",
     "pending": "1.19_deep_dark_experimental_snapshot-1"
   },
   "versions": [
+    {
+      "omniId": "1.19-rc1",
+      "id": "1.19-rc1",
+      "type": "snapshot",
+      "url": "manifest/0/2/f066079aea9887eb9a0cc131ba4e8569618a46/1.19-rc1.json",
+      "time": "2022-06-02T12:12:52+00:00",
+      "releaseTime": "2022-06-02T12:12:52+00:00",
+      "details": "version/1.19-rc1.json"
+    },
     {
       "omniId": "1.19-pre5",
       "id": "1.19-pre5",
@@ -23,7 +32,7 @@
       "omniId": "1.19-pre4",
       "id": "1.19-pre4",
       "type": "snapshot",
-      "url": "manifest/3/3/a15063d28a862bf2020af4518cca5bf00f83fb/1.19-pre4.json",
+      "url": "manifest/0/3/304c2e10775506f1f5510108bfc6f0debe07a6/1.19-pre4.json",
       "time": "2022-05-30T14:43:01+00:00",
       "releaseTime": "2022-05-30T14:43:01+00:00",
       "details": "version/1.19-pre4.json"
@@ -32,7 +41,7 @@
       "omniId": "1.19-pre3",
       "id": "1.19-pre3",
       "type": "snapshot",
-      "url": "manifest/6/7/da2d024fb70dfd9a46d05a988bf5bfd3b35763/1.19-pre3.json",
+      "url": "manifest/f/7/f2e3cf00af96f2351bb883d9534c3769bc82cc/1.19-pre3.json",
       "time": "2022-05-25T09:56:47+00:00",
       "releaseTime": "2022-05-25T09:56:47+00:00",
       "details": "version/1.19-pre3.json"
@@ -41,7 +50,7 @@
       "omniId": "1.19-pre2",
       "id": "1.19-pre2",
       "type": "snapshot",
-      "url": "manifest/c/d/c8b00504d9400d460a6141441889121f092752/1.19-pre2.json",
+      "url": "manifest/3/8/9498bb584c85dd746af65db59806135a14bf5f/1.19-pre2.json",
       "time": "2022-05-23T14:54:00+00:00",
       "releaseTime": "2022-05-23T14:54:00+00:00",
       "details": "version/1.19-pre2.json"
@@ -50,7 +59,7 @@
       "omniId": "1.19-pre1",
       "id": "1.19-pre1",
       "type": "snapshot",
-      "url": "manifest/b/7/aa5f7deefed90aa80b47dc73c781f557818685/1.19-pre1.json",
+      "url": "manifest/7/8/e36f4f42284805c5410bfbccba884c00abe288/1.19-pre1.json",
       "time": "2022-05-18T13:51:54+00:00",
       "releaseTime": "2022-05-18T13:51:54+00:00",
       "details": "version/1.19-pre1.json"
@@ -59,7 +68,7 @@
       "omniId": "22w19a",
       "id": "22w19a",
       "type": "snapshot",
-      "url": "manifest/c/f/11762500c135b40669a0d73fdab4b0ba38f981/22w19a.json",
+      "url": "manifest/5/5/59e68a2506441572af9a409c015a4f9ea1851a/22w19a.json",
       "time": "2022-05-12T15:36:11+00:00",
       "releaseTime": "2022-05-12T15:36:11+00:00",
       "details": "version/22w19a.json"
@@ -68,7 +77,7 @@
       "omniId": "22w18a",
       "id": "22w18a",
       "type": "snapshot",
-      "url": "manifest/c/b/1833476e47acedd2c4f9b4cf152d10fdd2fc20/22w18a.json",
+      "url": "manifest/6/3/8bba310dd275729607eb46569833bb16d73a76/22w18a.json",
       "time": "2022-05-04T14:41:35+00:00",
       "releaseTime": "2022-05-04T14:41:35+00:00",
       "details": "version/22w18a.json"
@@ -77,7 +86,7 @@
       "omniId": "22w17a",
       "id": "22w17a",
       "type": "snapshot",
-      "url": "manifest/d/4/b0958a73d9ff9e39dc9282729c845df4447afd/22w17a.json",
+      "url": "manifest/9/a/7ff9f9b1b98e3151d78f419bfa28ac766cd442/22w17a.json",
       "time": "2022-04-27T15:54:15+00:00",
       "releaseTime": "2022-04-27T15:54:15+00:00",
       "details": "version/22w17a.json"
@@ -86,7 +95,7 @@
       "omniId": "22w16b",
       "id": "22w16b",
       "type": "snapshot",
-      "url": "manifest/e/f/bd95a004b341329e4db2f063c6098b4b8d8df7/22w16b.json",
+      "url": "manifest/f/d/88a076f69ec6dc3b651a8061ded4d6ed297a5e/22w16b.json",
       "time": "2022-04-20T17:25:32+00:00",
       "releaseTime": "2022-04-20T17:25:32+00:00",
       "details": "version/22w16b.json"
@@ -95,7 +104,7 @@
       "omniId": "22w16a",
       "id": "22w16a",
       "type": "snapshot",
-      "url": "manifest/7/9/a755bca4aebb3b6ed7aa0a41853478da932d7f/22w16a.json",
+      "url": "manifest/c/2/b5eb302fbfacbf9690267eec09f2ae46d9b7a8/22w16a.json",
       "time": "2022-04-20T14:37:07+00:00",
       "releaseTime": "2022-04-20T14:37:07+00:00",
       "details": "version/22w16a.json"
@@ -104,7 +113,7 @@
       "omniId": "22w15a",
       "id": "22w15a",
       "type": "snapshot",
-      "url": "manifest/3/0/0047473f951098b3c71911744b44e52588a184/22w15a.json",
+      "url": "manifest/b/c/870e4b5ba32aab91f7a332d119aabb55952a16/22w15a.json",
       "time": "2022-04-13T15:41:17+00:00",
       "releaseTime": "2022-04-13T15:41:17+00:00",
       "details": "version/22w15a.json"
@@ -113,7 +122,7 @@
       "omniId": "22w14a",
       "id": "22w14a",
       "type": "snapshot",
-      "url": "manifest/8/8/19192e6a950961a18fdca2d865d6e57d8a675c/22w14a.json",
+      "url": "manifest/c/4/bc72edf2f8d291a7f328e4a4d63d521a6cc704/22w14a.json",
       "time": "2022-04-06T13:37:12+00:00",
       "releaseTime": "2022-04-06T13:37:12+00:00",
       "details": "version/22w14a.json"
@@ -122,7 +131,7 @@
       "omniId": "af-2022",
       "id": "22w13oneblockatatime",
       "type": "snapshot",
-      "url": "manifest/8/b/400e325ca13615fc5398792370f1388835d72b/22w13oneblockatatime.json",
+      "url": "manifest/7/7/331c5161bffda14af17034d063d8ac8f79d535/22w13oneblockatatime.json",
       "time": "2022-04-01T11:56:58+00:00",
       "releaseTime": "2022-04-01T11:56:58+00:00",
       "details": "version/af-2022.json"
@@ -140,7 +149,7 @@
       "omniId": "22w12a",
       "id": "22w12a",
       "type": "snapshot",
-      "url": "manifest/c/c/058250e72a2dc1f3eaacf2d4d454314d42feea/22w12a.json",
+      "url": "manifest/f/4/62697c16438390b28516d8f8a1aa55d3a96886/22w12a.json",
       "time": "2022-03-24T16:15:02+00:00",
       "releaseTime": "2022-03-24T16:15:02+00:00",
       "details": "version/22w12a.json"
@@ -149,7 +158,7 @@
       "omniId": "22w11a",
       "id": "22w11a",
       "type": "snapshot",
-      "url": "manifest/4/5/15a72c208c9104e2162df30b964dbb39a680bd/22w11a.json",
+      "url": "manifest/1/8/5adbcbe6182da0e3b3cf63835943e71bef244c/22w11a.json",
       "time": "2022-03-16T15:55:38+00:00",
       "releaseTime": "2022-03-16T15:55:38+00:00",
       "details": "version/22w11a.json"
