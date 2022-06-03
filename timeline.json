@@ -5332,5 +5332,41 @@
     "type": "pre-release",
     "normalizedVersion": "1.19.0-pre.1",
     "releaseTime": "2022-05-18T13:51:54+00:00"
+  },
+  {
+    "id": "1.19-pre2",
+    "type": "pre-release",
+    "normalizedVersion": "1.19.0-pre.2",
+    "releaseTime": "2022-05-23T14:54:00+00:00"
+  },
+  {
+    "id": "1.19-pre3",
+    "type": "pre-release",
+    "normalizedVersion": "1.19.0-pre.3",
+    "releaseTime": "2022-05-25T09:56:47+00:00"
+  },
+  {
+    "id": "1.19-pre4",
+    "type": "pre-release",
+    "normalizedVersion": "1.19.0-pre.4",
+    "releaseTime": "2022-05-30T14:43:01+00:00"
+  },
+  {
+    "id": "1.19-pre5",
+    "type": "pre-release",
+    "normalizedVersion": "1.19.0-pre.5",
+    "releaseTime": "2022-06-01T10:56:23+00:00"
+  },
+  {
+    "id": "1.19-rc1",
+    "type": "release-candidate",
+    "normalizedVersion": "1.19.0-rc.1",
+    "releaseTime": "2022-06-02T12:12:52+00:00"
+  },
+  {
+    "id": "1.19-rc2",
+    "type": "release-candidate",
+    "normalizedVersion": "1.19.0-rc.2",
+    "releaseTime": "2022-06-03T11:47:25+00:00"
   }
 ]

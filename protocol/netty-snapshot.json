@@ -764,6 +764,60 @@
       "servers": [
         "1.19-pre1"
       ]
+    },
+    {
+      "version": 86,
+      "clients": [
+        "1.19-pre2"
+      ],
+      "servers": [
+        "1.19-pre2"
+      ]
+    },
+    {
+      "version": 87,
+      "clients": [
+        "1.19-pre3"
+      ],
+      "servers": [
+        "1.19-pre3"
+      ]
+    },
+    {
+      "version": 88,
+      "clients": [
+        "1.19-pre4"
+      ],
+      "servers": [
+        "1.19-pre4"
+      ]
+    },
+    {
+      "version": 89,
+      "clients": [
+        "1.19-pre5"
+      ],
+      "servers": [
+        "1.19-pre5"
+      ]
+    },
+    {
+      "version": 90,
+      "clients": [
+        "1.19-rc1"
+      ],
+      "servers": [
+        "1.19-rc1"
+      ]
+    },
+    {
+      "version": 91,
+      "clients": [
+        "1.19-rc2"
+      ],
+      "servers": [
+        "1.19-rc2"
+      ]
     }
   ]
 }

@@ -1,0 +1,113 @@
+{
+  "$schema": "https://skyrising.github.io/mc-versions/schemas/version.json",
+  "client": true,
+  "downloads": {
+    "client": {
+      "sha1": "9dff887a5fe3109ed66dec7dc15878c1d4d3887c",
+      "size": 21456693,
+      "url": "https://launcher.mojang.com/v1/objects/9dff887a5fe3109ed66dec7dc15878c1d4d3887c/client.jar"
+    },
+    "client_mappings": {
+      "sha1": "3f9a517db9a51d10de3bfb5642c7134751586133",
+      "size": 7119644,
+      "url": "https://launcher.mojang.com/v1/objects/3f9a517db9a51d10de3bfb5642c7134751586133/client.txt"
+    },
+    "server": {
+      "sha1": "6cc6cac49cd862ad9005816eb1ffc7dd4bd066dd",
+      "size": 45534685,
+      "url": "https://launcher.mojang.com/v1/objects/6cc6cac49cd862ad9005816eb1ffc7dd4bd066dd/server.jar"
+    },
+    "server_mappings": {
+      "sha1": "820f381f8f120bcb25d0c0f1516ff9645efd8eb9",
+      "size": 5548307,
+      "url": "https://launcher.mojang.com/v1/objects/820f381f8f120bcb25d0c0f1516ff9645efd8eb9/server.txt"
+    }
+  },
+  "id": "1.19-pre2",
+  "manifests": [
+    {
+      "assetHash": "e61e58dd60280cb0fbe0c27d1d46299b23ed11b0",
+      "assetIndex": "1.19",
+      "downloads": "90bd8514b688ce61da69f1115aae474123fd4cd9",
+      "downloadsId": 1,
+      "hash": "d6d226b005a9ee89b2b446d7b4df4c52135b6f87",
+      "time": "2022-05-23T14:54:00+00:00",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/manifest/d/6/d226b005a9ee89b2b446d7b4df4c52135b6f87/1.19-pre2.json"
+    },
+    {
+      "assetHash": "ef76595fd49c8f472f16c1b577d5436ab05e4316",
+      "assetIndex": "1.19",
+      "downloads": "90bd8514b688ce61da69f1115aae474123fd4cd9",
+      "downloadsId": 1,
+      "hash": "389498bb584c85dd746af65db59806135a14bf5f",
+      "lastModified": "2022-06-02T12:21:42+00:00",
+      "time": "2022-05-23T14:54:00+00:00",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/manifest/3/8/9498bb584c85dd746af65db59806135a14bf5f/1.19-pre2.json"
+    },
+    {
+      "assetHash": "401f30609b7fcd1ea8b3a6f2c039ce85f5413ec0",
+      "assetIndex": "1.19",
+      "downloads": "90bd8514b688ce61da69f1115aae474123fd4cd9",
+      "downloadsId": 1,
+      "hash": "4116039e068a1e59c83cbb92680a960e9a730c9c",
+      "lastModified": "2022-06-01T11:17:05+00:00",
+      "time": "2022-05-23T14:54:00+00:00",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/manifest/4/1/16039e068a1e59c83cbb92680a960e9a730c9c/1.19-pre2.json"
+    },
+    {
+      "assetHash": "945b98d83890129e9a380611c461a69f8b231ef0",
+      "assetIndex": "1.19",
+      "downloads": "90bd8514b688ce61da69f1115aae474123fd4cd9",
+      "downloadsId": 1,
+      "hash": "cdc8b00504d9400d460a6141441889121f092752",
+      "lastModified": "2022-05-30T14:55:37+00:00",
+      "time": "2022-05-23T14:54:00+00:00",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/manifest/c/d/c8b00504d9400d460a6141441889121f092752/1.19-pre2.json"
+    },
+    {
+      "assetHash": "6360b1059d59d725f1c32dae47514f723daad723",
+      "assetIndex": "1.19",
+      "downloads": "90bd8514b688ce61da69f1115aae474123fd4cd9",
+      "downloadsId": 1,
+      "hash": "1b4f9d4435f704a95fd8bc1ad1d1af04a8654f96",
+      "lastModified": "2022-05-25T10:06:10+00:00",
+      "time": "2022-05-23T14:54:00+00:00",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/manifest/1/b/4f9d4435f704a95fd8bc1ad1d1af04a8654f96/1.19-pre2.json"
+    },
+    {
+      "assetHash": "85a5e9d6f9601d46187c7cc1f44b2e3394ce725b",
+      "assetIndex": "1.19",
+      "downloads": "90bd8514b688ce61da69f1115aae474123fd4cd9",
+      "downloadsId": 1,
+      "hash": "547467043474427d349c3272e3d2f3b6b1b14fdc",
+      "lastModified": "2022-05-23T15:14:19+00:00",
+      "time": "2022-05-23T14:54:00+00:00",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/manifest/5/4/7467043474427d349c3272e3d2f3b6b1b14fdc/1.19-pre2.json"
+    }
+  ],
+  "next": [
+    "1.19-pre3"
+  ],
+  "normalizedVersion": "1.19.0-pre.2",
+  "previous": [
+    "1.19-pre1"
+  ],
+  "protocol": {
+    "type": "netty-snapshot",
+    "version": 86
+  },
+  "releaseTarget": "1.19",
+  "releaseTime": "2022-05-23T14:54:00+00:00",
+  "server": true,
+  "sharedMappings": true,
+  "world": {
+    "format": "anvil",
+    "version": 3099
+  }
+}
