@@ -809,6 +809,15 @@
       "servers": [
         "1.19-rc1"
       ]
+    },
+    {
+      "version": 91,
+      "clients": [
+        "1.19-rc2"
+      ],
+      "servers": [
+        "1.19-rc2"
+      ]
     }
   ]
 }
