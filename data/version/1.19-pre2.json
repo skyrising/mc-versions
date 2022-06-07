@@ -26,11 +26,22 @@
   "id": "1.19-pre2",
   "manifests": [
     {
+      "assetHash": "72f061c25c8a96c4b8dd9b5609a6da6a8fb7fd73",
+      "assetIndex": "1.19",
+      "downloads": "90bd8514b688ce61da69f1115aae474123fd4cd9",
+      "downloadsId": 1,
+      "hash": "bcd503bd4c818b29d02e662e07ae2b7486f94ffb",
+      "time": "2022-05-23T14:54:00+00:00",
+      "type": "snapshot",
+      "url": "../manifest/b/c/d503bd4c818b29d02e662e07ae2b7486f94ffb/1.19-pre2.json"
+    },
+    {
       "assetHash": "e61e58dd60280cb0fbe0c27d1d46299b23ed11b0",
       "assetIndex": "1.19",
       "downloads": "90bd8514b688ce61da69f1115aae474123fd4cd9",
       "downloadsId": 1,
       "hash": "d6d226b005a9ee89b2b446d7b4df4c52135b6f87",
+      "lastModified": "2022-06-03T11:52:58+00:00",
       "time": "2022-05-23T14:54:00+00:00",
       "type": "snapshot",
       "url": "../manifest/d/6/d226b005a9ee89b2b446d7b4df4c52135b6f87/1.19-pre2.json"
