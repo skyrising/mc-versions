@@ -26,6 +26,17 @@
   "id": "22w18a",
   "manifests": [
     {
+      "assetHash": "e61e58dd60280cb0fbe0c27d1d46299b23ed11b0",
+      "assetIndex": "1.19",
+      "downloads": "bab745431d03a0e46b5e75637b03bf7e0356a851",
+      "downloadsId": 1,
+      "hash": "2d26eed8ab5d5778d612a172c3c1a5e88d70209a",
+      "lastModified": "2022-06-03T11:53:03+00:00",
+      "time": "2022-05-04T14:41:35+00:00",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/manifest/2/d/26eed8ab5d5778d612a172c3c1a5e88d70209a/22w18a.json"
+    },
+    {
       "assetHash": "ef76595fd49c8f472f16c1b577d5436ab05e4316",
       "assetIndex": "1.19",
       "downloads": "bab745431d03a0e46b5e75637b03bf7e0356a851",
@@ -35,16 +46,6 @@
       "time": "2022-05-04T14:41:35+00:00",
       "type": "snapshot",
       "url": "https://skyrising.github.io/mc-versions/manifest/b/1/fcbe14bb118fd635378392c129fe277ac6b074/22w18a.json"
-    },
-    {
-      "assetHash": "e61e58dd60280cb0fbe0c27d1d46299b23ed11b0",
-      "assetIndex": "1.19",
-      "downloads": "bab745431d03a0e46b5e75637b03bf7e0356a851",
-      "downloadsId": 1,
-      "hash": "2d26eed8ab5d5778d612a172c3c1a5e88d70209a",
-      "time": "2022-05-04T14:41:35+00:00",
-      "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/2/d/26eed8ab5d5778d612a172c3c1a5e88d70209a/22w18a.json"
     },
     {
       "assetHash": "401f30609b7fcd1ea8b3a6f2c039ce85f5413ec0",
@@ -122,6 +123,16 @@
       "time": "2022-05-04T14:41:35+00:00",
       "type": "snapshot",
       "url": "https://skyrising.github.io/mc-versions/manifest/a/1/cc2dec88474fdd90e4f9f1aea02b9565cb9289/22w18a.json"
+    },
+    {
+      "assetHash": "72f061c25c8a96c4b8dd9b5609a6da6a8fb7fd73",
+      "assetIndex": "1.19",
+      "downloads": "bab745431d03a0e46b5e75637b03bf7e0356a851",
+      "downloadsId": 1,
+      "hash": "6fe098a89887b57217e0ee5fac316f4d312f4c3f",
+      "time": "2022-05-04T14:41:35+00:00",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/manifest/6/f/e098a89887b57217e0ee5fac316f4d312f4c3f/22w18a.json"
     }
   ],
   "next": [
