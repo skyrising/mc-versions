@@ -39,6 +39,9 @@ const urls = await getURLs()
 await downloadManifests(urls)
 const {versions, allVersions} = await collectVersions(hashMap, oldOmniVersions, renameMap)
 await updateLastModified()
+for (const v of allVersions) {
+    v.lastModified = lastModified[v.hash]?.toISOString()?.replace('.000Z', '+00:00')
+}
 const {newManifest, versionsById} = updateMainManifest(versions)
 const {normalizedVersions, protocols, byReleaseTarget} = updateVersionDetails(versions, versionsById)
 const newOmniVersions = await sortAndWriteVersionFiles(VERSION_DIR, allVersions, newManifest)
@@ -107,7 +110,6 @@ async function collectVersions(hashMap: HashMap<string>, oldOmniVersions: HashMa
             url: file,
             time: data.time,
             releaseTime: data.releaseTime,
-            lastModified: lastModified[hash]?.toISOString()?.replace('.000Z', '+00:00'),
             downloadsHash: sha1(JSON.stringify(dl)),
             downloads: data.downloads,
             assetIndex: data.assetIndex?.id,
