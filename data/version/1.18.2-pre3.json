@@ -26,23 +26,11 @@
   "id": "1.18.2-pre3",
   "manifests": [
     {
-      "assetHash": "de57d9f6d65a980f86df431603287248d4f148b5",
-      "assetIndex": "1.18",
-      "downloads": "e7ee5c086b1435af83fba94f5aeeb0c87381932c",
-      "downloadsId": 1,
-      "hash": "3c4f88fbf12e3180e6c3ac97c8fdbda8ca0e3292",
-      "lastModified": "2022-06-07T09:49:52+00:00",
-      "time": "2022-02-23T15:23:12+00:00",
-      "type": "snapshot",
-      "url": "../manifest/3/c/4f88fbf12e3180e6c3ac97c8fdbda8ca0e3292/1.18.2-pre3.json"
-    },
-    {
       "assetHash": "7fcda714d4a391a711ce434fa1dbbebe73ecf179",
       "assetIndex": "1.18",
       "downloads": "e7ee5c086b1435af83fba94f5aeeb0c87381932c",
       "downloadsId": 1,
       "hash": "af3dd0960f8eb83b4c9be62f0cde46b403784060",
-      "lastModified": "2022-02-28T10:50:50+00:00",
       "time": "2022-02-23T15:23:12+00:00",
       "type": "snapshot",
       "url": "../manifest/a/f/3dd0960f8eb83b4c9be62f0cde46b403784060/1.18.2-pre3.json"
@@ -53,7 +41,6 @@
       "downloads": "e7ee5c086b1435af83fba94f5aeeb0c87381932c",
       "downloadsId": 1,
       "hash": "957cee0b4df16d380e209c78d762c0b384f404b8",
-      "lastModified": "2022-02-25T13:36:22+00:00",
       "time": "2022-02-23T15:23:12+00:00",
       "type": "snapshot",
       "url": "../manifest/9/5/7cee0b4df16d380e209c78d762c0b384f404b8/1.18.2-pre3.json"
@@ -64,10 +51,19 @@
       "downloads": "e7ee5c086b1435af83fba94f5aeeb0c87381932c",
       "downloadsId": 1,
       "hash": "3fe4f886bc85f0a960b81f6cedd8d4ee5964328a",
-      "lastModified": "2022-02-23T15:30:20+00:00",
       "time": "2022-02-23T15:23:12+00:00",
       "type": "snapshot",
       "url": "../manifest/3/f/e4f886bc85f0a960b81f6cedd8d4ee5964328a/1.18.2-pre3.json"
+    },
+    {
+      "assetHash": "de57d9f6d65a980f86df431603287248d4f148b5",
+      "assetIndex": "1.18",
+      "downloads": "e7ee5c086b1435af83fba94f5aeeb0c87381932c",
+      "downloadsId": 1,
+      "hash": "3c4f88fbf12e3180e6c3ac97c8fdbda8ca0e3292",
+      "time": "2022-02-23T15:23:12+00:00",
+      "type": "snapshot",
+      "url": "../manifest/3/c/4f88fbf12e3180e6c3ac97c8fdbda8ca0e3292/1.18.2-pre3.json"
     }
   ],
   "next": [

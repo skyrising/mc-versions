@@ -26,34 +26,11 @@
   "id": "1.16-1420",
   "manifests": [
     {
-      "assetHash": "28680197f74e5e1d55054f6a63509c8298d428f9",
-      "assetIndex": "1.16",
-      "downloads": "fce6fa191e183f5ac8cdc46886c730f302ce62ff",
-      "downloadsId": 1,
-      "hash": "c327a9b19763fc7441958d629cf01a6a43808540",
-      "lastModified": "2022-02-25T13:38:58+00:00",
-      "time": "2020-06-23T16:20:52+00:00",
-      "type": "release",
-      "url": "../manifest/c/3/27a9b19763fc7441958d629cf01a6a43808540/1.16.json"
-    },
-    {
-      "assetHash": "738b17ea266089b5e384791eb5a2cf1fafe109b6",
-      "assetIndex": "1.16",
-      "downloads": "fce6fa191e183f5ac8cdc46886c730f302ce62ff",
-      "downloadsId": 1,
-      "hash": "e5a7845e84903c2573b51a3ef338da05b6d75c17",
-      "lastModified": "2021-12-15T15:51:59+00:00",
-      "time": "2020-06-23T16:20:52+00:00",
-      "type": "release",
-      "url": "../manifest/e/5/a7845e84903c2573b51a3ef338da05b6d75c17/1.16.json"
-    },
-    {
       "assetHash": "738b17ea266089b5e384791eb5a2cf1fafe109b6",
       "assetIndex": "1.16",
       "downloads": "fce6fa191e183f5ac8cdc46886c730f302ce62ff",
       "downloadsId": 1,
       "hash": "fd38d13113ac0bf0a77c7a996f68eb139b8f3af0",
-      "lastModified": "2021-12-10T02:58:22+00:00",
       "time": "2020-06-23T16:20:52+00:00",
       "type": "release",
       "url": "../manifest/f/d/38d13113ac0bf0a77c7a996f68eb139b8f3af0/1.16.json"
@@ -63,8 +40,37 @@
       "assetIndex": "1.16",
       "downloads": "fce6fa191e183f5ac8cdc46886c730f302ce62ff",
       "downloadsId": 1,
+      "hash": "e5a7845e84903c2573b51a3ef338da05b6d75c17",
+      "time": "2020-06-23T16:20:52+00:00",
+      "type": "release",
+      "url": "../manifest/e/5/a7845e84903c2573b51a3ef338da05b6d75c17/1.16.json"
+    },
+    {
+      "assetHash": "28680197f74e5e1d55054f6a63509c8298d428f9",
+      "assetIndex": "1.16",
+      "downloads": "fce6fa191e183f5ac8cdc46886c730f302ce62ff",
+      "downloadsId": 1,
+      "hash": "c327a9b19763fc7441958d629cf01a6a43808540",
+      "time": "2020-06-23T16:20:52+00:00",
+      "type": "release",
+      "url": "../manifest/c/3/27a9b19763fc7441958d629cf01a6a43808540/1.16.json"
+    },
+    {
+      "assetHash": "3a5d110a6ab102c7083bae4296d2de4b8fcf92eb",
+      "assetIndex": "1.16",
+      "downloads": "fce6fa191e183f5ac8cdc46886c730f302ce62ff",
+      "downloadsId": 1,
+      "hash": "aedb63a2279b64154db99f89a4d3837841119285",
+      "time": "2020-06-23T16:20:52+00:00",
+      "type": "release",
+      "url": "../manifest/a/e/db63a2279b64154db99f89a4d3837841119285/1.16.json"
+    },
+    {
+      "assetHash": "738b17ea266089b5e384791eb5a2cf1fafe109b6",
+      "assetIndex": "1.16",
+      "downloads": "fce6fa191e183f5ac8cdc46886c730f302ce62ff",
+      "downloadsId": 1,
       "hash": "88e1fa2fb8d05335eb4d1b2feaf934fdbb4367fb",
-      "lastModified": "2021-11-30T09:48:45+00:00",
       "time": "2020-06-23T16:20:52+00:00",
       "type": "release",
       "url": "../manifest/8/8/e1fa2fb8d05335eb4d1b2feaf934fdbb4367fb/1.16.json"
@@ -74,33 +80,20 @@
       "assetIndex": "1.16",
       "downloads": "fce6fa191e183f5ac8cdc46886c730f302ce62ff",
       "downloadsId": 1,
-      "hash": "4d5c081ab034f933aadbc995ba2d4d35a9582747",
-      "lastModified": "2021-07-07T13:55:57+00:00",
+      "hash": "663fe9de79f8a5b75bea42d057abdf87a4ae3ba8",
       "time": "2020-06-23T16:20:52+00:00",
       "type": "release",
-      "url": "../manifest/4/d/5c081ab034f933aadbc995ba2d4d35a9582747/1.16.json"
+      "url": "../manifest/6/6/3fe9de79f8a5b75bea42d057abdf87a4ae3ba8/1.16.json"
     },
     {
       "assetHash": "ad75fb46ff5c89aa5f9c90e12481e963854f9a6e",
       "assetIndex": "1.16",
       "downloads": "fce6fa191e183f5ac8cdc46886c730f302ce62ff",
       "downloadsId": 1,
-      "hash": "663fe9de79f8a5b75bea42d057abdf87a4ae3ba8",
-      "lastModified": "2021-06-29T15:20:16+00:00",
+      "hash": "4d5c081ab034f933aadbc995ba2d4d35a9582747",
       "time": "2020-06-23T16:20:52+00:00",
       "type": "release",
-      "url": "../manifest/6/6/3fe9de79f8a5b75bea42d057abdf87a4ae3ba8/1.16.json"
-    },
-    {
-      "assetHash": "3a5d110a6ab102c7083bae4296d2de4b8fcf92eb",
-      "assetIndex": "1.16",
-      "downloads": "fce6fa191e183f5ac8cdc46886c730f302ce62ff",
-      "downloadsId": 1,
-      "hash": "aedb63a2279b64154db99f89a4d3837841119285",
-      "lastModified": "2021-01-13T14:12:15+00:00",
-      "time": "2020-06-23T16:20:52+00:00",
-      "type": "release",
-      "url": "../manifest/a/e/db63a2279b64154db99f89a4d3837841119285/1.16.json"
+      "url": "../manifest/4/d/5c081ab034f933aadbc995ba2d4d35a9582747/1.16.json"
     },
     {
       "assetHash": "f8e11ca03b475dd655755b945334c7a0ac2c3b43",
@@ -108,7 +101,6 @@
       "downloads": "fce6fa191e183f5ac8cdc46886c730f302ce62ff",
       "downloadsId": 1,
       "hash": "342f932d87e9a511ef4689897fb0e2f52a88ec8f",
-      "lastModified": "2020-12-02T16:57:05+00:00",
       "time": "2020-06-23T16:20:52+00:00",
       "type": "release",
       "url": "../manifest/3/4/2f932d87e9a511ef4689897fb0e2f52a88ec8f/1.16.json"
@@ -119,7 +111,6 @@
       "downloads": "fce6fa191e183f5ac8cdc46886c730f302ce62ff",
       "downloadsId": 1,
       "hash": "01b5231aea5bae5559f1ec1a8764d02b66f898ae",
-      "lastModified": "2020-11-02T16:33:31+00:00",
       "time": "2020-06-23T16:20:52+00:00",
       "type": "release",
       "url": "../manifest/0/1/b5231aea5bae5559f1ec1a8764d02b66f898ae/1.16.json"

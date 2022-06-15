@@ -19,7 +19,8 @@ const SNAPSHOT_TARGETS: Record<VersionId, [number, number]> = {
     '1.15': [19, 46],
     '1.16': [20, 22], '1.16.2': [20, 30],
     '1.17': [21, 20],
-    '1.18': [21, 48], '1.18.2': [22, 7]
+    '1.18': [21, 48], '1.18.2': [22, 9],
+    '1.19': [22, 23], '1.19.1': [22, Infinity]
 }
 
 export function getReleaseTarget(data: VersionData) {

@@ -20,19 +20,7 @@
       "assetIndex": "1.12",
       "downloads": "bb7a0b01b673f3394b68e0bb05c1e11aa09ad335",
       "downloadsId": 1,
-      "hash": "968c2ec3b4c8b404d2b28501b8c7bc5354c3c8dd",
-      "lastModified": "2021-12-15T15:57:08+00:00",
-      "time": "2017-04-20T13:58:35+00:00",
-      "type": "snapshot",
-      "url": "../manifest/9/6/8c2ec3b4c8b404d2b28501b8c7bc5354c3c8dd/17w16a.json"
-    },
-    {
-      "assetHash": "1584b57c1a0b5e593fad1f5b8f78536ca640547b",
-      "assetIndex": "1.12",
-      "downloads": "bb7a0b01b673f3394b68e0bb05c1e11aa09ad335",
-      "downloadsId": 1,
       "hash": "ed4c92f6206bc0d16c2b18bfedb8218fa8738b21",
-      "lastModified": "2021-12-10T03:03:06+00:00",
       "time": "2017-04-20T13:58:35+00:00",
       "type": "snapshot",
       "url": "../manifest/e/d/4c92f6206bc0d16c2b18bfedb8218fa8738b21/17w16a.json"
@@ -42,11 +30,10 @@
       "assetIndex": "1.12",
       "downloads": "bb7a0b01b673f3394b68e0bb05c1e11aa09ad335",
       "downloadsId": 1,
-      "hash": "6cc1975f09d78377aa675a5fb82047795be429e8",
-      "lastModified": "2021-07-07T14:00:40+00:00",
+      "hash": "968c2ec3b4c8b404d2b28501b8c7bc5354c3c8dd",
       "time": "2017-04-20T13:58:35+00:00",
       "type": "snapshot",
-      "url": "../manifest/6/c/c1975f09d78377aa675a5fb82047795be429e8/17w16a.json"
+      "url": "../manifest/9/6/8c2ec3b4c8b404d2b28501b8c7bc5354c3c8dd/17w16a.json"
     },
     {
       "assetHash": "1584b57c1a0b5e593fad1f5b8f78536ca640547b",
@@ -54,10 +41,19 @@
       "downloads": "bb7a0b01b673f3394b68e0bb05c1e11aa09ad335",
       "downloadsId": 1,
       "hash": "91098c5704c1f470dd31c2f97f9f47e107d9205f",
-      "lastModified": "2018-08-29T12:59:47+00:00",
       "time": "2017-04-20T13:58:35+00:00",
       "type": "snapshot",
       "url": "../manifest/9/1/098c5704c1f470dd31c2f97f9f47e107d9205f/17w16a.json"
+    },
+    {
+      "assetHash": "1584b57c1a0b5e593fad1f5b8f78536ca640547b",
+      "assetIndex": "1.12",
+      "downloads": "bb7a0b01b673f3394b68e0bb05c1e11aa09ad335",
+      "downloadsId": 1,
+      "hash": "6cc1975f09d78377aa675a5fb82047795be429e8",
+      "time": "2017-04-20T13:58:35+00:00",
+      "type": "snapshot",
+      "url": "../manifest/6/c/c1975f09d78377aa675a5fb82047795be429e8/17w16a.json"
     }
   ],
   "next": [

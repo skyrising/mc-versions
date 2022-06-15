@@ -21,7 +21,6 @@
       "downloads": "f806d5c89319bb82940b1f33393078f90b31476f",
       "downloadsId": 1,
       "hash": "dab1273d7eb75dc7c553c9b3a0ab6987b2984b75",
-      "lastModified": "2021-12-15T15:56:55+00:00",
       "time": "2017-05-19T07:43:28+00:00",
       "type": "snapshot",
       "url": "../manifest/d/a/b1273d7eb75dc7c553c9b3a0ab6987b2984b75/1.12-pre5.json"
@@ -31,8 +30,17 @@
       "assetIndex": "1.12",
       "downloads": "f806d5c89319bb82940b1f33393078f90b31476f",
       "downloadsId": 1,
+      "hash": "c9e56ce5743729af4446894a4c9239d57833c61a",
+      "time": "2017-05-19T07:43:28+00:00",
+      "type": "snapshot",
+      "url": "../manifest/c/9/e56ce5743729af4446894a4c9239d57833c61a/1.12-pre5.json"
+    },
+    {
+      "assetHash": "1584b57c1a0b5e593fad1f5b8f78536ca640547b",
+      "assetIndex": "1.12",
+      "downloads": "f806d5c89319bb82940b1f33393078f90b31476f",
+      "downloadsId": 1,
       "hash": "710dac0205d01f234e5097040da2eb8d1db819bd",
-      "lastModified": "2021-12-10T03:02:53+00:00",
       "time": "2017-05-19T07:43:28+00:00",
       "type": "snapshot",
       "url": "../manifest/7/1/0dac0205d01f234e5097040da2eb8d1db819bd/1.12-pre5.json"
@@ -43,21 +51,9 @@
       "downloads": "f806d5c89319bb82940b1f33393078f90b31476f",
       "downloadsId": 1,
       "hash": "70846d867cb252da6100222d2a9139e3b8eadebb",
-      "lastModified": "2021-07-07T14:00:28+00:00",
       "time": "2017-05-19T07:43:28+00:00",
       "type": "snapshot",
       "url": "../manifest/7/0/846d867cb252da6100222d2a9139e3b8eadebb/1.12-pre5.json"
-    },
-    {
-      "assetHash": "1584b57c1a0b5e593fad1f5b8f78536ca640547b",
-      "assetIndex": "1.12",
-      "downloads": "f806d5c89319bb82940b1f33393078f90b31476f",
-      "downloadsId": 1,
-      "hash": "c9e56ce5743729af4446894a4c9239d57833c61a",
-      "lastModified": "2018-08-29T12:59:39+00:00",
-      "time": "2017-05-19T07:43:28+00:00",
-      "type": "snapshot",
-      "url": "../manifest/c/9/e56ce5743729af4446894a4c9239d57833c61a/1.12-pre5.json"
     }
   ],
   "next": [

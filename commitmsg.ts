@@ -8,11 +8,11 @@ const STATUS_CHARS: Record<string, string> = {
 }
 
 const cp = Deno.run({cmd: ['git', 'status', '--porcelain=v2'], stdout: 'piped'})
+const statusText = new TextDecoder().decode(await cp.output())
 const {code} = await cp.status()
 if (code) {
     Deno.exit(code)
 }
-const statusText = new TextDecoder().decode(await cp.output())
 const status = statusText.split('\n').filter(Boolean).map(line => {
     const parts = line.split(' ')
     if (parts[0] !== '1') return undefined
@@ -34,8 +34,14 @@ if (versionChanges.Added) {
     message += `Add ${versionChanges.Added.sort().join(', ')}`
 }
 if (versionChanges.Updated) {
-    if (message) message += '; '
-    message += `Update ${versionChanges.Updated.sort().join(', ')}`
+    if (versionChanges.Added) {
+        message += '\n\nUpdate:\n' + versionChanges.Updated.sort().map(v => '- ' + v).join('\n')
+    } else if (versionChanges.Updated.length > 15) {
+        message += `Update ${versionChanges.Updated.length} versions\n\n`
+        message += versionChanges.Updated.sort().map(v => '- ' + v).join('\n')
+    } else {
+        message += `Update ${versionChanges.Updated.sort().join(', ')}`
+    }
 }
 if (!message) message = 'Automatic update'
 
