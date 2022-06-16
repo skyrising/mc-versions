@@ -21,6 +21,7 @@
       "downloads": "626f5e1cd2d94cf1187f69c56482b6268f87298f",
       "downloadsId": 1,
       "hash": "8fa087bccebca7f3f47d5eaa80a8d9af88754b29",
+      "lastModified": "2021-12-15T15:56:56+00:00",
       "time": "2017-05-18T12:28:16+00:00",
       "type": "snapshot",
       "url": "https://skyrising.github.io/mc-versions/manifest/8/f/a087bccebca7f3f47d5eaa80a8d9af88754b29/1.12-pre4.json"
@@ -30,7 +31,19 @@
       "assetIndex": "1.12",
       "downloads": "626f5e1cd2d94cf1187f69c56482b6268f87298f",
       "downloadsId": 1,
+      "hash": "111075e0637be5dc891ced3bcec6b26cd93734ed",
+      "lastModified": "2021-12-10T03:02:55+00:00",
+      "time": "2017-05-18T12:28:16+00:00",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/manifest/1/1/1075e0637be5dc891ced3bcec6b26cd93734ed/1.12-pre4.json"
+    },
+    {
+      "assetHash": "1584b57c1a0b5e593fad1f5b8f78536ca640547b",
+      "assetIndex": "1.12",
+      "downloads": "626f5e1cd2d94cf1187f69c56482b6268f87298f",
+      "downloadsId": 1,
       "hash": "7f05e62396ffe9abf3e457e07e82e897f3e45ba1",
+      "lastModified": "2021-07-07T14:00:29+00:00",
       "time": "2017-05-18T12:28:16+00:00",
       "type": "snapshot",
       "url": "https://skyrising.github.io/mc-versions/manifest/7/f/05e62396ffe9abf3e457e07e82e897f3e45ba1/1.12-pre4.json"
@@ -41,19 +54,10 @@
       "downloads": "626f5e1cd2d94cf1187f69c56482b6268f87298f",
       "downloadsId": 1,
       "hash": "7941f25f1fcd8d9a63d834b30cdc50fdbda70b46",
+      "lastModified": "2018-08-29T12:59:39+00:00",
       "time": "2017-05-18T12:28:16+00:00",
       "type": "snapshot",
       "url": "https://skyrising.github.io/mc-versions/manifest/7/9/41f25f1fcd8d9a63d834b30cdc50fdbda70b46/1.12-pre4.json"
-    },
-    {
-      "assetHash": "1584b57c1a0b5e593fad1f5b8f78536ca640547b",
-      "assetIndex": "1.12",
-      "downloads": "626f5e1cd2d94cf1187f69c56482b6268f87298f",
-      "downloadsId": 1,
-      "hash": "111075e0637be5dc891ced3bcec6b26cd93734ed",
-      "time": "2017-05-18T12:28:16+00:00",
-      "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/1/1/1075e0637be5dc891ced3bcec6b26cd93734ed/1.12-pre4.json"
     }
   ],
   "next": [

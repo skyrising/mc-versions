@@ -26,34 +26,15 @@
   "id": "20w48a",
   "manifests": [
     {
-      "assetHash": "5980cedf055a0ebc1059ddb9487a004c7d0f781e",
+      "assetHash": "368e1f53d7b7c96c9a882e170ae6c4356da97bcf",
       "assetIndex": "1.17",
       "downloads": "e466cc6c401e401fcbc83d8fa192ab2ad3ee058f",
       "downloadsId": 1,
-      "hash": "febc438679e1cde8cfad2b8c685a2fa20cada783",
+      "hash": "d769dde415b0ade870a77c40ed73a56ffb5f3cc9",
+      "lastModified": "2022-06-07T09:51:41+00:00",
       "time": "2020-11-25T15:42:24+00:00",
       "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/f/e/bc438679e1cde8cfad2b8c685a2fa20cada783/20w48a.json"
-    },
-    {
-      "assetHash": "d76d2ae366af6820990b10bb149b3360a41a59d2",
-      "assetIndex": "1.17",
-      "downloads": "e466cc6c401e401fcbc83d8fa192ab2ad3ee058f",
-      "downloadsId": 1,
-      "hash": "f2face22e667d89008071407a8d028184f8f74a2",
-      "time": "2020-11-25T15:42:24+00:00",
-      "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/f/2/face22e667d89008071407a8d028184f8f74a2/20w48a.json"
-    },
-    {
-      "assetHash": "ff4c1b667c02b183352af8817a2699a96abc08e0",
-      "assetIndex": "1.17",
-      "downloads": "e466cc6c401e401fcbc83d8fa192ab2ad3ee058f",
-      "downloadsId": 1,
-      "hash": "ee93cb3ce04a5efd77493774ed491fbd4c65c3b8",
-      "time": "2020-11-25T15:42:24+00:00",
-      "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/e/e/93cb3ce04a5efd77493774ed491fbd4c65c3b8/20w48a.json"
+      "url": "https://skyrising.github.io/mc-versions/manifest/d/7/69dde415b0ade870a77c40ed73a56ffb5f3cc9/20w48a.json"
     },
     {
       "assetHash": "778121f761dc8276a01d91120d54f33137b4c61b",
@@ -61,109 +42,21 @@
       "downloads": "e466cc6c401e401fcbc83d8fa192ab2ad3ee058f",
       "downloadsId": 1,
       "hash": "ee1a04b314f2503a9b03cae4fc2393317264d25f",
+      "lastModified": "2022-02-25T13:38:22+00:00",
       "time": "2020-11-25T15:42:24+00:00",
       "type": "snapshot",
       "url": "https://skyrising.github.io/mc-versions/manifest/e/e/1a04b314f2503a9b03cae4fc2393317264d25f/20w48a.json"
     },
     {
-      "assetHash": "4fefa75bc44abb319a51939cda70094b6c183c5d",
+      "assetHash": "1898734d8df0347c8b297eff354a4e1738d28c21",
       "assetIndex": "1.17",
       "downloads": "e466cc6c401e401fcbc83d8fa192ab2ad3ee058f",
       "downloadsId": 1,
-      "hash": "edde0bd9461a96d06dfe66d0e16123bff73d070f",
+      "hash": "757d218a75cd85fe7fe5a08e32c47c2957ba492f",
+      "lastModified": "2021-12-15T15:51:22+00:00",
       "time": "2020-11-25T15:42:24+00:00",
       "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/e/d/de0bd9461a96d06dfe66d0e16123bff73d070f/20w48a.json"
-    },
-    {
-      "assetHash": "e5af543d9b3ce1c063a97842c38e50e29f961f00",
-      "assetIndex": "1.17",
-      "downloads": "e466cc6c401e401fcbc83d8fa192ab2ad3ee058f",
-      "downloadsId": 1,
-      "hash": "ed75f2a9c17e481b4305275929797d4d5184f1c7",
-      "time": "2020-11-25T15:42:24+00:00",
-      "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/e/d/75f2a9c17e481b4305275929797d4d5184f1c7/20w48a.json"
-    },
-    {
-      "assetHash": "368e1f53d7b7c96c9a882e170ae6c4356da97bcf",
-      "assetIndex": "1.17",
-      "downloads": "e466cc6c401e401fcbc83d8fa192ab2ad3ee058f",
-      "downloadsId": 1,
-      "hash": "d769dde415b0ade870a77c40ed73a56ffb5f3cc9",
-      "time": "2020-11-25T15:42:24+00:00",
-      "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/d/7/69dde415b0ade870a77c40ed73a56ffb5f3cc9/20w48a.json"
-    },
-    {
-      "assetHash": "0085c15a6318aa2d235ee553f70c22284b43bf7b",
-      "assetIndex": "1.17",
-      "downloads": "e466cc6c401e401fcbc83d8fa192ab2ad3ee058f",
-      "downloadsId": 1,
-      "hash": "d4a8bab4e9a537f8d22820e222a7b38df4d56658",
-      "time": "2020-11-25T15:42:24+00:00",
-      "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/d/4/a8bab4e9a537f8d22820e222a7b38df4d56658/20w48a.json"
-    },
-    {
-      "assetHash": "642cc9d735b08f731dac8afd97374cd46ec5f627",
-      "assetIndex": "1.17",
-      "downloads": "e466cc6c401e401fcbc83d8fa192ab2ad3ee058f",
-      "downloadsId": 1,
-      "hash": "ce09c937afdeeab78103f2f3be2c33fb92d6dd45",
-      "time": "2020-11-25T15:42:24+00:00",
-      "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/c/e/09c937afdeeab78103f2f3be2c33fb92d6dd45/20w48a.json"
-    },
-    {
-      "assetHash": "8b1f82c5334d105f736034d02cf90f8c0c84b23c",
-      "assetIndex": "1.17",
-      "downloads": "e466cc6c401e401fcbc83d8fa192ab2ad3ee058f",
-      "downloadsId": 1,
-      "hash": "c19718d3d28a7a7c19a36cfadb4fe67e2ae8a2be",
-      "time": "2020-11-25T15:42:24+00:00",
-      "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/c/1/9718d3d28a7a7c19a36cfadb4fe67e2ae8a2be/20w48a.json"
-    },
-    {
-      "assetHash": "d68c9fb7046a75a85eeea3c881bc358f2c55c6c4",
-      "assetIndex": "1.17",
-      "downloads": "e466cc6c401e401fcbc83d8fa192ab2ad3ee058f",
-      "downloadsId": 1,
-      "hash": "bec49f15e828427a7b44f316b8335e75f61f4019",
-      "time": "2020-11-25T15:42:24+00:00",
-      "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/b/e/c49f15e828427a7b44f316b8335e75f61f4019/20w48a.json"
-    },
-    {
-      "assetHash": "dc07b2e194e5a7e6e6f6dd54a7ace9e66238c30b",
-      "assetIndex": "1.17",
-      "downloads": "e466cc6c401e401fcbc83d8fa192ab2ad3ee058f",
-      "downloadsId": 1,
-      "hash": "ac79262cd9e26e5421eee2508b58557652cc9fb6",
-      "time": "2020-11-25T15:42:24+00:00",
-      "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/a/c/79262cd9e26e5421eee2508b58557652cc9fb6/20w48a.json"
-    },
-    {
-      "assetHash": "ff71ef080ad9ef91f661a9f5ba9ece6b8a6ea719",
-      "assetIndex": "1.17",
-      "downloads": "e466cc6c401e401fcbc83d8fa192ab2ad3ee058f",
-      "downloadsId": 1,
-      "hash": "ac6f37731a634ad72c4bca69df277eef731bfe03",
-      "time": "2020-11-25T15:42:24+00:00",
-      "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/a/c/6f37731a634ad72c4bca69df277eef731bfe03/20w48a.json"
-    },
-    {
-      "assetHash": "ecd216d8188230180af4163ee4f4901e28acee29",
-      "assetIndex": "1.17",
-      "downloads": "e466cc6c401e401fcbc83d8fa192ab2ad3ee058f",
-      "downloadsId": 1,
-      "hash": "9e0b9455e7b44714ab9e775ef31179424996bfaa",
-      "time": "2020-11-25T15:42:24+00:00",
-      "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/9/e/0b9455e7b44714ab9e775ef31179424996bfaa/20w48a.json"
+      "url": "https://skyrising.github.io/mc-versions/manifest/7/5/7d218a75cd85fe7fe5a08e32c47c2957ba492f/20w48a.json"
     },
     {
       "assetHash": "1898734d8df0347c8b297eff354a4e1738d28c21",
@@ -171,99 +64,10 @@
       "downloads": "e466cc6c401e401fcbc83d8fa192ab2ad3ee058f",
       "downloadsId": 1,
       "hash": "9d9e624e16d21d14dd352b4e9a62541a1cc6a816",
+      "lastModified": "2021-12-10T02:57:48+00:00",
       "time": "2020-11-25T15:42:24+00:00",
       "type": "snapshot",
       "url": "https://skyrising.github.io/mc-versions/manifest/9/d/9e624e16d21d14dd352b4e9a62541a1cc6a816/20w48a.json"
-    },
-    {
-      "assetHash": "a7a0a390d250147932a21219612f77d588d266ba",
-      "assetIndex": "1.17",
-      "downloads": "e466cc6c401e401fcbc83d8fa192ab2ad3ee058f",
-      "downloadsId": 1,
-      "hash": "974526066ae320818000326dda6cbf7e693f06e1",
-      "time": "2020-11-25T15:42:24+00:00",
-      "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/9/7/4526066ae320818000326dda6cbf7e693f06e1/20w48a.json"
-    },
-    {
-      "assetHash": "ac16cca258277c17bfebc56b719168c5454e1a18",
-      "assetIndex": "1.17",
-      "downloads": "e466cc6c401e401fcbc83d8fa192ab2ad3ee058f",
-      "downloadsId": 1,
-      "hash": "96014b5c80ea16790120577ef452fdee4e1fe5ba",
-      "time": "2020-11-25T15:42:24+00:00",
-      "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/9/6/014b5c80ea16790120577ef452fdee4e1fe5ba/20w48a.json"
-    },
-    {
-      "assetHash": "0198cb89458ae865669d11bcf4ddc014b02e204b",
-      "assetIndex": "1.17",
-      "downloads": "e466cc6c401e401fcbc83d8fa192ab2ad3ee058f",
-      "downloadsId": 1,
-      "hash": "95c4e751caaf1691b7b37eceadb881c1a5caa529",
-      "time": "2020-11-25T15:42:24+00:00",
-      "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/9/5/c4e751caaf1691b7b37eceadb881c1a5caa529/20w48a.json"
-    },
-    {
-      "assetHash": "a353b13d26df04a3aa6d17a193b591ab92c718ae",
-      "assetIndex": "1.17",
-      "downloads": "e466cc6c401e401fcbc83d8fa192ab2ad3ee058f",
-      "downloadsId": 1,
-      "hash": "9493c6cfa6862ee673f41b8032e8e71d8433c572",
-      "time": "2020-11-25T15:42:24+00:00",
-      "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/9/4/93c6cfa6862ee673f41b8032e8e71d8433c572/20w48a.json"
-    },
-    {
-      "assetHash": "15809afbdc4489abd52a3d6c3fda0124f8f3404b",
-      "assetIndex": "1.17",
-      "downloads": "e466cc6c401e401fcbc83d8fa192ab2ad3ee058f",
-      "downloadsId": 1,
-      "hash": "8f942ca8f3e6d00bc4824ba8b91dde14161315ea",
-      "time": "2020-11-25T15:42:24+00:00",
-      "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/8/f/942ca8f3e6d00bc4824ba8b91dde14161315ea/20w48a.json"
-    },
-    {
-      "assetHash": "13b4faf35c0ae2a672a6c60fcbee91b215852810",
-      "assetIndex": "1.17",
-      "downloads": "e466cc6c401e401fcbc83d8fa192ab2ad3ee058f",
-      "downloadsId": 1,
-      "hash": "8c0371d60d83a9b54fe21bb8c39e877ae6d2e2a3",
-      "time": "2020-11-25T15:42:24+00:00",
-      "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/8/c/0371d60d83a9b54fe21bb8c39e877ae6d2e2a3/20w48a.json"
-    },
-    {
-      "assetHash": "358623ca0695a0e1180013039011b77bfc03d6d8",
-      "assetIndex": "1.17",
-      "downloads": "e466cc6c401e401fcbc83d8fa192ab2ad3ee058f",
-      "downloadsId": 1,
-      "hash": "8812cd5ac0f4b2b742f334c6433da2cb9f07ee28",
-      "time": "2020-11-25T15:42:24+00:00",
-      "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/8/8/12cd5ac0f4b2b742f334c6433da2cb9f07ee28/20w48a.json"
-    },
-    {
-      "assetHash": "928de7f973076c901a10a186a09812de9027bab5",
-      "assetIndex": "1.17",
-      "downloads": "e466cc6c401e401fcbc83d8fa192ab2ad3ee058f",
-      "downloadsId": 1,
-      "hash": "85883c1e477dd2f4a92fc26b84e49e2c21ca70ce",
-      "time": "2020-11-25T15:42:24+00:00",
-      "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/8/5/883c1e477dd2f4a92fc26b84e49e2c21ca70ce/20w48a.json"
-    },
-    {
-      "assetHash": "22ec056697dacf4c6aa1f17700e94994454f9e49",
-      "assetIndex": "1.17",
-      "downloads": "e466cc6c401e401fcbc83d8fa192ab2ad3ee058f",
-      "downloadsId": 1,
-      "hash": "84647a7c7042032085cd2dc617e710584d228a66",
-      "time": "2020-11-25T15:42:24+00:00",
-      "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/8/4/647a7c7042032085cd2dc617e710584d228a66/20w48a.json"
     },
     {
       "assetHash": "1898734d8df0347c8b297eff354a4e1738d28c21",
@@ -271,9 +75,32 @@
       "downloads": "e466cc6c401e401fcbc83d8fa192ab2ad3ee058f",
       "downloadsId": 1,
       "hash": "7febff4c201ab21ba721ab28fecafbaff6c75c9e",
+      "lastModified": "2021-11-30T09:48:09+00:00",
       "time": "2020-11-25T15:42:24+00:00",
       "type": "snapshot",
       "url": "https://skyrising.github.io/mc-versions/manifest/7/f/ebff4c201ab21ba721ab28fecafbaff6c75c9e/20w48a.json"
+    },
+    {
+      "assetHash": "dc07b2e194e5a7e6e6f6dd54a7ace9e66238c30b",
+      "assetIndex": "1.17",
+      "downloads": "e466cc6c401e401fcbc83d8fa192ab2ad3ee058f",
+      "downloadsId": 1,
+      "hash": "ac79262cd9e26e5421eee2508b58557652cc9fb6",
+      "lastModified": "2021-09-15T16:19:45+00:00",
+      "time": "2020-11-25T15:42:24+00:00",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/manifest/a/c/79262cd9e26e5421eee2508b58557652cc9fb6/20w48a.json"
+    },
+    {
+      "assetHash": "e5af543d9b3ce1c063a97842c38e50e29f961f00",
+      "assetIndex": "1.17",
+      "downloads": "e466cc6c401e401fcbc83d8fa192ab2ad3ee058f",
+      "downloadsId": 1,
+      "hash": "ed75f2a9c17e481b4305275929797d4d5184f1c7",
+      "lastModified": "2021-07-07T13:55:23+00:00",
+      "time": "2020-11-25T15:42:24+00:00",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/manifest/e/d/75f2a9c17e481b4305275929797d4d5184f1c7/20w48a.json"
     },
     {
       "assetHash": "e5af543d9b3ce1c063a97842c38e50e29f961f00",
@@ -281,6 +108,7 @@
       "downloads": "e466cc6c401e401fcbc83d8fa192ab2ad3ee058f",
       "downloadsId": 1,
       "hash": "7bd2f7c5ece4b3ec534d7f27738b69c2e4bfcace",
+      "lastModified": "2021-07-06T12:49:12+00:00",
       "time": "2020-11-25T15:42:24+00:00",
       "type": "snapshot",
       "url": "https://skyrising.github.io/mc-versions/manifest/7/b/d2f7c5ece4b3ec534d7f27738b69c2e4bfcace/20w48a.json"
@@ -291,89 +119,32 @@
       "downloads": "e466cc6c401e401fcbc83d8fa192ab2ad3ee058f",
       "downloadsId": 1,
       "hash": "75c018c016ef8ee3606a64ab8c82266358d6c4c9",
+      "lastModified": "2021-07-05T13:36:05+00:00",
       "time": "2020-11-25T15:42:24+00:00",
       "type": "snapshot",
       "url": "https://skyrising.github.io/mc-versions/manifest/7/5/c018c016ef8ee3606a64ab8c82266358d6c4c9/20w48a.json"
     },
     {
-      "assetHash": "1898734d8df0347c8b297eff354a4e1738d28c21",
+      "assetHash": "4fefa75bc44abb319a51939cda70094b6c183c5d",
       "assetIndex": "1.17",
       "downloads": "e466cc6c401e401fcbc83d8fa192ab2ad3ee058f",
       "downloadsId": 1,
-      "hash": "757d218a75cd85fe7fe5a08e32c47c2957ba492f",
+      "hash": "edde0bd9461a96d06dfe66d0e16123bff73d070f",
+      "lastModified": "2021-07-01T15:31:47+00:00",
       "time": "2020-11-25T15:42:24+00:00",
       "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/7/5/7d218a75cd85fe7fe5a08e32c47c2957ba492f/20w48a.json"
+      "url": "https://skyrising.github.io/mc-versions/manifest/e/d/de0bd9461a96d06dfe66d0e16123bff73d070f/20w48a.json"
     },
     {
-      "assetHash": "d6c1357efc4f62da468d98fe57dae0489e410ab6",
+      "assetHash": "8b1f82c5334d105f736034d02cf90f8c0c84b23c",
       "assetIndex": "1.17",
       "downloads": "e466cc6c401e401fcbc83d8fa192ab2ad3ee058f",
       "downloadsId": 1,
-      "hash": "706bc479ab5cab067b3ab38e4afef1935ea5d8c9",
+      "hash": "c19718d3d28a7a7c19a36cfadb4fe67e2ae8a2be",
+      "lastModified": "2021-06-30T15:48:58+00:00",
       "time": "2020-11-25T15:42:24+00:00",
       "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/7/0/6bc479ab5cab067b3ab38e4afef1935ea5d8c9/20w48a.json"
-    },
-    {
-      "assetHash": "a01fc0c896b7ee5233a8d7aa8492993cb92b5d38",
-      "assetIndex": "1.17",
-      "downloads": "e466cc6c401e401fcbc83d8fa192ab2ad3ee058f",
-      "downloadsId": 1,
-      "hash": "619b020f613cd1f7516afc16666136a66849ad07",
-      "time": "2020-11-25T15:42:24+00:00",
-      "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/6/1/9b020f613cd1f7516afc16666136a66849ad07/20w48a.json"
-    },
-    {
-      "assetHash": "19a53a9d06b3a2c4e64eb0a907b90fe49bf1f6ee",
-      "assetIndex": "1.17",
-      "downloads": "e466cc6c401e401fcbc83d8fa192ab2ad3ee058f",
-      "downloadsId": 1,
-      "hash": "5a6e7d5ed6a12ea774ab47fda28ff56c1ebf4391",
-      "time": "2020-11-25T15:42:24+00:00",
-      "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/5/a/6e7d5ed6a12ea774ab47fda28ff56c1ebf4391/20w48a.json"
-    },
-    {
-      "assetHash": "b9ee9752245731c4c441fb1d94b52033bea63efb",
-      "assetIndex": "1.17",
-      "downloads": "e466cc6c401e401fcbc83d8fa192ab2ad3ee058f",
-      "downloadsId": 1,
-      "hash": "573ebdd966bd9ad15a474a015e08df0e7f8cec24",
-      "time": "2020-11-25T15:42:24+00:00",
-      "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/5/7/3ebdd966bd9ad15a474a015e08df0e7f8cec24/20w48a.json"
-    },
-    {
-      "assetHash": "c6e8898a39b4c29ca1ce3cadcae58b532a279a6f",
-      "assetIndex": "1.17",
-      "downloads": "e466cc6c401e401fcbc83d8fa192ab2ad3ee058f",
-      "downloadsId": 1,
-      "hash": "50dde21ee1652785a27c5da583c5302d726ef192",
-      "time": "2020-11-25T15:42:24+00:00",
-      "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/5/0/dde21ee1652785a27c5da583c5302d726ef192/20w48a.json"
-    },
-    {
-      "assetHash": "fc00c90b4d2d27a4569b4f0d5487c70d13063dba",
-      "assetIndex": "1.17",
-      "downloads": "e466cc6c401e401fcbc83d8fa192ab2ad3ee058f",
-      "downloadsId": 1,
-      "hash": "433e5e131072efc44b3e9f6cccd05305b69530d7",
-      "time": "2020-11-25T15:42:24+00:00",
-      "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/4/3/3e5e131072efc44b3e9f6cccd05305b69530d7/20w48a.json"
-    },
-    {
-      "assetHash": "e8dbc76be7778ccf837a48c462806b873aff62ff",
-      "assetIndex": "1.17",
-      "downloads": "e466cc6c401e401fcbc83d8fa192ab2ad3ee058f",
-      "downloadsId": 1,
-      "hash": "3aae5dc9820bb3474c1e161692cd965b4af1d877",
-      "time": "2020-11-25T15:42:24+00:00",
-      "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/3/a/ae5dc9820bb3474c1e161692cd965b4af1d877/20w48a.json"
+      "url": "https://skyrising.github.io/mc-versions/manifest/c/1/9718d3d28a7a7c19a36cfadb4fe67e2ae8a2be/20w48a.json"
     },
     {
       "assetHash": "229b5b523cf8b920db0a9d4ee2b1cf3f49d7dbce",
@@ -381,39 +152,131 @@
       "downloads": "e466cc6c401e401fcbc83d8fa192ab2ad3ee058f",
       "downloadsId": 1,
       "hash": "38992f68ee5780578c2f02603ce4987a3f6ba38d",
+      "lastModified": "2021-06-29T15:19:42+00:00",
       "time": "2020-11-25T15:42:24+00:00",
       "type": "snapshot",
       "url": "https://skyrising.github.io/mc-versions/manifest/3/8/992f68ee5780578c2f02603ce4987a3f6ba38d/20w48a.json"
     },
     {
-      "assetHash": "7228a0a2f77ce7f176e1a98f2beff168a6d01ffe",
+      "assetHash": "fc00c90b4d2d27a4569b4f0d5487c70d13063dba",
       "assetIndex": "1.17",
       "downloads": "e466cc6c401e401fcbc83d8fa192ab2ad3ee058f",
       "downloadsId": 1,
-      "hash": "355519b697d761f19c2d8953bec1867863d51269",
+      "hash": "433e5e131072efc44b3e9f6cccd05305b69530d7",
+      "lastModified": "2021-06-18T12:30:39+00:00",
       "time": "2020-11-25T15:42:24+00:00",
       "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/3/5/5519b697d761f19c2d8953bec1867863d51269/20w48a.json"
+      "url": "https://skyrising.github.io/mc-versions/manifest/4/3/3e5e131072efc44b3e9f6cccd05305b69530d7/20w48a.json"
     },
     {
-      "assetHash": "0305fa3b64cb3e7c32cab0d3458eb4d948ebf18f",
+      "assetHash": "15809afbdc4489abd52a3d6c3fda0124f8f3404b",
       "assetIndex": "1.17",
       "downloads": "e466cc6c401e401fcbc83d8fa192ab2ad3ee058f",
       "downloadsId": 1,
-      "hash": "30387e74905fc14bb75215154793bb550da64ddf",
+      "hash": "8f942ca8f3e6d00bc4824ba8b91dde14161315ea",
+      "lastModified": "2021-06-08T11:09:21+00:00",
       "time": "2020-11-25T15:42:24+00:00",
       "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/3/0/387e74905fc14bb75215154793bb550da64ddf/20w48a.json"
+      "url": "https://skyrising.github.io/mc-versions/manifest/8/f/942ca8f3e6d00bc4824ba8b91dde14161315ea/20w48a.json"
     },
     {
-      "assetHash": "e022240e3d70866f41dd88a3b342cf842a7b31bd",
+      "assetHash": "5980cedf055a0ebc1059ddb9487a004c7d0f781e",
       "assetIndex": "1.17",
       "downloads": "e466cc6c401e401fcbc83d8fa192ab2ad3ee058f",
       "downloadsId": 1,
-      "hash": "2665aa455ae6a7462ee70d0e653a02ee61290e0c",
+      "hash": "febc438679e1cde8cfad2b8c685a2fa20cada783",
+      "lastModified": "2021-06-07T11:58:34+00:00",
       "time": "2020-11-25T15:42:24+00:00",
       "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/2/6/65aa455ae6a7462ee70d0e653a02ee61290e0c/20w48a.json"
+      "url": "https://skyrising.github.io/mc-versions/manifest/f/e/bc438679e1cde8cfad2b8c685a2fa20cada783/20w48a.json"
+    },
+    {
+      "assetHash": "c6e8898a39b4c29ca1ce3cadcae58b532a279a6f",
+      "assetIndex": "1.17",
+      "downloads": "e466cc6c401e401fcbc83d8fa192ab2ad3ee058f",
+      "downloadsId": 1,
+      "hash": "50dde21ee1652785a27c5da583c5302d726ef192",
+      "lastModified": "2021-06-04T13:41:24+00:00",
+      "time": "2020-11-25T15:42:24+00:00",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/manifest/5/0/dde21ee1652785a27c5da583c5302d726ef192/20w48a.json"
+    },
+    {
+      "assetHash": "ff4c1b667c02b183352af8817a2699a96abc08e0",
+      "assetIndex": "1.17",
+      "downloads": "e466cc6c401e401fcbc83d8fa192ab2ad3ee058f",
+      "downloadsId": 1,
+      "hash": "ee93cb3ce04a5efd77493774ed491fbd4c65c3b8",
+      "lastModified": "2021-06-03T17:13:06+00:00",
+      "time": "2020-11-25T15:42:24+00:00",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/manifest/e/e/93cb3ce04a5efd77493774ed491fbd4c65c3b8/20w48a.json"
+    },
+    {
+      "assetHash": "19a53a9d06b3a2c4e64eb0a907b90fe49bf1f6ee",
+      "assetIndex": "1.17",
+      "downloads": "e466cc6c401e401fcbc83d8fa192ab2ad3ee058f",
+      "downloadsId": 1,
+      "hash": "5a6e7d5ed6a12ea774ab47fda28ff56c1ebf4391",
+      "lastModified": "2021-06-02T16:24:36+00:00",
+      "time": "2020-11-25T15:42:24+00:00",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/manifest/5/a/6e7d5ed6a12ea774ab47fda28ff56c1ebf4391/20w48a.json"
+    },
+    {
+      "assetHash": "d6c1357efc4f62da468d98fe57dae0489e410ab6",
+      "assetIndex": "1.17",
+      "downloads": "e466cc6c401e401fcbc83d8fa192ab2ad3ee058f",
+      "downloadsId": 1,
+      "hash": "706bc479ab5cab067b3ab38e4afef1935ea5d8c9",
+      "lastModified": "2021-06-01T15:49:08+00:00",
+      "time": "2020-11-25T15:42:24+00:00",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/manifest/7/0/6bc479ab5cab067b3ab38e4afef1935ea5d8c9/20w48a.json"
+    },
+    {
+      "assetHash": "a7a0a390d250147932a21219612f77d588d266ba",
+      "assetIndex": "1.17",
+      "downloads": "e466cc6c401e401fcbc83d8fa192ab2ad3ee058f",
+      "downloadsId": 1,
+      "hash": "974526066ae320818000326dda6cbf7e693f06e1",
+      "lastModified": "2021-05-31T15:57:39+00:00",
+      "time": "2020-11-25T15:42:24+00:00",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/manifest/9/7/4526066ae320818000326dda6cbf7e693f06e1/20w48a.json"
+    },
+    {
+      "assetHash": "928de7f973076c901a10a186a09812de9027bab5",
+      "assetIndex": "1.17",
+      "downloads": "e466cc6c401e401fcbc83d8fa192ab2ad3ee058f",
+      "downloadsId": 1,
+      "hash": "85883c1e477dd2f4a92fc26b84e49e2c21ca70ce",
+      "lastModified": "2021-05-27T10:04:04+00:00",
+      "time": "2020-11-25T15:42:24+00:00",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/manifest/8/5/883c1e477dd2f4a92fc26b84e49e2c21ca70ce/20w48a.json"
+    },
+    {
+      "assetHash": "22ec056697dacf4c6aa1f17700e94994454f9e49",
+      "assetIndex": "1.17",
+      "downloads": "e466cc6c401e401fcbc83d8fa192ab2ad3ee058f",
+      "downloadsId": 1,
+      "hash": "84647a7c7042032085cd2dc617e710584d228a66",
+      "lastModified": "2021-05-19T15:38:27+00:00",
+      "time": "2020-11-25T15:42:24+00:00",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/manifest/8/4/647a7c7042032085cd2dc617e710584d228a66/20w48a.json"
+    },
+    {
+      "assetHash": "b9ee9752245731c4c441fb1d94b52033bea63efb",
+      "assetIndex": "1.17",
+      "downloads": "e466cc6c401e401fcbc83d8fa192ab2ad3ee058f",
+      "downloadsId": 1,
+      "hash": "573ebdd966bd9ad15a474a015e08df0e7f8cec24",
+      "lastModified": "2021-05-12T11:24:33+00:00",
+      "time": "2020-11-25T15:42:24+00:00",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/manifest/5/7/3ebdd966bd9ad15a474a015e08df0e7f8cec24/20w48a.json"
     },
     {
       "assetHash": "7ccefbf653a0f407c655522dab844e29baa0cefb",
@@ -421,9 +284,76 @@
       "downloads": "e466cc6c401e401fcbc83d8fa192ab2ad3ee058f",
       "downloadsId": 1,
       "hash": "167619df543e5b3f5fe17c35d03a6e0d0ed25929",
+      "lastModified": "2021-05-05T15:34:50+00:00",
       "time": "2020-11-25T15:42:24+00:00",
       "type": "snapshot",
       "url": "https://skyrising.github.io/mc-versions/manifest/1/6/7619df543e5b3f5fe17c35d03a6e0d0ed25929/20w48a.json"
+    },
+    {
+      "assetHash": "7228a0a2f77ce7f176e1a98f2beff168a6d01ffe",
+      "assetIndex": "1.17",
+      "downloads": "e466cc6c401e401fcbc83d8fa192ab2ad3ee058f",
+      "downloadsId": 1,
+      "hash": "355519b697d761f19c2d8953bec1867863d51269",
+      "lastModified": "2021-04-28T13:58:48+00:00",
+      "time": "2020-11-25T15:42:24+00:00",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/manifest/3/5/5519b697d761f19c2d8953bec1867863d51269/20w48a.json"
+    },
+    {
+      "assetHash": "0198cb89458ae865669d11bcf4ddc014b02e204b",
+      "assetIndex": "1.17",
+      "downloads": "e466cc6c401e401fcbc83d8fa192ab2ad3ee058f",
+      "downloadsId": 1,
+      "hash": "95c4e751caaf1691b7b37eceadb881c1a5caa529",
+      "lastModified": "2021-04-21T16:57:44+00:00",
+      "time": "2020-11-25T15:42:24+00:00",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/manifest/9/5/c4e751caaf1691b7b37eceadb881c1a5caa529/20w48a.json"
+    },
+    {
+      "assetHash": "e8dbc76be7778ccf837a48c462806b873aff62ff",
+      "assetIndex": "1.17",
+      "downloads": "e466cc6c401e401fcbc83d8fa192ab2ad3ee058f",
+      "downloadsId": 1,
+      "hash": "3aae5dc9820bb3474c1e161692cd965b4af1d877",
+      "lastModified": "2021-04-14T13:47:58+00:00",
+      "time": "2020-11-25T15:42:24+00:00",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/manifest/3/a/ae5dc9820bb3474c1e161692cd965b4af1d877/20w48a.json"
+    },
+    {
+      "assetHash": "d68c9fb7046a75a85eeea3c881bc358f2c55c6c4",
+      "assetIndex": "1.17",
+      "downloads": "e466cc6c401e401fcbc83d8fa192ab2ad3ee058f",
+      "downloadsId": 1,
+      "hash": "bec49f15e828427a7b44f316b8335e75f61f4019",
+      "lastModified": "2021-04-07T14:14:12+00:00",
+      "time": "2020-11-25T15:42:24+00:00",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/manifest/b/e/c49f15e828427a7b44f316b8335e75f61f4019/20w48a.json"
+    },
+    {
+      "assetHash": "a353b13d26df04a3aa6d17a193b591ab92c718ae",
+      "assetIndex": "1.17",
+      "downloads": "e466cc6c401e401fcbc83d8fa192ab2ad3ee058f",
+      "downloadsId": 1,
+      "hash": "9493c6cfa6862ee673f41b8032e8e71d8433c572",
+      "lastModified": "2021-03-31T16:25:29+00:00",
+      "time": "2020-11-25T15:42:24+00:00",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/manifest/9/4/93c6cfa6862ee673f41b8032e8e71d8433c572/20w48a.json"
+    },
+    {
+      "assetHash": "a01fc0c896b7ee5233a8d7aa8492993cb92b5d38",
+      "assetIndex": "1.17",
+      "downloads": "e466cc6c401e401fcbc83d8fa192ab2ad3ee058f",
+      "downloadsId": 1,
+      "hash": "619b020f613cd1f7516afc16666136a66849ad07",
+      "lastModified": "2021-03-17T15:24:40+00:00",
+      "time": "2020-11-25T15:42:24+00:00",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/manifest/6/1/9b020f613cd1f7516afc16666136a66849ad07/20w48a.json"
     },
     {
       "assetHash": "b762b22ffe62ae5302ff175cde96f575bd09b53e",
@@ -431,9 +361,120 @@
       "downloads": "e466cc6c401e401fcbc83d8fa192ab2ad3ee058f",
       "downloadsId": 1,
       "hash": "03f622f020d008639d52209d39d2f76fa2375590",
+      "lastModified": "2021-03-10T14:51:02+00:00",
       "time": "2020-11-25T15:42:24+00:00",
       "type": "snapshot",
       "url": "https://skyrising.github.io/mc-versions/manifest/0/3/f622f020d008639d52209d39d2f76fa2375590/20w48a.json"
+    },
+    {
+      "assetHash": "0305fa3b64cb3e7c32cab0d3458eb4d948ebf18f",
+      "assetIndex": "1.17",
+      "downloads": "e466cc6c401e401fcbc83d8fa192ab2ad3ee058f",
+      "downloadsId": 1,
+      "hash": "30387e74905fc14bb75215154793bb550da64ddf",
+      "lastModified": "2021-02-25T11:52:28+00:00",
+      "time": "2020-11-25T15:42:24+00:00",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/manifest/3/0/387e74905fc14bb75215154793bb550da64ddf/20w48a.json"
+    },
+    {
+      "assetHash": "642cc9d735b08f731dac8afd97374cd46ec5f627",
+      "assetIndex": "1.17",
+      "downloads": "e466cc6c401e401fcbc83d8fa192ab2ad3ee058f",
+      "downloadsId": 1,
+      "hash": "ce09c937afdeeab78103f2f3be2c33fb92d6dd45",
+      "lastModified": "2021-02-24T14:47:10+00:00",
+      "time": "2020-11-25T15:42:24+00:00",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/manifest/c/e/09c937afdeeab78103f2f3be2c33fb92d6dd45/20w48a.json"
+    },
+    {
+      "assetHash": "d76d2ae366af6820990b10bb149b3360a41a59d2",
+      "assetIndex": "1.17",
+      "downloads": "e466cc6c401e401fcbc83d8fa192ab2ad3ee058f",
+      "downloadsId": 1,
+      "hash": "f2face22e667d89008071407a8d028184f8f74a2",
+      "lastModified": "2021-02-17T16:42:08+00:00",
+      "time": "2020-11-25T15:42:24+00:00",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/manifest/f/2/face22e667d89008071407a8d028184f8f74a2/20w48a.json"
+    },
+    {
+      "assetHash": "358623ca0695a0e1180013039011b77bfc03d6d8",
+      "assetIndex": "1.17",
+      "downloads": "e466cc6c401e401fcbc83d8fa192ab2ad3ee058f",
+      "downloadsId": 1,
+      "hash": "8812cd5ac0f4b2b742f334c6433da2cb9f07ee28",
+      "lastModified": "2021-02-10T17:30:24+00:00",
+      "time": "2020-11-25T15:42:24+00:00",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/manifest/8/8/12cd5ac0f4b2b742f334c6433da2cb9f07ee28/20w48a.json"
+    },
+    {
+      "assetHash": "ff71ef080ad9ef91f661a9f5ba9ece6b8a6ea719",
+      "assetIndex": "1.17",
+      "downloads": "e466cc6c401e401fcbc83d8fa192ab2ad3ee058f",
+      "downloadsId": 1,
+      "hash": "ac6f37731a634ad72c4bca69df277eef731bfe03",
+      "lastModified": "2021-02-04T17:08:28+00:00",
+      "time": "2020-11-25T15:42:24+00:00",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/manifest/a/c/6f37731a634ad72c4bca69df277eef731bfe03/20w48a.json"
+    },
+    {
+      "assetHash": "0085c15a6318aa2d235ee553f70c22284b43bf7b",
+      "assetIndex": "1.17",
+      "downloads": "e466cc6c401e401fcbc83d8fa192ab2ad3ee058f",
+      "downloadsId": 1,
+      "hash": "d4a8bab4e9a537f8d22820e222a7b38df4d56658",
+      "lastModified": "2021-02-03T16:44:49+00:00",
+      "time": "2020-11-25T15:42:24+00:00",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/manifest/d/4/a8bab4e9a537f8d22820e222a7b38df4d56658/20w48a.json"
+    },
+    {
+      "assetHash": "13b4faf35c0ae2a672a6c60fcbee91b215852810",
+      "assetIndex": "1.17",
+      "downloads": "e466cc6c401e401fcbc83d8fa192ab2ad3ee058f",
+      "downloadsId": 1,
+      "hash": "8c0371d60d83a9b54fe21bb8c39e877ae6d2e2a3",
+      "lastModified": "2021-01-20T15:02:43+00:00",
+      "time": "2020-11-25T15:42:24+00:00",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/manifest/8/c/0371d60d83a9b54fe21bb8c39e877ae6d2e2a3/20w48a.json"
+    },
+    {
+      "assetHash": "e022240e3d70866f41dd88a3b342cf842a7b31bd",
+      "assetIndex": "1.17",
+      "downloads": "e466cc6c401e401fcbc83d8fa192ab2ad3ee058f",
+      "downloadsId": 1,
+      "hash": "2665aa455ae6a7462ee70d0e653a02ee61290e0c",
+      "lastModified": "2020-12-16T16:35:22+00:00",
+      "time": "2020-11-25T15:42:24+00:00",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/manifest/2/6/65aa455ae6a7462ee70d0e653a02ee61290e0c/20w48a.json"
+    },
+    {
+      "assetHash": "ecd216d8188230180af4163ee4f4901e28acee29",
+      "assetIndex": "1.17",
+      "downloads": "e466cc6c401e401fcbc83d8fa192ab2ad3ee058f",
+      "downloadsId": 1,
+      "hash": "9e0b9455e7b44714ab9e775ef31179424996bfaa",
+      "lastModified": "2020-12-02T16:56:31+00:00",
+      "time": "2020-11-25T15:42:24+00:00",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/manifest/9/e/0b9455e7b44714ab9e775ef31179424996bfaa/20w48a.json"
+    },
+    {
+      "assetHash": "ac16cca258277c17bfebc56b719168c5454e1a18",
+      "assetIndex": "1.17",
+      "downloads": "e466cc6c401e401fcbc83d8fa192ab2ad3ee058f",
+      "downloadsId": 1,
+      "hash": "96014b5c80ea16790120577ef452fdee4e1fe5ba",
+      "lastModified": "2020-11-25T15:48:30+00:00",
+      "time": "2020-11-25T15:42:24+00:00",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/manifest/9/6/014b5c80ea16790120577ef452fdee4e1fe5ba/20w48a.json"
     }
   ],
   "next": [
