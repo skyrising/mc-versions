@@ -1,4 +1,5 @@
 #!/usr/bin/env -S deno run --allow-env --allow-read --allow-write
+import './types.d.ts'
 
 import * as path from 'https://deno.land/std@0.113.0/path/mod.ts'
 import React from 'https://esm.sh/react@17.0.2'
@@ -41,6 +42,7 @@ for (const file of readdirRecursive(dataDir)) {
 timeline.sort((a, b) => new Date(a.publicTime || a.releaseTime).getTime() - new Date(b.publicTime || b.releaseTime).getTime())
 await Deno.writeTextFile(path.resolve(distDir, 'timeline.json'), JSON.stringify(timeline, null, 2))
 
+// deno-lint-ignore no-explicit-any
 function resolveUrls(base: URL, obj: any) {
     if (Array.isArray(obj)) {
         for (const element of obj) resolveUrls(base, element)
@@ -58,7 +60,7 @@ function resolveUrls(base: URL, obj: any) {
 
 const INDEX_HTML_TEMPLATE = await Deno.readTextFile(path.resolve(dataDir, 'index.html'))
 
-const MAIN_MANIFEST = JSON.parse(await Deno.readTextFile(path.resolve(dataDir, 'version_manifest.json')))
+const MAIN_MANIFEST: MainManifest = JSON.parse(await Deno.readTextFile(path.resolve(dataDir, 'version_manifest.json')))
 const versionElements: Element[] = []
 for (const version of MAIN_MANIFEST.versions) {
     versionElements.push(await createVersionElement(version))
@@ -66,8 +68,8 @@ for (const version of MAIN_MANIFEST.versions) {
 const rendered = ReactDOMServer.renderToStaticMarkup(<>{...versionElements}</>)
 await Deno.writeTextFile(path.resolve(distDir, 'index.html'), INDEX_HTML_TEMPLATE.replace('$$VERSIONS$$', rendered))
 
-async function createVersionElement(version: any) {
-    const details = JSON.parse(await Deno.readTextFile(path.resolve(dataDir, `version/${version.omniId}.json`)))
+async function createVersionElement(version: ShortVersion) {
+    const details: VersionData = JSON.parse(await Deno.readTextFile(path.resolve(dataDir, `version/${version.omniId}.json`)))
     return <details className='version' id={version.omniId} open={Object.values(MAIN_MANIFEST.latest).includes(version.id)}>
         <summary>
             <a className='version-title' href={`version/${version.omniId}.json`}>{version.id}{version.id === version.omniId ? '' : ` (${version.omniId})`}</a>

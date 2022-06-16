@@ -5,6 +5,7 @@ export function sha1(data: Message): string {
     return new Sha1().update(data).toString()
 }
 
+
 export function sortObject<T>(obj: T, recursive = true): T {
     if (recursive && Array.isArray(obj)) {
         return obj.map(e => sortObject(e)) as unknown as T
@@ -13,8 +14,10 @@ export function sortObject<T>(obj: T, recursive = true): T {
     }
     const keys = Object.keys(obj)
     keys.sort()
+    // deno-lint-ignore no-explicit-any
     const newObj: any = {}
     for (const key of keys) {
+        // deno-lint-ignore no-explicit-any
         const value = (obj as any)[key]
         newObj[key] = recursive ? sortObject(value, recursive) : value
     }

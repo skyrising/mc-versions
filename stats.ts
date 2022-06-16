@@ -8,7 +8,7 @@ const stats: Record<string, Stats> = {}
 for (let i = MAIN_MANIFEST.versions.length - 1; i >= 0; i--) {
     const info = MAIN_MANIFEST.versions[i]
     const details = JSON.parse(await Deno.readTextFile(`data/version/${info.omniId}.json`))
-    if (!details.publicTime) continue
+    //if (!details.publicTime) continue
     const releaseTime = new Date(details.publicTime || details.releaseTime)
     if (releaseTime.getUTCHours() === 0 && releaseTime.getUTCMinutes() === 0) continue
     const age = releaseTime.valueOf() - Date.parse(details.releaseTime)
