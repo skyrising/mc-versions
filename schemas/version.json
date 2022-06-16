@@ -85,6 +85,10 @@
             },
             "additionalProperties": false
         },
+        "libraries": {
+            "type": "array",
+            "items": {"type": "string"}
+        },
         "manifests": {
             "type": "array",
             "items": {"$ref": "#/$defs/manifestInfo"}
@@ -109,5 +113,5 @@
         },
         "world": {"$ref": "#/$defs/worldFormat"}
     },
-    "required": ["id", "client", "server", "downloads", "normalizedVersion", "previous", "next", "releaseTarget", "releaseTime", "protocol", "world"]
+    "required": ["id", "client", "server", "downloads", "normalizedVersion", "previous", "next", "releaseTarget", "releaseTime", "protocol", "world", "libraries"]
 }
