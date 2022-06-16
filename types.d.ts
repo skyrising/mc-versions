@@ -64,6 +64,8 @@ type ShortManifest = Omit<BaseVersionManifest, 'id' | 'releaseTime'> & {
     downloadsId?: number
     assetIndex: string
     assetHash: string
+    hash: string
+    url: string
 }
 
 type TempVersionManifest = {
