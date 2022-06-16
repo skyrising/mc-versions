@@ -67,3 +67,35 @@ export function mkdirp(dir: string) {
     mkdirp(path.dirname(dir))
     Deno.mkdirSync(dir)
 }
+
+export function evaluateRules(rules: Rule[], context: RuleContext) {
+    let action = 'disallow'
+    for (const rule of rules) {
+        if (evaluate(rule, context)) {
+            action = rule.action
+        }
+    }
+    console.log(`${JSON.stringify(rules)} = ${action}`)
+    return action
+}
+
+export function evaluate(rule: RuleValue, context: RuleContext) {
+    for (const key in rule) {
+        if (key === 'action') continue
+        const ruleValue = rule[key]
+        const contextValue = context[key]
+        if (typeof ruleValue !== typeof contextValue) return false
+        switch (typeof ruleValue) {
+            case 'object':
+                if (!evaluate(ruleValue, contextValue as RuleContext)) return false
+                break
+            case 'boolean':
+                if (ruleValue !== contextValue) return false
+                break
+            case 'string':
+                if (!RegExp(ruleValue).test(contextValue as string)) return false
+                break
+        }
+    }
+    return true
+}

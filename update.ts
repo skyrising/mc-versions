@@ -4,7 +4,7 @@ import './types.d.ts'
 import * as path from 'https://deno.land/std@0.113.0/path/mod.ts'
 import * as semver from 'https://deno.land/x/semver@v1.4.0/mod.ts'
 
-import {sha1, sortObject, sortObjectByValues, readdirRecursive, mkdirp, existsSync} from './utils.ts'
+import {sha1, sortObject, sortObjectByValues, readdirRecursive, mkdirp, existsSync, evaluateRules} from './utils.ts'
 import {getReleaseTarget, normalizeVersion} from './versioning.ts'
 import {parseJarInfo, shouldCheckJar} from './jar-analyzer.ts'
 import {getDownloads, downloadFile} from './download.ts'
@@ -111,6 +111,7 @@ async function collectVersions(hashMap: HashMap<string>, oldOmniVersions: HashMa
             assetIndex: data.assetIndex?.id,
             assetHash: data.assetIndex?.sha1,
             launcher: data.downloads.client?.url.startsWith('https://launcher.mojang.com/'),
+            libraries: data.libraries.filter(lib => !lib.rules || evaluateRules(lib.rules, {}) === 'allow'),
             localMirror: {}
         }
         ;(byId[v.omniId] ??= {})[hash] = v
@@ -348,6 +349,7 @@ async function updateVersion(id: VersionId, manifests: Array<TempVersionManifest
         }
         m.localMirror = await getDownloads(m)
     }
+    data.libraries = [...new Set(manifests[0].libraries.map(l => l.name))].filter(l => l.split(':').length < 4).sort()
     data.releaseTarget = getReleaseTarget(data)
     if (data.normalizedVersion === undefined) {
         data.normalizedVersion = normalizeVersion(data.id, data.releaseTarget)
@@ -377,7 +379,8 @@ async function updateVersion(id: VersionId, manifests: Array<TempVersionManifest
         releaseTime: undefined,
         downloads: m.downloadsHash,
         downloadsHash: undefined,
-        localMirror: undefined
+        localMirror: undefined,
+        libraries: undefined
     }) as ShortManifest)
     return {
         info: {

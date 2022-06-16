@@ -2,7 +2,7 @@ type VersionId = string
 
 interface MainManifest {
     latest: {[branch: string]: string}
-    versions: Array<ShortVersion>
+    versions: ShortVersion[]
 }
 
 interface ShortVersion {
@@ -25,13 +25,13 @@ interface ProtocolVersion {
 
 interface ProtocolVersionInfo {
     version: number
-    clients: Array<VersionId>
-    servers: Array<VersionId>
+    clients: VersionId[]
+    servers: VersionId[]
 }
 
 interface ProtocolData {
     type: ProtocolType
-    versions: Array<ProtocolVersionInfo>
+    versions: ProtocolVersionInfo[]
 }
 
 type WorldFormat = 'anvil'
@@ -54,10 +54,28 @@ interface DownloadInfo {
     url: string
 }
 
+interface Library {
+    name: string
+    rules?: Rule[]
+}
+
+interface RuleValue {
+    [key: string]: RuleValue|string|boolean
+}
+
+type Rule = {
+    action: 'allow' | 'disallow'
+} & RuleValue
+
+interface RuleContext {
+    [key: string]: RuleContext|string|boolean
+}
+
 type VersionManifest = BaseVersionManifest & {
     assets?: string
     assetIndex?: {id: string, sha1: string, size: number, totalSize: number, url: string}
     downloads?: {[id: string]: DownloadInfo}
+    libraries: Library[]
 }
 
 type ShortManifest = Omit<BaseVersionManifest, 'id' | 'releaseTime'> & {
@@ -84,21 +102,23 @@ type TempVersionManifest = {
     assetHash?: string
     launcher: boolean
     localMirror: {[id: string]: string}
+    libraries: Library[]
 }
 
 type VersionData = BaseVersionManifest & {
     omniId: VersionId
     client: boolean
     server: boolean
-    downloads: Record<string, DownloadInfo>
+    downloads: {[id: string]: DownloadInfo}
     launcher: boolean
     sharedMappings: boolean
     normalizedVersion?: VersionId
-    manifests: Array<ShortManifest>
+    manifests: ShortManifest[]
+    libraries: string[]
     protocol?: ProtocolVersion
     world?: WorldVersion
-    previous: Array<VersionId>
-    next: Array<VersionId>
+    previous: VersionId[]
+    next: VersionId[]
 }
 
 type HashMap<T> = Record<string, T>
