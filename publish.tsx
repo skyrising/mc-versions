@@ -1,9 +1,9 @@
-#!/usr/bin/env -S deno run --allow-env --allow-read --allow-write
+#!/usr/bin/env -S deno run --no-check=remote --allow-env --allow-read --allow-write
 import './types.d.ts'
 
 import * as path from 'https://deno.land/std@0.113.0/path/mod.ts'
 import React from 'https://esm.sh/react@17.0.2'
-import ReactDOMServer from 'https://esm.sh/react-dom@17.0.2/server'
+import {renderToStaticMarkup} from 'https://esm.sh/react-dom@17.0.2/server'
 import {readdirRecursive, mkdirp} from './utils.ts'
 import {getType} from './versioning.ts'
 
@@ -65,7 +65,7 @@ const versionElements: Element[] = []
 for (const version of MAIN_MANIFEST.versions) {
     versionElements.push(await createVersionElement(version))
 }
-const rendered = ReactDOMServer.renderToStaticMarkup(<>{...versionElements}</>)
+const rendered = renderToStaticMarkup(<>{...versionElements}</>)
 await Deno.writeTextFile(path.resolve(distDir, 'index.html'), INDEX_HTML_TEMPLATE.replace('$$VERSIONS$$', rendered))
 
 async function createVersionElement(version: ShortVersion) {
