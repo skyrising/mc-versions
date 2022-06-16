@@ -19,4 +19,5 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email 'github-actions[bot]@users.noreply.github.com'
           git add .
-          git commit --no-gpg-sign -m "$(./commitmsg.ts)" && git push || echo 'No changes'
+          ./commitmsg.ts > .git/COMMIT_MSG
+          git commit --no-gpg-sign -F .git/COMMIT_MSG && git push || echo 'No changes'
