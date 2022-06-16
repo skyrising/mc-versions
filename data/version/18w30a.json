@@ -20,20 +20,11 @@
       "assetIndex": "1.13.1",
       "downloads": "18d7cab2220ee5cf0d3ed6ae55cb8d0b5539fa33",
       "downloadsId": 1,
-      "hash": "cd04437087c3f1d3090fbf6561455bc5e1138707",
+      "hash": "5715c5da66b560b800af7ad46f1422db285461f4",
+      "lastModified": "2021-12-15T15:55:27+00:00",
       "time": "2018-07-25T14:29:31+00:00",
       "type": "snapshot",
-      "url": "../manifest/c/d/04437087c3f1d3090fbf6561455bc5e1138707/18w30a.json"
-    },
-    {
-      "assetHash": "6d78d53da5ac7158e2f725056312edf9871dfbb1",
-      "assetIndex": "1.13.1",
-      "downloads": "18d7cab2220ee5cf0d3ed6ae55cb8d0b5539fa33",
-      "downloadsId": 1,
-      "hash": "b452eae340ff592f66d77a233f2d23767ecd2f90",
-      "time": "2018-07-25T14:29:31+00:00",
-      "type": "snapshot",
-      "url": "../manifest/b/4/52eae340ff592f66d77a233f2d23767ecd2f90/18w30a.json"
+      "url": "../manifest/5/7/15c5da66b560b800af7ad46f1422db285461f4/18w30a.json"
     },
     {
       "assetHash": "6d78d53da5ac7158e2f725056312edf9871dfbb1",
@@ -41,6 +32,7 @@
       "downloads": "18d7cab2220ee5cf0d3ed6ae55cb8d0b5539fa33",
       "downloadsId": 1,
       "hash": "896676da1edd84dd5b56e9ff33ac5ba7ec523834",
+      "lastModified": "2021-12-10T03:01:33+00:00",
       "time": "2018-07-25T14:29:31+00:00",
       "type": "snapshot",
       "url": "../manifest/8/9/6676da1edd84dd5b56e9ff33ac5ba7ec523834/18w30a.json"
@@ -50,10 +42,22 @@
       "assetIndex": "1.13.1",
       "downloads": "18d7cab2220ee5cf0d3ed6ae55cb8d0b5539fa33",
       "downloadsId": 1,
-      "hash": "5715c5da66b560b800af7ad46f1422db285461f4",
+      "hash": "b452eae340ff592f66d77a233f2d23767ecd2f90",
+      "lastModified": "2021-07-07T13:59:08+00:00",
       "time": "2018-07-25T14:29:31+00:00",
       "type": "snapshot",
-      "url": "../manifest/5/7/15c5da66b560b800af7ad46f1422db285461f4/18w30a.json"
+      "url": "../manifest/b/4/52eae340ff592f66d77a233f2d23767ecd2f90/18w30a.json"
+    },
+    {
+      "assetHash": "6d78d53da5ac7158e2f725056312edf9871dfbb1",
+      "assetIndex": "1.13.1",
+      "downloads": "18d7cab2220ee5cf0d3ed6ae55cb8d0b5539fa33",
+      "downloadsId": 1,
+      "hash": "cd04437087c3f1d3090fbf6561455bc5e1138707",
+      "lastModified": "2019-01-30T15:26:26+00:00",
+      "time": "2018-07-25T14:29:31+00:00",
+      "type": "snapshot",
+      "url": "../manifest/c/d/04437087c3f1d3090fbf6561455bc5e1138707/18w30a.json"
     }
   ],
   "next": [

@@ -26,14 +26,15 @@
   "id": "20w12a",
   "manifests": [
     {
-      "assetHash": "3a5d110a6ab102c7083bae4296d2de4b8fcf92eb",
+      "assetHash": "28680197f74e5e1d55054f6a63509c8298d428f9",
       "assetIndex": "1.16",
       "downloads": "1ad9f7180923ded95963e08362660ee73f63b20d",
       "downloadsId": 1,
-      "hash": "ee1b956ec5d4861cb92a5e65481ec7c8a091cf42",
+      "hash": "aa2a18d99b7e7c967b7100691e26609fe62aded5",
+      "lastModified": "2022-02-25T13:39:39+00:00",
       "time": "2020-03-18T16:42:06+00:00",
       "type": "snapshot",
-      "url": "../manifest/e/e/1b956ec5d4861cb92a5e65481ec7c8a091cf42/20w12a.json"
+      "url": "../manifest/a/a/2a18d99b7e7c967b7100691e26609fe62aded5/20w12a.json"
     },
     {
       "assetHash": "738b17ea266089b5e384791eb5a2cf1fafe109b6",
@@ -41,39 +42,10 @@
       "downloads": "1ad9f7180923ded95963e08362660ee73f63b20d",
       "downloadsId": 1,
       "hash": "c7ddf0ddc730010cf46c04a0b1d7027f64dfaa75",
+      "lastModified": "2021-12-15T15:52:42+00:00",
       "time": "2020-03-18T16:42:06+00:00",
       "type": "snapshot",
       "url": "../manifest/c/7/ddf0ddc730010cf46c04a0b1d7027f64dfaa75/20w12a.json"
-    },
-    {
-      "assetHash": "28680197f74e5e1d55054f6a63509c8298d428f9",
-      "assetIndex": "1.16",
-      "downloads": "1ad9f7180923ded95963e08362660ee73f63b20d",
-      "downloadsId": 1,
-      "hash": "aa2a18d99b7e7c967b7100691e26609fe62aded5",
-      "time": "2020-03-18T16:42:06+00:00",
-      "type": "snapshot",
-      "url": "../manifest/a/a/2a18d99b7e7c967b7100691e26609fe62aded5/20w12a.json"
-    },
-    {
-      "assetHash": "ad75fb46ff5c89aa5f9c90e12481e963854f9a6e",
-      "assetIndex": "1.16",
-      "downloads": "1ad9f7180923ded95963e08362660ee73f63b20d",
-      "downloadsId": 1,
-      "hash": "a76f3ae281981256620d813082cfdcbf4ad7c13f",
-      "time": "2020-03-18T16:42:06+00:00",
-      "type": "snapshot",
-      "url": "../manifest/a/7/6f3ae281981256620d813082cfdcbf4ad7c13f/20w12a.json"
-    },
-    {
-      "assetHash": "738b17ea266089b5e384791eb5a2cf1fafe109b6",
-      "assetIndex": "1.16",
-      "downloads": "1ad9f7180923ded95963e08362660ee73f63b20d",
-      "downloadsId": 1,
-      "hash": "a1e87a0266cb3cffcc58fe6611daa3e800af053a",
-      "time": "2020-03-18T16:42:06+00:00",
-      "type": "snapshot",
-      "url": "../manifest/a/1/e87a0266cb3cffcc58fe6611daa3e800af053a/20w12a.json"
     },
     {
       "assetHash": "738b17ea266089b5e384791eb5a2cf1fafe109b6",
@@ -81,19 +53,21 @@
       "downloads": "1ad9f7180923ded95963e08362660ee73f63b20d",
       "downloadsId": 1,
       "hash": "55d7f8dbd0cf746135eb8cbc7f5c59e6a4d85a34",
+      "lastModified": "2021-12-10T02:59:01+00:00",
       "time": "2020-03-18T16:42:06+00:00",
       "type": "snapshot",
       "url": "../manifest/5/5/d7f8dbd0cf746135eb8cbc7f5c59e6a4d85a34/20w12a.json"
     },
     {
-      "assetHash": "f8e11ca03b475dd655755b945334c7a0ac2c3b43",
+      "assetHash": "738b17ea266089b5e384791eb5a2cf1fafe109b6",
       "assetIndex": "1.16",
       "downloads": "1ad9f7180923ded95963e08362660ee73f63b20d",
       "downloadsId": 1,
-      "hash": "502345f3d68f7bacab0b0ec02780d77f81a69bfe",
+      "hash": "a1e87a0266cb3cffcc58fe6611daa3e800af053a",
+      "lastModified": "2021-11-30T09:49:25+00:00",
       "time": "2020-03-18T16:42:06+00:00",
       "type": "snapshot",
-      "url": "../manifest/5/0/2345f3d68f7bacab0b0ec02780d77f81a69bfe/20w12a.json"
+      "url": "../manifest/a/1/e87a0266cb3cffcc58fe6611daa3e800af053a/20w12a.json"
     },
     {
       "assetHash": "ad75fb46ff5c89aa5f9c90e12481e963854f9a6e",
@@ -101,9 +75,43 @@
       "downloads": "1ad9f7180923ded95963e08362660ee73f63b20d",
       "downloadsId": 1,
       "hash": "2b5a8457de3ebf77a2765ce0167202c40f768b0d",
+      "lastModified": "2021-07-07T13:56:37+00:00",
       "time": "2020-03-18T16:42:06+00:00",
       "type": "snapshot",
       "url": "../manifest/2/b/5a8457de3ebf77a2765ce0167202c40f768b0d/20w12a.json"
+    },
+    {
+      "assetHash": "ad75fb46ff5c89aa5f9c90e12481e963854f9a6e",
+      "assetIndex": "1.16",
+      "downloads": "1ad9f7180923ded95963e08362660ee73f63b20d",
+      "downloadsId": 1,
+      "hash": "a76f3ae281981256620d813082cfdcbf4ad7c13f",
+      "lastModified": "2021-06-29T15:20:55+00:00",
+      "time": "2020-03-18T16:42:06+00:00",
+      "type": "snapshot",
+      "url": "../manifest/a/7/6f3ae281981256620d813082cfdcbf4ad7c13f/20w12a.json"
+    },
+    {
+      "assetHash": "3a5d110a6ab102c7083bae4296d2de4b8fcf92eb",
+      "assetIndex": "1.16",
+      "downloads": "1ad9f7180923ded95963e08362660ee73f63b20d",
+      "downloadsId": 1,
+      "hash": "ee1b956ec5d4861cb92a5e65481ec7c8a091cf42",
+      "lastModified": "2021-01-13T14:12:54+00:00",
+      "time": "2020-03-18T16:42:06+00:00",
+      "type": "snapshot",
+      "url": "../manifest/e/e/1b956ec5d4861cb92a5e65481ec7c8a091cf42/20w12a.json"
+    },
+    {
+      "assetHash": "f8e11ca03b475dd655755b945334c7a0ac2c3b43",
+      "assetIndex": "1.16",
+      "downloads": "1ad9f7180923ded95963e08362660ee73f63b20d",
+      "downloadsId": 1,
+      "hash": "502345f3d68f7bacab0b0ec02780d77f81a69bfe",
+      "lastModified": "2020-12-02T16:57:45+00:00",
+      "time": "2020-03-18T16:42:06+00:00",
+      "type": "snapshot",
+      "url": "../manifest/5/0/2345f3d68f7bacab0b0ec02780d77f81a69bfe/20w12a.json"
     },
     {
       "assetHash": "6aeb80664ca8c3c1e114f9ee428bb0bd7d29b1ab",
@@ -111,6 +119,7 @@
       "downloads": "1ad9f7180923ded95963e08362660ee73f63b20d",
       "downloadsId": 1,
       "hash": "01293675d5b48888c02231f1a954a54227686db0",
+      "lastModified": "2020-11-02T16:34:12+00:00",
       "time": "2020-03-18T16:42:06+00:00",
       "type": "snapshot",
       "url": "../manifest/0/1/293675d5b48888c02231f1a954a54227686db0/20w12a.json"

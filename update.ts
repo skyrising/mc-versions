@@ -38,10 +38,6 @@ const lastModified: HashMap<Date|null> = await readJsonFile('last_modified.json'
 const urls = await getURLs()
 await downloadManifests(urls)
 const {versions, allVersions} = await collectVersions(hashMap, oldOmniVersions, renameMap)
-await updateLastModified()
-for (const v of allVersions) {
-    v.lastModified = lastModified[v.hash]?.toISOString()?.replace('.000Z', '+00:00')
-}
 const {newManifest, versionsById} = updateMainManifest(versions)
 const {normalizedVersions, protocols, byReleaseTarget} = updateVersionDetails(versions, versionsById)
 const newOmniVersions = await sortAndWriteVersionFiles(VERSION_DIR, allVersions, newManifest)
@@ -119,6 +115,10 @@ async function collectVersions(hashMap: HashMap<string>, oldOmniVersions: HashMa
         }
         ;(byId[v.omniId] ??= {})[hash] = v
         allVersions.push(v)
+    }
+    await updateLastModified()
+    for (const v of allVersions) {
+        v.lastModified = lastModified[v.hash]?.toISOString()?.replace('.000Z', '+00:00')
     }
     readdirRecursive(MANIFEST_DIR, true)
     const versions = []
@@ -406,13 +406,21 @@ async function updateLastModified() {
         const dir = path.resolve('data/manifest', hash[0], hash[1], hash.slice(2))
         if (!existsSync(dir)) continue
         for await (const {name} of Deno.readDir(dir)) {
-            const url = new URL(`${key}/${name}`, 'https://launchermeta.mojang.com/v1/packages/')
-            const result = await fetch(url)
-            if (result.ok && result.headers.has('last-modified')) {
-                lastModified[hash] = new Date(result.headers.get('last-modified')!)
-            } else {
-                lastModified[hash] = null
-            }
+            const dates = await Promise.all([
+                getLastModified(new URL(`${key}/${name}`, 'https://piston-meta.mojang.com/v1/packages/')),
+                getLastModified(new URL(`${key}/${name}`, 'https://launchermeta.mojang.com/v1/packages/'))
+            ])
+            const date = dates.filter(Boolean)[0]
+            lastModified[hash] = date ?? null
         }
+    }
+}
+
+async function getLastModified(url: URL) {
+    const result = await fetch(url)
+    if (result.ok && result.headers.has('last-modified')) {
+        return new Date(result.headers.get('last-modified')!)
+    } else {
+        return null
     }
 }

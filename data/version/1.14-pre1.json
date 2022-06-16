@@ -20,17 +20,8 @@
       "assetIndex": "1.14",
       "downloads": "caa5d4b0c2245338d4fb476aab96f8aae83724db",
       "downloadsId": 1,
-      "hash": "dc786ce782d87f21d55cf94b96c6cd565bd21216",
-      "time": "2019-04-10T14:24:16+00:00",
-      "type": "snapshot",
-      "url": "../manifest/d/c/786ce782d87f21d55cf94b96c6cd565bd21216/1.14%20Pre-Release%201.json"
-    },
-    {
-      "assetHash": "d6c94fad4f7a03a8e46083c023926515fc0e551e",
-      "assetIndex": "1.14",
-      "downloads": "caa5d4b0c2245338d4fb476aab96f8aae83724db",
-      "downloadsId": 1,
       "hash": "86de6159cff2736a41576edbadd872829e14fe5f",
+      "lastModified": "2021-12-15T15:54:24+00:00",
       "time": "2019-04-10T14:24:16+00:00",
       "type": "snapshot",
       "url": "../manifest/8/6/de6159cff2736a41576edbadd872829e14fe5f/1.14%20Pre-Release%201.json"
@@ -40,10 +31,11 @@
       "assetIndex": "1.14",
       "downloads": "caa5d4b0c2245338d4fb476aab96f8aae83724db",
       "downloadsId": 1,
-      "hash": "550635fae43453dd3c0ac19eefcc9274b1825577",
+      "hash": "dc786ce782d87f21d55cf94b96c6cd565bd21216",
+      "lastModified": "2021-12-10T03:00:34+00:00",
       "time": "2019-04-10T14:24:16+00:00",
       "type": "snapshot",
-      "url": "../manifest/5/5/0635fae43453dd3c0ac19eefcc9274b1825577/1.14_Pre-Release_1.json"
+      "url": "../manifest/d/c/786ce782d87f21d55cf94b96c6cd565bd21216/1.14%20Pre-Release%201.json"
     },
     {
       "assetHash": "d6c94fad4f7a03a8e46083c023926515fc0e551e",
@@ -51,9 +43,21 @@
       "downloads": "caa5d4b0c2245338d4fb476aab96f8aae83724db",
       "downloadsId": 1,
       "hash": "430ea5013dc7809d3862bc1668ae8c3d01bca88b",
+      "lastModified": "2021-07-07T13:58:10+00:00",
       "time": "2019-04-10T14:24:16+00:00",
       "type": "snapshot",
       "url": "../manifest/4/3/0ea5013dc7809d3862bc1668ae8c3d01bca88b/1.14%20Pre-Release%201.json"
+    },
+    {
+      "assetHash": "d6c94fad4f7a03a8e46083c023926515fc0e551e",
+      "assetIndex": "1.14",
+      "downloads": "caa5d4b0c2245338d4fb476aab96f8aae83724db",
+      "downloadsId": 1,
+      "hash": "550635fae43453dd3c0ac19eefcc9274b1825577",
+      "lastModified": "2019-08-22T12:48:51+00:00",
+      "time": "2019-04-10T14:24:16+00:00",
+      "type": "snapshot",
+      "url": "../manifest/5/5/0635fae43453dd3c0ac19eefcc9274b1825577/1.14_Pre-Release_1.json"
     }
   ],
   "next": [

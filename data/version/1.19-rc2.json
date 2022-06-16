@@ -26,24 +26,26 @@
   "id": "1.19-rc2",
   "manifests": [
     {
-      "assetHash": "4d2c1138477c7aafe8fb370de11ea5b23a963edc",
-      "assetIndex": "1.19",
-      "downloads": "907073c98002ddc9023ebe0a5c108afe0b200b73",
-      "downloadsId": 1,
-      "hash": "cd79625a074204fffc7e292bf6934bbaa1a7d73f",
-      "time": "2022-06-03T11:47:25+00:00",
-      "type": "snapshot",
-      "url": "../manifest/c/d/79625a074204fffc7e292bf6934bbaa1a7d73f/1.19-rc2.json"
-    },
-    {
       "assetHash": "d45eb5e0c20e5d753468de3d68b05c45a946f49b",
       "assetIndex": "1.19",
       "downloads": "907073c98002ddc9023ebe0a5c108afe0b200b73",
       "downloadsId": 1,
       "hash": "cb77241d7b15adbcb56ce84aa04e1a888b8cddea",
+      "lastModified": "2022-06-15T16:29:14+00:00",
       "time": "2022-06-03T11:47:25+00:00",
       "type": "snapshot",
       "url": "../manifest/c/b/77241d7b15adbcb56ce84aa04e1a888b8cddea/1.19-rc2.json"
+    },
+    {
+      "assetHash": "4d2c1138477c7aafe8fb370de11ea5b23a963edc",
+      "assetIndex": "1.19",
+      "downloads": "907073c98002ddc9023ebe0a5c108afe0b200b73",
+      "downloadsId": 1,
+      "hash": "cd79625a074204fffc7e292bf6934bbaa1a7d73f",
+      "lastModified": "2022-06-08T15:08:32+00:00",
+      "time": "2022-06-03T11:47:25+00:00",
+      "type": "snapshot",
+      "url": "../manifest/c/d/79625a074204fffc7e292bf6934bbaa1a7d73f/1.19-rc2.json"
     },
     {
       "assetHash": "72f061c25c8a96c4b8dd9b5609a6da6a8fb7fd73",
@@ -51,6 +53,7 @@
       "downloads": "907073c98002ddc9023ebe0a5c108afe0b200b73",
       "downloadsId": 1,
       "hash": "3fb0897eedbfd1872aac8e5af7b56ac310241f9f",
+      "lastModified": "2022-06-07T09:49:20+00:00",
       "time": "2022-06-03T11:47:25+00:00",
       "type": "snapshot",
       "url": "../manifest/3/f/b0897eedbfd1872aac8e5af7b56ac310241f9f/1.19-rc2.json"
@@ -61,6 +64,7 @@
       "downloads": "907073c98002ddc9023ebe0a5c108afe0b200b73",
       "downloadsId": 1,
       "hash": "25c621c25d5f31f7f0a72b9a7d7221f145a72b80",
+      "lastModified": "2022-06-03T11:52:49+00:00",
       "time": "2022-06-03T11:47:25+00:00",
       "type": "snapshot",
       "url": "../manifest/2/5/c621c25d5f31f7f0a72b9a7d7221f145a72b80/1.19-rc2.json"

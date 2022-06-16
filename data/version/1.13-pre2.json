@@ -20,17 +20,8 @@
       "assetIndex": "1.13",
       "downloads": "138236a831b2ee90be8f90ca56e39d11c3a6cc0a",
       "downloadsId": 1,
-      "hash": "271ff87087683d41e90beadcb508ca1921f41e52",
-      "time": "2018-06-15T09:20:00+00:00",
-      "type": "snapshot",
-      "url": "../manifest/2/7/1ff87087683d41e90beadcb508ca1921f41e52/1.13-pre2.json"
-    },
-    {
-      "assetHash": "23981354446ddc141dcf03cc4bfa6b2a9492aa90",
-      "assetIndex": "1.13",
-      "downloads": "138236a831b2ee90be8f90ca56e39d11c3a6cc0a",
-      "downloadsId": 1,
       "hash": "19f153e2209ce243ef1d92f7fdcf8987ee215bf4",
+      "lastModified": "2021-12-15T15:55:42+00:00",
       "time": "2018-06-15T09:20:00+00:00",
       "type": "snapshot",
       "url": "../manifest/1/9/f153e2209ce243ef1d92f7fdcf8987ee215bf4/1.13-pre2.json"
@@ -41,6 +32,7 @@
       "downloads": "138236a831b2ee90be8f90ca56e39d11c3a6cc0a",
       "downloadsId": 1,
       "hash": "0b879e844be08d1aee3b1a682ab5bce2588a4cc1",
+      "lastModified": "2021-12-10T03:01:46+00:00",
       "time": "2018-06-15T09:20:00+00:00",
       "type": "snapshot",
       "url": "../manifest/0/b/879e844be08d1aee3b1a682ab5bce2588a4cc1/1.13-pre2.json"
@@ -50,7 +42,19 @@
       "assetIndex": "1.13",
       "downloads": "138236a831b2ee90be8f90ca56e39d11c3a6cc0a",
       "downloadsId": 1,
+      "hash": "271ff87087683d41e90beadcb508ca1921f41e52",
+      "lastModified": "2021-07-07T13:59:21+00:00",
+      "time": "2018-06-15T09:20:00+00:00",
+      "type": "snapshot",
+      "url": "../manifest/2/7/1ff87087683d41e90beadcb508ca1921f41e52/1.13-pre2.json"
+    },
+    {
+      "assetHash": "23981354446ddc141dcf03cc4bfa6b2a9492aa90",
+      "assetIndex": "1.13",
+      "downloads": "138236a831b2ee90be8f90ca56e39d11c3a6cc0a",
+      "downloadsId": 1,
       "hash": "013675697d85a5b73e1e7290395d4ac05f218d81",
+      "lastModified": "2018-08-29T12:58:52+00:00",
       "time": "2018-06-15T09:20:00+00:00",
       "type": "snapshot",
       "url": "../manifest/0/1/3675697d85a5b73e1e7290395d4ac05f218d81/1.13-pre2.json"

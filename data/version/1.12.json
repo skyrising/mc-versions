@@ -20,27 +20,8 @@
       "assetIndex": "1.12",
       "downloads": "dfd4ac4c27387ad206c09c6d6a09bcf67aca148f",
       "downloadsId": 1,
-      "hash": "b21dc6a3e20201aa0972ac498c4c873eb949caa5",
-      "time": "2017-06-02T13:50:27+00:00",
-      "type": "release",
-      "url": "../manifest/b/2/1dc6a3e20201aa0972ac498c4c873eb949caa5/1.12.json"
-    },
-    {
-      "assetHash": "1584b57c1a0b5e593fad1f5b8f78536ca640547b",
-      "assetIndex": "1.12",
-      "downloads": "dfd4ac4c27387ad206c09c6d6a09bcf67aca148f",
-      "downloadsId": 1,
-      "hash": "a848cdf2ff134678ae092b2ab9c407e64e7dc130",
-      "time": "2017-06-02T13:50:27+00:00",
-      "type": "release",
-      "url": "../manifest/a/8/48cdf2ff134678ae092b2ab9c407e64e7dc130/1.12.json"
-    },
-    {
-      "assetHash": "1584b57c1a0b5e593fad1f5b8f78536ca640547b",
-      "assetIndex": "1.12",
-      "downloads": "dfd4ac4c27387ad206c09c6d6a09bcf67aca148f",
-      "downloadsId": 1,
       "hash": "7c7d5763e5267d871f49de5a9248e9a0a0147b15",
+      "lastModified": "2021-12-15T15:56:51+00:00",
       "time": "2017-06-02T13:50:27+00:00",
       "type": "release",
       "url": "../manifest/7/c/7d5763e5267d871f49de5a9248e9a0a0147b15/1.12.json"
@@ -51,9 +32,32 @@
       "downloads": "dfd4ac4c27387ad206c09c6d6a09bcf67aca148f",
       "downloadsId": 1,
       "hash": "3227e9493ea59104523875da155efc1ad89abff0",
+      "lastModified": "2021-12-10T03:02:50+00:00",
       "time": "2017-06-02T13:50:27+00:00",
       "type": "release",
       "url": "../manifest/3/2/27e9493ea59104523875da155efc1ad89abff0/1.12.json"
+    },
+    {
+      "assetHash": "1584b57c1a0b5e593fad1f5b8f78536ca640547b",
+      "assetIndex": "1.12",
+      "downloads": "dfd4ac4c27387ad206c09c6d6a09bcf67aca148f",
+      "downloadsId": 1,
+      "hash": "b21dc6a3e20201aa0972ac498c4c873eb949caa5",
+      "lastModified": "2021-07-07T14:00:25+00:00",
+      "time": "2017-06-02T13:50:27+00:00",
+      "type": "release",
+      "url": "../manifest/b/2/1dc6a3e20201aa0972ac498c4c873eb949caa5/1.12.json"
+    },
+    {
+      "assetHash": "1584b57c1a0b5e593fad1f5b8f78536ca640547b",
+      "assetIndex": "1.12",
+      "downloads": "dfd4ac4c27387ad206c09c6d6a09bcf67aca148f",
+      "downloadsId": 1,
+      "hash": "a848cdf2ff134678ae092b2ab9c407e64e7dc130",
+      "lastModified": "2018-08-29T12:59:36+00:00",
+      "time": "2017-06-02T13:50:27+00:00",
+      "type": "release",
+      "url": "../manifest/a/8/48cdf2ff134678ae092b2ab9c407e64e7dc130/1.12.json"
     }
   ],
   "next": [

@@ -20,17 +20,8 @@
       "assetIndex": "1.14",
       "downloads": "f51093687678e0b058718113caa7223b95a9e028",
       "downloadsId": 1,
-      "hash": "e16e36b6015f7e5d37499074a86ba844eb050c2a",
-      "time": "2019-05-17T12:21:03+00:00",
-      "type": "snapshot",
-      "url": "../manifest/e/1/6e36b6015f7e5d37499074a86ba844eb050c2a/1.14.2%20Pre-Release%202.json"
-    },
-    {
-      "assetHash": "d6c94fad4f7a03a8e46083c023926515fc0e551e",
-      "assetIndex": "1.14",
-      "downloads": "f51093687678e0b058718113caa7223b95a9e028",
-      "downloadsId": 1,
       "hash": "5e64b093cae7963e4da02eba2a1c9d2a7ba0003f",
+      "lastModified": "2021-12-15T15:54:09+00:00",
       "time": "2019-05-17T12:21:03+00:00",
       "type": "snapshot",
       "url": "../manifest/5/e/64b093cae7963e4da02eba2a1c9d2a7ba0003f/1.14.2%20Pre-Release%202.json"
@@ -40,20 +31,33 @@
       "assetIndex": "1.14",
       "downloads": "f51093687678e0b058718113caa7223b95a9e028",
       "downloadsId": 1,
-      "hash": "55e8729d2ed53cb70c9f05c5e25d3e84135e58fb",
+      "hash": "4b9f174104cb8809bcd1cc851cc7f01be318d211",
+      "lastModified": "2021-12-10T03:00:21+00:00",
       "time": "2019-05-17T12:21:03+00:00",
       "type": "snapshot",
-      "url": "../manifest/5/5/e8729d2ed53cb70c9f05c5e25d3e84135e58fb/1.14.2_Pre-Release_2.json"
+      "url": "../manifest/4/b/9f174104cb8809bcd1cc851cc7f01be318d211/1.14.2%20Pre-Release%202.json"
     },
     {
       "assetHash": "d6c94fad4f7a03a8e46083c023926515fc0e551e",
       "assetIndex": "1.14",
       "downloads": "f51093687678e0b058718113caa7223b95a9e028",
       "downloadsId": 1,
-      "hash": "4b9f174104cb8809bcd1cc851cc7f01be318d211",
+      "hash": "e16e36b6015f7e5d37499074a86ba844eb050c2a",
+      "lastModified": "2021-07-07T13:57:57+00:00",
       "time": "2019-05-17T12:21:03+00:00",
       "type": "snapshot",
-      "url": "../manifest/4/b/9f174104cb8809bcd1cc851cc7f01be318d211/1.14.2%20Pre-Release%202.json"
+      "url": "../manifest/e/1/6e36b6015f7e5d37499074a86ba844eb050c2a/1.14.2%20Pre-Release%202.json"
+    },
+    {
+      "assetHash": "d6c94fad4f7a03a8e46083c023926515fc0e551e",
+      "assetIndex": "1.14",
+      "downloads": "f51093687678e0b058718113caa7223b95a9e028",
+      "downloadsId": 1,
+      "hash": "55e8729d2ed53cb70c9f05c5e25d3e84135e58fb",
+      "lastModified": "2019-08-22T12:48:42+00:00",
+      "time": "2019-05-17T12:21:03+00:00",
+      "type": "snapshot",
+      "url": "../manifest/5/5/e8729d2ed53cb70c9f05c5e25d3e84135e58fb/1.14.2_Pre-Release_2.json"
     }
   ],
   "next": [
