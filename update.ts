@@ -12,6 +12,7 @@ import {getDownloads, downloadFile} from './download.ts'
 const GITHUB_ACTIONS = Deno.env.get('GITHUB_ACTIONS')
 
 const META_URLS = [
+    'https://piston-meta.mojang.com/mc/game/version_manifest.json',
     'https://launchermeta.mojang.com/mc/game/version_manifest.json',
     'https://meta.skyrising.xyz/mc/game/version_manifest.json'
 ]
