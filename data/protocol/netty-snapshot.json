@@ -827,6 +827,15 @@
       "servers": [
         "22w24a"
       ]
+    },
+    {
+      "version": 93,
+      "clients": [
+        "1.19.1-pre1"
+      ],
+      "servers": [
+        "1.19.1-pre1"
+      ]
     }
   ]
 }
