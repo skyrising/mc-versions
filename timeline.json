@@ -5386,5 +5386,11 @@
     "type": "pre-release",
     "normalizedVersion": "1.19.1-pre.1",
     "releaseTime": "2022-06-21T17:13:59+00:00"
+  },
+  {
+    "id": "1.19.1-rc1",
+    "type": "release-candidate",
+    "normalizedVersion": "1.19.1-rc.1",
+    "releaseTime": "2022-06-23T16:32:41+00:00"
   }
 ]
