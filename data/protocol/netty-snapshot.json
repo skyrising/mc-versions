@@ -863,6 +863,15 @@
       "servers": [
         "1.19.1-pre3"
       ]
+    },
+    {
+      "version": 97,
+      "clients": [
+        "1.19.1-pre4"
+      ],
+      "servers": [
+        "1.19.1-pre4"
+      ]
     }
   ]
 }
