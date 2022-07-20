@@ -881,6 +881,15 @@
       "servers": [
         "1.19.1-pre5"
       ]
+    },
+    {
+      "version": 99,
+      "clients": [
+        "1.19.1-pre6"
+      ],
+      "servers": [
+        "1.19.1-pre6"
+      ]
     }
   ]
 }
