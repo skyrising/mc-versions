@@ -5422,5 +5422,11 @@
     "type": "pre-release",
     "normalizedVersion": "1.19.1-pre.6",
     "releaseTime": "2022-07-20T15:49:31+00:00"
+  },
+  {
+    "id": "1.19.1-rc2",
+    "type": "release-candidate",
+    "normalizedVersion": "1.19.1-rc.2",
+    "releaseTime": "2022-07-21T16:25:50+00:00"
   }
 ]
