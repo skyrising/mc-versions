@@ -3386,6 +3386,15 @@
       ]
     },
     {
+      "version": 760,
+      "clients": [
+        "1.19.1"
+      ],
+      "servers": [
+        "1.19.1"
+      ]
+    },
+    {
       "version": 801,
       "clients": [
         "combat-6"
