@@ -5434,5 +5434,11 @@
     "type": "release-candidate",
     "normalizedVersion": "1.19.1-rc.3",
     "releaseTime": "2022-07-26T15:34:35+00:00"
+  },
+  {
+    "id": "1.19.1",
+    "type": "release",
+    "normalizedVersion": "1.19.1",
+    "releaseTime": "2022-07-27T09:25:33+00:00"
   }
 ]
