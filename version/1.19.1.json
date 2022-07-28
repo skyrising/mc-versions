@@ -30,7 +30,7 @@
     "com.google.guava:failureaccess:1.0.1",
     "com.google.guava:guava:31.0.1-jre",
     "com.ibm.icu:icu4j:70.1",
-    "com.mojang:authlib:3.11.49",
+    "com.mojang:authlib:3.11.50",
     "com.mojang:blocklist:1.0.10",
     "com.mojang:brigadier:1.0.18",
     "com.mojang:datafixerupper:5.0.28",
@@ -70,6 +70,17 @@
     "org.slf4j:slf4j-api:1.8.0-beta4"
   ],
   "manifests": [
+    {
+      "assetHash": "b5c7548ddb9e584e84a5f762da5b78211c715a63",
+      "assetIndex": "1.19",
+      "downloads": "29412eab3020ab4d0bb106bb33508b5c45af432d",
+      "downloadsId": 1,
+      "hash": "6f537eaef46ba006756f87fa6d23a0dd19519abc",
+      "lastModified": "2022-07-28T11:47:11+00:00",
+      "time": "2022-07-27T09:25:33+00:00",
+      "type": "release",
+      "url": "https://skyrising.github.io/mc-versions/manifest/6/f/537eaef46ba006756f87fa6d23a0dd19519abc/1.19.1.json"
+    },
     {
       "assetHash": "b5c7548ddb9e584e84a5f762da5b78211c715a63",
       "assetIndex": "1.19",
