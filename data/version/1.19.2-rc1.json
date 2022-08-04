@@ -3,34 +3,34 @@
   "client": true,
   "downloads": {
     "client": {
-      "sha1": "90d438c3e432add8848a9f9f368ce5a52f6bc4a7",
-      "size": 21643604,
-      "url": "https://piston-data.mojang.com/v1/objects/90d438c3e432add8848a9f9f368ce5a52f6bc4a7/client.jar"
+      "sha1": "015d4949d4a8b180ed0cf784b68fa5b2864a3b15",
+      "size": 21644993,
+      "url": "https://piston-data.mojang.com/v1/objects/015d4949d4a8b180ed0cf784b68fa5b2864a3b15/client.jar"
     },
     "client_mappings": {
-      "sha1": "fc8e22d42c0e4eb1899e2acf7e97eae917e1cb94",
-      "size": 7235104,
-      "url": "https://piston-data.mojang.com/v1/objects/fc8e22d42c0e4eb1899e2acf7e97eae917e1cb94/client.txt"
+      "sha1": "5418ec2a178efc9e8e15059d6fcb2911d492dff7",
+      "size": 7235903,
+      "url": "https://piston-data.mojang.com/v1/objects/5418ec2a178efc9e8e15059d6fcb2911d492dff7/client.txt"
     },
     "server": {
-      "sha1": "8399e1211e95faa421c1507b322dbeae86d604df",
-      "size": 45609936,
-      "url": "https://piston-data.mojang.com/v1/objects/8399e1211e95faa421c1507b322dbeae86d604df/server.jar"
+      "sha1": "ba8a776dc31a6093a07d3f4fbad1a8d680f8faf3",
+      "size": 45609910,
+      "url": "https://piston-data.mojang.com/v1/objects/ba8a776dc31a6093a07d3f4fbad1a8d680f8faf3/server.jar"
     },
     "server_mappings": {
-      "sha1": "3565648cdd47ae15738fb804a95a659137d7cfd3",
-      "size": 5584928,
-      "url": "https://piston-data.mojang.com/v1/objects/3565648cdd47ae15738fb804a95a659137d7cfd3/server.txt"
+      "sha1": "beac95ba5369e8dd3db853401553fee0bb3d5b35",
+      "size": 5584686,
+      "url": "https://piston-data.mojang.com/v1/objects/beac95ba5369e8dd3db853401553fee0bb3d5b35/server.txt"
     }
   },
-  "id": "1.19.1",
+  "id": "1.19.2-rc1",
   "libraries": [
     "com.github.oshi:oshi-core:5.8.5",
     "com.google.code.gson:gson:2.8.9",
     "com.google.guava:failureaccess:1.0.1",
     "com.google.guava:guava:31.0.1-jre",
     "com.ibm.icu:icu4j:70.1",
-    "com.mojang:authlib:3.11.50",
+    "com.mojang:authlib:3.11.49",
     "com.mojang:blocklist:1.0.10",
     "com.mojang:brigadier:1.0.18",
     "com.mojang:datafixerupper:5.0.28",
@@ -73,43 +73,30 @@
     {
       "assetHash": "b5c7548ddb9e584e84a5f762da5b78211c715a63",
       "assetIndex": "1.19",
-      "downloads": "29412eab3020ab4d0bb106bb33508b5c45af432d",
+      "downloads": "7b59d98b1ae778e7f563dca763b805a330ee6790",
       "downloadsId": 1,
-      "hash": "6f537eaef46ba006756f87fa6d23a0dd19519abc",
-      "lastModified": "2022-07-28T11:47:11+00:00",
-      "time": "2022-07-27T09:25:33+00:00",
-      "type": "release",
-      "url": "../manifest/6/f/537eaef46ba006756f87fa6d23a0dd19519abc/1.19.1.json"
-    },
-    {
-      "assetHash": "b5c7548ddb9e584e84a5f762da5b78211c715a63",
-      "assetIndex": "1.19",
-      "downloads": "29412eab3020ab4d0bb106bb33508b5c45af432d",
-      "downloadsId": 1,
-      "hash": "1a89b46ce56b5b6db49112176c62cdc350a4a4a0",
-      "lastModified": "2022-07-27T09:48:02+00:00",
-      "time": "2022-07-27T09:25:33+00:00",
-      "type": "release",
-      "url": "../manifest/1/a/89b46ce56b5b6db49112176c62cdc350a4a4a0/1.19.1.json"
+      "hash": "1569a7c0b1a871086eb5a2aaf8efe987a7467177",
+      "lastModified": "2022-08-04T10:14:34+00:00",
+      "time": "2022-08-04T10:07:26+00:00",
+      "type": "snapshot",
+      "url": "../manifest/1/5/69a7c0b1a871086eb5a2aaf8efe987a7467177/1.19.2-rc1.json"
     }
   ],
-  "next": [
-    "1.19.2-rc1"
-  ],
-  "normalizedVersion": "1.19.1",
+  "next": [],
+  "normalizedVersion": "1.19.2-rc.1",
   "previous": [
-    "1.19.1-rc3"
+    "1.19.1"
   ],
   "protocol": {
-    "type": "netty",
-    "version": 760
+    "type": "netty-snapshot",
+    "version": 102
   },
-  "releaseTarget": "1.19.1",
-  "releaseTime": "2022-07-27T09:25:33+00:00",
+  "releaseTarget": "1.19.2",
+  "releaseTime": "2022-08-04T10:07:26+00:00",
   "server": true,
   "sharedMappings": true,
   "world": {
     "format": "anvil",
-    "version": 3117
+    "version": 3118
   }
 }
