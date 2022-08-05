@@ -5,11 +5,20 @@
     "classic_server": "server-c1.10.1",
     "alpha_server": "server-a0.2.8",
     "old_beta": "b1.9-pre6",
-    "snapshot": "1.19.2-rc1",
+    "snapshot": "1.19.2-rc2",
     "release": "1.19.1",
     "pending": "1.19_deep_dark_experimental_snapshot-1"
   },
   "versions": [
+    {
+      "omniId": "1.19.2-rc2",
+      "id": "1.19.2-rc2",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/manifest/0/5/9a08af62d072a01cca452bebc8386605dc3ac3/1.19.2-rc2.json",
+      "time": "2022-08-04T15:19:44+00:00",
+      "releaseTime": "2022-08-04T15:19:44+00:00",
+      "details": "https://skyrising.github.io/mc-versions/version/1.19.2-rc2.json"
+    },
     {
       "omniId": "1.19.2-rc1",
       "id": "1.19.2-rc1",

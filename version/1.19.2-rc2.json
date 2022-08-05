@@ -3,19 +3,19 @@
   "client": true,
   "downloads": {
     "client": {
-      "sha1": "015d4949d4a8b180ed0cf784b68fa5b2864a3b15",
-      "size": 21644993,
-      "url": "https://piston-data.mojang.com/v1/objects/015d4949d4a8b180ed0cf784b68fa5b2864a3b15/client.jar"
+      "sha1": "b7eee7ae9fc84f34833ac73225ec8db994a2b53e",
+      "size": 21644689,
+      "url": "https://piston-data.mojang.com/v1/objects/b7eee7ae9fc84f34833ac73225ec8db994a2b53e/client.jar"
     },
     "client_mappings": {
-      "sha1": "5418ec2a178efc9e8e15059d6fcb2911d492dff7",
-      "size": 7235903,
-      "url": "https://piston-data.mojang.com/v1/objects/5418ec2a178efc9e8e15059d6fcb2911d492dff7/client.txt"
+      "sha1": "89dfd59bfda5c1ed3b5079af41935fdc685043bd",
+      "size": 7236064,
+      "url": "https://piston-data.mojang.com/v1/objects/89dfd59bfda5c1ed3b5079af41935fdc685043bd/client.txt"
     },
     "server": {
-      "sha1": "ba8a776dc31a6093a07d3f4fbad1a8d680f8faf3",
-      "size": 45609910,
-      "url": "https://piston-data.mojang.com/v1/objects/ba8a776dc31a6093a07d3f4fbad1a8d680f8faf3/server.jar"
+      "sha1": "93649d39350077f998296138964e4591d4571140",
+      "size": 45609646,
+      "url": "https://piston-data.mojang.com/v1/objects/93649d39350077f998296138964e4591d4571140/server.jar"
     },
     "server_mappings": {
       "sha1": "beac95ba5369e8dd3db853401553fee0bb3d5b35",
@@ -23,7 +23,7 @@
       "url": "https://piston-data.mojang.com/v1/objects/beac95ba5369e8dd3db853401553fee0bb3d5b35/server.txt"
     }
   },
-  "id": "1.19.2-rc1",
+  "id": "1.19.2-rc2",
   "libraries": [
     "com.github.oshi:oshi-core:5.8.5",
     "com.google.code.gson:gson:2.8.9",
@@ -73,32 +73,30 @@
     {
       "assetHash": "b5c7548ddb9e584e84a5f762da5b78211c715a63",
       "assetIndex": "1.19",
-      "downloads": "7b59d98b1ae778e7f563dca763b805a330ee6790",
+      "downloads": "6be86821ca3ca2577fa4cebfd7c454d1a01f561e",
       "downloadsId": 1,
-      "hash": "1569a7c0b1a871086eb5a2aaf8efe987a7467177",
-      "lastModified": "2022-08-04T10:14:34+00:00",
-      "time": "2022-08-04T10:07:26+00:00",
+      "hash": "059a08af62d072a01cca452bebc8386605dc3ac3",
+      "lastModified": "2022-08-04T15:25:36+00:00",
+      "time": "2022-08-04T15:19:44+00:00",
       "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/1/5/69a7c0b1a871086eb5a2aaf8efe987a7467177/1.19.2-rc1.json"
+      "url": "https://skyrising.github.io/mc-versions/manifest/0/5/9a08af62d072a01cca452bebc8386605dc3ac3/1.19.2-rc2.json"
     }
   ],
-  "next": [
-    "1.19.2-rc2"
-  ],
-  "normalizedVersion": "1.19.2-rc.1",
+  "next": [],
+  "normalizedVersion": "1.19.2-rc.2",
   "previous": [
-    "1.19.1"
+    "1.19.2-rc1"
   ],
   "protocol": {
     "type": "netty-snapshot",
-    "version": 102
+    "version": 103
   },
   "releaseTarget": "1.19.2",
-  "releaseTime": "2022-08-04T10:07:26+00:00",
+  "releaseTime": "2022-08-04T15:19:44+00:00",
   "server": true,
   "sharedMappings": true,
   "world": {
     "format": "anvil",
-    "version": 3118
+    "version": 3119
   }
 }
