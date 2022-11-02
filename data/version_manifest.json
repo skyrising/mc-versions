@@ -5,16 +5,25 @@
     "classic_server": "server-c1.10.1",
     "alpha_server": "server-a0.2.8",
     "old_beta": "b1.9-pre6",
-    "snapshot": "22w43a",
+    "snapshot": "22w44a",
     "release": "1.19.2",
     "pending": "1.19_deep_dark_experimental_snapshot-1"
   },
   "versions": [
     {
+      "omniId": "22w44a",
+      "id": "22w44a",
+      "type": "snapshot",
+      "url": "manifest/9/1/0ea36fffad2b1ff3fb11387331340ff7c17372/22w44a.json",
+      "time": "2022-11-02T13:15:43+00:00",
+      "releaseTime": "2022-11-02T13:15:43+00:00",
+      "details": "version/22w44a.json"
+    },
+    {
       "omniId": "22w43a",
       "id": "22w43a",
       "type": "snapshot",
-      "url": "manifest/9/f/2419c35fa5656f8ed065b7c8cd1f794f901563/22w43a.json",
+      "url": "manifest/c/8/a826a85cc70b5672bc5d44255bdac97b70902e/22w43a.json",
       "time": "2022-10-26T11:55:59+00:00",
       "releaseTime": "2022-10-26T11:55:59+00:00",
       "details": "version/22w43a.json"
@@ -23,7 +32,7 @@
       "omniId": "22w42a",
       "id": "22w42a",
       "type": "snapshot",
-      "url": "manifest/d/d/c4a4692af25510288d080d48828f50f1ff090f/22w42a.json",
+      "url": "manifest/e/e/eb6527578eece95fcfd21460852b8cd67b7966/22w42a.json",
       "time": "2022-10-19T09:34:22+00:00",
       "releaseTime": "2022-10-19T09:34:22+00:00",
       "details": "version/22w42a.json"
