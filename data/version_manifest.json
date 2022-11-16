@@ -5,16 +5,25 @@
     "classic_server": "server-c1.10.1",
     "alpha_server": "server-a0.2.8",
     "old_beta": "b1.9-pre6",
-    "snapshot": "22w45a",
+    "snapshot": "22w46a",
     "release": "1.19.2",
     "pending": "1.19_deep_dark_experimental_snapshot-1"
   },
   "versions": [
     {
+      "omniId": "22w46a",
+      "id": "22w46a",
+      "type": "snapshot",
+      "url": "manifest/3/d/50b93a6cff75af32666cd074edccf0ad41655e/22w46a.json",
+      "time": "2022-11-16T13:32:50+00:00",
+      "releaseTime": "2022-11-16T13:32:50+00:00",
+      "details": "version/22w46a.json"
+    },
+    {
       "omniId": "22w45a",
       "id": "22w45a",
       "type": "snapshot",
-      "url": "manifest/5/8/c41c11091d524f6c83e437d5e7fa06d1302049/22w45a.json",
+      "url": "manifest/7/0/50abd15c6cd0c5531cd002d74139e04f676f1e/22w45a.json",
       "time": "2022-11-09T14:30:16+00:00",
       "releaseTime": "2022-11-09T14:30:16+00:00",
       "details": "version/22w45a.json"
@@ -23,7 +32,7 @@
       "omniId": "22w44a",
       "id": "22w44a",
       "type": "snapshot",
-      "url": "manifest/5/0/456c193fe9d2d81094f53314a9bf52e37f9b20/22w44a.json",
+      "url": "manifest/b/d/fd1781f30037fa9cbaecf16d5b1e99f1bbb666/22w44a.json",
       "time": "2022-11-02T13:15:43+00:00",
       "releaseTime": "2022-11-02T13:15:43+00:00",
       "details": "version/22w44a.json"
@@ -32,7 +41,7 @@
       "omniId": "22w43a",
       "id": "22w43a",
       "type": "snapshot",
-      "url": "manifest/e/4/dc9ffd6aaa55350c4e0a74a6a5c71c6677d125/22w43a.json",
+      "url": "manifest/c/f/0e3687ac35a6512c24a37c0c81649e553d3550/22w43a.json",
       "time": "2022-10-26T11:55:59+00:00",
       "releaseTime": "2022-10-26T11:55:59+00:00",
       "details": "version/22w43a.json"
@@ -41,7 +50,7 @@
       "omniId": "22w42a",
       "id": "22w42a",
       "type": "snapshot",
-      "url": "manifest/a/4/c6b5628c5118fd94bc1899c233cf5226d3e82a/22w42a.json",
+      "url": "manifest/b/d/a2dd1708f7b273a1953ad771dd313bb5deaff7/22w42a.json",
       "time": "2022-10-19T09:34:22+00:00",
       "releaseTime": "2022-10-19T09:34:22+00:00",
       "details": "version/22w42a.json"
