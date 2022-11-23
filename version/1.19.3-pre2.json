@@ -3,27 +3,27 @@
   "client": true,
   "downloads": {
     "client": {
-      "sha1": "fcb3e5462fb4cf29da933005ddac269dd31087ff",
-      "size": 22667125,
-      "url": "https://piston-data.mojang.com/v1/objects/fcb3e5462fb4cf29da933005ddac269dd31087ff/client.jar"
+      "sha1": "15308e6b590de13da126a7347eb8b5040503099e",
+      "size": 22697552,
+      "url": "https://piston-data.mojang.com/v1/objects/15308e6b590de13da126a7347eb8b5040503099e/client.jar"
     },
     "client_mappings": {
-      "sha1": "01efd7b592dfa3650f41ca2190c4d59e929642f4",
-      "size": 7549134,
-      "url": "https://piston-data.mojang.com/v1/objects/01efd7b592dfa3650f41ca2190c4d59e929642f4/client.txt"
+      "sha1": "a7fdd97fd7accf14bed3245e4dcc8ff06154e551",
+      "size": 7571803,
+      "url": "https://piston-data.mojang.com/v1/objects/a7fdd97fd7accf14bed3245e4dcc8ff06154e551/client.txt"
     },
     "server": {
-      "sha1": "302ae4acba96e733fdbe144ebe2ba575b2bbf969",
-      "size": 47139006,
-      "url": "https://piston-data.mojang.com/v1/objects/302ae4acba96e733fdbe144ebe2ba575b2bbf969/server.jar"
+      "sha1": "f8a18aa1e7b658de909470f69553c53d8662dfbe",
+      "size": 47161068,
+      "url": "https://piston-data.mojang.com/v1/objects/f8a18aa1e7b658de909470f69553c53d8662dfbe/server.jar"
     },
     "server_mappings": {
-      "sha1": "f27522d1a43b80942bc5c66a8fcad51a0dc0fe18",
-      "size": 5833532,
-      "url": "https://piston-data.mojang.com/v1/objects/f27522d1a43b80942bc5c66a8fcad51a0dc0fe18/server.txt"
+      "sha1": "641a5666396e887675dff2b45bcdca6650e6c731",
+      "size": 5848407,
+      "url": "https://piston-data.mojang.com/v1/objects/641a5666396e887675dff2b45bcdca6650e6c731/server.txt"
     }
   },
-  "id": "22w46a",
+  "id": "1.19.3-pre2",
   "libraries": [
     "com.github.oshi:oshi-core:6.2.2",
     "com.google.code.gson:gson:2.10",
@@ -74,54 +74,30 @@
     {
       "assetHash": "60c76de2cdf342abf65d99a1d14f2cc0ad860b6a",
       "assetIndex": "2",
-      "downloads": "602b38f3395e73afe98c723998d2493617f98df0",
+      "downloads": "1e5c36a6df644b4a853713aac94e9f7ebaeeac86",
       "downloadsId": 1,
-      "hash": "b7aea3e62850787bef27aa6311d4d8d2f91fb08b",
-      "lastModified": "2022-11-23T16:27:16+00:00",
-      "time": "2022-11-16T13:32:50+00:00",
+      "hash": "2cbd0194993365f971c8ff372061da3a91cfbecc",
+      "lastModified": "2022-11-23T16:27:14+00:00",
+      "time": "2022-11-23T16:12:25+00:00",
       "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/b/7/aea3e62850787bef27aa6311d4d8d2f91fb08b/22w46a.json"
-    },
-    {
-      "assetHash": "1f77687bd368ced433acc49ab84f68f878a7103c",
-      "assetIndex": "2",
-      "downloads": "602b38f3395e73afe98c723998d2493617f98df0",
-      "downloadsId": 1,
-      "hash": "68d7821bbf05a1671c2102ce691a8eee1d3ae994",
-      "lastModified": "2022-11-22T14:04:40+00:00",
-      "time": "2022-11-16T13:32:50+00:00",
-      "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/6/8/d7821bbf05a1671c2102ce691a8eee1d3ae994/22w46a.json"
-    },
-    {
-      "assetHash": "fc8e313a8fadd7a99911ccea980169347b232aac",
-      "assetIndex": "2",
-      "downloads": "602b38f3395e73afe98c723998d2493617f98df0",
-      "downloadsId": 1,
-      "hash": "3d50b93a6cff75af32666cd074edccf0ad41655e",
-      "lastModified": "2022-11-16T13:42:06+00:00",
-      "time": "2022-11-16T13:32:50+00:00",
-      "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/3/d/50b93a6cff75af32666cd074edccf0ad41655e/22w46a.json"
+      "url": "https://skyrising.github.io/mc-versions/manifest/2/c/bd0194993365f971c8ff372061da3a91cfbecc/1.19.3-pre2.json"
     }
   ],
-  "next": [
-    "1.19.3-pre1"
-  ],
-  "normalizedVersion": "1.19.3-alpha.22.46.a",
+  "next": [],
+  "normalizedVersion": "1.19.3-pre.2",
   "previous": [
-    "22w45a"
+    "1.19.3-pre1"
   ],
   "protocol": {
     "type": "netty-snapshot",
-    "version": 108
+    "version": 110
   },
   "releaseTarget": "1.19.3",
-  "releaseTime": "2022-11-16T13:32:50+00:00",
+  "releaseTime": "2022-11-23T16:12:25+00:00",
   "server": true,
   "sharedMappings": true,
   "world": {
     "format": "anvil",
-    "version": 3210
+    "version": 3212
   }
 }
