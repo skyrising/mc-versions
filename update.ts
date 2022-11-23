@@ -36,6 +36,7 @@ const oldOmniVersions: HashMap<VersionId> = await readJsonFile('omni_id.json')
 const renameMap: Record<string, string> = await readJsonFile('rename.json')
 const hashMap: HashMap<string> = sortObject(await readJsonFile('hash_map.json'))
 const lastModified: HashMap<Date|null> = await readJsonFile('last_modified.json', (_, v) => typeof v === 'string' ? new Date(v) : v)
+const sources: Record<string, string> = sortObject(await readJsonFile('sources.json'))
 const urls = await getURLs()
 await downloadManifests(urls)
 const {versions, allVersions} = await collectVersions(hashMap, oldOmniVersions, renameMap)
@@ -55,6 +56,7 @@ await writeJsonFile('release_targets.json', {
 await writeJsonFile('normalized.json', normalizedVersions)
 await writeJsonFile('hash_map.json', sortObject(hashMap))
 await writeJsonFile('last_modified.json', sortObjectByValues(lastModified))
+await writeJsonFile('sources.json', sortObject(sources))
 
 // deno-lint-ignore no-explicit-any
 async function readJsonFile(file: string, reviver?: (this: any, key: string, value: any) => any) {
@@ -305,6 +307,7 @@ async function downloadManifests(urls: Array<URL>): Promise<void> {
     for (const url of urls) {
         const p = url.pathname.split('/')
         const hash = walkHashMap(p[3])
+        sources[p[3]] ??= url.toString()
         const file = path.resolve(MANIFEST_DIR, hash[0], hash[1], hash.substr(2), p[4])
         await downloadFile(url.toString(), file)
     }
