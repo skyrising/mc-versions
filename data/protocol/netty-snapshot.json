@@ -980,6 +980,15 @@
       "servers": [
         "1.19.3-pre1"
       ]
+    },
+    {
+      "version": 110,
+      "clients": [
+        "1.19.3-pre2"
+      ],
+      "servers": [
+        "1.19.3-pre2"
+      ]
     }
   ]
 }
