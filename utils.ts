@@ -75,7 +75,6 @@ export function evaluateRules(rules: Rule[], context: RuleContext) {
             action = rule.action
         }
     }
-    console.log(`${JSON.stringify(rules)} = ${action}`)
     return action
 }
 
