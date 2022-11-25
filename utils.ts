@@ -12,7 +12,8 @@ export function sortObject<T>(obj: T, recursive = true): T {
     } else if (typeof obj !== 'object' || Object.prototype.toString.call(obj) !== '[object Object]') {
         return obj
     }
-    const keys = Object.keys(obj)
+    // deno-lint-ignore ban-types
+    const keys = Object.keys(obj as {})
     keys.sort()
     // deno-lint-ignore no-explicit-any
     const newObj: any = {}
