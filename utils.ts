@@ -62,12 +62,6 @@ export function existsSync(file: string): boolean {
     }
 }
 
-export function mkdirp(dir: string) {
-    if (existsSync(dir)) return
-    mkdirp(path.dirname(dir))
-    Deno.mkdirSync(dir)
-}
-
 export function evaluateRules(rules: Rule[], context: RuleContext) {
     let action = 'disallow'
     for (const rule of rules) {

@@ -4,7 +4,7 @@ import './types.d.ts'
 import * as path from 'https://deno.land/std@0.113.0/path/mod.ts'
 import * as semver from 'https://deno.land/x/semver@v1.4.0/mod.ts'
 
-import {sha1, sortObject, sortObjectByValues, readdirRecursive, mkdirp, existsSync, evaluateRules} from './utils.ts'
+import {sha1, sortObject, sortObjectByValues, readdirRecursive, existsSync, evaluateRules} from './utils.ts'
 import {getReleaseTarget, normalizeVersion} from './versioning.ts'
 import {parseJarInfo, shouldCheckJar} from './jar-analyzer.ts'
 import {getDownloads, downloadFile} from './download.ts'
@@ -91,7 +91,7 @@ async function collectVersions(hashMap: HashMap<string>, oldOmniVersions: HashMa
         const correctPath = path.resolve(MANIFEST_DIR, hash[0], hash[1], hash.slice(2), path.basename(file))
         if (correctPath !== file) {
             console.log(file + ' -> ' + correctPath)
-            mkdirp(path.dirname(correctPath))
+            await Deno.mkdir(path.dirname(correctPath), {recursive: true})
             await Deno.writeTextFile(correctPath, reformatted)
             await Deno.remove(file)
             file = correctPath
@@ -275,7 +275,7 @@ async function sortAndWriteVersionFiles(versionDir: string, allVersions: TempVer
     for (const v of allVersions) {
         newOmniVersions[v.hash] = v.omniId
     }
-    mkdirp(versionDir)
+    await Deno.mkdir(versionDir, {recursive: true})
     const allowedVersionFiles = new Set(newManifest.versions.map(v => v.omniId + '.json'))
     for await (const {name: f} of Deno.readDir(versionDir)) {
         if (!allowedVersionFiles.has(f)) {

@@ -4,7 +4,7 @@ import './types.d.ts'
 import * as path from 'https://deno.land/std@0.113.0/path/mod.ts'
 import React from 'https://esm.sh/react@17.0.2'
 import {renderToStaticMarkup} from 'https://esm.sh/react-dom@17.0.2/server'
-import {readdirRecursive, mkdirp} from './utils.ts'
+import {readdirRecursive} from './utils.ts'
 import {getType} from './versioning.ts'
 
 const URL_BASE = Deno.env.get('URL_BASE')
@@ -20,7 +20,7 @@ for (const file of readdirRecursive(dataDir)) {
     if (!file.endsWith('.json')) continue
     const relative = path.relative(dataDir, file)
     const outFile = path.resolve(distDir, relative)
-    mkdirp(path.dirname(outFile))
+    await Deno.mkdir(path.dirname(outFile), {recursive: true})
     if (relative.startsWith('version/') || !relative.includes('/')) {
         const data = JSON.parse(await Deno.readTextFile(file))
         const base = new URL(relative, URL_BASE)

@@ -1,7 +1,7 @@
 import * as path from 'https://deno.land/std@0.113.0/path/mod.ts'
 import {writableStreamFromWriter} from 'https://deno.land/std@0.113.0/io/mod.ts'
 
-import {existsSync, mkdirp} from './utils.ts'
+import {existsSync} from './utils.ts'
 
 const DOWNLOADS_DIR = Deno.env.get('MC_VERSIONS_DOWNLOADS')
 
@@ -27,7 +27,7 @@ function getDownloadDestination(download: DownloadInfo): string {
 export async function downloadFile(url: string, file: string, part = false) {
     if (existsSync(file)) return
     console.log(`Downloading ${url}`)
-    mkdirp(path.dirname(file))
+    await Deno.mkdir(path.dirname(file), {recursive: true})
     const destFile = part ? file + '.part' : file
     try {
         const res = await fetch(url)
