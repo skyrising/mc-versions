@@ -32,31 +32,54 @@ const IMPORT_DIR = path.resolve('import')
 const VERSION_DIR = path.resolve(DATA_DIR, 'version')
 const PROTOCOL_DIR = path.resolve(DATA_DIR, 'protocol')
 
-const oldOmniVersions: HashMap<VersionId> = await readJsonFile('omni_id.json')
-const renameMap: Record<string, string> = await readJsonFile('rename.json')
-const hashMap: HashMap<string> = sortObject(await readJsonFile('hash_map.json'))
-const lastModified: HashMap<Date|null> = await readJsonFile('last_modified.json', (_, v) => typeof v === 'string' ? new Date(v) : v)
-const sources: Record<string, string> = sortObject(await readJsonFile('sources.json'))
-const urls = await getURLs()
-await downloadManifests(urls)
-const {versions, allVersions} = await collectVersions(hashMap, oldOmniVersions, renameMap)
-const {newManifest, versionsById} = updateMainManifest(versions)
-const {normalizedVersions, protocols, byReleaseTarget} = updateVersionDetails(versions, versionsById)
-const newOmniVersions = await sortAndWriteVersionFiles(VERSION_DIR, allVersions, newManifest)
-await writeJsonFile('omni_id.json', newOmniVersions)
-await writeJsonFile('version_manifest.json', {
-    '$schema': new URL('version_manifest.json', SCHEMA_BASE).toString(),
-    ...newManifest
-})
-await writeProtocolFiles(PROTOCOL_DIR, protocols)
-await writeJsonFile('release_targets.json', {
-    '$schema': new URL('release_targets.json', SCHEMA_BASE).toString(),
-    ...byReleaseTarget
-})
-await writeJsonFile('normalized.json', normalizedVersions)
-await writeJsonFile('hash_map.json', sortObject(hashMap))
-await writeJsonFile('last_modified.json', sortObjectByValues(lastModified))
-await writeJsonFile('sources.json', sortObject(sources))
+if (import.meta.main) {
+    const data = await loadData()
+    await downloadManifests(await getURLs(), data.hashMap, data.sources)
+    await writeUpdatedData(await updateData(data))
+}
+
+async function loadData(): Promise<Database> {
+    return {
+        omniVersions: await readJsonFile('omni_id.json'),
+        renameMap: await readJsonFile('rename.json'),
+        hashMap: sortObject(await readJsonFile('hash_map.json')),
+        lastModified: await readJsonFile('last_modified.json', (_, v) => typeof v === 'string' ? new Date(v) : v),
+        sources: sortObject(await readJsonFile('sources.json')),
+    }
+}
+
+async function writeUpdatedData(data: UpdatedDatabase) {
+    await writeJsonFile('omni_id.json', data.omniVersions)
+    await writeJsonFile('version_manifest.json', {
+        '$schema': new URL('version_manifest.json', SCHEMA_BASE).toString(),
+        ...data.manifest
+    })
+    await writeProtocolFiles(PROTOCOL_DIR, data.protocols)
+    await writeJsonFile('release_targets.json', {
+        '$schema': new URL('release_targets.json', SCHEMA_BASE).toString(),
+        ...data.byReleaseTarget
+    })
+    await writeJsonFile('normalized.json', data.normalizedVersions)
+    await writeJsonFile('hash_map.json', sortObject(data.hashMap))
+    await writeJsonFile('last_modified.json', sortObjectByValues(data.lastModified))
+    await writeJsonFile('sources.json', sortObject(data.sources))
+}
+
+async function updateData(data: Database): Promise<UpdatedDatabase> {
+    const {versions, allVersions} = await collectVersions(data.hashMap, data.omniVersions, data.renameMap, data.lastModified)
+    const {newManifest, versionsById} = updateMainManifest(versions)
+    const {normalizedVersions, protocols, byReleaseTarget} = updateVersionDetails(versions, versionsById)
+    const newOmniVersions = await sortAndWriteVersionFiles(VERSION_DIR, versions, allVersions, newManifest)
+    return {
+        ...data,
+        omniVersions: newOmniVersions,
+        manifest: newManifest,
+        allVersions,
+        protocols,
+        byReleaseTarget,
+        normalizedVersions
+    }
+}
 
 // deno-lint-ignore no-explicit-any
 async function readJsonFile(file: string, reviver?: (this: any, key: string, value: any) => any) {
@@ -68,7 +91,7 @@ async function writeJsonFile(file: string, data: any) {
     await Deno.writeTextFile(path.resolve(DATA_DIR, file), JSON.stringify(data, null, 2))
 }
 
-async function collectVersions(hashMap: HashMap<string>, oldOmniVersions: HashMap<VersionId>, renameMap: Record<string, string>) {
+async function collectVersions(hashMap: HashMap<string>, oldOmniVersions: HashMap<VersionId>, renameMap: Record<string, string>, lastModified: HashMap<Date|null>) {
     const byId: Record<string, Record<string, TempVersionManifest>> = {}
     const allVersions = []
     const files = readdirRecursive(MANIFEST_DIR)
@@ -120,12 +143,12 @@ async function collectVersions(hashMap: HashMap<string>, oldOmniVersions: HashMa
         ;(byId[v.omniId] ??= {})[hash] = v
         allVersions.push(v)
     }
-    await updateLastModified()
+    await updateLastModified(lastModified, hashMap)
     for (const v of allVersions) {
         v.lastModified = lastModified[v.hash]?.toISOString()?.replace('.000Z', '+00:00')
     }
     readdirRecursive(MANIFEST_DIR, true)
-    const versions = []
+    const versions: VersionInfo[] = []
     for (const id in byId) {
         const versionInfo = byId[id]
         const list = Object.values(versionInfo)
@@ -175,7 +198,7 @@ function warnPrefix(id: string) {
 function updateVersionDetails(versions: VersionInfo[], versionsById: Record<string, VersionData>) {
     const protocols: Protocols = {}
     const normalizedVersions: Record<VersionId, VersionId> = {}
-    const byReleaseTarget: {[target: string]: Array<string>} = {}
+    const byReleaseTarget: Record<string, Array<string>> = {}
     for (const v of versions) {
         const {id, protocol, releaseTarget, normalizedVersion} = v.data
         for (const pv of v.data.previous || []) {
@@ -260,7 +283,7 @@ async function writeProtocolFiles(protocolDir: string, protocols: Protocols) {
     }
 }
 
-async function sortAndWriteVersionFiles(versionDir: string, allVersions: TempVersionManifest[], newManifest: MainManifest) {
+async function sortAndWriteVersionFiles(versionDir: string, versions: VersionInfo[], allVersions: TempVersionManifest[], newManifest: MainManifest) {
     if (GITHUB_ACTIONS) console.log('::group::Head versions')
     for (const v of versions) {
         if (!v.data.next.length) console.log(v.data.id)
@@ -298,15 +321,15 @@ async function getURLs(): Promise<Array<URL>> {
     return [...urls].map(u => new URL(u))
 }
 
-function walkHashMap(hash: string) {
+function walkHashMap(hash: string, hashMap: HashMap<string>) {
     while (hash in hashMap) hash = hashMap[hash]
     return hash
 }
 
-async function downloadManifests(urls: Array<URL>): Promise<void> {
+async function downloadManifests(urls: Array<URL>, hashMap: HashMap<string>, sources: HashMap<string>): Promise<void> {
     for (const url of urls) {
         const p = url.pathname.split('/')
-        const hash = walkHashMap(p[3])
+        const hash = walkHashMap(p[3], hashMap)
         sources[p[3]] ??= url.toString()
         const file = path.resolve(MANIFEST_DIR, hash[0], hash[1], hash.substr(2), p[4])
         await downloadFile(url.toString(), file)
@@ -399,16 +422,16 @@ async function updateVersion(id: VersionId, manifests: Array<TempVersionManifest
     }
 }
 
-async function updateLastModified() {
+async function updateLastModified(lastModified: HashMap<Date|null>, hashMap: HashMap<string>) {
     for (const key in lastModified) {
-        const hash = walkHashMap(key)
+        const hash = walkHashMap(key, hashMap)
         if (hash !== key) {
             lastModified[hash] = lastModified[key]
             delete lastModified[key]
         }
     }
     for (const key in hashMap) {
-        const hash = walkHashMap(key)
+        const hash = walkHashMap(key, hashMap)
         if (hash in lastModified) continue
         const dir = path.resolve('data/manifest', hash[0], hash[1], hash.slice(2))
         if (!existsSync(dir)) continue

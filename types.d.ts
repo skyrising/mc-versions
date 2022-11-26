@@ -140,3 +140,19 @@ type VersionInfo = {
 }
 
 type VersionType = 'release' | 'snapshot' | 'pre-release' | 'release-candidate' | 'beta' | 'alpha' | 'infdev' | 'indev' | 'classic' | 'pre-classic' | 'other'
+
+type Database = {
+    omniVersions: HashMap<VersionId>
+    renameMap: Record<string, string>
+    hashMap: HashMap<string>
+    lastModified: HashMap<Date|null>
+    sources: HashMap<string>
+}
+
+type UpdatedDatabase = Database & {
+    manifest: MainManifest
+    allVersions: TempVersionManifest[]
+    protocols: Protocols
+    byReleaseTarget: Record<string, Array<string>>
+    normalizedVersions: Record<string, string>
+}
