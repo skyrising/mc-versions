@@ -91,6 +91,12 @@ async function writeJsonFile(file: string, data: any) {
     await Deno.writeTextFile(path.resolve(DATA_DIR, file), JSON.stringify(data, null, 2))
 }
 
+function hashFromFileName(file: string) {
+    const relative = path.relative(MANIFEST_DIR, file)
+    const match = /^([0-9a-f])\/([0-9a-f])\/([0-9a-f]{38})\//.exec(relative)
+    return match && match[1] + match[2] + match[3]
+}
+
 async function collectVersions(hashMap: HashMap<string>, oldOmniVersions: HashMap<VersionId>, renameMap: Record<string, string>, lastModified: HashMap<Date|null>) {
     const byId: Record<string, Record<string, TempVersionManifest>> = {}
     const allVersions = []
@@ -102,12 +108,12 @@ async function collectVersions(hashMap: HashMap<string>, oldOmniVersions: HashMa
     for (let file of files) {
         if (!file.endsWith('.json')) continue
         const content = await Deno.readTextFile(file)
-        let hash = sha1(content)
+        let hash = hashFromFileName(file) || sha1(content)
         const data: VersionManifest = sortObject(JSON.parse(content))
         if (!data.downloads || data.downloads.client && (!data.assets || !data.assetIndex)) continue
         const reformatted = JSON.stringify(data, null, 2)
-        const reformattedHash = sha1(reformatted)
-        if (reformattedHash !== hash) {
+        if (reformatted !== content) {
+            const reformattedHash = sha1(reformatted)
             hashMap[hash] = reformattedHash
             hash = reformattedHash
         }
