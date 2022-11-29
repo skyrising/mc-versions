@@ -2139,13 +2139,20 @@
       ]
     },
     {
+      "version": 440,
+      "clients": [
+        "18w43a"
+      ],
+      "servers": [
+        "18w43a"
+      ]
+    },
+    {
       "version": 441,
       "clients": [
-        "18w43a",
         "18w43b"
       ],
       "servers": [
-        "18w43a",
         "18w43b"
       ]
     },
@@ -2710,13 +2717,20 @@
       ]
     },
     {
+      "version": 552,
+      "clients": [
+        "19w36a"
+      ],
+      "servers": [
+        "19w36a"
+      ]
+    },
+    {
       "version": 553,
       "clients": [
-        "19w36a",
         "19w37a"
       ],
       "servers": [
-        "19w36a",
         "19w37a"
       ]
     },
@@ -2939,11 +2953,18 @@
     {
       "version": 600,
       "clients": [
-        "combat-4",
+        "combat-4"
+      ],
+      "servers": [
+        "combat-4"
+      ]
+    },
+    {
+      "version": 601,
+      "clients": [
         "combat-5"
       ],
       "servers": [
-        "combat-4",
         "combat-5"
       ]
     },
