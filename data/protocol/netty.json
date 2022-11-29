@@ -1258,11 +1258,18 @@
     {
       "version": 307,
       "clients": [
-        "16w39a",
+        "16w39a"
+      ],
+      "servers": [
+        "16w39a"
+      ]
+    },
+    {
+      "version": 308,
+      "clients": [
         "16w39b"
       ],
       "servers": [
-        "16w39a",
         "16w39b"
       ]
     },
