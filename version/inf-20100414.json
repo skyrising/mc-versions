@@ -42,5 +42,8 @@
   "protocol": null,
   "releaseTime": "2010-04-14T19:40:00+00:00",
   "server": false,
-  "sharedMappings": false
+  "sharedMappings": false,
+  "world": {
+    "format": "alpha"
+  }
 }
