@@ -15,7 +15,7 @@ interface ShortVersion {
     details?: string
 }
 
-type ProtocolType = 'classic' | 'alpha' | 'netty' | 'netty-snapshot'
+type ProtocolType = 'classic' | 'alpha' | 'modern' | 'netty' | 'netty-snapshot'
 
 interface ProtocolVersion {
     type: ProtocolType
@@ -34,11 +34,11 @@ interface ProtocolData {
     versions: ProtocolVersionInfo[]
 }
 
-type WorldFormat = 'anvil'
+type WorldFormat = 'alpha' | 'region' | 'anvil'
 
 interface WorldVersion {
     format: WorldFormat
-    version: number
+    version?: number
 }
 
 interface BaseVersionManifest {

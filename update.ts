@@ -389,8 +389,11 @@ async function updateVersion(id: VersionId, manifests: Array<TempVersionManifest
     if (localMirror.client && shouldCheckJar(data)) {
         try {
             console.log(`Analyzing ${data.id} (${localMirror.client})`)
-            const parsedInfo = await parseJarInfo(localMirror.client)
+            const parsedInfo = await parseJarInfo(localMirror.client, manifests[0].id)
             if (data.protocol === undefined) data.protocol = parsedInfo.protocol
+            if (parsedInfo.protocol && parsedInfo.protocol.version !== data.protocol?.version) {
+                console.warn(`${data.id}: Mismatched protocol version: analyzed=${parsedInfo.protocol.version} data=${data.protocol?.version}`)
+            }
             data.world ||= parsedInfo.world
             if (data.releaseTarget === undefined) data.releaseTarget = parsedInfo.releaseTarget
         } catch (e) {
