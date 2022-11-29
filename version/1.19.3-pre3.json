@@ -3,34 +3,34 @@
   "client": true,
   "downloads": {
     "client": {
-      "sha1": "57a23e575a34f24aa84f3d54fbf4ddf9940a2c24",
-      "size": 22688308,
-      "url": "https://piston-data.mojang.com/v1/objects/57a23e575a34f24aa84f3d54fbf4ddf9940a2c24/client.jar"
+      "sha1": "2e935c01cccf2b1d1a7845ec596555685baa49ef",
+      "size": 22703433,
+      "url": "https://piston-data.mojang.com/v1/objects/2e935c01cccf2b1d1a7845ec596555685baa49ef/client.jar"
     },
     "client_mappings": {
-      "sha1": "a20bf6c75fb17e98812e01828c0ef47bf22e1c88",
-      "size": 7565182,
-      "url": "https://piston-data.mojang.com/v1/objects/a20bf6c75fb17e98812e01828c0ef47bf22e1c88/client.txt"
+      "sha1": "be5166aabd346178403bd95bc6c83aa1cab07915",
+      "size": 7573117,
+      "url": "https://piston-data.mojang.com/v1/objects/be5166aabd346178403bd95bc6c83aa1cab07915/client.txt"
     },
     "server": {
-      "sha1": "046fee78cd174105cb9b958a8459c0405ab19959",
-      "size": 47154379,
-      "url": "https://piston-data.mojang.com/v1/objects/046fee78cd174105cb9b958a8459c0405ab19959/server.jar"
+      "sha1": "323175facb90c05b07dff84b4cff39fd9cab138a",
+      "size": 47165366,
+      "url": "https://piston-data.mojang.com/v1/objects/323175facb90c05b07dff84b4cff39fd9cab138a/server.jar"
     },
     "server_mappings": {
-      "sha1": "b2cf842b08789a8ac4748969c2cec2eae48b6101",
-      "size": 5845793,
-      "url": "https://piston-data.mojang.com/v1/objects/b2cf842b08789a8ac4748969c2cec2eae48b6101/server.txt"
+      "sha1": "7987f7f32fc1eb9b3da101feb04bd2dd533c2279",
+      "size": 5850670,
+      "url": "https://piston-data.mojang.com/v1/objects/7987f7f32fc1eb9b3da101feb04bd2dd533c2279/server.txt"
     }
   },
-  "id": "1.19.3-pre1",
+  "id": "1.19.3-pre3",
   "libraries": [
     "com.github.oshi:oshi-core:6.2.2",
     "com.google.code.gson:gson:2.10",
     "com.google.guava:failureaccess:1.0.1",
     "com.google.guava:guava:31.1-jre",
     "com.ibm.icu:icu4j:71.1",
-    "com.mojang:authlib:3.15.28",
+    "com.mojang:authlib:3.16.29",
     "com.mojang:blocklist:1.0.10",
     "com.mojang:brigadier:1.0.18",
     "com.mojang:datafixerupper:5.0.28",
@@ -74,54 +74,30 @@
     {
       "assetHash": "75f8f28e6b284084790292fe377da7811787183f",
       "assetIndex": "2",
-      "downloads": "2edc581082a3978db4856e3bdf4e6fa63c26db28",
+      "downloads": "110ddf1008fb6a23305b4bee93e8f77f936771a7",
       "downloadsId": 1,
-      "hash": "616574c1da6c90a508ccfb62507ccdfb9ea30a46",
-      "lastModified": "2022-11-29T14:38:52+00:00",
-      "time": "2022-11-22T13:59:37+00:00",
+      "hash": "3fb8ca75924b255688d1c96be1b36c8852e363b0",
+      "lastModified": "2022-11-29T14:38:51+00:00",
+      "time": "2022-11-29T14:28:08+00:00",
       "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/6/1/6574c1da6c90a508ccfb62507ccdfb9ea30a46/1.19.3-pre1.json"
-    },
-    {
-      "assetHash": "60c76de2cdf342abf65d99a1d14f2cc0ad860b6a",
-      "assetIndex": "2",
-      "downloads": "2edc581082a3978db4856e3bdf4e6fa63c26db28",
-      "downloadsId": 1,
-      "hash": "8a46e0ee12a612ceb607d916b0a9ad5cfe60110c",
-      "lastModified": "2022-11-23T16:27:15+00:00",
-      "time": "2022-11-22T13:59:37+00:00",
-      "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/8/a/46e0ee12a612ceb607d916b0a9ad5cfe60110c/1.19.3-pre1.json"
-    },
-    {
-      "assetHash": "1f77687bd368ced433acc49ab84f68f878a7103c",
-      "assetIndex": "2",
-      "downloads": "2edc581082a3978db4856e3bdf4e6fa63c26db28",
-      "downloadsId": 1,
-      "hash": "cab94259917c80c62f5a279f386d548965cd10d1",
-      "lastModified": "2022-11-22T14:04:39+00:00",
-      "time": "2022-11-22T13:59:37+00:00",
-      "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/c/a/b94259917c80c62f5a279f386d548965cd10d1/1.19.3-pre1.json"
+      "url": "https://skyrising.github.io/mc-versions/manifest/3/f/b8ca75924b255688d1c96be1b36c8852e363b0/1.19.3-pre3.json"
     }
   ],
-  "next": [
-    "1.19.3-pre2"
-  ],
-  "normalizedVersion": "1.19.3-pre.1",
+  "next": [],
+  "normalizedVersion": "1.19.3-pre.3",
   "previous": [
-    "22w46a"
+    "1.19.3-pre2"
   ],
   "protocol": {
     "type": "netty-snapshot",
-    "version": 109
+    "version": 111
   },
   "releaseTarget": "1.19.3",
-  "releaseTime": "2022-11-22T13:59:37+00:00",
+  "releaseTime": "2022-11-29T14:28:08+00:00",
   "server": true,
   "sharedMappings": true,
   "world": {
     "format": "anvil",
-    "version": 3211
+    "version": 3213
   }
 }
