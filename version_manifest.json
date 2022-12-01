@@ -5,16 +5,25 @@
     "classic_server": "server-c1.10.1",
     "alpha_server": "server-a0.2.8",
     "old_beta": "b1.9-pre6",
-    "snapshot": "1.19.3-pre3",
+    "snapshot": "1.19.3-rc1",
     "release": "1.19.2",
     "pending": "1.19_deep_dark_experimental_snapshot-1"
   },
   "versions": [
     {
+      "omniId": "1.19.3-rc1",
+      "id": "1.19.3-rc1",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/manifest/7/5/c5c2edb54f0b43d65708d73037834ab9bbb034/1.19.3-rc1.json",
+      "time": "2022-12-01T13:45:18+00:00",
+      "releaseTime": "2022-12-01T13:45:18+00:00",
+      "details": "https://skyrising.github.io/mc-versions/version/1.19.3-rc1.json"
+    },
+    {
       "omniId": "1.19.3-pre3",
       "id": "1.19.3-pre3",
       "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/3/f/b8ca75924b255688d1c96be1b36c8852e363b0/1.19.3-pre3.json",
+      "url": "https://skyrising.github.io/mc-versions/manifest/a/3/9855c26ff62ccc9673e6eb8ac0d1d7d6f32ecf/1.19.3-pre3.json",
       "time": "2022-11-29T14:28:08+00:00",
       "releaseTime": "2022-11-29T14:28:08+00:00",
       "details": "https://skyrising.github.io/mc-versions/version/1.19.3-pre3.json"
@@ -23,7 +32,7 @@
       "omniId": "1.19.3-pre2",
       "id": "1.19.3-pre2",
       "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/7/9/8fff21fdb8852c24ca86247c75e9e0f44fa0db/1.19.3-pre2.json",
+      "url": "https://skyrising.github.io/mc-versions/manifest/3/9/7c833b6162ecfdf23dd975b758d6fcc4d95975/1.19.3-pre2.json",
       "time": "2022-11-23T16:12:25+00:00",
       "releaseTime": "2022-11-23T16:12:25+00:00",
       "details": "https://skyrising.github.io/mc-versions/version/1.19.3-pre2.json"
@@ -32,7 +41,7 @@
       "omniId": "1.19.3-pre1",
       "id": "1.19.3-pre1",
       "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/6/1/6574c1da6c90a508ccfb62507ccdfb9ea30a46/1.19.3-pre1.json",
+      "url": "https://skyrising.github.io/mc-versions/manifest/b/8/cd06ac09afbb62033bf3b3e82393fd70000449/1.19.3-pre1.json",
       "time": "2022-11-22T13:59:37+00:00",
       "releaseTime": "2022-11-22T13:59:37+00:00",
       "details": "https://skyrising.github.io/mc-versions/version/1.19.3-pre1.json"
@@ -41,7 +50,7 @@
       "omniId": "22w46a",
       "id": "22w46a",
       "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/4/0/9184718c65172ea3f829751503edcadf278a19/22w46a.json",
+      "url": "https://skyrising.github.io/mc-versions/manifest/1/d/3dd9a15a7cf062fc1829999edf2d1456f44198/22w46a.json",
       "time": "2022-11-16T13:32:50+00:00",
       "releaseTime": "2022-11-16T13:32:50+00:00",
       "details": "https://skyrising.github.io/mc-versions/version/22w46a.json"
@@ -50,7 +59,7 @@
       "omniId": "22w45a",
       "id": "22w45a",
       "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/0/6/f593d3eab2e982902245599716328ebbae3776/22w45a.json",
+      "url": "https://skyrising.github.io/mc-versions/manifest/e/5/a76234b1511d4ed0629037f2aa739e02d7948b/22w45a.json",
       "time": "2022-11-09T14:30:16+00:00",
       "releaseTime": "2022-11-09T14:30:16+00:00",
       "details": "https://skyrising.github.io/mc-versions/version/22w45a.json"
@@ -59,7 +68,7 @@
       "omniId": "22w44a",
       "id": "22w44a",
       "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/2/1/81f0a872885b6a89b53e682050c4da7d23f5c6/22w44a.json",
+      "url": "https://skyrising.github.io/mc-versions/manifest/a/6/79b8541b238072e691aecdaffca61e27744502/22w44a.json",
       "time": "2022-11-02T13:15:43+00:00",
       "releaseTime": "2022-11-02T13:15:43+00:00",
       "details": "https://skyrising.github.io/mc-versions/version/22w44a.json"
@@ -68,7 +77,7 @@
       "omniId": "22w43a",
       "id": "22w43a",
       "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/9/d/b458d7bf733e90579fe327b46417d7f792144c/22w43a.json",
+      "url": "https://skyrising.github.io/mc-versions/manifest/2/b/78194e32f962d32791bd3127a18f484aa9cbd6/22w43a.json",
       "time": "2022-10-26T11:55:59+00:00",
       "releaseTime": "2022-10-26T11:55:59+00:00",
       "details": "https://skyrising.github.io/mc-versions/version/22w43a.json"
@@ -77,7 +86,7 @@
       "omniId": "22w42a",
       "id": "22w42a",
       "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/1/2/0a3133d46e8e35232452a93a9d994a4b656a38/22w42a.json",
+      "url": "https://skyrising.github.io/mc-versions/manifest/8/3/27a58d6bf5e38d751d1df14ce1d0981eb6cabc/22w42a.json",
       "time": "2022-10-19T09:34:22+00:00",
       "releaseTime": "2022-10-19T09:34:22+00:00",
       "details": "https://skyrising.github.io/mc-versions/version/22w42a.json"
