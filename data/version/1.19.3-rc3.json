@@ -3,27 +3,27 @@
   "client": true,
   "downloads": {
     "client": {
-      "sha1": "0f37b64668c8b2e54d12bd13138f8ca874f92270",
-      "size": 22702990,
-      "url": "https://piston-data.mojang.com/v1/objects/0f37b64668c8b2e54d12bd13138f8ca874f92270/client.jar"
+      "sha1": "df83f55790fadb7aba06e84605531d421c6f8fe2",
+      "size": 22704185,
+      "url": "https://piston-data.mojang.com/v1/objects/df83f55790fadb7aba06e84605531d421c6f8fe2/client.jar"
     },
     "client_mappings": {
-      "sha1": "c3c97665298272acc58ee50a0deea4521ead6c92",
-      "size": 7573330,
-      "url": "https://piston-data.mojang.com/v1/objects/c3c97665298272acc58ee50a0deea4521ead6c92/client.txt"
+      "sha1": "81e3f0b8287c0b7faaae21031446526cb615465a",
+      "size": 7574170,
+      "url": "https://piston-data.mojang.com/v1/objects/81e3f0b8287c0b7faaae21031446526cb615465a/client.txt"
     },
     "server": {
-      "sha1": "0c713920eff7358cb01c56979e8d732943bb893b",
-      "size": 47166456,
-      "url": "https://piston-data.mojang.com/v1/objects/0c713920eff7358cb01c56979e8d732943bb893b/server.jar"
+      "sha1": "5f459ba58558d797229c819c0314bec84e774ecb",
+      "size": 47164898,
+      "url": "https://piston-data.mojang.com/v1/objects/5f459ba58558d797229c819c0314bec84e774ecb/server.jar"
     },
     "server_mappings": {
-      "sha1": "fd5068263995047df70deb45fa54d747f0b3f837",
-      "size": 5851996,
-      "url": "https://piston-data.mojang.com/v1/objects/fd5068263995047df70deb45fa54d747f0b3f837/server.txt"
+      "sha1": "48f573d570db6fa7ab99e62ce2bf4a00abcc6166",
+      "size": 5852819,
+      "url": "https://piston-data.mojang.com/v1/objects/48f573d570db6fa7ab99e62ce2bf4a00abcc6166/server.txt"
     }
   },
-  "id": "1.19.3-rc1",
+  "id": "1.19.3-rc3",
   "libraries": [
     "com.github.oshi:oshi-core:6.2.2",
     "com.google.code.gson:gson:2.10",
@@ -74,54 +74,30 @@
     {
       "assetHash": "4c0af60bafa87bee77dcfa6942d792bec91435e2",
       "assetIndex": "2",
-      "downloads": "b1f3b894ce82cc2ce7cc1da88d162c6b684fa26f",
+      "downloads": "c03ac00fdce86d0482c7e4852799813e817ac1a3",
       "downloadsId": 1,
-      "hash": "6ebe14923b477619afdfc3c5cb82815f764f8e92",
-      "lastModified": "2022-12-06T10:36:32+00:00",
-      "time": "2022-12-01T13:45:18+00:00",
+      "hash": "3839ba98257e616b6c2e7846db831385471988f9",
+      "lastModified": "2022-12-06T10:36:30+00:00",
+      "time": "2022-12-06T10:24:01+00:00",
       "type": "snapshot",
-      "url": "../manifest/6/e/be14923b477619afdfc3c5cb82815f764f8e92/1.19.3-rc1.json"
-    },
-    {
-      "assetHash": "c6df8aab6b2a84f903073474f7bfbc9060745b45",
-      "assetIndex": "2",
-      "downloads": "b1f3b894ce82cc2ce7cc1da88d162c6b684fa26f",
-      "downloadsId": 1,
-      "hash": "78fc59e541576f01e36e782e33c5b8fa3d0287e7",
-      "lastModified": "2022-12-05T13:34:04+00:00",
-      "time": "2022-12-01T13:45:18+00:00",
-      "type": "snapshot",
-      "url": "../manifest/7/8/fc59e541576f01e36e782e33c5b8fa3d0287e7/1.19.3-rc1.json"
-    },
-    {
-      "assetHash": "76c3bebd72aaf6c158535d628dccd5c9cfed3371",
-      "assetIndex": "2",
-      "downloads": "b1f3b894ce82cc2ce7cc1da88d162c6b684fa26f",
-      "downloadsId": 1,
-      "hash": "75c5c2edb54f0b43d65708d73037834ab9bbb034",
-      "lastModified": "2022-12-01T14:06:56+00:00",
-      "time": "2022-12-01T13:45:18+00:00",
-      "type": "snapshot",
-      "url": "../manifest/7/5/c5c2edb54f0b43d65708d73037834ab9bbb034/1.19.3-rc1.json"
+      "url": "../manifest/3/8/39ba98257e616b6c2e7846db831385471988f9/1.19.3-rc3.json"
     }
   ],
-  "next": [
-    "1.19.3-rc2"
-  ],
-  "normalizedVersion": "1.19.3-rc.1",
+  "next": [],
+  "normalizedVersion": "1.19.3-rc.3",
   "previous": [
-    "1.19.3-pre3"
+    "1.19.3-rc2"
   ],
   "protocol": {
     "type": "netty-snapshot",
-    "version": 112
+    "version": 114
   },
   "releaseTarget": "1.19.3",
-  "releaseTime": "2022-12-01T13:45:18+00:00",
+  "releaseTime": "2022-12-06T10:24:01+00:00",
   "server": true,
   "sharedMappings": true,
   "world": {
     "format": "anvil",
-    "version": 3215
+    "version": 3217
   }
 }
