@@ -3,27 +3,27 @@
   "client": true,
   "downloads": {
     "client": {
-      "sha1": "f53a7f667a494d8ebb99ea98ddc138959860a6ea",
-      "size": 22703283,
-      "url": "https://piston-data.mojang.com/v1/objects/f53a7f667a494d8ebb99ea98ddc138959860a6ea/client.jar"
+      "sha1": "977727ec9ab8b4631e5c12839f064092f17663f8",
+      "size": 22704188,
+      "url": "https://piston-data.mojang.com/v1/objects/977727ec9ab8b4631e5c12839f064092f17663f8/client.jar"
     },
     "client_mappings": {
-      "sha1": "0f5b51d4d96c08968173c2d15442c1435aede3d1",
-      "size": 7573308,
-      "url": "https://piston-data.mojang.com/v1/objects/0f5b51d4d96c08968173c2d15442c1435aede3d1/client.txt"
+      "sha1": "42366909cc612e76208d34bf1356f05a88e08a1d",
+      "size": 7574170,
+      "url": "https://piston-data.mojang.com/v1/objects/42366909cc612e76208d34bf1356f05a88e08a1d/client.txt"
     },
     "server": {
-      "sha1": "138c813e22102e1a82a1be7b76080f40235183fe",
-      "size": 47163170,
-      "url": "https://piston-data.mojang.com/v1/objects/138c813e22102e1a82a1be7b76080f40235183fe/server.jar"
+      "sha1": "c9df48efed58511cdd0213c56b9013a7b5c9ac1f",
+      "size": 47162712,
+      "url": "https://piston-data.mojang.com/v1/objects/c9df48efed58511cdd0213c56b9013a7b5c9ac1f/server.jar"
     },
     "server_mappings": {
-      "sha1": "0d0407d32a14c98f43f272ebca0858135ea306d7",
-      "size": 5851996,
-      "url": "https://piston-data.mojang.com/v1/objects/0d0407d32a14c98f43f272ebca0858135ea306d7/server.txt"
+      "sha1": "bc44f6dd84cd2f3ad8c0caad850eaca9e82067e3",
+      "size": 5852819,
+      "url": "https://piston-data.mojang.com/v1/objects/bc44f6dd84cd2f3ad8c0caad850eaca9e82067e3/server.txt"
     }
   },
-  "id": "1.19.3-rc2",
+  "id": "1.19.3",
   "libraries": [
     "com.github.oshi:oshi-core:6.2.2",
     "com.google.code.gson:gson:2.10",
@@ -74,54 +74,30 @@
     {
       "assetHash": "c492375ded5da34b646b8c5c0842a0028bc69cec",
       "assetIndex": "2",
-      "downloads": "9c9ccc212513ec23b9b1caef88fad1aa677c6d1c",
+      "downloads": "c69f7610493d84770826e15a86839e19c9160545",
       "downloadsId": 1,
-      "hash": "6457f4210df3269533867bba3258b6165aaca7f9",
-      "lastModified": "2022-12-07T09:23:32+00:00",
-      "time": "2022-12-05T13:21:34+00:00",
-      "type": "snapshot",
-      "url": "../manifest/6/4/57f4210df3269533867bba3258b6165aaca7f9/1.19.3-rc2.json"
-    },
-    {
-      "assetHash": "4c0af60bafa87bee77dcfa6942d792bec91435e2",
-      "assetIndex": "2",
-      "downloads": "9c9ccc212513ec23b9b1caef88fad1aa677c6d1c",
-      "downloadsId": 1,
-      "hash": "ab67bda4bad8da2f9aeb7567c1310b35a91e2a11",
-      "lastModified": "2022-12-06T10:36:31+00:00",
-      "time": "2022-12-05T13:21:34+00:00",
-      "type": "snapshot",
-      "url": "../manifest/a/b/67bda4bad8da2f9aeb7567c1310b35a91e2a11/1.19.3-rc2.json"
-    },
-    {
-      "assetHash": "c6df8aab6b2a84f903073474f7bfbc9060745b45",
-      "assetIndex": "2",
-      "downloads": "9c9ccc212513ec23b9b1caef88fad1aa677c6d1c",
-      "downloadsId": 1,
-      "hash": "b44cb1b41bd58c24163d4f32f1358005c20c49b4",
-      "lastModified": "2022-12-05T13:34:03+00:00",
-      "time": "2022-12-05T13:21:34+00:00",
-      "type": "snapshot",
-      "url": "../manifest/b/4/4cb1b41bd58c24163d4f32f1358005c20c49b4/1.19.3-rc2.json"
+      "hash": "dabce17cb00eac274a45cd7e1d286214ce9fddef",
+      "lastModified": "2022-12-07T09:23:31+00:00",
+      "time": "2022-12-07T08:17:18+00:00",
+      "type": "release",
+      "url": "../manifest/d/a/bce17cb00eac274a45cd7e1d286214ce9fddef/1.19.3.json"
     }
   ],
-  "next": [
+  "next": [],
+  "normalizedVersion": "1.19.3",
+  "previous": [
     "1.19.3-rc3"
   ],
-  "normalizedVersion": "1.19.3-rc.2",
-  "previous": [
-    "1.19.3-rc1"
-  ],
   "protocol": {
-    "type": "netty-snapshot",
-    "version": 113
+    "type": "netty",
+    "version": 761
   },
   "releaseTarget": "1.19.3",
-  "releaseTime": "2022-12-05T13:21:34+00:00",
+  "releaseTime": "2022-12-07T08:17:18+00:00",
   "server": true,
   "sharedMappings": true,
   "world": {
     "format": "anvil",
-    "version": 3216
+    "version": 3218
   }
 }
