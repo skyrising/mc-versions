@@ -5,17 +5,17 @@
     "client": {
       "sha1": "13183e023c8918ed08c302c2fe1438f61b53d094",
       "size": 4628354,
-      "url": "https://assets.minecraft.net/12w32a/minecraft.jar"
+      "url": "https://files.betacraft.uk/launcher/assets/versions/1.4/12w32a.jar"
     },
     "server": {
       "sha1": "5fcb4ed085db3321c20c078b8987273fdd0b9f32",
       "size": 1824426,
-      "url": "https://assets.minecraft.net/12w32a/minecraft_server.jar"
+      "url": "https://files.betacraft.uk/server-archive/release/1.4/prerelease/12w32a-1532.jar"
     },
     "windows_server": {
       "sha1": "358e1ddbb3f1f832d131c8bcd762b43d279dce5b",
       "size": 2005674,
-      "url": "https://assets.minecraft.net/12w32a/Minecraft_Server.exe"
+      "url": "https://files.betacraft.uk/server-archive/release/1.4/prerelease/12w32a-1532.exe"
     }
   },
   "id": "12w32a",
@@ -36,10 +36,10 @@
       "assetIndex": "pre-1.6",
       "downloads": "74923d0a4d822c1f45928c44412a9654def0f3e2",
       "downloadsId": 1,
-      "hash": "e896e9a4ba9d2aa0bafd3f166060f6b3125d3fe8",
+      "hash": "de821824399c490d3a30db6c5c8dbe050f554069",
       "time": "2012-08-09T15:35:04+00:00",
       "type": "snapshot",
-      "url": "../manifest/e/8/96e9a4ba9d2aa0bafd3f166060f6b3125d3fe8/12w32a.json"
+      "url": "../manifest/d/e/821824399c490d3a30db6c5c8dbe050f554069/12w32a.json"
     }
   ],
   "next": [

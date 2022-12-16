@@ -1,0 +1,63 @@
+{
+  "$schema": "https://skyrising.github.io/mc-versions/schemas/version.json",
+  "client": true,
+  "downloads": {
+    "client": {
+      "sha1": "5a74f0e56e0be1313d730fe0e9339b0eac858589",
+      "size": 6442310,
+      "url": "https://files.betacraft.uk/launcher/assets/versions/1.5/13w05a-1504.jar"
+    },
+    "server": {
+      "sha1": "8b95d924c9ddca30b621f9822fdef3fe64ecc607",
+      "size": 2225285,
+      "url": "https://files.betacraft.uk/server-archive/release/1.5/prerelease/13w05a-1503.jar"
+    },
+    "windows_server": {
+      "sha1": "3e4e0718e9da9d35e1e02b33b9e4846fdfe8684e",
+      "size": 2406533,
+      "url": "https://files.betacraft.uk/server-archive/release/1.5/prerelease/13w05a-1503.exe"
+    }
+  },
+  "id": "13w05a-1504",
+  "libraries": [
+    "net.java.jinput:jinput-platform:2.0.5",
+    "net.java.jinput:jinput:2.0.5",
+    "net.java.jutils:jutils:1.0.0",
+    "net.minecraft:launchwrapper:1.5",
+    "net.sf.jopt-simple:jopt-simple:4.5",
+    "org.lwjgl.lwjgl:lwjgl-platform:2.9.0",
+    "org.lwjgl.lwjgl:lwjgl:2.9.0",
+    "org.lwjgl.lwjgl:lwjgl_util:2.9.0",
+    "org.ow2.asm:asm-all:4.1"
+  ],
+  "manifests": [
+    {
+      "assetHash": "4759bad2824e419da9db32861fcdc3a274336532",
+      "assetIndex": "pre-1.6",
+      "downloads": "3226dbb6cc2226be042d9d0fc9219c1d3b5925b9",
+      "downloadsId": 1,
+      "hash": "7c29ca0345517925ca9877895906ac7bf754ad5e",
+      "time": "2013-01-31T15:04:00+00:00",
+      "type": "snapshot",
+      "url": "../manifest/7/c/29ca0345517925ca9877895906ac7bf754ad5e/13w05a-1504.json"
+    }
+  ],
+  "next": [
+    "13w05a-1538"
+  ],
+  "normalizedVersion": "1.5.0-alpha.13.5.a+1504",
+  "previous": [
+    "13w04a"
+  ],
+  "protocol": {
+    "type": "modern",
+    "version": 56
+  },
+  "releaseTarget": "1.5",
+  "releaseTime": "2013-01-31T15:04:00+00:00",
+  "server": true,
+  "sharedMappings": true,
+  "world": {
+    "format": "anvil"
+  }
+}

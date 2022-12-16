@@ -5,7 +5,7 @@
     "client": {
       "sha1": "4e327918708d22e7443fbadefb9831ca04af4b90",
       "size": 2242242,
-      "url": "https://assets.minecraft.net/11w47a/minecraft.jar"
+      "url": "https://files.betacraft.uk/launcher/assets/versions/1.1/11w47a.jar"
     },
     "server": {
       "sha1": "62e447c26123d890fa0bd8fad58b1c3a50c5c4ba",
@@ -14,24 +14,27 @@
     }
   },
   "id": "11w47a",
-  "libraries": [],
+  "libraries": [
+    "net.java.jinput:jinput-platform:2.0.5",
+    "net.java.jinput:jinput:2.0.5",
+    "net.java.jutils:jutils:1.0.0",
+    "net.minecraft:launchwrapper:1.5",
+    "net.sf.jopt-simple:jopt-simple:4.5",
+    "org.lwjgl.lwjgl:lwjgl-platform:2.9.0",
+    "org.lwjgl.lwjgl:lwjgl:2.9.0",
+    "org.lwjgl.lwjgl:lwjgl_util:2.9.0",
+    "org.ow2.asm:asm-all:4.1"
+  ],
   "manifests": [
-    {
-      "downloads": "fbc401c491cae2565b0c4ff48677e54d35318e20",
-      "downloadsId": 2,
-      "hash": "358741f3b4a4cabaeea674a8bbd9ea31d11b2def",
-      "type": "snapshot",
-      "url": "../manifest/3/5/8741f3b4a4cabaeea674a8bbd9ea31d11b2def/11w47a.json"
-    },
     {
       "assetHash": "4759bad2824e419da9db32861fcdc3a274336532",
       "assetIndex": "pre-1.6",
-      "downloads": "01da93b640a28da510365c7e605e371b9506f56a",
+      "downloads": "e7ce29f1e23bce901b843addacdc84c00a7a623d",
       "downloadsId": 1,
-      "hash": "8d76c04e2bab4fab202784afbe6b4cf8118cd2f3",
+      "hash": "465b7d3b5a46e909cb0df65e6e244339c00aae3c",
       "time": "2011-11-24T13:18:00+00:00",
       "type": "snapshot",
-      "url": "../manifest/8/d/76c04e2bab4fab202784afbe6b4cf8118cd2f3/11w47a.json"
+      "url": "../manifest/4/6/5b7d3b5a46e909cb0df65e6e244339c00aae3c/11w47a.json"
     }
   ],
   "next": [

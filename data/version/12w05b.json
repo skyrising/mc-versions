@@ -5,12 +5,12 @@
     "client": {
       "sha1": "75fbc4a39a244d0f1eb842ff8385e992e2b47dd5",
       "size": 3931694,
-      "url": "https://assets.minecraft.net/12w05b/minecraft.jar"
+      "url": "https://files.betacraft.uk/launcher/assets/versions/1.2/12w05b.jar"
     },
     "server": {
       "sha1": "53a59f819089bf496406c9761674b50d0ee57356",
       "size": 1310220,
-      "url": "https://assets.minecraft.net/12w05b/minecraft_server.jar"
+      "url": "https://files.betacraft.uk/server-archive/release/1.2/prerelease/12w05b.jar"
     }
   },
   "id": "12w05b",
@@ -31,10 +31,10 @@
       "assetIndex": "pre-1.6",
       "downloads": "c64aaec685bafda00f808ba8c02ff8eb6ffd85c8",
       "downloadsId": 1,
-      "hash": "df7ef604b46c4c285b231fd4d6e866d747c164d4",
+      "hash": "ef8c8695ffc8ab91dea3aa08fdb25d210b709c6a",
       "time": "2012-02-03T08:28:23+00:00",
       "type": "snapshot",
-      "url": "../manifest/d/f/7ef604b46c4c285b231fd4d6e866d747c164d4/12w05b.json"
+      "url": "../manifest/e/f/8c8695ffc8ab91dea3aa08fdb25d210b709c6a/12w05b.json"
     }
   ],
   "next": [
@@ -42,7 +42,7 @@
   ],
   "normalizedVersion": "1.2.0-alpha.12.5.b",
   "previous": [
-    "12w05a"
+    "12w05a-1442"
   ],
   "protocol": {
     "type": "modern",
