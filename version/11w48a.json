@@ -5,12 +5,12 @@
     "client": {
       "sha1": "fede770abe88a19e844d99dda611a7d18184155a",
       "size": 2242604,
-      "url": "https://assets.minecraft.net/11w48a/minecraft.jar"
+      "url": "https://files.betacraft.uk/launcher/assets/versions/1.1/11w48a.jar"
     },
     "server": {
       "sha1": "75a7953e3dea006503a5ac6d51823a6dc687f6b5",
       "size": 747587,
-      "url": "https://assets.minecraft.net/11w48a/minecraft_server.jar"
+      "url": "https://files.betacraft.uk/server-archive/release/1.1/prerelease/11w48a.jar"
     }
   },
   "id": "11w48a",
@@ -31,10 +31,10 @@
       "assetIndex": "pre-1.6",
       "downloads": "731588022a2354da23410a1dd265283748448d9a",
       "downloadsId": 1,
-      "hash": "8d72a88cb62bbaecd19f449dcbc42d0a1c15ead5",
+      "hash": "e36e24334bebae397c98a43b6049d61840b699ce",
       "time": "2011-12-01T14:32:24+00:00",
       "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/8/d/72a88cb62bbaecd19f449dcbc42d0a1c15ead5/11w48a.json"
+      "url": "https://skyrising.github.io/mc-versions/manifest/e/3/6e24334bebae397c98a43b6049d61840b699ce/11w48a.json"
     }
   ],
   "next": [

@@ -1320,9 +1320,15 @@
     "releaseTime": "2012-01-26T14:34:59+00:00"
   },
   {
-    "id": "12w05a",
+    "id": "12w05a-1354",
     "type": "snapshot",
-    "normalizedVersion": "1.2.0-alpha.12.5.a",
+    "normalizedVersion": "1.2.0-alpha.12.5.a+1354",
+    "releaseTime": "2012-02-02T13:54:00+00:00"
+  },
+  {
+    "id": "12w05a-1442",
+    "type": "snapshot",
+    "normalizedVersion": "1.2.0-alpha.12.5.a+1442",
     "releaseTime": "2012-02-02T14:43:49+00:00"
   },
   {
@@ -1704,9 +1710,15 @@
     "releaseTime": "2013-01-11T13:41:44+00:00"
   },
   {
-    "id": "13w03a",
+    "id": "13w03a-1538",
     "type": "snapshot",
-    "normalizedVersion": "1.5.0-alpha.13.3.a",
+    "normalizedVersion": "1.5.0-alpha.13.3.a+1538",
+    "releaseTime": "2013-01-17T15:38:00+00:00"
+  },
+  {
+    "id": "13w03a-1647",
+    "type": "snapshot",
+    "normalizedVersion": "1.5.0-alpha.13.3.a+1647",
     "releaseTime": "2013-01-17T16:49:18+00:00"
   },
   {
@@ -1716,9 +1728,15 @@
     "releaseTime": "2013-01-24T14:17:50+00:00"
   },
   {
-    "id": "13w05a",
+    "id": "13w05a-1504",
     "type": "snapshot",
-    "normalizedVersion": "1.5.0-alpha.13.5.a",
+    "normalizedVersion": "1.5.0-alpha.13.5.a+1504",
+    "releaseTime": "2013-01-31T15:04:00+00:00"
+  },
+  {
+    "id": "13w05a-1538",
+    "type": "snapshot",
+    "normalizedVersion": "1.5.0-alpha.13.5.a+1538",
     "releaseTime": "2013-01-31T15:43:34+00:00"
   },
   {
@@ -1728,9 +1746,15 @@
     "releaseTime": "2013-02-01T13:36:18+00:00"
   },
   {
-    "id": "13w06a",
+    "id": "13w06a-1559",
     "type": "snapshot",
-    "normalizedVersion": "1.5.0-alpha.13.6.a",
+    "normalizedVersion": "1.5.0-alpha.13.6.a+1559",
+    "releaseTime": "2013-02-07T15:59:00+00:00"
+  },
+  {
+    "id": "13w06a-1636",
+    "type": "snapshot",
+    "normalizedVersion": "1.5.0-alpha.13.6.a+1636",
     "releaseTime": "2013-02-07T16:39:29+00:00"
   },
   {

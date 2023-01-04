@@ -5,17 +5,17 @@
     "client": {
       "sha1": "9289953c82ce69ec3d2e59a6044a9c900a99478f",
       "size": 5363159,
-      "url": "https://assets.minecraft.net/13w02b/minecraft.jar"
+      "url": "https://files.betacraft.uk/launcher/assets/versions/1.5/13w02b.jar"
     },
     "server": {
       "sha1": "7248354364424e0bc120ae563957279d0f96475e",
       "size": 2185384,
-      "url": "https://assets.minecraft.net/13w02b/minecraft_server.jar"
+      "url": "https://files.betacraft.uk/server-archive/release/1.5/prerelease/13w02b.jar"
     },
     "windows_server": {
       "sha1": "a38cc537f832e2362dbc287f6f0b5ed20ffd5da1",
       "size": 2366632,
-      "url": "https://assets.minecraft.net/13w02b/Minecraft_Server.exe"
+      "url": "https://files.betacraft.uk/server-archive/release/1.5/prerelease/13w02b.exe"
     }
   },
   "id": "13w02b",
@@ -36,14 +36,14 @@
       "assetIndex": "pre-1.6",
       "downloads": "3038230da8cf095af4fec4ef82fcc73cc9829d83",
       "downloadsId": 1,
-      "hash": "3b3986d7a3702f5f5fd0bd74fb37908367c2d282",
+      "hash": "9589588d9a546e97ef64c6099e1895f5f8c62645",
       "time": "2013-01-11T13:41:44+00:00",
       "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/3/b/3986d7a3702f5f5fd0bd74fb37908367c2d282/13w02b.json"
+      "url": "https://skyrising.github.io/mc-versions/manifest/9/5/89588d9a546e97ef64c6099e1895f5f8c62645/13w02b.json"
     }
   ],
   "next": [
-    "13w03a"
+    "13w03a-1538"
   ],
   "normalizedVersion": "1.5.0-alpha.13.2.b",
   "previous": [
