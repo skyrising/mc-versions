@@ -1,6 +1,6 @@
 import * as path from 'https://deno.land/std@0.113.0/path/mod.ts'
 
-import {existsSync} from './utils.ts'
+import {exists} from './utils.ts'
 
 const DOWNLOADS_DIR = Deno.env.get('MC_VERSIONS_DOWNLOADS')
 
@@ -24,7 +24,7 @@ function getDownloadDestination(download: DownloadInfo): string {
 }
 
 export async function downloadFile(url: string, file: string, part = false) {
-    if (existsSync(file)) return
+    if (await exists(file)) return
     console.log(`Downloading ${url}`)
     await Deno.mkdir(path.dirname(file), {recursive: true})
     const destFile = part ? file + '.part' : file
@@ -39,6 +39,6 @@ export async function downloadFile(url: string, file: string, part = false) {
     } catch(e) {
         console.error(`Download of ${url} failed`)
         console.error(e)
-        if (existsSync(file)) await Deno.remove(destFile)
+        if (await exists(file)) await Deno.remove(destFile)
     }
 }

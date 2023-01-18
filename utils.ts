@@ -53,9 +53,9 @@ export function readdirRecursive(dir: string, deleteEmpty = false): Array<string
     return files.sort()
 }
 
-export function existsSync(file: string): boolean {
+export async function exists(file: string): Promise<boolean> {
     try {
-        Deno.lstatSync(file)
+        await Deno.lstat(file)
         return true
     } catch (e) {
         if (e instanceof Deno.errors.NotFound) return false

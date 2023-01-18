@@ -4,7 +4,7 @@ import './types.d.ts'
 import * as path from 'https://deno.land/std@0.113.0/path/mod.ts'
 import * as semver from 'https://deno.land/x/semver@v1.4.0/mod.ts'
 
-import {sha1, sortObject, sortObjectByValues, readdirRecursive, existsSync, evaluateRules} from './utils.ts'
+import {sha1, sortObject, sortObjectByValues, readdirRecursive, exists, evaluateRules} from './utils.ts'
 import {getReleaseTarget, normalizeVersion} from './versioning.ts'
 import {parseJarInfo, shouldCheckJar} from './jar-analyzer.ts'
 import {getDownloads, downloadFile} from './download.ts'
@@ -279,7 +279,7 @@ async function writeProtocolFiles(protocolDir: string, protocols: Protocols) {
     }
     for (const p in protocols) {
         const file = path.resolve(protocolDir, `${p}.json`)
-        const oldData: ProtocolData = existsSync(file) ? await readJsonFile(file) : {type: p, versions: []}
+        const oldData: ProtocolData = (await exists(file)) ? await readJsonFile(file) : {type: p, versions: []}
         const data: ProtocolData = {...oldData}
         data.versions = Object.values(protocols[p as ProtocolType]!)
         await writeJsonFile(file, {
@@ -360,7 +360,7 @@ function compareDates(a: string, b: string) {
 
 async function updateVersion(id: VersionId, manifests: Array<TempVersionManifest>) {
     const file = path.resolve(VERSION_DIR, `${id}.json`)
-    const oldData = existsSync(file) ? JSON.parse(await Deno.readTextFile(file)) : {}
+    const oldData = (await exists(file)) ? JSON.parse(await Deno.readTextFile(file)) : {}
     const data: VersionData = {...oldData}
     data.id = id
     data.releaseTime ||= manifests[0].releaseTime
@@ -443,7 +443,7 @@ async function updateLastModified(lastModified: HashMap<Date|null>, hashMap: Has
         const hash = walkHashMap(key, hashMap)
         if (hash in lastModified) continue
         const dir = path.resolve('data/manifest', hash[0], hash[1], hash.slice(2))
-        if (!existsSync(dir)) continue
+        if (!(await exists(dir))) continue
         for await (const {name} of Deno.readDir(dir)) {
             const dates = await Promise.all([
                 getLastModified(new URL(`${key}/${name}`, 'https://piston-meta.mojang.com/v1/packages/')),
