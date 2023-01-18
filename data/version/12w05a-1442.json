@@ -44,14 +44,14 @@
   "previous": [
     "12w05a-1354"
   ],
-  "releaseTarget": "1.2",
-  "releaseTime": "2012-02-02T14:43:49+00:00",
-  "server": true,
-  "sharedMappings": false,
   "protocol": {
     "type": "modern",
     "version": 24
   },
+  "releaseTarget": "1.2",
+  "releaseTime": "2012-02-02T14:43:49+00:00",
+  "server": true,
+  "sharedMappings": false,
   "world": {
     "format": "region"
   }

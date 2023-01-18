@@ -39,14 +39,14 @@
   "previous": [
     "12w04a"
   ],
-  "releaseTarget": "1.2",
-  "releaseTime": "2012-02-02T13:54:00+00:00",
-  "server": false,
-  "sharedMappings": false,
   "protocol": {
     "type": "modern",
     "version": 24
   },
+  "releaseTarget": "1.2",
+  "releaseTime": "2012-02-02T13:54:00+00:00",
+  "server": false,
+  "sharedMappings": false,
   "world": {
     "format": "region"
   }
