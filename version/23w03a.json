@@ -3,27 +3,27 @@
   "client": true,
   "downloads": {
     "client": {
-      "sha1": "977727ec9ab8b4631e5c12839f064092f17663f8",
-      "size": 22704188,
-      "url": "https://piston-data.mojang.com/v1/objects/977727ec9ab8b4631e5c12839f064092f17663f8/client.jar"
+      "sha1": "dd6cb06d65063769f7581ac2f5f800fe9531e28a",
+      "size": 22748586,
+      "url": "https://piston-data.mojang.com/v1/objects/dd6cb06d65063769f7581ac2f5f800fe9531e28a/client.jar"
     },
     "client_mappings": {
-      "sha1": "42366909cc612e76208d34bf1356f05a88e08a1d",
-      "size": 7574170,
-      "url": "https://piston-data.mojang.com/v1/objects/42366909cc612e76208d34bf1356f05a88e08a1d/client.txt"
+      "sha1": "f7de4f767c3d8d9c5c4779933f175eeb738d7f65",
+      "size": 7608661,
+      "url": "https://piston-data.mojang.com/v1/objects/f7de4f767c3d8d9c5c4779933f175eeb738d7f65/client.txt"
     },
     "server": {
-      "sha1": "c9df48efed58511cdd0213c56b9013a7b5c9ac1f",
-      "size": 47162712,
-      "url": "https://piston-data.mojang.com/v1/objects/c9df48efed58511cdd0213c56b9013a7b5c9ac1f/server.jar"
+      "sha1": "b033d57035b293a9eda548db0615c1c89c21ea28",
+      "size": 47187437,
+      "url": "https://piston-data.mojang.com/v1/objects/b033d57035b293a9eda548db0615c1c89c21ea28/server.jar"
     },
     "server_mappings": {
-      "sha1": "bc44f6dd84cd2f3ad8c0caad850eaca9e82067e3",
-      "size": 5852819,
-      "url": "https://piston-data.mojang.com/v1/objects/bc44f6dd84cd2f3ad8c0caad850eaca9e82067e3/server.txt"
+      "sha1": "030aa6a26885d62a55864b16e1a2000ba91de726",
+      "size": 5871550,
+      "url": "https://piston-data.mojang.com/v1/objects/030aa6a26885d62a55864b16e1a2000ba91de726/server.txt"
     }
   },
-  "id": "1.19.3",
+  "id": "23w03a",
   "libraries": [
     "com.github.oshi:oshi-core:6.2.2",
     "com.google.code.gson:gson:2.10",
@@ -34,7 +34,6 @@
     "com.mojang:blocklist:1.0.10",
     "com.mojang:brigadier:1.0.18",
     "com.mojang:datafixerupper:5.0.28",
-    "com.mojang:javabridge:2.0.25",
     "com.mojang:logging:1.1.1",
     "com.mojang:patchy:2.2.10",
     "com.mojang:text2speech:1.13.9",
@@ -74,43 +73,30 @@
     {
       "assetHash": "f465df3c585b67233e863479efd6b7dbf86aa68e",
       "assetIndex": "2",
-      "downloads": "c69f7610493d84770826e15a86839e19c9160545",
+      "downloads": "76c3f0c654694273fd3cf17578153f36a36ae9e8",
       "downloadsId": 1,
-      "hash": "73004f5977d5e632386894cb321a772fe0c620b0",
-      "lastModified": "2023-01-18T13:30:25+00:00",
-      "time": "2022-12-07T08:17:18+00:00",
-      "type": "release",
-      "url": "https://skyrising.github.io/mc-versions/manifest/7/3/004f5977d5e632386894cb321a772fe0c620b0/1.19.3.json"
-    },
-    {
-      "assetHash": "c492375ded5da34b646b8c5c0842a0028bc69cec",
-      "assetIndex": "2",
-      "downloads": "c69f7610493d84770826e15a86839e19c9160545",
-      "downloadsId": 1,
-      "hash": "dabce17cb00eac274a45cd7e1d286214ce9fddef",
-      "lastModified": "2022-12-07T09:23:31+00:00",
-      "time": "2022-12-07T08:17:18+00:00",
-      "type": "release",
-      "url": "https://skyrising.github.io/mc-versions/manifest/d/a/bce17cb00eac274a45cd7e1d286214ce9fddef/1.19.3.json"
+      "hash": "f16a69f6e465420c8ce6941774c62ed6b651a79a",
+      "lastModified": "2023-01-18T13:30:24+00:00",
+      "time": "2023-01-18T13:10:31+00:00",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/manifest/f/1/6a69f6e465420c8ce6941774c62ed6b651a79a/23w03a.json"
     }
   ],
-  "next": [
-    "23w03a"
-  ],
-  "normalizedVersion": "1.19.3",
+  "next": [],
+  "normalizedVersion": "1.20.0-alpha.23.3.a",
   "previous": [
-    "1.19.3-rc3"
+    "1.19.3"
   ],
   "protocol": {
-    "type": "netty",
-    "version": 761
+    "type": "netty-snapshot",
+    "version": 115
   },
-  "releaseTarget": "1.19.3",
-  "releaseTime": "2022-12-07T08:17:18+00:00",
+  "releaseTarget": "1.20",
+  "releaseTime": "2023-01-18T13:10:31+00:00",
   "server": true,
   "sharedMappings": true,
   "world": {
     "format": "anvil",
-    "version": 3218
+    "version": 3320
   }
 }
