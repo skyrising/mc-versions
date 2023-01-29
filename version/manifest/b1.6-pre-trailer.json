@@ -1,0 +1,29 @@
+{
+  "arguments": {},
+  "assetIndex": {
+    "id": "pre-1.6",
+    "sha1": "3d8e55480977e32acd9844e545177e69a52f594b",
+    "size": 74091,
+    "totalSize": 49505710,
+    "url": "https://launchermeta.mojang.com/v1/packages/3d8e55480977e32acd9844e545177e69a52f594b/pre-1.6.json"
+  },
+  "assets": "pre-1.6",
+  "downloads": {
+    "server": {
+      "sha1": "e440442f13475c5dffcfca941dc91874258886bf",
+      "size": 485882,
+      "url": "https://files.betacraft.uk/server-archive/beta/prerelease/b1.6-pre-trailer.jar"
+    }
+  },
+  "id": "b1.6-pre-trailer",
+  "javaVersion": {
+    "component": "jre-legacy",
+    "majorVersion": 8
+  },
+  "libraries": [],
+  "logging": {},
+  "mainClass": "net.minecraft.launchwrapper.Launch",
+  "minimumLauncherVersion": 0,
+  "releaseTime": "2011-05-23T14:00:38+00:00",
+  "type": "old_beta"
+}

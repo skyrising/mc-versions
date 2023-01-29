@@ -1,0 +1,29 @@
+{
+  "arguments": {},
+  "assetIndex": {
+    "id": "pre-1.6",
+    "sha1": "3d8e55480977e32acd9844e545177e69a52f594b",
+    "size": 74091,
+    "totalSize": 49505710,
+    "url": "https://launchermeta.mojang.com/v1/packages/3d8e55480977e32acd9844e545177e69a52f594b/pre-1.6.json"
+  },
+  "assets": "pre-1.6",
+  "downloads": {
+    "server_zip": {
+      "sha1": "4ce6ac800d83e42ea1348dc0296d50b36af05e07",
+      "size": 36733,
+      "url": "https://files.betacraft.uk/server-archive/classic/c1.2.zip"
+    }
+  },
+  "id": "server-c1.2",
+  "javaVersion": {
+    "component": "jre-legacy",
+    "majorVersion": 8
+  },
+  "libraries": [],
+  "logging": {},
+  "mainClass": "net.minecraft.launchwrapper.Launch",
+  "minimumLauncherVersion": 0,
+  "releaseTime": "2009-06-08T20:48:00+00:00",
+  "type": "classic_server"
+}
