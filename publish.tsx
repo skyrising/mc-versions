@@ -25,7 +25,7 @@ for (const file of readdirRecursive(dataDir)) {
         const data = JSON.parse(await Deno.readTextFile(file))
         const base = new URL(relative, URL_BASE)
         resolveUrls(base, data)
-        if (relative.startsWith('version/')) {
+        if (relative.startsWith('version/') && !relative.startsWith('version/manifest/')) {
             timeline.push({
                 id: data.id,
                 type: getType(data.normalizedVersion),
