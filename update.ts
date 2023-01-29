@@ -144,7 +144,8 @@ async function collectVersions(hashMap: HashMap<string>, oldOmniVersions: HashMa
             assetHash: data.assetIndex?.sha1,
             launcher: data.downloads.client?.url.startsWith('https://launcher.mojang.com/'),
             libraries: data.libraries.filter(lib => !lib.rules || evaluateRules(lib.rules, {}) === 'allow'),
-            localMirror: {}
+            localMirror: {},
+            original: data
         }
         ;(byId[v.omniId] ??= {})[hash] = v
         allVersions.push(v)
@@ -290,6 +291,10 @@ async function writeProtocolFiles(protocolDir: string, protocols: Protocols) {
 }
 
 async function sortAndWriteVersionFiles(versionDir: string, versions: VersionInfo[], allVersions: TempVersionManifest[], newManifest: MainManifest) {
+    await Deno.mkdir(versionDir, {recursive: true})
+    const mergedManifestDir = path.resolve(versionDir, 'manifest')
+    if (await exists(mergedManifestDir)) await Deno.remove(mergedManifestDir, {recursive: true})
+    await Deno.mkdir(mergedManifestDir)
     if (GITHUB_ACTIONS) console.log('::group::Head versions')
     for (const v of versions) {
         if (!v.data.next.length) console.log(v.data.id)
@@ -297,6 +302,7 @@ async function sortAndWriteVersionFiles(versionDir: string, versions: VersionInf
             '$schema': new URL('version.json', SCHEMA_BASE).toString(),
             ...sortObject(v.data)
         })
+        await writeJsonFile(path.resolve(mergedManifestDir, v.info.omniId + '.json'), sortObject(mergeManifests(v)))
     }
     if (GITHUB_ACTIONS) console.log('::endgroup::')
     allVersions.sort(compareVersions)
@@ -304,9 +310,9 @@ async function sortAndWriteVersionFiles(versionDir: string, versions: VersionInf
     for (const v of allVersions) {
         newOmniVersions[v.hash] = v.omniId
     }
-    await Deno.mkdir(versionDir, {recursive: true})
     const allowedVersionFiles = new Set(newManifest.versions.map(v => v.omniId + '.json'))
     for await (const {name: f} of Deno.readDir(versionDir)) {
+        if (f === 'manifest') continue
         if (!allowedVersionFiles.has(f)) {
             const file = path.resolve(versionDir, f)
             await Deno.remove(file)
@@ -314,6 +320,48 @@ async function sortAndWriteVersionFiles(versionDir: string, versions: VersionInf
         }
     }
     return newOmniVersions
+}
+
+function mergeManifests(version: VersionInfo): VersionManifest {
+    const result: VersionManifest = {
+        arguments: {},
+        assetIndex: {
+            id: 'pre-1.6',
+            sha1: '3d8e55480977e32acd9844e545177e69a52f594b',
+            size: 74091,
+            totalSize: 49505710,
+            url: 'https://launchermeta.mojang.com/v1/packages/3d8e55480977e32acd9844e545177e69a52f594b/pre-1.6.json'
+        },
+        assets: 'pre-1.6',
+        downloads: {},
+        id: version.info.omniId,
+        javaVersion: {
+            component: 'jre-legacy',
+            majorVersion: 8
+        },
+        libraries: [],
+        logging: {},
+        mainClass: 'net.minecraft.launchwrapper.Launch',
+        minimumLauncherVersion: 0,
+        releaseTime: version.info.releaseTime,
+        time: version.info.time,
+        type: version.info.type
+    }
+    for (let i = version.manifests.length - 1; i >= 0; i--) {
+        const manifest = version.manifests[i].original
+        if ('arguments' in manifest) result.arguments = {...result.arguments, ...manifest.arguments}
+        if ('assetIndex' in manifest) {
+            result.assetIndex = manifest.assetIndex
+            result.assets = result.assetIndex?.id
+        }
+        result.downloads = {...result.downloads, ...manifest.downloads}
+        if ('javaVersion' in manifest) result.javaVersion = manifest.javaVersion
+        if ('libraries' in manifest && manifest.libraries.length) result.libraries = manifest.libraries
+        if ('logging' in manifest) result.logging = {...result.logging, ...manifest.logging}
+        if ('mainClass' in manifest) result.mainClass = manifest.mainClass
+        if ('minimumLauncherVersion' in manifest) result.minimumLauncherVersion = Math.max(result.minimumLauncherVersion!, manifest.minimumLauncherVersion!)
+    }
+    return result
 }
 
 async function getURLs(): Promise<Array<URL>> {
@@ -416,18 +464,20 @@ async function updateVersion(id: VersionId, manifests: Array<TempVersionManifest
         downloads: m.downloadsHash,
         downloadsHash: undefined,
         localMirror: undefined,
-        libraries: undefined
+        libraries: undefined,
+        original: undefined
     }) as ShortManifest)
     return {
         info: {
             omniId, id: manifests[0].id, type,
-            url: path.relative(DATA_DIR, url),
+            url: path.relative(DATA_DIR, path.resolve(VERSION_DIR, 'manifest', omniId + '.json')),
             time,
             releaseTime: data.releaseTime,
             details: path.relative(DATA_DIR, file)
         },
         data,
-        file
+        file,
+        manifests
     }
 }
 

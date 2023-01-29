@@ -1,0 +1,29 @@
+{
+  "arguments": {},
+  "assetIndex": {
+    "id": "pre-1.6",
+    "sha1": "3d8e55480977e32acd9844e545177e69a52f594b",
+    "size": 74091,
+    "totalSize": 49505710,
+    "url": "https://launchermeta.mojang.com/v1/packages/3d8e55480977e32acd9844e545177e69a52f594b/pre-1.6.json"
+  },
+  "assets": "pre-1.6",
+  "downloads": {
+    "server": {
+      "sha1": "7f69b0f797ad8ced39f0b84af0ed3412dad9233d",
+      "size": 319774,
+      "url": "https://files.betacraft.uk/server-archive/alpha/a0.2.6.jar"
+    }
+  },
+  "id": "server-a0.2.6",
+  "javaVersion": {
+    "component": "jre-legacy",
+    "majorVersion": 8
+  },
+  "libraries": [],
+  "logging": {},
+  "mainClass": "net.minecraft.launchwrapper.Launch",
+  "minimumLauncherVersion": 0,
+  "releaseTime": "2010-11-30T18:07:00+00:00",
+  "type": "alpha_server"
+}

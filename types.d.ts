@@ -72,10 +72,18 @@ interface RuleContext {
 }
 
 type VersionManifest = BaseVersionManifest & {
+    arguments?: {game?: any[], jvm?: []}
     assets?: string
     assetIndex?: {id: string, sha1: string, size: number, totalSize: number, url: string}
     downloads?: {[id: string]: DownloadInfo}
+    javaVersion?: {
+        component: string
+        majorVersion: number
+    }
     libraries: Library[]
+    logging?: Record<string, any>
+    mainClass?: string
+    minimumLauncherVersion?: number
 }
 
 type ShortManifest = Omit<BaseVersionManifest, 'id' | 'releaseTime'> & {
@@ -103,6 +111,7 @@ type TempVersionManifest = {
     launcher: boolean
     localMirror: {[id: string]: string}
     libraries: Library[]
+    original: VersionManifest
 }
 
 type VersionData = BaseVersionManifest & {
@@ -127,16 +136,17 @@ type Protocols = Partial<Record<ProtocolType, {[version: number]: ProtocolVersio
 
 type VersionInfo = {
     info: {
-        omniId: string;
-        id: string;
-        type: string;
-        url: string;
-        time: string;
-        releaseTime: string;
-        details: string;
-    };
-    data: VersionData;
-    file: string;
+        omniId: string
+        id: string
+        type: string
+        url: string
+        time: string
+        releaseTime: string
+        details: string
+    }
+    data: VersionData
+    file: string
+    manifests: Array<TempVersionManifest>
 }
 
 type VersionType = 'release' | 'snapshot' | 'pre-release' | 'release-candidate' | 'beta' | 'alpha' | 'infdev' | 'indev' | 'classic' | 'pre-classic' | 'other'

@@ -49,8 +49,7 @@
                     },
                     "url": {
                         "type": "string",
-                        "format": "uri-reference",
-                        "deprecated": true
+                        "format": "uri-reference"
                     },
                     "details": {
                         "type": "string",

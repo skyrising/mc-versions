@@ -1,0 +1,34 @@
+{
+  "arguments": {},
+  "assetIndex": {
+    "id": "pre-1.6",
+    "sha1": "3d8e55480977e32acd9844e545177e69a52f594b",
+    "size": 74091,
+    "totalSize": 49505710,
+    "url": "https://launchermeta.mojang.com/v1/packages/3d8e55480977e32acd9844e545177e69a52f594b/pre-1.6.json"
+  },
+  "assets": "pre-1.6",
+  "downloads": {
+    "server": {
+      "sha1": "5ce1d04d71a573ad0c87578a734879b4ea5d6682",
+      "size": 317041,
+      "url": "https://files.betacraft.uk/server-archive/alpha/a0.2.5_01.jar"
+    },
+    "windows_server": {
+      "sha1": "74154b7b995311a47139baf7f5bbc5c710fb7072",
+      "size": 497777,
+      "url": "https://files.betacraft.uk/server-archive/alpha/a0.2.5_01.exe"
+    }
+  },
+  "id": "server-a0.2.5_01",
+  "javaVersion": {
+    "component": "jre-legacy",
+    "majorVersion": 8
+  },
+  "libraries": [],
+  "logging": {},
+  "mainClass": "net.minecraft.launchwrapper.Launch",
+  "minimumLauncherVersion": 0,
+  "releaseTime": "2010-11-25T16:12:00+00:00",
+  "type": "alpha_server"
+}
