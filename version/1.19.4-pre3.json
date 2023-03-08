@@ -1,0 +1,115 @@
+{
+  "$schema": "https://skyrising.github.io/mc-versions/schemas/version.json",
+  "client": true,
+  "downloads": {
+    "client": {
+      "sha1": "cfad9d86190d162fe8b06b82592f9974ebf97e2f",
+      "size": 23470982,
+      "url": "https://piston-data.mojang.com/v1/objects/cfad9d86190d162fe8b06b82592f9974ebf97e2f/client.jar"
+    },
+    "client_mappings": {
+      "sha1": "a23d0bcd6b2dc27f3de832a37c2805811ab751ff",
+      "size": 7839903,
+      "url": "https://piston-data.mojang.com/v1/objects/a23d0bcd6b2dc27f3de832a37c2805811ab751ff/client.txt"
+    },
+    "server": {
+      "sha1": "cedc29f7e4927bfe58c96e67495a73c7333c75cd",
+      "size": 47513179,
+      "url": "https://piston-data.mojang.com/v1/objects/cedc29f7e4927bfe58c96e67495a73c7333c75cd/server.jar"
+    },
+    "server_mappings": {
+      "sha1": "e7b9e85d3f8c09a9d752d574ecc6ec4115f33150",
+      "size": 6040331,
+      "url": "https://piston-data.mojang.com/v1/objects/e7b9e85d3f8c09a9d752d574ecc6ec4115f33150/server.txt"
+    }
+  },
+  "id": "1.19.4-pre3",
+  "libraries": [
+    "com.github.oshi:oshi-core:6.2.2",
+    "com.google.code.gson:gson:2.10",
+    "com.google.guava:failureaccess:1.0.1",
+    "com.google.guava:guava:31.1-jre",
+    "com.ibm.icu:icu4j:71.1",
+    "com.mojang:authlib:3.17.30",
+    "com.mojang:blocklist:1.0.10",
+    "com.mojang:brigadier:1.0.18",
+    "com.mojang:datafixerupper:6.0.6",
+    "com.mojang:logging:1.1.1",
+    "com.mojang:patchy:2.2.10",
+    "com.mojang:text2speech:1.13.9",
+    "commons-codec:commons-codec:1.15",
+    "commons-io:commons-io:2.11.0",
+    "commons-logging:commons-logging:1.2",
+    "io.netty:netty-buffer:4.1.82.Final",
+    "io.netty:netty-codec:4.1.82.Final",
+    "io.netty:netty-common:4.1.82.Final",
+    "io.netty:netty-handler:4.1.82.Final",
+    "io.netty:netty-resolver:4.1.82.Final",
+    "io.netty:netty-transport-classes-epoll:4.1.82.Final",
+    "io.netty:netty-transport-native-unix-common:4.1.82.Final",
+    "io.netty:netty-transport:4.1.82.Final",
+    "it.unimi.dsi:fastutil:8.5.9",
+    "net.java.dev.jna:jna-platform:5.12.1",
+    "net.java.dev.jna:jna:5.12.1",
+    "net.sf.jopt-simple:jopt-simple:5.0.4",
+    "org.apache.commons:commons-compress:1.21",
+    "org.apache.commons:commons-lang3:3.12.0",
+    "org.apache.httpcomponents:httpclient:4.5.13",
+    "org.apache.httpcomponents:httpcore:4.4.15",
+    "org.apache.logging.log4j:log4j-api:2.19.0",
+    "org.apache.logging.log4j:log4j-core:2.19.0",
+    "org.apache.logging.log4j:log4j-slf4j2-impl:2.19.0",
+    "org.joml:joml:1.10.5",
+    "org.lwjgl:lwjgl-glfw:3.3.1",
+    "org.lwjgl:lwjgl-jemalloc:3.3.1",
+    "org.lwjgl:lwjgl-openal:3.3.1",
+    "org.lwjgl:lwjgl-opengl:3.3.1",
+    "org.lwjgl:lwjgl-stb:3.3.1",
+    "org.lwjgl:lwjgl-tinyfd:3.3.1",
+    "org.lwjgl:lwjgl:3.3.1",
+    "org.slf4j:slf4j-api:2.0.1"
+  ],
+  "manifests": [
+    {
+      "assetHash": "ec55ec8364d63fb1bf92d7ba03d66b367dfa39eb",
+      "assetIndex": "3",
+      "downloads": "2dc9a68ec93824d78ece068f2abca02c49ce4637",
+      "downloadsId": 1,
+      "hash": "ea9849c7bb8528583d93b8c9dc41754d40def1c9",
+      "lastModified": "2023-03-08T13:34:41+00:00",
+      "time": "2023-03-01T14:11:05+00:00",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/manifest/e/a/9849c7bb8528583d93b8c9dc41754d40def1c9/1.19.4-pre3.json"
+    },
+    {
+      "assetHash": "4dec6cde975aca052001e2430805c730f9754215",
+      "assetIndex": "3",
+      "downloads": "2dc9a68ec93824d78ece068f2abca02c49ce4637",
+      "downloadsId": 1,
+      "hash": "30b13d469d4e1505d8f557914ac2cc8e81c9bd6f",
+      "lastModified": "2023-03-01T14:25:07+00:00",
+      "time": "2023-03-01T14:11:05+00:00",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/manifest/3/0/b13d469d4e1505d8f557914ac2cc8e81c9bd6f/1.19.4-pre3.json"
+    }
+  ],
+  "next": [
+    "1.19.4-pre4"
+  ],
+  "normalizedVersion": "1.19.4-pre.3",
+  "previous": [
+    "1.19.4-pre2"
+  ],
+  "protocol": {
+    "type": "netty-snapshot",
+    "version": 122
+  },
+  "releaseTarget": "1.19.4",
+  "releaseTime": "2023-03-01T14:11:05+00:00",
+  "server": true,
+  "sharedMappings": true,
+  "world": {
+    "format": "anvil",
+    "version": 3332
+  }
+}
