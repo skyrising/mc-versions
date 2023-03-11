@@ -1,6 +1,7 @@
 {
   "$schema": "https://skyrising.github.io/mc-versions/schemas/version.json",
   "client": true,
+  "displayVersion": "Minecraft Alpha v1.1.2_01",
   "downloads": {
     "client": {
       "sha1": "daa4b9f192d2c260837d3b98c39432324da28e86",

@@ -1,6 +1,7 @@
 {
   "$schema": "https://skyrising.github.io/mc-versions/schemas/version.json",
   "client": false,
+  "displayVersion": "0.2.8",
   "downloads": {
     "server": {
       "sha1": "4d1a4c2f1513b1c019b8ab1b720b8881caccd0d4",
@@ -37,5 +38,8 @@
   },
   "releaseTime": "2010-12-03T14:18:00+00:00",
   "server": true,
-  "sharedMappings": false
+  "sharedMappings": false,
+  "world": {
+    "format": "alpha"
+  }
 }

@@ -1,6 +1,7 @@
 {
   "$schema": "https://skyrising.github.io/mc-versions/schemas/version.json",
   "client": true,
+  "displayVersion": "Deep Dark Experimental Snapshot 1",
   "downloads": {
     "client": {
       "sha1": "17f03648f0956343d4ae35260067d200a5aabc56",

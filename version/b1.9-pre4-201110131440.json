@@ -1,6 +1,7 @@
 {
   "$schema": "https://skyrising.github.io/mc-versions/schemas/version.json",
   "client": false,
+  "displayVersion": "Beta 1.9 Prerelease 4",
   "downloads": {
     "server": {
       "sha1": "c7132e3f46e77221dca855ef065a7eb34102185e",
@@ -33,5 +34,8 @@
   "releaseTarget": "1.0.0",
   "releaseTime": "2011-10-13T14:40:58+00:00",
   "server": true,
-  "sharedMappings": false
+  "sharedMappings": false,
+  "world": {
+    "format": "region"
+  }
 }
