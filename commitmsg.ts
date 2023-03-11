@@ -25,7 +25,7 @@ const status = statusText.split('\n').filter(Boolean).map(line => {
 
 const versionChanges: Record<string, string[]> = {}
 for (const file of status) {
-    if (!file.path.startsWith('data/version/') || !file.path.endsWith('.json')) continue
+    if (!file.path.startsWith('data/version/') || file.path.startsWith('data/version/manifest') || !file.path.endsWith('.json')) continue
     (versionChanges[file.status] = versionChanges[file.status] ?? []).push(file.path.slice(13, file.path.length - 5))
 }
 
