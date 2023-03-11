@@ -1,6 +1,7 @@
 {
   "$schema": "https://skyrising.github.io/mc-versions/schemas/version.json",
   "client": true,
+  "displayVersion": "1.16.5 Release Candidate 1",
   "downloads": {
     "client": {
       "sha1": "2b12e44073c724c6af2050ad3b6116f9c732feb1",

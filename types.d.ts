@@ -116,6 +116,7 @@ type TempVersionManifest = {
 
 type VersionData = BaseVersionManifest & {
     omniId: VersionId
+    displayVersion?: string|null,
     client: boolean
     server: boolean
     downloads: {[id: string]: DownloadInfo}
@@ -165,4 +166,5 @@ type UpdatedDatabase = Database & {
     protocols: Protocols
     byReleaseTarget: Record<string, Array<string>>
     normalizedVersions: Record<string, string>
+    displayVersions: Record<string, string|null>
 }

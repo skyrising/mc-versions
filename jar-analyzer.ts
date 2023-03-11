@@ -5,7 +5,7 @@ import { ConstantType } from './classfile/constants.ts'
 import { ZipFile } from './zip.ts'
 
 export function shouldCheckJar(data: VersionData) {
-    if (data.protocol === undefined) return true
+    if (data.protocol === undefined || data.displayVersion === undefined) return true
     if (!data.world && data.releaseTime > '2010-06-27') return true
     if (!data.releaseTarget && !data.id.startsWith('af-') && data.releaseTime > '2011-11-13') return true
     return false
@@ -18,6 +18,7 @@ type TempVersionInfo = {
     worldVersion?: number,
     metaInfDate?: Date,
     releaseTarget?: string,
+    displayVersion?: string,
 }
 
 const PARSERS: {[constant: string]: (node: ClassNode, info: TempVersionInfo) => void} = {
@@ -92,6 +93,20 @@ const PARSERS: {[constant: string]: (node: ClassNode, info: TempVersionInfo) => 
                 info.worldFormat = 'alpha'
             }
         }
+    },
+    'Minecraft '(node, info) {
+        for (const entry of node.cp) {
+            if (entry?.tag !== ConstantType.CONSTANT_String) continue
+            const str = entry.value.value
+            if (str.startsWith('Minecraft ')) {
+                if (!str.startsWith('Minecraft Minecraft ')) {
+                    if (!/^Minecraft \d/.test(str)) continue
+                    if (str.endsWith('(')) continue
+                }
+                info.displayVersion = str.slice(10)
+                return
+            }
+        }
     }
 }
 
@@ -99,6 +114,14 @@ const PARSER_BYTES = Object.keys(PARSERS).map(key => new TextEncoder().encode(ke
 const PARSER_KEYS = Object.keys(PARSERS)
 
 function parseMinecraftServerClass(node: ClassNode, info: TempVersionInfo, version?: string) {
+    for (const entry of node.cp) {
+        if (entry?.tag !== ConstantType.CONSTANT_String) continue
+        const str = entry.value.value
+        if (str.startsWith('Starting minecraft server version ')) {
+            info.displayVersion = str.slice(34)
+            return
+        }
+    }
     for (const m of node.methods) {
         if (m.name.value !== 'run' || m.descriptor.value !== '()V') continue
         const insns = parseInstructions(m.attributes.Code!.code, node.cp)
@@ -130,6 +153,7 @@ export async function parseJarInfo(file: string, version?: string): Promise<Part
             info.protocolVersion = versionJson.protocol_version
             info.worldVersion = versionJson.world_version
             info.releaseTarget = versionJson.release_target
+            if (versionJson.name) info.displayVersion ??= versionJson.name
         } else if (entry.filename.endsWith('.class')) {
             const data = await entry.read()
             if (entry.filename === 'net/minecraft/server/MinecraftServer.class') {
@@ -172,6 +196,7 @@ export async function parseJarInfo(file: string, version?: string): Promise<Part
         }
     }
     result.releaseTarget = info.releaseTarget
+    result.displayVersion = info.displayVersion
     return result
 }
 

@@ -1,6 +1,7 @@
 {
   "$schema": "https://skyrising.github.io/mc-versions/schemas/version.json",
   "client": true,
+  "displayVersion": "Combat Test 7",
   "downloads": {
     "client": {
       "sha1": "3ad450f458149702ec3dd7655af44ab422a83e72",

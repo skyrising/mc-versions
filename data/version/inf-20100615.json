@@ -1,6 +1,7 @@
 {
   "$schema": "https://skyrising.github.io/mc-versions/schemas/version.json",
   "client": true,
+  "displayVersion": "Minecraft Infdev",
   "downloads": {
     "client": {
       "sha1": "47518a623da068728b50b4b53436dea4621b7bf8",

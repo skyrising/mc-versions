@@ -8,6 +8,7 @@ import {sha1, sortObject, sortObjectByValues, readdirRecursive, exists, evaluate
 import {getReleaseTarget, normalizeVersion} from './versioning.ts'
 import {parseJarInfo, shouldCheckJar} from './jar-analyzer.ts'
 import {getDownloads, downloadFile} from './download.ts'
+import {ZipFile} from './zip.ts'
 
 const GITHUB_ACTIONS = Deno.env.get('GITHUB_ACTIONS')
 
@@ -60,6 +61,7 @@ async function writeUpdatedData(data: UpdatedDatabase) {
         ...data.byReleaseTarget
     })
     await writeJsonFile('normalized.json', data.normalizedVersions)
+    await writeJsonFile('display_versions.json', data.displayVersions)
     await writeJsonFile('hash_map.json', sortObject(data.hashMap))
     await writeJsonFile('last_modified.json', sortObjectByValues(data.lastModified))
     await writeJsonFile('sources.json', sortObject(data.sources))
@@ -68,7 +70,7 @@ async function writeUpdatedData(data: UpdatedDatabase) {
 async function updateData(data: Database): Promise<UpdatedDatabase> {
     const {versions, allVersions} = await collectVersions(data.hashMap, data.omniVersions, data.renameMap, data.lastModified)
     const {newManifest, versionsById} = updateMainManifest(versions)
-    const {normalizedVersions, protocols, byReleaseTarget} = updateVersionDetails(versions, versionsById)
+    const {normalizedVersions, displayVersions, protocols, byReleaseTarget} = updateVersionDetails(versions, versionsById)
     const newOmniVersions = await sortAndWriteVersionFiles(VERSION_DIR, versions, allVersions, newManifest)
     return {
         ...data,
@@ -77,7 +79,8 @@ async function updateData(data: Database): Promise<UpdatedDatabase> {
         allVersions,
         protocols,
         byReleaseTarget,
-        normalizedVersions
+        normalizedVersions,
+        displayVersions
     }
 }
 
@@ -205,9 +208,10 @@ function warnPrefix(id: string) {
 function updateVersionDetails(versions: VersionInfo[], versionsById: Record<string, VersionData>) {
     const protocols: Protocols = {}
     const normalizedVersions: Record<VersionId, VersionId> = {}
+    const displayVersions: Record<VersionId, string|null> = {}
     const byReleaseTarget: Record<string, Array<string>> = {}
     for (const v of versions) {
-        const {id, protocol, releaseTarget, normalizedVersion} = v.data
+        const {id, protocol, releaseTarget, normalizedVersion, displayVersion} = v.data
         for (const pv of v.data.previous || []) {
             if (pv in versionsById) {
                 versionsById[pv].next.push(id)
@@ -238,6 +242,7 @@ function updateVersionDetails(versions: VersionInfo[], versionsById: Record<stri
                 console.warn(`${warnPrefix(id)}Invalid SemVer ${normalizedVersion} for ${id}`)
             }
         }
+        displayVersions[id] = displayVersion ?? null
         if (protocol) {
             const sameType = function (p?: ProtocolVersion): p is ProtocolVersion {
                 return !!p && p.type === protocol!.type
@@ -266,7 +271,7 @@ function updateVersionDetails(versions: VersionInfo[], versionsById: Record<stri
             }
         }
     }
-    return {normalizedVersions, protocols, byReleaseTarget}
+    return {normalizedVersions, displayVersions, protocols, byReleaseTarget}
 }
 
 async function writeProtocolFiles(protocolDir: string, protocols: Protocols) {
@@ -420,7 +425,10 @@ async function updateVersion(id: VersionId, manifests: Array<TempVersionManifest
     data.releaseTime = releaseTime.toISOString().replace('.000Z', '+00:00')
     data.client = data.server = false
     data.downloads = {}
+    const localMirror: Record<string, string> = {}
+    let libraries: Library[]|undefined
     for (const m of manifests) {
+        if (!libraries && m.libraries) libraries = m.libraries
         if (!m.downloads) continue
         if (m.downloads.client) data.client = true
         if (m.downloads.server || m.downloads.server_zip) data.server = true
@@ -429,31 +437,50 @@ async function updateVersion(id: VersionId, manifests: Array<TempVersionManifest
             data.downloads[type] = m.downloads[type]
         }
         m.localMirror = await getDownloads(m)
+        if (!m.localMirror.server && m.localMirror.server_zip) {
+            const serverJar = path.resolve(path.dirname(m.localMirror.server_zip), 'server.jar')
+            if (!(await exists(serverJar))) {
+                const fsFile = await Deno.open(m.localMirror.server_zip, {read: true})
+                const zip = new ZipFile(fsFile)
+                for (const entry of await zip.entries()) {
+                    if (entry.filename.endsWith('.jar')) {
+                        await Deno.writeFile(serverJar, await zip.read(entry))
+                        break
+                    }
+                }
+            }
+            if (await exists(serverJar)) {
+                m.localMirror.server = serverJar
+            }
+        }
+        Object.assign(localMirror, m.localMirror)
     }
-    data.libraries = [...new Set(manifests[0].libraries.map(l => l.name))].filter(l => l.split(':').length < 4).sort()
+    data.libraries = [...new Set((libraries || []).map(l => l.name))].filter(l => l.split(':').length < 4).sort()
     data.releaseTarget = getReleaseTarget(data)
     if (data.normalizedVersion === undefined) {
         data.normalizedVersion = normalizeVersion(data.id, data.releaseTarget)
     }
-    if (data.id.startsWith('af-')) data.releaseTarget = undefined
     if (data.sharedMappings === undefined) {
         data.sharedMappings = data.client && data.server && data.releaseTime > '2012-07-26'
     }
-    const {omniId, type, url, time, localMirror} = manifests[0]
-    if (localMirror.client && shouldCheckJar(data)) {
+    const {omniId, type, time} = manifests[0]
+    const jar = localMirror.client || localMirror.server
+    if (jar && shouldCheckJar(data)) {
         try {
-            console.log(`Analyzing ${data.id} (${localMirror.client})`)
-            const parsedInfo = await parseJarInfo(localMirror.client, manifests[0].id)
+            console.log(`Analyzing ${data.id} (${jar})`)
+            const parsedInfo = await parseJarInfo(jar, manifests[0].id)
             if (data.protocol === undefined) data.protocol = parsedInfo.protocol
             if (parsedInfo.protocol && parsedInfo.protocol.version !== data.protocol?.version) {
                 console.warn(`${data.id}: Mismatched protocol version: analyzed=${parsedInfo.protocol.version} data=${data.protocol?.version}`)
             }
             data.world ||= parsedInfo.world
             if (data.releaseTarget === undefined) data.releaseTarget = parsedInfo.releaseTarget
+            if (data.displayVersion === undefined) data.displayVersion = parsedInfo.displayVersion ?? null
         } catch (e) {
             console.error(e)
         }
     }
+    if (data.id.startsWith('af-')) data.releaseTarget = undefined
     data.manifests = manifests.map(m => ({
         ...m,
         omniId: undefined,
