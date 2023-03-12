@@ -1,0 +1,30 @@
+{
+  "arguments": {},
+  "assetIndex": {
+    "id": "pre-1.6",
+    "sha1": "3d8e55480977e32acd9844e545177e69a52f594b",
+    "size": 74091,
+    "totalSize": 49505710,
+    "url": "https://launchermeta.mojang.com/v1/packages/3d8e55480977e32acd9844e545177e69a52f594b/pre-1.6.json"
+  },
+  "assets": "pre-1.6",
+  "downloads": {
+    "server": {
+      "sha1": "0c193ee9e3867716304dea8c535fa70ade905fe9",
+      "size": 259986,
+      "url": "https://vault.omniarchive.uk/archive/java/server-alpha/a0.1.1-1707.jar"
+    }
+  },
+  "id": "server-a0.1.1-1707",
+  "javaVersion": {
+    "component": "jre-legacy",
+    "majorVersion": 8
+  },
+  "libraries": [],
+  "logging": {},
+  "mainClass": "net.minecraft.launchwrapper.Launch",
+  "minimumLauncherVersion": 0,
+  "releaseTime": "2010-08-12T17:07:00+00:00",
+  "time": "2010-08-12T17:07:00+00:00",
+  "type": "alpha_server"
+}
