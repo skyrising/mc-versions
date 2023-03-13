@@ -1,0 +1,43 @@
+{
+  "$schema": "https://skyrising.github.io/mc-versions/schemas/version.json",
+  "client": false,
+  "displayVersion": "0.1.1",
+  "downloads": {
+    "server": {
+      "sha1": "0c193ee9e3867716304dea8c535fa70ade905fe9",
+      "size": 259986,
+      "url": "https://vault.omniarchive.uk/archive/java/server-alpha/a0.1.1-1707.jar"
+    }
+  },
+  "id": "server-a0.1.1-1707",
+  "libraries": [],
+  "manifests": [
+    {
+      "assetHash": "3d8e55480977e32acd9844e545177e69a52f594b",
+      "assetIndex": "pre-1.6",
+      "downloads": "e3043e15b89aa1ed4662584609ed285d427bfb16",
+      "downloadsId": 1,
+      "hash": "d850fa63d8b2f2a081379f7893dc2a22c5d51c86",
+      "time": "2010-08-12T17:07:00+00:00",
+      "type": "alpha_server",
+      "url": "https://skyrising.github.io/mc-versions/manifest/d/8/50fa63d8b2f2a081379f7893dc2a22c5d51c86/server-a0.1.1-1707.json"
+    }
+  ],
+  "next": [
+    "server-a0.1.2_01"
+  ],
+  "normalizedVersion": "1.0.0-alpha.server.0.1.1+1707",
+  "previous": [
+    "server-a0.1.0"
+  ],
+  "protocol": {
+    "type": "classic",
+    "version": 14
+  },
+  "releaseTime": "2010-08-12T17:07:00+00:00",
+  "server": true,
+  "sharedMappings": false,
+  "world": {
+    "format": "alpha"
+  }
+}

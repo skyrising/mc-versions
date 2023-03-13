@@ -14,7 +14,7 @@
       "url": "https://launcher.mojang.com/v1/objects/c985b2083848efcc8d1658d6cda5644681035f80/server.jar"
     }
   },
-  "id": "1.12-pre3",
+  "id": "1.12-pre3-1409",
   "libraries": [
     "com.google.code.gson:gson:2.8.0",
     "com.google.guava:guava:21.0",
@@ -99,9 +99,9 @@
   "next": [
     "1.12-pre4"
   ],
-  "normalizedVersion": "1.12.0-pre.3",
+  "normalizedVersion": "1.12.0-pre.3+1409",
   "previous": [
-    "1.12-pre2"
+    "1.12-pre3-1316"
   ],
   "protocol": {
     "type": "netty",

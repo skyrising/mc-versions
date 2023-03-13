@@ -672,6 +672,12 @@
     "releaseTime": "2010-08-12T00:00:00+00:00"
   },
   {
+    "id": "server-a0.1.1-1707",
+    "type": "alpha",
+    "normalizedVersion": "1.0.0-alpha.server.0.1.1+1707",
+    "releaseTime": "2010-08-12T17:07:00+00:00"
+  },
+  {
     "id": "server-a0.1.2_01",
     "type": "alpha",
     "normalizedVersion": "1.0.0-alpha.server.0.1.2.1",
@@ -3378,9 +3384,15 @@
     "releaseTime": "2017-05-11T12:11:12+00:00"
   },
   {
-    "id": "1.12-pre3",
+    "id": "1.12-pre3-1316",
     "type": "pre-release",
-    "normalizedVersion": "1.12.0-pre.3",
+    "normalizedVersion": "1.12.0-pre.3+1316",
+    "releaseTime": "2017-05-17T13:16:00+00:00"
+  },
+  {
+    "id": "1.12-pre3-1409",
+    "type": "pre-release",
+    "normalizedVersion": "1.12.0-pre.3+1409",
     "releaseTime": "2017-05-17T14:09:18+00:00"
   },
   {
