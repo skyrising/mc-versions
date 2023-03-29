@@ -1,0 +1,103 @@
+{
+  "$schema": "https://skyrising.github.io/mc-versions/schemas/version.json",
+  "client": true,
+  "displayVersion": "23w13a",
+  "downloads": {
+    "client": {
+      "sha1": "3d0352a4a7ea2e849a7675b37b1c87e07884da50",
+      "size": 23581800,
+      "url": "https://piston-data.mojang.com/v1/objects/3d0352a4a7ea2e849a7675b37b1c87e07884da50/client.jar"
+    },
+    "client_mappings": {
+      "sha1": "94aac1b5f7658ce7d88b76bf787944c39ed0a5b6",
+      "size": 7874434,
+      "url": "https://piston-data.mojang.com/v1/objects/94aac1b5f7658ce7d88b76bf787944c39ed0a5b6/client.txt"
+    },
+    "server": {
+      "sha1": "701767d4d07aad992e3e2875ae5d1485cebf66e0",
+      "size": 47569659,
+      "url": "https://piston-data.mojang.com/v1/objects/701767d4d07aad992e3e2875ae5d1485cebf66e0/server.jar"
+    },
+    "server_mappings": {
+      "sha1": "9cd2634d8c52f0a76f63d4ea89c77c9ccaf662c2",
+      "size": 6070293,
+      "url": "https://piston-data.mojang.com/v1/objects/9cd2634d8c52f0a76f63d4ea89c77c9ccaf662c2/server.txt"
+    }
+  },
+  "id": "23w13a",
+  "libraries": [
+    "com.github.oshi:oshi-core:6.2.2",
+    "com.google.code.gson:gson:2.10",
+    "com.google.guava:failureaccess:1.0.1",
+    "com.google.guava:guava:31.1-jre",
+    "com.ibm.icu:icu4j:71.1",
+    "com.mojang:authlib:3.18.38",
+    "com.mojang:blocklist:1.0.10",
+    "com.mojang:brigadier:1.0.18",
+    "com.mojang:datafixerupper:6.0.8",
+    "com.mojang:logging:1.1.1",
+    "com.mojang:patchy:2.2.10",
+    "com.mojang:text2speech:1.13.9",
+    "commons-codec:commons-codec:1.15",
+    "commons-io:commons-io:2.11.0",
+    "commons-logging:commons-logging:1.2",
+    "io.netty:netty-buffer:4.1.82.Final",
+    "io.netty:netty-codec:4.1.82.Final",
+    "io.netty:netty-common:4.1.82.Final",
+    "io.netty:netty-handler:4.1.82.Final",
+    "io.netty:netty-resolver:4.1.82.Final",
+    "io.netty:netty-transport-classes-epoll:4.1.82.Final",
+    "io.netty:netty-transport-native-unix-common:4.1.82.Final",
+    "io.netty:netty-transport:4.1.82.Final",
+    "it.unimi.dsi:fastutil:8.5.9",
+    "net.java.dev.jna:jna-platform:5.12.1",
+    "net.java.dev.jna:jna:5.12.1",
+    "net.sf.jopt-simple:jopt-simple:5.0.4",
+    "org.apache.commons:commons-compress:1.21",
+    "org.apache.commons:commons-lang3:3.12.0",
+    "org.apache.httpcomponents:httpclient:4.5.13",
+    "org.apache.httpcomponents:httpcore:4.4.15",
+    "org.apache.logging.log4j:log4j-api:2.19.0",
+    "org.apache.logging.log4j:log4j-core:2.19.0",
+    "org.apache.logging.log4j:log4j-slf4j2-impl:2.19.0",
+    "org.joml:joml:1.10.5",
+    "org.lwjgl:lwjgl-glfw:3.3.1",
+    "org.lwjgl:lwjgl-jemalloc:3.3.1",
+    "org.lwjgl:lwjgl-openal:3.3.1",
+    "org.lwjgl:lwjgl-opengl:3.3.1",
+    "org.lwjgl:lwjgl-stb:3.3.1",
+    "org.lwjgl:lwjgl-tinyfd:3.3.1",
+    "org.lwjgl:lwjgl:3.3.1",
+    "org.slf4j:slf4j-api:2.0.1"
+  ],
+  "manifests": [
+    {
+      "assetHash": "7389fe0c1e9d3fbb9cdba474a509bd0ef46b0613",
+      "assetIndex": "3",
+      "downloads": "94a20acbae7306c5c5327997953c225d1b93a9a2",
+      "downloadsId": 1,
+      "hash": "64ed97a36572e0ba7cc3f32d2d069b3ea1a3d0fd",
+      "lastModified": "2023-03-29T14:02:30+00:00",
+      "time": "2023-03-29T13:54:16+00:00",
+      "type": "snapshot",
+      "url": "../manifest/6/4/ed97a36572e0ba7cc3f32d2d069b3ea1a3d0fd/23w13a.json"
+    }
+  ],
+  "next": [],
+  "normalizedVersion": "1.20.0-alpha.23.13.a",
+  "previous": [
+    "23w12a"
+  ],
+  "protocol": {
+    "type": "netty-snapshot",
+    "version": 128
+  },
+  "releaseTarget": "1.20",
+  "releaseTime": "2023-03-29T13:54:16+00:00",
+  "server": true,
+  "sharedMappings": true,
+  "world": {
+    "format": "anvil",
+    "version": 3443
+  }
+}
