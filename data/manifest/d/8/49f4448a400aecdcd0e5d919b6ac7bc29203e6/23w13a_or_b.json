@@ -117,6 +117,7 @@
     "url": "https://piston-meta.mojang.com/v1/packages/7389fe0c1e9d3fbb9cdba474a509bd0ef46b0613/3.json"
   },
   "assets": "3",
+  "complianceLevel": 1,
   "downloads": {
     "client": {
       "sha1": "8ebf103ef3c48ff40d4d002f44c5f7bc5d90e7e2",
@@ -139,7 +140,7 @@
       "url": "https://piston-data.mojang.com/v1/objects/370d31c1b7d700ee65ddeb25f975a2e67d1d13d0/server.txt"
     }
   },
-  "id": "af-2023",
+  "id": "23w13a_or_b",
   "javaVersion": {
     "component": "java-runtime-gamma",
     "majorVersion": 17
@@ -1393,7 +1394,7 @@
   },
   "mainClass": "net.minecraft.client.main.Main",
   "minimumLauncherVersion": 21,
-  "releaseTime": "2023-04-01T07:24:50+00:00",
+  "releaseTime": "2023-04-01T12:52:18+00:00",
   "time": "2023-04-01T12:52:18+00:00",
   "type": "snapshot"
 }
