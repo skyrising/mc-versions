@@ -24,7 +24,7 @@
       "url": "https://piston-data.mojang.com/v1/objects/ead837552ff7df2b1b52009b992af9a916c47474/server.txt"
     }
   },
-  "id": "23w13a_or_b",
+  "id": "af-2023",
   "libraries": [
     "com.github.oshi:oshi-core:6.2.2",
     "com.google.code.gson:gson:2.10",
@@ -84,6 +84,7 @@
     }
   ],
   "next": [],
+  "normalizedVersion": "1.20.0-alpha.23.13.april.fools",
   "previous": [
     "23w13a"
   ],
@@ -91,7 +92,6 @@
     "type": "netty-snapshot",
     "version": 129
   },
-  "releaseTarget": "1.20",
   "releaseTime": "2023-04-01T07:24:50+00:00",
   "server": true,
   "sharedMappings": true,

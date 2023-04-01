@@ -5,19 +5,19 @@
     "classic_server": "server-c1.10.1",
     "alpha_server": "server-a0.2.8",
     "old_beta": "b1.9-pre6",
-    "snapshot": "23w13a_or_b",
+    "snapshot": "af-2023",
     "release": "1.19.4",
     "pending": "1.19_deep_dark_experimental_snapshot-1"
   },
   "versions": [
     {
-      "omniId": "23w13a_or_b",
+      "omniId": "af-2023",
       "id": "23w13a_or_b",
       "type": "snapshot",
-      "url": "version/manifest/23w13a_or_b.json",
+      "url": "version/manifest/af-2023.json",
       "time": "2023-04-01T07:24:50+00:00",
       "releaseTime": "2023-04-01T07:24:50+00:00",
-      "details": "version/23w13a_or_b.json"
+      "details": "version/af-2023.json"
     },
     {
       "omniId": "23w13a",
