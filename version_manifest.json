@@ -5,19 +5,28 @@
     "classic_server": "server-c1.10.1",
     "alpha_server": "server-a0.2.8",
     "old_beta": "b1.9-pre6",
-    "snapshot": "23w13a_or_b",
+    "snapshot": "af-2023-2",
     "release": "1.19.4",
     "pending": "1.19_deep_dark_experimental_snapshot-1"
   },
   "versions": [
     {
-      "omniId": "af-2023",
+      "omniId": "af-2023-2",
       "id": "23w13a_or_b",
       "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/version/manifest/af-2023.json",
+      "url": "https://skyrising.github.io/mc-versions/version/manifest/af-2023-2.json",
       "time": "2023-04-01T12:52:18+00:00",
+      "releaseTime": "2023-04-01T12:52:18+00:00",
+      "details": "https://skyrising.github.io/mc-versions/version/af-2023-2.json"
+    },
+    {
+      "omniId": "af-2023-1",
+      "id": "23w13a_or_b",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/version/manifest/af-2023-1.json",
+      "time": "2023-04-01T07:24:50+00:00",
       "releaseTime": "2023-04-01T07:24:50+00:00",
-      "details": "https://skyrising.github.io/mc-versions/version/af-2023.json"
+      "details": "https://skyrising.github.io/mc-versions/version/af-2023-1.json"
     },
     {
       "omniId": "23w13a",
