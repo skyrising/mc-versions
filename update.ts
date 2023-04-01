@@ -186,7 +186,7 @@ function updateMainManifest(versions: VersionInfo[]): {newManifest: MainManifest
         v.data.previous = v.data.previous || findPrevious(versions, i)
         v.data.next = []
         newManifest.versions.unshift(v.info)
-        newManifest.latest[v.info.type] = v.info.id
+        newManifest.latest[v.info.type] = v.info.omniId
     }
     return {newManifest, versionsById}
 }

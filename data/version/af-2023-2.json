@@ -24,7 +24,7 @@
       "url": "https://piston-data.mojang.com/v1/objects/370d31c1b7d700ee65ddeb25f975a2e67d1d13d0/server.txt"
     }
   },
-  "id": "af-2023",
+  "id": "af-2023-2",
   "libraries": [
     "com.github.oshi:oshi-core:6.2.2",
     "com.google.code.gson:gson:2.10",
@@ -75,35 +75,24 @@
       "assetHash": "7389fe0c1e9d3fbb9cdba474a509bd0ef46b0613",
       "assetIndex": "3",
       "downloads": "ec92ab1adaac4cc4910ad9faae4d75323664590e",
-      "downloadsId": 2,
+      "downloadsId": 1,
       "hash": "d849f4448a400aecdcd0e5d919b6ac7bc29203e6",
       "lastModified": "2023-04-01T12:59:40+00:00",
       "time": "2023-04-01T12:52:18+00:00",
       "type": "snapshot",
       "url": "../manifest/d/8/49f4448a400aecdcd0e5d919b6ac7bc29203e6/23w13a_or_b.json"
-    },
-    {
-      "assetHash": "7389fe0c1e9d3fbb9cdba474a509bd0ef46b0613",
-      "assetIndex": "3",
-      "downloads": "74ae78a90115aab286d2702b6da6a7da7ea63d91",
-      "downloadsId": 1,
-      "hash": "02406027636f0720e9442554dc115cd86b4f098a",
-      "lastModified": "2023-04-01T07:33:33+00:00",
-      "time": "2023-04-01T07:24:50+00:00",
-      "type": "snapshot",
-      "url": "../manifest/0/2/406027636f0720e9442554dc115cd86b4f098a/23w13a_or_b.json"
     }
   ],
   "next": [],
-  "normalizedVersion": "1.20.0-alpha.23.13.april.fools",
+  "normalizedVersion": "1.20.0-alpha.23.13.april.fools.2",
   "previous": [
-    "23w13a"
+    "af-2023-1"
   ],
   "protocol": {
     "type": "netty-snapshot",
     "version": 129
   },
-  "releaseTime": "2023-04-01T07:24:50+00:00",
+  "releaseTime": "2023-04-01T12:52:18+00:00",
   "server": true,
   "sharedMappings": true,
   "world": {
