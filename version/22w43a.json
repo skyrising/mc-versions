@@ -38,7 +38,7 @@
     "com.mojang:javabridge:2.0.25",
     "com.mojang:logging:1.1.1",
     "com.mojang:patchy:2.2.10",
-    "com.mojang:text2speech:1.13.9",
+    "com.mojang:text2speech:1.16.7",
     "commons-codec:commons-codec:1.15",
     "commons-io:commons-io:2.11.0",
     "commons-logging:commons-logging:1.2",
@@ -72,6 +72,17 @@
     "org.slf4j:slf4j-api:2.0.1"
   ],
   "manifests": [
+    {
+      "assetHash": "91a69d2b8e24e57ecbc6a4a6b2aa34bab577ea41",
+      "assetIndex": "1",
+      "downloads": "5ba17946abb9efe5a75686912b2078168cbfdc87",
+      "downloadsId": 1,
+      "hash": "a23a3483ddc868f4ad2fc857db37697889a3681b",
+      "lastModified": "2023-04-26T12:19:03+00:00",
+      "time": "2022-10-26T11:55:59+00:00",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/manifest/a/2/3a3483ddc868f4ad2fc857db37697889a3681b/22w43a.json"
+    },
     {
       "assetHash": "e42f34715e0cb0473160f890ea37f405dcd1e2b0",
       "assetIndex": "1",

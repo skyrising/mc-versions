@@ -37,7 +37,7 @@
     "com.mojang:datafixerupper:6.0.8",
     "com.mojang:logging:1.1.1",
     "com.mojang:patchy:2.2.10",
-    "com.mojang:text2speech:1.13.9",
+    "com.mojang:text2speech:1.16.7",
     "commons-codec:commons-codec:1.15",
     "commons-io:commons-io:2.11.0",
     "commons-logging:commons-logging:1.2",
@@ -72,6 +72,17 @@
   ],
   "manifests": [
     {
+      "assetHash": "cbb710d11b893c6f877d8188f86b783b4adcde22",
+      "assetIndex": "4",
+      "downloads": "71fdb25b9508b464323126dcf7ae433697fd8e1f",
+      "downloadsId": 1,
+      "hash": "f561264cd156dd356303aab2e1c0fd7c58031e73",
+      "lastModified": "2023-04-26T12:18:42+00:00",
+      "time": "2023-04-20T11:55:19+00:00",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/manifest/f/5/61264cd156dd356303aab2e1c0fd7c58031e73/23w16a.json"
+    },
+    {
       "assetHash": "3fc99ddd33a73d35874a5bf47b983e3ffecaf5b9",
       "assetIndex": "4",
       "downloads": "71fdb25b9508b464323126dcf7ae433697fd8e1f",
@@ -94,7 +105,9 @@
       "url": "https://skyrising.github.io/mc-versions/manifest/9/a/8503e9aa5c377b8641842c118c4718cc1a3563/23w16a.json"
     }
   ],
-  "next": [],
+  "next": [
+    "23w17a"
+  ],
   "normalizedVersion": "1.20.0-alpha.23.16.a",
   "previous": [
     "23w14a"
