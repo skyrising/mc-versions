@@ -38,7 +38,7 @@
     "com.mojang:javabridge:1.2.24",
     "com.mojang:logging:1.0.0",
     "com.mojang:patchy:2.2.10",
-    "com.mojang:text2speech:1.13.9",
+    "com.mojang:text2speech:1.16.7",
     "commons-codec:commons-codec:1.15",
     "commons-io:commons-io:2.11.0",
     "commons-logging:commons-logging:1.2",
@@ -71,6 +71,17 @@
     "org.slf4j:slf4j-api:1.8.0-beta4"
   ],
   "manifests": [
+    {
+      "assetHash": "f7033757bcb91e11d79f0f31330d680cc787631f",
+      "assetIndex": "1.19",
+      "downloads": "7b59d98b1ae778e7f563dca763b805a330ee6790",
+      "downloadsId": 1,
+      "hash": "1bc9e7d9308c24a3f0f3debfe0371c543212101f",
+      "lastModified": "2023-04-26T12:19:06+00:00",
+      "time": "2022-08-04T10:07:26+00:00",
+      "type": "snapshot",
+      "url": "../manifest/1/b/c9e7d9308c24a3f0f3debfe0371c543212101f/1.19.2-rc1.json"
+    },
     {
       "assetHash": "f7033757bcb91e11d79f0f31330d680cc787631f",
       "assetIndex": "1.19",

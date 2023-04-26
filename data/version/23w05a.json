@@ -37,7 +37,7 @@
     "com.mojang:datafixerupper:5.0.28",
     "com.mojang:logging:1.1.1",
     "com.mojang:patchy:2.2.10",
-    "com.mojang:text2speech:1.13.9",
+    "com.mojang:text2speech:1.16.7",
     "commons-codec:commons-codec:1.15",
     "commons-io:commons-io:2.11.0",
     "commons-logging:commons-logging:1.2",
@@ -71,6 +71,17 @@
     "org.slf4j:slf4j-api:2.0.1"
   ],
   "manifests": [
+    {
+      "assetHash": "cd4ac47a18d44a9075e5ebfa23f8e0dd1a06df7f",
+      "assetIndex": "2",
+      "downloads": "549a14b2179eb8c5e06227d729d3e0f5003069bc",
+      "downloadsId": 1,
+      "hash": "a5f05e5cc40ecd3a5779cb80c777332b7620bc0f",
+      "lastModified": "2023-04-26T12:18:53+00:00",
+      "time": "2023-02-01T14:20:33+00:00",
+      "type": "snapshot",
+      "url": "../manifest/a/5/f05e5cc40ecd3a5779cb80c777332b7620bc0f/23w05a.json"
+    },
     {
       "assetHash": "114cc1d22af90bf3f71018de2c4bac1e3a8b3d7c",
       "assetIndex": "2",
