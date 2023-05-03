@@ -5,11 +5,20 @@
     "classic_server": "server-c1.10.1",
     "alpha_server": "server-a0.2.8",
     "old_beta": "b1.9-pre6",
-    "snapshot": "23w17a",
+    "snapshot": "23w18a",
     "release": "1.19.4",
     "pending": "1.19_deep_dark_experimental_snapshot-1"
   },
   "versions": [
+    {
+      "omniId": "23w18a",
+      "id": "23w18a",
+      "type": "snapshot",
+      "url": "version/manifest/23w18a.json",
+      "time": "2023-05-03T11:29:26+00:00",
+      "releaseTime": "2023-05-03T11:29:26+00:00",
+      "details": "version/23w18a.json"
+    },
     {
       "omniId": "23w17a",
       "id": "23w17a",
