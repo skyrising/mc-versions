@@ -69,10 +69,10 @@ const rendered = renderToStaticMarkup(<>{...versionElements}</>)
 await Deno.writeTextFile(path.resolve(distDir, 'index.html'), INDEX_HTML_TEMPLATE.replace('$$VERSIONS$$', rendered))
 
 async function createVersionElement(version: ShortVersion) {
-    const details: VersionData = JSON.parse(await Deno.readTextFile(path.resolve(dataDir, `version/${version.omniId}.json`)))
-    return <details className='version' id={version.omniId} open={Object.values(MAIN_MANIFEST.latest).includes(version.id)}>
+    const details: VersionData = JSON.parse(await Deno.readTextFile(path.resolve(dataDir, `version/${version.id}.json`)))
+    return <details className='version' id={version.id} open={Object.values(MAIN_MANIFEST.latest).includes(version.id)}>
         <summary>
-            <a className='version-title' href={`version/${version.omniId}.json`}>{version.id}{version.id === version.omniId ? '' : ` (${version.omniId})`}</a>
+            <a className='version-title' href={`version/${version.id}.json`}>{version.id}</a>
             <time dateTime={version.releaseTime}>{version.releaseTime.slice(0, 10)}</time>
         </summary>
         <ul>

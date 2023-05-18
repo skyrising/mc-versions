@@ -6,7 +6,6 @@ interface MainManifest {
 }
 
 interface ShortVersion {
-    omniId?: VersionId
     id: VersionId
     type: string
     url: string
@@ -96,7 +95,6 @@ type ShortManifest = Omit<BaseVersionManifest, 'id' | 'releaseTime'> & {
 }
 
 type TempVersionManifest = {
-    omniId: VersionId
     id: VersionId
     type: string
     hash: string
@@ -138,7 +136,6 @@ type Protocols = Partial<Record<ProtocolType, {[version: number]: ProtocolVersio
 
 type VersionInfo = {
     info: {
-        omniId: string
         id: string
         type: string
         url: string

@@ -134,8 +134,7 @@ async function collectVersions(hashMap: HashMap<string>, oldOmniVersions: HashMa
         const dl = Object.values(data.downloads).map(d => d.sha1).sort()
         const omniId = ((oldOmniVersions[hash] || data.id) === data.id ? renameMap[data.id] : oldOmniVersions[hash]) || data.id
         const v: TempVersionManifest = {
-            omniId,
-            id: data.id,
+            id: omniId,
             type: data.type,
             hash,
             url: file,
@@ -150,7 +149,7 @@ async function collectVersions(hashMap: HashMap<string>, oldOmniVersions: HashMa
             localMirror: {},
             original: data
         }
-        ;(byId[v.omniId] ??= {})[hash] = v
+        ;(byId[v.id] ??= {})[hash] = v
         allVersions.push(v)
     }
     await updateLastModified(lastModified, hashMap)
@@ -186,7 +185,7 @@ function updateMainManifest(versions: VersionInfo[]): {newManifest: MainManifest
         v.data.previous = v.data.previous || findPrevious(versions, i)
         v.data.next = []
         newManifest.versions.unshift(v.info)
-        newManifest.latest[v.info.type] = v.info.omniId
+        newManifest.latest[v.info.type] = v.info.id
     }
     return {newManifest, versionsById}
 }
@@ -313,15 +312,15 @@ async function sortAndWriteVersionFiles(versionDir: string, versions: VersionInf
             '$schema': new URL('version.json', SCHEMA_BASE).toString(),
             ...sortObject(v.data)
         })
-        await writeJsonFile(path.resolve(mergedManifestDir, v.info.omniId + '.json'), sortObject(mergeManifests(v, knownLibraries)))
+        await writeJsonFile(path.resolve(mergedManifestDir, v.info.id + '.json'), sortObject(mergeManifests(v, knownLibraries)))
     }
     if (GITHUB_ACTIONS) console.log('::endgroup::')
     allVersions.sort(compareVersions)
     const newOmniVersions: HashMap<VersionId> = {}
     for (const v of allVersions) {
-        newOmniVersions[v.hash] = v.omniId
+        newOmniVersions[v.hash] = v.id
     }
-    const allowedVersionFiles = new Set(newManifest.versions.map(v => v.omniId + '.json'))
+    const allowedVersionFiles = new Set(newManifest.versions.map(v => v.id + '.json'))
     for await (const {name: f} of Deno.readDir(versionDir)) {
         if (f === 'manifest') continue
         if (!allowedVersionFiles.has(f)) {
@@ -345,7 +344,7 @@ function mergeManifests(version: VersionInfo, knownLibraries: Record<string, Lib
         },
         assets: 'pre-1.6',
         downloads: {},
-        id: version.info.omniId,
+        id: version.info.id,
         javaVersion: {
             component: 'jre-legacy',
             majorVersion: 8
@@ -478,7 +477,7 @@ async function updateVersion(id: VersionId, manifests: Array<TempVersionManifest
     if (data.sharedMappings === undefined) {
         data.sharedMappings = data.client && data.server && data.releaseTime > '2012-07-26'
     }
-    const {omniId, type, time} = manifests[0]
+    const {type, time} = manifests[0]
     const jar = localMirror.client || localMirror.server
     if (jar && shouldCheckJar(data)) {
         try {
@@ -498,7 +497,6 @@ async function updateVersion(id: VersionId, manifests: Array<TempVersionManifest
     if (data.id.startsWith('af-')) data.releaseTarget = undefined
     data.manifests = manifests.map(m => ({
         ...m,
-        omniId: undefined,
         id: undefined,
         launcher: undefined,
         url: path.relative(VERSION_DIR, m.url),
@@ -511,8 +509,8 @@ async function updateVersion(id: VersionId, manifests: Array<TempVersionManifest
     }) as ShortManifest)
     return {
         info: {
-            omniId, id: manifests[0].id, type,
-            url: path.relative(DATA_DIR, path.resolve(VERSION_DIR, 'manifest', omniId + '.json')),
+            id, type,
+            url: path.relative(DATA_DIR, path.resolve(VERSION_DIR, 'manifest', id + '.json')),
             time,
             releaseTime: data.releaseTime,
             details: path.relative(DATA_DIR, file)
