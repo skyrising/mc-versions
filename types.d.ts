@@ -57,6 +57,7 @@ interface DownloadInfo {
 interface Library {
     name: string
     rules?: Rule[]
+    downloads?: Record<string, DownloadInfo>
 }
 
 interface RuleValue {

@@ -296,6 +296,12 @@ async function writeProtocolFiles(protocolDir: string, protocols: Protocols) {
 }
 
 async function sortAndWriteVersionFiles(versionDir: string, versions: VersionInfo[], allVersions: TempVersionManifest[], newManifest: MainManifest) {
+    const knownLibraries: Record<string, Library> = {}
+    for (const v of allVersions) {
+        for (const lib of (v.original.libraries || [])) {
+            if ('downloads' in lib) knownLibraries[lib.name] = lib
+        }
+    }
     await Deno.mkdir(versionDir, {recursive: true})
     const mergedManifestDir = path.resolve(versionDir, 'manifest')
     if (await exists(mergedManifestDir)) await Deno.remove(mergedManifestDir, {recursive: true})
@@ -307,7 +313,7 @@ async function sortAndWriteVersionFiles(versionDir: string, versions: VersionInf
             '$schema': new URL('version.json', SCHEMA_BASE).toString(),
             ...sortObject(v.data)
         })
-        await writeJsonFile(path.resolve(mergedManifestDir, v.info.omniId + '.json'), sortObject(mergeManifests(v)))
+        await writeJsonFile(path.resolve(mergedManifestDir, v.info.omniId + '.json'), sortObject(mergeManifests(v, knownLibraries)))
     }
     if (GITHUB_ACTIONS) console.log('::endgroup::')
     allVersions.sort(compareVersions)
@@ -327,7 +333,7 @@ async function sortAndWriteVersionFiles(versionDir: string, versions: VersionInf
     return newOmniVersions
 }
 
-function mergeManifests(version: VersionInfo): VersionManifest {
+function mergeManifests(version: VersionInfo, knownLibraries: Record<string, Library>): VersionManifest {
     const result: VersionManifest = {
         arguments: {},
         assetIndex: {
@@ -365,6 +371,15 @@ function mergeManifests(version: VersionInfo): VersionManifest {
         if ('logging' in manifest) result.logging = {...result.logging, ...manifest.logging}
         if ('mainClass' in manifest) result.mainClass = manifest.mainClass
         if ('minimumLauncherVersion' in manifest) result.minimumLauncherVersion = Math.max(result.minimumLauncherVersion!, manifest.minimumLauncherVersion!)
+    }
+    for (const lib of result.libraries) {
+        if ('downloads' in lib) continue
+        const known = knownLibraries[lib.name]
+        if (!known) {
+            console.warn(`${result.id}: No known substitute for missing downloads of library ${lib.name}`)
+            continue
+        }
+        lib.downloads = known.downloads
     }
     return result
 }
