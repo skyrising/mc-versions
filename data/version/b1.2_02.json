@@ -4,9 +4,9 @@
   "displayVersion": "Minecraft Beta 1.2_02",
   "downloads": {
     "client": {
-      "sha1": "093f371e1a05d89664cfb8068d607953687d5d94",
-      "size": 1136276,
-      "url": "https://launcher.mojang.com/v1/objects/093f371e1a05d89664cfb8068d607953687d5d94/client.jar"
+      "sha1": "551be32655e81a410d81e76259502dde83ebe525",
+      "size": 1182073,
+      "url": "https://archive.org/download/Minecraft-JE-Beta/b1.2_02/b1.2_02.jar"
     }
   },
   "id": "b1.2_02",
@@ -22,17 +22,6 @@
     "org.ow2.asm:asm-all:4.1"
   ],
   "manifests": [
-    {
-      "assetHash": "3d8e55480977e32acd9844e545177e69a52f594b",
-      "assetIndex": "pre-1.6",
-      "downloads": "6756f5b085ef9e1a5e495fbfd26309b562db5812",
-      "downloadsId": 2,
-      "hash": "74529a44204a2c33a912ec880f00404f1aba9936",
-      "lastModified": "2022-03-16T16:03:57+00:00",
-      "time": "2011-01-20T22:00:00+00:00",
-      "type": "old_beta",
-      "url": "../manifest/7/4/529a44204a2c33a912ec880f00404f1aba9936/b1.2_02.json"
-    },
     {
       "assetHash": "c0fd82e8ce9fbc93119e40d96d5a4e62cfa3f729",
       "assetIndex": "legacy",

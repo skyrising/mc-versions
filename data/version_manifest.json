@@ -6909,6 +6909,15 @@
       "details": "version/b1.3-1647.json"
     },
     {
+      "omniId": "b1.2_02",
+      "id": "b1.2_02",
+      "type": "old_beta",
+      "url": "version/manifest/b1.2_02.json",
+      "time": "2016-02-02T15:37:47+00:00",
+      "releaseTime": "2011-01-21T13:57:00+00:00",
+      "details": "version/b1.2_02.json"
+    },
+    {
       "omniId": "b1.2_02-launcher",
       "id": "b1.2_02",
       "type": "old_beta",
@@ -6916,15 +6925,6 @@
       "time": "2011-01-20T22:00:00+00:00",
       "releaseTime": "2011-01-21T13:57:00+00:00",
       "details": "version/b1.2_02-launcher.json"
-    },
-    {
-      "omniId": "b1.2_02",
-      "id": "b1.2_02",
-      "type": "old_beta",
-      "url": "version/manifest/b1.2_02.json",
-      "time": "2011-01-20T22:00:00+00:00",
-      "releaseTime": "2011-01-21T13:57:00+00:00",
-      "details": "version/b1.2_02.json"
     },
     {
       "omniId": "b1.2_01",
