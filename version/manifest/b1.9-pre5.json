@@ -27,6 +27,14 @@
   },
   "libraries": [
     {
+      "downloads": {
+        "artifact": {
+          "path": "net/minecraft/launchwrapper/1.5/launchwrapper-1.5.jar",
+          "sha1": "5150b9c2951f0fde987ce9c33496e26add1de224",
+          "size": 27787,
+          "url": "https://libraries.minecraft.net/net/minecraft/launchwrapper/1.5/launchwrapper-1.5.jar"
+        }
+      },
       "name": "net.minecraft:launchwrapper:1.5"
     },
     {

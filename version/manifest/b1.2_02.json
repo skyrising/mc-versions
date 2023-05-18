@@ -1,18 +1,18 @@
 {
   "arguments": {},
   "assetIndex": {
-    "id": "pre-1.6",
-    "sha1": "3d8e55480977e32acd9844e545177e69a52f594b",
-    "size": 74091,
-    "totalSize": 49505710,
-    "url": "https://launchermeta.mojang.com/v1/packages/3d8e55480977e32acd9844e545177e69a52f594b/pre-1.6.json"
+    "id": "legacy",
+    "sha1": "c0fd82e8ce9fbc93119e40d96d5a4e62cfa3f729",
+    "size": 134284,
+    "totalSize": 111220701,
+    "url": "https://launchermeta.mojang.com/mc/assets/legacy/c0fd82e8ce9fbc93119e40d96d5a4e62cfa3f729/legacy.json"
   },
-  "assets": "pre-1.6",
+  "assets": "legacy",
   "downloads": {
     "client": {
-      "sha1": "093f371e1a05d89664cfb8068d607953687d5d94",
-      "size": 1136276,
-      "url": "https://launcher.mojang.com/v1/objects/093f371e1a05d89664cfb8068d607953687d5d94/client.jar"
+      "sha1": "551be32655e81a410d81e76259502dde83ebe525",
+      "size": 1182073,
+      "url": "https://archive.org/download/Minecraft-JE-Beta/b1.2_02/b1.2_02.jar"
     }
   },
   "id": "b1.2_02",
@@ -316,6 +316,6 @@
   "mainClass": "net.minecraft.launchwrapper.Launch",
   "minimumLauncherVersion": 7,
   "releaseTime": "2011-01-21T13:57:00+00:00",
-  "time": "2011-01-20T22:00:00+00:00",
+  "time": "2016-02-02T15:37:47+00:00",
   "type": "old_beta"
 }
