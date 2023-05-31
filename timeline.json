@@ -5734,5 +5734,11 @@
     "type": "pre-release",
     "normalizedVersion": "1.20.0-pre.7",
     "releaseTime": "2023-05-29T13:44:34+00:00"
+  },
+  {
+    "id": "1.20-rc1",
+    "type": "release-candidate",
+    "normalizedVersion": "1.20.0-rc.1",
+    "releaseTime": "2023-05-31T12:33:33+00:00"
   }
 ]
