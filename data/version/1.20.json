@@ -1,6 +1,7 @@
 {
   "$schema": "https://skyrising.github.io/mc-versions/schemas/version.json",
   "client": true,
+  "displayVersion": "1.20",
   "downloads": {
     "client": {
       "sha1": "e575a48efda46cf88111ba05b624ef90c520eef1",
@@ -71,6 +72,17 @@
   ],
   "manifests": [
     {
+      "assetHash": "edc6213221c780c6f44ec687084046200189c605",
+      "assetIndex": "5",
+      "downloads": "2b031e61fa34f8358ea61d17dce1877b50cef3b4",
+      "downloadsId": 1,
+      "hash": "20e86bb66bc4450c00cf09b525b0fa36713ae778",
+      "lastModified": "2023-06-09T14:24:48+00:00",
+      "time": "2023-06-02T08:36:17+00:00",
+      "type": "release",
+      "url": "../manifest/2/0/e86bb66bc4450c00cf09b525b0fa36713ae778/1.20.json"
+    },
+    {
       "assetHash": "fcc539e68fc40b9e89708f245468dd58e66fe35d",
       "assetIndex": "5",
       "downloads": "2b031e61fa34f8358ea61d17dce1877b50cef3b4",
@@ -82,13 +94,23 @@
       "url": "../manifest/1/a/f0654281ea4839876dbe1f3a037e9256ca6a22/1.20.json"
     }
   ],
-  "next": [],
+  "next": [
+    "1.20.1-rc1"
+  ],
   "normalizedVersion": "1.20.0",
   "previous": [
     "1.20-rc1"
   ],
+  "protocol": {
+    "type": "netty",
+    "version": 763
+  },
   "releaseTarget": "1.20",
   "releaseTime": "2023-06-02T08:36:17+00:00",
   "server": true,
-  "sharedMappings": true
+  "sharedMappings": true,
+  "world": {
+    "format": "anvil",
+    "version": 3463
+  }
 }
