@@ -1279,6 +1279,33 @@
       "servers": [
         "1.20.1-rc1"
       ]
+    },
+    {
+      "version": 144,
+      "clients": [
+        "23w31a"
+      ],
+      "servers": [
+        "23w31a"
+      ]
+    },
+    {
+      "version": 145,
+      "clients": [
+        "23w32a"
+      ],
+      "servers": [
+        "23w32a"
+      ]
+    },
+    {
+      "version": 146,
+      "clients": [
+        "23w33a"
+      ],
+      "servers": [
+        "23w33a"
+      ]
     }
   ]
 }
