@@ -5758,5 +5758,23 @@
     "type": "release",
     "normalizedVersion": "1.20.1",
     "releaseTime": "2023-06-12T13:25:51+00:00"
+  },
+  {
+    "id": "23w31a",
+    "type": "snapshot",
+    "normalizedVersion": "1.20.2-alpha.23.31.a",
+    "releaseTime": "2023-08-01T10:03:13+00:00"
+  },
+  {
+    "id": "23w32a",
+    "type": "snapshot",
+    "normalizedVersion": "1.20.2-alpha.23.32.a",
+    "releaseTime": "2023-08-09T12:14:25+00:00"
+  },
+  {
+    "id": "23w33a",
+    "type": "snapshot",
+    "normalizedVersion": "1.20.2-alpha.23.33.a",
+    "releaseTime": "2023-08-17T11:39:08+00:00"
   }
 ]

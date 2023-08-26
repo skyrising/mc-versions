@@ -5,11 +5,35 @@
     "classic_server": "server-c1.10.1",
     "alpha_server": "server-a0.2.8",
     "old_beta": "b1.9-pre6",
-    "snapshot": "1.20.1-rc1",
+    "snapshot": "23w33a",
     "release": "1.20.1",
     "pending": "1.19_deep_dark_experimental_snapshot-1"
   },
   "versions": [
+    {
+      "id": "23w33a",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/version/manifest/23w33a.json",
+      "time": "2023-08-17T11:39:08+00:00",
+      "releaseTime": "2023-08-17T11:39:08+00:00",
+      "details": "https://skyrising.github.io/mc-versions/version/23w33a.json"
+    },
+    {
+      "id": "23w32a",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/version/manifest/23w32a.json",
+      "time": "2023-08-09T12:14:25+00:00",
+      "releaseTime": "2023-08-09T12:14:25+00:00",
+      "details": "https://skyrising.github.io/mc-versions/version/23w32a.json"
+    },
+    {
+      "id": "23w31a",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/version/manifest/23w31a.json",
+      "time": "2023-08-01T10:03:13+00:00",
+      "releaseTime": "2023-08-01T10:03:13+00:00",
+      "details": "https://skyrising.github.io/mc-versions/version/23w31a.json"
+    },
     {
       "id": "1.20.1",
       "type": "release",
