@@ -83,7 +83,9 @@
       "url": "../manifest/2/e/98dd3efd140d6d2300935084ef10da25df1a7c/1.20.2-pre1.json"
     }
   ],
-  "next": [],
+  "next": [
+    "1.20.2-pre2"
+  ],
   "normalizedVersion": "1.20.2-pre.1",
   "previous": [
     "23w35a"
