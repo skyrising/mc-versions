@@ -5,11 +5,19 @@
     "classic_server": "server-c1.10.1",
     "alpha_server": "server-a0.2.8",
     "old_beta": "b1.9-pre6",
-    "snapshot": "1.20.2-pre4",
+    "snapshot": "1.20.2-rc1",
     "release": "1.20.1",
     "pending": "1.19_deep_dark_experimental_snapshot-1"
   },
   "versions": [
+    {
+      "id": "1.20.2-rc1",
+      "type": "snapshot",
+      "url": "version/manifest/1.20.2-rc1.json",
+      "time": "2023-09-15T13:10:30+00:00",
+      "releaseTime": "2023-09-15T13:10:30+00:00",
+      "details": "version/1.20.2-rc1.json"
+    },
     {
       "id": "1.20.2-pre4",
       "type": "snapshot",
