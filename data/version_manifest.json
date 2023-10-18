@@ -5,11 +5,19 @@
     "classic_server": "server-c1.10.1",
     "alpha_server": "server-a0.2.8",
     "old_beta": "b1.9-pre6",
-    "snapshot": "23w41a",
+    "snapshot": "23w42a",
     "release": "1.20.2",
     "pending": "1.19_deep_dark_experimental_snapshot-1"
   },
   "versions": [
+    {
+      "id": "23w42a",
+      "type": "snapshot",
+      "url": "version/manifest/23w42a.json",
+      "time": "2023-10-18T11:37:28+00:00",
+      "releaseTime": "2023-10-18T11:37:28+00:00",
+      "details": "version/23w42a.json"
+    },
     {
       "id": "23w41a",
       "type": "snapshot",
