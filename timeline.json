@@ -5872,5 +5872,11 @@
     "type": "snapshot",
     "normalizedVersion": "1.20.2-alpha.23.46.a",
     "releaseTime": "2023-11-16T14:11:33+00:00"
+  },
+  {
+    "id": "1.20.3-pre1",
+    "type": "pre-release",
+    "normalizedVersion": "1.20.3-pre.1",
+    "releaseTime": "2023-11-20T15:40:14+00:00"
   }
 ]
