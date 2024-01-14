@@ -1,28 +1,20 @@
 import * as semver from 'https://deno.land/x/semver@v1.4.0/mod.ts'
 import type {VersionType} from './types.d.ts'
+import SNAPSHOT_TARGETS_DATA from './snapshots.json' assert {type: 'json'}
 
-const SNAPSHOT_TARGETS: Record<VersionId, [number, number]> = {
-    '1.1': [12, 1],
-    '1.2': [12, 8],
-    '1.3': [12, 30],
-    '1.4': [12, 42], '1.4.6': [12, 50],
-    '1.5': [13, 10], '1.5.1': [13, 12],
-    '1.6': [13, 26],
-    '1.7': [13, 43], '1.7.4': [13, 49],
-    '1.8': [14, 34],
-    '1.9': [16, 7], '1.9.3': [16, 15],
-    '1.10': [16, 21],
-    '1.11': [16, 44], '1.11.1': [16, 50],
-    '1.12': [17, 18], '1.12.1': [17, 31],
-    '1.13': [18, 22], '1.13.1': [18, 33],
-    '1.14': [19, 14],
-    '1.15': [19, 46],
-    '1.16': [20, 22], '1.16.2': [20, 30],
-    '1.17': [21, 20],
-    '1.18': [21, 48], '1.18.2': [22, 9],
-    '1.19': [22, 23], '1.19.1': [22, 25], '1.19.3': [22, 49], '1.19.4': [23, 11],
-    '1.20': [23, 23], '1.20.2': [23, Infinity],
+function getYearAndWeek(date: Date): [number, number] {
+    date = new Date(date.getTime())
+    date.setHours(0, 0, 0, 0)
+    date.setDate(date.getDate() + 3 - (date.getDay() + 6) % 7)
+    const week1 = new Date(date.getFullYear(), 0, 4)
+    return [date.getFullYear() % 100, 1 + Math.round(((date.getTime() - week1.getTime()) / 86400000 - 3 + (week1.getDay() + 6) % 7) / 7)]
 }
+
+const SNAPSHOT_TARGETS = Object.fromEntries(Object.entries(SNAPSHOT_TARGETS_DATA.releaseWeeks).map(
+    ([version, date]) => [version, getYearAndWeek(new Date(date))] as [string, [number, number]]
+))
+
+const NEXT_TARGET = SNAPSHOT_TARGETS_DATA.next
 
 export function getReleaseTarget(data: VersionData) {
     if (data.releaseTarget !== undefined) return data.releaseTarget
@@ -49,9 +41,7 @@ export function getSnapshotTarget(year: number, week: number): string | undefine
             return version
         }
     }
-    const versions = Object.keys(SNAPSHOT_TARGETS)
-    const last = versions[versions.length - 1].split('.')
-    return `${last[0]}.${+last[1] + 1}`
+    return NEXT_TARGET
 }
 
 export function normalizeVersion(omniId: VersionId, releaseTarget: VersionId | undefined) {

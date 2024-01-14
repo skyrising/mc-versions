@@ -240,7 +240,7 @@
   "next": [
     "23w43a"
   ],
-  "normalizedVersion": "1.20.2-alpha.23.42.a",
+  "normalizedVersion": "1.20.3-alpha.23.42.a",
   "previous": [
     "23w41a"
   ],
@@ -248,7 +248,7 @@
     "type": "netty-snapshot",
     "version": 157
   },
-  "releaseTarget": "1.20.2",
+  "releaseTarget": "1.20.3",
   "releaseTime": "2023-10-18T11:37:28+00:00",
   "server": true,
   "sharedMappings": true,
