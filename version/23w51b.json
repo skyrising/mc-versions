@@ -84,7 +84,7 @@
     }
   ],
   "next": [],
-  "normalizedVersion": "1.20.2-alpha.23.51.b",
+  "normalizedVersion": "1.20.5-alpha.23.51.b",
   "previous": [
     "23w51a"
   ],
@@ -92,7 +92,7 @@
     "type": "netty-snapshot",
     "version": 170
   },
-  "releaseTarget": "1.20.2",
+  "releaseTarget": "1.20.5",
   "releaseTime": "2023-12-18T15:39:14+00:00",
   "server": true,
   "sharedMappings": true,
