@@ -1580,6 +1580,15 @@
       "servers": [
         "24w10a"
       ]
+    },
+    {
+      "version": 180,
+      "clients": [
+        "24w11a"
+      ],
+      "servers": [
+        "24w11a"
+      ]
     }
   ]
 }
