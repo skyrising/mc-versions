@@ -24,7 +24,7 @@
       "url": "https://piston-data.mojang.com/v1/objects/fec12079cf53c9933bf02849ac764cb7ad7312d1/server.txt"
     }
   },
-  "id": "24w14potato",
+  "id": "af-2024",
   "libraries": [
     "com.github.oshi:oshi-core:6.4.10",
     "com.google.code.gson:gson:2.10.1",
@@ -86,14 +86,14 @@
     }
   ],
   "next": [],
+  "normalizedVersion": "1.20.5-alpha.23.14.april.fools",
   "previous": [
-    "24w13a"
+    "24w12a"
   ],
   "protocol": {
     "type": "netty-snapshot",
     "version": 183
   },
-  "releaseTarget": "1.20.5",
   "releaseTime": "2024-04-01T08:41:32+00:00",
   "server": true,
   "sharedMappings": true,
