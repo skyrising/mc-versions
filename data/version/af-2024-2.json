@@ -4,19 +4,19 @@
   "displayVersion": "24w14potato",
   "downloads": {
     "client": {
-      "sha1": "b8bfe382f0f721d58a179035d90617e15909efb4",
-      "size": 36413478,
-      "url": "https://piston-data.mojang.com/v1/objects/b8bfe382f0f721d58a179035d90617e15909efb4/client.jar"
+      "sha1": "b3be1d7926319d4d58f3d8f25d648bf7d1e43970",
+      "size": 36407656,
+      "url": "https://piston-data.mojang.com/v1/objects/b3be1d7926319d4d58f3d8f25d648bf7d1e43970/client.jar"
     },
     "client_mappings": {
-      "sha1": "f36439c5d1c2780962a4561b6eee4ba4fb244ad9",
-      "size": 9585789,
-      "url": "https://piston-data.mojang.com/v1/objects/f36439c5d1c2780962a4561b6eee4ba4fb244ad9/client.txt"
+      "sha1": "af4a5595fb915de9835bf9aec9e8654d8548217a",
+      "size": 9585483,
+      "url": "https://piston-data.mojang.com/v1/objects/af4a5595fb915de9835bf9aec9e8654d8548217a/client.txt"
     },
     "server": {
-      "sha1": "846d3fe65b6dab3f8bf929a601e1f83d801d919c",
-      "size": 51443417,
-      "url": "https://piston-data.mojang.com/v1/objects/846d3fe65b6dab3f8bf929a601e1f83d801d919c/server.jar"
+      "sha1": "2d29eee4f5a71f323d20b36d623e2ec21dab74f7",
+      "size": 51443020,
+      "url": "https://piston-data.mojang.com/v1/objects/2d29eee4f5a71f323d20b36d623e2ec21dab74f7/server.jar"
     },
     "server_mappings": {
       "sha1": "fec12079cf53c9933bf02849ac764cb7ad7312d1",
@@ -24,7 +24,7 @@
       "url": "https://piston-data.mojang.com/v1/objects/fec12079cf53c9933bf02849ac764cb7ad7312d1/server.txt"
     }
   },
-  "id": "af-2024",
+  "id": "af-2024-2",
   "libraries": [
     "com.github.oshi:oshi-core:6.4.10",
     "com.google.code.gson:gson:2.10.1",
@@ -76,27 +76,25 @@
     {
       "assetHash": "cbe801caf1919eb053be7e39422752061e98972e",
       "assetIndex": "15",
-      "downloads": "3cb6d54fdbba6bf169b5cf56668ec897a29a4aaf",
+      "downloads": "4b1b4b0be81bc33a39d1ec4c4d9b398637a952f3",
       "downloadsId": 1,
-      "hash": "9a2e2b7123d60444d7080220e29071ed562ece2a",
-      "lastModified": "2024-04-01T08:51:22+00:00",
-      "time": "2024-04-01T08:41:32+00:00",
+      "hash": "efaecab4e7417bbf2007457dd381de18e059b35f",
+      "lastModified": "2024-04-01T11:15:34+00:00",
+      "time": "2024-04-01T11:07:19+00:00",
       "type": "snapshot",
-      "url": "../manifest/9/a/2e2b7123d60444d7080220e29071ed562ece2a/24w14potato.json"
+      "url": "../manifest/e/f/aecab4e7417bbf2007457dd381de18e059b35f/24w14potato.json"
     }
   ],
-  "next": [
-    "af-2024-2"
-  ],
-  "normalizedVersion": "1.20.5-alpha.23.14.april.fools",
+  "next": [],
+  "normalizedVersion": "1.20.5-alpha.23.14.april.fools.2",
   "previous": [
-    "24w12a"
+    "af-2024"
   ],
   "protocol": {
     "type": "netty-snapshot",
     "version": 183
   },
-  "releaseTime": "2024-04-01T08:41:32+00:00",
+  "releaseTime": "2024-04-01T11:07:19+00:00",
   "server": true,
   "sharedMappings": true,
   "world": {
