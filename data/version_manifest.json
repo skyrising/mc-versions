@@ -5,11 +5,19 @@
     "classic_server": "server-c1.10.1",
     "alpha_server": "server-a0.2.8",
     "old_beta": "b1.9-pre6",
-    "snapshot": "af-2024-2",
+    "snapshot": "24w14a",
     "release": "1.20.4",
     "pending": "1.19_deep_dark_experimental_snapshot-1"
   },
   "versions": [
+    {
+      "id": "24w14a",
+      "type": "snapshot",
+      "url": "version/manifest/24w14a.json",
+      "time": "2024-04-03T11:49:39+00:00",
+      "releaseTime": "2024-04-03T11:49:39+00:00",
+      "details": "version/24w14a.json"
+    },
     {
       "id": "af-2024-2",
       "type": "snapshot",
@@ -22,7 +30,7 @@
       "id": "af-2024",
       "type": "snapshot",
       "url": "version/manifest/af-2024.json",
-      "time": "2024-04-01T08:41:32+00:00",
+      "time": "2024-04-01T11:07:19+00:00",
       "releaseTime": "2024-04-01T08:41:32+00:00",
       "details": "version/af-2024.json"
     },
