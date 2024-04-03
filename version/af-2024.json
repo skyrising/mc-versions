@@ -4,19 +4,19 @@
   "displayVersion": "24w14potato",
   "downloads": {
     "client": {
-      "sha1": "b8bfe382f0f721d58a179035d90617e15909efb4",
-      "size": 36413478,
-      "url": "https://piston-data.mojang.com/v1/objects/b8bfe382f0f721d58a179035d90617e15909efb4/client.jar"
+      "sha1": "b3be1d7926319d4d58f3d8f25d648bf7d1e43970",
+      "size": 36407656,
+      "url": "https://piston-data.mojang.com/v1/objects/b3be1d7926319d4d58f3d8f25d648bf7d1e43970/client.jar"
     },
     "client_mappings": {
-      "sha1": "f36439c5d1c2780962a4561b6eee4ba4fb244ad9",
-      "size": 9585789,
-      "url": "https://piston-data.mojang.com/v1/objects/f36439c5d1c2780962a4561b6eee4ba4fb244ad9/client.txt"
+      "sha1": "af4a5595fb915de9835bf9aec9e8654d8548217a",
+      "size": 9585483,
+      "url": "https://piston-data.mojang.com/v1/objects/af4a5595fb915de9835bf9aec9e8654d8548217a/client.txt"
     },
     "server": {
-      "sha1": "846d3fe65b6dab3f8bf929a601e1f83d801d919c",
-      "size": 51443417,
-      "url": "https://piston-data.mojang.com/v1/objects/846d3fe65b6dab3f8bf929a601e1f83d801d919c/server.jar"
+      "sha1": "2d29eee4f5a71f323d20b36d623e2ec21dab74f7",
+      "size": 51443020,
+      "url": "https://piston-data.mojang.com/v1/objects/2d29eee4f5a71f323d20b36d623e2ec21dab74f7/server.jar"
     },
     "server_mappings": {
       "sha1": "fec12079cf53c9933bf02849ac764cb7ad7312d1",
@@ -73,6 +73,17 @@
     "org.slf4j:slf4j-api:2.0.9"
   ],
   "manifests": [
+    {
+      "assetHash": "88febf1403d4502f08764966de013fd9ee53d2ce",
+      "assetIndex": "15",
+      "downloads": "4b1b4b0be81bc33a39d1ec4c4d9b398637a952f3",
+      "downloadsId": 2,
+      "hash": "be2301e7ce1aca6225d4b2033b8d61a4bb87a9cc",
+      "lastModified": "2024-04-03T12:19:08+00:00",
+      "time": "2024-04-01T11:07:19+00:00",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/manifest/b/e/2301e7ce1aca6225d4b2033b8d61a4bb87a9cc/24w14potato.json"
+    },
     {
       "assetHash": "cbe801caf1919eb053be7e39422752061e98972e",
       "assetIndex": "15",
