@@ -6022,5 +6022,11 @@
     "type": "snapshot",
     "normalizedVersion": "1.20.5-alpha.24.14.a",
     "releaseTime": "2024-04-03T11:49:39+00:00"
+  },
+  {
+    "id": "1.20.5-pre1",
+    "type": "pre-release",
+    "normalizedVersion": "1.20.5-pre.1",
+    "releaseTime": "2024-04-10T12:44:25+00:00"
   }
 ]
