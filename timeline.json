@@ -6070,5 +6070,11 @@
     "type": "release",
     "normalizedVersion": "1.20.5",
     "releaseTime": "2024-04-23T11:54:12+00:00"
+  },
+  {
+    "id": "1.20.6-rc1",
+    "type": "release-candidate",
+    "normalizedVersion": "1.20.6-rc.1",
+    "releaseTime": "2024-04-26T10:12:17+00:00"
   }
 ]
