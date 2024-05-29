@@ -1753,6 +1753,15 @@
       "servers": [
         "24w21b"
       ]
+    },
+    {
+      "version": 199,
+      "clients": [
+        "1.21-pre1"
+      ],
+      "servers": [
+        "1.21-pre1"
+      ]
     }
   ]
 }
