@@ -1762,6 +1762,15 @@
       "servers": [
         "1.21-pre1"
       ]
+    },
+    {
+      "version": 200,
+      "clients": [
+        "1.21-pre2"
+      ],
+      "servers": [
+        "1.21-pre2"
+      ]
     }
   ]
 }
