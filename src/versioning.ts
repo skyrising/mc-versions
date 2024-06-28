@@ -37,7 +37,7 @@ export function getReleaseTarget(data: VersionData) {
 export function getSnapshotTarget(year: number, week: number): string | undefined {
     for (const version in SNAPSHOT_TARGETS) {
         const end = SNAPSHOT_TARGETS[version]
-        if (year < end[0] || (year === end[0] && week <= end[1])) {
+        if (year < end[0] || (year === end[0] && week < end[1])) {
             return version
         }
     }
