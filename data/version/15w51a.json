@@ -6,17 +6,17 @@
     "client": {
       "sha1": "764384c71c303b3e18146dd90ac8cad2550b6ffb",
       "size": 8671285,
-      "url": "https://launcher.mojang.com/v1/objects/764384c71c303b3e18146dd90ac8cad2550b6ffb/client.jar"
+      "url": "https://piston-data.mojang.com/v1/objects/764384c71c303b3e18146dd90ac8cad2550b6ffb/client.jar"
     },
     "server": {
       "sha1": "4d5f4d2111272d67f2238b83a552599b9b7ad92f",
       "size": 8830973,
-      "url": "https://launcher.mojang.com/v1/objects/4d5f4d2111272d67f2238b83a552599b9b7ad92f/server.jar"
+      "url": "https://piston-data.mojang.com/v1/objects/4d5f4d2111272d67f2238b83a552599b9b7ad92f/server.jar"
     },
     "windows_server": {
       "sha1": "10b74066cbbe39e0a829205278402b5d428ded19",
       "size": 9225213,
-      "url": "https://launcher.mojang.com/v1/objects/10b74066cbbe39e0a829205278402b5d428ded19/windows_server.exe"
+      "url": "https://piston-data.mojang.com/v1/objects/10b74066cbbe39e0a829205278402b5d428ded19/windows_server.exe"
     }
   },
   "id": "15w51a",
@@ -55,6 +55,17 @@
   ],
   "manifests": [
     {
+      "assetHash": "d7aae43ea69d80cc3441bee4179abd791f6534cd",
+      "assetIndex": "1.9",
+      "downloads": "97211723cbbba5a08012ca606daa787340715f7b",
+      "downloadsId": 1,
+      "hash": "3c2f8eef17adc8c846d63b6487875fedbdb3180c",
+      "lastModified": "2023-06-07T12:45:47+00:00",
+      "time": "2015-12-17T14:02:37+00:00",
+      "type": "snapshot",
+      "url": "../manifest/3/c/2f8eef17adc8c846d63b6487875fedbdb3180c/15w51a.json"
+    },
+    {
       "assetHash": "06cc9a2c5ce504dc712ea2f699e4d645c48416dd",
       "assetIndex": "1.9",
       "downloads": "97211723cbbba5a08012ca606daa787340715f7b",
@@ -86,17 +97,6 @@
       "time": "2015-12-17T14:02:37+00:00",
       "type": "snapshot",
       "url": "../manifest/e/c/22d128e7fd6ff5dcabed353de97421434e3c83/15w51a.json"
-    },
-    {
-      "assetHash": "d7aae43ea69d80cc3441bee4179abd791f6534cd",
-      "assetIndex": "1.9",
-      "downloads": "97211723cbbba5a08012ca606daa787340715f7b",
-      "downloadsId": 1,
-      "hash": "3c2f8eef17adc8c846d63b6487875fedbdb3180c",
-      "lastModified": "2023-06-07T12:45:47+00:00",
-      "time": "2015-12-17T14:02:37+00:00",
-      "type": "snapshot",
-      "url": "../manifest/3/c/2f8eef17adc8c846d63b6487875fedbdb3180c/15w51a.json"
     }
   ],
   "next": [

@@ -6,22 +6,22 @@
     "client": {
       "sha1": "060dd014d59c90d723db87f9c9cedb511f374a71",
       "size": 20038747,
-      "url": "https://launcher.mojang.com/v1/objects/060dd014d59c90d723db87f9c9cedb511f374a71/client.jar"
+      "url": "https://piston-data.mojang.com/v1/objects/060dd014d59c90d723db87f9c9cedb511f374a71/client.jar"
     },
     "client_mappings": {
       "sha1": "b64667a23e5ea5f0cc0547241c253d2a72a97c56",
       "size": 6610979,
-      "url": "https://launcher.mojang.com/v1/objects/b64667a23e5ea5f0cc0547241c253d2a72a97c56/client.txt"
+      "url": "https://piston-data.mojang.com/v1/objects/b64667a23e5ea5f0cc0547241c253d2a72a97c56/client.txt"
     },
     "server": {
       "sha1": "9a03d2c4ec2c737ce9d17a43d3774cdc0ea21030",
       "size": 46323763,
-      "url": "https://launcher.mojang.com/v1/objects/9a03d2c4ec2c737ce9d17a43d3774cdc0ea21030/server.jar"
+      "url": "https://piston-data.mojang.com/v1/objects/9a03d2c4ec2c737ce9d17a43d3774cdc0ea21030/server.jar"
     },
     "server_mappings": {
       "sha1": "a36b4033a861c6e9bd3ced78b267e6aeaa75b639",
       "size": 5115917,
-      "url": "https://launcher.mojang.com/v1/objects/a36b4033a861c6e9bd3ced78b267e6aeaa75b639/server.txt"
+      "url": "https://piston-data.mojang.com/v1/objects/a36b4033a861c6e9bd3ced78b267e6aeaa75b639/server.txt"
     }
   },
   "id": "1.18-rc3",
@@ -63,6 +63,17 @@
     "org.slf4j:slf4j-api:1.8.0-beta4"
   ],
   "manifests": [
+    {
+      "assetHash": "d31a2e85ae149dd1b1a7070b22cb8887892fda6c",
+      "assetIndex": "1.18",
+      "downloads": "a02962d3478d8a0ea5498d6f2fe4482704037f83",
+      "downloadsId": 1,
+      "hash": "60dbaf4060164c08b9083f488e6c47261cd047ee",
+      "lastModified": "2023-06-07T12:42:46+00:00",
+      "time": "2021-11-26T15:51:56+00:00",
+      "type": "snapshot",
+      "url": "../manifest/6/0/dbaf4060164c08b9083f488e6c47261cd047ee/1.18-rc3.json"
+    },
     {
       "assetHash": "92aa15a18127b6f9e3f0e5a7d018be7ebb389703",
       "assetIndex": "1.18",
@@ -260,17 +271,6 @@
       "time": "2021-11-26T15:51:56+00:00",
       "type": "snapshot",
       "url": "../manifest/1/0/16dfdfd2a1f63d9a01082582530f311a4cf0f2/1.18-rc3.json"
-    },
-    {
-      "assetHash": "d31a2e85ae149dd1b1a7070b22cb8887892fda6c",
-      "assetIndex": "1.18",
-      "downloads": "a02962d3478d8a0ea5498d6f2fe4482704037f83",
-      "downloadsId": 1,
-      "hash": "60dbaf4060164c08b9083f488e6c47261cd047ee",
-      "lastModified": "2023-06-07T12:42:46+00:00",
-      "time": "2021-11-26T15:51:56+00:00",
-      "type": "snapshot",
-      "url": "../manifest/6/0/dbaf4060164c08b9083f488e6c47261cd047ee/1.18-rc3.json"
     }
   ],
   "next": [

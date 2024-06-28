@@ -6,12 +6,12 @@
     "client": {
       "sha1": "60783b7bab4125d55f187c859e4b41418ebc8719",
       "size": 18794361,
-      "url": "https://launcher.mojang.com/v1/objects/60783b7bab4125d55f187c859e4b41418ebc8719/client.jar"
+      "url": "https://piston-data.mojang.com/v1/objects/60783b7bab4125d55f187c859e4b41418ebc8719/client.jar"
     },
     "server": {
       "sha1": "6bba54ad86fccc45cc68ba410e738d3b331cdadd",
       "size": 35932995,
-      "url": "https://launcher.mojang.com/v1/objects/6bba54ad86fccc45cc68ba410e738d3b331cdadd/server.jar"
+      "url": "https://piston-data.mojang.com/v1/objects/6bba54ad86fccc45cc68ba410e738d3b331cdadd/server.jar"
     }
   },
   "id": "1.14.2-pre4-270720",
@@ -51,6 +51,17 @@
     "oshi-project:oshi-core:1.1"
   ],
   "manifests": [
+    {
+      "assetHash": "43b2f3021fe9f7d768378de95538e22da3ee8301",
+      "assetIndex": "1.14",
+      "downloads": "a819b4dec34a60aaffb70a8d32884b433c458d75",
+      "downloadsId": 1,
+      "hash": "2d6f695dcf668896981712ddb2d2ebca9a2f00cf",
+      "lastModified": "2023-06-07T12:44:21+00:00",
+      "time": "2019-05-27T07:21:11+00:00",
+      "type": "snapshot",
+      "url": "../manifest/2/d/6f695dcf668896981712ddb2d2ebca9a2f00cf/1.14.2%20Pre-Release%204.json"
+    },
     {
       "assetHash": "d6c94fad4f7a03a8e46083c023926515fc0e551e",
       "assetIndex": "1.14",
@@ -94,17 +105,6 @@
       "time": "2019-05-27T07:21:11+00:00",
       "type": "snapshot",
       "url": "../manifest/a/e/cbdfd1b9322a1d846286a88ce8a30710d643e0/1.14.2_Pre-Release_4.json"
-    },
-    {
-      "assetHash": "43b2f3021fe9f7d768378de95538e22da3ee8301",
-      "assetIndex": "1.14",
-      "downloads": "a819b4dec34a60aaffb70a8d32884b433c458d75",
-      "downloadsId": 1,
-      "hash": "2d6f695dcf668896981712ddb2d2ebca9a2f00cf",
-      "lastModified": "2023-06-07T12:44:21+00:00",
-      "time": "2019-05-27T07:21:11+00:00",
-      "type": "snapshot",
-      "url": "../manifest/2/d/6f695dcf668896981712ddb2d2ebca9a2f00cf/1.14.2%20Pre-Release%204.json"
     }
   ],
   "next": [

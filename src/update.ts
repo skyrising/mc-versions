@@ -133,6 +133,7 @@ export async function collectVersions(hashMap: HashMap<string>, oldOmniVersions:
         await Deno.utime(file, aTime, mTime)
         const dl = Object.values(data.downloads).map(d => d.sha1).sort()
         const omniId = ((oldOmniVersions[hash] || data.id) === data.id ? renameMap[data.id] : oldOmniVersions[hash]) || data.id
+        const clientUrl = data.downloads.client?.url as string | undefined
         const v: TempVersionManifest = {
             id: omniId,
             type: data.type,
@@ -144,7 +145,7 @@ export async function collectVersions(hashMap: HashMap<string>, oldOmniVersions:
             downloads: data.downloads,
             assetIndex: data.assetIndex?.id,
             assetHash: data.assetIndex?.sha1,
-            launcher: data.downloads.client?.url.startsWith('https://launcher.mojang.com/'),
+            launcher: clientUrl ? (clientUrl.startsWith('https://launcher.mojang.com/') || clientUrl.startsWith('https://piston-data.mojang.com/')) : false,
             libraries: data.libraries.filter(lib => !lib.rules || evaluateRules(lib.rules, {}) === 'allow'),
             localMirror: {},
             original: data

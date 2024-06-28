@@ -6,12 +6,12 @@
     "client": {
       "sha1": "843bc6377ff859b7744d12df0b62653dc318456b",
       "size": 16090062,
-      "url": "https://launcher.mojang.com/v1/objects/843bc6377ff859b7744d12df0b62653dc318456b/client.jar"
+      "url": "https://piston-data.mojang.com/v1/objects/843bc6377ff859b7744d12df0b62653dc318456b/client.jar"
     },
     "server": {
       "sha1": "744df5d6872645a8f919459473e0e02a3571e6bb",
       "size": 33835242,
-      "url": "https://launcher.mojang.com/v1/objects/744df5d6872645a8f919459473e0e02a3571e6bb/server.jar"
+      "url": "https://piston-data.mojang.com/v1/objects/744df5d6872645a8f919459473e0e02a3571e6bb/server.jar"
     }
   },
   "id": "1.13.2-pre1",
@@ -55,6 +55,17 @@
   ],
   "manifests": [
     {
+      "assetHash": "a8ef90d58d4a170f85e3439470c99c25aa8e988b",
+      "assetIndex": "1.13.1",
+      "downloads": "b605d39fe8b2a44127978d67cba0aaec977feb88",
+      "downloadsId": 1,
+      "hash": "ea443dcc33f5c9dfeeae29206c3d6a4505aac961",
+      "lastModified": "2023-06-07T12:44:45+00:00",
+      "time": "2018-10-16T13:40:58+00:00",
+      "type": "snapshot",
+      "url": "../manifest/e/a/443dcc33f5c9dfeeae29206c3d6a4505aac961/1.13.2-pre1.json"
+    },
+    {
       "assetHash": "6d78d53da5ac7158e2f725056312edf9871dfbb1",
       "assetIndex": "1.13.1",
       "downloads": "b605d39fe8b2a44127978d67cba0aaec977feb88",
@@ -97,17 +108,6 @@
       "time": "2018-10-16T13:40:58+00:00",
       "type": "snapshot",
       "url": "../manifest/a/7/c0ce503f9381eac857fd1254cfedc4a4a9443b/1.13.2-pre1.json"
-    },
-    {
-      "assetHash": "a8ef90d58d4a170f85e3439470c99c25aa8e988b",
-      "assetIndex": "1.13.1",
-      "downloads": "b605d39fe8b2a44127978d67cba0aaec977feb88",
-      "downloadsId": 1,
-      "hash": "ea443dcc33f5c9dfeeae29206c3d6a4505aac961",
-      "lastModified": "2023-06-07T12:44:45+00:00",
-      "time": "2018-10-16T13:40:58+00:00",
-      "type": "snapshot",
-      "url": "../manifest/e/a/443dcc33f5c9dfeeae29206c3d6a4505aac961/1.13.2-pre1.json"
     }
   ],
   "next": [

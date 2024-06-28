@@ -6,12 +6,12 @@
     "client": {
       "sha1": "f04ca007b45c3fed9ba03c5ada8926320a4ddbd5",
       "size": 9275077,
-      "url": "https://launcher.mojang.com/v1/objects/f04ca007b45c3fed9ba03c5ada8926320a4ddbd5/client.jar"
+      "url": "https://piston-data.mojang.com/v1/objects/f04ca007b45c3fed9ba03c5ada8926320a4ddbd5/client.jar"
     },
     "server": {
       "sha1": "07eb3f85fc848ec8e209377aee1f7f574566e130",
       "size": 9695019,
-      "url": "https://launcher.mojang.com/v1/objects/07eb3f85fc848ec8e209377aee1f7f574566e130/server.jar"
+      "url": "https://piston-data.mojang.com/v1/objects/07eb3f85fc848ec8e209377aee1f7f574566e130/server.jar"
     }
   },
   "id": "16w39b",
@@ -51,6 +51,17 @@
   ],
   "manifests": [
     {
+      "assetHash": "c64959fe73672e9b053b157f57b6aba318d0b3b5",
+      "assetIndex": "1.11",
+      "downloads": "61645aef00e3b64a57498dd11a5fcac616b60bdc",
+      "downloadsId": 1,
+      "hash": "71335d5229b576d4823588fb3e26dcb5399c848b",
+      "lastModified": "2023-06-07T12:45:30+00:00",
+      "time": "2016-09-29T14:39:39+00:00",
+      "type": "snapshot",
+      "url": "../manifest/7/1/335d5229b576d4823588fb3e26dcb5399c848b/16w39b.json"
+    },
+    {
       "assetHash": "4fa7f939c7e9902e6c674ad1d00358f8c08d7b8e",
       "assetIndex": "1.11",
       "downloads": "61645aef00e3b64a57498dd11a5fcac616b60bdc",
@@ -82,17 +93,6 @@
       "time": "2016-09-29T14:39:39+00:00",
       "type": "snapshot",
       "url": "../manifest/f/e/cf89a20bee0b26801eb90b3390eb444af9caf2/16w39b.json"
-    },
-    {
-      "assetHash": "c64959fe73672e9b053b157f57b6aba318d0b3b5",
-      "assetIndex": "1.11",
-      "downloads": "61645aef00e3b64a57498dd11a5fcac616b60bdc",
-      "downloadsId": 1,
-      "hash": "71335d5229b576d4823588fb3e26dcb5399c848b",
-      "lastModified": "2023-06-07T12:45:30+00:00",
-      "time": "2016-09-29T14:39:39+00:00",
-      "type": "snapshot",
-      "url": "../manifest/7/1/335d5229b576d4823588fb3e26dcb5399c848b/16w39b.json"
     }
   ],
   "next": [

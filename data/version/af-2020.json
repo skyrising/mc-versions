@@ -6,22 +6,22 @@
     "client": {
       "sha1": "cc5cb23748614a6396ffb77427b4f11f4b6ae99b",
       "size": 16707275,
-      "url": "https://launcher.mojang.com/v1/objects/cc5cb23748614a6396ffb77427b4f11f4b6ae99b/client.jar"
+      "url": "https://piston-data.mojang.com/v1/objects/cc5cb23748614a6396ffb77427b4f11f4b6ae99b/client.jar"
     },
     "client_mappings": {
       "sha1": "20111b1ba89e3fd2dd4c06323f832cb9d5b42050",
       "size": 5337460,
-      "url": "https://launcher.mojang.com/v1/objects/20111b1ba89e3fd2dd4c06323f832cb9d5b42050/client.txt"
+      "url": "https://piston-data.mojang.com/v1/objects/20111b1ba89e3fd2dd4c06323f832cb9d5b42050/client.txt"
     },
     "server": {
       "sha1": "c0711cd9608d1af3d6f05ac423dd8f4199780225",
       "size": 36805562,
-      "url": "https://launcher.mojang.com/v1/objects/c0711cd9608d1af3d6f05ac423dd8f4199780225/server.jar"
+      "url": "https://piston-data.mojang.com/v1/objects/c0711cd9608d1af3d6f05ac423dd8f4199780225/server.jar"
     },
     "server_mappings": {
       "sha1": "69f8af8ba7a9957c36a3c19dac94ec80f02a334e",
       "size": 4148708,
-      "url": "https://launcher.mojang.com/v1/objects/69f8af8ba7a9957c36a3c19dac94ec80f02a334e/server.txt"
+      "url": "https://piston-data.mojang.com/v1/objects/69f8af8ba7a9957c36a3c19dac94ec80f02a334e/server.txt"
     }
   },
   "id": "af-2020",
@@ -61,6 +61,17 @@
     "oshi-project:oshi-core:1.1"
   ],
   "manifests": [
+    {
+      "assetHash": "f3c4aa96e12951cd2781b3e1c0e8ab82bf719cf2",
+      "assetIndex": "1.16",
+      "downloads": "6ac8f71fe5342e990b0effa4798b2945ac29c427",
+      "downloadsId": 1,
+      "hash": "b7a5541a248dc54bc08e6e0f874135c42e3bb235",
+      "lastModified": "2023-06-07T12:43:50+00:00",
+      "time": "2020-04-01T12:47:08+00:00",
+      "type": "snapshot",
+      "url": "../manifest/b/7/a5541a248dc54bc08e6e0f874135c42e3bb235/20w14infinite.json"
+    },
     {
       "assetHash": "28680197f74e5e1d55054f6a63509c8298d428f9",
       "assetIndex": "1.16",
@@ -137,17 +148,6 @@
       "time": "2020-04-01T12:47:08+00:00",
       "type": "snapshot",
       "url": "../manifest/9/d/030637006c9c92a5d18f4c78e066b32c8d13b3/20w14infinite.json"
-    },
-    {
-      "assetHash": "f3c4aa96e12951cd2781b3e1c0e8ab82bf719cf2",
-      "assetIndex": "1.16",
-      "downloads": "6ac8f71fe5342e990b0effa4798b2945ac29c427",
-      "downloadsId": 1,
-      "hash": "b7a5541a248dc54bc08e6e0f874135c42e3bb235",
-      "lastModified": "2023-06-07T12:43:50+00:00",
-      "time": "2020-04-01T12:47:08+00:00",
-      "type": "snapshot",
-      "url": "../manifest/b/7/a5541a248dc54bc08e6e0f874135c42e3bb235/20w14infinite.json"
     }
   ],
   "next": [],
