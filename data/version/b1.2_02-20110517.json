@@ -4,12 +4,12 @@
   "displayVersion": "Minecraft Beta 1.2_02",
   "downloads": {
     "client": {
-      "sha1": "551be32655e81a410d81e76259502dde83ebe525",
-      "size": 1182073,
-      "url": "https://archive.org/download/Minecraft-JE-Beta/b1.2_02/b1.2_02.jar"
+      "sha1": "a9b9522e7b4c1738209694e0546cb9f980401804",
+      "size": 1504433,
+      "url": "https://vault.omniarchive.uk/archive/java/misc/b1.2_02-20110517.jar"
     }
   },
-  "id": "b1.2_02",
+  "id": "b1.2_02-20110517",
   "libraries": [
     "net.java.jinput:jinput-platform:2.0.5",
     "net.java.jinput:jinput:2.0.5",
@@ -25,28 +25,20 @@
     {
       "assetHash": "c0fd82e8ce9fbc93119e40d96d5a4e62cfa3f729",
       "assetIndex": "legacy",
-      "downloads": "cd7c54e4b95e8f0299ff8c9654dc37260e9e8c16",
+      "downloads": "7c80488fb81c9acb7877556477557eee94fcb90f",
       "downloadsId": 1,
-      "hash": "fe312aee11af01de0e6686691e54011dedc509a4",
-      "time": "2016-02-02T15:37:47+00:00",
+      "hash": "5e9ec7351f6f3f5b566badacce068e6ebad225d2",
+      "time": "2024-06-27T17:46:00+00:00",
       "type": "old_beta",
-      "url": "../manifest/f/e/312aee11af01de0e6686691e54011dedc509a4/b1.2_02.json"
+      "url": "../manifest/5/e/9ec7351f6f3f5b566badacce068e6ebad225d2/b1.2_02-20110517.json"
     }
   ],
-  "next": [
-    "b1.3-1647",
-    "b1.3-1713",
-    "b1.2_02-20110517"
-  ],
-  "normalizedVersion": "1.0.0-beta.1.2.2",
+  "next": [],
+  "normalizedVersion": "1.0.0-beta.1.2.2+20110517",
   "previous": [
-    "b1.2_02-launcher"
+    "b1.2_02"
   ],
-  "protocol": {
-    "type": "modern",
-    "version": 8
-  },
-  "releaseTime": "2011-01-21T13:57:00+00:00",
+  "releaseTime": "2011-05-17T16:27:00+00:00",
   "server": false,
   "sharedMappings": false,
   "world": {
