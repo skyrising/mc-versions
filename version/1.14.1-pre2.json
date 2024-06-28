@@ -6,12 +6,12 @@
     "client": {
       "sha1": "4074da2da9e8207c022e5e12355d4fe87063b86b",
       "size": 18814953,
-      "url": "https://launcher.mojang.com/v1/objects/4074da2da9e8207c022e5e12355d4fe87063b86b/client.jar"
+      "url": "https://piston-data.mojang.com/v1/objects/4074da2da9e8207c022e5e12355d4fe87063b86b/client.jar"
     },
     "server": {
       "sha1": "ea3a8bee27e1ca4185bf703fb4e414800f533fc9",
       "size": 35927719,
-      "url": "https://launcher.mojang.com/v1/objects/ea3a8bee27e1ca4185bf703fb4e414800f533fc9/server.jar"
+      "url": "https://piston-data.mojang.com/v1/objects/ea3a8bee27e1ca4185bf703fb4e414800f533fc9/server.jar"
     }
   },
   "id": "1.14.1-pre2",
@@ -51,6 +51,17 @@
     "oshi-project:oshi-core:1.1"
   ],
   "manifests": [
+    {
+      "assetHash": "43b2f3021fe9f7d768378de95538e22da3ee8301",
+      "assetIndex": "1.14",
+      "downloads": "fae07c1e5fafec8005a9aba88cab13efaf2f2f94",
+      "downloadsId": 1,
+      "hash": "e9dacddd746c1cdf0548f634e12ba16fc6fc9786",
+      "lastModified": "2023-06-07T12:44:23+00:00",
+      "time": "2019-05-09T14:01:04+00:00",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/manifest/e/9/dacddd746c1cdf0548f634e12ba16fc6fc9786/1.14.1%20Pre-Release%202.json"
+    },
     {
       "assetHash": "d6c94fad4f7a03a8e46083c023926515fc0e551e",
       "assetIndex": "1.14",
@@ -94,17 +105,6 @@
       "time": "2019-05-09T14:01:04+00:00",
       "type": "snapshot",
       "url": "https://skyrising.github.io/mc-versions/manifest/6/9/39833d0d43dbea01fc3e26b6ed42066fe00ae5/1.14.1_Pre-Release_2.json"
-    },
-    {
-      "assetHash": "43b2f3021fe9f7d768378de95538e22da3ee8301",
-      "assetIndex": "1.14",
-      "downloads": "fae07c1e5fafec8005a9aba88cab13efaf2f2f94",
-      "downloadsId": 1,
-      "hash": "e9dacddd746c1cdf0548f634e12ba16fc6fc9786",
-      "lastModified": "2023-06-07T12:44:23+00:00",
-      "time": "2019-05-09T14:01:04+00:00",
-      "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/e/9/dacddd746c1cdf0548f634e12ba16fc6fc9786/1.14.1%20Pre-Release%202.json"
     }
   ],
   "next": [

@@ -6,12 +6,12 @@
     "client": {
       "sha1": "a040369aa294a5a42048d828b03592b54db6a8d3",
       "size": 16870823,
-      "url": "https://launcher.mojang.com/v1/objects/a040369aa294a5a42048d828b03592b54db6a8d3/client.jar"
+      "url": "https://piston-data.mojang.com/v1/objects/a040369aa294a5a42048d828b03592b54db6a8d3/client.jar"
     },
     "server": {
       "sha1": "b2dc0522b0802cbb8e81d1afd3e46be8819d3c1d",
       "size": 34477549,
-      "url": "https://launcher.mojang.com/v1/objects/b2dc0522b0802cbb8e81d1afd3e46be8819d3c1d/server.jar"
+      "url": "https://piston-data.mojang.com/v1/objects/b2dc0522b0802cbb8e81d1afd3e46be8819d3c1d/server.jar"
     }
   },
   "id": "18w43c",
@@ -55,6 +55,17 @@
   ],
   "manifests": [
     {
+      "assetHash": "43b2f3021fe9f7d768378de95538e22da3ee8301",
+      "assetIndex": "1.14",
+      "downloads": "dbd1df61f8c1f4647414da08f139279dbf674fe1",
+      "downloadsId": 1,
+      "hash": "985ddb1d128754e2a9024cc218daa667701639ef",
+      "lastModified": "2023-06-07T12:44:43+00:00",
+      "time": "2018-10-26T08:40:46+00:00",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/manifest/9/8/5ddb1d128754e2a9024cc218daa667701639ef/18w43c.json"
+    },
+    {
       "assetHash": "d6c94fad4f7a03a8e46083c023926515fc0e551e",
       "assetIndex": "1.14",
       "downloads": "dbd1df61f8c1f4647414da08f139279dbf674fe1",
@@ -97,17 +108,6 @@
       "time": "2018-10-26T08:40:46+00:00",
       "type": "snapshot",
       "url": "https://skyrising.github.io/mc-versions/manifest/5/a/df5d66e2a6e459e784d31aea61bf024da7101b/18w43c.json"
-    },
-    {
-      "assetHash": "43b2f3021fe9f7d768378de95538e22da3ee8301",
-      "assetIndex": "1.14",
-      "downloads": "dbd1df61f8c1f4647414da08f139279dbf674fe1",
-      "downloadsId": 1,
-      "hash": "985ddb1d128754e2a9024cc218daa667701639ef",
-      "lastModified": "2023-06-07T12:44:43+00:00",
-      "time": "2018-10-26T08:40:46+00:00",
-      "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/9/8/5ddb1d128754e2a9024cc218daa667701639ef/18w43c.json"
     }
   ],
   "next": [

@@ -6,22 +6,22 @@
     "client": {
       "sha1": "9dff887a5fe3109ed66dec7dc15878c1d4d3887c",
       "size": 21456693,
-      "url": "https://launcher.mojang.com/v1/objects/9dff887a5fe3109ed66dec7dc15878c1d4d3887c/client.jar"
+      "url": "https://piston-data.mojang.com/v1/objects/9dff887a5fe3109ed66dec7dc15878c1d4d3887c/client.jar"
     },
     "client_mappings": {
       "sha1": "3f9a517db9a51d10de3bfb5642c7134751586133",
       "size": 7119644,
-      "url": "https://launcher.mojang.com/v1/objects/3f9a517db9a51d10de3bfb5642c7134751586133/client.txt"
+      "url": "https://piston-data.mojang.com/v1/objects/3f9a517db9a51d10de3bfb5642c7134751586133/client.txt"
     },
     "server": {
       "sha1": "6cc6cac49cd862ad9005816eb1ffc7dd4bd066dd",
       "size": 45534685,
-      "url": "https://launcher.mojang.com/v1/objects/6cc6cac49cd862ad9005816eb1ffc7dd4bd066dd/server.jar"
+      "url": "https://piston-data.mojang.com/v1/objects/6cc6cac49cd862ad9005816eb1ffc7dd4bd066dd/server.jar"
     },
     "server_mappings": {
       "sha1": "820f381f8f120bcb25d0c0f1516ff9645efd8eb9",
       "size": 5548307,
-      "url": "https://launcher.mojang.com/v1/objects/820f381f8f120bcb25d0c0f1516ff9645efd8eb9/server.txt"
+      "url": "https://piston-data.mojang.com/v1/objects/820f381f8f120bcb25d0c0f1516ff9645efd8eb9/server.txt"
     }
   },
   "id": "1.19-pre2",
@@ -38,7 +38,7 @@
     "com.mojang:javabridge:1.2.24",
     "com.mojang:logging:1.0.0",
     "com.mojang:patchy:2.2.10",
-    "com.mojang:text2speech:1.13.9",
+    "com.mojang:text2speech:1.16.7",
     "commons-codec:commons-codec:1.15",
     "commons-io:commons-io:2.11.0",
     "commons-logging:commons-logging:1.2",
@@ -71,6 +71,28 @@
     "org.slf4j:slf4j-api:1.8.0-beta4"
   ],
   "manifests": [
+    {
+      "assetHash": "a9c8b05a8082a65678beda6dfa2b8f21fa627bce",
+      "assetIndex": "1.19",
+      "downloads": "90bd8514b688ce61da69f1115aae474123fd4cd9",
+      "downloadsId": 1,
+      "hash": "f2f49c297c47309a004952af9833b40a01da8f7c",
+      "lastModified": "2023-06-07T12:42:26+00:00",
+      "time": "2022-05-23T14:54:00+00:00",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/manifest/f/2/f49c297c47309a004952af9833b40a01da8f7c/1.19-pre2.json"
+    },
+    {
+      "assetHash": "f7033757bcb91e11d79f0f31330d680cc787631f",
+      "assetIndex": "1.19",
+      "downloads": "90bd8514b688ce61da69f1115aae474123fd4cd9",
+      "downloadsId": 1,
+      "hash": "c671bdbc77dcc9c2b2bb30143c0b669f8805ff6e",
+      "lastModified": "2023-04-26T12:19:20+00:00",
+      "time": "2022-05-23T14:54:00+00:00",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/manifest/c/6/71bdbc77dcc9c2b2bb30143c0b669f8805ff6e/1.19-pre2.json"
+    },
     {
       "assetHash": "f7033757bcb91e11d79f0f31330d680cc787631f",
       "assetIndex": "1.19",
@@ -290,28 +312,6 @@
       "time": "2022-05-23T14:54:00+00:00",
       "type": "snapshot",
       "url": "https://skyrising.github.io/mc-versions/manifest/5/4/7467043474427d349c3272e3d2f3b6b1b14fdc/1.19-pre2.json"
-    },
-    {
-      "assetHash": "a9c8b05a8082a65678beda6dfa2b8f21fa627bce",
-      "assetIndex": "1.19",
-      "downloads": "90bd8514b688ce61da69f1115aae474123fd4cd9",
-      "downloadsId": 1,
-      "hash": "f2f49c297c47309a004952af9833b40a01da8f7c",
-      "lastModified": "2023-06-07T12:42:26+00:00",
-      "time": "2022-05-23T14:54:00+00:00",
-      "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/f/2/f49c297c47309a004952af9833b40a01da8f7c/1.19-pre2.json"
-    },
-    {
-      "assetHash": "f7033757bcb91e11d79f0f31330d680cc787631f",
-      "assetIndex": "1.19",
-      "downloads": "90bd8514b688ce61da69f1115aae474123fd4cd9",
-      "downloadsId": 1,
-      "hash": "c671bdbc77dcc9c2b2bb30143c0b669f8805ff6e",
-      "lastModified": "2023-04-26T12:19:20+00:00",
-      "time": "2022-05-23T14:54:00+00:00",
-      "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/c/6/71bdbc77dcc9c2b2bb30143c0b669f8805ff6e/1.19-pre2.json"
     }
   ],
   "next": [

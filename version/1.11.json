@@ -6,12 +6,12 @@
     "client": {
       "sha1": "780e46b3a96091a7f42c028c615af45974629072",
       "size": 9183701,
-      "url": "https://launcher.mojang.com/v1/objects/780e46b3a96091a7f42c028c615af45974629072/client.jar"
+      "url": "https://piston-data.mojang.com/v1/objects/780e46b3a96091a7f42c028c615af45974629072/client.jar"
     },
     "server": {
       "sha1": "48820c84cb1ed502cb5b2fe23b8153d5e4fa61c0",
       "size": 9713666,
-      "url": "https://launcher.mojang.com/v1/objects/48820c84cb1ed502cb5b2fe23b8153d5e4fa61c0/server.jar"
+      "url": "https://piston-data.mojang.com/v1/objects/48820c84cb1ed502cb5b2fe23b8153d5e4fa61c0/server.jar"
     }
   },
   "id": "1.11",
@@ -51,6 +51,17 @@
   ],
   "manifests": [
     {
+      "assetHash": "c64959fe73672e9b053b157f57b6aba318d0b3b5",
+      "assetIndex": "1.11",
+      "downloads": "65cd6aa442545407b31003dc2ea2e9afc66a2ebb",
+      "downloadsId": 1,
+      "hash": "1bbb51c4572688cc2f30ce236f37a16abb7667b0",
+      "lastModified": "2023-06-07T12:45:27+00:00",
+      "time": "2016-11-14T14:34:40+00:00",
+      "type": "release",
+      "url": "https://skyrising.github.io/mc-versions/manifest/1/b/bb51c4572688cc2f30ce236f37a16abb7667b0/1.11.json"
+    },
+    {
       "assetHash": "4fa7f939c7e9902e6c674ad1d00358f8c08d7b8e",
       "assetIndex": "1.11",
       "downloads": "65cd6aa442545407b31003dc2ea2e9afc66a2ebb",
@@ -82,17 +93,6 @@
       "time": "2016-11-14T14:34:40+00:00",
       "type": "release",
       "url": "https://skyrising.github.io/mc-versions/manifest/0/7/80c892912703f81edbad3a782f5ed9d4686907/1.11.json"
-    },
-    {
-      "assetHash": "c64959fe73672e9b053b157f57b6aba318d0b3b5",
-      "assetIndex": "1.11",
-      "downloads": "65cd6aa442545407b31003dc2ea2e9afc66a2ebb",
-      "downloadsId": 1,
-      "hash": "1bbb51c4572688cc2f30ce236f37a16abb7667b0",
-      "lastModified": "2023-06-07T12:45:27+00:00",
-      "time": "2016-11-14T14:34:40+00:00",
-      "type": "release",
-      "url": "https://skyrising.github.io/mc-versions/manifest/1/b/bb51c4572688cc2f30ce236f37a16abb7667b0/1.11.json"
     }
   ],
   "next": [

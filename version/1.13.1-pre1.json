@@ -6,12 +6,12 @@
     "client": {
       "sha1": "7f7ae07cc319346b632f6c9f26ff8c67728b203c",
       "size": 16086871,
-      "url": "https://launcher.mojang.com/v1/objects/7f7ae07cc319346b632f6c9f26ff8c67728b203c/client.jar"
+      "url": "https://piston-data.mojang.com/v1/objects/7f7ae07cc319346b632f6c9f26ff8c67728b203c/client.jar"
     },
     "server": {
       "sha1": "988fec4e71e5fa1fc29a50230de05a11973d62ab",
       "size": 33831086,
-      "url": "https://launcher.mojang.com/v1/objects/988fec4e71e5fa1fc29a50230de05a11973d62ab/server.jar"
+      "url": "https://piston-data.mojang.com/v1/objects/988fec4e71e5fa1fc29a50230de05a11973d62ab/server.jar"
     }
   },
   "id": "1.13.1-pre1",
@@ -55,6 +55,17 @@
   ],
   "manifests": [
     {
+      "assetHash": "a8ef90d58d4a170f85e3439470c99c25aa8e988b",
+      "assetIndex": "1.13.1",
+      "downloads": "c5a7faad56138a70e7d4162a284cc3c472976cfe",
+      "downloadsId": 1,
+      "hash": "06d0450c59af6d1d616a70cff0616387e2463978",
+      "lastModified": "2023-06-07T12:44:47+00:00",
+      "time": "2018-08-16T13:08:44+00:00",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/manifest/0/6/d0450c59af6d1d616a70cff0616387e2463978/1.13.1-pre1.json"
+    },
+    {
       "assetHash": "6d78d53da5ac7158e2f725056312edf9871dfbb1",
       "assetIndex": "1.13.1",
       "downloads": "c5a7faad56138a70e7d4162a284cc3c472976cfe",
@@ -97,17 +108,6 @@
       "time": "2018-08-16T13:08:44+00:00",
       "type": "snapshot",
       "url": "https://skyrising.github.io/mc-versions/manifest/3/8/0447c7cab4e82b279cc21434e141ac187e594b/1.13.1-pre1.json"
-    },
-    {
-      "assetHash": "a8ef90d58d4a170f85e3439470c99c25aa8e988b",
-      "assetIndex": "1.13.1",
-      "downloads": "c5a7faad56138a70e7d4162a284cc3c472976cfe",
-      "downloadsId": 1,
-      "hash": "06d0450c59af6d1d616a70cff0616387e2463978",
-      "lastModified": "2023-06-07T12:44:47+00:00",
-      "time": "2018-08-16T13:08:44+00:00",
-      "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/0/6/d0450c59af6d1d616a70cff0616387e2463978/1.13.1-pre1.json"
     }
   ],
   "next": [

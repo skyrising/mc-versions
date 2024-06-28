@@ -6,12 +6,12 @@
     "client": {
       "sha1": "ace57ac6f4a661fc095241004c46d1305c573bc1",
       "size": 9296634,
-      "url": "https://launcher.mojang.com/v1/objects/ace57ac6f4a661fc095241004c46d1305c573bc1/client.jar"
+      "url": "https://piston-data.mojang.com/v1/objects/ace57ac6f4a661fc095241004c46d1305c573bc1/client.jar"
     },
     "server": {
       "sha1": "37441cab126ee2a4f292c9bf488c9dd800cff841",
       "size": 9726758,
-      "url": "https://launcher.mojang.com/v1/objects/37441cab126ee2a4f292c9bf488c9dd800cff841/server.jar"
+      "url": "https://piston-data.mojang.com/v1/objects/37441cab126ee2a4f292c9bf488c9dd800cff841/server.jar"
     }
   },
   "id": "17w06a",
@@ -51,6 +51,17 @@
   ],
   "manifests": [
     {
+      "assetHash": "c64959fe73672e9b053b157f57b6aba318d0b3b5",
+      "assetIndex": "1.11",
+      "downloads": "c979b1faa9d9d969b6c646082a345bb39d73c6d0",
+      "downloadsId": 1,
+      "hash": "9a7b7279d3db262ac4dbdc1bf296cc68e554512e",
+      "lastModified": "2023-06-07T12:45:26+00:00",
+      "time": "2017-02-08T13:16:29+00:00",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/manifest/9/a/7b7279d3db262ac4dbdc1bf296cc68e554512e/17w06a.json"
+    },
+    {
       "assetHash": "4fa7f939c7e9902e6c674ad1d00358f8c08d7b8e",
       "assetIndex": "1.11",
       "downloads": "c979b1faa9d9d969b6c646082a345bb39d73c6d0",
@@ -82,17 +93,6 @@
       "time": "2017-02-08T13:16:29+00:00",
       "type": "snapshot",
       "url": "https://skyrising.github.io/mc-versions/manifest/2/e/dcf23d52569cb69fce1fc3b1211b357fd1c954/17w06a.json"
-    },
-    {
-      "assetHash": "c64959fe73672e9b053b157f57b6aba318d0b3b5",
-      "assetIndex": "1.11",
-      "downloads": "c979b1faa9d9d969b6c646082a345bb39d73c6d0",
-      "downloadsId": 1,
-      "hash": "9a7b7279d3db262ac4dbdc1bf296cc68e554512e",
-      "lastModified": "2023-06-07T12:45:26+00:00",
-      "time": "2017-02-08T13:16:29+00:00",
-      "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/9/a/7b7279d3db262ac4dbdc1bf296cc68e554512e/17w06a.json"
     }
   ],
   "next": [

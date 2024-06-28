@@ -6,22 +6,22 @@
     "client": {
       "sha1": "3a008c012bd6bba29054701c7797493523660c57",
       "size": 18631012,
-      "url": "https://launcher.mojang.com/v1/objects/3a008c012bd6bba29054701c7797493523660c57/client.jar"
+      "url": "https://piston-data.mojang.com/v1/objects/3a008c012bd6bba29054701c7797493523660c57/client.jar"
     },
     "client_mappings": {
       "sha1": "1da14ea7ad1926496e9abdf38302766fb7dbe968",
       "size": 6221813,
-      "url": "https://launcher.mojang.com/v1/objects/1da14ea7ad1926496e9abdf38302766fb7dbe968/client.txt"
+      "url": "https://piston-data.mojang.com/v1/objects/1da14ea7ad1926496e9abdf38302766fb7dbe968/client.txt"
     },
     "server": {
       "sha1": "d5e31633d884e190e046b8645f802541bec2a5e9",
       "size": 38574315,
-      "url": "https://launcher.mojang.com/v1/objects/d5e31633d884e190e046b8645f802541bec2a5e9/server.jar"
+      "url": "https://piston-data.mojang.com/v1/objects/d5e31633d884e190e046b8645f802541bec2a5e9/server.jar"
     },
     "server_mappings": {
       "sha1": "64b781c30f7fa920c721838f53510861ca3f8d4a",
       "size": 4782723,
-      "url": "https://launcher.mojang.com/v1/objects/64b781c30f7fa920c721838f53510861ca3f8d4a/server.txt"
+      "url": "https://piston-data.mojang.com/v1/objects/64b781c30f7fa920c721838f53510861ca3f8d4a/server.txt"
     }
   },
   "id": "21w08a",
@@ -61,6 +61,17 @@
     "oshi-project:oshi-core:1.1"
   ],
   "manifests": [
+    {
+      "assetHash": "f425401a00adf0112fde624ee80c66333530f8a1",
+      "assetIndex": "1.17",
+      "downloads": "5f0e2ca5d5161b9306a0f4d048420bb62cddce0d",
+      "downloadsId": 1,
+      "hash": "2ff96db9db3ca7c6f830654a97688655d85b33e8",
+      "lastModified": "2023-06-07T12:43:16+00:00",
+      "time": "2021-02-24T14:38:51+00:00",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/manifest/2/f/f96db9db3ca7c6f830654a97688655d85b33e8/21w08a.json"
+    },
     {
       "assetHash": "368e1f53d7b7c96c9a882e170ae6c4356da97bcf",
       "assetIndex": "1.17",
@@ -423,17 +434,6 @@
       "time": "2021-02-24T14:38:51+00:00",
       "type": "snapshot",
       "url": "https://skyrising.github.io/mc-versions/manifest/d/5/2ba1c4fb2c7b9bbaafe8fb5e91ba11b9f5863f/21w08a.json"
-    },
-    {
-      "assetHash": "f425401a00adf0112fde624ee80c66333530f8a1",
-      "assetIndex": "1.17",
-      "downloads": "5f0e2ca5d5161b9306a0f4d048420bb62cddce0d",
-      "downloadsId": 1,
-      "hash": "2ff96db9db3ca7c6f830654a97688655d85b33e8",
-      "lastModified": "2023-06-07T12:43:16+00:00",
-      "time": "2021-02-24T14:38:51+00:00",
-      "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/2/f/f96db9db3ca7c6f830654a97688655d85b33e8/21w08a.json"
     }
   ],
   "next": [

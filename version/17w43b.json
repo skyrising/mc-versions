@@ -6,12 +6,12 @@
     "client": {
       "sha1": "d4316c6f1dda3211e8c990259d9be93fa1517055",
       "size": 10352221,
-      "url": "https://launcher.mojang.com/v1/objects/d4316c6f1dda3211e8c990259d9be93fa1517055/client.jar"
+      "url": "https://piston-data.mojang.com/v1/objects/d4316c6f1dda3211e8c990259d9be93fa1517055/client.jar"
     },
     "server": {
       "sha1": "0447782ac5280f8f981c3998609928984213a4c7",
       "size": 30257649,
-      "url": "https://launcher.mojang.com/v1/objects/0447782ac5280f8f981c3998609928984213a4c7/server.jar"
+      "url": "https://piston-data.mojang.com/v1/objects/0447782ac5280f8f981c3998609928984213a4c7/server.jar"
     }
   },
   "id": "17w43b",
@@ -51,6 +51,17 @@
     "oshi-project:oshi-core:1.1"
   ],
   "manifests": [
+    {
+      "assetHash": "a21e1ded1a24ea1548dd8db0cf30b6acb02655a9",
+      "assetIndex": "1.12",
+      "downloads": "e92656fd46d153c56d50df05e31aded5f583d00a",
+      "downloadsId": 1,
+      "hash": "cccf600d69a285f00c29b491126cd03bc7c2b2ba",
+      "lastModified": "2023-06-07T12:45:15+00:00",
+      "time": "2017-10-26T13:36:22+00:00",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/manifest/c/c/cf600d69a285f00c29b491126cd03bc7c2b2ba/17w43b.json"
+    },
     {
       "assetHash": "1584b57c1a0b5e593fad1f5b8f78536ca640547b",
       "assetIndex": "1.12",
@@ -94,17 +105,6 @@
       "time": "2017-10-26T13:36:22+00:00",
       "type": "snapshot",
       "url": "https://skyrising.github.io/mc-versions/manifest/1/0/4d13b507e1cd196acd83c42ae1956843a86b94/17w43b.json"
-    },
-    {
-      "assetHash": "a21e1ded1a24ea1548dd8db0cf30b6acb02655a9",
-      "assetIndex": "1.12",
-      "downloads": "e92656fd46d153c56d50df05e31aded5f583d00a",
-      "downloadsId": 1,
-      "hash": "cccf600d69a285f00c29b491126cd03bc7c2b2ba",
-      "lastModified": "2023-06-07T12:45:15+00:00",
-      "time": "2017-10-26T13:36:22+00:00",
-      "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/c/c/cf600d69a285f00c29b491126cd03bc7c2b2ba/17w43b.json"
     }
   ],
   "next": [

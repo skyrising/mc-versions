@@ -6,12 +6,12 @@
     "client": {
       "sha1": "3e61d082391ad8d25c40d5825cae8843cfeaf579",
       "size": 18792592,
-      "url": "https://launcher.mojang.com/v1/objects/3e61d082391ad8d25c40d5825cae8843cfeaf579/client.jar"
+      "url": "https://piston-data.mojang.com/v1/objects/3e61d082391ad8d25c40d5825cae8843cfeaf579/client.jar"
     },
     "server": {
       "sha1": "5d550762b9c82ab4fe9f259c14fcf7bf7ed8017a",
       "size": 35911232,
-      "url": "https://launcher.mojang.com/v1/objects/5d550762b9c82ab4fe9f259c14fcf7bf7ed8017a/server.jar"
+      "url": "https://piston-data.mojang.com/v1/objects/5d550762b9c82ab4fe9f259c14fcf7bf7ed8017a/server.jar"
     }
   },
   "id": "1.14-pre5",
@@ -51,6 +51,17 @@
     "oshi-project:oshi-core:1.1"
   ],
   "manifests": [
+    {
+      "assetHash": "43b2f3021fe9f7d768378de95538e22da3ee8301",
+      "assetIndex": "1.14",
+      "downloads": "7fe20e7afbabfeaccb06c551a6b568b6bf91b3d6",
+      "downloadsId": 1,
+      "hash": "0ba97850f0c9b8a0e5504c6968922c403482eab4",
+      "lastModified": "2023-06-07T12:44:25+00:00",
+      "time": "2019-04-18T11:05:19+00:00",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/manifest/0/b/a97850f0c9b8a0e5504c6968922c403482eab4/1.14%20Pre-Release%205.json"
+    },
     {
       "assetHash": "d6c94fad4f7a03a8e46083c023926515fc0e551e",
       "assetIndex": "1.14",
@@ -94,17 +105,6 @@
       "time": "2019-04-18T11:05:19+00:00",
       "type": "snapshot",
       "url": "https://skyrising.github.io/mc-versions/manifest/d/7/3ce9dbdf249f03a06e793e1e2de87d3521ce35/1.14_Pre-Release_5.json"
-    },
-    {
-      "assetHash": "43b2f3021fe9f7d768378de95538e22da3ee8301",
-      "assetIndex": "1.14",
-      "downloads": "7fe20e7afbabfeaccb06c551a6b568b6bf91b3d6",
-      "downloadsId": 1,
-      "hash": "0ba97850f0c9b8a0e5504c6968922c403482eab4",
-      "lastModified": "2023-06-07T12:44:25+00:00",
-      "time": "2019-04-18T11:05:19+00:00",
-      "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/0/b/a97850f0c9b8a0e5504c6968922c403482eab4/1.14%20Pre-Release%205.json"
     }
   ],
   "next": [

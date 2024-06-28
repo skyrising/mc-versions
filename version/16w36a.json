@@ -6,12 +6,12 @@
     "client": {
       "sha1": "f333065b34c818493736a90d5f559ee702957bd3",
       "size": 8894291,
-      "url": "https://launcher.mojang.com/v1/objects/f333065b34c818493736a90d5f559ee702957bd3/client.jar"
+      "url": "https://piston-data.mojang.com/v1/objects/f333065b34c818493736a90d5f559ee702957bd3/client.jar"
     },
     "server": {
       "sha1": "921580b22ce7d48f9d541364a3b04eebb680222e",
       "size": 9488664,
-      "url": "https://launcher.mojang.com/v1/objects/921580b22ce7d48f9d541364a3b04eebb680222e/server.jar"
+      "url": "https://piston-data.mojang.com/v1/objects/921580b22ce7d48f9d541364a3b04eebb680222e/server.jar"
     }
   },
   "id": "16w36a",
@@ -51,6 +51,17 @@
   ],
   "manifests": [
     {
+      "assetHash": "c64959fe73672e9b053b157f57b6aba318d0b3b5",
+      "assetIndex": "1.11",
+      "downloads": "64200ee0038ac7588f34af04852ebcbcf5780fd5",
+      "downloadsId": 1,
+      "hash": "4c1dcab979691862c1183f1a6cbfc41519ce60bf",
+      "lastModified": "2023-06-07T12:45:31+00:00",
+      "time": "2016-09-08T14:55:10+00:00",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/manifest/4/c/1dcab979691862c1183f1a6cbfc41519ce60bf/16w36a.json"
+    },
+    {
       "assetHash": "4fa7f939c7e9902e6c674ad1d00358f8c08d7b8e",
       "assetIndex": "1.11",
       "downloads": "64200ee0038ac7588f34af04852ebcbcf5780fd5",
@@ -82,17 +93,6 @@
       "time": "2016-09-08T14:55:10+00:00",
       "type": "snapshot",
       "url": "https://skyrising.github.io/mc-versions/manifest/9/4/f7b91701a59ae2c4aa6985505b181867b64f86/16w36a.json"
-    },
-    {
-      "assetHash": "c64959fe73672e9b053b157f57b6aba318d0b3b5",
-      "assetIndex": "1.11",
-      "downloads": "64200ee0038ac7588f34af04852ebcbcf5780fd5",
-      "downloadsId": 1,
-      "hash": "4c1dcab979691862c1183f1a6cbfc41519ce60bf",
-      "lastModified": "2023-06-07T12:45:31+00:00",
-      "time": "2016-09-08T14:55:10+00:00",
-      "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/4/c/1dcab979691862c1183f1a6cbfc41519ce60bf/16w36a.json"
     }
   ],
   "next": [

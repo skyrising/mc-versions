@@ -6,12 +6,12 @@
     "client": {
       "sha1": "2f67dfe8953299440d1902f9124f0f2c3a2c940f",
       "size": 8697592,
-      "url": "https://launcher.mojang.com/v1/objects/2f67dfe8953299440d1902f9124f0f2c3a2c940f/client.jar"
+      "url": "https://piston-data.mojang.com/v1/objects/2f67dfe8953299440d1902f9124f0f2c3a2c940f/client.jar"
     },
     "server": {
       "sha1": "b4d449cf2918e0f3bd8aa18954b916a4d1880f0d",
       "size": 8848015,
-      "url": "https://launcher.mojang.com/v1/objects/b4d449cf2918e0f3bd8aa18954b916a4d1880f0d/server.jar"
+      "url": "https://piston-data.mojang.com/v1/objects/b4d449cf2918e0f3bd8aa18954b916a4d1880f0d/server.jar"
     }
   },
   "id": "1.9",
@@ -50,6 +50,17 @@
   ],
   "manifests": [
     {
+      "assetHash": "d7aae43ea69d80cc3441bee4179abd791f6534cd",
+      "assetIndex": "1.9",
+      "downloads": "1edb52d20d90ac93c390857d7a72c3c730242abf",
+      "downloadsId": 1,
+      "hash": "71db48a3891f979efed8a1f3877009e5915db891",
+      "lastModified": "2023-06-07T12:45:41+00:00",
+      "time": "2016-02-29T13:49:54+00:00",
+      "type": "release",
+      "url": "https://skyrising.github.io/mc-versions/manifest/7/1/db48a3891f979efed8a1f3877009e5915db891/1.9.json"
+    },
+    {
       "assetHash": "06cc9a2c5ce504dc712ea2f699e4d645c48416dd",
       "assetIndex": "1.9",
       "downloads": "1edb52d20d90ac93c390857d7a72c3c730242abf",
@@ -81,17 +92,6 @@
       "time": "2016-02-29T13:49:54+00:00",
       "type": "release",
       "url": "https://skyrising.github.io/mc-versions/manifest/9/f/5cfe602dc316de0a799ebeed3dc8189e0e0229/1.9.json"
-    },
-    {
-      "assetHash": "d7aae43ea69d80cc3441bee4179abd791f6534cd",
-      "assetIndex": "1.9",
-      "downloads": "1edb52d20d90ac93c390857d7a72c3c730242abf",
-      "downloadsId": 1,
-      "hash": "71db48a3891f979efed8a1f3877009e5915db891",
-      "lastModified": "2023-06-07T12:45:41+00:00",
-      "time": "2016-02-29T13:49:54+00:00",
-      "type": "release",
-      "url": "https://skyrising.github.io/mc-versions/manifest/7/1/db48a3891f979efed8a1f3877009e5915db891/1.9.json"
     }
   ],
   "next": [

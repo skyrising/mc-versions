@@ -6,12 +6,12 @@
     "client": {
       "sha1": "3843fae71dd283e68897ead618255fa1ddcf4c8d",
       "size": 8746426,
-      "url": "https://launcher.mojang.com/v1/objects/3843fae71dd283e68897ead618255fa1ddcf4c8d/client.jar"
+      "url": "https://piston-data.mojang.com/v1/objects/3843fae71dd283e68897ead618255fa1ddcf4c8d/client.jar"
     },
     "server": {
       "sha1": "f51d9489706f603be6be9716407f1dab5f7f2733",
       "size": 8851148,
-      "url": "https://launcher.mojang.com/v1/objects/f51d9489706f603be6be9716407f1dab5f7f2733/server.jar"
+      "url": "https://piston-data.mojang.com/v1/objects/f51d9489706f603be6be9716407f1dab5f7f2733/server.jar"
     }
   },
   "id": "af-2016",
@@ -50,6 +50,17 @@
   ],
   "manifests": [
     {
+      "assetHash": "14f88f72996933276f8b62f6b678a8ba5b0ba57a",
+      "assetIndex": "1.9-aprilfools",
+      "downloads": "be5f11e54a1cc30f6d89913506dc915a743d5eeb",
+      "downloadsId": 1,
+      "hash": "7ff882cea3249795c652a66208ef6f3fdab7b03a",
+      "lastModified": "2023-06-07T12:45:39+00:00",
+      "time": "2016-03-31T16:18:53+00:00",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/manifest/7/f/f882cea3249795c652a66208ef6f3fdab7b03a/1.RV-Pre1.json"
+    },
+    {
       "assetHash": "68b0bc046b18d89a859e534271d3b0a8b040fe04",
       "assetIndex": "1.9-aprilfools",
       "downloads": "be5f11e54a1cc30f6d89913506dc915a743d5eeb",
@@ -81,17 +92,6 @@
       "time": "2016-03-31T16:18:53+00:00",
       "type": "snapshot",
       "url": "https://skyrising.github.io/mc-versions/manifest/2/9/3ab6e62dd4f88f866610862ebadf250fdcb123/1.RV-Pre1.json"
-    },
-    {
-      "assetHash": "14f88f72996933276f8b62f6b678a8ba5b0ba57a",
-      "assetIndex": "1.9-aprilfools",
-      "downloads": "be5f11e54a1cc30f6d89913506dc915a743d5eeb",
-      "downloadsId": 1,
-      "hash": "7ff882cea3249795c652a66208ef6f3fdab7b03a",
-      "lastModified": "2023-06-07T12:45:39+00:00",
-      "time": "2016-03-31T16:18:53+00:00",
-      "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/7/f/f882cea3249795c652a66208ef6f3fdab7b03a/1.RV-Pre1.json"
     }
   ],
   "next": [],

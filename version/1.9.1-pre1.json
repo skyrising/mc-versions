@@ -6,12 +6,12 @@
     "client": {
       "sha1": "23386d5d39a8376ee23e61d65f27fb52ed5bee2b",
       "size": 8698588,
-      "url": "https://launcher.mojang.com/v1/objects/23386d5d39a8376ee23e61d65f27fb52ed5bee2b/client.jar"
+      "url": "https://piston-data.mojang.com/v1/objects/23386d5d39a8376ee23e61d65f27fb52ed5bee2b/client.jar"
     },
     "server": {
       "sha1": "04a6ca96d4024050c50570731568b94771ff7910",
       "size": 8847726,
-      "url": "https://launcher.mojang.com/v1/objects/04a6ca96d4024050c50570731568b94771ff7910/server.jar"
+      "url": "https://piston-data.mojang.com/v1/objects/04a6ca96d4024050c50570731568b94771ff7910/server.jar"
     }
   },
   "id": "1.9.1-pre1",
@@ -50,6 +50,17 @@
   ],
   "manifests": [
     {
+      "assetHash": "d7aae43ea69d80cc3441bee4179abd791f6534cd",
+      "assetIndex": "1.9",
+      "downloads": "a98a9a71557f56663c98036475739b3c3cd4cb84",
+      "downloadsId": 1,
+      "hash": "b566a86f4a3dc7f26ef0e2969829e420ea25107f",
+      "lastModified": "2023-06-07T12:45:41+00:00",
+      "time": "2016-03-09T16:27:29+00:00",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/manifest/b/5/66a86f4a3dc7f26ef0e2969829e420ea25107f/1.9.1-pre1.json"
+    },
+    {
       "assetHash": "06cc9a2c5ce504dc712ea2f699e4d645c48416dd",
       "assetIndex": "1.9",
       "downloads": "a98a9a71557f56663c98036475739b3c3cd4cb84",
@@ -81,17 +92,6 @@
       "time": "2016-03-09T16:27:29+00:00",
       "type": "snapshot",
       "url": "https://skyrising.github.io/mc-versions/manifest/0/b/8fbf2cdd9737c4dcf5fd36c2f34e538a8ab53e/1.9.1-pre1.json"
-    },
-    {
-      "assetHash": "d7aae43ea69d80cc3441bee4179abd791f6534cd",
-      "assetIndex": "1.9",
-      "downloads": "a98a9a71557f56663c98036475739b3c3cd4cb84",
-      "downloadsId": 1,
-      "hash": "b566a86f4a3dc7f26ef0e2969829e420ea25107f",
-      "lastModified": "2023-06-07T12:45:41+00:00",
-      "time": "2016-03-09T16:27:29+00:00",
-      "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/b/5/66a86f4a3dc7f26ef0e2969829e420ea25107f/1.9.1-pre1.json"
     }
   ],
   "next": [

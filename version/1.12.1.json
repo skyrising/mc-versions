@@ -6,12 +6,12 @@
     "client": {
       "sha1": "83385d346cf7f97d1e447b888750fb88e9928b93",
       "size": 10178558,
-      "url": "https://launcher.mojang.com/v1/objects/83385d346cf7f97d1e447b888750fb88e9928b93/client.jar"
+      "url": "https://piston-data.mojang.com/v1/objects/83385d346cf7f97d1e447b888750fb88e9928b93/client.jar"
     },
     "server": {
       "sha1": "561c7b2d54bae80cc06b05d950633a9ac95da816",
       "size": 30221337,
-      "url": "https://launcher.mojang.com/v1/objects/561c7b2d54bae80cc06b05d950633a9ac95da816/server.jar"
+      "url": "https://piston-data.mojang.com/v1/objects/561c7b2d54bae80cc06b05d950633a9ac95da816/server.jar"
     }
   },
   "id": "1.12.1",
@@ -51,6 +51,17 @@
     "oshi-project:oshi-core:1.1"
   ],
   "manifests": [
+    {
+      "assetHash": "a21e1ded1a24ea1548dd8db0cf30b6acb02655a9",
+      "assetIndex": "1.12",
+      "downloads": "1e81394c4252d01dd75d34bf6da44c05a57dac3d",
+      "downloadsId": 1,
+      "hash": "39cfb28ea1708beb518d9440ca0b98c1396ce351",
+      "lastModified": "2023-06-07T12:45:17+00:00",
+      "time": "2017-08-03T12:40:39+00:00",
+      "type": "release",
+      "url": "https://skyrising.github.io/mc-versions/manifest/3/9/cfb28ea1708beb518d9440ca0b98c1396ce351/1.12.1.json"
+    },
     {
       "assetHash": "1584b57c1a0b5e593fad1f5b8f78536ca640547b",
       "assetIndex": "1.12",
@@ -94,17 +105,6 @@
       "time": "2017-08-03T12:40:39+00:00",
       "type": "release",
       "url": "https://skyrising.github.io/mc-versions/manifest/a/a/f19a83fec6018d43440d428f5704fe7be1edc2/1.12.1.json"
-    },
-    {
-      "assetHash": "a21e1ded1a24ea1548dd8db0cf30b6acb02655a9",
-      "assetIndex": "1.12",
-      "downloads": "1e81394c4252d01dd75d34bf6da44c05a57dac3d",
-      "downloadsId": 1,
-      "hash": "39cfb28ea1708beb518d9440ca0b98c1396ce351",
-      "lastModified": "2023-06-07T12:45:17+00:00",
-      "time": "2017-08-03T12:40:39+00:00",
-      "type": "release",
-      "url": "https://skyrising.github.io/mc-versions/manifest/3/9/cfb28ea1708beb518d9440ca0b98c1396ce351/1.12.1.json"
     }
   ],
   "next": [

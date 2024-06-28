@@ -6,17 +6,17 @@
     "client": {
       "sha1": "52b24b872a1280023f2d9dc44a70ad9a052a11f1",
       "size": 8653646,
-      "url": "https://launcher.mojang.com/v1/objects/52b24b872a1280023f2d9dc44a70ad9a052a11f1/client.jar"
+      "url": "https://piston-data.mojang.com/v1/objects/52b24b872a1280023f2d9dc44a70ad9a052a11f1/client.jar"
     },
     "server": {
       "sha1": "e376081a73fe429c23db41a99a68a4b04c53ba8e",
       "size": 8827037,
-      "url": "https://launcher.mojang.com/v1/objects/e376081a73fe429c23db41a99a68a4b04c53ba8e/server.jar"
+      "url": "https://piston-data.mojang.com/v1/objects/e376081a73fe429c23db41a99a68a4b04c53ba8e/server.jar"
     },
     "windows_server": {
       "sha1": "8d72d717ad9ae39afa3d19d62e0b5f5809a53010",
       "size": 9221277,
-      "url": "https://launcher.mojang.com/v1/objects/8d72d717ad9ae39afa3d19d62e0b5f5809a53010/windows_server.exe"
+      "url": "https://piston-data.mojang.com/v1/objects/8d72d717ad9ae39afa3d19d62e0b5f5809a53010/windows_server.exe"
     }
   },
   "id": "15w49b",
@@ -55,6 +55,17 @@
   ],
   "manifests": [
     {
+      "assetHash": "d7aae43ea69d80cc3441bee4179abd791f6534cd",
+      "assetIndex": "1.9",
+      "downloads": "ea7adb66e88a75f683c5cc05b8eacf0a91149190",
+      "downloadsId": 1,
+      "hash": "545d63411058441077818e78866ce45121dbeb6f",
+      "lastModified": "2023-06-07T12:45:47+00:00",
+      "time": "2015-12-03T15:23:22+00:00",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/manifest/5/4/5d63411058441077818e78866ce45121dbeb6f/15w49b.json"
+    },
+    {
       "assetHash": "06cc9a2c5ce504dc712ea2f699e4d645c48416dd",
       "assetIndex": "1.9",
       "downloads": "ea7adb66e88a75f683c5cc05b8eacf0a91149190",
@@ -86,17 +97,6 @@
       "time": "2015-12-03T15:23:22+00:00",
       "type": "snapshot",
       "url": "https://skyrising.github.io/mc-versions/manifest/1/1/ed2f1ee3a2aee647cae8982c009256b598c3ba/15w49b.json"
-    },
-    {
-      "assetHash": "d7aae43ea69d80cc3441bee4179abd791f6534cd",
-      "assetIndex": "1.9",
-      "downloads": "ea7adb66e88a75f683c5cc05b8eacf0a91149190",
-      "downloadsId": 1,
-      "hash": "545d63411058441077818e78866ce45121dbeb6f",
-      "lastModified": "2023-06-07T12:45:47+00:00",
-      "time": "2015-12-03T15:23:22+00:00",
-      "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/5/4/5d63411058441077818e78866ce45121dbeb6f/15w49b.json"
     }
   ],
   "next": [

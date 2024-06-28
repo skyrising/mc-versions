@@ -6,22 +6,22 @@
     "client": {
       "sha1": "85ab5e9725b6fa8078c6bd9df2697221fbe34b40",
       "size": 21377069,
-      "url": "https://launcher.mojang.com/v1/objects/85ab5e9725b6fa8078c6bd9df2697221fbe34b40/client.jar"
+      "url": "https://piston-data.mojang.com/v1/objects/85ab5e9725b6fa8078c6bd9df2697221fbe34b40/client.jar"
     },
     "client_mappings": {
       "sha1": "798b951eeff3b86e5a0cd4a81f415b5f465808f2",
       "size": 7072644,
-      "url": "https://launcher.mojang.com/v1/objects/798b951eeff3b86e5a0cd4a81f415b5f465808f2/client.txt"
+      "url": "https://piston-data.mojang.com/v1/objects/798b951eeff3b86e5a0cd4a81f415b5f465808f2/client.txt"
     },
     "server": {
       "sha1": "d3259a8939a724c78ebbb995dfc31c1c364464e3",
       "size": 45434588,
-      "url": "https://launcher.mojang.com/v1/objects/d3259a8939a724c78ebbb995dfc31c1c364464e3/server.jar"
+      "url": "https://piston-data.mojang.com/v1/objects/d3259a8939a724c78ebbb995dfc31c1c364464e3/server.jar"
     },
     "server_mappings": {
       "sha1": "001ab71a16b49623990eaecbb02ac43140cf7827",
       "size": 5511844,
-      "url": "https://launcher.mojang.com/v1/objects/001ab71a16b49623990eaecbb02ac43140cf7827/server.txt"
+      "url": "https://piston-data.mojang.com/v1/objects/001ab71a16b49623990eaecbb02ac43140cf7827/server.txt"
     }
   },
   "id": "22w18a",
@@ -38,7 +38,7 @@
     "com.mojang:javabridge:1.2.24",
     "com.mojang:logging:1.0.0",
     "com.mojang:patchy:2.2.10",
-    "com.mojang:text2speech:1.13.9",
+    "com.mojang:text2speech:1.16.7",
     "commons-codec:commons-codec:1.15",
     "commons-io:commons-io:2.11.0",
     "commons-logging:commons-logging:1.2",
@@ -72,6 +72,28 @@
     "org.slf4j:slf4j-api:1.8.0-beta4"
   ],
   "manifests": [
+    {
+      "assetHash": "a9c8b05a8082a65678beda6dfa2b8f21fa627bce",
+      "assetIndex": "1.19",
+      "downloads": "bab745431d03a0e46b5e75637b03bf7e0356a851",
+      "downloadsId": 1,
+      "hash": "5c0c5e124e56ae5266c5a0329418d5b3e7a75c5c",
+      "lastModified": "2023-06-07T12:42:28+00:00",
+      "time": "2022-05-04T14:41:35+00:00",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/manifest/5/c/0c5e124e56ae5266c5a0329418d5b3e7a75c5c/22w18a.json"
+    },
+    {
+      "assetHash": "f7033757bcb91e11d79f0f31330d680cc787631f",
+      "assetIndex": "1.19",
+      "downloads": "bab745431d03a0e46b5e75637b03bf7e0356a851",
+      "downloadsId": 1,
+      "hash": "498215be0264732c39ff92b7b8c3a7f502509e04",
+      "lastModified": "2023-04-26T12:19:22+00:00",
+      "time": "2022-05-04T14:41:35+00:00",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/manifest/4/9/8215be0264732c39ff92b7b8c3a7f502509e04/22w18a.json"
+    },
     {
       "assetHash": "f7033757bcb91e11d79f0f31330d680cc787631f",
       "assetIndex": "1.19",
@@ -324,28 +346,6 @@
       "time": "2022-05-04T14:41:35+00:00",
       "type": "snapshot",
       "url": "https://skyrising.github.io/mc-versions/manifest/a/1/cc2dec88474fdd90e4f9f1aea02b9565cb9289/22w18a.json"
-    },
-    {
-      "assetHash": "a9c8b05a8082a65678beda6dfa2b8f21fa627bce",
-      "assetIndex": "1.19",
-      "downloads": "bab745431d03a0e46b5e75637b03bf7e0356a851",
-      "downloadsId": 1,
-      "hash": "5c0c5e124e56ae5266c5a0329418d5b3e7a75c5c",
-      "lastModified": "2023-06-07T12:42:28+00:00",
-      "time": "2022-05-04T14:41:35+00:00",
-      "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/5/c/0c5e124e56ae5266c5a0329418d5b3e7a75c5c/22w18a.json"
-    },
-    {
-      "assetHash": "f7033757bcb91e11d79f0f31330d680cc787631f",
-      "assetIndex": "1.19",
-      "downloads": "bab745431d03a0e46b5e75637b03bf7e0356a851",
-      "downloadsId": 1,
-      "hash": "498215be0264732c39ff92b7b8c3a7f502509e04",
-      "lastModified": "2023-04-26T12:19:22+00:00",
-      "time": "2022-05-04T14:41:35+00:00",
-      "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/4/9/8215be0264732c39ff92b7b8c3a7f502509e04/22w18a.json"
     }
   ],
   "next": [

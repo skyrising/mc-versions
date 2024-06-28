@@ -6,12 +6,12 @@
     "client": {
       "sha1": "81b626ebd0efa06f07b3f0dec1af34989ab61fd0",
       "size": 8698063,
-      "url": "https://launcher.mojang.com/v1/objects/81b626ebd0efa06f07b3f0dec1af34989ab61fd0/client.jar"
+      "url": "https://piston-data.mojang.com/v1/objects/81b626ebd0efa06f07b3f0dec1af34989ab61fd0/client.jar"
     },
     "server": {
       "sha1": "db995628b109fd83953ffadb749c2432fac70d9e",
       "size": 8848702,
-      "url": "https://launcher.mojang.com/v1/objects/db995628b109fd83953ffadb749c2432fac70d9e/server.jar"
+      "url": "https://piston-data.mojang.com/v1/objects/db995628b109fd83953ffadb749c2432fac70d9e/server.jar"
     }
   },
   "id": "1.9-pre3",
@@ -50,6 +50,17 @@
   ],
   "manifests": [
     {
+      "assetHash": "d7aae43ea69d80cc3441bee4179abd791f6534cd",
+      "assetIndex": "1.9",
+      "downloads": "a7c76e1aa9f1924739b1f6c5cd0ae891301185d9",
+      "downloadsId": 1,
+      "hash": "7d91c1d33da9f9d9a9093066a1d16e497db27e08",
+      "lastModified": "2023-06-07T12:45:42+00:00",
+      "time": "2016-02-24T15:52:36+00:00",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/manifest/7/d/91c1d33da9f9d9a9093066a1d16e497db27e08/1.9-pre3.json"
+    },
+    {
       "assetHash": "06cc9a2c5ce504dc712ea2f699e4d645c48416dd",
       "assetIndex": "1.9",
       "downloads": "a7c76e1aa9f1924739b1f6c5cd0ae891301185d9",
@@ -81,17 +92,6 @@
       "time": "2016-02-24T15:52:36+00:00",
       "type": "snapshot",
       "url": "https://skyrising.github.io/mc-versions/manifest/3/9/09edf5d77361cdc8fbab9ed151d1a710c0c323/1.9-pre3.json"
-    },
-    {
-      "assetHash": "d7aae43ea69d80cc3441bee4179abd791f6534cd",
-      "assetIndex": "1.9",
-      "downloads": "a7c76e1aa9f1924739b1f6c5cd0ae891301185d9",
-      "downloadsId": 1,
-      "hash": "7d91c1d33da9f9d9a9093066a1d16e497db27e08",
-      "lastModified": "2023-06-07T12:45:42+00:00",
-      "time": "2016-02-24T15:52:36+00:00",
-      "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/7/d/91c1d33da9f9d9a9093066a1d16e497db27e08/1.9-pre3.json"
     }
   ],
   "next": [

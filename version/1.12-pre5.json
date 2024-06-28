@@ -6,12 +6,12 @@
     "client": {
       "sha1": "87f980355264f222daa292528116281d62231402",
       "size": 10158482,
-      "url": "https://launcher.mojang.com/v1/objects/87f980355264f222daa292528116281d62231402/client.jar"
+      "url": "https://piston-data.mojang.com/v1/objects/87f980355264f222daa292528116281d62231402/client.jar"
     },
     "server": {
       "sha1": "40e76b2836c92cd9e05af61bb64046c8650c088d",
       "size": 30199910,
-      "url": "https://launcher.mojang.com/v1/objects/40e76b2836c92cd9e05af61bb64046c8650c088d/server.jar"
+      "url": "https://piston-data.mojang.com/v1/objects/40e76b2836c92cd9e05af61bb64046c8650c088d/server.jar"
     }
   },
   "id": "1.12-pre5",
@@ -51,6 +51,17 @@
     "oshi-project:oshi-core:1.1"
   ],
   "manifests": [
+    {
+      "assetHash": "a21e1ded1a24ea1548dd8db0cf30b6acb02655a9",
+      "assetIndex": "1.12",
+      "downloads": "f806d5c89319bb82940b1f33393078f90b31476f",
+      "downloadsId": 1,
+      "hash": "6722070a813ef37f48ae141f15cff686b4e5ff56",
+      "lastModified": "2023-06-07T12:45:20+00:00",
+      "time": "2017-05-19T07:43:28+00:00",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/manifest/6/7/22070a813ef37f48ae141f15cff686b4e5ff56/1.12-pre5.json"
+    },
     {
       "assetHash": "1584b57c1a0b5e593fad1f5b8f78536ca640547b",
       "assetIndex": "1.12",
@@ -94,17 +105,6 @@
       "time": "2017-05-19T07:43:28+00:00",
       "type": "snapshot",
       "url": "https://skyrising.github.io/mc-versions/manifest/c/9/e56ce5743729af4446894a4c9239d57833c61a/1.12-pre5.json"
-    },
-    {
-      "assetHash": "a21e1ded1a24ea1548dd8db0cf30b6acb02655a9",
-      "assetIndex": "1.12",
-      "downloads": "f806d5c89319bb82940b1f33393078f90b31476f",
-      "downloadsId": 1,
-      "hash": "6722070a813ef37f48ae141f15cff686b4e5ff56",
-      "lastModified": "2023-06-07T12:45:20+00:00",
-      "time": "2017-05-19T07:43:28+00:00",
-      "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/6/7/22070a813ef37f48ae141f15cff686b4e5ff56/1.12-pre5.json"
     }
   ],
   "next": [
