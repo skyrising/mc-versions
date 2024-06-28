@@ -51,6 +51,7 @@ interface BaseVersionManifest {
 interface DownloadInfo {
     sha1: string
     url: string
+    size?: number
 }
 
 interface Library {

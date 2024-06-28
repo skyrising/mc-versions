@@ -39,7 +39,7 @@ if (import.meta.main) {
     await writeUpdatedData(await updateData(data))
 }
 
-async function loadData(): Promise<Database> {
+export async function loadData(): Promise<Database> {
     return {
         omniVersions: await readJsonFile('omni_id.json'),
         renameMap: await readJsonFile('rename.json'),
@@ -100,7 +100,7 @@ function hashFromFileName(file: string) {
     return match && match[1] + match[2] + match[3]
 }
 
-async function collectVersions(hashMap: HashMap<string>, oldOmniVersions: HashMap<VersionId>, renameMap: Record<string, string>, lastModified: HashMap<Date|null>) {
+export async function collectVersions(hashMap: HashMap<string>, oldOmniVersions: HashMap<VersionId>, renameMap: Record<string, string>, lastModified: HashMap<Date|null>) {
     const byId: Record<string, Record<string, TempVersionManifest>> = {}
     const allVersions = []
     const files = readdirRecursive(MANIFEST_DIR)
