@@ -35,9 +35,9 @@ for (const sheet of spreadsheet.sheets!) {
             if (title[i] && rawValue !== undefined) data[title[i]!] = rawValue
         }
         const sheetId = sheet.properties?.sheetId
-        const platform: string|undefined = data?.platform
-        if (sheetId === 872531987 || sheetId === 804883379 || platform?.startsWith('Client')) data.type = 'client'
-        else if (sheetId === 2126693093 || sheetId === 59329510 || platform?.startsWith('Server')) data.type = 'server'
+        const type: string|undefined = data?.type
+        if (sheetId === 872531987 || sheetId === 804883379 || type?.startsWith('Client')) data.type = 'client'
+        else if (sheetId === 2126693093 || sheetId === 59329510 || type?.startsWith('Server')) data.type = 'server'
         if (!data.id && !data.version) data = {...previous, ...data}
         omniVersions.push(data)
         //console.log(JSON.stringify(data))
