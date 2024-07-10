@@ -72,6 +72,7 @@ async function updateData(data: Database): Promise<UpdatedDatabase> {
     const {newManifest, versionsById} = updateMainManifest(versions)
     const {normalizedVersions, displayVersions, protocols, byReleaseTarget} = updateVersionDetails(versions, versionsById)
     const newOmniVersions = await sortAndWriteVersionFiles(VERSION_DIR, versions, allVersions, newManifest)
+    await calculateMainManifestHashes(newManifest)
     return {
         ...data,
         omniVersions: newOmniVersions,
@@ -81,6 +82,17 @@ async function updateData(data: Database): Promise<UpdatedDatabase> {
         byReleaseTarget,
         normalizedVersions,
         displayVersions
+    }
+}
+
+async function calculateMainManifestHashes(newManifest: MainManifest) {
+    for (let version of newManifest.versions) {
+        const manifestFile = path.resolve(VERSION_DIR, 'manifest', version.id + '.json')
+        version.sha1 = sha1(await Deno.readTextFile(manifestFile))
+        if (version.details) {
+            const detailsFile = path.resolve(VERSION_DIR, `${version.id}.json`)
+            version.detailsHash = sha1(await Deno.readTextFile(detailsFile))
+        }
     }
 }
 
@@ -500,7 +512,7 @@ async function updateVersion(id: VersionId, manifests: Array<TempVersionManifest
         ...m,
         id: undefined,
         launcher: undefined,
-        url: path.relative(VERSION_DIR, m.url),
+        url: path.relative(VERSION_DIR, m.url).replaceAll("\\", "/"),
         releaseTime: undefined,
         downloads: m.downloadsHash,
         downloadsHash: undefined,
@@ -511,10 +523,12 @@ async function updateVersion(id: VersionId, manifests: Array<TempVersionManifest
     return {
         info: {
             id, type,
-            url: path.relative(DATA_DIR, path.resolve(VERSION_DIR, 'manifest', id + '.json')),
+            url: path.relative(DATA_DIR, path.resolve(VERSION_DIR, 'manifest', id + '.json')).replaceAll("\\", "/"),
+            sha1: null,
             time,
             releaseTime: data.releaseTime,
-            details: path.relative(DATA_DIR, file)
+            details: path.relative(DATA_DIR, file).replaceAll("\\", "/"),
+            detailsHash: null
         },
         data,
         file,

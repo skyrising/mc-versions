@@ -9,9 +9,11 @@ interface ShortVersion {
     id: VersionId
     type: string
     url: string
+    sha1: string
     time: string
     releaseTime: string
     details?: string
+    detailsHash?: string
 }
 
 type ProtocolType = 'classic' | 'alpha' | 'modern' | 'netty' | 'netty-snapshot'
@@ -140,9 +142,11 @@ type VersionInfo = {
         id: string
         type: string
         url: string
+        sha1: string
         time: string
         releaseTime: string
         details: string
+        detailsHash: string
     }
     data: VersionData
     file: string
