@@ -512,7 +512,7 @@ async function updateVersion(id: VersionId, manifests: Array<TempVersionManifest
         ...m,
         id: undefined,
         launcher: undefined,
-        url: path.relative(VERSION_DIR, m.url).replaceAll("\\", "/"),
+        url: path.relative(VERSION_DIR, m.url),
         releaseTime: undefined,
         downloads: m.downloadsHash,
         downloadsHash: undefined,
@@ -523,11 +523,11 @@ async function updateVersion(id: VersionId, manifests: Array<TempVersionManifest
     return {
         info: {
             id, type,
-            url: path.relative(DATA_DIR, path.resolve(VERSION_DIR, 'manifest', id + '.json')).replaceAll("\\", "/"),
+            url: path.relative(DATA_DIR, path.resolve(VERSION_DIR, 'manifest', id + '.json')),
             sha1: null,
             time,
             releaseTime: data.releaseTime,
-            details: path.relative(DATA_DIR, file).replaceAll("\\", "/"),
+            details: path.relative(DATA_DIR, file),
             detailsHash: null
         },
         data,
