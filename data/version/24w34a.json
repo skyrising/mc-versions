@@ -1,0 +1,118 @@
+{
+  "$schema": "https://skyrising.github.io/mc-versions/schemas/version.json",
+  "client": true,
+  "displayVersion": "24w34a",
+  "downloads": {
+    "client": {
+      "sha1": "f252db3368f588fa8c946dcbeed712bfe109e816",
+      "size": 27253136,
+      "url": "https://piston-data.mojang.com/v1/objects/f252db3368f588fa8c946dcbeed712bfe109e816/client.jar"
+    },
+    "client_mappings": {
+      "sha1": "852be4d787be546e91b5c9b611c9cb692d8e6922",
+      "size": 9875066,
+      "url": "https://piston-data.mojang.com/v1/objects/852be4d787be546e91b5c9b611c9cb692d8e6922/client.txt"
+    },
+    "server": {
+      "sha1": "ff16e26392a5ced7cfe52ffdc5461cd646b9b65d",
+      "size": 55767157,
+      "url": "https://piston-data.mojang.com/v1/objects/ff16e26392a5ced7cfe52ffdc5461cd646b9b65d/server.jar"
+    },
+    "server_mappings": {
+      "sha1": "9a187ebcd24ee307f7d635db94d7f9b814cd02f6",
+      "size": 7561202,
+      "url": "https://piston-data.mojang.com/v1/objects/9a187ebcd24ee307f7d635db94d7f9b814cd02f6/server.txt"
+    }
+  },
+  "id": "24w34a",
+  "libraries": [
+    "com.fasterxml.jackson.core:jackson-annotations:2.13.4",
+    "com.fasterxml.jackson.core:jackson-core:2.13.4",
+    "com.fasterxml.jackson.core:jackson-databind:2.13.4.2",
+    "com.github.oshi:oshi-core:6.4.10",
+    "com.github.stephenc.jcip:jcip-annotations:1.0-1",
+    "com.google.code.gson:gson:2.10.1",
+    "com.google.guava:failureaccess:1.0.1",
+    "com.google.guava:guava:32.1.2-jre",
+    "com.ibm.icu:icu4j:73.2",
+    "com.microsoft.azure:msal4j:1.15.0",
+    "com.mojang:authlib:6.0.55",
+    "com.mojang:blocklist:1.0.10",
+    "com.mojang:brigadier:1.3.10",
+    "com.mojang:datafixerupper:8.0.16",
+    "com.mojang:logging:1.2.7",
+    "com.mojang:patchy:2.2.10",
+    "com.mojang:text2speech:1.17.9",
+    "com.nimbusds:content-type:2.3",
+    "com.nimbusds:lang-tag:1.7",
+    "com.nimbusds:nimbus-jose-jwt:9.37.3",
+    "com.nimbusds:oauth2-oidc-sdk:11.9.1",
+    "commons-codec:commons-codec:1.16.0",
+    "commons-io:commons-io:2.15.1",
+    "commons-logging:commons-logging:1.2",
+    "io.netty:netty-buffer:4.1.97.Final",
+    "io.netty:netty-codec:4.1.97.Final",
+    "io.netty:netty-common:4.1.97.Final",
+    "io.netty:netty-handler:4.1.97.Final",
+    "io.netty:netty-resolver:4.1.97.Final",
+    "io.netty:netty-transport-classes-epoll:4.1.97.Final",
+    "io.netty:netty-transport-native-unix-common:4.1.97.Final",
+    "io.netty:netty-transport:4.1.97.Final",
+    "it.unimi.dsi:fastutil:8.5.12",
+    "net.java.dev.jna:jna-platform:5.14.0",
+    "net.java.dev.jna:jna:5.14.0",
+    "net.minidev:accessors-smart:2.5.0",
+    "net.minidev:json-smart:2.5.0",
+    "net.sf.jopt-simple:jopt-simple:5.0.4",
+    "org.apache.commons:commons-compress:1.26.0",
+    "org.apache.commons:commons-lang3:3.14.0",
+    "org.apache.httpcomponents:httpclient:4.5.13",
+    "org.apache.httpcomponents:httpcore:4.4.16",
+    "org.apache.logging.log4j:log4j-api:2.22.1",
+    "org.apache.logging.log4j:log4j-core:2.22.1",
+    "org.apache.logging.log4j:log4j-slf4j2-impl:2.22.1",
+    "org.jcraft:jorbis:0.0.17",
+    "org.joml:joml:1.10.5",
+    "org.lwjgl:lwjgl-freetype:3.3.3",
+    "org.lwjgl:lwjgl-glfw:3.3.3",
+    "org.lwjgl:lwjgl-jemalloc:3.3.3",
+    "org.lwjgl:lwjgl-openal:3.3.3",
+    "org.lwjgl:lwjgl-opengl:3.3.3",
+    "org.lwjgl:lwjgl-stb:3.3.3",
+    "org.lwjgl:lwjgl-tinyfd:3.3.3",
+    "org.lwjgl:lwjgl:3.3.3",
+    "org.lz4:lz4-java:1.8.0",
+    "org.ow2.asm:asm:9.3",
+    "org.slf4j:slf4j-api:2.0.9"
+  ],
+  "manifests": [
+    {
+      "assetHash": "7539055a29f7fe83d630a51a8bbbd132ede6af75",
+      "assetIndex": "17",
+      "downloads": "ad9aa188eb743a17ee3314f5bcbcb7ded59604e4",
+      "downloadsId": 1,
+      "hash": "e3b41c0c9f0ffb9adff1fa1f977fa00f38ea81ea",
+      "lastModified": "2024-08-21T14:24:46+00:00",
+      "time": "2024-08-21T14:14:13+00:00",
+      "type": "snapshot",
+      "url": "../manifest/e/3/b41c0c9f0ffb9adff1fa1f977fa00f38ea81ea/24w34a.json"
+    }
+  ],
+  "next": [],
+  "normalizedVersion": "1.22.0-alpha.24.34.a",
+  "previous": [
+    "24w33a"
+  ],
+  "protocol": {
+    "type": "netty-snapshot",
+    "version": 206
+  },
+  "releaseTarget": "1.22",
+  "releaseTime": "2024-08-21T14:14:13+00:00",
+  "server": true,
+  "sharedMappings": true,
+  "world": {
+    "format": "anvil",
+    "version": 4060
+  }
+}
