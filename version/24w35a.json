@@ -98,7 +98,9 @@
       "url": "https://skyrising.github.io/mc-versions/manifest/3/9/a3062ea863f784cbb67feb9aaeff81c2e207d1/24w35a.json"
     }
   ],
-  "next": [],
+  "next": [
+    "24w36a"
+  ],
   "normalizedVersion": "1.22.0-alpha.24.35.a",
   "previous": [
     "24w34a"
