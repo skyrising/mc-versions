@@ -6220,5 +6220,11 @@
     "type": "snapshot",
     "normalizedVersion": "1.22.0-alpha.24.40.a",
     "releaseTime": "2024-10-02T13:15:42+00:00"
+  },
+  {
+    "id": "1.21.2-pre1",
+    "type": "pre-release",
+    "normalizedVersion": "1.21.2-pre.1",
+    "releaseTime": "2024-10-08T13:22:12+00:00"
   }
 ]
