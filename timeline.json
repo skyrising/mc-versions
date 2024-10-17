@@ -6250,5 +6250,11 @@
     "type": "pre-release",
     "normalizedVersion": "1.21.2-pre.5",
     "releaseTime": "2024-10-16T13:30:35+00:00"
+  },
+  {
+    "id": "1.21.2-rc1",
+    "type": "release-candidate",
+    "normalizedVersion": "1.21.2-rc.1",
+    "releaseTime": "2024-10-17T12:43:18+00:00"
   }
 ]
