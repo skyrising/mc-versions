@@ -6,10 +6,18 @@
     "alpha_server": "server-a0.2.8",
     "old_beta": "b1.9-pre6",
     "snapshot": "1.21.2-rc2",
-    "release": "1.21.1",
+    "release": "1.21.2",
     "pending": "1.19_deep_dark_experimental_snapshot-1"
   },
   "versions": [
+    {
+      "id": "1.21.2",
+      "type": "release",
+      "url": "https://skyrising.github.io/mc-versions/version/manifest/1.21.2.json",
+      "time": "2024-10-22T09:58:55+00:00",
+      "releaseTime": "2024-10-22T09:58:55+00:00",
+      "details": "https://skyrising.github.io/mc-versions/version/1.21.2.json"
+    },
     {
       "id": "1.21.2-rc2",
       "type": "snapshot",
