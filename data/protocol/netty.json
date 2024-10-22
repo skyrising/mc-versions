@@ -3498,6 +3498,15 @@
       ]
     },
     {
+      "version": 768,
+      "clients": [
+        "1.21.2"
+      ],
+      "servers": [
+        "1.21.2"
+      ]
+    },
+    {
       "version": 801,
       "clients": [
         "combat-6"
