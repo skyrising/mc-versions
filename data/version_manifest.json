@@ -5,11 +5,19 @@
     "classic_server": "server-c1.10.1",
     "alpha_server": "server-a0.2.8",
     "old_beta": "b1.9-pre6",
-    "snapshot": "24w44a",
+    "snapshot": "24w45a",
     "release": "1.21.3",
     "pending": "1.19_deep_dark_experimental_snapshot-1"
   },
   "versions": [
+    {
+      "id": "24w45a",
+      "type": "snapshot",
+      "url": "version/manifest/24w45a.json",
+      "time": "2024-11-06T13:31:58+00:00",
+      "releaseTime": "2024-11-06T13:31:58+00:00",
+      "details": "version/24w45a.json"
+    },
     {
       "id": "24w44a",
       "type": "snapshot",
