@@ -1,6 +1,7 @@
 {
   "$schema": "https://skyrising.github.io/mc-versions/schemas/version.json",
   "client": true,
+  "displayVersion": "1.21.4 Release Candidate 2",
   "downloads": {
     "client": {
       "sha1": "74c15412d613fd53d95aea058295337a2d4f2e1f",
@@ -127,8 +128,16 @@
   "previous": [
     "1.21.4-rc1"
   ],
+  "protocol": {
+    "type": "netty-snapshot",
+    "version": 227
+  },
   "releaseTarget": "1.21.4",
   "releaseTime": "2024-11-29T10:33:13+00:00",
   "server": true,
-  "sharedMappings": true
+  "sharedMappings": true,
+  "world": {
+    "format": "anvil",
+    "version": 4186
+  }
 }
