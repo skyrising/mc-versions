@@ -1,6 +1,6 @@
 import * as semver from 'https://deno.land/x/semver@v1.4.0/mod.ts'
 import type {VersionType} from './types.d.ts'
-import SNAPSHOT_TARGETS_DATA from './snapshots.json' assert {type: 'json'}
+import SNAPSHOT_TARGETS_DATA from './snapshots.json' with {type: 'json'}
 
 function getYearAndWeek(date: Date): [number, number] {
     date = new Date(date.getTime())
