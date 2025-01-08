@@ -32,7 +32,7 @@ export async function downloadFile(url: string, file: string, part = false) {
         const res = await fetch(url)
         if (!res.ok) throw Error(`Invalid response for download: ${res.status} ${res.statusText}`)
 
-        await res.body!.pipeTo((await Deno.open(destFile, {write: true, createNew: true})).writable)
+        await res.body!.pipeTo((await Deno.open(destFile, {write: true})).writable)
         if (part) {
             await Deno.rename(destFile, file)
         }
