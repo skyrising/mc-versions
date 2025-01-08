@@ -1971,12 +1971,30 @@
       ]
     },
     {
+      "version": 223,
+      "clients": [
+        "1.21.4-pre1"
+      ],
+      "servers": [
+        "1.21.4-pre1"
+      ]
+    },
+    {
       "version": 224,
       "clients": [
         "1.21.4-pre2"
       ],
       "servers": [
         "1.21.4-pre2"
+      ]
+    },
+    {
+      "version": 225,
+      "clients": [
+        "1.21.4-pre3"
+      ],
+      "servers": [
+        "1.21.4-pre3"
       ]
     },
     {
@@ -1989,12 +2007,30 @@
       ]
     },
     {
+      "version": 227,
+      "clients": [
+        "1.21.4-rc2"
+      ],
+      "servers": [
+        "1.21.4-rc2"
+      ]
+    },
+    {
       "version": 228,
       "clients": [
         "1.21.4-rc3"
       ],
       "servers": [
         "1.21.4-rc3"
+      ]
+    },
+    {
+      "version": 229,
+      "clients": [
+        "25w02a"
+      ],
+      "servers": [
+        "25w02a"
       ]
     }
   ]

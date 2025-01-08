@@ -1,0 +1,37 @@
+{
+  "$schema": "https://skyrising.github.io/mc-versions/schemas/version.json",
+  "client": false,
+  "displayVersion": null,
+  "downloads": {
+    "server": {
+      "sha1": "db06c072f92206a8593938939d012be8799c4b86",
+      "size": 41738,
+      "url": "https://vault.omniarchive.uk/archive/java/server-classic/c1.4-1422.jar"
+    }
+  },
+  "id": "server-c1.4-1422",
+  "libraries": [],
+  "manifests": [
+    {
+      "downloads": "faa27d3e1ebf2cb54dc853746a4f06e064206e37",
+      "downloadsId": 1,
+      "hash": "aa6df5ca0aec389fadc2b2ef896a9e2705f7d204",
+      "type": "classic_server",
+      "url": "https://skyrising.github.io/mc-versions/manifest/a/a/6df5ca0aec389fadc2b2ef896a9e2705f7d204/c1.4-1422.json"
+    }
+  ],
+  "next": [
+    "server-c1.4.1"
+  ],
+  "normalizedVersion": "0.30.0-classic.server.1.4.0+1422",
+  "previous": [
+    "server-c1.4-1327"
+  ],
+  "protocol": {
+    "type": "classic",
+    "version": 4
+  },
+  "releaseTime": "2009-06-13T14:22:22+00:00",
+  "server": true,
+  "sharedMappings": false
+}
