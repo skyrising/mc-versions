@@ -99,7 +99,9 @@
       "url": "../manifest/d/d/f1ba94849b210f0634d0d9ef99ea97b6587172/25w02a.json"
     }
   ],
-  "next": [],
+  "next": [
+    "25w03a"
+  ],
   "normalizedVersion": "1.22.0-alpha.25.2.a",
   "previous": [
     "1.21.4"
