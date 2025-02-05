@@ -1,30 +1,30 @@
 {
   "$schema": "https://skyrising.github.io/mc-versions/schemas/version.json",
   "client": true,
-  "displayVersion": "25w04a",
+  "displayVersion": "25w06a",
   "downloads": {
     "client": {
-      "sha1": "6102118fc64fba5ac798225e1c3618c005e01a51",
-      "size": 28606348,
-      "url": "https://piston-data.mojang.com/v1/objects/6102118fc64fba5ac798225e1c3618c005e01a51/client.jar"
+      "sha1": "fa74b7a5065b02c94955fbd2690a3a6000c9a3dc",
+      "size": 28696840,
+      "url": "https://piston-data.mojang.com/v1/objects/fa74b7a5065b02c94955fbd2690a3a6000c9a3dc/client.jar"
     },
     "client_mappings": {
-      "sha1": "e39dc5a7ec18957a257fc41a7d49423a1ac7c5c1",
-      "size": 10452642,
-      "url": "https://piston-data.mojang.com/v1/objects/e39dc5a7ec18957a257fc41a7d49423a1ac7c5c1/client.txt"
+      "sha1": "d3398a78e62da3eee3afbc7d17799519b468f4c0",
+      "size": 10489133,
+      "url": "https://piston-data.mojang.com/v1/objects/d3398a78e62da3eee3afbc7d17799519b468f4c0/client.txt"
     },
     "server": {
-      "sha1": "28a9d30423b1c50da661b95e754be9d5f0c871d4",
-      "size": 57074653,
-      "url": "https://piston-data.mojang.com/v1/objects/28a9d30423b1c50da661b95e754be9d5f0c871d4/server.jar"
+      "sha1": "f26930e08de4a4d8a0c6b6492b97bb51e63a369d",
+      "size": 57130771,
+      "url": "https://piston-data.mojang.com/v1/objects/f26930e08de4a4d8a0c6b6492b97bb51e63a369d/server.jar"
     },
     "server_mappings": {
-      "sha1": "663d1da3dff475eb79543d40ad2f18e4cb2c7708",
-      "size": 7854278,
-      "url": "https://piston-data.mojang.com/v1/objects/663d1da3dff475eb79543d40ad2f18e4cb2c7708/server.txt"
+      "sha1": "5010538b82dcba402bf9e9a752891ba58f704690",
+      "size": 7884519,
+      "url": "https://piston-data.mojang.com/v1/objects/5010538b82dcba402bf9e9a752891ba58f704690/server.txt"
     }
   },
-  "id": "25w04a",
+  "id": "25w06a",
   "libraries": [
     "com.fasterxml.jackson.core:jackson-annotations:2.13.4",
     "com.fasterxml.jackson.core:jackson-core:2.13.4",
@@ -88,56 +88,32 @@
   ],
   "manifests": [
     {
-      "assetHash": "860b123fe78502c5a0824fd922157562f5329d00",
-      "assetIndex": "21",
-      "downloads": "6a6b668e7442d49a24ba60b153e2386021c2ddca",
+      "assetHash": "b50de43cc666efd40bcd6c6dc6188727300b06ea",
+      "assetIndex": "23",
+      "downloads": "64fa58078b3581953364dd74aef02f406d688f95",
       "downloadsId": 1,
-      "hash": "e85c0f456af6d432a2bf581d3e81f506151a5992",
-      "lastModified": "2025-02-05T13:03:26+00:00",
-      "time": "2025-01-22T13:14:44+00:00",
+      "hash": "22d65e24e8a9353d74997e92b4eef7da1fd0ce8a",
+      "lastModified": "2025-02-05T13:03:25+00:00",
+      "time": "2025-02-05T12:41:17+00:00",
       "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/e/8/5c0f456af6d432a2bf581d3e81f506151a5992/25w04a.json"
-    },
-    {
-      "assetHash": "14ce1063a08461910188942cdf07f8504b3121c2",
-      "assetIndex": "21",
-      "downloads": "6a6b668e7442d49a24ba60b153e2386021c2ddca",
-      "downloadsId": 1,
-      "hash": "fbb32532cb82d485fbd816cd04ad3dd063910bf0",
-      "lastModified": "2025-01-29T14:23:20+00:00",
-      "time": "2025-01-22T13:14:44+00:00",
-      "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/f/b/b32532cb82d485fbd816cd04ad3dd063910bf0/25w04a.json"
-    },
-    {
-      "assetHash": "f09270265d4f7faf1bc7b5d1b9550e297add1779",
-      "assetIndex": "21",
-      "downloads": "6a6b668e7442d49a24ba60b153e2386021c2ddca",
-      "downloadsId": 1,
-      "hash": "7ef94d4138fb2fe0ff687aea2216ba32b5aedefc",
-      "lastModified": "2025-01-22T13:27:58+00:00",
-      "time": "2025-01-22T13:14:44+00:00",
-      "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/7/e/f94d4138fb2fe0ff687aea2216ba32b5aedefc/25w04a.json"
+      "url": "https://skyrising.github.io/mc-versions/manifest/2/2/d65e24e8a9353d74997e92b4eef7da1fd0ce8a/25w06a.json"
     }
   ],
-  "next": [
-    "25w05a"
-  ],
-  "normalizedVersion": "1.22.0-alpha.25.4.a",
+  "next": [],
+  "normalizedVersion": "1.22.0-alpha.25.6.a",
   "previous": [
-    "25w03a"
+    "25w05a"
   ],
   "protocol": {
     "type": "netty-snapshot",
-    "version": 231
+    "version": 233
   },
   "releaseTarget": "1.22",
-  "releaseTime": "2025-01-22T13:14:44+00:00",
+  "releaseTime": "2025-02-05T12:41:17+00:00",
   "server": true,
   "sharedMappings": true,
   "world": {
     "format": "anvil",
-    "version": 4308
+    "version": 4313
   }
 }
