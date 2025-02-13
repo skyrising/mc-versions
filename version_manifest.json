@@ -5,11 +5,19 @@
     "classic_server": "server-c1.10.1",
     "alpha_server": "server-a0.2.8",
     "old_beta": "b1.9-pre6",
-    "snapshot": "25w06a",
+    "snapshot": "25w07a",
     "release": "1.21.4",
     "pending": "1.19_deep_dark_experimental_snapshot-1"
   },
   "versions": [
+    {
+      "id": "25w07a",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/version/manifest/25w07a.json",
+      "time": "2025-02-13T12:55:37+00:00",
+      "releaseTime": "2025-02-13T12:55:37+00:00",
+      "details": "https://skyrising.github.io/mc-versions/version/25w07a.json"
+    },
     {
       "id": "25w06a",
       "type": "snapshot",
