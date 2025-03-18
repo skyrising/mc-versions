@@ -75,6 +75,17 @@
   ],
   "manifests": [
     {
+      "assetHash": "a601cef0aaebec598a35466cf34d256adf967862",
+      "assetIndex": "17",
+      "downloads": "d41c070913aab18309035c807c7b58dd4ae26478",
+      "downloadsId": 1,
+      "hash": "9892e13b6e6f144c7e67fc5fb5c1e933507b87cb",
+      "lastModified": "2025-03-18T14:09:16+00:00",
+      "time": "2024-06-10T12:24:08+00:00",
+      "type": "snapshot",
+      "url": "../manifest/9/8/92e13b6e6f144c7e67fc5fb5c1e933507b87cb/1.21-rc1.json"
+    },
+    {
       "assetHash": "4a71b77396752c74107ff9d2dd6ce1084759ffc7",
       "assetIndex": "17",
       "downloads": "d41c070913aab18309035c807c7b58dd4ae26478",
