@@ -99,7 +99,9 @@
       "url": "../manifest/4/8/2c2bdfd5bbee55e3beba4656c2cc3686b2faed/1.21.5.json"
     }
   ],
-  "next": [],
+  "next": [
+    "25w14craftmine"
+  ],
   "normalizedVersion": "1.21.5",
   "previous": [
     "1.21.5-rc2"
