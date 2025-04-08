@@ -5,11 +5,19 @@
     "classic_server": "server-c1.10.1",
     "alpha_server": "server-a0.2.8",
     "old_beta": "b1.9-pre6",
-    "snapshot": "1.21.5-rc2",
+    "snapshot": "af-2025",
     "release": "1.21.5",
     "pending": "1.19_deep_dark_experimental_snapshot-1"
   },
   "versions": [
+    {
+      "id": "af-2025",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/version/manifest/af-2025.json",
+      "time": "2025-04-01T15:50:09+00:00",
+      "releaseTime": "2025-04-01T15:50:09+00:00",
+      "details": "https://skyrising.github.io/mc-versions/version/af-2025.json"
+    },
     {
       "id": "1.21.5",
       "type": "release",

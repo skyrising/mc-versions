@@ -88,6 +88,17 @@
   ],
   "manifests": [
     {
+      "assetHash": "7f21fa115cca8fc8d5881ac47c491e864b41a3df",
+      "assetIndex": "23",
+      "downloads": "64fa58078b3581953364dd74aef02f406d688f95",
+      "downloadsId": 1,
+      "hash": "b5e77aa108e5dc9711ec1a403631830e20e3041e",
+      "lastModified": "2025-04-01T14:15:58+00:00",
+      "time": "2025-02-05T12:41:17+00:00",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/manifest/b/5/e77aa108e5dc9711ec1a403631830e20e3041e/25w06a.json"
+    },
+    {
       "assetHash": "5dfda2315c055b8db7230c759853de08af44a7f2",
       "assetIndex": "23",
       "downloads": "64fa58078b3581953364dd74aef02f406d688f95",
@@ -223,7 +234,7 @@
   "next": [
     "25w07a"
   ],
-  "normalizedVersion": "1.22.0-alpha.25.6.a",
+  "normalizedVersion": "1.21.5-alpha.25.6.a",
   "previous": [
     "25w05a"
   ],
@@ -231,7 +242,7 @@
     "type": "netty-snapshot",
     "version": 233
   },
-  "releaseTarget": "1.22",
+  "releaseTarget": "1.21.5",
   "releaseTime": "2025-02-05T12:41:17+00:00",
   "server": true,
   "sharedMappings": true,
