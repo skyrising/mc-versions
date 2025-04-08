@@ -88,6 +88,17 @@
   ],
   "manifests": [
     {
+      "assetHash": "ebd68716c65b093dd8135b433d8b079d63ca29dd",
+      "assetIndex": "24",
+      "downloads": "0cea0cbca425a614c08f8ea3f6a213825769e151",
+      "downloadsId": 1,
+      "hash": "57a74feacb9be9048da6760b05ff3a457869b76e",
+      "lastModified": "2025-04-08T12:35:56+00:00",
+      "time": "2025-04-01T15:50:09+00:00",
+      "type": "snapshot",
+      "url": "../manifest/5/7/a74feacb9be9048da6760b05ff3a457869b76e/25w14craftmine.json"
+    },
+    {
       "assetHash": "31224c854d96c79b63ce36e5a79cc433d8d82984",
       "assetIndex": "24",
       "downloads": "0cea0cbca425a614c08f8ea3f6a213825769e151",
@@ -99,7 +110,9 @@
       "url": "../manifest/0/9/ca00ad44ed35a42633fca4628e0c2f07c41841/25w14craftmine.json"
     }
   ],
-  "next": [],
+  "next": [
+    "25w15a"
+  ],
   "normalizedVersion": "1.21.6-alpha.25.14.april.fools",
   "previous": [
     "1.21.5"
