@@ -24,7 +24,7 @@
       "url": "https://piston-data.mojang.com/v1/objects/18910872683cd4ea9a9de28f3b9b68cf5d2ae99c/server.txt"
     }
   },
-  "id": "25w14craftmine",
+  "id": "af-2025",
   "libraries": [
     "com.fasterxml.jackson.core:jackson-annotations:2.13.4",
     "com.fasterxml.jackson.core:jackson-core:2.13.4",
@@ -100,6 +100,7 @@
     }
   ],
   "next": [],
+  "normalizedVersion": "1.21.6-alpha.25.14.april.fools",
   "previous": [
     "1.21.5"
   ],
@@ -107,7 +108,6 @@
     "type": "netty-snapshot",
     "version": 244
   },
-  "releaseTarget": "1.22",
   "releaseTime": "2025-04-01T15:50:09+00:00",
   "server": true,
   "sharedMappings": true,

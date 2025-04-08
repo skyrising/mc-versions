@@ -5,18 +5,18 @@
     "classic_server": "server-c1.10.1",
     "alpha_server": "server-a0.2.8",
     "old_beta": "b1.9-pre6",
-    "snapshot": "25w14craftmine",
+    "snapshot": "af-2025",
     "release": "1.21.5",
     "pending": "1.19_deep_dark_experimental_snapshot-1"
   },
   "versions": [
     {
-      "id": "25w14craftmine",
+      "id": "af-2025",
       "type": "snapshot",
-      "url": "version/manifest/25w14craftmine.json",
+      "url": "version/manifest/af-2025.json",
       "time": "2025-04-01T15:50:09+00:00",
       "releaseTime": "2025-04-01T15:50:09+00:00",
-      "details": "version/25w14craftmine.json"
+      "details": "version/af-2025.json"
     },
     {
       "id": "1.21.5",

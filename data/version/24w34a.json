@@ -497,7 +497,7 @@
   "next": [
     "24w35a"
   ],
-  "normalizedVersion": "1.22.0-alpha.24.34.a",
+  "normalizedVersion": "1.21.2-alpha.24.34.a",
   "previous": [
     "24w33a"
   ],
@@ -505,7 +505,7 @@
     "type": "netty-snapshot",
     "version": 206
   },
-  "releaseTarget": "1.22",
+  "releaseTarget": "1.21.2",
   "releaseTime": "2024-08-21T14:14:13+00:00",
   "server": true,
   "sharedMappings": true,

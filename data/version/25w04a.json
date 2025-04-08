@@ -256,7 +256,7 @@
   "next": [
     "25w05a"
   ],
-  "normalizedVersion": "1.22.0-alpha.25.4.a",
+  "normalizedVersion": "1.21.5-alpha.25.4.a",
   "previous": [
     "25w03a"
   ],
@@ -264,7 +264,7 @@
     "type": "netty-snapshot",
     "version": 231
   },
-  "releaseTarget": "1.22",
+  "releaseTarget": "1.21.5",
   "releaseTime": "2025-01-22T13:14:44+00:00",
   "server": true,
   "sharedMappings": true,

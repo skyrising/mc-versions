@@ -68,7 +68,7 @@ async function writeUpdatedData(data: UpdatedDatabase) {
 }
 
 async function updateData(data: Database): Promise<UpdatedDatabase> {
-    const {versions, allVersions} = await collectVersions(data.hashMap, data.omniVersions, data.renameMap, data.lastModified)
+    const {versions, allVersions} = await githubActionsGroup('Collect versions', () => collectVersions(data.hashMap, data.omniVersions, data.renameMap, data.lastModified))
     const {newManifest, versionsById} = updateMainManifest(versions)
     const {normalizedVersions, displayVersions, protocols, byReleaseTarget} = updateVersionDetails(versions, versionsById)
     const newOmniVersions = await sortAndWriteVersionFiles(VERSION_DIR, versions, allVersions, newManifest)
@@ -195,14 +195,26 @@ function findPrevious(versions: VersionInfo[], index: number) {
     const v = versions[index]
     for (let j = index - 1; j >= 0; j--) {
         const prev = versions[j]
-        if (prev.info.type === v.info.type || (VALID_PREVIOUS[v.info.type] || []).includes(prev.info.type)) {
+        if (isValidPrevious(prev, v)) {
             return [prev.data.id]
         }
     }
 }
 
+function isValidPrevious(version: VersionInfo, prev: VersionInfo) {
+    if (prev.data.id.startsWith('af-')) return version.data.id.startsWith('af-')
+    return prev.info.type === version.info.type || (VALID_PREVIOUS[version.info.type] || []).includes(prev.info.type)
+}
+
 function warnPrefix(id: string) {
     return GITHUB_ACTIONS ? `::warning file=data/version/${id}.json::` : ''
+}
+
+async function githubActionsGroup<T> (name: string, action: () => T|Promise<T>) {
+    if (GITHUB_ACTIONS) console.log('::group::' + name)
+    const data = await action()
+    if (GITHUB_ACTIONS) console.log('::endgroup::')
+    return data
 }
 
 function updateVersionDetails(versions: VersionInfo[], versionsById: Record<string, VersionData>) {
@@ -306,16 +318,16 @@ async function sortAndWriteVersionFiles(versionDir: string, versions: VersionInf
     const mergedManifestDir = path.resolve(versionDir, 'manifest')
     if (await exists(mergedManifestDir)) await Deno.remove(mergedManifestDir, {recursive: true})
     await Deno.mkdir(mergedManifestDir)
-    if (GITHUB_ACTIONS) console.log('::group::Head versions')
-    for (const v of versions) {
-        if (!v.data.next.length) console.log(v.data.id)
-        await writeJsonFile(v.file, {
-            '$schema': new URL('version.json', SCHEMA_BASE).toString(),
-            ...sortObject(v.data)
-        })
-        await writeJsonFile(path.resolve(mergedManifestDir, v.info.id + '.json'), sortObject(mergeManifests(v, knownLibraries)))
-    }
-    if (GITHUB_ACTIONS) console.log('::endgroup::')
+    await githubActionsGroup('Head versions', async () => {
+        for (const v of versions) {
+            if (!v.data.next.length) console.log(v.data.id)
+            await writeJsonFile(v.file, {
+                '$schema': new URL('version.json', SCHEMA_BASE).toString(),
+                ...sortObject(v.data)
+            })
+            await writeJsonFile(path.resolve(mergedManifestDir, v.info.id + '.json'), sortObject(mergeManifests(v, knownLibraries)))
+        }
+    })
     allVersions.sort(compareVersions)
     const newOmniVersions: HashMap<VersionId> = {}
     for (const v of allVersions) {
