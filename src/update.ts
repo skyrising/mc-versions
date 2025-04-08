@@ -195,7 +195,7 @@ function findPrevious(versions: VersionInfo[], index: number) {
     const v = versions[index]
     for (let j = index - 1; j >= 0; j--) {
         const prev = versions[j]
-        if (isValidPrevious(prev, v)) {
+        if (isValidPrevious(v, prev)) {
             return [prev.data.id]
         }
     }
