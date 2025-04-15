@@ -5,11 +5,19 @@
     "classic_server": "server-c1.10.1",
     "alpha_server": "server-a0.2.8",
     "old_beta": "b1.9-pre6",
-    "snapshot": "25w15a",
+    "snapshot": "25w16a",
     "release": "1.21.5",
     "pending": "1.19_deep_dark_experimental_snapshot-1"
   },
   "versions": [
+    {
+      "id": "25w16a",
+      "type": "snapshot",
+      "url": "version/manifest/25w16a.json",
+      "time": "2025-04-15T12:01:58+00:00",
+      "releaseTime": "2025-04-15T12:01:58+00:00",
+      "details": "version/25w16a.json"
+    },
     {
       "id": "25w15a",
       "type": "snapshot",
