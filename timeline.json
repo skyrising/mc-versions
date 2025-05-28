@@ -6484,5 +6484,11 @@
     "type": "snapshot",
     "normalizedVersion": "1.22.0-alpha.25.21.a",
     "releaseTime": "2025-05-20T12:09:09+00:00"
+  },
+  {
+    "id": "1.21.6-pre1",
+    "type": "pre-release",
+    "normalizedVersion": "1.21.6-pre.1",
+    "releaseTime": "2025-05-28T09:34:04+00:00"
   }
 ]
