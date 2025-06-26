@@ -161,29 +161,30 @@
     "url": "https://piston-meta.mojang.com/v1/packages/4aa210b13ee1168cae6655f66808a5fbc39a6168/26.json"
   },
   "assets": "26",
+  "complianceLevel": 1,
   "downloads": {
     "client": {
-      "sha1": "8cbce0cbdc21a9bbeae1750cbc856cf6d1d3fe2f",
-      "size": 29516400,
-      "url": "https://piston-data.mojang.com/v1/objects/8cbce0cbdc21a9bbeae1750cbc856cf6d1d3fe2f/client.jar"
+      "sha1": "740a125b83dd3447feaa3c5e891ead7fbb21ae28",
+      "size": 29516555,
+      "url": "https://piston-data.mojang.com/v1/objects/740a125b83dd3447feaa3c5e891ead7fbb21ae28/client.jar"
     },
     "client_mappings": {
-      "sha1": "334d5224781bb5c346e61b444ca0f30df305e54d",
-      "size": 10987465,
-      "url": "https://piston-data.mojang.com/v1/objects/334d5224781bb5c346e61b444ca0f30df305e54d/client.txt"
+      "sha1": "848855615bc81e3db1c85e69b6afb150807a1261",
+      "size": 10987575,
+      "url": "https://piston-data.mojang.com/v1/objects/848855615bc81e3db1c85e69b6afb150807a1261/client.txt"
     },
     "server": {
-      "sha1": "650e7d088d8b243a9159641cef75303587ba36bd",
-      "size": 57553458,
-      "url": "https://piston-data.mojang.com/v1/objects/650e7d088d8b243a9159641cef75303587ba36bd/server.jar"
+      "sha1": "6e64dcabba3c01a7271b4fa6bd898483b794c59b",
+      "size": 57554576,
+      "url": "https://piston-data.mojang.com/v1/objects/6e64dcabba3c01a7271b4fa6bd898483b794c59b/server.jar"
     },
     "server_mappings": {
-      "sha1": "1e1892e1de808cae57681ce31b719e8192d4c045",
-      "size": 8185947,
-      "url": "https://piston-data.mojang.com/v1/objects/1e1892e1de808cae57681ce31b719e8192d4c045/server.txt"
+      "sha1": "94d453080a58875d3acc1a9a249809767c91ed40",
+      "size": 8185946,
+      "url": "https://piston-data.mojang.com/v1/objects/94d453080a58875d3acc1a9a249809767c91ed40/server.txt"
     }
   },
-  "id": "1.21.6-pre4",
+  "id": "1.21.6",
   "javaVersion": {
     "component": "java-runtime-delta",
     "majorVersion": 21
@@ -1879,7 +1880,7 @@
   },
   "mainClass": "net.minecraft.client.main.Main",
   "minimumLauncherVersion": 21,
-  "releaseTime": "2025-06-10T12:22:36+00:00",
-  "time": "2025-06-10T12:22:36+00:00",
-  "type": "snapshot"
+  "releaseTime": "2025-06-17T11:10:28+00:00",
+  "time": "2025-06-17T11:10:28+00:00",
+  "type": "release"
 }

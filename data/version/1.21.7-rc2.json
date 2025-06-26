@@ -1,30 +1,30 @@
 {
   "$schema": "https://skyrising.github.io/mc-versions/schemas/version.json",
   "client": true,
-  "displayVersion": "1.21.6",
+  "displayVersion": "1.21.7 Release Candidate 2",
   "downloads": {
     "client": {
-      "sha1": "740a125b83dd3447feaa3c5e891ead7fbb21ae28",
-      "size": 29516555,
-      "url": "https://piston-data.mojang.com/v1/objects/740a125b83dd3447feaa3c5e891ead7fbb21ae28/client.jar"
+      "sha1": "815969764933fcd1a8ccb80308f05d0c965d8f06",
+      "size": 29522966,
+      "url": "https://piston-data.mojang.com/v1/objects/815969764933fcd1a8ccb80308f05d0c965d8f06/client.jar"
     },
     "client_mappings": {
-      "sha1": "848855615bc81e3db1c85e69b6afb150807a1261",
-      "size": 10987575,
-      "url": "https://piston-data.mojang.com/v1/objects/848855615bc81e3db1c85e69b6afb150807a1261/client.txt"
+      "sha1": "499800e41153af52223a8d6d184f732e303c0fcd",
+      "size": 10988969,
+      "url": "https://piston-data.mojang.com/v1/objects/499800e41153af52223a8d6d184f732e303c0fcd/client.txt"
     },
     "server": {
-      "sha1": "6e64dcabba3c01a7271b4fa6bd898483b794c59b",
-      "size": 57554576,
-      "url": "https://piston-data.mojang.com/v1/objects/6e64dcabba3c01a7271b4fa6bd898483b794c59b/server.jar"
+      "sha1": "273c8ffdb3d05f4575376b43d8175716cab1a39f",
+      "size": 57556178,
+      "url": "https://piston-data.mojang.com/v1/objects/273c8ffdb3d05f4575376b43d8175716cab1a39f/server.jar"
     },
     "server_mappings": {
-      "sha1": "94d453080a58875d3acc1a9a249809767c91ed40",
-      "size": 8185946,
-      "url": "https://piston-data.mojang.com/v1/objects/94d453080a58875d3acc1a9a249809767c91ed40/server.txt"
+      "sha1": "a31b5e5235daad9023072d3478b6fa0f44065548",
+      "size": 8186232,
+      "url": "https://piston-data.mojang.com/v1/objects/a31b5e5235daad9023072d3478b6fa0f44065548/server.txt"
     }
   },
-  "id": "1.21.6",
+  "id": "1.21.7-rc2",
   "libraries": [
     "com.fasterxml.jackson.core:jackson-annotations:2.13.4",
     "com.fasterxml.jackson.core:jackson-core:2.13.4",
@@ -90,54 +90,30 @@
     {
       "assetHash": "4aa210b13ee1168cae6655f66808a5fbc39a6168",
       "assetIndex": "26",
-      "downloads": "a895028834feaf4667c0f072ec36146f104691eb",
+      "downloads": "8605ca6dee2e7949704f923661cbc07d29023324",
       "downloadsId": 1,
-      "hash": "1670aa414e7f900753f1fcc861ace38ec8cd8a41",
-      "lastModified": "2025-06-26T14:09:45+00:00",
-      "time": "2025-06-17T11:10:28+00:00",
-      "type": "release",
-      "url": "../manifest/1/6/70aa414e7f900753f1fcc861ace38ec8cd8a41/1.21.6.json"
-    },
-    {
-      "assetHash": "06c8bebe0d9284dd2144b14fce797ab66b892061",
-      "assetIndex": "26",
-      "downloads": "a895028834feaf4667c0f072ec36146f104691eb",
-      "downloadsId": 1,
-      "hash": "1ec7523a6fbfa8143a540666a36d6d5590efc764",
-      "lastModified": "2025-06-25T12:53:06+00:00",
-      "time": "2025-06-17T11:10:28+00:00",
-      "type": "release",
-      "url": "../manifest/1/e/c7523a6fbfa8143a540666a36d6d5590efc764/1.21.6.json"
-    },
-    {
-      "assetHash": "31ec2b82dd20cdc53ed3f2f9c4cca6bf89fe15db",
-      "assetIndex": "26",
-      "downloads": "a895028834feaf4667c0f072ec36146f104691eb",
-      "downloadsId": 1,
-      "hash": "8eedd65947dfafa458d40d40d62dd0ff16059614",
-      "lastModified": "2025-06-17T11:26:13+00:00",
-      "time": "2025-06-17T11:10:28+00:00",
-      "type": "release",
-      "url": "../manifest/8/e/edd65947dfafa458d40d40d62dd0ff16059614/1.21.6.json"
+      "hash": "2fbd0d64bebc5e6d0a0da7334ebe6f2ab5f6ef56",
+      "lastModified": "2025-06-26T14:09:44+00:00",
+      "time": "2025-06-26T13:59:20+00:00",
+      "type": "snapshot",
+      "url": "../manifest/2/f/bd0d64bebc5e6d0a0da7334ebe6f2ab5f6ef56/1.21.7-rc2.json"
     }
   ],
-  "next": [
+  "next": [],
+  "normalizedVersion": "1.21.7-rc.2",
+  "previous": [
     "1.21.7-rc1"
   ],
-  "normalizedVersion": "1.21.6",
-  "previous": [
-    "1.21.6-rc1"
-  ],
   "protocol": {
-    "type": "netty",
-    "version": 771
+    "type": "netty-snapshot",
+    "version": 258
   },
-  "releaseTarget": "1.21.6",
-  "releaseTime": "2025-06-17T11:10:28+00:00",
+  "releaseTarget": "1.21.7",
+  "releaseTime": "2025-06-26T13:59:20+00:00",
   "server": true,
   "sharedMappings": true,
   "world": {
     "format": "anvil",
-    "version": 4435
+    "version": 4437
   }
 }
