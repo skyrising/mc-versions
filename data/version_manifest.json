@@ -6,10 +6,18 @@
     "alpha_server": "server-a0.2.8",
     "old_beta": "b1.9-pre6",
     "snapshot": "1.21.7-rc2",
-    "release": "1.21.6",
+    "release": "1.21.7",
     "pending": "1.19_deep_dark_experimental_snapshot-1"
   },
   "versions": [
+    {
+      "id": "1.21.7",
+      "type": "release",
+      "url": "version/manifest/1.21.7.json",
+      "time": "2025-06-30T09:32:16+00:00",
+      "releaseTime": "2025-06-30T09:32:16+00:00",
+      "details": "version/1.21.7.json"
+    },
     {
       "id": "1.21.7-rc2",
       "type": "snapshot",
