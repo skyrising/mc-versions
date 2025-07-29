@@ -99,7 +99,9 @@
       "url": "https://skyrising.github.io/mc-versions/manifest/e/9/a47947f2c000a3c65302759133df2b81709844/1.21.8.json"
     }
   ],
-  "next": [],
+  "next": [
+    "25w31a"
+  ],
   "normalizedVersion": "1.21.8",
   "previous": [
     "1.21.8-rc1"
