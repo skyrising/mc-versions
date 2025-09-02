@@ -1,22 +1,22 @@
 {
   "$schema": "https://skyrising.github.io/mc-versions/schemas/version.json",
   "client": true,
-  "displayVersion": "25w36a",
+  "displayVersion": "25w36b",
   "downloads": {
     "client": {
-      "sha1": "ae36ffc5291e78d5157346d4d6f275938baa9742",
-      "size": 30487507,
-      "url": "https://piston-data.mojang.com/v1/objects/ae36ffc5291e78d5157346d4d6f275938baa9742/client.jar"
+      "sha1": "972af34ded92a5f6fa5b82c6a7a75119f38e864f",
+      "size": 30487423,
+      "url": "https://piston-data.mojang.com/v1/objects/972af34ded92a5f6fa5b82c6a7a75119f38e864f/client.jar"
     },
     "client_mappings": {
-      "sha1": "1f66a65e2aaf58af9ec944f3b072f703a4c39543",
+      "sha1": "d0cbee60b963b2609e763d3dbe37b06d981a8b32",
       "size": 11447951,
-      "url": "https://piston-data.mojang.com/v1/objects/1f66a65e2aaf58af9ec944f3b072f703a4c39543/client.txt"
+      "url": "https://piston-data.mojang.com/v1/objects/d0cbee60b963b2609e763d3dbe37b06d981a8b32/client.txt"
     },
     "server": {
-      "sha1": "4d094c84219be8bbe23bcec02e1c016e12717e17",
-      "size": 58571695,
-      "url": "https://piston-data.mojang.com/v1/objects/4d094c84219be8bbe23bcec02e1c016e12717e17/server.jar"
+      "sha1": "bb1c647e67a8e17846f7f286d86597a3c3cc47ef",
+      "size": 58576169,
+      "url": "https://piston-data.mojang.com/v1/objects/bb1c647e67a8e17846f7f286d86597a3c3cc47ef/server.jar"
     },
     "server_mappings": {
       "sha1": "16fbcd86b56362a06269cef21b3ad784d8264b5f",
@@ -24,7 +24,7 @@
       "url": "https://piston-data.mojang.com/v1/objects/16fbcd86b56362a06269cef21b3ad784d8264b5f/server.txt"
     }
   },
-  "id": "25w36a",
+  "id": "25w36b",
   "libraries": [
     "com.fasterxml.jackson.core:jackson-annotations:2.13.4",
     "com.fasterxml.jackson.core:jackson-core:2.13.4",
@@ -91,32 +91,30 @@
     {
       "assetHash": "d693bdd7d4cb533c91e918d5ef5774599886c99e",
       "assetIndex": "27",
-      "downloads": "0b9960d9dbd99af8293ed7aeebadd885d9fdd0f8",
+      "downloads": "c6c694f87cceb0204bf47aaf6b61f3e9adb52656",
       "downloadsId": 1,
-      "hash": "662378ffec6ca92918fce60d7448f528a22d47ee",
-      "lastModified": "2025-09-02T12:15:52+00:00",
-      "time": "2025-09-02T11:48:30+00:00",
+      "hash": "f51ec3edfb6a54621e0bf677e3ebc4f0c27f1ce6",
+      "lastModified": "2025-09-02T15:58:34+00:00",
+      "time": "2025-09-02T15:47:32+00:00",
       "type": "snapshot",
-      "url": "../manifest/6/6/2378ffec6ca92918fce60d7448f528a22d47ee/25w36a.json"
+      "url": "../manifest/f/5/1ec3edfb6a54621e0bf677e3ebc4f0c27f1ce6/25w36b.json"
     }
   ],
-  "next": [
-    "25w36b"
-  ],
-  "normalizedVersion": "1.22.0-alpha.25.36.a",
+  "next": [],
+  "normalizedVersion": "1.22.0-alpha.25.36.b",
   "previous": [
-    "25w35a"
+    "25w36a"
   ],
   "protocol": {
     "type": "netty-snapshot",
-    "version": 266
+    "version": 267
   },
   "releaseTarget": "1.22",
-  "releaseTime": "2025-09-02T11:48:30+00:00",
+  "releaseTime": "2025-09-02T15:47:32+00:00",
   "server": true,
   "sharedMappings": true,
   "world": {
     "format": "anvil",
-    "version": 4545
+    "version": 4546
   }
 }
