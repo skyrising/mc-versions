@@ -6628,5 +6628,11 @@
     "type": "pre-release",
     "normalizedVersion": "1.21.9-pre.4",
     "releaseTime": "2025-09-23T14:58:08+00:00"
+  },
+  {
+    "id": "1.21.9-rc1",
+    "type": "release-candidate",
+    "normalizedVersion": "1.21.9-rc.1",
+    "releaseTime": "2025-09-25T13:01:28+00:00"
   }
 ]
