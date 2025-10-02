@@ -6640,5 +6640,11 @@
     "type": "release",
     "normalizedVersion": "1.21.9",
     "releaseTime": "2025-09-30T11:58:43+00:00"
+  },
+  {
+    "id": "1.21.10-rc1",
+    "type": "release-candidate",
+    "normalizedVersion": "1.21.10-rc.1",
+    "releaseTime": "2025-10-02T12:09:16+00:00"
   }
 ]
