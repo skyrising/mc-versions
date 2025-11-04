@@ -155,20 +155,24 @@ export async function parseJarInfo(file: string, version?: string): Promise<Part
             info.releaseTarget = versionJson.release_target
             if (versionJson.name) info.displayVersion ??= versionJson.name
         } else if (entry.filename.endsWith('.class')) {
-            const data = await entry.read()
-            if (entry.filename === 'net/minecraft/server/MinecraftServer.class') {
-                const node = parseClassFile(data)
-                parseMinecraftServerClass(node, info, version)
-            } else {
-                const matching = contains(data, PARSER_BYTES)
-                if (matching.includes(true)) {
+            try {
+                const data = await entry.read()
+                if (entry.filename === 'net/minecraft/server/MinecraftServer.class') {
                     const node = parseClassFile(data)
-                    for (let i = 0; i < matching.length; i++) {
-                        if (matching[i]) {
-                            PARSERS[PARSER_KEYS[i]](node, info)
+                    parseMinecraftServerClass(node, info, version)
+                } else {
+                    const matching = contains(data, PARSER_BYTES)
+                    if (matching.includes(true)) {
+                        const node = parseClassFile(data)
+                        for (let i = 0; i < matching.length; i++) {
+                            if (matching[i]) {
+                                PARSERS[PARSER_KEYS[i]](node, info)
+                            }
                         }
                     }
                 }
+            } catch (e) {
+                console.error(`Unable to parse class ${entry.filename.slice(0, -6)}: ${e}`)
             }
         }
     }
