@@ -1605,6 +1605,7 @@
   "releaseTime": "2023-09-15T13:10:30+00:00",
   "server": true,
   "sharedMappings": true,
+  "type": "snapshot",
   "world": {
     "format": "anvil",
     "version": 3576

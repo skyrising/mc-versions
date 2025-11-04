@@ -102,9 +102,10 @@
     }
   ],
   "next": [
-    "25w45a"
+    "25w45a",
+    "25w45a_unobfuscated"
   ],
-  "normalizedVersion": "1.22.0-alpha.25.44.a",
+  "normalizedVersion": "1.21.11-alpha.25.44.a",
   "previous": [
     "25w43a"
   ],
@@ -112,10 +113,11 @@
     "type": "netty-snapshot",
     "version": 276
   },
-  "releaseTarget": "1.22",
+  "releaseTarget": "1.21.11",
   "releaseTime": "2025-10-28T14:02:28+00:00",
   "server": true,
   "sharedMappings": true,
+  "type": "snapshot",
   "world": {
     "format": "anvil",
     "version": 4659

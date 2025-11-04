@@ -1332,6 +1332,7 @@
   "releaseTime": "2024-02-01T12:55:14+00:00",
   "server": true,
   "sharedMappings": true,
+  "type": "snapshot",
   "world": {
     "format": "anvil",
     "version": 3811

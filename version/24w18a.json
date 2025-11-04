@@ -1079,7 +1079,7 @@
   "next": [
     "24w19a"
   ],
-  "normalizedVersion": "1.20.6-alpha.24.18.a",
+  "normalizedVersion": "1.21.0-alpha.24.18.a",
   "previous": [
     "1.20.6"
   ],
@@ -1091,6 +1091,7 @@
   "releaseTime": "2024-05-03T12:08:27+00:00",
   "server": true,
   "sharedMappings": true,
+  "type": "snapshot",
   "world": {
     "format": "anvil",
     "version": 3940

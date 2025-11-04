@@ -520,7 +520,7 @@
   "next": [
     "25w17a"
   ],
-  "normalizedVersion": "1.22.0-alpha.25.16.a",
+  "normalizedVersion": "1.21.6-alpha.25.16.a",
   "previous": [
     "25w15a"
   ],
@@ -528,10 +528,11 @@
     "type": "netty-snapshot",
     "version": 246
   },
-  "releaseTarget": "1.22",
+  "releaseTarget": "1.21.6",
   "releaseTime": "2025-04-15T12:01:58+00:00",
   "server": true,
   "sharedMappings": true,
+  "type": "snapshot",
   "world": {
     "format": "anvil",
     "version": 4423

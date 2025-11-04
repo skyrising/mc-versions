@@ -79,6 +79,10 @@
             "type": "boolean",
             "description": "Whether the obfuscation mappings for client and server are the same"
         },
+        "unobfuscated": {
+          "type": "boolean",
+          "description": "Whether the class names are obfuscated"
+        },
         "downloads": {
             "patternProperties": {
                 "^[a-z_]*$": {"$ref": "#/$defs/downloadInfo"}

@@ -1080,6 +1080,7 @@
   "releaseTime": "2024-05-10T12:15:31+00:00",
   "server": true,
   "sharedMappings": true,
+  "type": "snapshot",
   "world": {
     "format": "anvil",
     "version": 3941
