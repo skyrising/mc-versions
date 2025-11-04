@@ -107,6 +107,11 @@ export function normalizeVersion(omniId: VersionId, releaseTarget: VersionId | u
         return properTarget + `-alpha.${numbers[0]}.${numbers[1]}.${letters[1] >= 'a' && letters[1] <= 'z' ? letters[1] : 'a'}${buildPart(1)}`
     }
 
+    // Unobfuscated snapshot: {yy}w{ww}[a-z~]_unobfuscated
+    if (/^\d{2}w\d{2}._unobfuscated$/.test(parts[0])) {
+        return properTarget + `-alpha.${numbers[0]}.${numbers[1]}.${letters[1] >= 'a' && letters[1] <= 'z' ? letters[1] : 'a'}.unobfuscated${buildPart(1)}`
+    }
+
     // Experimental snapshots: Upper-case to sort before lower-case 'alpha'
     // 1.18_experimental-snapshot-<n>
     if (letters[0] === 'experimental') return properTarget + '-Experimental.' + numbers[2]
