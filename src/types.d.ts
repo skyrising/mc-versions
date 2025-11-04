@@ -119,6 +119,7 @@ type VersionData = BaseVersionManifest & {
     displayVersion?: string|null,
     client: boolean
     server: boolean
+    unobfuscated?: boolean
     downloads: {[id: string]: DownloadInfo}
     launcher: boolean
     sharedMappings: boolean

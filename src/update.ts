@@ -490,6 +490,10 @@ async function updateVersion(id: VersionId, manifests: Array<TempVersionManifest
     if (data.sharedMappings === undefined) {
         data.sharedMappings = data.client && data.server && data.releaseTime > '2012-07-26'
     }
+    if ((data.type === 'unobfuscated' || data.releaseTime > '2025-11-04') && !data.downloads['client_mappings'] && !data.downloads['server_mappings']) {
+        delete data.sharedMappings
+        data.unobfuscated = true
+    }
     const {type, time} = manifests[0]
     const jar = localMirror.client || localMirror.server
     if (jar && shouldCheckJar(data)) {
