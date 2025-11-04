@@ -5,7 +5,7 @@ import * as path from 'https://deno.land/std@0.113.0/path/mod.ts'
 import * as semver from 'https://deno.land/x/semver@v1.4.0/mod.ts'
 
 import {sha1, sortObject, sortObjectByValues, readdirRecursive, exists, evaluateRules} from './utils.ts'
-import {getReleaseTarget, normalizeVersion} from './versioning.ts'
+import {getReleaseTarget, getType, normalizeVersion} from './versioning.ts'
 import {parseJarInfo, shouldCheckJar} from './jar-analyzer.ts'
 import {getDownloads, downloadFile} from './download.ts'
 import {ZipFile} from './zip.ts'
@@ -487,6 +487,7 @@ async function updateVersion(id: VersionId, manifests: Array<TempVersionManifest
     if (data.normalizedVersion === undefined) {
         data.normalizedVersion = normalizeVersion(data.id, data.releaseTarget)
     }
+    data.type = manifests[0].type ?? (data.normalizedVersion && getType(data.normalizedVersion))
     if (data.sharedMappings === undefined) {
         data.sharedMappings = data.client && data.server && data.releaseTime > '2012-07-26'
     }

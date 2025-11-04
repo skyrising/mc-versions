@@ -124,6 +124,7 @@
   "releaseTime": "2018-07-13T11:45:00+00:00",
   "server": true,
   "sharedMappings": true,
+  "type": "snapshot",
   "world": {
     "format": "anvil",
     "version": 1516

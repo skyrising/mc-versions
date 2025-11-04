@@ -1990,6 +1990,7 @@
   "releaseTime": "2023-02-01T14:20:33+00:00",
   "server": true,
   "sharedMappings": true,
+  "type": "snapshot",
   "world": {
     "format": "anvil",
     "version": 3323

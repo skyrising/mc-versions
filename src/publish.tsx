@@ -76,6 +76,7 @@ async function createVersionElement(version: ShortVersion) {
             <time dateTime={version.releaseTime}>{version.releaseTime.slice(0, 10)}</time>
         </summary>
         <ul>
+            <TypeProperty type={details.type} />
             <PropertyListElement property='Normalized Version' value={details.normalizedVersion} />
             <ProtocolVersion {...details.protocol} />
             <WorldFormat {...details.world} />
@@ -106,7 +107,13 @@ function ProtocolVersion({type, version}: {type?: string, version?: number}) {
 
 function VersionListProperty({property, versions}: {property: string, versions?: string[]}) {
     if (!versions || !versions.length) return <></>
-    return <PropertyListElement property={property} value={versions.map((v, i) => 
+    return <PropertyListElement property={property} value={versions.map((v, i) =>
         <>{i ? ', ' : ''}<a href={'#' + v}>{v}</a></>
     )}/>
+}
+
+function TypeProperty({type}: {type?: string}) {
+    if (!type || type === 'release' || type === 'snapshot') return <></>
+    const readable = type.split('_').map(t => t[0].toUpperCase() + t.slice(1)).join(' ')
+    return <PropertyListElement property='Type' value={readable} />
 }
