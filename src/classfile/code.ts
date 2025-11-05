@@ -111,7 +111,7 @@ type TypeInstruction = {
     type: ConstantClass<true>
 }
 
-type ComplexInstruction = 
+type ComplexInstruction =
 | IntInstruction
 | LdcInstruction
 | VarInstruction
@@ -195,6 +195,18 @@ function parseInstruction(reader: Reader, cp: ConstantPool<true>): Instruction {
             return {op, type: getConstant(cp, reader.u2(), ConstantType.CONSTANT_Class), dimensions: reader.u1()}
         case Opcode.GOTO_W: case Opcode.JSR_W:
             return {op, target: reader.u4()}
+        case Opcode.WIDE: {
+            const op1 = reader.u1()
+            switch (op1) {
+                case Opcode.ILOAD: case Opcode.LLOAD: case Opcode.FLOAD: case Opcode.DLOAD: case Opcode.ALOAD:
+                case Opcode.ISTORE: case Opcode.LSTORE: case Opcode.FSTORE: case Opcode.DSTORE: case Opcode.ASTORE: case Opcode.RET:
+                    return {op: op1, var: reader.u2(), wide: true}
+                case Opcode.IINC:
+                    return {op: op1, var: reader.u2(), increment: reader.i2(), wide: true}
+                default:
+                    throw new Error(`Unknown wide op: ${Opcode[op1]}`)
+            }
+        }
 
         default: return {op}
     }
