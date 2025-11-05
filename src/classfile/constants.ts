@@ -104,7 +104,7 @@ export type ConstantModule<Resolved extends boolean> = NamedConstant<ConstantTyp
 export type ConstantPackage<Resolved extends boolean> = NamedConstant<ConstantType.CONSTANT_Package, Resolved>
 
 
-export type Constant<Resolved extends boolean> = 
+export type Constant<Resolved extends boolean> =
     | ConstantUtf8
     | ConstantInteger
     | ConstantFloat
@@ -179,19 +179,21 @@ export function getConstant<Tag extends ConstantType>(cp: ConstantPool<true>, in
     }
     if (entry === null) throw new Error(`Invalid reference to null constant #${index}`)
     for (const tag of tags) if (entry.tag === tag) return entry as Constant<true> & {tag: Tag}
-    throw new Error(`Invalid reference to constant of type ${ConstantType[entry.tag]}, expected ${tags.map(tag => ConstantType[tag])}`)
+    throw new Error(`Invalid reference to constant #${index} of type ${ConstantType[entry.tag]}, expected ${tags.map(tag => ConstantType[tag])}`)
 }
 
 export function resolveConstants(cp: ConstantPool<false>): ConstantPool<true> {
     const resolved: ConstantPool<true> = []
     function resolve<Tag extends ConstantType>(index: number, ...tags: Tag[]): Constant<true> & {tag: Tag} {
+        if (resolved[index] === undefined) resolveAt(index)
         return getConstant(resolved, index, ...tags)
     }
-    for (let i = 0; i < cp.length; i++) {
-        const entry = cp[i]
+    function resolveAt(index: number) {
+        if (resolved[index]) return
+        const entry = cp[index]
         if (entry === null) {
-            resolved[i] = null
-            continue
+            resolved[index] = null
+            return
         }
         switch (entry.tag) {
             case ConstantType.CONSTANT_Utf8:
@@ -199,72 +201,64 @@ export function resolveConstants(cp: ConstantPool<false>): ConstantPool<true> {
             case ConstantType.CONSTANT_Float:
             case ConstantType.CONSTANT_Long:
             case ConstantType.CONSTANT_Double:
-                resolved[i] = entry
-        }
-    }
-    for (let i = 0; i < cp.length; i++) {
-        const entry = cp[i]
-        if (entry === null) continue
-        switch (entry.tag) {
+                resolved[index] = entry
+                break
             case ConstantType.CONSTANT_Class:
             case ConstantType.CONSTANT_Module:
             case ConstantType.CONSTANT_Package:
-                resolved[i] = {
+                resolved[index] = {
                     tag: entry.tag,
                     name: resolve(entry.name, ConstantType.CONSTANT_Utf8),
                 }
                 break
             case ConstantType.CONSTANT_String:
-                resolved[i] = {
+                resolved[index] = {
                     tag: entry.tag,
                     value: resolve(entry.value, ConstantType.CONSTANT_Utf8),
                 }
                 break
             case ConstantType.CONSTANT_NameAndType:
-                resolved[i] = {
+                resolved[index] = {
                     tag: entry.tag,
                     name: resolve(entry.name, ConstantType.CONSTANT_Utf8),
                     descriptor: resolve(entry.descriptor, ConstantType.CONSTANT_Utf8),
                 }
                 break
             case ConstantType.CONSTANT_MethodType:
-                resolved[i] = {
+                resolved[index] = {
                     tag: entry.tag,
                     descriptor: resolve(entry.descriptor, ConstantType.CONSTANT_Utf8),
                 }
                 break
+            case ConstantType.CONSTANT_Fieldref:
+            case ConstantType.CONSTANT_Methodref:
+            case ConstantType.CONSTANT_InterfaceMethodref:
+                resolved[index] = {
+                    tag: entry.tag,
+                    class: resolve(entry.class, ConstantType.CONSTANT_Class),
+                    nameAndType: resolve(entry.nameAndType, ConstantType.CONSTANT_NameAndType),
+                }
+                break
+            case ConstantType.CONSTANT_MethodHandle: {
+                const reference = resolve(entry.reference, ConstantType.CONSTANT_Fieldref, ConstantType.CONSTANT_Methodref, ConstantType.CONSTANT_InterfaceMethodref)
+                resolved[index] = {tag: entry.tag, kind: entry.kind, reference}
+                break
+            }
+            case ConstantType.CONSTANT_Dynamic:
+            case ConstantType.CONSTANT_InvokeDynamic:
+                resolved[index] = {
+                    tag: entry.tag,
+                    bootstrapMethodIndex: entry.bootstrapMethodIndex,
+                    nameAndType: resolve(entry.nameAndType, ConstantType.CONSTANT_NameAndType)
+                }
+                break
+        }
+        if (!resolved[index]) {
+            throw new Error('oops')
         }
     }
     for (let i = 0; i < cp.length; i++) {
-        const entry = cp[i]
-        if (entry === null) continue
-        switch (entry.tag) {
-        case ConstantType.CONSTANT_Fieldref:
-        case ConstantType.CONSTANT_Methodref:
-        case ConstantType.CONSTANT_InterfaceMethodref:
-            resolved[i] = {
-                tag: entry.tag,
-                class: resolve(entry.class, ConstantType.CONSTANT_Class),
-                nameAndType: resolve(entry.nameAndType, ConstantType.CONSTANT_NameAndType),
-            }
-            break
-        case ConstantType.CONSTANT_MethodHandle: {
-            const reference = resolve(entry.reference, ConstantType.CONSTANT_Fieldref, ConstantType.CONSTANT_Methodref, ConstantType.CONSTANT_InterfaceMethodref)
-            resolved[i] = {tag: entry.tag, kind: entry.kind, reference}
-            break
-        }
-        case ConstantType.CONSTANT_Dynamic:
-        case ConstantType.CONSTANT_InvokeDynamic:
-            resolved[i] = {
-                tag: entry.tag,
-                bootstrapMethodIndex: entry.bootstrapMethodIndex,
-                nameAndType: resolve(entry.nameAndType, ConstantType.CONSTANT_NameAndType)
-            }
-            break
-        }
-        if (!resolved[i]) {
-            throw new Error('oops')
-        }
+        resolveAt(i)
     }
     return resolved
 }
