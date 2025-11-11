@@ -1,20 +1,20 @@
 {
   "$schema": "https://skyrising.github.io/mc-versions/schemas/version.json",
   "client": true,
-  "displayVersion": "25w45a Unobfuscated",
+  "displayVersion": "25w46a Unobfuscated",
   "downloads": {
     "client": {
-      "sha1": "26551033b7b935436f3407b85d14cac835e65640",
-      "size": 36575283,
-      "url": "https://piston-data.mojang.com/v1/objects/26551033b7b935436f3407b85d14cac835e65640/client.jar"
+      "sha1": "2a1e9a8e09a6312adb91bf2a1b1188c57861ab65",
+      "size": 36612778,
+      "url": "https://piston-data.mojang.com/v1/objects/2a1e9a8e09a6312adb91bf2a1b1188c57861ab65/client.jar"
     },
     "server": {
-      "sha1": "2d3568cd561daad8e80fdc605e64270ae8dd8aba",
-      "size": 59568557,
-      "url": "https://piston-data.mojang.com/v1/objects/2d3568cd561daad8e80fdc605e64270ae8dd8aba/server.jar"
+      "sha1": "c434d6c7c15a93a20698c5eb3624c51241bde69c",
+      "size": 59584345,
+      "url": "https://piston-data.mojang.com/v1/objects/c434d6c7c15a93a20698c5eb3624c51241bde69c/server.jar"
     }
   },
-  "id": "25w45a_unobfuscated",
+  "id": "25w46a_unobfuscated",
   "libraries": [
     "com.azure:azure-json:1.4.0",
     "com.github.oshi:oshi-core:6.9.0",
@@ -69,35 +69,33 @@
   ],
   "manifests": [
     {
-      "assetHash": "b4092cb1d72de044b9958b51d0a72a0a2b986649",
+      "assetHash": "8417eabf144dc2461b1bcaa0adc55b9dc4727a16",
       "assetIndex": "28",
-      "downloads": "4a1cc3d8aa65eb2963a62493157ac2dcfdabed62",
+      "downloads": "82699682c81c7ec115962dfa67d5895a5b8fe59a",
       "downloadsId": 1,
-      "hash": "e80708024a85c4a7be0fe0a66787d18844bdcebc",
-      "lastModified": "2025-11-04T14:20:48+00:00",
-      "time": "2025-11-04T14:07:08+00:00",
+      "hash": "80942e182d0747849589ea6202f0826d72211194",
+      "lastModified": "2025-11-11T14:54:53+00:00",
+      "time": "2025-11-11T13:20:54+00:00",
       "type": "unobfuscated",
-      "url": "../manifest/e/8/0708024a85c4a7be0fe0a66787d18844bdcebc/25w45a_unobfuscated.json"
+      "url": "../manifest/8/0/942e182d0747849589ea6202f0826d72211194/25w46a_unobfuscated.json"
     }
   ],
-  "next": [
-    "25w46a_unobfuscated"
-  ],
-  "normalizedVersion": "1.21.11-alpha.25.45.a.unobfuscated",
+  "next": [],
+  "normalizedVersion": "1.21.11-alpha.25.46.a.unobfuscated",
   "previous": [
-    "25w44a"
+    "25w45a_unobfuscated"
   ],
   "protocol": {
     "type": "netty-snapshot",
-    "version": 277
+    "version": 278
   },
   "releaseTarget": "1.21.11",
-  "releaseTime": "2025-11-04T14:07:08+00:00",
+  "releaseTime": "2025-11-11T13:20:54+00:00",
   "server": true,
   "type": "unobfuscated",
   "unobfuscated": true,
   "world": {
     "format": "anvil",
-    "version": 4660
+    "version": 4662
   }
 }
