@@ -2474,10 +2474,12 @@
     {
       "version": 278,
       "clients": [
-        "25w46a"
+        "25w46a",
+        "25w46a_unobfuscated"
       ],
       "servers": [
-        "25w46a"
+        "25w46a",
+        "25w46a_unobfuscated"
       ]
     }
   ]
