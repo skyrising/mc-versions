@@ -1,20 +1,20 @@
 {
   "$schema": "https://skyrising.github.io/mc-versions/schemas/version.json",
   "client": true,
-  "displayVersion": "25w46a Unobfuscated",
+  "displayVersion": "1.21.11 Pre-Release 1 Unobfuscated",
   "downloads": {
     "client": {
-      "sha1": "2a1e9a8e09a6312adb91bf2a1b1188c57861ab65",
-      "size": 36612778,
-      "url": "https://piston-data.mojang.com/v1/objects/2a1e9a8e09a6312adb91bf2a1b1188c57861ab65/client.jar"
+      "sha1": "37e6d1aa9d8ae06f3ea1d186b30d2abed784ab3f",
+      "size": 36728033,
+      "url": "https://piston-data.mojang.com/v1/objects/37e6d1aa9d8ae06f3ea1d186b30d2abed784ab3f/client.jar"
     },
     "server": {
-      "sha1": "c434d6c7c15a93a20698c5eb3624c51241bde69c",
-      "size": 59584345,
-      "url": "https://piston-data.mojang.com/v1/objects/c434d6c7c15a93a20698c5eb3624c51241bde69c/server.jar"
+      "sha1": "ffd25fe7eb268ec94a70ca0a672cadf7f62d20c9",
+      "size": 59617118,
+      "url": "https://piston-data.mojang.com/v1/objects/ffd25fe7eb268ec94a70ca0a672cadf7f62d20c9/server.jar"
     }
   },
-  "id": "25w46a_unobfuscated",
+  "id": "1.21.11-pre1_unobfuscated",
   "libraries": [
     "com.azure:azure-json:1.4.0",
     "com.github.oshi:oshi-core:6.9.0",
@@ -27,7 +27,7 @@
     "com.mojang:blocklist:1.0.10",
     "com.mojang:brigadier:1.3.10",
     "com.mojang:datafixerupper:9.0.19",
-    "com.mojang:jtracy:1.0.36",
+    "com.mojang:jtracy:1.0.37",
     "com.mojang:logging:1.6.11",
     "com.mojang:patchy:2.2.10",
     "com.mojang:text2speech:1.18.11",
@@ -69,35 +69,32 @@
   ],
   "manifests": [
     {
-      "assetHash": "8417eabf144dc2461b1bcaa0adc55b9dc4727a16",
-      "assetIndex": "28",
-      "downloads": "82699682c81c7ec115962dfa67d5895a5b8fe59a",
+      "assetHash": "36fe174601f68b0bb27c93a79ad285719ba8e364",
+      "assetIndex": "29",
+      "downloads": "f6527f49d993b037590a19c3358b7b799a37fa1e",
       "downloadsId": 1,
-      "hash": "80942e182d0747849589ea6202f0826d72211194",
-      "lastModified": "2025-11-11T14:54:53+00:00",
-      "time": "2025-11-11T13:20:54+00:00",
+      "hash": "8b1af2915f7e96624131abf1be3b39b91afc10ec",
+      "time": "2025-11-19T08:30:46+00:00",
       "type": "unobfuscated",
-      "url": "../manifest/8/0/942e182d0747849589ea6202f0826d72211194/25w46a_unobfuscated.json"
+      "url": "../manifest/8/b/1af2915f7e96624131abf1be3b39b91afc10ec/1_21_11-pre1_unobfuscated.json"
     }
   ],
-  "next": [
-    "1.21.11-pre1_unobfuscated"
-  ],
-  "normalizedVersion": "1.21.11-alpha.25.46.a.unobfuscated",
+  "next": [],
+  "normalizedVersion": "1.21.11-pre.1.unobfuscated",
   "previous": [
-    "25w45a_unobfuscated"
+    "25w46a_unobfuscated"
   ],
   "protocol": {
     "type": "netty-snapshot",
-    "version": 278
+    "version": 279
   },
-  "releaseTarget": "1.21.11",
-  "releaseTime": "2025-11-11T13:20:54+00:00",
+  "releaseTarget": "1.21.11-pre1",
+  "releaseTime": "2025-11-19T08:30:46+00:00",
   "server": true,
   "type": "unobfuscated",
   "unobfuscated": true,
   "world": {
     "format": "anvil",
-    "version": 4662
+    "version": 4663
   }
 }

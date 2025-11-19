@@ -2485,10 +2485,12 @@
     {
       "version": 279,
       "clients": [
-        "1.21.11-pre1"
+        "1.21.11-pre1",
+        "1.21.11-pre1_unobfuscated"
       ],
       "servers": [
-        "1.21.11-pre1"
+        "1.21.11-pre1",
+        "1.21.11-pre1_unobfuscated"
       ]
     }
   ]
