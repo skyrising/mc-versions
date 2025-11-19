@@ -5,12 +5,20 @@
     "classic_server": "server-c1.10.1",
     "alpha_server": "server-a0.2.8",
     "old_beta": "b1.9-pre6",
-    "snapshot": "25w46a",
+    "snapshot": "1.21.11-pre1",
     "release": "1.21.10",
     "pending": "1.19_deep_dark_experimental_snapshot-1",
     "unobfuscated": "25w46a_unobfuscated"
   },
   "versions": [
+    {
+      "id": "1.21.11-pre1",
+      "type": "snapshot",
+      "url": "version/manifest/1.21.11-pre1.json",
+      "time": "2025-11-19T08:06:45+00:00",
+      "releaseTime": "2025-11-19T08:06:45+00:00",
+      "details": "version/1.21.11-pre1.json"
+    },
     {
       "id": "25w46a_unobfuscated",
       "type": "unobfuscated",

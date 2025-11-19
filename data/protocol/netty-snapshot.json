@@ -2481,6 +2481,15 @@
         "25w46a",
         "25w46a_unobfuscated"
       ]
+    },
+    {
+      "version": 279,
+      "clients": [
+        "1.21.11-pre1"
+      ],
+      "servers": [
+        "1.21.11-pre1"
+      ]
     }
   ]
 }
