@@ -1,0 +1,111 @@
+{
+  "$schema": "https://skyrising.github.io/mc-versions/schemas/version.json",
+  "client": true,
+  "displayVersion": "1.21.11 Pre-Release 2",
+  "downloads": {
+    "client": {
+      "sha1": "d27328fcee29decc1870917b8f4e6377accb2fe8",
+      "size": 31149257,
+      "url": "https://piston-data.mojang.com/v1/objects/d27328fcee29decc1870917b8f4e6377accb2fe8/client.jar"
+    },
+    "client_mappings": {
+      "sha1": "00c87b93bfa0cf3428fbe6289a171f219dd5877b",
+      "size": 11776899,
+      "url": "https://piston-data.mojang.com/v1/objects/00c87b93bfa0cf3428fbe6289a171f219dd5877b/client.txt"
+    },
+    "server": {
+      "sha1": "7f997b55094aa7754f25173aafef657449f02bec",
+      "size": 56329659,
+      "url": "https://piston-data.mojang.com/v1/objects/7f997b55094aa7754f25173aafef657449f02bec/server.jar"
+    },
+    "server_mappings": {
+      "sha1": "96bf7fccb05bb77f0daedd29ab9e49127a0d2dbc",
+      "size": 8677039,
+      "url": "https://piston-data.mojang.com/v1/objects/96bf7fccb05bb77f0daedd29ab9e49127a0d2dbc/server.txt"
+    }
+  },
+  "id": "1.21.11-pre2",
+  "libraries": [
+    "com.azure:azure-json:1.4.0",
+    "com.github.oshi:oshi-core:6.9.0",
+    "com.google.code.gson:gson:2.13.2",
+    "com.google.guava:failureaccess:1.0.3",
+    "com.google.guava:guava:33.5.0-jre",
+    "com.ibm.icu:icu4j:77.1",
+    "com.microsoft.azure:msal4j:1.23.1",
+    "com.mojang:authlib:7.0.61",
+    "com.mojang:blocklist:1.0.10",
+    "com.mojang:brigadier:1.3.10",
+    "com.mojang:datafixerupper:9.0.19",
+    "com.mojang:jtracy:1.0.37",
+    "com.mojang:logging:1.6.11",
+    "com.mojang:patchy:2.2.10",
+    "com.mojang:text2speech:1.18.11",
+    "commons-codec:commons-codec:1.19.0",
+    "commons-io:commons-io:2.20.0",
+    "io.netty:netty-buffer:4.2.7.Final",
+    "io.netty:netty-codec-base:4.2.7.Final",
+    "io.netty:netty-codec-compression:4.2.7.Final",
+    "io.netty:netty-codec-http:4.2.7.Final",
+    "io.netty:netty-common:4.2.7.Final",
+    "io.netty:netty-handler:4.2.7.Final",
+    "io.netty:netty-resolver:4.2.7.Final",
+    "io.netty:netty-transport-classes-epoll:4.2.7.Final",
+    "io.netty:netty-transport-classes-kqueue:4.2.7.Final",
+    "io.netty:netty-transport-native-unix-common:4.2.7.Final",
+    "io.netty:netty-transport:4.2.7.Final",
+    "it.unimi.dsi:fastutil:8.5.18",
+    "net.java.dev.jna:jna-platform:5.17.0",
+    "net.java.dev.jna:jna:5.17.0",
+    "net.sf.jopt-simple:jopt-simple:5.0.4",
+    "org.apache.commons:commons-compress:1.28.0",
+    "org.apache.commons:commons-lang3:3.19.0",
+    "org.apache.logging.log4j:log4j-api:2.25.2",
+    "org.apache.logging.log4j:log4j-core:2.25.2",
+    "org.apache.logging.log4j:log4j-slf4j2-impl:2.25.2",
+    "org.jcraft:jorbis:0.0.17",
+    "org.joml:joml:1.10.8",
+    "org.jspecify:jspecify:1.0.0",
+    "org.lwjgl:lwjgl-freetype:3.3.3",
+    "org.lwjgl:lwjgl-glfw:3.3.3",
+    "org.lwjgl:lwjgl-jemalloc:3.3.3",
+    "org.lwjgl:lwjgl-openal:3.3.3",
+    "org.lwjgl:lwjgl-opengl:3.3.3",
+    "org.lwjgl:lwjgl-stb:3.3.3",
+    "org.lwjgl:lwjgl-tinyfd:3.3.3",
+    "org.lwjgl:lwjgl:3.3.3",
+    "org.lz4:lz4-java:1.8.0",
+    "org.slf4j:slf4j-api:2.0.17"
+  ],
+  "manifests": [
+    {
+      "assetHash": "87b4607146d3fd2af60e48b05bc45dd307f04ff4",
+      "assetIndex": "29",
+      "downloads": "1df887c8161a26af2095ec31a95b4f78fb529454",
+      "downloadsId": 1,
+      "hash": "f716e499543c5f48258481a97e8ba6fcd8443c2b",
+      "lastModified": "2025-11-21T12:26:17+00:00",
+      "time": "2025-11-21T11:44:15+00:00",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/manifest/f/7/16e499543c5f48258481a97e8ba6fcd8443c2b/1.21.11-pre2.json"
+    }
+  ],
+  "next": [],
+  "normalizedVersion": "1.21.11-pre.2",
+  "previous": [
+    "1.21.11-pre1"
+  ],
+  "protocol": {
+    "type": "netty-snapshot",
+    "version": 280
+  },
+  "releaseTarget": "1.21.11",
+  "releaseTime": "2025-11-21T11:44:15+00:00",
+  "server": true,
+  "sharedMappings": true,
+  "type": "snapshot",
+  "world": {
+    "format": "anvil",
+    "version": 4664
+  }
+}
