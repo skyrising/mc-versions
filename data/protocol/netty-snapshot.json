@@ -2492,6 +2492,15 @@
         "1.21.11-pre1",
         "1.21.11-pre1_unobfuscated"
       ]
+    },
+    {
+      "version": 280,
+      "clients": [
+        "1.21.11-pre2"
+      ],
+      "servers": [
+        "1.21.11-pre2"
+      ]
     }
   ]
 }
