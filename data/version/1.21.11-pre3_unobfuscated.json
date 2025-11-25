@@ -1,20 +1,20 @@
 {
   "$schema": "https://skyrising.github.io/mc-versions/schemas/version.json",
   "client": true,
-  "displayVersion": "1.21.11 Pre-Release 2 Unobfuscated",
+  "displayVersion": "1.21.11 Pre-Release 3 Unobfuscated",
   "downloads": {
     "client": {
-      "sha1": "a25c031a36ae7a98b574194aecd9a9b910f24d85",
-      "size": 36729452,
-      "url": "https://piston-data.mojang.com/v1/objects/a25c031a36ae7a98b574194aecd9a9b910f24d85/client.jar"
+      "sha1": "5de1eb67d92ffdcf6c729b5f61a3ae780a89d548",
+      "size": 36731875,
+      "url": "https://piston-data.mojang.com/v1/objects/5de1eb67d92ffdcf6c729b5f61a3ae780a89d548/client.jar"
     },
     "server": {
-      "sha1": "ec5d0361fb8f38ec6f6fd0162f6da0eef2c1a7d7",
-      "size": 59618619,
-      "url": "https://piston-data.mojang.com/v1/objects/ec5d0361fb8f38ec6f6fd0162f6da0eef2c1a7d7/server.jar"
+      "sha1": "880c7007f5456c9bb30e170ea982d39df119a095",
+      "size": 59618344,
+      "url": "https://piston-data.mojang.com/v1/objects/880c7007f5456c9bb30e170ea982d39df119a095/server.jar"
     }
   },
-  "id": "1.21.11-pre2_unobfuscated",
+  "id": "1.21.11-pre3_unobfuscated",
   "libraries": [
     "com.azure:azure-json:1.4.0",
     "com.github.oshi:oshi-core:6.9.0",
@@ -69,34 +69,32 @@
   ],
   "manifests": [
     {
-      "assetHash": "87b4607146d3fd2af60e48b05bc45dd307f04ff4",
+      "assetHash": "9eb99101f5fd6921b599c7ca10e2fa3d1c909b99",
       "assetIndex": "29",
-      "downloads": "6cd7af87d392a86bd5a5335c8dd56c5bc8d64074",
+      "downloads": "d30acca7a252dfd7802fb7f83c47cd9d4c5f3a9e",
       "downloadsId": 1,
-      "hash": "cec4b21237aad9051b1966c492bf11cd6dead601",
-      "time": "2025-11-21T12:07:21+00:00",
+      "hash": "196474921515196ee36722ae1ef55918a7024dc0",
+      "time": "2025-11-25T14:14:30+00:00",
       "type": "unobfuscated",
-      "url": "../manifest/c/e/c4b21237aad9051b1966c492bf11cd6dead601/1_21_11-pre2_unobfuscated.json"
+      "url": "../manifest/1/9/6474921515196ee36722ae1ef55918a7024dc0/1_21_11-pre3_unobfuscated.json"
     }
   ],
-  "next": [
-    "1.21.11-pre3_unobfuscated"
-  ],
-  "normalizedVersion": "1.21.11-pre.2.unobfuscated",
+  "next": [],
+  "normalizedVersion": "1.21.11-pre.3.unobfuscated",
   "previous": [
-    "1.21.11-pre1_unobfuscated"
+    "1.21.11-pre2_unobfuscated"
   ],
   "protocol": {
     "type": "netty-snapshot",
-    "version": 280
+    "version": 281
   },
-  "releaseTarget": "1.21.11-pre2",
-  "releaseTime": "2025-11-21T12:07:21+00:00",
+  "releaseTarget": "1.21.11-pre3",
+  "releaseTime": "2025-11-25T14:14:30+00:00",
   "server": true,
   "type": "unobfuscated",
   "unobfuscated": true,
   "world": {
     "format": "anvil",
-    "version": 4664
+    "version": 4665
   }
 }

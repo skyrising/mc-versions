@@ -2507,10 +2507,12 @@
     {
       "version": 281,
       "clients": [
-        "1.21.11-pre3"
+        "1.21.11-pre3",
+        "1.21.11-pre3_unobfuscated"
       ],
       "servers": [
-        "1.21.11-pre3"
+        "1.21.11-pre3",
+        "1.21.11-pre3_unobfuscated"
       ]
     }
   ]
