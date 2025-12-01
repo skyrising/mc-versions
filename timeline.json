@@ -6742,5 +6742,11 @@
     "type": "pre-release",
     "normalizedVersion": "1.21.11-pre.4",
     "releaseTime": "2025-12-01T13:17:32+00:00"
+  },
+  {
+    "id": "1.21.11-pre4_unobfuscated",
+    "type": "pre-release",
+    "normalizedVersion": "1.21.11-pre.4.unobfuscated",
+    "releaseTime": "2025-12-01T13:40:12+00:00"
   }
 ]

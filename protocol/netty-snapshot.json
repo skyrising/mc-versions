@@ -2518,10 +2518,12 @@
     {
       "version": 282,
       "clients": [
-        "1.21.11-pre4"
+        "1.21.11-pre4",
+        "1.21.11-pre4_unobfuscated"
       ],
       "servers": [
-        "1.21.11-pre4"
+        "1.21.11-pre4",
+        "1.21.11-pre4_unobfuscated"
       ]
     }
   ]
