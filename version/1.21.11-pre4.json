@@ -1,30 +1,30 @@
 {
   "$schema": "https://skyrising.github.io/mc-versions/schemas/version.json",
   "client": true,
-  "displayVersion": "1.21.11 Pre-Release 2",
+  "displayVersion": "1.21.11 Pre-Release 4",
   "downloads": {
     "client": {
-      "sha1": "d27328fcee29decc1870917b8f4e6377accb2fe8",
-      "size": 31149257,
-      "url": "https://piston-data.mojang.com/v1/objects/d27328fcee29decc1870917b8f4e6377accb2fe8/client.jar"
+      "sha1": "6dfa43a11558357822e03d8cec024f5b4bdb526e",
+      "size": 31151204,
+      "url": "https://piston-data.mojang.com/v1/objects/6dfa43a11558357822e03d8cec024f5b4bdb526e/client.jar"
     },
     "client_mappings": {
-      "sha1": "00c87b93bfa0cf3428fbe6289a171f219dd5877b",
-      "size": 11776899,
-      "url": "https://piston-data.mojang.com/v1/objects/00c87b93bfa0cf3428fbe6289a171f219dd5877b/client.txt"
+      "sha1": "a4f3905ff8acc80576899f36014beb1a42baaa39",
+      "size": 11779108,
+      "url": "https://piston-data.mojang.com/v1/objects/a4f3905ff8acc80576899f36014beb1a42baaa39/client.txt"
     },
     "server": {
-      "sha1": "7f997b55094aa7754f25173aafef657449f02bec",
-      "size": 56329659,
-      "url": "https://piston-data.mojang.com/v1/objects/7f997b55094aa7754f25173aafef657449f02bec/server.jar"
+      "sha1": "db1a9f24a4610f2f71e8991c11f70a4b62750c1b",
+      "size": 56329067,
+      "url": "https://piston-data.mojang.com/v1/objects/db1a9f24a4610f2f71e8991c11f70a4b62750c1b/server.jar"
     },
     "server_mappings": {
-      "sha1": "96bf7fccb05bb77f0daedd29ab9e49127a0d2dbc",
-      "size": 8677039,
-      "url": "https://piston-data.mojang.com/v1/objects/96bf7fccb05bb77f0daedd29ab9e49127a0d2dbc/server.txt"
+      "sha1": "86cbd647f7e74a32c4570469c3c3167d66356178",
+      "size": 8678431,
+      "url": "https://piston-data.mojang.com/v1/objects/86cbd647f7e74a32c4570469c3c3167d66356178/server.txt"
     }
   },
-  "id": "1.21.11-pre2",
+  "id": "1.21.11-pre4",
   "libraries": [
     "com.azure:azure-json:1.4.0",
     "com.github.oshi:oshi-core:6.9.0",
@@ -81,55 +81,31 @@
     {
       "assetHash": "f67249e27e60493885d2261822cff12131786b90",
       "assetIndex": "29",
-      "downloads": "1df887c8161a26af2095ec31a95b4f78fb529454",
+      "downloads": "de08ed529a28c08851ef71f0b281b1d364baa4e9",
       "downloadsId": 1,
-      "hash": "e5b671a62e5bd7fc145ebcbdbece8d10a9f939f7",
-      "lastModified": "2025-12-01T13:35:15+00:00",
-      "time": "2025-11-21T11:44:15+00:00",
+      "hash": "a24c1d88981a0e64d2a17853d7f2a0afef158846",
+      "lastModified": "2025-12-01T13:35:14+00:00",
+      "time": "2025-12-01T13:17:32+00:00",
       "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/e/5/b671a62e5bd7fc145ebcbdbece8d10a9f939f7/1.21.11-pre2.json"
-    },
-    {
-      "assetHash": "9eb99101f5fd6921b599c7ca10e2fa3d1c909b99",
-      "assetIndex": "29",
-      "downloads": "1df887c8161a26af2095ec31a95b4f78fb529454",
-      "downloadsId": 1,
-      "hash": "85183f68f4707f6e3e96f92dacb5f99d2f651301",
-      "lastModified": "2025-11-25T14:57:20+00:00",
-      "time": "2025-11-21T11:44:15+00:00",
-      "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/8/5/183f68f4707f6e3e96f92dacb5f99d2f651301/1.21.11-pre2.json"
-    },
-    {
-      "assetHash": "87b4607146d3fd2af60e48b05bc45dd307f04ff4",
-      "assetIndex": "29",
-      "downloads": "1df887c8161a26af2095ec31a95b4f78fb529454",
-      "downloadsId": 1,
-      "hash": "f716e499543c5f48258481a97e8ba6fcd8443c2b",
-      "lastModified": "2025-11-21T12:26:17+00:00",
-      "time": "2025-11-21T11:44:15+00:00",
-      "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/f/7/16e499543c5f48258481a97e8ba6fcd8443c2b/1.21.11-pre2.json"
+      "url": "https://skyrising.github.io/mc-versions/manifest/a/2/4c1d88981a0e64d2a17853d7f2a0afef158846/1.21.11-pre4.json"
     }
   ],
-  "next": [
-    "1.21.11-pre3"
-  ],
-  "normalizedVersion": "1.21.11-pre.2",
+  "next": [],
+  "normalizedVersion": "1.21.11-pre.4",
   "previous": [
-    "1.21.11-pre1"
+    "1.21.11-pre3"
   ],
   "protocol": {
     "type": "netty-snapshot",
-    "version": 280
+    "version": 282
   },
   "releaseTarget": "1.21.11",
-  "releaseTime": "2025-11-21T11:44:15+00:00",
+  "releaseTime": "2025-12-01T13:17:32+00:00",
   "server": true,
   "sharedMappings": true,
   "type": "snapshot",
   "world": {
     "format": "anvil",
-    "version": 4664
+    "version": 4666
   }
 }
