@@ -8,9 +8,17 @@
     "snapshot": "1.21.11-pre4",
     "release": "1.21.10",
     "pending": "1.19_deep_dark_experimental_snapshot-1",
-    "unobfuscated": "1.21.11-pre3_unobfuscated"
+    "unobfuscated": "1.21.11-pre4_unobfuscated"
   },
   "versions": [
+    {
+      "id": "1.21.11-pre4_unobfuscated",
+      "type": "unobfuscated",
+      "url": "version/manifest/1.21.11-pre4_unobfuscated.json",
+      "time": "2025-12-01T13:40:12+00:00",
+      "releaseTime": "2025-12-01T13:40:12+00:00",
+      "details": "version/1.21.11-pre4_unobfuscated.json"
+    },
     {
       "id": "1.21.11-pre4",
       "type": "snapshot",
