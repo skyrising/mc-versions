@@ -79,6 +79,17 @@
   ],
   "manifests": [
     {
+      "assetHash": "f67249e27e60493885d2261822cff12131786b90",
+      "assetIndex": "29",
+      "downloads": "e8c5f8ef7204ab92b24e1de8036fc0c437093ad3",
+      "downloadsId": 1,
+      "hash": "c85f531117c6224972686cb360e681192f16eb5c",
+      "lastModified": "2025-12-01T13:35:15+00:00",
+      "time": "2025-11-25T13:56:50+00:00",
+      "type": "snapshot",
+      "url": "../manifest/c/8/5f531117c6224972686cb360e681192f16eb5c/1.21.11-pre3.json"
+    },
+    {
       "assetHash": "9eb99101f5fd6921b599c7ca10e2fa3d1c909b99",
       "assetIndex": "29",
       "downloads": "e8c5f8ef7204ab92b24e1de8036fc0c437093ad3",
@@ -90,7 +101,9 @@
       "url": "../manifest/a/b/37fec8cc71d5f9e167399c71d73d116be4adf9/1.21.11-pre3.json"
     }
   ],
-  "next": [],
+  "next": [
+    "1.21.11-pre4"
+  ],
   "normalizedVersion": "1.21.11-pre.3",
   "previous": [
     "1.21.11-pre2"
