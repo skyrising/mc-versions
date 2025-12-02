@@ -5020,49 +5020,49 @@
   },
   {
     "id": "1.18_experimental-snapshot-1",
-    "type": "other",
+    "type": "experimental",
     "normalizedVersion": "1.18.0-Experimental.1",
     "publicTime": "2021-07-13T16:02:00+00:00",
     "releaseTime": "2021-07-13T12:54:19+00:00"
   },
   {
     "id": "1.18_experimental-snapshot-2",
-    "type": "other",
+    "type": "experimental",
     "normalizedVersion": "1.18.0-Experimental.2",
     "publicTime": "2021-07-20T15:00:00+00:00",
     "releaseTime": "2021-07-20T13:35:08+00:00"
   },
   {
     "id": "1.18_experimental-snapshot-3",
-    "type": "other",
+    "type": "experimental",
     "normalizedVersion": "1.18.0-Experimental.3",
     "publicTime": "2021-08-10T13:37:00+00:00",
     "releaseTime": "2021-08-10T12:42:45+00:00"
   },
   {
     "id": "1.18_experimental-snapshot-4",
-    "type": "other",
+    "type": "experimental",
     "normalizedVersion": "1.18.0-Experimental.4",
     "publicTime": "2021-08-17T16:56:00+00:00",
     "releaseTime": "2021-08-17T16:10:25+00:00"
   },
   {
     "id": "1.18_experimental-snapshot-5",
-    "type": "other",
+    "type": "experimental",
     "normalizedVersion": "1.18.0-Experimental.5",
     "publicTime": "2021-08-25T15:04:00+00:00",
     "releaseTime": "2021-08-25T14:41:57+00:00"
   },
   {
     "id": "1.18_experimental-snapshot-6",
-    "type": "other",
+    "type": "experimental",
     "normalizedVersion": "1.18.0-Experimental.6",
     "publicTime": "2021-09-01T14:01:00+00:00",
     "releaseTime": "2021-09-01T12:53:14+00:00"
   },
   {
     "id": "1.18_experimental-snapshot-7",
-    "type": "other",
+    "type": "experimental",
     "normalizedVersion": "1.18.0-Experimental.7",
     "publicTime": "2021-09-08T13:33:00+00:00",
     "releaseTime": "2021-09-08T12:33:23+00:00"
@@ -5275,7 +5275,7 @@
   },
   {
     "id": "1.19_deep_dark_experimental_snapshot-1",
-    "type": "other",
+    "type": "experimental",
     "normalizedVersion": "1.19.0-Deep.Dark.Experimental.1",
     "releaseTime": "2022-02-17T13:55:59+00:00"
   },
@@ -6020,13 +6020,13 @@
   {
     "id": "af-2024",
     "type": "other",
-    "normalizedVersion": "1.20.5-alpha.23.14.april.fools",
+    "normalizedVersion": "1.20.5-alpha.24.14.april.fools",
     "releaseTime": "2024-04-01T08:41:32+00:00"
   },
   {
     "id": "af-2024-2",
     "type": "other",
-    "normalizedVersion": "1.20.5-alpha.23.14.april.fools.2",
+    "normalizedVersion": "1.20.5-alpha.24.14.april.fools.2",
     "releaseTime": "2024-04-01T11:07:19+00:00"
   },
   {
@@ -6685,7 +6685,7 @@
   },
   {
     "id": "25w45a_unobfuscated",
-    "type": "other",
+    "type": "snapshot",
     "normalizedVersion": "1.21.11-alpha.25.45.a.unobfuscated",
     "releaseTime": "2025-11-04T14:07:08+00:00"
   },
@@ -6697,7 +6697,7 @@
   },
   {
     "id": "25w46a_unobfuscated",
-    "type": "other",
+    "type": "snapshot",
     "normalizedVersion": "1.21.11-alpha.25.46.a.unobfuscated",
     "releaseTime": "2025-11-11T13:20:54+00:00"
   },
