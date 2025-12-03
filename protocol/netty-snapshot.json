@@ -2529,10 +2529,12 @@
     {
       "version": 283,
       "clients": [
-        "1.21.11-pre5"
+        "1.21.11-pre5",
+        "1.21.11-pre5_unobfuscated"
       ],
       "servers": [
-        "1.21.11-pre5"
+        "1.21.11-pre5",
+        "1.21.11-pre5_unobfuscated"
       ]
     }
   ]
