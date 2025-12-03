@@ -1,30 +1,30 @@
 {
   "$schema": "https://skyrising.github.io/mc-versions/schemas/version.json",
   "client": true,
-  "displayVersion": "1.21.11 Pre-Release 4",
+  "displayVersion": "1.21.11 Pre-Release 5",
   "downloads": {
     "client": {
-      "sha1": "6dfa43a11558357822e03d8cec024f5b4bdb526e",
-      "size": 31151204,
-      "url": "https://piston-data.mojang.com/v1/objects/6dfa43a11558357822e03d8cec024f5b4bdb526e/client.jar"
+      "sha1": "0744654aaa3a0851d64d0030591dee239b28fce0",
+      "size": 31152421,
+      "url": "https://piston-data.mojang.com/v1/objects/0744654aaa3a0851d64d0030591dee239b28fce0/client.jar"
     },
     "client_mappings": {
-      "sha1": "a4f3905ff8acc80576899f36014beb1a42baaa39",
-      "size": 11779108,
-      "url": "https://piston-data.mojang.com/v1/objects/a4f3905ff8acc80576899f36014beb1a42baaa39/client.txt"
+      "sha1": "bf22f899a55456f00963f624ecd605d18f3441a0",
+      "size": 11779170,
+      "url": "https://piston-data.mojang.com/v1/objects/bf22f899a55456f00963f624ecd605d18f3441a0/client.txt"
     },
     "server": {
-      "sha1": "db1a9f24a4610f2f71e8991c11f70a4b62750c1b",
-      "size": 56329067,
-      "url": "https://piston-data.mojang.com/v1/objects/db1a9f24a4610f2f71e8991c11f70a4b62750c1b/server.jar"
+      "sha1": "d62fa16c3bbb5c6809cbd45cd60f3396a9d543a3",
+      "size": 56327949,
+      "url": "https://piston-data.mojang.com/v1/objects/d62fa16c3bbb5c6809cbd45cd60f3396a9d543a3/server.jar"
     },
     "server_mappings": {
-      "sha1": "86cbd647f7e74a32c4570469c3c3167d66356178",
-      "size": 8678431,
-      "url": "https://piston-data.mojang.com/v1/objects/86cbd647f7e74a32c4570469c3c3167d66356178/server.txt"
+      "sha1": "6750efdbe3ba904eb6eaaeef58f4b632df1c34ea",
+      "size": 8678489,
+      "url": "https://piston-data.mojang.com/v1/objects/6750efdbe3ba904eb6eaaeef58f4b632df1c34ea/server.txt"
     }
   },
-  "id": "1.21.11-pre4",
+  "id": "1.21.11-pre5",
   "libraries": [
     "com.azure:azure-json:1.4.0",
     "com.github.oshi:oshi-core:6.9.0",
@@ -81,44 +81,31 @@
     {
       "assetHash": "abb269b44000c5bf1d6b0b0f1284a19c15b6e2bd",
       "assetIndex": "29",
-      "downloads": "de08ed529a28c08851ef71f0b281b1d364baa4e9",
+      "downloads": "c97765088aa2fdcd4d3d2050fef4548e08422958",
       "downloadsId": 1,
-      "hash": "c523f78d8df66bdfa8499216a9ee91b9e265daac",
-      "lastModified": "2025-12-03T13:28:00+00:00",
-      "time": "2025-12-01T13:17:32+00:00",
+      "hash": "a07b8e1d25870fe39fb5c1caf0592839389cb96b",
+      "lastModified": "2025-12-03T13:27:59+00:00",
+      "time": "2025-12-03T13:14:25+00:00",
       "type": "snapshot",
-      "url": "../manifest/c/5/23f78d8df66bdfa8499216a9ee91b9e265daac/1.21.11-pre4.json"
-    },
-    {
-      "assetHash": "f67249e27e60493885d2261822cff12131786b90",
-      "assetIndex": "29",
-      "downloads": "de08ed529a28c08851ef71f0b281b1d364baa4e9",
-      "downloadsId": 1,
-      "hash": "a24c1d88981a0e64d2a17853d7f2a0afef158846",
-      "lastModified": "2025-12-01T13:35:14+00:00",
-      "time": "2025-12-01T13:17:32+00:00",
-      "type": "snapshot",
-      "url": "../manifest/a/2/4c1d88981a0e64d2a17853d7f2a0afef158846/1.21.11-pre4.json"
+      "url": "../manifest/a/0/7b8e1d25870fe39fb5c1caf0592839389cb96b/1.21.11-pre5.json"
     }
   ],
-  "next": [
-    "1.21.11-pre5"
-  ],
-  "normalizedVersion": "1.21.11-pre.4",
+  "next": [],
+  "normalizedVersion": "1.21.11-pre.5",
   "previous": [
-    "1.21.11-pre3"
+    "1.21.11-pre4"
   ],
   "protocol": {
     "type": "netty-snapshot",
-    "version": 282
+    "version": 283
   },
   "releaseTarget": "1.21.11",
-  "releaseTime": "2025-12-01T13:17:32+00:00",
+  "releaseTime": "2025-12-03T13:14:25+00:00",
   "server": true,
   "sharedMappings": true,
   "type": "snapshot",
   "world": {
     "format": "anvil",
-    "version": 4666
+    "version": 4667
   }
 }

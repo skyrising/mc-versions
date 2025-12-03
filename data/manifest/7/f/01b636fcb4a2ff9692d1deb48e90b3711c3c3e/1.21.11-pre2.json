@@ -159,29 +159,30 @@
     "url": "https://piston-meta.mojang.com/v1/packages/abb269b44000c5bf1d6b0b0f1284a19c15b6e2bd/29.json"
   },
   "assets": "29",
+  "complianceLevel": 1,
   "downloads": {
     "client": {
-      "sha1": "70ab73433d42e46d3838462e724cdb3c0116b0c4",
-      "size": 31151189,
-      "url": "https://piston-data.mojang.com/v1/objects/70ab73433d42e46d3838462e724cdb3c0116b0c4/client.jar"
+      "sha1": "d27328fcee29decc1870917b8f4e6377accb2fe8",
+      "size": 31149257,
+      "url": "https://piston-data.mojang.com/v1/objects/d27328fcee29decc1870917b8f4e6377accb2fe8/client.jar"
     },
     "client_mappings": {
-      "sha1": "51bf53de8431f0da38ab7cd6b712b0379168b4a7",
-      "size": 11777800,
-      "url": "https://piston-data.mojang.com/v1/objects/51bf53de8431f0da38ab7cd6b712b0379168b4a7/client.txt"
+      "sha1": "00c87b93bfa0cf3428fbe6289a171f219dd5877b",
+      "size": 11776899,
+      "url": "https://piston-data.mojang.com/v1/objects/00c87b93bfa0cf3428fbe6289a171f219dd5877b/client.txt"
     },
     "server": {
-      "sha1": "51c894709733663dd6e20edd7fa254b904402cab",
-      "size": 56327133,
-      "url": "https://piston-data.mojang.com/v1/objects/51c894709733663dd6e20edd7fa254b904402cab/server.jar"
+      "sha1": "7f997b55094aa7754f25173aafef657449f02bec",
+      "size": 56329659,
+      "url": "https://piston-data.mojang.com/v1/objects/7f997b55094aa7754f25173aafef657449f02bec/server.jar"
     },
     "server_mappings": {
-      "sha1": "e46251ebad43bbe17a3e5702931803c6d597fea0",
-      "size": 8677376,
-      "url": "https://piston-data.mojang.com/v1/objects/e46251ebad43bbe17a3e5702931803c6d597fea0/server.txt"
+      "sha1": "96bf7fccb05bb77f0daedd29ab9e49127a0d2dbc",
+      "size": 8677039,
+      "url": "https://piston-data.mojang.com/v1/objects/96bf7fccb05bb77f0daedd29ab9e49127a0d2dbc/server.txt"
     }
   },
-  "id": "1.21.11-pre3",
+  "id": "1.21.11-pre2",
   "javaVersion": {
     "component": "java-runtime-delta",
     "majorVersion": 21
@@ -1835,7 +1836,7 @@
   },
   "mainClass": "net.minecraft.client.main.Main",
   "minimumLauncherVersion": 21,
-  "releaseTime": "2025-11-25T13:56:50+00:00",
-  "time": "2025-11-25T13:56:50+00:00",
+  "releaseTime": "2025-11-21T11:44:15+00:00",
+  "time": "2025-11-21T11:44:15+00:00",
   "type": "snapshot"
 }

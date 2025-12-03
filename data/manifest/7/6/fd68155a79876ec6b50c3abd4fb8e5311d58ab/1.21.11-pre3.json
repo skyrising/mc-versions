@@ -159,6 +159,7 @@
     "url": "https://piston-meta.mojang.com/v1/packages/abb269b44000c5bf1d6b0b0f1284a19c15b6e2bd/29.json"
   },
   "assets": "29",
+  "complianceLevel": 1,
   "downloads": {
     "client": {
       "sha1": "70ab73433d42e46d3838462e724cdb3c0116b0c4",
