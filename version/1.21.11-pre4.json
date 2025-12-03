@@ -79,6 +79,17 @@
   ],
   "manifests": [
     {
+      "assetHash": "abb269b44000c5bf1d6b0b0f1284a19c15b6e2bd",
+      "assetIndex": "29",
+      "downloads": "de08ed529a28c08851ef71f0b281b1d364baa4e9",
+      "downloadsId": 1,
+      "hash": "c523f78d8df66bdfa8499216a9ee91b9e265daac",
+      "lastModified": "2025-12-03T13:28:00+00:00",
+      "time": "2025-12-01T13:17:32+00:00",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/manifest/c/5/23f78d8df66bdfa8499216a9ee91b9e265daac/1.21.11-pre4.json"
+    },
+    {
       "assetHash": "f67249e27e60493885d2261822cff12131786b90",
       "assetIndex": "29",
       "downloads": "de08ed529a28c08851ef71f0b281b1d364baa4e9",
@@ -90,7 +101,9 @@
       "url": "https://skyrising.github.io/mc-versions/manifest/a/2/4c1d88981a0e64d2a17853d7f2a0afef158846/1.21.11-pre4.json"
     }
   ],
-  "next": [],
+  "next": [
+    "1.21.11-pre5"
+  ],
   "normalizedVersion": "1.21.11-pre.4",
   "previous": [
     "1.21.11-pre3"
