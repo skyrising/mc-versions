@@ -1,31 +1,32 @@
 {
   "$schema": "https://skyrising.github.io/mc-versions/schemas/version.json",
   "client": true,
-  "displayVersion": "1.21.11 Pre-Release 5",
+  "displayVersion": "1.21.11 Release Candidate 1",
   "downloads": {
     "client": {
-      "sha1": "0744654aaa3a0851d64d0030591dee239b28fce0",
-      "size": 31152421,
-      "url": "https://piston-data.mojang.com/v1/objects/0744654aaa3a0851d64d0030591dee239b28fce0/client.jar"
+      "sha1": "2bf71fd99b95ee8768de52d415c81eac0b02d10a",
+      "size": 31152169,
+      "url": "https://piston-data.mojang.com/v1/objects/2bf71fd99b95ee8768de52d415c81eac0b02d10a/client.jar"
     },
     "client_mappings": {
-      "sha1": "bf22f899a55456f00963f624ecd605d18f3441a0",
+      "sha1": "918dd613787ce4a139a658afc3f2a5f1a323e3dd",
       "size": 11779170,
-      "url": "https://piston-data.mojang.com/v1/objects/bf22f899a55456f00963f624ecd605d18f3441a0/client.txt"
+      "url": "https://piston-data.mojang.com/v1/objects/918dd613787ce4a139a658afc3f2a5f1a323e3dd/client.txt"
     },
     "server": {
-      "sha1": "d62fa16c3bbb5c6809cbd45cd60f3396a9d543a3",
-      "size": 56327949,
-      "url": "https://piston-data.mojang.com/v1/objects/d62fa16c3bbb5c6809cbd45cd60f3396a9d543a3/server.jar"
+      "sha1": "7870d0bcde81c7e239f8fc9fc5838db432b555e3",
+      "size": 56329164,
+      "url": "https://piston-data.mojang.com/v1/objects/7870d0bcde81c7e239f8fc9fc5838db432b555e3/server.jar"
     },
     "server_mappings": {
-      "sha1": "6750efdbe3ba904eb6eaaeef58f4b632df1c34ea",
+      "sha1": "f2f7b517dd953d974b5d0419b241bbc2cb505faa",
       "size": 8678489,
-      "url": "https://piston-data.mojang.com/v1/objects/6750efdbe3ba904eb6eaaeef58f4b632df1c34ea/server.txt"
+      "url": "https://piston-data.mojang.com/v1/objects/f2f7b517dd953d974b5d0419b241bbc2cb505faa/server.txt"
     }
   },
-  "id": "1.21.11-pre5",
+  "id": "1.21.11-rc1",
   "libraries": [
+    "at.yawk.lz4:lz4-java:1.8.1",
     "com.azure:azure-json:1.4.0",
     "com.github.oshi:oshi-core:6.9.0",
     "com.google.code.gson:gson:2.13.2",
@@ -74,51 +75,37 @@
     "org.lwjgl:lwjgl-stb:3.3.3",
     "org.lwjgl:lwjgl-tinyfd:3.3.3",
     "org.lwjgl:lwjgl:3.3.3",
-    "org.lz4:lz4-java:1.8.0",
     "org.slf4j:slf4j-api:2.0.17"
   ],
   "manifests": [
     {
       "assetHash": "7622e3628a9465e74203917eaf5c76c78dd91645",
       "assetIndex": "29",
-      "downloads": "c97765088aa2fdcd4d3d2050fef4548e08422958",
+      "downloads": "8ded0e341995c52494337c9dd33c45ab1500ad84",
       "downloadsId": 1,
-      "hash": "09b402abc10104ec925637f33502919322beff77",
+      "hash": "f8f039aaeba351acdab35c6e11664b297a8a950e",
       "lastModified": "2025-12-04T15:45:27+00:00",
-      "time": "2025-12-03T13:14:25+00:00",
+      "time": "2025-12-04T15:20:43+00:00",
       "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/0/9/b402abc10104ec925637f33502919322beff77/1.21.11-pre5.json"
-    },
-    {
-      "assetHash": "abb269b44000c5bf1d6b0b0f1284a19c15b6e2bd",
-      "assetIndex": "29",
-      "downloads": "c97765088aa2fdcd4d3d2050fef4548e08422958",
-      "downloadsId": 1,
-      "hash": "a07b8e1d25870fe39fb5c1caf0592839389cb96b",
-      "lastModified": "2025-12-03T13:27:59+00:00",
-      "time": "2025-12-03T13:14:25+00:00",
-      "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/manifest/a/0/7b8e1d25870fe39fb5c1caf0592839389cb96b/1.21.11-pre5.json"
+      "url": "https://skyrising.github.io/mc-versions/manifest/f/8/f039aaeba351acdab35c6e11664b297a8a950e/1.21.11-rc1.json"
     }
   ],
-  "next": [
-    "1.21.11-rc1"
-  ],
-  "normalizedVersion": "1.21.11-pre.5",
+  "next": [],
+  "normalizedVersion": "1.21.11-rc.1",
   "previous": [
-    "1.21.11-pre4"
+    "1.21.11-pre5"
   ],
   "protocol": {
     "type": "netty-snapshot",
-    "version": 283
+    "version": 284
   },
   "releaseTarget": "1.21.11",
-  "releaseTime": "2025-12-03T13:14:25+00:00",
+  "releaseTime": "2025-12-04T15:20:43+00:00",
   "server": true,
   "sharedMappings": true,
   "type": "snapshot",
   "world": {
     "format": "anvil",
-    "version": 4667
+    "version": 4668
   }
 }
