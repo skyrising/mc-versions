@@ -6768,9 +6768,21 @@
     "releaseTime": "2025-12-04T15:20:43+00:00"
   },
   {
+    "id": "1.21.11-rc1_unobfuscated",
+    "type": "release-candidate",
+    "normalizedVersion": "1.21.11-rc.1.unobfuscated",
+    "releaseTime": "2025-12-04T15:56:55+00:00"
+  },
+  {
     "id": "1.21.11-rc2",
     "type": "release-candidate",
     "normalizedVersion": "1.21.11-rc.2",
     "releaseTime": "2025-12-05T11:14:20+00:00"
+  },
+  {
+    "id": "1.21.11-rc2_unobfuscated",
+    "type": "release-candidate",
+    "normalizedVersion": "1.21.11-rc.2.unobfuscated",
+    "releaseTime": "2025-12-05T11:57:45+00:00"
   }
 ]

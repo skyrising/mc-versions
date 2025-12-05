@@ -2540,19 +2540,23 @@
     {
       "version": 284,
       "clients": [
-        "1.21.11-rc1"
+        "1.21.11-rc1",
+        "1.21.11-rc1_unobfuscated"
       ],
       "servers": [
-        "1.21.11-rc1"
+        "1.21.11-rc1",
+        "1.21.11-rc1_unobfuscated"
       ]
     },
     {
       "version": 285,
       "clients": [
-        "1.21.11-rc2"
+        "1.21.11-rc2",
+        "1.21.11-rc2_unobfuscated"
       ],
       "servers": [
-        "1.21.11-rc2"
+        "1.21.11-rc2",
+        "1.21.11-rc2_unobfuscated"
       ]
     }
   ]

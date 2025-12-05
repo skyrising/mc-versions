@@ -1,21 +1,22 @@
 {
   "$schema": "https://skyrising.github.io/mc-versions/schemas/version.json",
   "client": true,
-  "displayVersion": "1.21.11 Pre-Release 5 Unobfuscated",
+  "displayVersion": "1.21.11 Release Candidate 1 Unobfuscated",
   "downloads": {
     "client": {
-      "sha1": "f0a4676ae06f10a3aea437ffa5ccf7e931cea2f7",
-      "size": 36733461,
-      "url": "https://piston-data.mojang.com/v1/objects/f0a4676ae06f10a3aea437ffa5ccf7e931cea2f7/client.jar"
+      "sha1": "43ea30f537f06210f9930a264ecd1bf5e4bdfe54",
+      "size": 36733511,
+      "url": "https://piston-data.mojang.com/v1/objects/43ea30f537f06210f9930a264ecd1bf5e4bdfe54/client.jar"
     },
     "server": {
-      "sha1": "b37054cd7534c24f97c5fd86e5e4b4254979057d",
-      "size": 59619457,
-      "url": "https://piston-data.mojang.com/v1/objects/b37054cd7534c24f97c5fd86e5e4b4254979057d/server.jar"
+      "sha1": "35c4782336506a849657638a168aa3e45181187f",
+      "size": 59619389,
+      "url": "https://piston-data.mojang.com/v1/objects/35c4782336506a849657638a168aa3e45181187f/server.jar"
     }
   },
-  "id": "1.21.11-pre5_unobfuscated",
+  "id": "1.21.11-rc1_unobfuscated",
   "libraries": [
+    "at.yawk.lz4:lz4-java:1.8.1",
     "com.azure:azure-json:1.4.0",
     "com.github.oshi:oshi-core:6.9.0",
     "com.google.code.gson:gson:2.13.2",
@@ -64,39 +65,38 @@
     "org.lwjgl:lwjgl-stb:3.3.3",
     "org.lwjgl:lwjgl-tinyfd:3.3.3",
     "org.lwjgl:lwjgl:3.3.3",
-    "org.lz4:lz4-java:1.8.0",
     "org.slf4j:slf4j-api:2.0.17"
   ],
   "manifests": [
     {
-      "assetHash": "abb269b44000c5bf1d6b0b0f1284a19c15b6e2bd",
+      "assetHash": "7622e3628a9465e74203917eaf5c76c78dd91645",
       "assetIndex": "29",
-      "downloads": "0efb492f96d6c171030747a55610bbeafe3ed4c4",
+      "downloads": "3d825e02fdba1e6e39ba7763f0cc15b0c1c998ed",
       "downloadsId": 1,
-      "hash": "2cea3a1dbe4edfc49dec187c9da652697dca4189",
-      "time": "2025-12-03T13:34:06+00:00",
+      "hash": "a05a77d67cda08819d3a400fc73abeab098d0129",
+      "time": "2025-12-04T15:56:55+00:00",
       "type": "unobfuscated",
-      "url": "https://skyrising.github.io/mc-versions/manifest/2/c/ea3a1dbe4edfc49dec187c9da652697dca4189/1_21_11-pre5_unobfuscated.json"
+      "url": "https://skyrising.github.io/mc-versions/manifest/a/0/5a77d67cda08819d3a400fc73abeab098d0129/1_21_11-rc1_unobfuscated.json"
     }
   ],
   "next": [
-    "1.21.11-rc1_unobfuscated"
+    "1.21.11-rc2_unobfuscated"
   ],
-  "normalizedVersion": "1.21.11-pre.5.unobfuscated",
+  "normalizedVersion": "1.21.11-rc.1.unobfuscated",
   "previous": [
-    "1.21.11-pre4_unobfuscated"
+    "1.21.11-pre5_unobfuscated"
   ],
   "protocol": {
     "type": "netty-snapshot",
-    "version": 283
+    "version": 284
   },
   "releaseTarget": "1.21.11",
-  "releaseTime": "2025-12-03T13:34:06+00:00",
+  "releaseTime": "2025-12-04T15:56:55+00:00",
   "server": true,
   "type": "unobfuscated",
   "unobfuscated": true,
   "world": {
     "format": "anvil",
-    "version": 4667
+    "version": 4668
   }
 }
