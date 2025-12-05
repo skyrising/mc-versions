@@ -2551,10 +2551,12 @@
     {
       "version": 285,
       "clients": [
-        "1.21.11-rc2"
+        "1.21.11-rc2",
+        "1.21.11-rc2_unobfuscated"
       ],
       "servers": [
-        "1.21.11-rc2"
+        "1.21.11-rc2",
+        "1.21.11-rc2_unobfuscated"
       ]
     }
   ]
