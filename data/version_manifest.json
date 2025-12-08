@@ -8,9 +8,17 @@
     "snapshot": "1.21.11-rc3",
     "release": "1.21.10",
     "pending": "1.19_deep_dark_experimental_snapshot-1",
-    "unobfuscated": "1.21.11-rc2_unobfuscated"
+    "unobfuscated": "1.21.11-rc3_unobfuscated"
   },
   "versions": [
+    {
+      "id": "1.21.11-rc3_unobfuscated",
+      "type": "unobfuscated",
+      "url": "version/manifest/1.21.11-rc3_unobfuscated.json",
+      "time": "2025-12-08T13:59:34+00:00",
+      "releaseTime": "2025-12-08T13:59:34+00:00",
+      "details": "version/1.21.11-rc3_unobfuscated.json"
+    },
     {
       "id": "1.21.11-rc3",
       "type": "snapshot",
