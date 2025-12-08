@@ -2562,10 +2562,12 @@
     {
       "version": 286,
       "clients": [
-        "1.21.11-rc3"
+        "1.21.11-rc3",
+        "1.21.11-rc3_unobfuscated"
       ],
       "servers": [
-        "1.21.11-rc3"
+        "1.21.11-rc3",
+        "1.21.11-rc3_unobfuscated"
       ]
     }
   ]

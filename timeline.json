@@ -6790,5 +6790,11 @@
     "type": "release-candidate",
     "normalizedVersion": "1.21.11-rc.3",
     "releaseTime": "2025-12-08T13:17:37+00:00"
+  },
+  {
+    "id": "1.21.11-rc3_unobfuscated",
+    "type": "release-candidate",
+    "normalizedVersion": "1.21.11-rc.3.unobfuscated",
+    "releaseTime": "2025-12-08T13:59:34+00:00"
   }
 ]
