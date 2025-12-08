@@ -1,0 +1,111 @@
+{
+  "$schema": "https://skyrising.github.io/mc-versions/schemas/version.json",
+  "client": true,
+  "displayVersion": "1.21.11 Release Candidate 3",
+  "downloads": {
+    "client": {
+      "sha1": "610425569f31560b0189a768864963669012c3c7",
+      "size": 31152775,
+      "url": "https://piston-data.mojang.com/v1/objects/610425569f31560b0189a768864963669012c3c7/client.jar"
+    },
+    "client_mappings": {
+      "sha1": "becc6b2f01c8d84acc9976afbf9101c3a5963c3e",
+      "size": 11779287,
+      "url": "https://piston-data.mojang.com/v1/objects/becc6b2f01c8d84acc9976afbf9101c3a5963c3e/client.txt"
+    },
+    "server": {
+      "sha1": "2119f94fb84e2f4c38b5a8a7e5acb45840b3fad6",
+      "size": 56326726,
+      "url": "https://piston-data.mojang.com/v1/objects/2119f94fb84e2f4c38b5a8a7e5acb45840b3fad6/server.jar"
+    },
+    "server_mappings": {
+      "sha1": "84146da5a247d8b70465841e788ba39a4c82f7cc",
+      "size": 8678606,
+      "url": "https://piston-data.mojang.com/v1/objects/84146da5a247d8b70465841e788ba39a4c82f7cc/server.txt"
+    }
+  },
+  "id": "1.21.11-rc3",
+  "libraries": [
+    "at.yawk.lz4:lz4-java:1.8.1",
+    "com.azure:azure-json:1.4.0",
+    "com.github.oshi:oshi-core:6.9.0",
+    "com.google.code.gson:gson:2.13.2",
+    "com.google.guava:failureaccess:1.0.3",
+    "com.google.guava:guava:33.5.0-jre",
+    "com.ibm.icu:icu4j:77.1",
+    "com.microsoft.azure:msal4j:1.23.1",
+    "com.mojang:authlib:7.0.61",
+    "com.mojang:blocklist:1.0.10",
+    "com.mojang:brigadier:1.3.10",
+    "com.mojang:datafixerupper:9.0.19",
+    "com.mojang:jtracy:1.0.37",
+    "com.mojang:logging:1.6.11",
+    "com.mojang:patchy:2.2.10",
+    "com.mojang:text2speech:1.18.11",
+    "commons-codec:commons-codec:1.19.0",
+    "commons-io:commons-io:2.20.0",
+    "io.netty:netty-buffer:4.2.7.Final",
+    "io.netty:netty-codec-base:4.2.7.Final",
+    "io.netty:netty-codec-compression:4.2.7.Final",
+    "io.netty:netty-codec-http:4.2.7.Final",
+    "io.netty:netty-common:4.2.7.Final",
+    "io.netty:netty-handler:4.2.7.Final",
+    "io.netty:netty-resolver:4.2.7.Final",
+    "io.netty:netty-transport-classes-epoll:4.2.7.Final",
+    "io.netty:netty-transport-classes-kqueue:4.2.7.Final",
+    "io.netty:netty-transport-native-unix-common:4.2.7.Final",
+    "io.netty:netty-transport:4.2.7.Final",
+    "it.unimi.dsi:fastutil:8.5.18",
+    "net.java.dev.jna:jna-platform:5.17.0",
+    "net.java.dev.jna:jna:5.17.0",
+    "net.sf.jopt-simple:jopt-simple:5.0.4",
+    "org.apache.commons:commons-compress:1.28.0",
+    "org.apache.commons:commons-lang3:3.19.0",
+    "org.apache.logging.log4j:log4j-api:2.25.2",
+    "org.apache.logging.log4j:log4j-core:2.25.2",
+    "org.apache.logging.log4j:log4j-slf4j2-impl:2.25.2",
+    "org.jcraft:jorbis:0.0.17",
+    "org.joml:joml:1.10.8",
+    "org.jspecify:jspecify:1.0.0",
+    "org.lwjgl:lwjgl-freetype:3.3.3",
+    "org.lwjgl:lwjgl-glfw:3.3.3",
+    "org.lwjgl:lwjgl-jemalloc:3.3.3",
+    "org.lwjgl:lwjgl-openal:3.3.3",
+    "org.lwjgl:lwjgl-opengl:3.3.3",
+    "org.lwjgl:lwjgl-stb:3.3.3",
+    "org.lwjgl:lwjgl-tinyfd:3.3.3",
+    "org.lwjgl:lwjgl:3.3.3",
+    "org.slf4j:slf4j-api:2.0.17"
+  ],
+  "manifests": [
+    {
+      "assetHash": "d594cbc3029643c83f383ffa0664b507da1f7cec",
+      "assetIndex": "29",
+      "downloads": "c9e7fd05f28a22ac9702c7d6abe75cc53f14b033",
+      "downloadsId": 1,
+      "hash": "31272a0241c34d398d96020f997cfef0c5affb0d",
+      "lastModified": "2025-12-08T13:34:33+00:00",
+      "time": "2025-12-08T13:17:37+00:00",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/manifest/3/1/272a0241c34d398d96020f997cfef0c5affb0d/1.21.11-rc3.json"
+    }
+  ],
+  "next": [],
+  "normalizedVersion": "1.21.11-rc.3",
+  "previous": [
+    "1.21.11-rc2"
+  ],
+  "protocol": {
+    "type": "netty-snapshot",
+    "version": 286
+  },
+  "releaseTarget": "1.21.11",
+  "releaseTime": "2025-12-08T13:17:37+00:00",
+  "server": true,
+  "sharedMappings": true,
+  "type": "snapshot",
+  "world": {
+    "format": "anvil",
+    "version": 4670
+  }
+}
