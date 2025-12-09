@@ -8,9 +8,17 @@
     "snapshot": "1.21.11-rc3",
     "release": "1.21.11",
     "pending": "1.19_deep_dark_experimental_snapshot-1",
-    "unobfuscated": "1.21.11-rc3_unobfuscated"
+    "unobfuscated": "1.21.11_unobfuscated"
   },
   "versions": [
+    {
+      "id": "1.21.11_unobfuscated",
+      "type": "unobfuscated",
+      "url": "https://skyrising.github.io/mc-versions/version/manifest/1.21.11_unobfuscated.json",
+      "time": "2025-12-09T12:43:15+00:00",
+      "releaseTime": "2025-12-09T12:43:15+00:00",
+      "details": "https://skyrising.github.io/mc-versions/version/1.21.11_unobfuscated.json"
+    },
     {
       "id": "1.21.11",
       "type": "release",
