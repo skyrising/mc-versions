@@ -1,20 +1,20 @@
 {
   "$schema": "https://skyrising.github.io/mc-versions/schemas/version.json",
   "client": true,
-  "displayVersion": "1.21.11 Release Candidate 3 Unobfuscated",
+  "displayVersion": "1.21.11 Unobfuscated",
   "downloads": {
     "client": {
-      "sha1": "18d989b207cbe799656fb8f95fbf0914e2e2c195",
-      "size": 36734131,
-      "url": "https://piston-data.mojang.com/v1/objects/18d989b207cbe799656fb8f95fbf0914e2e2c195/client.jar"
+      "sha1": "4509ee9b65f226be61142d37bf05f8d28b03417b",
+      "size": 36734011,
+      "url": "https://piston-data.mojang.com/v1/objects/4509ee9b65f226be61142d37bf05f8d28b03417b/client.jar"
     },
     "server": {
-      "sha1": "48f51df2f1f2cc618276fcaed6ecd15f0596067d",
-      "size": 59618396,
-      "url": "https://piston-data.mojang.com/v1/objects/48f51df2f1f2cc618276fcaed6ecd15f0596067d/server.jar"
+      "sha1": "3ca78d5068bf9b422f694d3f0820e289581c0f0d",
+      "size": 59616046,
+      "url": "https://piston-data.mojang.com/v1/objects/3ca78d5068bf9b422f694d3f0820e289581c0f0d/server.jar"
     }
   },
-  "id": "1.21.11-rc3_unobfuscated",
+  "id": "1.21.11_unobfuscated",
   "libraries": [
     "at.yawk.lz4:lz4-java:1.8.1",
     "com.azure:azure-json:1.4.0",
@@ -69,34 +69,32 @@
   ],
   "manifests": [
     {
-      "assetHash": "d594cbc3029643c83f383ffa0664b507da1f7cec",
+      "assetHash": "aaf4be9d6e197c384a09b1d9c631c6900d1f077c",
       "assetIndex": "29",
-      "downloads": "efdddcbb54a8086cb0dbe8b88bc1646e7a86c641",
+      "downloads": "61581ae504e4eec2ec870a4acf72c37fe114d3dc",
       "downloadsId": 1,
-      "hash": "4dc81ca15dc8c57bae01084f6e208dad8b6fb248",
-      "time": "2025-12-08T13:59:34+00:00",
+      "hash": "2b693c308d3237fb4cd4db6d6c8714d6b44cf743",
+      "time": "2025-12-09T12:43:15+00:00",
       "type": "unobfuscated",
-      "url": "../manifest/4/d/c81ca15dc8c57bae01084f6e208dad8b6fb248/1_21_11-rc3_unobfuscated.json"
+      "url": "../manifest/2/b/693c308d3237fb4cd4db6d6c8714d6b44cf743/1_21_11_unobfuscated.json"
     }
   ],
-  "next": [
-    "1.21.11_unobfuscated"
-  ],
-  "normalizedVersion": "1.21.11-rc.3.unobfuscated",
+  "next": [],
+  "normalizedVersion": "1.21.11",
   "previous": [
-    "1.21.11-rc2_unobfuscated"
+    "1.21.11-rc3_unobfuscated"
   ],
   "protocol": {
-    "type": "netty-snapshot",
-    "version": 286
+    "type": "netty",
+    "version": 774
   },
   "releaseTarget": "1.21.11",
-  "releaseTime": "2025-12-08T13:59:34+00:00",
+  "releaseTime": "2025-12-09T12:43:15+00:00",
   "server": true,
   "type": "unobfuscated",
   "unobfuscated": true,
   "world": {
     "format": "anvil",
-    "version": 4670
+    "version": 4671
   }
 }
