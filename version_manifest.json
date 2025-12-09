@@ -6,11 +6,19 @@
     "alpha_server": "server-a0.2.8",
     "old_beta": "b1.9-pre6",
     "snapshot": "1.21.11-rc3",
-    "release": "1.21.10",
+    "release": "1.21.11",
     "pending": "1.19_deep_dark_experimental_snapshot-1",
     "unobfuscated": "1.21.11-rc3_unobfuscated"
   },
   "versions": [
+    {
+      "id": "1.21.11",
+      "type": "release",
+      "url": "https://skyrising.github.io/mc-versions/version/manifest/1.21.11.json",
+      "time": "2025-12-09T12:23:30+00:00",
+      "releaseTime": "2025-12-09T12:23:30+00:00",
+      "details": "https://skyrising.github.io/mc-versions/version/1.21.11.json"
+    },
     {
       "id": "1.21.11-rc3_unobfuscated",
       "type": "unobfuscated",
