@@ -2569,6 +2569,15 @@
         "1.21.11-rc3",
         "1.21.11-rc3_unobfuscated"
       ]
+    },
+    {
+      "version": 287,
+      "clients": [
+        "26.1-snapshot-1"
+      ],
+      "servers": [
+        "26.1-snapshot-1"
+      ]
     }
   ]
 }
