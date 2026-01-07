@@ -80,7 +80,9 @@
       "url": "https://skyrising.github.io/mc-versions/manifest/b/2/3c41f61b01736bcc529ae973f3db530fc5723b/26.1-snapshot-1.json"
     }
   ],
-  "next": [],
+  "next": [
+    "26.1-snapshot-2"
+  ],
   "normalizedVersion": "26.1.0-alpha.1",
   "previous": [
     "1.21.11_unobfuscated",
