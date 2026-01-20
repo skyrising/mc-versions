@@ -5,12 +5,20 @@
     "classic_server": "server-c1.10.1",
     "alpha_server": "server-a0.2.8",
     "old_beta": "b1.9-pre6",
-    "snapshot": "26.1-snapshot-3",
+    "snapshot": "26.1-snapshot-4",
     "release": "1.21.11",
     "pending": "1.19_deep_dark_experimental_snapshot-1",
     "unobfuscated": "1.21.11_unobfuscated"
   },
   "versions": [
+    {
+      "id": "26.1-snapshot-4",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/version/manifest/26.1-snapshot-4.json",
+      "time": "2026-01-20T14:15:37+00:00",
+      "releaseTime": "2026-01-20T14:15:37+00:00",
+      "details": "https://skyrising.github.io/mc-versions/version/26.1-snapshot-4.json"
+    },
     {
       "id": "26.1-snapshot-3",
       "type": "snapshot",
