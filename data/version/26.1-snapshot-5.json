@@ -69,6 +69,17 @@
   ],
   "manifests": [
     {
+      "assetHash": "c0668028c818bd61f0f4b46164f1c23a1b726350",
+      "assetIndex": "30",
+      "downloads": "c24e2402c168eda86a6f234e6b7d0414867a05ab",
+      "downloadsId": 1,
+      "hash": "5f5f8ff4c453f6a3aef26f6ff22f4fb86cd1464c",
+      "lastModified": "2026-02-03T13:08:27+00:00",
+      "time": "2026-01-27T13:01:17+00:00",
+      "type": "snapshot",
+      "url": "../manifest/5/f/5f8ff4c453f6a3aef26f6ff22f4fb86cd1464c/26.1-snapshot-5.json"
+    },
+    {
       "assetHash": "f1ef4cb2ff88976aeffcc20efff76648acc01a02",
       "assetIndex": "30",
       "downloads": "c24e2402c168eda86a6f234e6b7d0414867a05ab",
@@ -80,7 +91,9 @@
       "url": "../manifest/b/4/1e99cfc913a59d63d0f364086b135e4d415be6/26.1-snapshot-5.json"
     }
   ],
-  "next": [],
+  "next": [
+    "26.1-snapshot-6"
+  ],
   "normalizedVersion": "26.1.0-alpha.5",
   "previous": [
     "26.1-snapshot-4"
