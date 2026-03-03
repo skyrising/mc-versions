@@ -5,12 +5,20 @@
     "classic_server": "server-c1.10.1",
     "alpha_server": "server-a0.2.8",
     "old_beta": "b1.9-pre6",
-    "snapshot": "26.1-snapshot-10",
+    "snapshot": "26.1-snapshot-11",
     "release": "1.21.11",
     "pending": "1.19_deep_dark_experimental_snapshot-1",
     "unobfuscated": "1.21.11_unobfuscated"
   },
   "versions": [
+    {
+      "id": "26.1-snapshot-11",
+      "type": "snapshot",
+      "url": "version/manifest/26.1-snapshot-11.json",
+      "time": "2026-03-03T13:01:51+00:00",
+      "releaseTime": "2026-03-03T13:01:51+00:00",
+      "details": "version/26.1-snapshot-11.json"
+    },
     {
       "id": "26.1-snapshot-10",
       "type": "snapshot",
