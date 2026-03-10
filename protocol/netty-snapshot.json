@@ -2668,6 +2668,15 @@
       "servers": [
         "26.1-snapshot-11"
       ]
+    },
+    {
+      "version": 298,
+      "clients": [
+        "26.1-pre-1"
+      ],
+      "servers": [
+        "26.1-pre-1"
+      ]
     }
   ]
 }
