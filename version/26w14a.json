@@ -1,20 +1,20 @@
 {
   "$schema": "https://skyrising.github.io/mc-versions/schemas/version.json",
   "client": true,
-  "displayVersion": "26.1.1",
+  "displayVersion": "26w14a",
   "downloads": {
     "client": {
-      "sha1": "377031a9e733ba8ab4d355959a8f6fb8eb707556",
-      "size": 38113231,
-      "url": "https://piston-data.mojang.com/v1/objects/377031a9e733ba8ab4d355959a8f6fb8eb707556/client.jar"
+      "sha1": "49040e0696c6ade6606645f0065f7aed34ce53d0",
+      "size": 42250368,
+      "url": "https://piston-data.mojang.com/v1/objects/49040e0696c6ade6606645f0065f7aed34ce53d0/client.jar"
     },
     "server": {
-      "sha1": "49c8195703ad0ba4f0a4efbccfd85a4a8ca57431",
-      "size": 60417481,
-      "url": "https://piston-data.mojang.com/v1/objects/49c8195703ad0ba4f0a4efbccfd85a4a8ca57431/server.jar"
+      "sha1": "71feef42484d36d0eeba98ffb06f8bb845cbe0fc",
+      "size": 60722162,
+      "url": "https://piston-data.mojang.com/v1/objects/71feef42484d36d0eeba98ffb06f8bb845cbe0fc/server.jar"
     }
   },
-  "id": "26.1.1",
+  "id": "26w14a",
   "libraries": [
     "at.yawk.lz4:lz4-java:1.10.1",
     "com.azure:azure-json:1.4.0",
@@ -71,33 +71,31 @@
     {
       "assetHash": "3226889d57b84eb26553582b6ad60781db949944",
       "assetIndex": "30",
-      "downloads": "b766b4fb9ff53c9b51e8aa0f0b87f5efdf675055",
+      "downloads": "1d2287148018fe9f4ff110ce065b0fcd42234ce8",
       "downloadsId": 1,
-      "hash": "402e244f5653fd139f40b4360b9f1b5b555760a0",
-      "lastModified": "2026-04-01T09:16:41+00:00",
-      "time": "2026-04-01T09:06:36+00:00",
-      "type": "release",
-      "url": "https://skyrising.github.io/mc-versions/manifest/4/0/2e244f5653fd139f40b4360b9f1b5b555760a0/26.1.1.json"
+      "hash": "f4b9c32babc70d42b0ebade1c3f792d141da5d1f",
+      "lastModified": "2026-04-01T12:23:17+00:00",
+      "time": "2026-04-01T12:13:30+00:00",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/manifest/f/4/b9c32babc70d42b0ebade1c3f792d141da5d1f/26w14a.json"
     }
   ],
-  "next": [
-    "26w14a"
-  ],
-  "normalizedVersion": "26.1.1",
+  "next": [],
+  "normalizedVersion": "1.21.11-alpha.26.14.a",
   "previous": [
-    "26.1.1-rc-1"
+    "26.1.1"
   ],
   "protocol": {
-    "type": "netty",
-    "version": 775
+    "type": "netty-snapshot",
+    "version": 305
   },
-  "releaseTarget": "26.1.1",
-  "releaseTime": "2026-04-01T09:06:36+00:00",
+  "releaseTarget": "1.21.11",
+  "releaseTime": "2026-04-01T12:13:30+00:00",
   "server": true,
-  "type": "release",
+  "type": "snapshot",
   "unobfuscated": true,
   "world": {
     "format": "anvil",
-    "version": 4788
+    "version": 5000
   }
 }
