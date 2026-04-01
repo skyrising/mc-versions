@@ -14,7 +14,7 @@
       "url": "https://piston-data.mojang.com/v1/objects/71feef42484d36d0eeba98ffb06f8bb845cbe0fc/server.jar"
     }
   },
-  "id": "26w14a",
+  "id": "af-2026",
   "libraries": [
     "at.yawk.lz4:lz4-java:1.10.1",
     "com.azure:azure-json:1.4.0",
@@ -81,7 +81,7 @@
     }
   ],
   "next": [],
-  "normalizedVersion": "1.21.11-alpha.26.14.a",
+  "normalizedVersion": "26.1.2-alpha-alpha.26.14.april.fools",
   "previous": [
     "26.1.1"
   ],
@@ -89,7 +89,6 @@
     "type": "netty-snapshot",
     "version": 305
   },
-  "releaseTarget": "1.21.11",
   "releaseTime": "2026-04-01T12:13:30+00:00",
   "server": true,
   "type": "snapshot",

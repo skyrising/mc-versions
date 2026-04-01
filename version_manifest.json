@@ -5,19 +5,19 @@
     "classic_server": "server-c1.10.1",
     "alpha_server": "server-a0.2.8",
     "old_beta": "b1.9-pre6",
-    "snapshot": "26w14a",
+    "snapshot": "af-2026",
     "release": "26.1.1",
     "pending": "1.19_deep_dark_experimental_snapshot-1",
     "unobfuscated": "1.21.11_unobfuscated"
   },
   "versions": [
     {
-      "id": "26w14a",
+      "id": "af-2026",
       "type": "snapshot",
-      "url": "https://skyrising.github.io/mc-versions/version/manifest/26w14a.json",
+      "url": "https://skyrising.github.io/mc-versions/version/manifest/af-2026.json",
       "time": "2026-04-01T12:13:30+00:00",
       "releaseTime": "2026-04-01T12:13:30+00:00",
-      "details": "https://skyrising.github.io/mc-versions/version/26w14a.json"
+      "details": "https://skyrising.github.io/mc-versions/version/af-2026.json"
     },
     {
       "id": "26.1.1",
