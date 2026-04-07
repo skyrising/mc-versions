@@ -2740,6 +2740,15 @@
       "servers": [
         "af-2026"
       ]
+    },
+    {
+      "version": 306,
+      "clients": [
+        "26.2-snapshot-1"
+      ],
+      "servers": [
+        "26.2-snapshot-1"
+      ]
     }
   ]
 }

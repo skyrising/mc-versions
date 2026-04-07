@@ -69,6 +69,17 @@
   ],
   "manifests": [
     {
+      "assetHash": "92e5fb3b14fb0ea77d405e35bd94e0fb2428d485",
+      "assetIndex": "30",
+      "downloads": "b766b4fb9ff53c9b51e8aa0f0b87f5efdf675055",
+      "downloadsId": 1,
+      "hash": "3c0ceb526563d97f9e06551b81d9a733c419d97c",
+      "lastModified": "2026-04-07T12:03:47+00:00",
+      "time": "2026-04-01T09:06:36+00:00",
+      "type": "release",
+      "url": "../manifest/3/c/0ceb526563d97f9e06551b81d9a733c419d97c/26.1.1.json"
+    },
+    {
       "assetHash": "3226889d57b84eb26553582b6ad60781db949944",
       "assetIndex": "30",
       "downloads": "b766b4fb9ff53c9b51e8aa0f0b87f5efdf675055",
@@ -81,7 +92,8 @@
     }
   ],
   "next": [
-    "af-2026"
+    "af-2026",
+    "26.2-snapshot-1"
   ],
   "normalizedVersion": "26.1.1",
   "previous": [
