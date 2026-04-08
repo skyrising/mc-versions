@@ -203,6 +203,7 @@ function findPrevious(versions: VersionInfo[], index: number) {
 
 function isValidPrevious(version: VersionInfo, prev: VersionInfo) {
     if (prev.data.id.startsWith('af-')) return version.data.id.startsWith('af-')
+    if (prev.data.normalizedVersion && version.data.normalizedVersion && semver.compare(version.data.normalizedVersion, prev.data.normalizedVersion) < 0) return false
     return prev.info.type === version.info.type || (VALID_PREVIOUS[version.info.type] || []).includes(prev.info.type)
 }
 
