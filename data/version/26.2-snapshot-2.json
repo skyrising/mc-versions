@@ -1,20 +1,20 @@
 {
   "$schema": "https://skyrising.github.io/mc-versions/schemas/version.json",
   "client": true,
-  "displayVersion": "26.1.2",
+  "displayVersion": "26.2 Snapshot 2",
   "downloads": {
     "client": {
-      "sha1": "4e618f09a0c649dde3fdf829df443ce0b8831e65",
-      "size": 38113927,
-      "url": "https://piston-data.mojang.com/v1/objects/4e618f09a0c649dde3fdf829df443ce0b8831e65/client.jar"
+      "sha1": "9578fe329bdf486d5f99896749a5f85c94d93b6a",
+      "size": 38539097,
+      "url": "https://piston-data.mojang.com/v1/objects/9578fe329bdf486d5f99896749a5f85c94d93b6a/client.jar"
     },
     "server": {
-      "sha1": "97ccd4c0ed3f81bbb7bfacddd1090b0c56f9bc51",
-      "size": 60417480,
-      "url": "https://piston-data.mojang.com/v1/objects/97ccd4c0ed3f81bbb7bfacddd1090b0c56f9bc51/server.jar"
+      "sha1": "e6cefea7bf62cb0cc044794d7ebfe8ea5ee672a3",
+      "size": 60537470,
+      "url": "https://piston-data.mojang.com/v1/objects/e6cefea7bf62cb0cc044794d7ebfe8ea5ee672a3/server.jar"
     }
   },
-  "id": "26.1.2",
+  "id": "26.2-snapshot-2",
   "libraries": [
     "at.yawk.lz4:lz4-java:1.10.1",
     "com.azure:azure-json:1.4.0",
@@ -62,42 +62,44 @@
     "org.lwjgl:lwjgl-jemalloc:3.4.1",
     "org.lwjgl:lwjgl-openal:3.4.1",
     "org.lwjgl:lwjgl-opengl:3.4.1",
+    "org.lwjgl:lwjgl-shaderc:3.4.1",
+    "org.lwjgl:lwjgl-spvc:3.4.1",
     "org.lwjgl:lwjgl-stb:3.4.1",
     "org.lwjgl:lwjgl-tinyfd:3.4.1",
+    "org.lwjgl:lwjgl-vma:3.4.1",
+    "org.lwjgl:lwjgl-vulkan:3.4.1",
     "org.lwjgl:lwjgl:3.4.1",
     "org.slf4j:slf4j-api:2.0.17"
   ],
   "manifests": [
     {
-      "assetHash": "77755c06f803fbc30617870e64fa70df435bc09d",
-      "assetIndex": "30",
-      "downloads": "906ddca6d7956d0c46e8da64be915ab528d95e61",
+      "assetHash": "a2d1b3489709444f6890d8b29d00fe4cf78dc3ed",
+      "assetIndex": "31",
+      "downloads": "fdc188e0d02cd6a18684e40a0b62bd9b8860675e",
       "downloadsId": 1,
-      "hash": "49ac69f3fa741d4cb7fcb04ab701893c4f5ebe82",
-      "lastModified": "2026-04-09T10:52:53+00:00",
-      "time": "2026-04-09T10:12:23+00:00",
-      "type": "release",
-      "url": "../manifest/4/9/ac69f3fa741d4cb7fcb04ab701893c4f5ebe82/26.1.2.json"
+      "hash": "2831f701f634de74ecd86f5cf79107d6bbb7064c",
+      "lastModified": "2026-04-09T12:36:58+00:00",
+      "time": "2026-04-09T12:26:35+00:00",
+      "type": "snapshot",
+      "url": "../manifest/2/8/31f701f634de74ecd86f5cf79107d6bbb7064c/26.2-snapshot-2.json"
     }
   ],
-  "next": [
-    "26.2-snapshot-2"
-  ],
-  "normalizedVersion": "26.1.2",
+  "next": [],
+  "normalizedVersion": "26.2.0-alpha.2",
   "previous": [
-    "26.1.2-rc-1"
+    "26.1.2"
   ],
   "protocol": {
-    "type": "netty",
-    "version": 775
+    "type": "netty-snapshot",
+    "version": 308
   },
-  "releaseTarget": "26.1.2",
-  "releaseTime": "2026-04-09T10:12:23+00:00",
+  "releaseTarget": "26.2",
+  "releaseTime": "2026-04-09T12:26:35+00:00",
   "server": true,
-  "type": "release",
+  "type": "snapshot",
   "unobfuscated": true,
   "world": {
     "format": "anvil",
-    "version": 4790
+    "version": 4884
   }
 }
