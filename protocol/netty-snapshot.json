@@ -2758,6 +2758,15 @@
       "servers": [
         "26.1.2-rc-1"
       ]
+    },
+    {
+      "version": 308,
+      "clients": [
+        "26.2-snapshot-2"
+      ],
+      "servers": [
+        "26.2-snapshot-2"
+      ]
     }
   ]
 }
