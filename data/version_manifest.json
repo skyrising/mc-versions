@@ -6,11 +6,19 @@
     "alpha_server": "server-a0.2.8",
     "old_beta": "b1.9-pre6",
     "snapshot": "26.1.2-rc-1",
-    "release": "26.1.1",
+    "release": "26.1.2",
     "pending": "1.19_deep_dark_experimental_snapshot-1",
     "unobfuscated": "1.21.11_unobfuscated"
   },
   "versions": [
+    {
+      "id": "26.1.2",
+      "type": "release",
+      "url": "version/manifest/26.1.2.json",
+      "time": "2026-04-09T10:12:23+00:00",
+      "releaseTime": "2026-04-09T10:12:23+00:00",
+      "details": "version/26.1.2.json"
+    },
     {
       "id": "26.1.2-rc-1",
       "type": "snapshot",
