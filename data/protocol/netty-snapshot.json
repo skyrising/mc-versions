@@ -2794,6 +2794,15 @@
       "servers": [
         "26.2-snapshot-5"
       ]
+    },
+    {
+      "version": 312,
+      "clients": [
+        "26.2-snapshot-6"
+      ],
+      "servers": [
+        "26.2-snapshot-6"
+      ]
     }
   ]
 }
