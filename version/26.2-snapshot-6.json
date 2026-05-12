@@ -73,6 +73,17 @@
   ],
   "manifests": [
     {
+      "assetHash": "b9058b7cb138b3778d3fb5b0ffadf31328295afa",
+      "assetIndex": "31",
+      "downloads": "493a5c5948e32700827b1c14362d0cb1ee75b74e",
+      "downloadsId": 1,
+      "hash": "ce4a5c730a7d2e3d82c82719a5e9175929d5d607",
+      "lastModified": "2026-05-12T12:39:42+00:00",
+      "time": "2026-05-05T12:50:56+00:00",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/manifest/c/e/4a5c730a7d2e3d82c82719a5e9175929d5d607/26.2-snapshot-6.json"
+    },
+    {
       "assetHash": "b03ac790282feea77c6a9cc9be7f76ce137c66ad",
       "assetIndex": "31",
       "downloads": "493a5c5948e32700827b1c14362d0cb1ee75b74e",
@@ -84,7 +95,9 @@
       "url": "https://skyrising.github.io/mc-versions/manifest/5/4/ae6d6076f43f50f913fed49b8e61ea39673364/26.2-snapshot-6.json"
     }
   ],
-  "next": [],
+  "next": [
+    "26.2-snapshot-7"
+  ],
   "normalizedVersion": "26.2.0-alpha.6",
   "previous": [
     "26.2-snapshot-5"
