@@ -2812,6 +2812,15 @@
       "servers": [
         "26.2-snapshot-7"
       ]
+    },
+    {
+      "version": 314,
+      "clients": [
+        "26.2-snapshot-8"
+      ],
+      "servers": [
+        "26.2-snapshot-8"
+      ]
     }
   ]
 }
