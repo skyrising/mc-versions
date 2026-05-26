@@ -6994,5 +6994,11 @@
     "type": "snapshot",
     "normalizedVersion": "26.2.0-alpha.8",
     "releaseTime": "2026-05-19T15:19:20+00:00"
+  },
+  {
+    "id": "26.2-pre-1",
+    "type": "pre-release",
+    "normalizedVersion": "26.2.0-pre.1",
+    "releaseTime": "2026-05-26T13:48:31+00:00"
   }
 ]

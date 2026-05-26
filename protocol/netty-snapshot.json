@@ -2821,6 +2821,15 @@
       "servers": [
         "26.2-snapshot-8"
       ]
+    },
+    {
+      "version": 315,
+      "clients": [
+        "26.2-pre-1"
+      ],
+      "servers": [
+        "26.2-pre-1"
+      ]
     }
   ]
 }
