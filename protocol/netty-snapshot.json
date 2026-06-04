@@ -2848,6 +2848,15 @@
       "servers": [
         "26.2-pre-3"
       ]
+    },
+    {
+      "version": 318,
+      "clients": [
+        "26.2-pre-4"
+      ],
+      "servers": [
+        "26.2-pre-4"
+      ]
     }
   ]
 }
