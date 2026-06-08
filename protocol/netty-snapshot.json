@@ -2857,6 +2857,15 @@
       "servers": [
         "26.2-pre-4"
       ]
+    },
+    {
+      "version": 319,
+      "clients": [
+        "26.2-pre-5"
+      ],
+      "servers": [
+        "26.2-pre-5"
+      ]
     }
   ]
 }
