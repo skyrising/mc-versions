@@ -2866,6 +2866,15 @@
       "servers": [
         "26.2-pre-5"
       ]
+    },
+    {
+      "version": 320,
+      "clients": [
+        "26.2-pre-6"
+      ],
+      "servers": [
+        "26.2-pre-6"
+      ]
     }
   ]
 }
