@@ -2920,6 +2920,15 @@
       "servers": [
         "26.3-snapshot-3"
       ]
+    },
+    {
+      "version": 326,
+      "clients": [
+        "26.3-snapshot-4"
+      ],
+      "servers": [
+        "26.3-snapshot-4"
+      ]
     }
   ]
 }
