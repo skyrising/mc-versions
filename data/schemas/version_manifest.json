@@ -45,12 +45,22 @@
                         "type": "string",
                         "format": "uri-reference"
                     },
+                    "sha1": {
+                        "type": "string",
+                        "pattern": "^([A-Fa-f0-9]{40})$",
+                        "description": "SHA1-Hash of the generated manifest referenced in `url`"
+                    },
                     "details": {
                         "type": "string",
                         "format": "uri-reference"
+                    },
+                    "detailsHash": {
+                        "type": "string",
+                        "pattern": "^([A-Fa-f0-9]{40})$",
+                        "description": "SHA1-Hash of the generated `details`"
                     }
                 },
-                "required": ["id", "omniId", "type", "releaseTime", "details"]
+                "required": ["id", "omniId", "type", "releaseTime", "details", "detailsHash"]
             }
         },
         "additionalProperties": false
