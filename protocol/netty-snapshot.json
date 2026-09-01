@@ -2983,6 +2983,15 @@
       "servers": [
         "26.3-snapshot-10"
       ]
+    },
+    {
+      "version": 333,
+      "clients": [
+        "26.3-pre-1"
+      ],
+      "servers": [
+        "26.3-pre-1"
+      ]
     }
   ]
 }
