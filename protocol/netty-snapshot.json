@@ -3001,6 +3001,15 @@
       "servers": [
         "26.3-pre-2"
       ]
+    },
+    {
+      "version": 335,
+      "clients": [
+        "26.3-pre-3"
+      ],
+      "servers": [
+        "26.3-pre-3"
+      ]
     }
   ]
 }
