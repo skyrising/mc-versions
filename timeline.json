@@ -7144,5 +7144,11 @@
     "type": "release-candidate",
     "normalizedVersion": "26.3.0-rc.3",
     "releaseTime": "2026-09-14T12:58:38+00:00"
+  },
+  {
+    "id": "26.3",
+    "type": "release",
+    "normalizedVersion": "26.3.0",
+    "releaseTime": "2026-09-15T11:23:02+00:00"
   }
 ]
