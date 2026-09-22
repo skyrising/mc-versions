@@ -3037,6 +3037,15 @@
       "servers": [
         "26.3-rc-3"
       ]
+    },
+    {
+      "version": 339,
+      "clients": [
+        "26.4-snapshot-1"
+      ],
+      "servers": [
+        "26.4-snapshot-1"
+      ]
     }
   ]
 }
