@@ -3046,6 +3046,15 @@
       "servers": [
         "26.4-snapshot-1"
       ]
+    },
+    {
+      "version": 340,
+      "clients": [
+        "26.4-snapshot-2"
+      ],
+      "servers": [
+        "26.4-snapshot-2"
+      ]
     }
   ]
 }
