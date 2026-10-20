@@ -3073,6 +3073,15 @@
       "servers": [
         "26.4-snapshot-4"
       ]
+    },
+    {
+      "version": 343,
+      "clients": [
+        "26.4-snapshot-5"
+      ],
+      "servers": [
+        "26.4-snapshot-5"
+      ]
     }
   ]
 }
