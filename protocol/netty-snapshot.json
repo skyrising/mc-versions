@@ -3118,6 +3118,15 @@
       "servers": [
         "26.4-snapshot-9"
       ]
+    },
+    {
+      "version": 348,
+      "clients": [
+        "26.4-snapshot-10"
+      ],
+      "servers": [
+        "26.4-snapshot-10"
+      ]
     }
   ]
 }
