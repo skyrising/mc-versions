@@ -84,7 +84,9 @@
       "url": "../manifest/a/5/bc204e99b2c6cc8081816bc3eb53e0e183ae8e/26.4-snapshot-9.json"
     }
   ],
-  "next": [],
+  "next": [
+    "26.4-snapshot-10"
+  ],
   "normalizedVersion": "26.4.0-alpha.9",
   "previous": [
     "26.4-snapshot-8"
