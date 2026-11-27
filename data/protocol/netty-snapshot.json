@@ -3136,6 +3136,15 @@
       "servers": [
         "26.4-pre-1"
       ]
+    },
+    {
+      "version": 350,
+      "clients": [
+        "26.4-pre-2"
+      ],
+      "servers": [
+        "26.4-pre-2"
+      ]
     }
   ]
 }

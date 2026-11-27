@@ -57,7 +57,7 @@
     "org.jcraft:jorbis:0.0.17",
     "org.joml:joml:1.10.8",
     "org.jspecify:jspecify:1.0.0",
-    "org.lwjgl:lwjgl-freetype:3.4.1",
+    "org.lwjgl:lwjgl-freetype:3.4.1-mojang-2.15.0.3",
     "org.lwjgl:lwjgl-glfw:3.4.1",
     "org.lwjgl:lwjgl-jemalloc:3.4.1",
     "org.lwjgl:lwjgl-openal:3.4.1",
@@ -72,6 +72,17 @@
     "org.slf4j:slf4j-api:2.0.17"
   ],
   "manifests": [
+    {
+      "assetHash": "0f72b9adbde17fb2aba52ef3c521a951a54c8de8",
+      "assetIndex": "31",
+      "downloads": "bb754a010c27501ae9b72b64d0b4cf0efcd10010",
+      "downloadsId": 1,
+      "hash": "e0c3e4c38edce084df8882e17c9a4d83bf8ff850",
+      "lastModified": "2026-11-27T09:13:50+00:00",
+      "time": "2026-04-21T12:05:40+00:00",
+      "type": "snapshot",
+      "url": "../manifest/e/0/c3e4c38edce084df8882e17c9a4d83bf8ff850/26.2-snapshot-4.json"
+    },
     {
       "assetHash": "c26a3ac4d511b20cc897a0717d7426fde1aea4f6",
       "assetIndex": "31",
