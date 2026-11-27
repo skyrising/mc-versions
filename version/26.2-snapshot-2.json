@@ -57,7 +57,7 @@
     "org.jcraft:jorbis:0.0.17",
     "org.joml:joml:1.10.8",
     "org.jspecify:jspecify:1.0.0",
-    "org.lwjgl:lwjgl-freetype:3.4.1",
+    "org.lwjgl:lwjgl-freetype:3.4.1-mojang-2.15.0.3",
     "org.lwjgl:lwjgl-glfw:3.4.1",
     "org.lwjgl:lwjgl-jemalloc:3.4.1",
     "org.lwjgl:lwjgl-openal:3.4.1",
@@ -72,6 +72,17 @@
     "org.slf4j:slf4j-api:2.0.17"
   ],
   "manifests": [
+    {
+      "assetHash": "0f72b9adbde17fb2aba52ef3c521a951a54c8de8",
+      "assetIndex": "31",
+      "downloads": "fdc188e0d02cd6a18684e40a0b62bd9b8860675e",
+      "downloadsId": 1,
+      "hash": "e7702b164e08f4148aa62bc943d75e254f6a46aa",
+      "lastModified": "2026-11-27T09:13:52+00:00",
+      "time": "2026-04-09T12:26:35+00:00",
+      "type": "snapshot",
+      "url": "https://skyrising.github.io/mc-versions/manifest/e/7/702b164e08f4148aa62bc943d75e254f6a46aa/26.2-snapshot-2.json"
+    },
     {
       "assetHash": "c26a3ac4d511b20cc897a0717d7426fde1aea4f6",
       "assetIndex": "31",
